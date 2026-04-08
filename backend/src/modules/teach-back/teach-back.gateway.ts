@@ -1,5 +1,11 @@
 import { Logger, UseGuards, UseFilters } from '@nestjs/common';
-import { WebSocketGateway, SubscribeMessage, MessageBody, ConnectedSocket, WebSocketServer } from '@nestjs/websockets';
+import {
+  WebSocketGateway,
+  SubscribeMessage,
+  MessageBody,
+  ConnectedSocket,
+  WebSocketServer,
+} from '@nestjs/websockets';
 import { Server, Socket } from 'socket.io';
 import { WsAuthGuard } from '../../common/guards/ws-auth.guard';
 import { WsExceptionFilter } from '../../common/filters/ws-exception.filter';
@@ -17,12 +23,22 @@ export class TeachBackGateway {
   constructor(private readonly subscriptionService: SubscriptionService) {}
 
   @SubscribeMessage('subscribe')
-  async handleSubscribe(@MessageBody() data: { sessionId: string }, @ConnectedSocket() client: Socket) {
+  async handleSubscribe(
+    @MessageBody() data: { sessionId: string },
+    @ConnectedSocket() client: Socket,
+  ) {
     const userId = client.data?.user?.sub;
     if (userId) {
       const isPro = await this.subscriptionService.isPro(userId);
       if (!isPro) {
-        return { event: 'error', data: { message: 'This feature requires a Pro plan', upgrade: true, feature: 'teach_back' } };
+        return {
+          event: 'error',
+          data: {
+            message: 'This feature requires a Pro plan',
+            upgrade: true,
+            feature: 'teach_back',
+          },
+        };
       }
     }
     client.join(`teach-back:${data.sessionId}`);

@@ -24,11 +24,14 @@ async function bootstrap() {
   app.setGlobalPrefix(apiPrefix);
 
   // CORS — reflect request origin for dev flexibility
-  const corsOrigins = configService.get<string>('CORS_ORIGINS', '*');
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   app.use((req: any, res: any, next: any) => {
     res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
     res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Origin,X-Requested-With,Content-Type,Accept,Authorization');
+    res.header(
+      'Access-Control-Allow-Headers',
+      'Origin,X-Requested-With,Content-Type,Accept,Authorization',
+    );
     res.header('Access-Control-Allow-Credentials', 'true');
     res.header('Access-Control-Max-Age', '86400');
     if (req.method === 'OPTIONS') {

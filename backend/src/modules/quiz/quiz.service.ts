@@ -1,7 +1,7 @@
 import { Injectable, Logger, NotFoundException, ForbiddenException } from '@nestjs/common';
 import { v4 as uuidv4 } from 'uuid';
 import { DatabaseService } from '../database/database.service';
-import { QuizGeneratorService, GeneratedQuestion, QuestionType } from './quiz-generator.service';
+import { QuizGeneratorService, QuestionType } from './quiz-generator.service';
 import { NotificationsService } from '../notifications/notifications.service';
 
 export interface Quiz {
@@ -97,7 +97,7 @@ export class QuizService {
     const id = uuidv4();
     const now = new Date();
 
-    const result = await this.db.queryOne<Quiz>(
+    await this.db.queryOne<Quiz>(
       `INSERT INTO quizzes (id, user_id, study_set_id, title, description, time_limit, is_public, created_at, updated_at)
        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
        RETURNING *`,
@@ -220,11 +220,7 @@ export class QuizService {
     return results.map((r) => this.mapQuestion(r));
   }
 
-  async submitAttempt(
-    quizId: string,
-    userId: string,
-    dto: SubmitAttemptDto,
-  ): Promise<QuizAttempt> {
+  async submitAttempt(quizId: string, userId: string, dto: SubmitAttemptDto): Promise<QuizAttempt> {
     await this.findByIdWithAccess(quizId, userId);
 
     const questions = await this.getQuestions(quizId);
@@ -320,7 +316,10 @@ export class QuizService {
       throw new ForbiddenException('Access denied');
     }
 
-    await this.db.query('DELETE FROM quiz_attempt_answers WHERE attempt_id IN (SELECT id FROM quiz_attempts WHERE quiz_id = $1)', [id]);
+    await this.db.query(
+      'DELETE FROM quiz_attempt_answers WHERE attempt_id IN (SELECT id FROM quiz_attempts WHERE quiz_id = $1)',
+      [id],
+    );
     await this.db.query('DELETE FROM quiz_attempts WHERE quiz_id = $1', [id]);
     await this.db.query('DELETE FROM quiz_questions WHERE quiz_id = $1', [id]);
     await this.db.query('DELETE FROM quizzes WHERE id = $1', [id]);

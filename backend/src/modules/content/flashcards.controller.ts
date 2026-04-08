@@ -41,9 +41,17 @@ export class FlashcardsController {
   @ApiResponse({ status: 201, description: 'Flashcards created' })
   async createBulk(
     @CurrentUser() user: JwtPayload,
-    @Body() body: { studySetId: string; cards: Array<{ front: string; back: string; notes?: string; tags?: string[] }> },
+    @Body()
+    body: {
+      studySetId: string;
+      cards: Array<{ front: string; back: string; notes?: string; tags?: string[] }>;
+    },
   ) {
-    await this.subscriptionService.checkAndIncrementUsage(user.sub, 'flashcards', body.cards.length);
+    await this.subscriptionService.checkAndIncrementUsage(
+      user.sub,
+      'flashcards',
+      body.cards.length,
+    );
     return this.flashcardsService.createBulk(user.sub, body.studySetId, body.cards);
   }
 
@@ -64,10 +72,7 @@ export class FlashcardsController {
   @Get('study-set/:studySetId/due')
   @ApiOperation({ summary: 'Get flashcards due for review in a study set' })
   @ApiResponse({ status: 200, description: 'Due flashcards' })
-  async getDueByStudySet(
-    @Param('studySetId') studySetId: string,
-    @Query('limit') limit?: number,
-  ) {
+  async getDueByStudySet(@Param('studySetId') studySetId: string, @Query('limit') limit?: number) {
     return this.flashcardsService.findByStudySetDueForReview(studySetId, limit || 20);
   }
 

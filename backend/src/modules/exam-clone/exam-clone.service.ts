@@ -96,13 +96,11 @@ export class ExamCloneService {
     await this.findByIdWithAccess(examCloneId, userId);
 
     // Try to upload to storage, but if it fails, process directly
-    let fileUrl: string | null = null;
     try {
       const { url } = await this.storageService.upload(file, filename, {
         contentType: mimeType,
         folder: `exams/${userId}`,
       });
-      fileUrl = url;
 
       await this.db.query(
         `UPDATE exam_clones SET original_file_url = $1, status = 'pending', updated_at = $2 WHERE id = $3`,
@@ -131,7 +129,11 @@ export class ExamCloneService {
   /**
    * Process file directly without storage (for development or when storage is unavailable)
    */
-  async processFileDirectly(examCloneId: string, fileBuffer: Buffer, mimeType: string): Promise<void> {
+  async processFileDirectly(
+    examCloneId: string,
+    fileBuffer: Buffer,
+    mimeType: string,
+  ): Promise<void> {
     await this.updateStatus(examCloneId, 'processing');
 
     try {
@@ -156,7 +158,9 @@ export class ExamCloneService {
         [extractedText, new Date(), examCloneId],
       );
 
-      this.logger.log(`Text extracted directly for exam ${examCloneId}: ${extractedText.length} chars`);
+      this.logger.log(
+        `Text extracted directly for exam ${examCloneId}: ${extractedText.length} chars`,
+      );
 
       // Now analyze
       await this.analyze(examCloneId);
@@ -183,25 +187,31 @@ export class ExamCloneService {
     for (let i = 0; i < parseAttempts.length; i++) {
       const attempt = parseAttempts[i];
       try {
-        this.logger.debug(`Attempting PDF parse with ${attempt.description} (attempt ${i + 1}/${parseAttempts.length})`);
+        this.logger.debug(
+          `Attempting PDF parse with ${attempt.description} (attempt ${i + 1}/${parseAttempts.length})`,
+        );
         const pdfData = await pdfParse(fileBuffer, attempt.options);
         const text = pdfData.text.trim();
 
         if (text.length > 0) {
-          this.logger.log(`PDF parsed successfully with ${attempt.description}: ${text.length} chars`);
+          this.logger.log(
+            `PDF parsed successfully with ${attempt.description}: ${text.length} chars`,
+          );
           return text;
         }
 
         this.logger.warn(`PDF parsed but no text extracted with ${attempt.description}`);
       } catch (error) {
-        this.logger.warn(`PDF parse attempt ${i + 1} failed with ${attempt.description}: ${error.message}`);
+        this.logger.warn(
+          `PDF parse attempt ${i + 1} failed with ${attempt.description}: ${error.message}`,
+        );
 
         // If this is the last attempt, throw a user-friendly error
         if (i === parseAttempts.length - 1) {
           throw new Error(
             `Failed to parse PDF after ${parseAttempts.length} attempts. ` +
-            `The PDF file may be: (1) corrupted, (2) password-protected, (3) scanned images without OCR, or (4) using an unsupported format. ` +
-            `Please try: (1) Re-saving the PDF from your PDF reader, (2) Converting to text format, or (3) Copy-pasting the content directly.`
+              `The PDF file may be: (1) corrupted, (2) password-protected, (3) scanned images without OCR, or (4) using an unsupported format. ` +
+              `Please try: (1) Re-saving the PDF from your PDF reader, (2) Converting to text format, or (3) Copy-pasting the content directly.`,
           );
         }
       }
@@ -250,7 +260,9 @@ export class ExamCloneService {
         [extractedText, new Date(), examCloneId],
       );
 
-      this.logger.log(`Text extracted from file for exam ${examCloneId}: ${extractedText.length} chars`);
+      this.logger.log(
+        `Text extracted from file for exam ${examCloneId}: ${extractedText.length} chars`,
+      );
 
       // Now analyze the extracted text
       await this.analyze(examCloneId);
@@ -328,7 +340,9 @@ ${examText}`;
       // Filter out invalid questions (missing required fields that are NOT NULL in DB)
       const validQuestions = (analysis.questions || []).filter((q) => {
         if (!q.question || !q.correctAnswer || !q.type) {
-          this.logger.warn(`Skipping invalid question in exam ${examCloneId}: missing required fields`);
+          this.logger.warn(
+            `Skipping invalid question in exam ${examCloneId}: missing required fields`,
+          );
           return false;
         }
         return true;
@@ -365,7 +379,9 @@ ${examText}`;
       }
 
       await this.updateStatus(examCloneId, 'completed');
-      this.logger.log(`Exam analyzed: ${examCloneId}, ${insertedCount}/${validQuestions.length} questions inserted`);
+      this.logger.log(
+        `Exam analyzed: ${examCloneId}, ${insertedCount}/${validQuestions.length} questions inserted`,
+      );
     } catch (error) {
       this.logger.error(`Failed to analyze exam ${examCloneId}`, error);
       await this.updateStatus(examCloneId, 'failed');
@@ -397,7 +413,10 @@ Style characteristics:
 - Language: ${style.languageStyle}
 
 Original questions for reference (match this style closely):
-${originalQuestions.slice(0, 3).map((q) => `- ${q.question}`).join('\n')}
+${originalQuestions
+  .slice(0, 3)
+  .map((q) => `- ${q.question}`)
+  .join('\n')}
 
 ${dto.difficulty === 'match_original' ? 'Match the original difficulty distribution.' : `Generate ${dto.difficulty || 'mixed'} difficulty questions.`}
 
@@ -428,7 +447,11 @@ Return in JSON format:
       }>;
     }>(
       [
-        { role: 'system', content: 'You are an expert exam question generator that precisely matches the style of existing exams.' },
+        {
+          role: 'system',
+          content:
+            'You are an expert exam question generator that precisely matches the style of existing exams.',
+        },
         { role: 'user', content: generationPrompt },
       ],
       { maxTokens: 4096 },
@@ -486,10 +509,9 @@ Return in JSON format:
   }
 
   async findById(id: string): Promise<ExamClone | null> {
-    const result = await this.db.queryOne<ExamClone>(
-      'SELECT * FROM exam_clones WHERE id = $1',
-      [id],
-    );
+    const result = await this.db.queryOne<ExamClone>('SELECT * FROM exam_clones WHERE id = $1', [
+      id,
+    ]);
     return result ? this.mapExamClone(result) : null;
   }
 
@@ -538,7 +560,7 @@ Return in JSON format:
   async getExplanation(
     questionId: string,
     userAnswer: string,
-    userId: string,
+    _userId: string,
   ): Promise<{ explanation: string; isCorrect: boolean; correctAnswer: string }> {
     const question = await this.db.queryOne<ExamQuestion>(
       'SELECT * FROM exam_questions WHERE id = $1',
@@ -568,7 +590,7 @@ ${isCorrect ? 'The user answered correctly.' : 'The user answered incorrectly.'}
 
 Provide a clear, educational explanation (2-3 sentences) of:
 1. Why the correct answer is correct
-2. ${!isCorrect ? 'Why the user\'s answer is wrong' : 'Any additional context'}
+2. ${!isCorrect ? "Why the user's answer is wrong" : 'Any additional context'}
 
 Be concise and helpful.`;
 
@@ -583,10 +605,10 @@ Be concise and helpful.`;
     const explanation = response.content.trim();
 
     // Cache the explanation in the database
-    await this.db.query(
-      'UPDATE exam_questions SET explanation = $1 WHERE id = $2',
-      [explanation, questionId],
-    );
+    await this.db.query('UPDATE exam_questions SET explanation = $1 WHERE id = $2', [
+      explanation,
+      questionId,
+    ]);
 
     return { explanation, isCorrect, correctAnswer: q.correctAnswer };
   }
@@ -613,6 +635,7 @@ Be concise and helpful.`;
       userAnswer: string;
       correctAnswer: string;
     }>;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     newBadges: any[];
   }> {
     await this.findByIdWithAccess(examCloneId, userId);
@@ -641,11 +664,7 @@ Be concise and helpful.`;
       }
       // For written answers, use AI evaluation
       else if (ans.answer && ans.answer.trim().length > 0) {
-        isCorrect = await this.evaluateWrittenAnswer(
-          q.question,
-          q.correctAnswer,
-          ans.answer,
-        );
+        isCorrect = await this.evaluateWrittenAnswer(q.question, q.correctAnswer, ans.answer);
       }
 
       if (ans.answer) {
@@ -695,7 +714,9 @@ Be concise and helpful.`;
     // Check and award badges
     const newBadges = await this.checkAndAwardBadges(userId, examCloneId);
 
-    this.logger.log(`Attempt submitted for exam ${examCloneId}: ${score}% (${correct}/${totalQuestions})`);
+    this.logger.log(
+      `Attempt submitted for exam ${examCloneId}: ${score}% (${correct}/${totalQuestions})`,
+    );
 
     return {
       id: attemptId,
@@ -722,13 +743,19 @@ Be concise and helpful.`;
     bestScore: number;
     totalTimeSpent: number;
     topicPerformance: Array<{ topic: string; correct: number; total: number; percentage: number }>;
-    difficultyPerformance: Array<{ difficulty: string; correct: number; total: number; percentage: number }>;
+    difficultyPerformance: Array<{
+      difficulty: string;
+      correct: number;
+      total: number;
+      percentage: number;
+    }>;
     recentAttempts: Array<{ id: string; score: number; createdAt: Date }>;
     improvementTrend: number;
   }> {
     await this.findByIdWithAccess(examCloneId, userId);
 
     // Get all attempts
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const attempts = await this.db.queryMany<any>(
       'SELECT * FROM exam_attempts WHERE exam_clone_id = $1 AND user_id = $2 ORDER BY created_at DESC',
       [examCloneId, userId],
@@ -783,7 +810,8 @@ Be concise and helpful.`;
       const difficulty = q.difficulty || 'medium';
 
       if (!topicStats.has(topic)) topicStats.set(topic, { correct: 0, total: 0 });
-      if (!difficultyStats.has(difficulty)) difficultyStats.set(difficulty, { correct: 0, total: 0 });
+      if (!difficultyStats.has(difficulty))
+        difficultyStats.set(difficulty, { correct: 0, total: 0 });
 
       topicStats.get(topic)!.total++;
       difficultyStats.get(difficulty)!.total++;
@@ -800,12 +828,14 @@ Be concise and helpful.`;
       percentage: Math.round((stats.correct / stats.total) * 100),
     }));
 
-    const difficultyPerformance = Array.from(difficultyStats.entries()).map(([difficulty, stats]) => ({
-      difficulty,
-      correct: stats.correct,
-      total: stats.total,
-      percentage: Math.round((stats.correct / stats.total) * 100),
-    }));
+    const difficultyPerformance = Array.from(difficultyStats.entries()).map(
+      ([difficulty, stats]) => ({
+        difficulty,
+        correct: stats.correct,
+        total: stats.total,
+        percentage: Math.round((stats.correct / stats.total) * 100),
+      }),
+    );
 
     const recentAttempts = attempts.slice(0, 10).map((a) => ({
       id: a.id,
@@ -829,6 +859,7 @@ Be concise and helpful.`;
    * Add question to spaced repetition review queue
    */
   private async addToReviewQueue(userId: string, questionId: string): Promise<void> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const existing = await this.db.queryOne<any>(
       'SELECT * FROM exam_review_queue WHERE user_id = $1 AND question_id = $2',
       [userId, questionId],
@@ -860,7 +891,9 @@ Be concise and helpful.`;
   /**
    * Get questions due for spaced repetition review
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async getReviewQueue(userId: string, limit = 10): Promise<any[]> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const dueItems = await this.db.queryMany<any>(
       `SELECT q.*, rq.repetitions, rq.ease_factor, rq.next_review_at,
               ec.title as exam_clone_name
@@ -887,6 +920,7 @@ Be concise and helpful.`;
    * Uses modified SM-2 with shorter intervals for active learning
    */
   async completeReview(userId: string, questionId: string, correct: boolean): Promise<void> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const item = await this.db.queryOne<any>(
       'SELECT * FROM exam_review_queue WHERE user_id = $1 AND question_id = $2',
       [userId, questionId],
@@ -986,7 +1020,9 @@ Be concise and helpful.`;
   /**
    * Get all available exam templates
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async getTemplates(): Promise<any[]> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const templates = await this.db.queryMany<any>(
       'SELECT * FROM exam_templates WHERE is_active = true ORDER BY category, name',
       [],
@@ -1017,10 +1053,10 @@ Be concise and helpful.`;
   ): Promise<ExamQuestion[]> {
     await this.findByIdWithAccess(examCloneId, userId);
 
-    const template = await this.db.queryOne<any>(
-      'SELECT * FROM exam_templates WHERE slug = $1',
-      [templateSlug],
-    );
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const template = await this.db.queryOne<any>('SELECT * FROM exam_templates WHERE slug = $1', [
+      templateSlug,
+    ]);
 
     if (!template) {
       throw new NotFoundException('Template not found');
@@ -1125,10 +1161,11 @@ Return in JSON format:
   }
 
   private async updateStatus(id: string, status: ExamClone['status']): Promise<void> {
-    await this.db.query(
-      'UPDATE exam_clones SET status = $1, updated_at = $2 WHERE id = $3',
-      [status, new Date(), id],
-    );
+    await this.db.query('UPDATE exam_clones SET status = $1, updated_at = $2 WHERE id = $3', [
+      status,
+      new Date(),
+      id,
+    ]);
   }
 
   private mapExamClone(row: unknown): ExamClone {
@@ -1292,8 +1329,8 @@ Be fair - if the student demonstrates understanding even with different wording,
 
       this.logger.debug(
         `AI Evaluation: Question="${question.substring(0, 50)}...", ` +
-        `Score=${evaluation.score}, IsCorrect=${evaluation.isCorrect}, ` +
-        `Feedback="${evaluation.feedback.substring(0, 100)}..."`,
+          `Score=${evaluation.score}, IsCorrect=${evaluation.isCorrect}, ` +
+          `Feedback="${evaluation.feedback.substring(0, 100)}..."`,
       );
 
       return evaluation.isCorrect;
@@ -1338,13 +1375,15 @@ Be fair - if the student demonstrates understanding even with different wording,
   }
 
   async unbookmarkQuestion(userId: string, questionId: string): Promise<void> {
-    await this.db.query(
-      'DELETE FROM exam_bookmarks WHERE user_id = $1 AND question_id = $2',
-      [userId, questionId],
-    );
+    await this.db.query('DELETE FROM exam_bookmarks WHERE user_id = $1 AND question_id = $2', [
+      userId,
+      questionId,
+    ]);
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async getBookmarkedQuestions(userId: string): Promise<any[]> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const results = await this.db.queryMany<any>(
       `SELECT q.*, b.note as bookmark_note, b.created_at as bookmarked_at, ec.title as exam_title
        FROM exam_bookmarks b
@@ -1372,7 +1411,9 @@ Be fair - if the student demonstrates understanding even with different wording,
 
   // ==================== BADGES ====================
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async getBadges(): Promise<any[]> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const badges = await this.db.queryMany<any>(
       'SELECT * FROM exam_badges WHERE is_active = true ORDER BY category, requirement_value',
       [],
@@ -1391,7 +1432,9 @@ Be fair - if the student demonstrates understanding even with different wording,
     }));
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async getUserBadges(userId: string): Promise<any[]> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const badges = await this.db.queryMany<any>(
       `SELECT b.*, ub.earned_at, ec.title as exam_title
        FROM user_exam_badges ub
@@ -1414,10 +1457,13 @@ Be fair - if the student demonstrates understanding even with different wording,
     }));
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async checkAndAwardBadges(userId: string, examCloneId?: string): Promise<any[]> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const newBadges: any[] = [];
 
     // Get user stats
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const stats = await this.db.queryOne<any>(
       `SELECT
          COUNT(DISTINCT id) as total_exams,
@@ -1433,6 +1479,7 @@ Be fair - if the student demonstrates understanding even with different wording,
     const totalCorrect = parseInt(stats?.total_correct || '0', 10);
 
     // Get review stats
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const reviewStats = await this.db.queryOne<any>(
       `SELECT COUNT(*) as review_count FROM exam_review_queue WHERE user_id = $1 AND repetitions > 0`,
       [userId],
@@ -1447,6 +1494,7 @@ Be fair - if the student demonstrates understanding even with different wording,
     const earnedBadgeIds = new Set(earnedBadges.map((b) => b.badge_id));
 
     // Get all badges
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const allBadges = await this.db.queryMany<any>(
       'SELECT * FROM exam_badges WHERE is_active = true',
       [],
@@ -1512,7 +1560,11 @@ Be fair - if the student demonstrates understanding even with different wording,
 
   // ==================== LEADERBOARD ====================
 
-  async getLeaderboard(period: 'weekly' | 'monthly' | 'all_time' = 'weekly', limit = 10): Promise<any[]> {
+  async getLeaderboard(
+    period: 'weekly' | 'monthly' | 'all_time' = 'weekly',
+    limit = 10,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ): Promise<any[]> {
     let dateFilter = '';
     if (period === 'weekly') {
       dateFilter = "AND ea.created_at >= NOW() - INTERVAL '7 days'";
@@ -1520,6 +1572,7 @@ Be fair - if the student demonstrates understanding even with different wording,
       dateFilter = "AND ea.created_at >= NOW() - INTERVAL '30 days'";
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const results = await this.db.queryMany<any>(
       `SELECT
          u.id as user_id,
@@ -1551,7 +1604,11 @@ Be fair - if the student demonstrates understanding even with different wording,
     }));
   }
 
-  async getUserRank(userId: string, period: 'weekly' | 'monthly' | 'all_time' = 'weekly'): Promise<any> {
+  async getUserRank(
+    userId: string,
+    period: 'weekly' | 'monthly' | 'all_time' = 'weekly',
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ): Promise<any> {
     let dateFilter = '';
     if (period === 'weekly') {
       dateFilter = "AND ea.created_at >= NOW() - INTERVAL '7 days'";
@@ -1559,6 +1616,7 @@ Be fair - if the student demonstrates understanding even with different wording,
       dateFilter = "AND ea.created_at >= NOW() - INTERVAL '30 days'";
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const result = await this.db.queryOne<any>(
       `WITH ranked AS (
          SELECT

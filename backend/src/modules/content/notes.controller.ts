@@ -12,7 +12,7 @@ import {
 } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { NotesService } from './notes.service';
-import { CreateNoteDto, UpdateNoteDto } from './dto/note.dto';
+import { UpdateNoteDto } from './dto/note.dto';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
 import { CurrentUser, JwtPayload } from '../../common';
 

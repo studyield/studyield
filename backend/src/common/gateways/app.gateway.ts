@@ -11,7 +11,10 @@ import { BaseGateway } from './base.gateway';
 @WebSocketGateway({
   namespace: 'app',
   cors: {
-    origin: process.env.CORS_ORIGINS?.split(',') || ['http://localhost:3010', 'http://localhost:5189'],
+    origin: process.env.CORS_ORIGINS?.split(',') || [
+      'http://localhost:3010',
+      'http://localhost:5189',
+    ],
     credentials: true,
   },
 })
@@ -19,7 +22,7 @@ export class AppGateway extends BaseGateway {
   protected readonly logger = new Logger(AppGateway.name);
 
   @SubscribeMessage('ping')
-  handlePing(@ConnectedSocket() client: Socket): { event: string; data: string } {
+  handlePing(@ConnectedSocket() _client: Socket): { event: string; data: string } {
     return { event: 'pong', data: 'pong' };
   }
 
@@ -53,7 +56,17 @@ export class AppGateway extends BaseGateway {
     return { event: 'unsubscribed', data: { unsubscribed: data.channel } };
   }
 
-  notifyUser(userId: string, notification: { type: string; title: string; message: string }) {
+  notifyUser(
+    userId: string,
+    notification: {
+      type: string;
+      title: string;
+      message: string;
+      id?: string;
+      link?: string | null;
+      createdAt?: string;
+    },
+  ) {
     this.emitToUser(userId, 'notification', notification);
   }
 

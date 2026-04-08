@@ -14,7 +14,14 @@ import {
   BadRequestException,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiConsumes, ApiBody } from '@nestjs/swagger';
+import {
+  ApiTags,
+  ApiOperation,
+  ApiResponse,
+  ApiBearerAuth,
+  ApiConsumes,
+  ApiBody,
+} from '@nestjs/swagger';
 import { ExamCloneService, CreateExamCloneDto, GenerateQuestionsDto } from './exam-clone.service';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
 import { CurrentUser, JwtPayload, PlanFeature } from '../../common';
@@ -114,7 +121,10 @@ export class ExamCloneController {
     @CurrentUser() user: JwtPayload,
     @Query() query: { period?: 'weekly' | 'monthly' | 'all_time'; limit?: number },
   ) {
-    const leaderboard = await this.examCloneService.getLeaderboard(query.period || 'weekly', query.limit || 10);
+    const leaderboard = await this.examCloneService.getLeaderboard(
+      query.period || 'weekly',
+      query.limit || 10,
+    );
     const userRank = await this.examCloneService.getUserRank(user.sub, query.period || 'weekly');
     return { leaderboard, userRank };
   }
@@ -178,13 +188,23 @@ export class ExamCloneController {
     }
 
     try {
-      await this.examCloneService.uploadExam(id, user.sub, file.buffer, file.originalname, file.mimetype);
+      await this.examCloneService.uploadExam(
+        id,
+        user.sub,
+        file.buffer,
+        file.originalname,
+        file.mimetype,
+      );
       return { message: 'File uploaded and queued for processing' };
     } catch (error) {
       // Handle PDF parsing errors with user-friendly messages
-      if (error.message?.includes('Failed to parse PDF') || error.message?.includes('Command token too long')) {
+      if (
+        error.message?.includes('Failed to parse PDF') ||
+        error.message?.includes('Command token too long')
+      ) {
         throw new BadRequestException(
-          error.message || 'Unable to parse this PDF. Please try: (1) Re-saving the PDF, (2) Converting to text format, or (3) Copy-pasting the content directly.'
+          error.message ||
+            'Unable to parse this PDF. Please try: (1) Re-saving the PDF, (2) Converting to text format, or (3) Copy-pasting the content directly.',
         );
       }
       throw error;
@@ -238,7 +258,11 @@ export class ExamCloneController {
   async submitAttempt(
     @CurrentUser() user: JwtPayload,
     @Param('id') id: string,
-    @Body() dto: { answers: Array<{ questionId: string; answer: string; timeSpent: number }>; totalTime: number },
+    @Body()
+    dto: {
+      answers: Array<{ questionId: string; answer: string; timeSpent: number }>;
+      totalTime: number;
+    },
   ) {
     return this.examCloneService.submitAttempt(id, user.sub, dto.answers, dto.totalTime);
   }
@@ -249,9 +273,15 @@ export class ExamCloneController {
   async getAdaptiveQuestions(
     @CurrentUser() user: JwtPayload,
     @Param('id') id: string,
-    @Body() dto: { count: number; recentPerformance: Array<{ questionId: string; correct: boolean }> },
+    @Body()
+    dto: { count: number; recentPerformance: Array<{ questionId: string; correct: boolean }> },
   ) {
-    return this.examCloneService.getAdaptiveQuestions(id, user.sub, dto.count, dto.recentPerformance);
+    return this.examCloneService.getAdaptiveQuestions(
+      id,
+      user.sub,
+      dto.count,
+      dto.recentPerformance,
+    );
   }
 
   @Post(':id/generate-from-template')
@@ -262,7 +292,13 @@ export class ExamCloneController {
     @Param('id') id: string,
     @Body() dto: { templateSlug: string; subject: string; count: number },
   ) {
-    return this.examCloneService.generateFromTemplate(id, user.sub, dto.templateSlug, dto.subject, dto.count);
+    return this.examCloneService.generateFromTemplate(
+      id,
+      user.sub,
+      dto.templateSlug,
+      dto.subject,
+      dto.count,
+    );
   }
 
   @Delete(':id')

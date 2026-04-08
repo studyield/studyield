@@ -53,9 +53,7 @@ interface GenerateMindMapDto {
 export class AiController {
   private readonly logger = new Logger(AiController.name);
 
-  constructor(
-    private readonly aiService: AiService,
-  ) {}
+  constructor(private readonly aiService: AiService) {}
 
   @Post('generate-flashcards')
   @ApiOperation({ summary: 'Generate flashcards from content using AI' })
@@ -101,9 +99,12 @@ Output format: Return a JSON object with a "flashcards" array containing objects
           back: card.back.trim(),
         })),
       };
-    } catch (error: any) {
-      this.logger.error(`Flashcard generation failed: ${error.message}`, error.stack);
-      throw new BadRequestException(error.message || 'Failed to generate flashcards. Please try again.');
+    } catch (error: unknown) {
+      const err = error as Error;
+      this.logger.error(`Flashcard generation failed: ${err.message}`, err.stack);
+      throw new BadRequestException(
+        err.message || 'Failed to generate flashcards. Please try again.',
+      );
     }
   }
 
@@ -307,10 +308,7 @@ Output format: Return a JSON object with a "slides" array containing objects wit
   @Post('generate-mind-map')
   @ApiOperation({ summary: 'Generate mind map from content using AI' })
   @ApiResponse({ status: 201, description: 'Mind map generated' })
-  async generateMindMap(
-    @CurrentUser() user: JwtPayload,
-    @Body() dto: GenerateMindMapDto,
-  ) {
+  async generateMindMap(@CurrentUser() user: JwtPayload, @Body() dto: GenerateMindMapDto) {
     if (!dto.content || dto.content.trim().length < 50) {
       throw new BadRequestException('Content must be at least 50 characters long');
     }
@@ -406,7 +404,8 @@ Return JSON:
   @ApiResponse({ status: 201, description: 'Quiz generated' })
   async generateQuiz(
     @CurrentUser() user: JwtPayload,
-    @Body() dto: { content: string; count?: number; type?: 'multiple_choice' | 'true_false' | 'mixed' },
+    @Body()
+    dto: { content: string; count?: number; type?: 'multiple_choice' | 'true_false' | 'mixed' },
   ): Promise<{
     questions: Array<{
       question: string;
@@ -459,7 +458,10 @@ Output format: Return a JSON object with a "questions" array containing objects 
       }>(
         [
           { role: 'system', content: systemPrompt },
-          { role: 'user', content: `Generate quiz questions from this content:\n\n${dto.content.slice(0, 8000)}` },
+          {
+            role: 'user',
+            content: `Generate quiz questions from this content:\n\n${dto.content.slice(0, 8000)}`,
+          },
         ],
         { temperature: 0.7, maxTokens: 4000 },
       );

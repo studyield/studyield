@@ -223,15 +223,17 @@ export class KnowledgeBaseService {
           knowledgeBaseId,
           chunk.content,
           chunk.index,
-          JSON.stringify({ ...metadata, startOffset: chunk.startOffset, endOffset: chunk.endOffset }),
+          JSON.stringify({
+            ...metadata,
+            startOffset: chunk.startOffset,
+            endOffset: chunk.endOffset,
+          }),
           new Date(),
         ],
       );
     }
 
-    const embeddings = await this.embeddingService.embedWithChunking(
-      chunks.map((c) => c.content),
-    );
+    const embeddings = await this.embeddingService.embedWithChunking(chunks.map((c) => c.content));
 
     const points = chunkIds.map((id, index) => ({
       id,
@@ -271,10 +273,9 @@ export class KnowledgeBaseService {
       return [];
     }
 
-    const chunks = await this.db.queryMany<KBChunk>(
-      `SELECT * FROM kb_chunks WHERE id = ANY($1)`,
-      [chunkIds],
-    );
+    const chunks = await this.db.queryMany<KBChunk>(`SELECT * FROM kb_chunks WHERE id = ANY($1)`, [
+      chunkIds,
+    ]);
 
     const chunkMap = new Map(chunks.map((c) => [c.id, c]));
 
@@ -351,10 +352,11 @@ export class KnowledgeBaseService {
   }
 
   private async updateStatus(id: string, status: 'active' | 'processing' | 'error'): Promise<void> {
-    await this.db.query(
-      'UPDATE knowledge_bases SET status = $1, updated_at = $2 WHERE id = $3',
-      [status, new Date(), id],
-    );
+    await this.db.query('UPDATE knowledge_bases SET status = $1, updated_at = $2 WHERE id = $3', [
+      status,
+      new Date(),
+      id,
+    ]);
   }
 
   private mapKnowledgeBase(row: unknown): KnowledgeBase {

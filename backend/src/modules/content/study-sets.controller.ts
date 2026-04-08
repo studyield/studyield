@@ -105,10 +105,7 @@ export class StudySetsController {
   @Get(':id/flashcards')
   @ApiOperation({ summary: 'Get flashcards for a study set' })
   @ApiResponse({ status: 200, description: 'Flashcards list' })
-  async getFlashcards(
-    @Param('id') studySetId: string,
-    @Query() pagination: PaginationDto,
-  ) {
+  async getFlashcards(@Param('id') studySetId: string, @Query() pagination: PaginationDto) {
     const flashcards = await this.flashcardsService.findByStudySet(studySetId);
     return new PaginatedResponseDto(
       flashcards,
@@ -124,7 +121,14 @@ export class StudySetsController {
   async createFlashcard(
     @CurrentUser() user: JwtPayload,
     @Param('id') studySetId: string,
-    @Body() body: { front: string; back: string; notes?: string; tags?: string[]; type?: 'standard' | 'cloze' | 'image_occlusion' },
+    @Body()
+    body: {
+      front: string;
+      back: string;
+      notes?: string;
+      tags?: string[];
+      type?: 'standard' | 'cloze' | 'image_occlusion';
+    },
   ) {
     await this.studySetsService.findByIdWithAccess(studySetId, user.sub);
     await this.subscriptionService.checkAndIncrementUsage(user.sub, 'flashcards');
@@ -140,20 +144,30 @@ export class StudySetsController {
   async createBulkFlashcards(
     @CurrentUser() user: JwtPayload,
     @Param('id') studySetId: string,
-    @Body() body: { flashcards: Array<{ front: string; back: string; notes?: string; tags?: string[]; type?: string }> },
+    @Body()
+    body: {
+      flashcards: Array<{
+        front: string;
+        back: string;
+        notes?: string;
+        tags?: string[];
+        type?: string;
+      }>;
+    },
   ) {
     await this.studySetsService.findByIdWithAccess(studySetId, user.sub);
-    await this.subscriptionService.checkAndIncrementUsage(user.sub, 'flashcards', body.flashcards.length);
+    await this.subscriptionService.checkAndIncrementUsage(
+      user.sub,
+      'flashcards',
+      body.flashcards.length,
+    );
     return this.flashcardsService.createBulk(user.sub, studySetId, body.flashcards);
   }
 
   @Get(':id/study-schedule')
   @ApiOperation({ summary: 'Get optimal study schedule based on exam date' })
   @ApiResponse({ status: 200, description: 'Study schedule' })
-  async getStudySchedule(
-    @CurrentUser() user: JwtPayload,
-    @Param('id') id: string,
-  ) {
+  async getStudySchedule(@CurrentUser() user: JwtPayload, @Param('id') id: string) {
     const studySet = await this.studySetsService.findByIdWithAccess(id, user.sub);
     const flashcards = await this.flashcardsService.findByStudySet(id);
     const progress = await this.flashcardsService.getStudyProgress(id);
@@ -164,9 +178,8 @@ export class StudySetsController {
       : null;
 
     const totalCards = flashcards.length;
-    const cardsPerDay = daysUntilExam && daysUntilExam > 0
-      ? Math.ceil(totalCards / daysUntilExam)
-      : 20;
+    const cardsPerDay =
+      daysUntilExam && daysUntilExam > 0 ? Math.ceil(totalCards / daysUntilExam) : 20;
 
     const dueToday = flashcards.filter(
       (f) => !f.nextReviewAt || new Date(f.nextReviewAt) <= new Date(),
@@ -183,11 +196,12 @@ export class StudySetsController {
         reviewCards: dueToday,
         estimatedMinutes: Math.ceil((Math.min(cardsPerDay, progress.new) + dueToday) * 0.5),
       },
-      recommendation: daysUntilExam !== null && daysUntilExam <= 3
-        ? 'Focus on reviewing weak cards. Exam is very soon!'
-        : daysUntilExam !== null && daysUntilExam <= 7
-          ? 'Increase review frequency. Prioritize cards with low ease factor.'
-          : 'Maintain steady study pace. Mix new cards with reviews.',
+      recommendation:
+        daysUntilExam !== null && daysUntilExam <= 3
+          ? 'Focus on reviewing weak cards. Exam is very soon!'
+          : daysUntilExam !== null && daysUntilExam <= 7
+            ? 'Increase review frequency. Prioritize cards with low ease factor.'
+            : 'Maintain steady study pace. Mix new cards with reviews.',
     };
   }
 
@@ -196,10 +210,7 @@ export class StudySetsController {
   @Get(':id/notes')
   @ApiOperation({ summary: 'Get notes for a study set' })
   @ApiResponse({ status: 200, description: 'Notes list' })
-  async getNotes(
-    @CurrentUser() user: JwtPayload,
-    @Param('id') studySetId: string,
-  ) {
+  async getNotes(@CurrentUser() user: JwtPayload, @Param('id') studySetId: string) {
     return this.notesService.findByStudySet(studySetId, user.sub);
   }
 

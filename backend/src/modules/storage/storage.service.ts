@@ -52,7 +52,9 @@ export class StorageService implements OnModuleInit {
       },
     });
 
-    this.logger.log(`R2 Storage client initialized - Bucket: ${this.bucket}, Public URL: ${this.publicUrl || 'Not configured'}`);
+    this.logger.log(
+      `R2 Storage client initialized - Bucket: ${this.bucket}, Public URL: ${this.publicUrl || 'Not configured'}`,
+    );
   }
 
   private generateKey(filename: string, folder?: string): string {
@@ -142,7 +144,10 @@ export class StorageService implements OnModuleInit {
       this.logger.debug(`File downloaded successfully: ${key}, size: ${buffer.length} bytes`);
       return buffer;
     } catch (error) {
-      this.logger.error(`Failed to download file from R2. Bucket: ${this.bucket}, Key: ${key}`, error);
+      this.logger.error(
+        `Failed to download file from R2. Bucket: ${this.bucket}, Key: ${key}`,
+        error,
+      );
       throw new Error(`Failed to download file from storage: ${error.message}`);
     }
   }
@@ -240,11 +245,7 @@ export class StorageService implements OnModuleInit {
     this.logger.debug(`File moved: ${sourceKey} -> ${destinationKey}`);
   }
 
-  async getSignedUploadUrl(
-    key: string,
-    contentType: string,
-    expiresIn = 3600,
-  ): Promise<string> {
+  async getSignedUploadUrl(key: string, contentType: string, expiresIn = 3600): Promise<string> {
     const command = new PutObjectCommand({
       Bucket: this.bucket,
       Key: key,

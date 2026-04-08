@@ -1,9 +1,15 @@
-import { Injectable, Logger, NotFoundException, ForbiddenException, BadRequestException } from '@nestjs/common';
+import {
+  Injectable,
+  Logger,
+  NotFoundException,
+  ForbiddenException,
+  BadRequestException,
+} from '@nestjs/common';
 import { v4 as uuidv4 } from 'uuid';
 import pdf = require('pdf-parse');
 import { DatabaseService } from '../database/database.service';
 import { AiService, ChatMessage } from '../ai/ai.service';
-import { KnowledgeBaseService, SearchResult } from '../knowledge-base/knowledge-base.service';
+import { KnowledgeBaseService } from '../knowledge-base/knowledge-base.service';
 import { StorageService } from '../storage/storage.service';
 
 export interface Conversation {
@@ -73,25 +79,20 @@ export class ChatService {
     const now = new Date();
 
     // Generate a better default title based on timestamp
-    const defaultTitle = dto.title || `Chat ${new Date().toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: '2-digit',
-    })}`;
+    const defaultTitle =
+      dto.title ||
+      `Chat ${new Date().toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit',
+      })}`;
 
     const result = await this.db.queryOne<Conversation>(
       `INSERT INTO conversations (id, user_id, title, knowledge_base_ids, created_at, updated_at)
        VALUES ($1, $2, $3, $4, $5, $6)
        RETURNING *`,
-      [
-        id,
-        userId,
-        defaultTitle,
-        JSON.stringify(dto.knowledgeBaseIds || []),
-        now,
-        now,
-      ],
+      [id, userId, defaultTitle, JSON.stringify(dto.knowledgeBaseIds || []), now, now],
     );
 
     this.logger.log(`Conversation created: ${id}`);
@@ -134,14 +135,10 @@ export class ChatService {
     return results.map((r) => this.mapMessage(r));
   }
 
-  async sendMessage(
-    conversationId: string,
-    userId: string,
-    dto: SendMessageDto,
-  ): Promise<Message> {
+  async sendMessage(conversationId: string, userId: string, dto: SendMessageDto): Promise<Message> {
     const conversation = await this.getConversation(conversationId, userId);
 
-    const userMessage = await this.saveMessage(conversationId, 'user', dto.content);
+    await this.saveMessage(conversationId, 'user', dto.content);
 
     let context = '';
     let citations: Citation[] = [];
@@ -187,7 +184,10 @@ export class ChatService {
     return assistantMessage;
   }
 
-  private async autoGenerateTitleIfNeeded(conversationId: string, firstMessage: string): Promise<void> {
+  private async autoGenerateTitleIfNeeded(
+    conversationId: string,
+    firstMessage: string,
+  ): Promise<void> {
     try {
       const conversation = await this.db.queryOne<Conversation>(
         'SELECT title FROM conversations WHERE id = $1',
@@ -197,14 +197,13 @@ export class ChatService {
       // Only update if title starts with "Chat " (default title)
       if (conversation && conversation.title && conversation.title.startsWith('Chat ')) {
         // Generate title from first message (take first 50 chars)
-        const title = firstMessage.length > 50
-          ? firstMessage.substring(0, 50) + '...'
-          : firstMessage;
+        const title =
+          firstMessage.length > 50 ? firstMessage.substring(0, 50) + '...' : firstMessage;
 
-        await this.db.query(
-          'UPDATE conversations SET title = $1 WHERE id = $2',
-          [title, conversationId],
-        );
+        await this.db.query('UPDATE conversations SET title = $1 WHERE id = $2', [
+          title,
+          conversationId,
+        ]);
 
         this.logger.log(`Auto-generated title for conversation ${conversationId}: ${title}`);
       }
@@ -256,11 +255,15 @@ export class ChatService {
         try {
           const pdfData = await pdf(file.buffer);
           extractedText = pdfData.text;
-          this.logger.log(`Extracted ${extractedText.length} characters from PDF: ${file.originalname}`);
+          this.logger.log(
+            `Extracted ${extractedText.length} characters from PDF: ${file.originalname}`,
+          );
 
           // If PDF has very little text (< 100 chars), it's likely a scanned image
           if (extractedText.trim().length < 100) {
-            this.logger.warn(`PDF appears to be scanned/image-based with minimal text (${extractedText.length} chars)`);
+            this.logger.warn(
+              `PDF appears to be scanned/image-based with minimal text (${extractedText.length} chars)`,
+            );
 
             // Add note to help AI inform user
             analysisResult = `[NOTE: This PDF appears to be a scanned document or image-based PDF with minimal extractable text. Only "${extractedText.trim()}" was extracted. For better results with scanned documents, the user should take a photo or screenshot and upload it as an image (JPG/PNG) instead of PDF.]`;
@@ -305,7 +308,9 @@ Now analyze this image and describe what you see:`,
           throw new BadRequestException('Failed to process image file');
         }
       } else {
-        throw new BadRequestException(`Unsupported file type: ${mimeType}. Only PDF and images are supported.`);
+        throw new BadRequestException(
+          `Unsupported file type: ${mimeType}. Only PDF and images are supported.`,
+        );
       }
 
       // Store file metadata with URL
@@ -329,7 +334,7 @@ Now analyze this image and describe what you see:`,
     }
 
     // Save user message with file references
-    const userMessage = await this.saveMessage(
+    await this.saveMessage(
       conversationId,
       'user',
       dto.content || 'Uploaded files for analysis',
@@ -364,7 +369,8 @@ Now analyze this image and describe what you see:`,
     const messages = await this.buildMessageHistory(conversationId, contextText);
     messages.push({
       role: 'user',
-      content: dto.content || 'Please analyze the uploaded files and answer any questions about them.',
+      content:
+        dto.content || 'Please analyze the uploaded files and answer any questions about them.',
     });
 
     const response = await this.aiService.complete(messages, {
@@ -477,7 +483,10 @@ Now analyze this image and describe what you see:`,
     return this.mapMessage(result!);
   }
 
-  private async buildMessageHistory(conversationId: string, context: string): Promise<ChatMessage[]> {
+  private async buildMessageHistory(
+    conversationId: string,
+    context: string,
+  ): Promise<ChatMessage[]> {
     const messages: ChatMessage[] = [];
 
     let systemPrompt = `You are a helpful AI learning assistant for Studyield, an AI-powered study platform.
@@ -523,10 +532,7 @@ Instructions:
   }
 
   private async updateConversationTimestamp(id: string): Promise<void> {
-    await this.db.query('UPDATE conversations SET updated_at = $1 WHERE id = $2', [
-      new Date(),
-      id,
-    ]);
+    await this.db.query('UPDATE conversations SET updated_at = $1 WHERE id = $2', [new Date(), id]);
   }
 
   private mapConversation(row: unknown): Conversation {

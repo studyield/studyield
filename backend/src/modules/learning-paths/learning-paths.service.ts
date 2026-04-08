@@ -62,7 +62,16 @@ export class LearningPathsService {
       `INSERT INTO learning_paths (id, user_id, title, subject, difficulty, estimated_hours, steps, progress, created_at, updated_at)
        VALUES ($1, $2, $3, $4, $5, 0, $6, 0, $7, $8)
        RETURNING *`,
-      [id, userId, dto.title, dto.subject, dto.difficulty || 'beginner', JSON.stringify([]), now, now],
+      [
+        id,
+        userId,
+        dto.title,
+        dto.subject,
+        dto.difficulty || 'beginner',
+        JSON.stringify([]),
+        now,
+        now,
+      ],
     );
 
     return this.mapPath(result!);
@@ -95,7 +104,13 @@ Return in JSON format:
       title: string;
       description: string;
       estimatedHours: number;
-      steps: Array<{ order: number; title: string; description: string; type: string; estimatedMinutes: number }>;
+      steps: Array<{
+        order: number;
+        title: string;
+        description: string;
+        type: string;
+        estimatedMinutes: number;
+      }>;
     }>(
       [
         { role: 'system', content: 'You are an expert educational curriculum designer.' },
@@ -123,7 +138,18 @@ Return in JSON format:
     await this.db.query(
       `INSERT INTO learning_paths (id, user_id, title, description, subject, difficulty, estimated_hours, steps, progress, created_at, updated_at)
        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, 0, $9, $10)`,
-      [id, userId, response.title, response.description, dto.topic, dto.currentLevel, response.estimatedHours, JSON.stringify(steps), now, now],
+      [
+        id,
+        userId,
+        response.title,
+        response.description,
+        dto.topic,
+        dto.currentLevel,
+        response.estimatedHours,
+        JSON.stringify(steps),
+        now,
+        now,
+      ],
     );
 
     this.logger.log(`Learning path generated: ${id}`);
@@ -131,12 +157,18 @@ Return in JSON format:
   }
 
   async findById(id: string): Promise<LearningPath | null> {
-    const result = await this.db.queryOne<LearningPath>('SELECT * FROM learning_paths WHERE id = $1', [id]);
+    const result = await this.db.queryOne<LearningPath>(
+      'SELECT * FROM learning_paths WHERE id = $1',
+      [id],
+    );
     return result ? this.mapPath(result) : null;
   }
 
   async findByUser(userId: string): Promise<LearningPath[]> {
-    const results = await this.db.queryMany<LearningPath>('SELECT * FROM learning_paths WHERE user_id = $1 ORDER BY updated_at DESC', [userId]);
+    const results = await this.db.queryMany<LearningPath>(
+      'SELECT * FROM learning_paths WHERE user_id = $1 ORDER BY updated_at DESC',
+      [userId],
+    );
     return results.map((r) => this.mapPath(r));
   }
 

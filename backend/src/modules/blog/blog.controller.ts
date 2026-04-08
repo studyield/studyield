@@ -1,12 +1,4 @@
-import {
-  Controller,
-  Get,
-  Post,
-  Delete,
-  Param,
-  Query,
-  Body,
-} from '@nestjs/common';
+import { Controller, Get, Post, Delete, Param, Query, Body } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiQuery } from '@nestjs/swagger';
 import { BlogService } from './blog.service';
 import { Public, CurrentUser, JwtPayload } from '../../common';
@@ -61,10 +53,7 @@ export class BlogController {
   @Delete('comments/:commentId')
   @ApiOperation({ summary: 'Delete own comment' })
   @ApiResponse({ status: 200, description: 'Comment deleted' })
-  async deleteComment(
-    @Param('commentId') commentId: string,
-    @CurrentUser() user: JwtPayload,
-  ) {
+  async deleteComment(@Param('commentId') commentId: string, @CurrentUser() user: JwtPayload) {
     await this.blogService.deleteComment(commentId, user.sub);
     return { success: true };
   }
@@ -140,10 +129,7 @@ export class BlogController {
   @Get(':slug/related')
   @ApiOperation({ summary: 'Get related blog posts' })
   @ApiResponse({ status: 200, description: 'Related posts' })
-  async findRelated(
-    @Param('slug') slug: string,
-    @Query('limit') limit?: string,
-  ) {
+  async findRelated(@Param('slug') slug: string, @Query('limit') limit?: string) {
     return this.blogService.findRelated(slug, limit ? parseInt(limit, 10) : 3);
   }
 }

@@ -2,7 +2,10 @@ import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsString, IsNotEmpty, IsUrl } from 'class-validator';
 
 export class ExtractWebsiteDto {
-  @ApiProperty({ description: 'URL of the website to extract text from', example: 'https://example.com/article' })
+  @ApiProperty({
+    description: 'URL of the website to extract text from',
+    example: 'https://example.com/article',
+  })
   @IsString()
   @IsNotEmpty()
   @IsUrl({}, { message: 'Please provide a valid URL' })
@@ -10,7 +13,10 @@ export class ExtractWebsiteDto {
 }
 
 export class ExtractYouTubeDto {
-  @ApiProperty({ description: 'YouTube video URL', example: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' })
+  @ApiProperty({
+    description: 'YouTube video URL',
+    example: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  })
   @IsString()
   @IsNotEmpty()
   @IsUrl({}, { message: 'Please provide a valid YouTube URL' })
