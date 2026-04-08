@@ -1,4 +1,15 @@
-import { Controller, Get, Post, Delete, Body, Param, Query, UseGuards, HttpCode, HttpStatus } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Delete,
+  Body,
+  Param,
+  Query,
+  UseGuards,
+  HttpCode,
+  HttpStatus,
+} from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
 import { NotificationsService, NotificationPreferences } from './notifications.service';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
@@ -54,14 +65,20 @@ export class NotificationsController {
 
   @Post('preferences')
   @ApiOperation({ summary: 'Update notification preferences' })
-  async updatePreferences(@CurrentUser() user: JwtPayload, @Body() prefs: Partial<NotificationPreferences>) {
+  async updatePreferences(
+    @CurrentUser() user: JwtPayload,
+    @Body() prefs: Partial<NotificationPreferences>,
+  ) {
     return this.notificationsService.updatePreferences(user.sub, prefs);
   }
 
   @Post('register-device')
   @HttpCode(HttpStatus.NO_CONTENT)
   @ApiOperation({ summary: 'Register FCM token for push notifications' })
-  async registerDevice(@CurrentUser() user: JwtPayload, @Body() body: { fcmToken: string; platform: string }) {
+  async registerDevice(
+    @CurrentUser() user: JwtPayload,
+    @Body() body: { fcmToken: string; platform: string },
+  ) {
     await this.notificationsService.registerFCMToken(user.sub, body.fcmToken, body.platform);
   }
 
@@ -74,7 +91,10 @@ export class NotificationsController {
 
   @Post('test-push')
   @ApiOperation({ summary: 'Send test push notification (for testing)' })
-  async testPush(@CurrentUser() user: JwtPayload, @Body() body?: { title?: string; message?: string }) {
+  async testPush(
+    @CurrentUser() user: JwtPayload,
+    @Body() body?: { title?: string; message?: string },
+  ) {
     const title = body?.title || 'Test Notification';
     const message = body?.message || 'This is a test push notification from Studyield!';
 
@@ -89,7 +109,7 @@ export class NotificationsController {
     return {
       success: true,
       message: 'Test notification sent!',
-      notification
+      notification,
     };
   }
 }

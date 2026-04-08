@@ -1,9 +1,4 @@
-import {
-  Injectable,
-  CanActivate,
-  ExecutionContext,
-  ForbiddenException,
-} from '@nestjs/common';
+import { Injectable, CanActivate, ExecutionContext, ForbiddenException } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import { PLAN_FEATURE_KEY, PlanFeatureMeta } from '../decorators/plan-feature.decorator';
 import { SubscriptionService } from '../../modules/subscription/subscription.service';
@@ -16,10 +11,10 @@ export class PlanGuard implements CanActivate {
   ) {}
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
-    const meta = this.reflector.getAllAndOverride<PlanFeatureMeta>(
-      PLAN_FEATURE_KEY,
-      [context.getHandler(), context.getClass()],
-    );
+    const meta = this.reflector.getAllAndOverride<PlanFeatureMeta>(PLAN_FEATURE_KEY, [
+      context.getHandler(),
+      context.getClass(),
+    ]);
 
     // No @PlanFeature metadata → endpoint is not gated
     if (!meta) {

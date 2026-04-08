@@ -265,7 +265,11 @@ export class ContentExtractController {
   @Post('extract-website')
   @ApiOperation({ summary: 'Extract text content from a webpage' })
   @ApiBody({ type: ExtractWebsiteDto })
-  @ApiResponse({ status: 201, description: 'Text extracted successfully', type: ExtractWebsiteResponseDto })
+  @ApiResponse({
+    status: 201,
+    description: 'Text extracted successfully',
+    type: ExtractWebsiteResponseDto,
+  })
   async extractWebsite(@Body() dto: ExtractWebsiteDto): Promise<ExtractWebsiteResponseDto> {
     this.logger.log(`Website extraction requested for: ${dto.url}`);
 
@@ -279,7 +283,9 @@ export class ContentExtractController {
       });
 
       if (!response.ok) {
-        throw new BadRequestException(`Failed to fetch URL: ${response.status} ${response.statusText}`);
+        throw new BadRequestException(
+          `Failed to fetch URL: ${response.status} ${response.statusText}`,
+        );
       }
 
       const html = await response.text();
@@ -294,7 +300,7 @@ export class ContentExtractController {
       const title = $('title').text().trim() || $('h1').first().text().trim() || undefined;
 
       // Extract main content with priority
-      let mainContent =
+      const mainContent =
         $('article').text() ||
         $('main').text() ||
         $('[role="main"]').text() ||
@@ -328,7 +334,11 @@ export class ContentExtractController {
   @Post('extract-youtube')
   @ApiOperation({ summary: 'Extract transcript from a YouTube video' })
   @ApiBody({ type: ExtractYouTubeDto })
-  @ApiResponse({ status: 201, description: 'Transcript extracted successfully', type: ExtractYouTubeResponseDto })
+  @ApiResponse({
+    status: 201,
+    description: 'Transcript extracted successfully',
+    type: ExtractYouTubeResponseDto,
+  })
   async extractYouTube(@Body() dto: ExtractYouTubeDto): Promise<ExtractYouTubeResponseDto> {
     this.logger.log(`YouTube extraction requested for: ${dto.url}`);
 
@@ -345,12 +355,18 @@ export class ContentExtractController {
       const transcriptItems = await YoutubeTranscript.fetchTranscript(videoId);
 
       if (transcriptItems && transcriptItems.length > 0) {
-        const text = transcriptItems.map((item) => item.text).join(' ').replace(/\s+/g, ' ').trim();
+        const text = transcriptItems
+          .map((item) => item.text)
+          .join(' ')
+          .replace(/\s+/g, ' ')
+          .trim();
         this.logger.log(`YouTube transcript extracted via captions: ${text.length} chars`);
         return { text, videoId };
       }
     } catch (captionError) {
-      this.logger.warn(`No captions available, falling back to audio transcription: ${captionError}`);
+      this.logger.warn(
+        `No captions available, falling back to audio transcription: ${captionError}`,
+      );
     }
 
     // Fallback: Download audio and transcribe with Whisper
@@ -361,7 +377,10 @@ export class ContentExtractController {
       const info = await ytdl.getInfo(videoUrl);
 
       // Get audio-only format
-      const audioFormat = ytdl.chooseFormat(info.formats, { quality: 'lowestaudio', filter: 'audioonly' });
+      const audioFormat = ytdl.chooseFormat(info.formats, {
+        quality: 'lowestaudio',
+        filter: 'audioonly',
+      });
 
       if (!audioFormat) {
         throw new Error('No audio format available');
@@ -404,11 +423,19 @@ export class ContentExtractController {
     schema: {
       type: 'object',
       properties: {
-        file: { type: 'string', format: 'binary', description: 'Audio file (mp3, wav, m4a, ogg, flac, webm)' },
+        file: {
+          type: 'string',
+          format: 'binary',
+          description: 'Audio file (mp3, wav, m4a, ogg, flac, webm)',
+        },
       },
     },
   })
-  @ApiResponse({ status: 201, description: 'Audio transcribed successfully', type: ExtractAudioResponseDto })
+  @ApiResponse({
+    status: 201,
+    description: 'Audio transcribed successfully',
+    type: ExtractAudioResponseDto,
+  })
   @UseInterceptors(FileInterceptor('file'))
   async extractAudio(@UploadedFile() file: Express.Multer.File): Promise<ExtractAudioResponseDto> {
     if (!file) {

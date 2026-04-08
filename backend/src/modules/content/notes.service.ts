@@ -67,10 +67,7 @@ export class NotesService {
   }
 
   async findById(id: string): Promise<Note | null> {
-    const result = await this.db.queryOne<Note>(
-      'SELECT * FROM notes WHERE id = $1',
-      [id],
-    );
+    const result = await this.db.queryOne<Note>('SELECT * FROM notes WHERE id = $1', [id]);
     return result ? this.mapNote(result) : null;
   }
 
@@ -274,10 +271,7 @@ Return JSON:
           ? JSON.parse(r.source_metadata)
           : (r.source_metadata as Record<string, unknown>)
         : null,
-      tags:
-        typeof r.tags === 'string'
-          ? JSON.parse(r.tags)
-          : (r.tags as string[]) || [],
+      tags: typeof r.tags === 'string' ? JSON.parse(r.tags) : (r.tags as string[]) || [],
       isPinned: r.is_pinned as boolean,
       color: r.color as string | null,
       createdAt: new Date(r.created_at as string),

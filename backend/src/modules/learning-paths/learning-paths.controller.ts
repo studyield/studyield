@@ -1,6 +1,20 @@
-import { Controller, Get, Post, Delete, Body, Param, UseGuards, HttpCode, HttpStatus } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Delete,
+  Body,
+  Param,
+  UseGuards,
+  HttpCode,
+  HttpStatus,
+} from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
-import { LearningPathsService, CreateLearningPathDto, GenerateLearningPathDto } from './learning-paths.service';
+import {
+  LearningPathsService,
+  CreateLearningPathDto,
+  GenerateLearningPathDto,
+} from './learning-paths.service';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
 import { CurrentUser, JwtPayload, PlanFeature } from '../../common';
 
@@ -38,7 +52,11 @@ export class LearningPathsController {
 
   @Post(':id/steps/:stepId/complete')
   @ApiOperation({ summary: 'Mark step as complete' })
-  async completeStep(@CurrentUser() user: JwtPayload, @Param('id') id: string, @Param('stepId') stepId: string) {
+  async completeStep(
+    @CurrentUser() user: JwtPayload,
+    @Param('id') id: string,
+    @Param('stepId') stepId: string,
+  ) {
     return this.learningPathsService.completeStep(id, stepId, user.sub);
   }
 

@@ -125,7 +125,10 @@ export class GenerateNoteDto {
   @IsOptional()
   focusTopics?: string[];
 
-  @ApiPropertyOptional({ description: 'Note style', enum: ['summary', 'detailed', 'outline', 'key_points'] })
+  @ApiPropertyOptional({
+    description: 'Note style',
+    enum: ['summary', 'detailed', 'outline', 'key_points'],
+  })
   @IsString()
   @IsOptional()
   style?: 'summary' | 'detailed' | 'outline' | 'key_points';

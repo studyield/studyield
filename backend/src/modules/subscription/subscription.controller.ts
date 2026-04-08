@@ -19,8 +19,15 @@ export class SubscriptionController {
 
   @Post('checkout')
   @ApiOperation({ summary: 'Create checkout session' })
-  async createCheckout(@CurrentUser() user: JwtPayload, @Body() body: { plan: 'monthly' | 'yearly' }) {
-    const url = await this.subscriptionService.createCheckoutSession(user.sub, user.email, body.plan);
+  async createCheckout(
+    @CurrentUser() user: JwtPayload,
+    @Body() body: { plan: 'monthly' | 'yearly' },
+  ) {
+    const url = await this.subscriptionService.createCheckoutSession(
+      user.sub,
+      user.email,
+      body.plan,
+    );
     return { url };
   }
 

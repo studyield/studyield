@@ -5,7 +5,6 @@ import {
   Delete,
   Body,
   Param,
-  Query,
   UseGuards,
   HttpCode,
   HttpStatus,
@@ -71,12 +70,7 @@ export class KnowledgeBaseController {
     @Param('id') id: string,
     @Body() body: { text: string; metadata?: Record<string, unknown> },
   ) {
-    const chunks = await this.knowledgeBaseService.addText(
-      id,
-      user.sub,
-      body.text,
-      body.metadata,
-    );
+    const chunks = await this.knowledgeBaseService.addText(id, user.sub, body.text, body.metadata);
     return { chunksAdded: chunks };
   }
 

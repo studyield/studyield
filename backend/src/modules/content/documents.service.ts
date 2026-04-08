@@ -71,10 +71,7 @@ export class DocumentsService {
   }
 
   async findById(id: string): Promise<Document | null> {
-    const result = await this.db.queryOne<Document>(
-      'SELECT * FROM documents WHERE id = $1',
-      [id],
-    );
+    const result = await this.db.queryOne<Document>('SELECT * FROM documents WHERE id = $1', [id]);
     return result ? this.mapDocument(result) : null;
   }
 
@@ -97,7 +94,11 @@ export class DocumentsService {
     return results.map((r) => this.mapDocument(r));
   }
 
-  async findByUser(userId: string, page = 1, limit = 20): Promise<{ data: Document[]; total: number }> {
+  async findByUser(
+    userId: string,
+    page = 1,
+    limit = 20,
+  ): Promise<{ data: Document[]; total: number }> {
     const offset = (page - 1) * limit;
 
     const [results, countResult] = await Promise.all([

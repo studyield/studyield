@@ -66,9 +66,7 @@ export class DocumentProcessorService {
       const text = this.cleanText(result.value);
 
       // Extract any warnings/messages as metadata
-      const warnings = result.messages
-        .filter((m) => m.type === 'warning')
-        .map((m) => m.message);
+      const warnings = result.messages.filter((m) => m.type === 'warning').map((m) => m.message);
 
       return {
         text,

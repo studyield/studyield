@@ -7,7 +7,14 @@ import {
   BadRequestException,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiConsumes, ApiBody } from '@nestjs/swagger';
+import {
+  ApiTags,
+  ApiOperation,
+  ApiResponse,
+  ApiBearerAuth,
+  ApiConsumes,
+  ApiBody,
+} from '@nestjs/swagger';
 import { StorageService } from './storage.service';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
 import { CurrentUser, JwtPayload } from '../../common';
@@ -35,10 +42,7 @@ export class StorageController {
   })
   @ApiResponse({ status: 201, description: 'Image uploaded successfully' })
   @UseInterceptors(FileInterceptor('file'))
-  async uploadImage(
-    @CurrentUser() user: JwtPayload,
-    @UploadedFile() file: Express.Multer.File,
-  ) {
+  async uploadImage(@CurrentUser() user: JwtPayload, @UploadedFile() file: Express.Multer.File) {
     if (!file) {
       throw new BadRequestException('File is required');
     }
@@ -55,14 +59,10 @@ export class StorageController {
       );
     }
 
-    const { key, url } = await this.storageService.upload(
-      file.buffer,
-      file.originalname,
-      {
-        contentType: file.mimetype,
-        folder: `images/${user.sub}`,
-      },
-    );
+    const { key, url } = await this.storageService.upload(file.buffer, file.originalname, {
+      contentType: file.mimetype,
+      folder: `images/${user.sub}`,
+    });
 
     return {
       key,

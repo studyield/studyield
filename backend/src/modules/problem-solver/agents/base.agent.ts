@@ -54,7 +54,9 @@ export abstract class BaseAgent {
     };
   }
 
-  async *executeStream(context: AgentContext): AsyncGenerator<{ type: 'chunk' | 'result'; data: unknown }> {
+  async *executeStream(
+    context: AgentContext,
+  ): AsyncGenerator<{ type: 'chunk' | 'result'; data: unknown }> {
     const messages = this.buildMessages(context);
 
     let fullContent = '';
@@ -105,14 +107,15 @@ export abstract class BaseAgent {
 
     for (const char of text) {
       const code = char.codePointAt(0)!;
-      if (code >= 0x0980 && code <= 0x09FF) counts.bengali++;
-      else if (code >= 0x0900 && code <= 0x097F) counts.devanagari++;
-      else if (code >= 0x0600 && code <= 0x06FF) counts.arabic++;
-      else if (code >= 0x0B80 && code <= 0x0BFF) counts.tamil++;
-      else if (code >= 0x0C00 && code <= 0x0C7F) counts.telugu++;
-      else if (code >= 0x0A80 && code <= 0x0AFF) counts.gujarati++;
-      else if (code >= 0x0A00 && code <= 0x0A7F) counts.gurmukhi++;
-      else if ((code >= 0x0041 && code <= 0x007A) || (code >= 0x00C0 && code <= 0x024F)) counts.latin++;
+      if (code >= 0x0980 && code <= 0x09ff) counts.bengali++;
+      else if (code >= 0x0900 && code <= 0x097f) counts.devanagari++;
+      else if (code >= 0x0600 && code <= 0x06ff) counts.arabic++;
+      else if (code >= 0x0b80 && code <= 0x0bff) counts.tamil++;
+      else if (code >= 0x0c00 && code <= 0x0c7f) counts.telugu++;
+      else if (code >= 0x0a80 && code <= 0x0aff) counts.gujarati++;
+      else if (code >= 0x0a00 && code <= 0x0a7f) counts.gurmukhi++;
+      else if ((code >= 0x0041 && code <= 0x007a) || (code >= 0x00c0 && code <= 0x024f))
+        counts.latin++;
     }
 
     const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
@@ -135,13 +138,14 @@ export abstract class BaseAgent {
   protected buildMessages(context: AgentContext): ChatMessage[] {
     const detectedLang = this.detectLanguage(context.problem);
 
-    const messages: ChatMessage[] = [
-      { role: 'system', content: this.systemPrompt },
-    ];
+    const messages: ChatMessage[] = [{ role: 'system', content: this.systemPrompt }];
 
     if (context.previousSteps && context.previousSteps.length > 0) {
       const stepsContext = context.previousSteps
-        .map((step) => `[${step.agent}]\nInput: ${step.input}\nOutput: ${step.output}\nReasoning: ${step.reasoning}`)
+        .map(
+          (step) =>
+            `[${step.agent}]\nInput: ${step.input}\nOutput: ${step.output}\nReasoning: ${step.reasoning}`,
+        )
         .join('\n\n');
 
       messages.push({

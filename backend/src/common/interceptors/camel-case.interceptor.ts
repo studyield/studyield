@@ -1,6 +1,5 @@
 import { Injectable, NestInterceptor, ExecutionContext, CallHandler } from '@nestjs/common';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 
 function snakeToCamel(str: string): string {
   return str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
@@ -10,10 +9,7 @@ function camelToSnake(str: string): string {
   return str.replace(/[A-Z]/g, (letter) => `_${letter.toLowerCase()}`);
 }
 
-function transformKeys(
-  obj: unknown,
-  transformer: (key: string) => string,
-): unknown {
+function transformKeys(obj: unknown, transformer: (key: string) => string): unknown {
   if (obj === null || obj === undefined) {
     return obj;
   }
@@ -41,8 +37,6 @@ function transformKeys(
 @Injectable()
 export class CamelCaseInterceptor implements NestInterceptor {
   intercept(context: ExecutionContext, next: CallHandler): Observable<unknown> {
-    const request = context.switchToHttp().getRequest();
-
     // Don't transform incoming requests - mobile already sends camelCase
     // DTOs expect camelCase, so leave request.body as-is
 

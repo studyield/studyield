@@ -92,10 +92,7 @@ export class EmbeddingService {
     }));
   }
 
-  async embedWithChunking(
-    texts: string[],
-    batchSize = 100,
-  ): Promise<EmbeddingResult[]> {
+  async embedWithChunking(texts: string[], batchSize = 100): Promise<EmbeddingResult[]> {
     const results: EmbeddingResult[] = [];
 
     for (let i = 0; i < texts.length; i += batchSize) {

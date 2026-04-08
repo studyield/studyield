@@ -1,9 +1,4 @@
-import {
-  Injectable,
-  Logger,
-  NotFoundException,
-  ForbiddenException,
-} from '@nestjs/common';
+import { Injectable, Logger, NotFoundException, ForbiddenException } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
 
 export interface BlogPost {
@@ -66,9 +61,7 @@ export class BlogService {
     }
 
     if (search) {
-      conditions.push(
-        `(title ILIKE $${paramIndex} OR excerpt ILIKE $${paramIndex})`,
-      );
+      conditions.push(`(title ILIKE $${paramIndex} OR excerpt ILIKE $${paramIndex})`);
       params.push(`%${search}%`);
       paramIndex++;
     }
@@ -141,10 +134,7 @@ export class BlogService {
 
   // --- Ratings ---
 
-  async getRatingAggregate(
-    postId: string,
-    userId?: string,
-  ): Promise<BlogRatingAggregate> {
+  async getRatingAggregate(postId: string, userId?: string): Promise<BlogRatingAggregate> {
     const [agg, distRows] = await Promise.all([
       this.db.queryOne<{
         avg_rating: string;
@@ -184,11 +174,7 @@ export class BlogService {
     };
   }
 
-  async upsertRating(
-    postId: string,
-    userId: string,
-    rating: number,
-  ): Promise<BlogRatingAggregate> {
+  async upsertRating(postId: string, userId: string, rating: number): Promise<BlogRatingAggregate> {
     await this.db.query(
       `INSERT INTO blog_ratings (blog_post_id, user_id, rating)
        VALUES ($1, $2, $3)
@@ -230,11 +216,7 @@ export class BlogService {
     };
   }
 
-  async createComment(
-    postId: string,
-    userId: string,
-    content: string,
-  ): Promise<BlogComment> {
+  async createComment(postId: string, userId: string, content: string): Promise<BlogComment> {
     const result = await this.db.queryOne<Record<string, unknown>>(
       `WITH inserted AS (
          INSERT INTO blog_comments (blog_post_id, user_id, content)
@@ -294,8 +276,10 @@ export class BlogService {
       publishedAt: new Date(row.published_at as string),
       createdAt: new Date(row.created_at as string),
       updatedAt: new Date(row.updated_at as string),
-      averageRating: row.avg_rating !== undefined ? parseFloat(row.avg_rating as string) : undefined,
-      totalRatings: row.total_ratings !== undefined ? parseInt(row.total_ratings as string, 10) : undefined,
+      averageRating:
+        row.avg_rating !== undefined ? parseFloat(row.avg_rating as string) : undefined,
+      totalRatings:
+        row.total_ratings !== undefined ? parseInt(row.total_ratings as string, 10) : undefined,
     };
   }
 }
