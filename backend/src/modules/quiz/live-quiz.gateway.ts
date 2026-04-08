@@ -14,7 +14,10 @@ import { SubscriptionService } from '../subscription/subscription.service';
 @WebSocketGateway({
   namespace: 'live-quiz',
   cors: {
-    origin: process.env.CORS_ORIGINS?.split(',') || ['http://localhost:3010', 'http://localhost:5189'],
+    origin: process.env.CORS_ORIGINS?.split(',') || [
+      'http://localhost:3010',
+      'http://localhost:5189',
+    ],
     credentials: true,
   },
 })
@@ -44,7 +47,11 @@ export class LiveQuizGateway extends BaseGateway implements OnModuleInit {
       this.liveQuizService.removePlayer(roomCode, user.sub);
       const room = this.liveQuizService.getRoom(roomCode);
       if (room) {
-        this.emitToRoom(`live-quiz:${roomCode}`, 'room:updated', this.liveQuizService.serializeRoom(room));
+        this.emitToRoom(
+          `live-quiz:${roomCode}`,
+          'room:updated',
+          this.liveQuizService.serializeRoom(room),
+        );
       }
     }
   }
@@ -63,7 +70,11 @@ export class LiveQuizGateway extends BaseGateway implements OnModuleInit {
 
     const isPro = await this.subscriptionService.isPro(user.sub);
     if (!isPro) {
-      client.emit('error', { message: 'This feature requires a Pro plan', upgrade: true, feature: 'live_quiz' });
+      client.emit('error', {
+        message: 'This feature requires a Pro plan',
+        upgrade: true,
+        feature: 'live_quiz',
+      });
       return;
     }
 
@@ -148,10 +159,7 @@ export class LiveQuizGateway extends BaseGateway implements OnModuleInit {
   }
 
   @SubscribeMessage('start-game')
-  handleStartGame(
-    @MessageBody() data: { code: string },
-    @ConnectedSocket() client: Socket,
-  ) {
+  handleStartGame(@MessageBody() data: { code: string }, @ConnectedSocket() client: Socket) {
     const user = this.getUserFromSocket(client);
     if (!user) {
       client.emit('error', { message: 'Not authenticated' });
@@ -209,10 +217,7 @@ export class LiveQuizGateway extends BaseGateway implements OnModuleInit {
   }
 
   @SubscribeMessage('leave-room')
-  handleLeaveRoom(
-    @MessageBody() data: { code: string },
-    @ConnectedSocket() client: Socket,
-  ) {
+  handleLeaveRoom(@MessageBody() data: { code: string }, @ConnectedSocket() client: Socket) {
     const user = this.getUserFromSocket(client);
     if (!user) {
       client.emit('error', { message: 'Not authenticated' });
@@ -225,17 +230,18 @@ export class LiveQuizGateway extends BaseGateway implements OnModuleInit {
 
     const room = this.liveQuizService.getRoom(data.code);
     if (room) {
-      this.emitToRoom(`live-quiz:${data.code}`, 'room:updated', this.liveQuizService.serializeRoom(room));
+      this.emitToRoom(
+        `live-quiz:${data.code}`,
+        'room:updated',
+        this.liveQuizService.serializeRoom(room),
+      );
     }
 
     client.emit('room:left', {});
   }
 
   @SubscribeMessage('get-summary')
-  handleGetSummary(
-    @MessageBody() data: { code: string },
-    @ConnectedSocket() client: Socket,
-  ) {
+  handleGetSummary(@MessageBody() data: { code: string }, @ConnectedSocket() client: Socket) {
     const summary = this.liveQuizService.getGameSummary(data.code);
     if (!summary) {
       client.emit('error', { message: 'Game not found' });

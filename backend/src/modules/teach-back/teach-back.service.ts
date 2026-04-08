@@ -1,4 +1,10 @@
-import { Injectable, Logger, NotFoundException, ForbiddenException, BadRequestException } from '@nestjs/common';
+import {
+  Injectable,
+  Logger,
+  NotFoundException,
+  ForbiddenException,
+  BadRequestException,
+} from '@nestjs/common';
 import { v4 as uuidv4 } from 'uuid';
 import { DatabaseService } from '../database/database.service';
 import { AiService } from '../ai/ai.service';
@@ -86,10 +92,10 @@ export class TeachBackService {
     // Set study_set_id if provided (column may not exist on older schemas)
     if (dto.studySetId) {
       try {
-        await this.db.query(
-          `UPDATE teach_back_sessions SET study_set_id = $1 WHERE id = $2`,
-          [dto.studySetId, id],
-        );
+        await this.db.query(`UPDATE teach_back_sessions SET study_set_id = $1 WHERE id = $2`, [
+          dto.studySetId,
+          id,
+        ]);
       } catch (err) {
         this.logger.warn(`study_set_id column not available: ${err}`);
       }
@@ -99,8 +105,12 @@ export class TeachBackService {
     return this.mapSession(result!);
   }
 
-  async submitExplanation(sessionId: string, userId: string, dto: SubmitExplanationDto): Promise<TeachBackSession> {
-    const session = await this.findByIdWithAccess(sessionId, userId);
+  async submitExplanation(
+    sessionId: string,
+    userId: string,
+    dto: SubmitExplanationDto,
+  ): Promise<TeachBackSession> {
+    await this.findByIdWithAccess(sessionId, userId);
 
     await this.db.query(
       `UPDATE teach_back_sessions SET user_explanation = $1, status = 'submitted', updated_at = $2 WHERE id = $3`,
@@ -110,10 +120,10 @@ export class TeachBackService {
     // Set difficulty_level if provided (column may not exist on older schemas)
     if (dto.difficultyLevel) {
       try {
-        await this.db.query(
-          `UPDATE teach_back_sessions SET difficulty_level = $1 WHERE id = $2`,
-          [dto.difficultyLevel, sessionId],
-        );
+        await this.db.query(`UPDATE teach_back_sessions SET difficulty_level = $1 WHERE id = $2`, [
+          dto.difficultyLevel,
+          sessionId,
+        ]);
       } catch (err) {
         this.logger.warn(`difficulty_level column not available`);
       }
@@ -157,7 +167,10 @@ Return in this JSON format:
 
     const evaluation = await this.aiService.completeJson<TeachBackEvaluation>(
       [
-        { role: 'system', content: 'You are an expert educational evaluator using the Feynman Technique.' },
+        {
+          role: 'system',
+          content: 'You are an expert educational evaluator using the Feynman Technique.',
+        },
         { role: 'user', content: evaluationPrompt },
       ],
       { maxTokens: 2048 },
@@ -175,10 +188,10 @@ Return in this JSON format:
 
     // Set xp_awarded (column may not exist on older schemas)
     try {
-      await this.db.query(
-        `UPDATE teach_back_sessions SET xp_awarded = $1 WHERE id = $2`,
-        [xp, sessionId],
-      );
+      await this.db.query(`UPDATE teach_back_sessions SET xp_awarded = $1 WHERE id = $2`, [
+        xp,
+        sessionId,
+      ]);
     } catch (err) {
       this.logger.warn(`xp_awarded column not available`);
     }
@@ -193,12 +206,17 @@ Return in this JSON format:
       this.logger.warn(`Failed to award XP: ${err}`);
     }
 
-    this.logger.log(`Teach-back evaluated: ${sessionId}, score: ${evaluation.overallScore}, xp: ${xp}`);
+    this.logger.log(
+      `Teach-back evaluated: ${sessionId}, score: ${evaluation.overallScore}, xp: ${xp}`,
+    );
     return this.findById(sessionId) as Promise<TeachBackSession>;
   }
 
   async findById(id: string): Promise<TeachBackSession | null> {
-    const result = await this.db.queryOne<TeachBackSession>('SELECT * FROM teach_back_sessions WHERE id = $1', [id]);
+    const result = await this.db.queryOne<TeachBackSession>(
+      'SELECT * FROM teach_back_sessions WHERE id = $1',
+      [id],
+    );
     return result ? this.mapSession(result) : null;
   }
 
@@ -222,8 +240,15 @@ Return in this JSON format:
 
     const essentials = await this.aiService.completeJson<TopicEssentials>(
       [
-        { role: 'system', content: 'You are a study coach preparing a student to explain a topic using the Feynman Technique. Generate a concise primer.' },
-        { role: 'user', content: `Topic: ${session.topic}\n${session.referenceContent ? `Reference:\n${session.referenceContent}\n` : ''}\nReturn JSON:\n{\n  "summary": "1-2 sentence overview",\n  "keyTerms": ["term1", "term2", ...],\n  "commonPitfalls": ["pitfall1", "pitfall2"],\n  "examplePrompt": "A creative way to frame the explanation, e.g. Explain as if teaching a curious 10-year-old"\n}` },
+        {
+          role: 'system',
+          content:
+            'You are a study coach preparing a student to explain a topic using the Feynman Technique. Generate a concise primer.',
+        },
+        {
+          role: 'user',
+          content: `Topic: ${session.topic}\n${session.referenceContent ? `Reference:\n${session.referenceContent}\n` : ''}\nReturn JSON:\n{\n  "summary": "1-2 sentence overview",\n  "keyTerms": ["term1", "term2", ...],\n  "commonPitfalls": ["pitfall1", "pitfall2"],\n  "examplePrompt": "A creative way to frame the explanation, e.g. Explain as if teaching a curious 10-year-old"\n}`,
+        },
       ],
       { maxTokens: 1024 },
     );
@@ -233,7 +258,10 @@ Return in this JSON format:
 
   // ─── "Convince the AI" Challenge Mode ───
 
-  async startChallenge(sessionId: string, userId: string): Promise<{ messages: ChallengeMessage[] }> {
+  async startChallenge(
+    sessionId: string,
+    userId: string,
+  ): Promise<{ messages: ChallengeMessage[] }> {
     const session = await this.findByIdWithAccess(sessionId, userId);
 
     if (!session.userExplanation) {
@@ -267,7 +295,11 @@ Return in this JSON format:
     return { messages };
   }
 
-  async respondToChallenge(sessionId: string, userId: string, dto: ChallengeResponseDto): Promise<{ messages: ChallengeMessage[]; convinced: boolean }> {
+  async respondToChallenge(
+    sessionId: string,
+    userId: string,
+    dto: ChallengeResponseDto,
+  ): Promise<{ messages: ChallengeMessage[]; convinced: boolean }> {
     const session = await this.findByIdWithAccess(sessionId, userId);
     const messages: ChallengeMessage[] = [...(session.challengeMessages || [])];
 
@@ -275,11 +307,15 @@ Return in this JSON format:
 
     // Build conversation history for AI
     const chatHistory = messages.map((m) => ({
-      role: m.role === 'ai' ? 'assistant' as const : 'user' as const,
+      role: m.role === 'ai' ? ('assistant' as const) : ('user' as const),
       content: m.content,
     }));
 
-    const aiResponse = await this.aiService.completeJson<{ response: string; convinced: boolean; reason: string }>(
+    const aiResponse = await this.aiService.completeJson<{
+      response: string;
+      convinced: boolean;
+      reason: string;
+    }>(
       [
         {
           role: 'system',
@@ -298,7 +334,11 @@ Return JSON: { "response": "your reply or next question", "convinced": true/fals
       { maxTokens: 512 },
     );
 
-    messages.push({ role: 'ai', content: aiResponse.response, timestamp: new Date().toISOString() });
+    messages.push({
+      role: 'ai',
+      content: aiResponse.response,
+      timestamp: new Date().toISOString(),
+    });
 
     try {
       await this.db.query(
@@ -347,7 +387,7 @@ Return JSON: { "response": "your reply or next question", "convinced": true/fals
     }
 
     // Build a topic and reference from flashcard content
-    const topic = studySet.title as string || studySet.name as string || 'Study Set Topic';
+    const topic = (studySet.title as string) || (studySet.name as string) || 'Study Set Topic';
     const referenceContent = flashcards
       .map((fc, i) => `${i + 1}. ${fc.front}\n   → ${fc.back}`)
       .join('\n\n');
@@ -376,9 +416,11 @@ Return JSON: { "response": "your reply or next question", "convinced": true/fals
       topic: r.topic as string,
       referenceContent: r.reference_content as string | null,
       userExplanation: r.user_explanation as string | null,
-      evaluation: r.evaluation ? parseJson(r.evaluation) as TeachBackEvaluation : null,
+      evaluation: r.evaluation ? (parseJson(r.evaluation) as TeachBackEvaluation) : null,
       status: r.status as TeachBackSession['status'],
-      challengeMessages: r.challenge_messages ? (parseJson(r.challenge_messages) as ChallengeMessage[]) : [],
+      challengeMessages: r.challenge_messages
+        ? (parseJson(r.challenge_messages) as ChallengeMessage[])
+        : [],
       studySetId: (r.study_set_id as string) || null,
       xpAwarded: (r.xp_awarded as number) || 0,
       createdAt: new Date(r.created_at as string),

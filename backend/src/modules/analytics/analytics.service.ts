@@ -37,22 +37,35 @@ export class AnalyticsService {
     private readonly clickhouse: ClickhouseService,
   ) {}
 
-  async trackEvent(userId: string, eventType: string, metadata?: Record<string, unknown>): Promise<void> {
+  async trackEvent(
+    userId: string,
+    eventType: string,
+    metadata?: Record<string, unknown>,
+  ): Promise<void> {
     await this.clickhouse.trackEvent({ eventType, userId, metadata });
   }
 
   async getUserAnalytics(userId: string): Promise<UserAnalytics> {
     try {
       const [studySets, flashcards, quizzes, quizScores] = await Promise.all([
-        this.db.queryOne<{ count: string }>('SELECT COUNT(*) as count FROM study_sets WHERE user_id = $1', [userId]),
+        this.db.queryOne<{ count: string }>(
+          'SELECT COUNT(*) as count FROM study_sets WHERE user_id = $1',
+          [userId],
+        ),
         this.db.queryOne<{ count: string }>(
           `SELECT COUNT(*) as count FROM flashcards f
            JOIN study_sets s ON f.study_set_id = s.id
            WHERE s.user_id = $1 AND f.last_reviewed_at IS NOT NULL`,
           [userId],
         ),
-        this.db.queryOne<{ count: string }>('SELECT COUNT(*) as count FROM quiz_attempts WHERE user_id = $1', [userId]),
-        this.db.queryOne<{ avg: string }>('SELECT AVG(score) as avg FROM quiz_attempts WHERE user_id = $1', [userId]),
+        this.db.queryOne<{ count: string }>(
+          'SELECT COUNT(*) as count FROM quiz_attempts WHERE user_id = $1',
+          [userId],
+        ),
+        this.db.queryOne<{ avg: string }>(
+          'SELECT AVG(score) as avg FROM quiz_attempts WHERE user_id = $1',
+          [userId],
+        ),
       ]);
 
       let activity: Array<{ date: string; count: number }> = [];
@@ -148,7 +161,10 @@ export class AnalyticsService {
     };
   }
 
-  private calculateStreak(activity: Array<{ date: string; count: number }>): { current: number; longest: number } {
+  private calculateStreak(activity: Array<{ date: string; count: number }>): {
+    current: number;
+    longest: number;
+  } {
     if (activity.length === 0) return { current: 0, longest: 0 };
 
     let current = 0;
@@ -156,7 +172,9 @@ export class AnalyticsService {
     let streak = 0;
     let lastDate: Date | null = null;
 
-    const sortedActivity = [...activity].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    const sortedActivity = [...activity].sort(
+      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
+    );
 
     for (const a of sortedActivity) {
       if (a.count === 0) continue;

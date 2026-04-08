@@ -83,7 +83,9 @@ export class EmailService {
         to,
         cc,
         bcc,
-        from: emailOptions.from || this.configService.get('EMAIL_DEFAULT_FROM', 'noreply@studyield.com'),
+        from:
+          emailOptions.from ||
+          this.configService.get('EMAIL_DEFAULT_FROM', 'noreply@studyield.com'),
         subject: emailOptions.subject,
         status: result.status,
         messageId: result.messageId,
@@ -98,7 +100,10 @@ export class EmailService {
         error: result.error,
       };
     } catch (error) {
-      this.logger.error(`Failed to send email: ${(error as Error).message}`, (error as Error).stack);
+      this.logger.error(
+        `Failed to send email: ${(error as Error).message}`,
+        (error as Error).stack,
+      );
 
       await this.logEmail({
         userId: options.userId,
@@ -184,7 +189,12 @@ export class EmailService {
     return result.success;
   }
 
-  async sendStudyReminderEmail(email: string, name: string, streak: number, userId?: string): Promise<boolean> {
+  async sendStudyReminderEmail(
+    email: string,
+    name: string,
+    streak: number,
+    userId?: string,
+  ): Promise<boolean> {
     const template = this.getStudyReminderTemplate(name, streak);
 
     const result = await this.sendEmail({
@@ -377,7 +387,8 @@ export class EmailService {
   }
 
   private getStudyReminderTemplate(name: string, streak: number): EmailTemplate {
-    const streakText = streak > 0 ? `You have a ${streak}-day streak going!` : 'Start building your streak today!';
+    const streakText =
+      streak > 0 ? `You have a ${streak}-day streak going!` : 'Start building your streak today!';
 
     return {
       subject: "Time to Study - Don't Break Your Streak!",

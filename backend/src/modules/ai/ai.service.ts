@@ -6,7 +6,14 @@
  * to access models from OpenAI, Anthropic, Google, DeepSeek, and more.
  */
 
-import { Injectable, Logger, BadRequestException, OnModuleInit, NotFoundException, ForbiddenException } from '@nestjs/common';
+import {
+  Injectable,
+  Logger,
+  BadRequestException,
+  OnModuleInit,
+  NotFoundException,
+  ForbiddenException,
+} from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import OpenAI from 'openai';
 import { DatabaseService } from '../database/database.service';
@@ -109,7 +116,9 @@ export class AiService implements OnModuleInit {
       return this.openaiClient;
     }
 
-    throw new BadRequestException('No AI API key configured. Set OPENROUTER_API_KEY or OPENAI_API_KEY in .env file.');
+    throw new BadRequestException(
+      'No AI API key configured. Set OPENROUTER_API_KEY or OPENAI_API_KEY in .env file.',
+    );
   }
 
   private getModel(type: 'text' | 'vision' = 'text'): string {
@@ -154,8 +163,9 @@ export class AiService implements OnModuleInit {
           totalTokens: response.usage?.total_tokens || 0,
         },
       };
-    } catch (error: any) {
-      this.logger.error(`AI completion failed: ${error.message}`);
+    } catch (error: unknown) {
+      const err = error as Error;
+      this.logger.error(`AI completion failed: ${err.message}`);
 
       // Try fallback to direct OpenAI if OpenRouter fails
       if (this.openRouterClient && this.openaiClient) {
@@ -163,7 +173,8 @@ export class AiService implements OnModuleInit {
         return this.completeFallback(messages, options);
       }
 
-      throw new BadRequestException(`AI completion failed: ${error.message}`);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      throw new BadRequestException(`AI completion failed: ${errorMessage}`);
     }
   }
 
@@ -240,10 +251,7 @@ export class AiService implements OnModuleInit {
     }
   }
 
-  async completeJson<T>(
-    messages: ChatMessage[],
-    options: CompletionOptions = {},
-  ): Promise<T> {
+  async completeJson<T>(messages: ChatMessage[], options: CompletionOptions = {}): Promise<T> {
     const response = await this.complete(messages, {
       ...options,
       responseFormat: { type: 'json_object' },
@@ -344,12 +352,15 @@ export class AiService implements OnModuleInit {
 
       return {
         text: response.text,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         duration: (response as any).duration,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         language: (response as any).language,
       };
-    } catch (error: any) {
-      this.logger.error(`Audio transcription failed: ${error.message}`);
-      throw new BadRequestException(`Audio transcription failed: ${error.message}`);
+    } catch (error: unknown) {
+      const err = error as Error;
+      this.logger.error(`Audio transcription failed: ${err.message}`);
+      throw new BadRequestException(`Audio transcription failed: ${err.message}`);
     }
   }
 
@@ -375,7 +386,7 @@ export class AiService implements OnModuleInit {
     userId: string;
     title: string;
     content: string;
-    mindMapData: any;
+    mindMapData: unknown;
     studySetId?: string;
     noteId?: string;
   }) {
@@ -409,25 +420,23 @@ export class AiService implements OnModuleInit {
       [userId],
     );
 
-    return results.map((r: any) => ({
-      id: r.id,
-      title: r.title,
-      studySetId: r.study_set_id,
-      noteId: r.note_id,
-      createdAt: r.created_at,
+    return results.map((r) => ({
+      id: (r as { id: string }).id,
+      title: (r as { title: string }).title,
+      studySetId: (r as { study_set_id: string | null }).study_set_id,
+      noteId: (r as { note_id: string | null }).note_id,
+      createdAt: (r as { created_at: Date }).created_at,
     }));
   }
 
   async getMindMapById(id: string, userId: string) {
-    const result = await this.db.queryOne(
-      `SELECT * FROM mind_maps WHERE id = $1`,
-      [id],
-    );
+    const result = await this.db.queryOne(`SELECT * FROM mind_maps WHERE id = $1`, [id]);
 
     if (!result) {
       throw new NotFoundException('Mind map not found');
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const r = result as any;
     if (r.user_id !== userId) {
       throw new ForbiddenException('Access denied');
@@ -437,9 +446,8 @@ export class AiService implements OnModuleInit {
       id: r.id,
       title: r.title,
       contentSnapshot: r.content_snapshot,
-      mindMapData: typeof r.mind_map_data === 'string'
-        ? JSON.parse(r.mind_map_data)
-        : r.mind_map_data,
+      mindMapData:
+        typeof r.mind_map_data === 'string' ? JSON.parse(r.mind_map_data) : r.mind_map_data,
       studySetId: r.study_set_id,
       noteId: r.note_id,
       createdAt: r.created_at,

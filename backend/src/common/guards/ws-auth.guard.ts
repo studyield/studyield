@@ -33,7 +33,9 @@ export class WsAuthGuard implements CanActivate {
       client.data.user = payload;
       return true;
     } catch (error) {
-      this.logger.error(`Token verification failed for client ${client.id}: ${(error as Error).message}`);
+      this.logger.error(
+        `Token verification failed for client ${client.id}: ${(error as Error).message}`,
+      );
 
       throw new WsException('Invalid token');
     }
@@ -43,7 +45,9 @@ export class WsAuthGuard implements CanActivate {
     const authToken = client.handshake.auth?.token;
     const authHeader = client.handshake.headers?.authorization;
 
-    this.logger.debug(`extractToken - auth.token: ${authToken ? 'present' : 'missing'}, authorization header: ${authHeader ? 'present' : 'missing'}`);
+    this.logger.debug(
+      `extractToken - auth.token: ${authToken ? 'present' : 'missing'}, authorization header: ${authHeader ? 'present' : 'missing'}`,
+    );
 
     const auth = authToken || authHeader;
     if (!auth) return null;

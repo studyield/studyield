@@ -1,4 +1,10 @@
-import { Injectable, Logger, NotFoundException, BadRequestException, ForbiddenException, OnModuleInit } from '@nestjs/common';
+import {
+  Injectable,
+  Logger,
+  BadRequestException,
+  ForbiddenException,
+  OnModuleInit,
+} from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import Stripe from 'stripe';
 import { v4 as uuidv4 } from 'uuid';
@@ -28,8 +34,18 @@ export interface UsageRecord {
 
 const PLAN_LIMITS = {
   free: { ai_requests: 10, study_sets: 3, flashcards: 50, storage_bytes: 50 * 1024 * 1024 },
-  monthly: { ai_requests: -1, study_sets: -1, flashcards: -1, storage_bytes: 10 * 1024 * 1024 * 1024 },
-  yearly: { ai_requests: -1, study_sets: -1, flashcards: -1, storage_bytes: 10 * 1024 * 1024 * 1024 },
+  monthly: {
+    ai_requests: -1,
+    study_sets: -1,
+    flashcards: -1,
+    storage_bytes: 10 * 1024 * 1024 * 1024,
+  },
+  yearly: {
+    ai_requests: -1,
+    study_sets: -1,
+    flashcards: -1,
+    storage_bytes: 10 * 1024 * 1024 * 1024,
+  },
 };
 
 @Injectable()
@@ -44,7 +60,9 @@ export class SubscriptionService implements OnModuleInit {
     private readonly db: DatabaseService,
   ) {
     const secretKey = this.configService.get<string>('STRIPE_SECRET_KEY');
-    this.stripe = new Stripe(secretKey || '', { apiVersion: '2024-12-18.acacia' as Stripe.LatestApiVersion });
+    this.stripe = new Stripe(secretKey || '', {
+      apiVersion: '2024-12-18.acacia' as Stripe.LatestApiVersion,
+    });
     this.monthlyPriceId = this.configService.get<string>('STRIPE_PRICE_ID_MONTHLY', '');
     this.yearlyPriceId = this.configService.get<string>('STRIPE_PRICE_ID_YEARLY', '');
   }
@@ -94,7 +112,9 @@ export class SubscriptionService implements OnModuleInit {
           const customer = await this.stripe.customers.create({ email, metadata: { userId } });
           customerId = customer.id;
         } catch (err) {
-          this.logger.warn(`Stripe customer creation failed, using local ID: ${(err as Error).message}`);
+          this.logger.warn(
+            `Stripe customer creation failed, using local ID: ${(err as Error).message}`,
+          );
         }
       }
 
@@ -107,7 +127,9 @@ export class SubscriptionService implements OnModuleInit {
           [id, userId, customerId, new Date(), new Date()],
         );
       } catch (err) {
-        this.logger.warn(`Subscription insert failed (may already exist): ${(err as Error).message}`);
+        this.logger.warn(
+          `Subscription insert failed (may already exist): ${(err as Error).message}`,
+        );
       }
 
       subscription = await this.findByUserId(userId);
@@ -116,21 +138,28 @@ export class SubscriptionService implements OnModuleInit {
     return subscription!;
   }
 
-  async createCheckoutSession(userId: string, email: string, plan: 'monthly' | 'yearly'): Promise<string> {
+  async createCheckoutSession(
+    userId: string,
+    email: string,
+    plan: 'monthly' | 'yearly',
+  ): Promise<string> {
     const subscription = await this.getOrCreateSubscription(userId, email);
 
     const secretKey = this.configService.get<string>('STRIPE_SECRET_KEY');
     const priceId = plan === 'monthly' ? this.monthlyPriceId : this.yearlyPriceId;
 
     // Check if Stripe is properly configured (not placeholder values)
-    const isPlaceholder = !secretKey ||
-                         secretKey.includes('your-') ||
-                         !priceId ||
-                         priceId.includes('_id') ||
-                         priceId.length < 20;
+    const isPlaceholder =
+      !secretKey ||
+      secretKey.includes('your-') ||
+      !priceId ||
+      priceId.includes('_id') ||
+      priceId.length < 20;
 
     if (isPlaceholder) {
-      throw new BadRequestException('Payment system is not configured yet. All features are currently free!');
+      throw new BadRequestException(
+        'Payment system is not configured yet. All features are currently free!',
+      );
     }
 
     // Verify customer exists in Stripe, recreate if needed
@@ -195,7 +224,9 @@ export class SubscriptionService implements OnModuleInit {
 
     const secretKey = this.configService.get<string>('STRIPE_SECRET_KEY');
     if (!secretKey) {
-      throw new BadRequestException('Payment system is not configured yet. All features are currently free!');
+      throw new BadRequestException(
+        'Payment system is not configured yet. All features are currently free!',
+      );
     }
 
     // If customer ID is a local fallback, create a real Stripe customer first
@@ -224,9 +255,12 @@ export class SubscriptionService implements OnModuleInit {
 
   async cancelSubscription(userId: string): Promise<void> {
     const subscription = await this.findByUserId(userId);
-    if (!subscription?.stripeSubscriptionId) throw new BadRequestException('No active subscription');
+    if (!subscription?.stripeSubscriptionId)
+      throw new BadRequestException('No active subscription');
 
-    await this.stripe.subscriptions.update(subscription.stripeSubscriptionId, { cancel_at_period_end: true });
+    await this.stripe.subscriptions.update(subscription.stripeSubscriptionId, {
+      cancel_at_period_end: true,
+    });
 
     await this.db.query(
       `UPDATE subscriptions SET cancel_at_period_end = true, updated_at = $1 WHERE user_id = $2`,
@@ -255,7 +289,10 @@ export class SubscriptionService implements OnModuleInit {
     }
   }
 
-  async checkUsage(userId: string, feature: string): Promise<{ allowed: boolean; remaining: number }> {
+  async checkUsage(
+    userId: string,
+    feature: string,
+  ): Promise<{ allowed: boolean; remaining: number }> {
     const subscription = await this.findByUserId(userId);
     const plan = subscription?.plan || 'free';
     const limit = PLAN_LIMITS[plan][feature as keyof (typeof PLAN_LIMITS)['free']] || 0;
@@ -342,13 +379,21 @@ export class SubscriptionService implements OnModuleInit {
     }
 
     return {
-      status: (paymentStatus === 'paid' || paymentStatus === 'no_payment_required') ? 'success' : paymentStatus === 'unpaid' ? 'pending' : paymentStatus,
+      status:
+        paymentStatus === 'paid' || paymentStatus === 'no_payment_required'
+          ? 'success'
+          : paymentStatus === 'unpaid'
+            ? 'pending'
+            : paymentStatus,
       plan,
     };
   }
 
   async findByUserId(userId: string): Promise<Subscription | null> {
-    const result = await this.db.queryOne<Subscription>('SELECT * FROM subscriptions WHERE user_id = $1', [userId]);
+    const result = await this.db.queryOne<Subscription>(
+      'SELECT * FROM subscriptions WHERE user_id = $1',
+      [userId],
+    );
     return result ? this.mapSubscription(result) : null;
   }
 
@@ -365,7 +410,9 @@ export class SubscriptionService implements OnModuleInit {
     const plan = session.metadata?.plan as 'monthly' | 'yearly';
     if (!userId) return;
 
-    const stripeSubscription = await this.stripe.subscriptions.retrieve(session.subscription as string);
+    const stripeSubscription = await this.stripe.subscriptions.retrieve(
+      session.subscription as string,
+    );
 
     await this.db.query(
       `UPDATE subscriptions SET
@@ -392,7 +439,12 @@ export class SubscriptionService implements OnModuleInit {
 
   private async syncSubscription(stripeSubscription: Stripe.Subscription): Promise<void> {
     const stripeStatus = stripeSubscription.status;
-    const status = (stripeStatus === 'active' || stripeStatus === 'trialing') ? 'active' : stripeStatus === 'canceled' ? 'canceled' : 'past_due';
+    const status =
+      stripeStatus === 'active' || stripeStatus === 'trialing'
+        ? 'active'
+        : stripeStatus === 'canceled'
+          ? 'canceled'
+          : 'past_due';
 
     await this.db.query(
       `UPDATE subscriptions SET
@@ -431,7 +483,9 @@ export class SubscriptionService implements OnModuleInit {
       stripeSubscriptionId: r.stripe_subscription_id as string | null,
       plan: r.plan as Subscription['plan'],
       status: r.status as Subscription['status'],
-      currentPeriodStart: r.current_period_start ? new Date(r.current_period_start as string) : null,
+      currentPeriodStart: r.current_period_start
+        ? new Date(r.current_period_start as string)
+        : null,
       currentPeriodEnd: r.current_period_end ? new Date(r.current_period_end as string) : null,
       cancelAtPeriodEnd: r.cancel_at_period_end as boolean,
       createdAt: new Date(r.created_at as string),

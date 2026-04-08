@@ -117,7 +117,10 @@ export class CodeSandboxService {
     }
   }
 
-  async *executeStream(userId: string, dto: ExecuteCodeDto): AsyncGenerator<{ type: 'output' | 'error' | 'done'; data: string }> {
+  async *executeStream(
+    userId: string,
+    dto: ExecuteCodeDto,
+  ): AsyncGenerator<{ type: 'output' | 'error' | 'done'; data: string }> {
     const language = dto.language || 'python';
     const timeout = dto.timeout || this.defaultTimeout;
 

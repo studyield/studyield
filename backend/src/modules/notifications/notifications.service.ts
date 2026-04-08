@@ -63,10 +63,13 @@ export class NotificationsService {
       id,
       link: dto.link || null,
       createdAt: new Date().toISOString(),
-    } as any);
+    });
 
     // Send push notification
-    await this.sendPushNotification(dto.userId, dto.title, dto.message, { notificationId: id, type: dto.type });
+    await this.sendPushNotification(dto.userId, dto.title, dto.message, {
+      notificationId: id,
+      type: dto.type,
+    });
 
     this.logger.debug(`Notification created for user ${dto.userId}: ${dto.title}`);
     return this.mapNotification(result!);
@@ -78,7 +81,11 @@ export class NotificationsService {
     }
   }
 
-  async getByUser(userId: string, page = 1, limit = 20): Promise<{ data: Notification[]; total: number; unreadCount: number }> {
+  async getByUser(
+    userId: string,
+    page = 1,
+    limit = 20,
+  ): Promise<{ data: Notification[]; total: number; unreadCount: number }> {
     const offset = (page - 1) * limit;
 
     const [results, countResult, unreadResult] = await Promise.all([
@@ -86,8 +93,14 @@ export class NotificationsService {
         'SELECT * FROM notifications WHERE user_id = $1 ORDER BY created_at DESC LIMIT $2 OFFSET $3',
         [userId, limit, offset],
       ),
-      this.db.queryOne<{ count: string }>('SELECT COUNT(*) as count FROM notifications WHERE user_id = $1', [userId]),
-      this.db.queryOne<{ count: string }>('SELECT COUNT(*) as count FROM notifications WHERE user_id = $1 AND is_read = false', [userId]),
+      this.db.queryOne<{ count: string }>(
+        'SELECT COUNT(*) as count FROM notifications WHERE user_id = $1',
+        [userId],
+      ),
+      this.db.queryOne<{ count: string }>(
+        'SELECT COUNT(*) as count FROM notifications WHERE user_id = $1 AND is_read = false',
+        [userId],
+      ),
     ]);
 
     return {
@@ -98,11 +111,17 @@ export class NotificationsService {
   }
 
   async markAsRead(id: string, userId: string): Promise<void> {
-    await this.db.query('UPDATE notifications SET is_read = true WHERE id = $1 AND user_id = $2', [id, userId]);
+    await this.db.query('UPDATE notifications SET is_read = true WHERE id = $1 AND user_id = $2', [
+      id,
+      userId,
+    ]);
   }
 
   async markAllAsRead(userId: string): Promise<void> {
-    await this.db.query('UPDATE notifications SET is_read = true WHERE user_id = $1 AND is_read = false', [userId]);
+    await this.db.query(
+      'UPDATE notifications SET is_read = true WHERE user_id = $1 AND is_read = false',
+      [userId],
+    );
   }
 
   async delete(id: string, userId: string): Promise<void> {
@@ -120,7 +139,11 @@ export class NotificationsService {
     );
 
     const prefs = result as unknown as Record<string, unknown>;
-    const preferences = prefs?.preferences ? (typeof prefs.preferences === 'string' ? JSON.parse(prefs.preferences) : prefs.preferences) : {};
+    const preferences = prefs?.preferences
+      ? typeof prefs.preferences === 'string'
+        ? JSON.parse(prefs.preferences)
+        : prefs.preferences
+      : {};
 
     return {
       email: preferences.notifications?.email ?? true,
@@ -132,7 +155,10 @@ export class NotificationsService {
     };
   }
 
-  async updatePreferences(userId: string, prefs: Partial<NotificationPreferences>): Promise<NotificationPreferences> {
+  async updatePreferences(
+    userId: string,
+    prefs: Partial<NotificationPreferences>,
+  ): Promise<NotificationPreferences> {
     const current = await this.getPreferences(userId);
     const updated = { ...current, ...prefs };
 
@@ -148,7 +174,7 @@ export class NotificationsService {
     await this.create({
       userId,
       type: 'reminder',
-      title: "Time to study!",
+      title: 'Time to study!',
       message: "Don't break your streak! Review some flashcards today.",
       link: '/study',
     });
@@ -195,7 +221,10 @@ export class NotificationsService {
 
   async unregisterFCMToken(userId: string, fcmToken: string): Promise<void> {
     try {
-      await this.db.query('DELETE FROM user_fcm_tokens WHERE user_id = $1 AND fcm_token = $2', [userId, fcmToken]);
+      await this.db.query('DELETE FROM user_fcm_tokens WHERE user_id = $1 AND fcm_token = $2', [
+        userId,
+        fcmToken,
+      ]);
       this.logger.debug(`FCM token unregistered for user ${userId}`);
     } catch (error) {
       this.logger.error(`Error unregistering FCM token: ${error.message}`);
@@ -215,7 +244,12 @@ export class NotificationsService {
     }
   }
 
-  async sendPushNotification(userId: string, title: string, body: string, data?: Record<string, string>): Promise<void> {
+  async sendPushNotification(
+    userId: string,
+    title: string,
+    body: string,
+    data?: Record<string, string>,
+  ): Promise<void> {
     try {
       // Get user's notification preferences
       const prefs = await this.getPreferences(userId);
@@ -233,7 +267,9 @@ export class NotificationsService {
 
       // Send push notification to all user's devices
       const successCount = await this.firebase.sendToMultipleDevices(tokens, title, body, data);
-      this.logger.debug(`Sent push notification to ${successCount}/${tokens.length} devices for user ${userId}`);
+      this.logger.debug(
+        `Sent push notification to ${successCount}/${tokens.length} devices for user ${userId}`,
+      );
     } catch (error) {
       this.logger.error(`Error sending push notification: ${error.message}`);
     }

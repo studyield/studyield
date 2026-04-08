@@ -20,7 +20,11 @@ export class CodeSandboxController {
 
   @Post('execute/stream')
   @ApiOperation({ summary: 'Execute code with streaming output' })
-  async executeStream(@CurrentUser() user: JwtPayload, @Body() dto: ExecuteCodeDto, @Res() res: Response) {
+  async executeStream(
+    @CurrentUser() user: JwtPayload,
+    @Body() dto: ExecuteCodeDto,
+    @Res() res: Response,
+  ) {
     res.setHeader('Content-Type', 'text/event-stream');
     res.setHeader('Cache-Control', 'no-cache');
     res.setHeader('Connection', 'keep-alive');

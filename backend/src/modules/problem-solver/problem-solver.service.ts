@@ -55,7 +55,9 @@ export class ProblemSolverService {
   // CORE: Create & Solve
   // ═══════════════════════════════════════════
 
-  async extractTextFromImage(file: Express.Multer.File): Promise<{ text: string; confidence: number }> {
+  async extractTextFromImage(
+    file: Express.Multer.File,
+  ): Promise<{ text: string; confidence: number }> {
     try {
       this.logger.log('Extracting text from image using AI vision...');
 
@@ -180,8 +182,11 @@ Return ONLY the extracted text exactly as shown in the image, preserving the ori
       };
       await this.saveStep(sessionId, 'verification', verifierStep);
 
-      const finalAnswer = verifierResult.metadata?.finalAnswer as string || solverResult.metadata?.finalAnswer as string || 'See solution';
-      const isCorrect = verifierResult.metadata?.isCorrect as boolean ?? true;
+      const finalAnswer =
+        (verifierResult.metadata?.finalAnswer as string) ||
+        (solverResult.metadata?.finalAnswer as string) ||
+        'See solution';
+      const isCorrect = (verifierResult.metadata?.isCorrect as boolean) ?? true;
 
       await this.db.query(
         `UPDATE problem_solving_sessions
@@ -296,8 +301,11 @@ Return ONLY the extracted text exactly as shown in the image, preserving the ori
       };
       await this.saveStep(sessionId, 'verification', verifierStep);
 
-      const finalAnswer = verifierResult.metadata?.finalAnswer as string || solverResult.metadata?.finalAnswer as string || 'See solution';
-      const isCorrect = verifierResult.metadata?.isCorrect as boolean ?? true;
+      const finalAnswer =
+        (verifierResult.metadata?.finalAnswer as string) ||
+        (solverResult.metadata?.finalAnswer as string) ||
+        'See solution';
+      const isCorrect = (verifierResult.metadata?.isCorrect as boolean) ?? true;
 
       await this.db.query(
         `UPDATE problem_solving_sessions
@@ -334,10 +342,10 @@ Return ONLY the extracted text exactly as shown in the image, preserving the ori
   }
 
   async removeBookmark(sessionId: string, userId: string) {
-    await this.db.query(
-      'DELETE FROM solution_bookmarks WHERE session_id = $1 AND user_id = $2',
-      [sessionId, userId],
-    );
+    await this.db.query('DELETE FROM solution_bookmarks WHERE session_id = $1 AND user_id = $2', [
+      sessionId,
+      userId,
+    ]);
   }
 
   async getBookmarks(userId: string) {
@@ -447,23 +455,32 @@ Return ONLY the extracted text exactly as shown in the image, preserving the ori
     const context: AgentContext = {
       problem: session.problem,
       subject: session.subject || undefined,
-      previousSteps: session.solutionResult ? [{
-        agent: 'Solver',
-        input: session.problem,
-        output: originalMethod,
-        confidence: 1,
-        reasoning: 'Original solution method',
-        timestamp: new Date(),
-      }] : [],
+      previousSteps: session.solutionResult
+        ? [
+            {
+              agent: 'Solver',
+              input: session.problem,
+              output: originalMethod,
+              confidence: 1,
+              reasoning: 'Original solution method',
+              timestamp: new Date(),
+            },
+          ]
+        : [],
       additionalContext: `[DETECTED LANGUAGE: ${detectedLang}] — Write in ${detectedLang}.\nProvide 2 DIFFERENT alternative methods to solve this problem. Each method must be different from the original.`,
     };
 
     // Generate 2 alternative methods
-    const methods: Array<{ id: string; methodName: string; methodDescription: string; solutionSteps: unknown }> = [];
+    const methods: Array<{
+      id: string;
+      methodName: string;
+      methodDescription: string;
+      solutionSteps: unknown;
+    }> = [];
 
     for (let i = 0; i < 2; i++) {
       if (i > 0) {
-        context.additionalContext = `[DETECTED LANGUAGE: ${detectedLang}] — Write in ${detectedLang}.\nProvide yet another DIFFERENT method. Already used: ${methods.map(m => m.methodName).join(', ')}. Use a completely different approach.`;
+        context.additionalContext = `[DETECTED LANGUAGE: ${detectedLang}] — Write in ${detectedLang}.\nProvide yet another DIFFERENT method. Already used: ${methods.map((m) => m.methodName).join(', ')}. Use a completely different approach.`;
       }
 
       const result = await this.alternativeMethodAgent.execute(context);
@@ -474,10 +491,22 @@ Return ONLY the extracted text exactly as shown in the image, preserving the ori
       await this.db.query(
         `INSERT INTO solution_alternative_methods (id, session_id, method_name, method_description, solution_steps, created_at)
          VALUES ($1, $2, $3, $4, $5, $6)`,
-        [id, sessionId, methodName, methodDesc, JSON.stringify({ output: result.output, metadata: result.metadata }), new Date()],
+        [
+          id,
+          sessionId,
+          methodName,
+          methodDesc,
+          JSON.stringify({ output: result.output, metadata: result.metadata }),
+          new Date(),
+        ],
       );
 
-      methods.push({ id, methodName, methodDescription: methodDesc, solutionSteps: { output: result.output, metadata: result.metadata } });
+      methods.push({
+        id,
+        methodName,
+        methodDescription: methodDesc,
+        solutionSteps: { output: result.output, metadata: result.metadata },
+      });
     }
 
     return methods;
@@ -536,7 +565,9 @@ CRITICAL LaTeX Formatting Rules:
         difficulty: string;
       }>;
     }>([
-      { role: 'system', content: `You are a quiz generator. Create practice questions in JSON format. Write all text in ${detectedLang}.
+      {
+        role: 'system',
+        content: `You are a quiz generator. Create practice questions in JSON format. Write all text in ${detectedLang}.
 
 CRITICAL: When writing LaTeX in JSON strings, you MUST use double backslashes:
 - Correct: "\\\\frac{1}{2}", "\\\\tan(x)", "\\\\sin(x)"
@@ -551,7 +582,8 @@ EXPLANATION GUIDELINES:
 
 2. For true/false: Clearly state why the statement is true or false
 3. For MCQ: Explain why the correct answer is right
-4. Be complete but concise - connect the answer to the question explicitly` },
+4. Be complete but concise - connect the answer to the question explicitly`,
+      },
       { role: 'user', content: prompt },
     ]);
 
@@ -564,9 +596,7 @@ EXPLANATION GUIDELINES:
       let fixed = text;
 
       // First, fix cases where \t became a tab character (shows as spaces) - e.g., "\tan" -> "  an"
-      fixed = fixed
-        .replace(/\s+an\(/gi, ' \\tan(')
-        .replace(/\s+ext\{/gi, ' \\text{');
+      fixed = fixed.replace(/\s+an\(/gi, ' \\tan(').replace(/\s+ext\{/gi, ' \\text{');
 
       // Fix cases where backslash was simply removed or is missing
       fixed = fixed
@@ -583,7 +613,8 @@ EXPLANATION GUIDELINES:
 
       // Wrap isolated LaTeX commands in $ delimiters if not already wrapped
       // Match LaTeX commands that are not already inside $...$
-      const latexPattern = /(?<!\$)\\(sin|cos|tan|sec|csc|cot|frac|sqrt|log|ln)\s*\([^)]*\)|\\(sin|cos|tan|sec|csc|cot)\^?\d*\([^)]*\)/g;
+      const latexPattern =
+        /(?<!\$)\\(sin|cos|tan|sec|csc|cot|frac|sqrt|log|ln)\s*\([^)]*\)|\\(sin|cos|tan|sec|csc|cot)\^?\d*\([^)]*\)/g;
       fixed = fixed.replace(latexPattern, (match) => {
         // Check if already in $...$
         const beforeMatch = fixed.substring(0, fixed.indexOf(match));
@@ -602,14 +633,25 @@ EXPLANATION GUIDELINES:
 
       // Sanitize LaTeX in all text fields
       const sanitizedQuestion = fixLatex(q.question);
-      const sanitizedOptions = (q.options || []).map(opt => fixLatex(opt));
+      const sanitizedOptions = (q.options || []).map((opt) => fixLatex(opt));
       const sanitizedCorrectAnswer = fixLatex(q.correctAnswer);
       const sanitizedExplanation = fixLatex(q.explanation);
 
       await this.db.query(
         `INSERT INTO practice_quiz_questions (id, session_id, user_id, question, question_type, options, correct_answer, explanation, difficulty, created_at)
          VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)`,
-        [id, sessionId, userId, sanitizedQuestion, q.questionType || 'mcq', JSON.stringify(sanitizedOptions), sanitizedCorrectAnswer, sanitizedExplanation, q.difficulty || 'medium', new Date()],
+        [
+          id,
+          sessionId,
+          userId,
+          sanitizedQuestion,
+          q.questionType || 'mcq',
+          JSON.stringify(sanitizedOptions),
+          sanitizedCorrectAnswer,
+          sanitizedExplanation,
+          q.difficulty || 'medium',
+          new Date(),
+        ],
       );
       savedQuestions.push({
         id,
@@ -632,7 +674,8 @@ EXPLANATION GUIDELINES:
     );
     if (!q) throw new NotFoundException('Question not found');
 
-    const isCorrect = (q.correct_answer as string).trim().toLowerCase() === answer.trim().toLowerCase();
+    const isCorrect =
+      (q.correct_answer as string).trim().toLowerCase() === answer.trim().toLowerCase();
 
     await this.db.query(
       'UPDATE practice_quiz_questions SET user_answer = $1, is_correct = $2, answered_at = $3 WHERE id = $4',
@@ -675,9 +718,12 @@ EXPLANATION GUIDELINES:
 
     const levelDescriptions: Record<string, string> = {
       eli5: 'Explain like the student is 5 years old. Use very simple words, everyday analogies, and no technical jargon at all.',
-      beginner: 'Explain for a complete beginner. Use simple language, basic analogies, and define any technical terms.',
-      intermediate: 'Explain at a standard high school level. Use proper terminology with clear explanations.',
-      advanced: 'Explain at a university/expert level. Use formal mathematical notation and rigorous proofs where applicable.',
+      beginner:
+        'Explain for a complete beginner. Use simple language, basic analogies, and define any technical terms.',
+      intermediate:
+        'Explain at a standard high school level. Use proper terminology with clear explanations.',
+      advanced:
+        'Explain at a university/expert level. Use formal mathematical notation and rigorous proofs where applicable.',
     };
 
     const prompt = `[DETECTED LANGUAGE: ${detectedLang}] — Write in ${detectedLang}.
@@ -691,7 +737,10 @@ ${levelDescriptions[level] || levelDescriptions.intermediate}
 Re-explain the entire solution at this complexity level. Use LaTeX ($...$) for any math.`;
 
     const response = await this.aiService.complete([
-      { role: 'system', content: `You are an expert tutor who adapts explanations to different levels. Write in ${detectedLang}.` },
+      {
+        role: 'system',
+        content: `You are an expert tutor who adapts explanations to different levels. Write in ${detectedLang}.`,
+      },
       { role: 'user', content: prompt },
     ]);
 
@@ -739,7 +788,10 @@ Return a JSON object:
       nextConcepts: Array<{ name: string; description: string; difficulty: string }>;
       relatedConcepts: Array<{ name: string; description: string; relationship: string }>;
     }>([
-      { role: 'system', content: `You are an education expert. Generate concept maps in JSON. Write in ${detectedLang}.` },
+      {
+        role: 'system',
+        content: `You are an education expert. Generate concept maps in JSON. Write in ${detectedLang}.`,
+      },
       { role: 'user', content: prompt },
     ]);
 
@@ -775,7 +827,10 @@ Return a JSON array:
     const result = await this.aiService.completeJson<
       Array<{ front: string; back: string; category: string; subject: string }>
     >([
-      { role: 'system', content: `You are an education expert. Extract formulas and concepts as flashcards. Write in ${detectedLang}.` },
+      {
+        role: 'system',
+        content: `You are an education expert. Extract formulas and concepts as flashcards. Write in ${detectedLang}.`,
+      },
       { role: 'user', content: prompt },
     ]);
 
@@ -792,7 +847,9 @@ Return a JSON array:
     // Check if already cached
     if (session.graphData) {
       // If cached data has points, return it
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const cached = session.graphData as any;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       if (cached.functions && cached.functions.some((f: any) => f.points && f.points.length > 0)) {
         return cached;
       }
@@ -837,7 +894,11 @@ The "expression" must use standard math notation: use * for multiplication, ^ fo
       specialPoints: Array<{ x: number; y: number; label: string }>;
       gridLines: boolean;
     }>([
-      { role: 'system', content: 'You are a math visualization expert. Extract plottable functions from problems. Return JSON.' },
+      {
+        role: 'system',
+        content:
+          'You are a math visualization expert. Extract plottable functions from problems. Return JSON.',
+      },
       { role: 'user', content: prompt },
     ]);
 
@@ -907,8 +968,8 @@ The "expression" must use standard math notation: use * for multiplication, ^ fo
           // Skip invalid points (NaN, Infinity, undefined)
           if (typeof y === 'number' && isFinite(y)) {
             points.push({
-              x: Math.round(x * 10000) / 10000,  // Round to 4 decimal places
-              y: Math.round(y * 10000) / 10000
+              x: Math.round(x * 10000) / 10000, // Round to 4 decimal places
+              y: Math.round(y * 10000) / 10000,
             });
           }
         } catch (e) {
@@ -940,7 +1001,11 @@ Return a JSON array of strings, each being one complete problem:
 ["problem 1 text", "problem 2 text", ...]`;
 
     const result = await this.aiService.completeJson<string[]>([
-      { role: 'system', content: 'You are a text extraction expert. Extract individual problems from worksheets/documents. Return JSON array of strings.' },
+      {
+        role: 'system',
+        content:
+          'You are a text extraction expert. Extract individual problems from worksheets/documents. Return JSON array of strings.',
+      },
       { role: 'user', content: prompt },
     ]);
 
@@ -968,7 +1033,10 @@ ${session.solutionResult?.output ? `Solution: ${session.solutionResult.output}` 
 ${session.finalAnswer ? `Final Answer: ${session.finalAnswer}` : ''}`;
 
     const response = await this.aiService.complete([
-      { role: 'system', content: `You are a friendly tutor narrating a solution. Write in ${detectedLang}. Make it sound natural when read aloud.` },
+      {
+        role: 'system',
+        content: `You are a friendly tutor narrating a solution. Write in ${detectedLang}. Make it sound natural when read aloud.`,
+      },
       { role: 'user', content: prompt },
     ]);
 
@@ -1001,7 +1069,10 @@ Return a JSON array with objects having these fields:
     const result = await this.aiService.completeJson<
       Array<{ id: string; problem: string; difficulty: string; similarity: string; hint?: string }>
     >([
-      { role: 'system', content: `You are a math/science tutor. Generate practice problems in JSON format. You MUST write all text in ${detectedLang}.` },
+      {
+        role: 'system',
+        content: `You are a math/science tutor. Generate practice problems in JSON format. You MUST write all text in ${detectedLang}.`,
+      },
       { role: 'user', content: prompt },
     ]);
 
@@ -1014,18 +1085,27 @@ Return a JSON array with objects having these fields:
 
   private detectLanguage(text: string): string {
     const counts: Record<string, number> = {
-      bengali: 0, devanagari: 0, latin: 0, arabic: 0,
+      bengali: 0,
+      devanagari: 0,
+      latin: 0,
+      arabic: 0,
     };
     for (const char of text) {
       const code = char.codePointAt(0)!;
-      if (code >= 0x0980 && code <= 0x09FF) counts.bengali++;
-      else if (code >= 0x0900 && code <= 0x097F) counts.devanagari++;
-      else if (code >= 0x0600 && code <= 0x06FF) counts.arabic++;
-      else if ((code >= 0x0041 && code <= 0x007A) || (code >= 0x00C0 && code <= 0x024F)) counts.latin++;
+      if (code >= 0x0980 && code <= 0x09ff) counts.bengali++;
+      else if (code >= 0x0900 && code <= 0x097f) counts.devanagari++;
+      else if (code >= 0x0600 && code <= 0x06ff) counts.arabic++;
+      else if ((code >= 0x0041 && code <= 0x007a) || (code >= 0x00c0 && code <= 0x024f))
+        counts.latin++;
     }
     const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
     if (sorted[0][1] === 0) return 'English';
-    const map: Record<string, string> = { bengali: 'Bengali (Bangla)', devanagari: 'Hindi', latin: 'English', arabic: 'Arabic' };
+    const map: Record<string, string> = {
+      bengali: 'Bengali (Bangla)',
+      devanagari: 'Hindi',
+      latin: 'English',
+      arabic: 'Arabic',
+    };
     return map[sorted[0][0]] || 'English';
   }
 
@@ -1052,7 +1132,9 @@ Return a JSON array with objects having these fields:
       session.subject ? `Subject: ${session.subject}` : '',
       session.finalAnswer ? `Answer: ${session.finalAnswer}` : '',
       session.solutionResult?.output ? `Solution: ${session.solutionResult.output}` : '',
-    ].filter(Boolean).join('\n');
+    ]
+      .filter(Boolean)
+      .join('\n');
 
     const messages = [
       {
@@ -1156,8 +1238,17 @@ Guidelines:
     );
   }
 
-  private async saveStep(id: string, field: 'analysis' | 'solution' | 'verification', step: AgentStep): Promise<void> {
-    const column = field === 'analysis' ? 'analysis_result' : field === 'solution' ? 'solution_result' : 'verification_result';
+  private async saveStep(
+    id: string,
+    field: 'analysis' | 'solution' | 'verification',
+    step: AgentStep,
+  ): Promise<void> {
+    const column =
+      field === 'analysis'
+        ? 'analysis_result'
+        : field === 'solution'
+          ? 'solution_result'
+          : 'verification_result';
     await this.db.query(
       `UPDATE problem_solving_sessions SET ${column} = $1, updated_at = $2 WHERE id = $3`,
       [JSON.stringify(step), new Date(), id],
@@ -1172,7 +1263,12 @@ Guidelines:
     };
     const parseJson = (data: unknown): unknown => {
       if (!data) return null;
-      if (typeof data === 'string') try { return JSON.parse(data); } catch { return null; }
+      if (typeof data === 'string')
+        try {
+          return JSON.parse(data);
+        } catch {
+          return null;
+        }
       return data;
     };
 

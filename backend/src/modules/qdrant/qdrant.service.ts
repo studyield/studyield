@@ -308,7 +308,11 @@ export class QdrantService implements OnModuleInit {
     const fullName = this.getCollectionName(collectionName);
     await this.client.delete(fullName, {
       wait: true,
-      filter: filter as unknown as Parameters<typeof this.client.delete>[1] extends { filter?: infer F } ? F : never,
+      filter: filter as unknown as Parameters<typeof this.client.delete>[1] extends {
+        filter?: infer F;
+      }
+        ? F
+        : never,
     });
   }
 

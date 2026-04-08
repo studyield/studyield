@@ -15,7 +15,14 @@ import {
   BadRequestException,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiConsumes, ApiBody } from '@nestjs/swagger';
+import {
+  ApiTags,
+  ApiOperation,
+  ApiResponse,
+  ApiBearerAuth,
+  ApiConsumes,
+  ApiBody,
+} from '@nestjs/swagger';
 import { DocumentsService, UpdateDocumentDto } from './documents.service';
 import { StorageService } from '../storage/storage.service';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
@@ -89,7 +96,7 @@ export class DocumentsController {
     // Check storage quota
     await this.subscriptionService.checkStorageQuota(user.sub, file.size);
 
-    const { key, url } = await this.storageService.upload(file.buffer, file.originalname, {
+    const { url } = await this.storageService.upload(file.buffer, file.originalname, {
       contentType: file.mimetype,
       folder: `documents/${user.sub}`,
     });

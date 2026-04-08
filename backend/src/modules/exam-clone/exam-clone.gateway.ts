@@ -27,7 +27,10 @@ interface SessionParticipant {
 @WebSocketGateway({
   namespace: 'exam-clone',
   cors: {
-    origin: process.env.CORS_ORIGINS?.split(',') || ['http://localhost:3010', 'http://localhost:5189'],
+    origin: process.env.CORS_ORIGINS?.split(',') || [
+      'http://localhost:3010',
+      'http://localhost:5189',
+    ],
     credentials: true,
   },
 })
@@ -62,10 +65,7 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
   // ==================== EXAM CLONE PROGRESS ====================
 
   @SubscribeMessage('subscribe')
-  handleSubscribe(
-    @MessageBody() data: { examCloneId: string },
-    @ConnectedSocket() client: Socket,
-  ) {
+  handleSubscribe(@MessageBody() data: { examCloneId: string }, @ConnectedSocket() client: Socket) {
     client.join(`exam-clone:${data.examCloneId}`);
     this.logger.debug(`Client ${client.id} subscribed to exam clone ${data.examCloneId}`);
     return { event: 'subscribed', data: { examCloneId: data.examCloneId } };
@@ -80,7 +80,10 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
     return { event: 'unsubscribed', data: { examCloneId: data.examCloneId } };
   }
 
-  notifyProgress(examCloneId: string, progress: { stage: string; percentage: number; message: string }) {
+  notifyProgress(
+    examCloneId: string,
+    progress: { stage: string; percentage: number; message: string },
+  ) {
     this.server.to(`exam-clone:${examCloneId}`).emit('progress', progress);
   }
 
@@ -96,7 +99,8 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
 
   @SubscribeMessage('create-session')
   async handleCreateSession(
-    @MessageBody() data: { examCloneId: string; name: string; nickname?: string; settings: any },
+    @MessageBody()
+    data: { examCloneId: string; name: string; nickname?: string; settings: unknown },
     @ConnectedSocket() client: Socket,
   ) {
     const userId = client.data.user?.sub;
@@ -109,7 +113,11 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
 
     const isPro = await this.subscriptionService.isPro(userId);
     if (!isPro) {
-      client.emit('error', { message: 'This feature requires a Pro plan', upgrade: true, feature: 'exam_clone' });
+      client.emit('error', {
+        message: 'This feature requires a Pro plan',
+        upgrade: true,
+        feature: 'exam_clone',
+      });
       return;
     }
 
@@ -121,7 +129,14 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
       await this.db.query(
         `INSERT INTO exam_sessions (id, exam_clone_id, host_id, code, name, settings, status, created_at)
          VALUES ($1, $2, $3, $4, $5, $6, 'waiting', NOW())`,
-        [sessionId, data.examCloneId, userId, code, data.name || 'Practice Session', JSON.stringify(data.settings || {})],
+        [
+          sessionId,
+          data.examCloneId,
+          userId,
+          code,
+          data.name || 'Practice Session',
+          JSON.stringify(data.settings || {}),
+        ],
       );
 
       // Initialize participants map and add host
@@ -169,10 +184,10 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
     }
 
     try {
-      const session = await this.db.queryOne<any>(
-        'SELECT * FROM exam_sessions WHERE code = $1',
-        [data.code.toUpperCase()],
-      );
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const session = await this.db.queryOne<any>('SELECT * FROM exam_sessions WHERE code = $1', [
+        data.code.toUpperCase(),
+      ]);
 
       if (!session) {
         client.emit('error', { message: 'Session not found' });
@@ -243,6 +258,7 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
     }
 
     try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const session = await this.db.queryOne<any>(
         'SELECT * FROM exam_sessions WHERE code = $1 AND host_id = $2',
         [data.code, userId],
@@ -273,7 +289,14 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
 
   @SubscribeMessage('submit-answer')
   async handleSubmitAnswer(
-    @MessageBody() data: { code: string; questionId: string; answer: string; isCorrect: boolean; timeSpent: number },
+    @MessageBody()
+    data: {
+      code: string;
+      questionId: string;
+      answer: string;
+      isCorrect: boolean;
+      timeSpent: number;
+    },
     @ConnectedSocket() client: Socket,
   ) {
     const userId = client.data.user?.sub;
@@ -304,7 +327,13 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
       await this.db.query(
         `UPDATE exam_session_participants SET score = $1, correct_count = $2, current_question = $3
          WHERE session_id = (SELECT id FROM exam_sessions WHERE code = $4) AND user_id = $5`,
-        [participant.score, participant.correctCount, participant.currentQuestion, data.code, userId],
+        [
+          participant.score,
+          participant.correctCount,
+          participant.currentQuestion,
+          data.code,
+          userId,
+        ],
       );
 
       // Broadcast updated leaderboard
@@ -361,10 +390,7 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
   }
 
   @SubscribeMessage('end-session')
-  async handleEndSession(
-    @MessageBody() data: { code: string },
-    @ConnectedSocket() client: Socket,
-  ) {
+  async handleEndSession(@MessageBody() data: { code: string }, @ConnectedSocket() client: Socket) {
     const userId = client.data.user?.sub;
     if (!userId) {
       client.emit('error', { message: 'Unauthorized' });
@@ -372,6 +398,7 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
     }
 
     try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const session = await this.db.queryOne<any>(
         'SELECT * FROM exam_sessions WHERE code = $1 AND host_id = $2',
         [data.code, userId],
@@ -439,7 +466,13 @@ export class ExamCloneGateway implements OnGatewayDisconnect {
     return code;
   }
 
-  private getLeaderboard(code: string): Array<{ userId: string; nickname: string; score: number; correctCount: number; finished: boolean }> {
+  private getLeaderboard(code: string): Array<{
+    userId: string;
+    nickname: string;
+    score: number;
+    correctCount: number;
+    finished: boolean;
+  }> {
     const participants = this.sessionParticipants.get(code);
     if (!participants) return [];
 

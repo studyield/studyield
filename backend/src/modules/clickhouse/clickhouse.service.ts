@@ -141,10 +141,7 @@ export class ClickhouseService implements OnModuleInit {
     }));
   }
 
-  async getTopEvents(
-    limit = 10,
-    days = 7,
-  ): Promise<Array<{ eventType: string; count: number }>> {
+  async getTopEvents(limit = 10, days = 7): Promise<Array<{ eventType: string; count: number }>> {
     const query = `
       SELECT
         event_type,

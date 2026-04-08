@@ -15,7 +15,10 @@ import { SubscriptionService } from '../subscription/subscription.service';
 @WebSocketGateway({
   namespace: 'problem-solver',
   cors: {
-    origin: process.env.CORS_ORIGINS?.split(',') || ['http://localhost:3010', 'http://localhost:5189'],
+    origin: process.env.CORS_ORIGINS?.split(',') || [
+      'http://localhost:3010',
+      'http://localhost:5189',
+    ],
     credentials: true,
   },
 })
@@ -33,10 +36,7 @@ export class ProblemSolverGateway {
   ) {}
 
   @SubscribeMessage('solve')
-  async handleSolve(
-    @MessageBody() data: { sessionId: string },
-    @ConnectedSocket() client: Socket,
-  ) {
+  async handleSolve(@MessageBody() data: { sessionId: string }, @ConnectedSocket() client: Socket) {
     const user = client.data.user;
     if (!user) {
       return { event: 'error', data: { message: 'Unauthorized' } };
@@ -44,7 +44,14 @@ export class ProblemSolverGateway {
 
     const isPro = await this.subscriptionService.isPro(user.sub);
     if (!isPro) {
-      return { event: 'error', data: { message: 'This feature requires a Pro plan', upgrade: true, feature: 'problem_solver' } };
+      return {
+        event: 'error',
+        data: {
+          message: 'This feature requires a Pro plan',
+          upgrade: true,
+          feature: 'problem_solver',
+        },
+      };
     }
 
     try {
@@ -74,7 +81,14 @@ export class ProblemSolverGateway {
 
     const isPro = await this.subscriptionService.isPro(user.sub);
     if (!isPro) {
-      return { event: 'error', data: { message: 'This feature requires a Pro plan', upgrade: true, feature: 'problem_solver' } };
+      return {
+        event: 'error',
+        data: {
+          message: 'This feature requires a Pro plan',
+          upgrade: true,
+          feature: 'problem_solver',
+        },
+      };
     }
 
     try {

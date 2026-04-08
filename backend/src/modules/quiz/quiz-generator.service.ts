@@ -100,7 +100,8 @@ Generate ${questionCount} quiz questions based on this material.`;
     userPerformance: { correct: number; total: number },
     previousQuestions: string[],
   ): Promise<GeneratedQuestion[]> {
-    const accuracy = userPerformance.total > 0 ? userPerformance.correct / userPerformance.total : 0.5;
+    const accuracy =
+      userPerformance.total > 0 ? userPerformance.correct / userPerformance.total : 0.5;
 
     let difficulty: 'easy' | 'medium' | 'hard';
     if (accuracy < 0.4) {

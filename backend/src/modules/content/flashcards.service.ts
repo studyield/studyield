@@ -58,7 +58,11 @@ export class FlashcardsService {
     return this.mapFlashcard(result!);
   }
 
-  async createBulk(userId: string, studySetId: string, cards: Array<{ front: string; back: string; notes?: string; tags?: string[]; type?: string }>): Promise<Flashcard[]> {
+  async createBulk(
+    userId: string,
+    studySetId: string,
+    cards: Array<{ front: string; back: string; notes?: string; tags?: string[]; type?: string }>,
+  ): Promise<Flashcard[]> {
     const now = new Date();
     const results: Flashcard[] = [];
 
@@ -88,10 +92,9 @@ export class FlashcardsService {
   }
 
   async findById(id: string): Promise<Flashcard | null> {
-    const result = await this.db.queryOne<Flashcard>(
-      'SELECT * FROM flashcards WHERE id = $1',
-      [id],
-    );
+    const result = await this.db.queryOne<Flashcard>('SELECT * FROM flashcards WHERE id = $1', [
+      id,
+    ]);
     return result ? this.mapFlashcard(result) : null;
   }
 
@@ -318,7 +321,7 @@ export class FlashcardsService {
           userId,
           type: 'success',
           title: '🎯 First Card Mastered!',
-          message: 'You\'ve mastered your first flashcard! Keep reviewing to master more.',
+          message: "You've mastered your first flashcard! Keep reviewing to master more.",
           link: '/study',
         });
       }

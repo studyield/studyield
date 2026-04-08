@@ -5,7 +5,6 @@ import {
   Delete,
   Body,
   Param,
-  Query,
   UseGuards,
   HttpCode,
   HttpStatus,
@@ -73,7 +72,9 @@ export class ProblemSolverController {
         res.write(`data: ${JSON.stringify(event)}\n\n`);
       }
     } catch (error) {
-      res.write(`data: ${JSON.stringify({ stage: 'error', type: 'error', data: (error as Error).message })}\n\n`);
+      res.write(
+        `data: ${JSON.stringify({ stage: 'error', type: 'error', data: (error as Error).message })}\n\n`,
+      );
     }
 
     res.end();

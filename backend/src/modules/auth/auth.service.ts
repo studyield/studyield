@@ -45,9 +45,7 @@ export class AuthService {
     private readonly emailService: EmailService,
     private readonly subscriptionService: SubscriptionService,
   ) {
-    this.googleClient = new OAuth2Client(
-      this.configService.get<string>('GOOGLE_CLIENT_ID'),
-    );
+    this.googleClient = new OAuth2Client(this.configService.get<string>('GOOGLE_CLIENT_ID'));
 
     // Apple Sign In JWKS client
     this.appleJwksClient = jwksClient({
@@ -59,7 +57,11 @@ export class AuthService {
     this.appleClientId = this.configService.get<string>('APPLE_CLIENT_ID', '');
   }
 
-  async register(dto: RegisterDto): Promise<{ user: { id: string; email: string }; tokens: TokenPair; subscription: SubscriptionDto }> {
+  async register(dto: RegisterDto): Promise<{
+    user: { id: string; email: string };
+    tokens: TokenPair;
+    subscription: SubscriptionDto;
+  }> {
     const existingUser = await this.usersService.findByEmail(dto.email);
     if (existingUser) {
       throw new ConflictException('Email already registered');
@@ -92,7 +94,11 @@ export class AuthService {
     };
   }
 
-  async login(dto: LoginDto): Promise<{ user: { id: string; email: string }; tokens: TokenPair; subscription: SubscriptionDto }> {
+  async login(dto: LoginDto): Promise<{
+    user: { id: string; email: string };
+    tokens: TokenPair;
+    subscription: SubscriptionDto;
+  }> {
     const user = await this.usersService.findByEmail(dto.email);
     if (!user || !user.password) {
       throw new UnauthorizedException('Invalid credentials');
@@ -148,7 +154,11 @@ export class AuthService {
     await this.blacklistToken(refreshToken);
   }
 
-  async googleAuth(dto: OAuthDto): Promise<{ user: { id: string; email: string }; tokens: TokenPair; subscription: SubscriptionDto }> {
+  async googleAuth(dto: OAuthDto): Promise<{
+    user: { id: string; email: string };
+    tokens: TokenPair;
+    subscription: SubscriptionDto;
+  }> {
     try {
       const ticket = await this.googleClient.verifyIdToken({
         idToken: dto.idToken,
@@ -198,7 +208,11 @@ export class AuthService {
     }
   }
 
-  async appleAuth(dto: OAuthDto): Promise<{ user: { id: string; email: string }; tokens: TokenPair; subscription: SubscriptionDto }> {
+  async appleAuth(dto: OAuthDto): Promise<{
+    user: { id: string; email: string };
+    tokens: TokenPair;
+    subscription: SubscriptionDto;
+  }> {
     try {
       // Decode the identity token header to get the key ID
       const decoded = jwt.decode(dto.idToken, { complete: true });
