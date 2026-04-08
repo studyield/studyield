@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://docs.studyield.com
+    about: Check the documentation before opening an issue
+  - name: GitHub Discussions
+    url: https://github.com/studyield/studyield/discussions
+    about: Share ideas and discuss with the community

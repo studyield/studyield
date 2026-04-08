@@ -1,0 +1,46 @@
+Studyield
+Copyright 2025 Studyield Contributors
+
+This product includes software developed by the Studyield open-source community.
+
+Licensed under the Apache License, Version 2.0.
+
+This project uses the following open-source components:
+
+Backend:
+  - NestJS (MIT License) - https://nestjs.com
+  - TypeScript (Apache-2.0 License) - https://typescriptlang.org
+  - PostgreSQL driver (pg) (MIT License) - https://node-postgres.com
+  - Socket.IO (MIT License) - https://socket.io
+  - Passport.js (MIT License) - https://passportjs.org
+  - BullMQ (MIT License) - https://docs.bullmq.io
+  - ioredis (MIT License) - https://github.com/redis/ioredis
+  - LangChain (MIT License) - https://langchain.com
+  - Stripe Node.js (MIT License) - https://stripe.com
+  - Firebase Admin (Apache-2.0 License) - https://firebase.google.com
+
+Frontend:
+  - React (MIT License) - https://reactjs.org
+  - Vite (MIT License) - https://vitejs.dev
+  - Tailwind CSS (MIT License) - https://tailwindcss.com
+  - Radix UI (MIT License) - https://radix-ui.com
+  - Zustand (MIT License) - https://zustand-demo.pmnd.rs
+  - React Query (MIT License) - https://tanstack.com/query
+  - React Router (MIT License) - https://reactrouter.com
+  - i18next (MIT License) - https://i18next.com
+  - Recharts (MIT License) - https://recharts.org
+  - KaTeX (MIT License) - https://katex.org
+  - Lucide Icons (ISC License) - https://lucide.dev
+  - DOMPurify (Apache-2.0 License) - https://github.com/cure53/DOMPurify
+
+Mobile:
+  - Flutter (BSD-3-Clause License) - https://flutter.dev
+  - Provider (MIT License) - https://pub.dev/packages/provider
+  - Flutter BLoC (MIT License) - https://bloclibrary.dev
+  - Dio (MIT License) - https://pub.dev/packages/dio
+  - Go Router (BSD-3-Clause License) - https://pub.dev/packages/go_router
+  - Hive (Apache-2.0 License) - https://pub.dev/packages/hive
+  - Easy Localization (MIT License) - https://pub.dev/packages/easy_localization
+
+For the full list of dependencies, see the package.json files in
+the backend/ and frontend/ directories, and pubspec.yaml in mobile/.
