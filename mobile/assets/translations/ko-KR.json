@@ -1,0 +1,2224 @@
+{
+  "onboarding": {
+    "skip": "건너뛰기",
+    "next": "다음",
+    "back": "뒤로",
+    "get_started": "시작하기",
+    "i_have_account": "계정이 있어요",
+    "app_name": "Studyield",
+    "slide_1": {
+      "title": "Studyield에 오신 것을 환영해요",
+      "subtitle": "AI 기반 학습 파트너",
+      "description": "스마트 플래시카드, AI 문제 풀이, 맞춤형 학습 경로로 모든 과목을 마스터하세요"
+    },
+    "slide_2": {
+      "title": "스마트 플래시카드",
+      "subtitle": "효율적으로 공부하세요",
+      "description": "학습 속도에 맞춰 적응하는 간격 반복 알고리즘으로 인터랙티브 플래시카드를 만들어 보세요",
+      "badge": "FREE"
+    },
+    "slide_3": {
+      "title": "AI 문제 풀이",
+      "subtitle": "즉시 도움을 받으세요",
+      "description": "문제를 스캔하고 AI가 제공하는 단계별 풀이와 상세한 설명을 받아보세요",
+      "badge": "PRO",
+      "features": {
+        "scan": "문제 스캔",
+        "hints": "힌트 받기",
+        "steps": "단계별 풀이"
+      }
+    },
+    "slide_4": {
+      "title": "학습을 레벨업",
+      "subtitle": "재미있게 배우세요",
+      "description": "XP를 획득하고, 연속 학습 기록을 유지하고, 학습 진행에 따라 업적을 달성하세요",
+      "badge": "FREE"
+    },
+    "slide_5": {
+      "title": "맞춤형 학습 경로",
+      "subtitle": "나만의 학습 여정",
+      "description": "목표, 성적, 학습 스타일에 기반한 맞춤형 학습 계획을 받아보세요",
+      "badge": "PRO",
+      "benefits": {
+        "benefit_1": "📚 맞춤형 학습 계획",
+        "benefit_2": "🎯 진도 추적",
+        "benefit_3": "🚀 더 빠른 목표 달성"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "다시 오셨네요",
+      "subtitle": "로그인하여 학습을 계속하세요",
+      "email_label": "이메일",
+      "email_hint": "이메일을 입력하세요",
+      "password_label": "비밀번호",
+      "password_hint": "비밀번호를 입력하세요",
+      "forgot_password": "비밀번호를 잊으셨나요?",
+      "login_button": "로그인",
+      "no_account": "계정이 없으신가요?",
+      "sign_up": "회원가입",
+      "or_continue_with": "또는 다른 방법으로 로그인",
+      "google_login": "Google로 계속하기",
+      "apple_login": "Apple로 계속하기"
+    },
+    "register": {
+      "title": "계정 만들기",
+      "subtitle": "학습 여정을 시작하세요",
+      "name_label": "이름",
+      "name_hint": "이름을 입력하세요",
+      "email_label": "이메일",
+      "email_hint": "이메일을 입력하세요",
+      "password_label": "비밀번호",
+      "password_hint": "비밀번호를 만드세요",
+      "confirm_password_label": "비밀번호 확인",
+      "confirm_password_hint": "비밀번호를 다시 입력하세요",
+      "register_button": "계정 만들기",
+      "have_account": "이미 계정이 있으신가요?",
+      "sign_in": "로그인",
+      "terms_prefix": "가입하시면 ",
+      "terms": "이용약관",
+      "and": " 및 ",
+      "privacy": "개인정보처리방침"
+    },
+    "errors": {
+      "email_required": "이메일은 필수입니다",
+      "email_invalid": "유효한 이메일을 입력해 주세요",
+      "password_required": "비밀번호는 필수입니다",
+      "password_min_length": "비밀번호는 6자 이상이어야 해요",
+      "passwords_not_match": "비밀번호가 일치하지 않아요",
+      "name_required": "이름은 필수입니다",
+      "login_failed": "로그인에 실패했어요. 인증 정보를 확인해 주세요",
+      "register_failed": "가입에 실패했어요. 다시 시도해 주세요"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "좋은 아침이에요",
+      "afternoon": "안녕하세요",
+      "evening": "좋은 저녁이에요"
+    },
+    "welcome_message": "복습할 카드가 {count}장 있어요",
+    "welcome_message_empty": "학습 여정을 계속할 준비가 됐나요?",
+    "level": "레벨 {level}",
+    "xp_progress": "{current} / {next} XP",
+    "streak_days": "{days}일",
+    "daily_xp": "{current} / {goal} 일일 XP",
+    "gamification": {
+      "xp": "XP",
+      "day": "일",
+      "days": "일",
+      "daily_xp": "일일 XP",
+      "level_names": {
+        "0": "비기너",
+        "1": "브론즈",
+        "2": "실버",
+        "3": "골드",
+        "4": "플래티넘",
+        "5": "다이아몬드",
+        "6": "마스터",
+        "7": "그랜드마스터",
+        "8": "챔피언",
+        "9": "레전드",
+        "10": "미식",
+        "11": "이모탈"
+      }
+    },
+    "upgrade_pro": {
+      "title": "Pro로 업그레이드",
+      "badge": "인기",
+      "subtitle": "모든 프리미엄 기능과 무제한 AI를 잠금 해제하세요",
+      "offer": "연간 플랜으로 20% 할인"
+    },
+    "stats": {
+      "study_sets": "학습 세트",
+      "flashcards": "플래시카드",
+      "due_today": "오늘의 복습",
+      "quizzes_done": "완료한 퀴즈",
+      "cards": "{count}장"
+    },
+    "sections": {
+      "quick_actions": "빠른 작업",
+      "recent_study_sets": "최근 학습 세트",
+      "view_all": "모두 보기"
+    },
+    "continue_studying": {
+      "title": "학습 계속하기",
+      "cards_due": "복습할 카드 {count}장"
+    },
+    "quick_actions": {
+      "new_study_set": {
+        "title": "새 학습 세트",
+        "description": "새 컬렉션 만들기"
+      },
+      "exam_clone": {
+        "title": "Exam Clone",
+        "description": "연습 시험 생성"
+      },
+      "problem_solver": {
+        "title": "문제 풀이",
+        "description": "AI 단계별 풀이"
+      },
+      "ai_chat": {
+        "title": "AI 채팅",
+        "description": "노트에 대해 질문하기"
+      },
+      "view_analytics": {
+        "title": "분석 보기",
+        "description": "학습 진도 추적"
+      },
+      "knowledge_base": {
+        "title": "지식 베이스",
+        "description": "문서 업로드 및 검색"
+      },
+      "join_live_quiz": {
+        "title": "라이브 퀴즈 참가",
+        "description": "친구들과 실시간 대결"
+      },
+      "coming_soon": "곧 출시"
+    },
+    "empty_state": {
+      "title": "학습 세트가 없어요",
+      "subtitle": "첫 번째 학습 세트를 만들어 공부를 시작하세요",
+      "button": "학습 세트 만들기"
+    }
+  },
+  "study_sets": {
+    "title": "학습 세트",
+    "header_title": "내 학습 세트",
+    "header_subtitle": "학습 자료를 만들고 관리하세요",
+    "search_hint": "학습 세트 검색...",
+    "new_study_set": "새 학습 세트",
+    "create_button": "만들기",
+    "no_results_title": "결과 없음",
+    "no_results_subtitle": "\"{query}\"에 일치하는 학습 세트가 없어요",
+    "card": {
+      "public": "공개",
+      "private": "비공개",
+      "edit": "편집",
+      "delete": "삭제",
+      "cards_count": "{count}장",
+      "docs_count": "문서 {count}개"
+    },
+    "empty_state": {
+      "title": "학습 세트가 없어요",
+      "subtitle": "첫 번째 학습 세트를 만들어 플래시카드와 학습 자료를 정리하세요",
+      "button": "학습 세트 만들기"
+    },
+    "messages": {
+      "created": "학습 세트가 생성되었어요!",
+      "updated": "학습 세트가 업데이트되었어요!",
+      "deleted": "학습 세트가 삭제되었어요!",
+      "error": "학습 세트 로딩 오류",
+      "retry": "재시도"
+    },
+    "detail": {
+      "section_statistics": "통계",
+      "stat_flashcards_label": "플래시카드",
+      "stat_notes_label": "노트",
+      "stat_analytics_label": "분석",
+      "quiz_history_title": "퀴즈 기록",
+      "quiz_history_subtitle": "퀴즈 성적 확인",
+      "section_quick_actions": "빠른 작업",
+      "action_study_session": "학습 세션 (전체 카드)",
+      "action_quiz_mode": "퀴즈 모드",
+      "action_match_game": "매칭 게임",
+      "action_live_quiz": "라이브 퀴즈",
+      "action_browse_cards": "카드 둘러보기",
+      "action_add_cards": "카드 추가",
+      "section_sources": "소스",
+      "sources_view_all": "모두 보기",
+      "sources_document_singular": "문서",
+      "sources_documents_plural": "문서",
+      "sources_subtitle": "학습 자료 및 참고 자료",
+      "sources_empty_state": "아직 소스가 없어요",
+      "sources_add_documents": "문서 추가",
+      "section_recent_activity": "최근 활동",
+      "activity_empty_state": "최근 활동이 없어요",
+      "menu_edit_study_set": "학습 세트 편집",
+      "menu_share": "공유",
+      "menu_delete_study_set": "학습 세트 삭제",
+      "delete_confirm_title": "학습 세트를 삭제할까요?",
+      "delete_confirm_message": "\"{title}\"과(와) 모든 플래시카드가 영구 삭제돼요. 이 작업은 되돌릴 수 없어요.",
+      "delete_confirm_cancel": "취소",
+      "delete_confirm_delete": "삭제",
+      "study_no_cards_due": "복습할 카드가 없어요! 잘하셨어요! 🎉",
+      "study_failed_to_load": "플래시카드를 불러오지 못했어요",
+      "add_cards_header": "카드 추가",
+      "add_cards_ready_status": "{count}장의 카드 준비 완료",
+      "add_cards_submit_button": "학습 세트에 추가",
+      "toast_cards_added_success": "{count}장의 카드가 추가되었어요!",
+      "toast_cards_add_error": "카드 추가에 실패했어요: {message}"
+    },
+    "create_edit": {
+      "title_create": "학습 세트 만들기",
+      "create_study_set": "학습 세트 만들기",
+      "title_edit": "학습 세트 편집",
+      "cover_image": "커버 이미지",
+      "tap_add_cover": "탭하여 커버 이미지 추가",
+      "tap_to_add_cover_image": "탭하여 커버 이미지 추가",
+      "title_label": "제목 *",
+      "title_hint": "예: 생물학 입문",
+      "title_required": "제목은 필수입니다",
+      "description_label": "설명",
+      "description": "설명",
+      "description_hint": "이 학습 세트의 내용은 무엇인가요?",
+      "tags_label": "태그",
+      "tags": "태그",
+      "tags_hint": "생물학, 시험, 1장",
+      "tags_helper": "태그는 쉼표로 구분하세요",
+      "exam_date_label": "시험 날짜 (선택)",
+      "exam_date_optional": "시험 날짜 (선택)",
+      "exam_date_hint": "시험 날짜 선택",
+      "select_exam_date": "시험 날짜 선택",
+      "exam_subject_label": "시험 과목",
+      "exam_subject_hint": "예: 중간고사, 기말고사",
+      "visibility_public": "공개",
+      "visibility_private": "비공개",
+      "private": "비공개",
+      "visibility_public_desc": "누구나 이 학습 세트를 볼 수 있어요",
+      "visibility_private_desc": "나만 볼 수 있어요",
+      "private_description": "나만 볼 수 있어요",
+      "save_changes": "변경 사항 저장",
+      "create_button": "학습 세트 만들기",
+      "delete_study_set": "학습 세트 삭제",
+      "delete_confirm_title": "학습 세트를 삭제할까요?",
+      "delete_confirm_message": "\"{title}\"과(와) 모든 플래시카드가 영구 삭제돼요. 이 작업은 되돌릴 수 없어요.",
+      "subtitle": "학습 자료를 정리하세요",
+      "title_placeholder": "제목을 입력하세요. 예: '생물학 입문 — 3장'",
+      "description_placeholder": "설명 추가 (선택)",
+      "more_options": "더 많은 옵션",
+      "less_options": "옵션 접기",
+      "add_tag": "태그 추가...",
+      "cancel": "취소",
+      "public": "공개",
+      "visibility_label": "공개 설정",
+      "cards_ready_count": "{count}장의 카드 준비 완료",
+      "create_with_cards": "{count}장의 카드로 만들기",
+      "cards_failed": "학습 세트는 생성되었지만 일부 카드 저장에 실패했어요",
+      "image_uploaded": "이미지가 업로드되었어요!",
+      "upload_failed": "이미지 업로드에 실패했어요"
+    },
+    "documents": {
+      "title": "노트",
+      "create_note": "노트 만들기",
+      "no_notes_title": "아직 노트가 없어요",
+      "no_notes_subtitle": "노트를 만들어 학습 자료를 정리하세요",
+      "note_title_label": "제목",
+      "note_title_hint": "노트 제목을 입력하세요",
+      "note_content_label": "내용",
+      "note_content_hint": "여기에 노트를 작성하세요...",
+      "create_note_button": "노트 만들기",
+      "fill_both_fields": "제목과 내용을 모두 입력해 주세요",
+      "note_created": "노트가 생성되었어요!",
+      "failed_to_create": "노트 생성에 실패했어요: {error}"
+    },
+    "flashcard_creation": {
+      "title": "플래시카드 만들기",
+      "tab_manual": "수동",
+      "tab_ai": "AI 생성",
+      "tab_import": "가져오기",
+      "create_cards": "{count}장의 {cards} 만들기",
+      "add_cards": "{count}장의 {cards} 추가",
+      "card": "카드",
+      "cards": "카드",
+      "no_flashcards": "최소 1장의 플래시카드를 만들어 주세요",
+      "no_flashcards_to_add": "추가할 플래시카드가 없어요"
+    },
+    "quiz_history": {
+      "title": "퀴즈 기록",
+      "no_history_title": "퀴즈 기록이 없어요",
+      "no_history_subtitle": "퀴즈에 도전하여 성적 기록을 확인하세요",
+      "summary_quizzes": "퀴즈",
+      "summary_attempts": "도전 횟수",
+      "summary_best_score": "최고 점수",
+      "questions": "{count}문제",
+      "attempts": "{count}회",
+      "attempt": "회",
+      "best": "최고: {score}%",
+      "no_attempts": "아직 도전하지 않았어요",
+      "time_spent": "{minutes}분 {seconds}초"
+    }
+  },
+  "analytics": {
+    "title": "분석",
+    "timeRange": {
+      "sevenDays": "7일",
+      "thirtyDays": "30일",
+      "ninetyDays": "90일",
+      "allTime": "전체 기간"
+    },
+    "stats": {
+      "studyTime": "학습 시간",
+      "cardsReviewed": "복습한 카드",
+      "quizzes": "퀴즈",
+      "avgScore": "평균 점수"
+    },
+    "sections": {
+      "studyActivity": "학습 활동",
+      "streak": "연속 기록",
+      "performance": "성적"
+    },
+    "heatmap": {
+      "title": "학습 히트맵",
+      "less": "적음",
+      "more": "많음"
+    },
+    "cardMastery": {
+      "title": "카드 숙련도",
+      "noData": "카드 데이터가 없어요"
+    },
+    "retentionCurve": {
+      "title": "기억 유지 곡선",
+      "noData": "학습을 시작하면 기억 유지 곡선이 표시돼요"
+    },
+    "studyTime": {
+      "title": "학습 시간",
+      "daily": "일별",
+      "weekly": "주별",
+      "noData": "아직 학습 시간이 기록되지 않았어요"
+    },
+    "streak": {
+      "title": "연속 기록 달력",
+      "dayStreak": "일 연속",
+      "dayAbbr": {
+        "sun": "일",
+        "mon": "월",
+        "tue": "화",
+        "wed": "수",
+        "thu": "목",
+        "fri": "금",
+        "sat": "토"
+      }
+    },
+    "months": {
+      "january": "1월",
+      "february": "2월",
+      "march": "3월",
+      "april": "4월",
+      "may": "5월",
+      "june": "6월",
+      "july": "7월",
+      "august": "8월",
+      "september": "9월",
+      "october": "10월",
+      "november": "11월",
+      "december": "12월"
+    },
+    "cardStatus": {
+      "new": "새로운",
+      "learning": "학습 중",
+      "review": "복습",
+      "mastered": "완료"
+    },
+    "chart": {
+      "percentageSymbol": "%",
+      "minutesSymbol": "분",
+      "dayLabel": "일"
+    },
+    "time": {
+      "hoursSymbol": "시간",
+      "minutesSymbol": "분"
+    }
+  },
+  "learning_paths": {
+    "title": "학습 경로",
+    "detail": {
+      "title": "학습 경로",
+      "learning_path": "학습 경로",
+      "complete": "완료",
+      "your_journey": "나의 학습 여정",
+      "your_learning_journey": "나의 학습 여정",
+      "next_up": "다음 단계",
+      "step_number": "단계 {number}",
+      "steps": "단계",
+      "remaining": "남음",
+      "total_time": "총 시간",
+      "overall_progress": "전체 진도",
+      "stats": {
+        "steps": "단계",
+        "remaining": "남음",
+        "total_time": "총 시간"
+      },
+      "progress": {
+        "overall": "전체 진도",
+        "steps_count": "{completed}/{total} 단계"
+      },
+      "minutes": "{minutes}분",
+      "view_resource": "리소스 보기",
+      "mark_done": "완료",
+      "mark_as_done": "완료로 표시",
+      "step_completed": "단계를 완료했어요!",
+      "path_completed": "완료했어요!",
+      "steps_count": "{completed}/{total} 단계",
+      "completed_on": "{date}에 완료"
+    },
+    "validation": {
+      "please_enter_topic": "주제를 입력해 주세요"
+    },
+    "messages": {
+      "path_created_success": "학습 경로가 생성되었어요!"
+    },
+    "how_it_works": {
+      "title": "학습 경로 작동 방식",
+      "step1_title": "목표 설정",
+      "step1_subtitle": "AI에게 주제와 수준을 알려주세요",
+      "step2_title": "로드맵 받기",
+      "step2_subtitle": "AI가 단계별 계획을 생성해요",
+      "step3_title": "진도 추적",
+      "step3_subtitle": "단계를 완료하고 진도를 확인하세요"
+    },
+    "buttons": {
+      "cancel": "취소",
+      "generate_path": "경로 생성",
+      "generating": "생성 중..."
+    },
+    "form": {
+      "title": "학습 경로 만들기",
+      "topic_label": "주제",
+      "topic_hint": "예: 머신러닝, 미적분, 물리학",
+      "current_level_label": "현재 수준",
+      "target_level_label": "목표 수준",
+      "level_beginner": "초급",
+      "level_intermediate": "중급",
+      "level_advanced": "고급",
+      "level_expert": "전문가",
+      "study_time_label": "학습 시간: 주 {hours}시간"
+    },
+    "empty_state": {
+      "title": "아직 학습 경로가 없어요",
+      "subtitle": "나만의 학습 로드맵을 만들어 보세요"
+    },
+    "path_card": {
+      "steps_count": "{completed}/{total} 단계",
+      "hours_label": "{hours}시간"
+    },
+    "dialogs": {
+      "delete_confirm_title": "학습 경로를 삭제할까요?",
+      "delete_confirm_message": "이 경로와 모든 진도가 영구 삭제돼요.",
+      "cancel_button": "취소",
+      "delete_button": "삭제"
+    }
+  },
+  "profile": {
+    "title": "설정",
+    "subtitle": "계정 및 환경설정 관리",
+    "settings": {
+      "profile": {
+        "title": "프로필",
+        "subtitle": "이름, 아바타, 학력, 과목"
+      },
+      "account": {
+        "title": "계정 설정",
+        "subtitle": "비밀번호, 보안, 계정 삭제"
+      },
+      "notifications": {
+        "title": "알림 설정",
+        "subtitle": "알림 환경설정 관리"
+      },
+      "language": {
+        "title": "언어",
+        "choose": "언어 선택",
+        "close": "닫기"
+      },
+      "subscription": {
+        "title": "구독",
+        "subtitle": "플랜, 사용량, 청구서"
+      },
+      "logout": {
+        "title": "로그아웃",
+        "confirm_title": "로그아웃",
+        "confirm_message": "로그아웃하시겠어요?",
+        "cancel": "취소",
+        "confirm": "로그아웃"
+      }
+    },
+    "plan": {
+      "free": "무료 플랜",
+      "manage": "관리",
+      "upgrade": "업그레이드"
+    },
+    "version": "Studyield v1.0.0",
+    "edit": {
+      "title": "프로필 편집",
+      "avatar": {
+        "default_initial": "U"
+      },
+      "display_name": {
+        "label": "표시 이름",
+        "hint": "이름을 입력하세요"
+      },
+      "email": {
+        "label": "이메일",
+        "placeholder": "이메일 없음",
+        "readonly_note": "이메일은 변경할 수 없어요"
+      },
+      "education_level": {
+        "label": "학력",
+        "options": {
+          "high_school": "고등학교",
+          "undergraduate": "대학교 (학부)",
+          "graduate": "대학원",
+          "post_graduate": "박사과정",
+          "self_learner": "독학",
+          "professional": "직장인"
+        }
+      },
+      "subjects": {
+        "label": "관심 과목",
+        "common_header": "일반 과목",
+        "custom_header": "사용자 지정 과목",
+        "add_custom": {
+          "label": "사용자 지정 과목 추가",
+          "hint": "사용자 지정 과목 추가"
+        },
+        "options": {
+          "mathematics": "수학",
+          "physics": "물리학",
+          "chemistry": "화학",
+          "biology": "생물학",
+          "computer_science": "컴퓨터 과학",
+          "english": "영어",
+          "history": "역사",
+          "geography": "지리",
+          "economics": "경제학",
+          "psychology": "심리학"
+        }
+      },
+      "button": {
+        "saving": "저장 중...",
+        "save": "변경 사항 저장",
+        "saved": "저장되었어요!"
+      },
+      "message": {
+        "success": "프로필이 업데이트되었어요!",
+        "error": "프로필 저장에 실패했어요"
+      }
+    },
+    "account": {
+      "title": "계정 설정",
+      "change_password": {
+        "title": "비밀번호 변경",
+        "subtitle": "정기적으로 비밀번호를 업데이트하세요",
+        "current_password_label": "현재 비밀번호",
+        "new_password_label": "새 비밀번호",
+        "confirm_password_label": "새 비밀번호 확인",
+        "button": "비밀번호 변경"
+      },
+      "validation": {
+        "current_password_required": "현재 비밀번호는 필수입니다",
+        "password_min_length": "새 비밀번호는 8자 이상이어야 해요",
+        "passwords_mismatch": "비밀번호가 일치하지 않아요"
+      },
+      "messages": {
+        "password_changed_success": "비밀번호가 변경되었어요!"
+      },
+      "information": {
+        "title": "계정 정보",
+        "email_label": "이메일",
+        "plan_label": "플랜",
+        "plan_free": "무료",
+        "email_verified_label": "이메일 인증",
+        "email_verified_yes": "인증됨",
+        "member_since_label": "가입일"
+      },
+      "delete": {
+        "title": "계정 삭제",
+        "subtitle": "계정을 영구적으로 삭제해요",
+        "button": "내 계정 삭제",
+        "warning_title": "이 작업은 되돌릴 수 없어요!",
+        "warning_message": "모든 데이터가 영구적으로 삭제돼요.",
+        "confirmation_instruction": "확인을 위해 DELETE를 입력하세요:",
+        "confirmation_hint": "DELETE",
+        "confirm_button": "영구 삭제",
+        "cancel_button": "취소"
+      }
+    }
+  },
+  "subscription": {
+    "main": {
+      "appbar_title": "구독",
+      "header_label": "플랜을 변경하거나 업그레이드하세요",
+      "heading": "플랜을 선택하세요",
+      "subheading": "프리미엄 기능으로 학습을 가속화하세요",
+      "billing_yearly": "연간",
+      "billing_lifetime": "평생",
+      "popular_badge": "가장 인기",
+      "plan_trial_title": "7일 체험",
+      "plan_trial_subtitle": "먼저 체험해 보세요",
+      "plan_pro_title": "Pro",
+      "plan_pro_lifetime_title": "평생 Pro",
+      "plan_pro_lifetime_subtitle": "한 번 결제로 영구 이용",
+      "plan_pro_yearly_subtitle": "진지한 학습자를 위해",
+      "yearly_crossed_price": "$47.88/년",
+      "lifetime_period": "일시불",
+      "yearly_period": "/년",
+      "button_current_plan": "현재 플랜",
+      "button_free_forever": "영구 무료",
+      "button_upgrade_lifetime": "평생 버전으로 업그레이드",
+      "button_upgrade_pro": "Pro로 업그레이드",
+      "trust_secure_title": "안전",
+      "trust_secure_subtitle": "SSL 암호화",
+      "trust_flexible_title": "유연",
+      "trust_flexible_subtitle": "언제든 해지 가능",
+      "trust_free_title": "영구 무료",
+      "trust_free_subtitle": "신용카드 없이 시작"
+    },
+    "manage": {
+      "appbar_title": "구독 관리",
+      "error_open_portal": "포털을 열지 못했어요",
+      "cancel_dialog_title": "구독을 해지할까요?",
+      "cancel_dialog_content": "현재 결제 기간이 끝날 때까지 이용할 수 있어요.",
+      "cancel_dialog_keep_btn": "구독 유지",
+      "cancel_dialog_cancel_btn": "해지",
+      "cancel_success_message": "구독이 기간 종료 시 해지돼요",
+      "cancel_error_message": "해지에 실패했어요",
+      "default_plan_name": "Pro 플랜",
+      "status_active": "활성",
+      "price_lifetime": "일시불",
+      "price_yearly": "/년",
+      "button_change_plan": "플랜 변경",
+      "info_current_period_label": "현재 기간",
+      "info_next_billing_label": "다음 결제일",
+      "card_billing_history_title": "결제 내역",
+      "card_billing_history_subtitle": "지난 청구서 보기",
+      "card_payment_methods_title": "결제 수단",
+      "card_payment_methods_subtitle": "카드 또는 결제 수단 변경",
+      "card_cancel_subscription_title": "구독 해지",
+      "card_cancel_subscription_subtitle": "기간 종료까지 이용 가능해요",
+      "webview_title": "결제 포털"
+    },
+    "checkout": {
+      "appbar_title": "결제",
+      "coupon_applied_message": "쿠폰이 적용되었어요!",
+      "payment_success_message": "결제가 완료되었어요!",
+      "payment_error_message": "결제에 실패했어요",
+      "header_title": "{plan}으로 업그레이드",
+      "header_subtitle_lifetime": "평생 라이선스",
+      "header_subtitle_yearly": "연간 구독",
+      "order_summary_label": "주문 요약",
+      "plan_line_item": "{plan} 플랜 ({cycle})",
+      "coupon_applied_label": "쿠폰 적용됨",
+      "coupon_discount_amount": "-${amount}",
+      "total_label": "합계",
+      "billing_period_year": "/년",
+      "billing_period_month": "/월",
+      "coupon_code_label": "쿠폰 코드",
+      "coupon_input_placeholder": "쿠폰 코드를 입력하세요",
+      "coupon_apply_button": "적용",
+      "what_you_get_heading": "이용 가능한 기능",
+      "features": {
+        "unlimited_ai": "무제한 AI 요청",
+        "premium_features": "모든 프리미엄 기능 잠금 해제",
+        "priority_support": "우선 지원",
+        "advanced_analytics": "고급 분석",
+        "exam_cloning": "시험 복제 및 생성",
+        "deep_research": "딥 리서치 기능"
+      },
+      "button_processing": "처리 중...",
+      "button_proceed": "결제로 진행",
+      "trust_ssl": "SSL 암호화",
+      "trust_stripe": "Stripe 결제",
+      "trust_cancel_anytime": "언제든 해지 가능"
+    },
+    "success": {
+      "welcome_heading": "Pro에 오신 것을 환영해요!",
+      "payment_successful_message": "결제가 완료되었어요",
+      "info_plan_label": "플랜",
+      "info_status_label": "상태",
+      "info_status_active": "활성",
+      "features_heading": "잠금 해제된 기능",
+      "button_continue": "Pro 기능 사용 시작"
+    },
+    "webview": {
+      "appbar_title": "결제 완료",
+      "error_loading_page": "페이지 로딩 오류",
+      "cancel_dialog_title": "결제를 취소할까요?",
+      "cancel_dialog_content": "이 결제를 취소하시겠어요?",
+      "cancel_dialog_continue_btn": "아니요, 계속하기",
+      "cancel_dialog_cancel_btn": "네, 취소하기"
+    }
+  },
+  "notifications": {
+    "header": {
+      "title": "알림",
+      "unread_count": "새 알림 {count}개",
+      "all_caught_up": "모두 확인했어요!",
+      "mark_all_as_read": "모두 읽음으로 표시",
+      "clear_all": "모두 삭제"
+    },
+    "tabs": {
+      "all": "전체",
+      "unread": "안 읽음",
+      "settings": "설정"
+    },
+    "dialogs": {
+      "clear_all_title": "모두 삭제할까요?",
+      "clear_all_message": "모든 알림이 영구적으로 삭제돼요.",
+      "cancel": "취소",
+      "delete_all": "모두 삭제"
+    },
+    "time": {
+      "just_now": "방금",
+      "minutes_ago": "{minutes}분 전",
+      "hours_ago": "{hours}시간 전",
+      "days_ago": "{days}일 전"
+    },
+    "empty": {
+      "no_notifications_title": "알림이 없어요",
+      "no_notifications_message": "중요한 소식이 있으면\n알려드릴게요",
+      "all_caught_up_title": "모두 확인했어요!",
+      "all_caught_up_message": "모든 알림을 확인했어요.\n잘 관리하고 계세요! 🎉",
+      "feature_stay_updated": "최신 정보 받기",
+      "feature_quick_actions": "빠른 작업",
+      "feature_track_progress": "진도 추적"
+    },
+    "card": {
+      "delete": "삭제",
+      "mark_as_read": "읽음으로 표시"
+    },
+    "types": {
+      "info": "정보",
+      "success": "성공",
+      "warning": "경고",
+      "reminder": "리마인더",
+      "achievement": "업적",
+      "study": "학습"
+    },
+    "settings": {
+      "info_card_title": "최신 정보를 놓치지 마세요!",
+      "info_card_message": "알림을 활성화하여 중요한 업데이트를 놓치지 마세요",
+      "channels_section": "알림 채널",
+      "types_section": "알림 내용",
+      "in_app_title": "앱 내 알림",
+      "in_app_subtitle": "앱 사용 중 알림을 받아요",
+      "email_title": "이메일 알림",
+      "email_subtitle": "중요한 업데이트를 이메일로 받아요",
+      "push_title": "푸시 알림",
+      "push_subtitle": "이 기기에서 푸시 알림을 받아요",
+      "study_reminders_title": "학습 리마인더",
+      "study_reminders_subtitle": "복습할 플래시카드와 학습 세션 리마인더",
+      "achievements_title": "업적 및 마일스톤",
+      "achievements_subtitle": "학습 성과를 축하하세요",
+      "weekly_digest_title": "주간 다이제스트",
+      "weekly_digest_subtitle": "주간 학습 진도 요약",
+      "footer_message": "알림 설정은 모든 기기에서 동기화돼요"
+    }
+  },
+  "flashcards": {
+    "add": {
+      "title_edit": "플래시카드 편집",
+      "title_add": "플래시카드 추가",
+      "label_front": "앞면 (질문)",
+      "hint_front": "질문 또는 용어를 입력하세요",
+      "error_front_required": "앞면은 필수입니다",
+      "label_back": "뒷면 (답)",
+      "hint_back": "답 또는 정의를 입력하세요",
+      "error_back_required": "뒷면은 필수입니다",
+      "label_notes": "메모 (선택)",
+      "hint_notes": "추가 메모나 맥락을 입력하세요",
+      "label_tags": "태그 (선택)",
+      "hint_tags_example": "1장, 중요, 복습",
+      "helper_tags": "태그는 쉼표로 구분하세요",
+      "button_save_changes": "변경 사항 저장",
+      "button_create": "플래시카드 만들기"
+    },
+    "list": {
+      "label_flashcards": "플래시카드",
+      "sort_newest": "최신순",
+      "sort_oldest": "오래된순",
+      "sort_difficulty": "난이도순",
+      "menu_newest": "최신순",
+      "menu_oldest": "오래된순",
+      "menu_difficulty": "난이도순",
+      "toast_created": "플래시카드가 생성되었어요!",
+      "toast_updated": "플래시카드가 업데이트되었어요!",
+      "toast_bulk_created": "{count}장의 카드가 추가되었어요!",
+      "toast_deleted": "플래시카드가 삭제되었어요",
+      "error_title": "플래시카드 로딩 오류",
+      "button_retry": "재시도",
+      "filter_all": "전체",
+      "filter_new": "새로운",
+      "filter_learning": "학습 중",
+      "filter_review": "복습",
+      "filter_mastered": "완료",
+      "filter_due": "기한",
+      "empty_filter_message": "이 카테고리에 카드가 없어요",
+      "button_add_cards": "카드 추가",
+      "modal_add_cards_title": "카드 추가",
+      "button_add_to_set": "학습 세트에 추가",
+      "ready_card_singular": "장",
+      "ready_cards_plural": "장",
+      "ready_text": "준비 완료",
+      "empty_title": "아직 플래시카드가 없어요",
+      "empty_message": "첫 번째 플래시카드를 만들어 공부를 시작하세요",
+      "empty_button": "카드 추가"
+    },
+    "study": {
+      "card_progress": "카드 {current} / {total}",
+      "question_rating": "얼마나 잘 기억했나요?",
+      "rating_again": "다시",
+      "rating_again_subtitle": "잊었어요",
+      "rating_hard": "어려움",
+      "rating_hard_subtitle": "힘들었어요",
+      "rating_good": "좋음",
+      "rating_good_subtitle": "기억났어요",
+      "rating_easy": "쉬움",
+      "rating_easy_subtitle": "완벽해요",
+      "hint_tap_card": "카드를 탭하여 답을 확인하세요",
+      "label_question": "질문",
+      "label_answer": "답",
+      "exit_dialog_title": "학습 세션을 종료할까요?",
+      "exit_dialog_message": "지금 종료하면 진도가 저장되지 않아요. 계속하시겠어요?",
+      "exit_button_continue": "학습 계속하기",
+      "exit_button_exit": "종료"
+    },
+    "widgets": {
+      "session_summary": {
+        "title": "세션 완료!",
+        "cards_reviewed": "{count}장의 카드를 복습했어요",
+        "accuracy": "정확도",
+        "easy_good": "쉬움/좋음",
+        "hard": "어려움",
+        "again": "다시",
+        "done_button": "완료"
+      },
+      "ai_assist": {
+        "header": "AI 어시스트",
+        "suggest_answer_title": "답 제안",
+        "suggest_answer_description": "포괄적인 답을 생성해요",
+        "elaborate_title": "자세히 설명",
+        "elaborate_description": "더 많은 세부 사항과 맥락을 추가해요",
+        "add_mnemonic_title": "암기법 추가",
+        "add_mnemonic_description": "기억 요령을 만들어요",
+        "simplify_title": "간단하게",
+        "simplify_description": "더 쉬운 표현으로 다시 작성해요",
+        "suggestion_label": "AI 제안",
+        "try_again_button": "다시 시도",
+        "accept_button": "적용",
+        "suggestion_applied_toast": "AI 제안이 적용되었어요!"
+      },
+      "ai_generation": {
+        "minimum_chars_error": "최소 50자 이상 입력해 주세요",
+        "cards_ready_toast": "{count}장의 카드를 추가할 수 있어요",
+        "info_banner_text": "AI가 콘텐츠에서 플래시카드를 생성해요",
+        "banner_text": "AI가 콘텐츠에서 플래시카드를 생성해요",
+        "content_label": "콘텐츠",
+        "content_hint": "텍스트, 노트 또는 학습 자료를 붙여넣으세요...",
+        "char_counter_helper": "{count}/50자 (최소)",
+        "char_count": "{count}/50자 (최소)",
+        "card_count_label": "카드 수",
+        "number_of_cards": "카드 수",
+        "card_type_label": "카드 유형",
+        "card_type": "카드 유형",
+        "qa_type": "질문과 답",
+        "type_qa": "질문과 답",
+        "fill_blank_type": "빈칸 채우기",
+        "type_fill_blank": "빈칸 채우기",
+        "true_false_type": "참/거짓",
+        "type_true_false": "참/거짓",
+        "difficulty_label": "난이도",
+        "difficulty": "난이도",
+        "easy_difficulty": "쉬움",
+        "difficulty_easy": "쉬움",
+        "medium_difficulty": "보통",
+        "difficulty_medium": "보통",
+        "hard_difficulty": "어려움",
+        "difficulty_hard": "어려움",
+        "generating_button": "생성 중...",
+        "generate_button": "AI로 생성",
+        "generated_cards_title": "생성된 카드 ({count})",
+        "deselect_all_button": "전체 선택 해제",
+        "select_all_button": "전체 선택",
+        "card_number_label": "카드 {number}",
+        "answer_label": "답:",
+        "add_selected_button": "선택한 {count}장의 카드 추가"
+      },
+      "manual_creation": {
+        "card_count_label": "{count} {cards}",
+        "card_count": {
+          "zero": "카드 없음",
+          "one": "1장",
+          "other": "{count}장"
+        },
+        "add_card_button": "카드 추가",
+        "add_card": "카드 추가",
+        "empty_state_title": "아직 카드가 없어요",
+        "no_cards": "아직 카드가 없어요",
+        "create_first_card_button": "첫 번째 카드 만들기",
+        "create_first": "첫 번째 카드 만들기",
+        "singular_card": "카드",
+        "plural_cards": "카드",
+        "card_header_title": "카드 {number}",
+        "ready_badge": "준비 완료",
+        "delete_card_tooltip": "카드 삭제",
+        "card_type_label": "카드 유형",
+        "qa_type": "질문과 답",
+        "cloze_type": "빈칸 채우기",
+        "image_occlusion_type": "이미지 가리기",
+        "front_label": "앞면 *",
+        "front_hint": "질문 또는 프롬프트",
+        "back_label": "뒷면 *",
+        "back_hint": "답 또는 설명",
+        "notes_label": "메모 (선택)",
+        "notes_hint": "추가 맥락",
+        "tags_label": "태그 (선택)",
+        "tags_hint": "주제1, 주제2",
+        "tags_helper": "태그는 쉼표로 구분하세요"
+      },
+      "editor": {
+        "manual_tab": "수동",
+        "ai_tab": "AI",
+        "import_tab": "가져오기",
+        "tab_manual": "수동",
+        "tab_ai": "AI",
+        "tab_import": "가져오기"
+      },
+      "import": {
+        "recording_saved_toast": "녹음이 저장되었어요!",
+        "microphone_permission_error": "마이크 사용 권한이 거부되었어요",
+        "recording_started_toast": "녹음을 시작했어요...",
+        "recording_failed_error": "녹음에 실패했어요",
+        "file_pick_error": "파일 선택에 실패했어요",
+        "camera_open_error": "카메라를 열지 못했어요",
+        "image_pick_error": "이미지 선택에 실패했어요",
+        "no_text_in_image_error": "이미지에서 텍스트를 찾지 못했어요",
+        "text_extracted_success": "텍스트 추출에 성공했어요!",
+        "image_process_error": "이미지 처리에 실패했어요",
+        "empty_text_error": "가져올 텍스트를 입력해 주세요",
+        "no_file_selected_error": "파일을 선택해 주세요",
+        "no_audio_error": "먼저 오디오를 녹음하거나 오디오 파일을 선택해 주세요",
+        "no_image_error": "먼저 이미지를 스캔하거나 선택해 주세요",
+        "no_google_docs_url_error": "Google Docs URL을 입력해 주세요",
+        "no_youtube_url_error": "YouTube URL을 입력해 주세요",
+        "no_website_url_error": "웹사이트 URL을 입력해 주세요",
+        "cards_ready_toast": "{count}장의 카드를 추가할 수 있어요",
+        "info_banner_text": "다양한 소스에서 플래시카드를 가져오세요",
+        "banner_text": "다양한 소스에서 플래시카드를 가져오세요",
+        "source_label": "가져오기 소스",
+        "pdf_source": "PDF 업로드",
+        "source_pdf": "PDF 업로드",
+        "youtube_source": "YouTube 동영상",
+        "source_youtube": "YouTube 동영상",
+        "record_audio_source": "오디오 녹음",
+        "source_record_audio": "오디오 녹음",
+        "audio_file_source": "오디오 파일",
+        "source_audio_file": "오디오 파일",
+        "website_source": "웹사이트 URL",
+        "source_website": "웹사이트 URL",
+        "camera_source": "카메라 스캔",
+        "source_camera": "카메라 스캔",
+        "google_docs_source": "Google Docs",
+        "source_google_docs": "Google Docs",
+        "text_source": "텍스트 붙여넣기",
+        "source_text": "텍스트 붙여넣기",
+        "handwritten_source": "손글씨 노트",
+        "source_handwritten": "손글씨 노트",
+        "text_label": "텍스트 붙여넣기",
+        "text_hint": "플래시카드 내용을 입력하세요...",
+        "pdf_description": "PDF 문서를 업로드하세요",
+        "choose_pdf_button": "PDF 선택",
+        "change_pdf_button": "PDF 변경",
+        "recording_in_progress_text": "녹음 중...",
+        "recording_saved_text": "녹음이 저장되었어요!",
+        "tap_to_record_text": "탭하여 녹음 시작",
+        "record_voice_hint": "음성을 녹음하면 텍스트로 변환돼요",
+        "stop_recording_button": "녹음 중지",
+        "start_recording_button": "녹음 시작",
+        "record_again_button": "다시 녹음",
+        "choose_audio_button": "오디오 파일 선택",
+        "change_audio_button": "파일 변경",
+        "audio_formats_helper": "지원 형식: MP3, WAV, M4A",
+        "camera_title": "카메라로 문서 스캔",
+        "camera_hint": "노트나 교과서 사진을 찍으세요",
+        "open_camera_button": "카메라 열기",
+        "google_docs_label": "Google Docs URL",
+        "google_docs_hint": "https://docs.google.com/document/d/...",
+        "google_docs_helper": "공유 가능한 Google Docs 링크를 붙여넣으세요",
+        "handwritten_title": "손글씨 노트 스캔",
+        "handwritten_hint": "손글씨 노트에서 텍스트를 추출해요",
+        "take_photo_button": "사진 찍기",
+        "from_gallery_button": "갤러리에서 선택",
+        "paste_text_label": "텍스트 붙여넣기",
+        "paste_text_hint": "플래시카드 내용을 입력하세요...",
+        "separator_label": "카드 구분자",
+        "separator_hint": "예: \\n\\n 또는 ---",
+        "separator_helper": "카드를 나누는 패턴",
+        "choose_file_button": "파일 선택",
+        "change_file_button": "파일 변경",
+        "file_formats_helper": "지원 형식: PDF, TXT, CSV, MD",
+        "youtube_label": "YouTube URL",
+        "youtube_hint": "https://youtube.com/watch?v=...",
+        "youtube_helper": "자막을 추출해요",
+        "website_label": "웹사이트 URL",
+        "website_hint": "https://example.com",
+        "website_helper": "콘텐츠를 추출해요",
+        "importing_button": "가져오는 중...",
+        "import_button": "플래시카드 가져오기",
+        "imported_cards_title": "가져온 카드 ({count})",
+        "card_number_label": "카드 {number}",
+        "add_to_study_set_button": "{count}장의 카드를 학습 세트에 추가"
+      }
+    }
+  },
+  "notes": {
+    "title": "노트",
+    "mindMapHistoryTooltip": "마인드맵 기록",
+    "mindMapTooltip": "마인드맵",
+    "aiGenerateButton": "AI 생성",
+    "addNoteButton": "노트 추가",
+    "emptyStateTitle": "아직 노트가 없어요",
+    "emptyStateSubtitle": "노트를 만들어 학습 자료를 정리하세요",
+    "createManuallyButton": "직접 만들기",
+    "noSearchResultsTitle": "검색 결과와 일치하는 노트가 없어요",
+    "noSearchResultsSubtitle": "검색어나 필터를 조정해 보세요",
+    "createSuccess": "노트가 생성되었어요!",
+    "deleteSuccess": "노트가 삭제되었어요!",
+    "updateSuccess": "노트가 업데이트되었어요!",
+    "aiNotesGeneratedSuccess": "AI 노트 {count}개가 생성되었어요!",
+    "deleteConfirmationTitle": "노트를 삭제할까요?",
+    "deleteConfirmationMessage": "\"{title}\"을(를) 삭제하시겠어요?",
+    "searchPlaceholder": "노트 검색...",
+    "filterAll": "전체",
+    "filterMoreTags": "+{count}개",
+    "sortNewest": "최신순",
+    "sortOldest": "오래된순",
+    "sortTitle": "제목 A-Z",
+    "createNoteTitle": "노트 만들기",
+    "editNoteTitle": "노트 편집",
+    "titleLabel": "제목",
+    "titleHint": "노트 제목을 입력하세요",
+    "titleValidation": "제목을 입력해 주세요",
+    "contentLabel": "내용",
+    "contentHint": "여기에 노트를 작성하세요...\n\nMarkdown 서식을 지원해요",
+    "contentValidation": "내용을 입력해 주세요",
+    "tagsLabel": "태그 (선택)",
+    "tagsHint": "예: 생물학, 중요, 1장 (쉼표로 구분)",
+    "tagsHintEdit": "쉼표로 구분",
+    "markdownHelpText": "Markdown 문법으로 서식을 지정할 수 있어요:\n• **굵게**, *기울임*, `코드`\n• # 제목, ## 부제목\n• - 목록",
+    "createNoteSubmitButton": "노트 만들기",
+    "updateNoteButton": "노트 업데이트",
+    "pinnedBadge": "고정됨",
+    "updatedDateLabel": "{date}에 업데이트",
+    "generateAITitle": "AI로 노트 생성",
+    "generateAISubtitle": "콘텐츠를 추출하여 스마트 노트를 만들어요",
+    "sourceTypePDF": "PDF 문서",
+    "sourceTypePDFDescription": "PDF 파일 업로드",
+    "sourceTypeYouTube": "YouTube 동영상",
+    "sourceTypeYouTubeDescription": "동영상에서 추출",
+    "sourceTypeWebsite": "웹사이트 URL",
+    "sourceTypeWebsiteDescription": "웹페이지 스크래핑",
+    "sourceTypeAudio": "오디오 파일",
+    "sourceTypeAudioDescription": "오디오 전사",
+    "sourceTypeHandwriting": "손글씨",
+    "sourceTypeHandwritingDescription": "이미지에서 OCR",
+    "sourceTypeText": "텍스트 붙여넣기",
+    "sourceTypeTextDescription": "클립보드에서",
+    "chooseSourceLabel": "콘텐츠 소스를 선택하세요",
+    "youtubeUrlLabel": "YouTube URL",
+    "youtubeUrlHint": "https://www.youtube.com/watch?v=...",
+    "websiteUrlLabel": "웹사이트 URL",
+    "websiteUrlHint": "https://en.wikipedia.org/wiki/...",
+    "pasteContentLabel": "콘텐츠 붙여넣기",
+    "pasteContentHint": "강의 노트, 기사 텍스트 또는 기타 콘텐츠를 붙여넣으세요...",
+    "characterCount": "{count}자",
+    "fileUploadPrompt": "파일을 드롭하거나 클릭하여 찾아보기",
+    "pdfFileTypes": "PDF, TXT, MD (최대 20MB)",
+    "audioFileTypes": "MP3, WAV, M4A (최대 50MB)",
+    "imageFileTypes": "JPG, PNG, HEIC (최대 20MB)",
+    "extractGenerateButton": "추출하여 노트 생성",
+    "processingTitle": "콘텐츠 처리 중",
+    "processingSubtitle": "잠시만 기다려 주세요...",
+    "processingStep1": "콘텐츠 추출 중",
+    "processingStep2": "텍스트 분석 중",
+    "processingStep3": "요약 생성 중",
+    "processingStep4": "노트 만드는 중",
+    "extractionSuccess": "콘텐츠 추출에 성공했어요!",
+    "aiSummaryLabel": "AI 요약",
+    "suggestedTagsLabel": "추천 태그",
+    "contentPreviewLabel": "콘텐츠 미리보기 ({count}자)",
+    "startOverButton": "처음부터 다시",
+    "saveNoteButton": "노트 저장",
+    "generatingPresentationTitle": "프레젠테이션 생성 중",
+    "generatingPresentationSubtitle": "AI가 노트에서 슬라이드를 만들고 있어요...",
+    "generationFailedTitle": "생성에 실패했어요",
+    "aiGeneratedBadge": "AI 생성",
+    "regenerateButton": "다시 생성",
+    "mindMapTitle": "마인드맵",
+    "generatingMindMapMessage": "마인드맵 생성 중...",
+    "mindMapGenerationFailed": "마인드맵 생성에 실패했어요",
+    "mindMapHistoryTitle": "마인드맵 기록",
+    "failedToLoadHistory": "기록을 불러오지 못했어요",
+    "noMindMapsEmptyTitle": "아직 마인드맵이 없어요",
+    "noMindMapsEmptySubtitle": "노트에서 마인드맵을 생성해 보세요",
+    "mindMapDeletedSuccess": "마인드맵이 삭제되었어요",
+    "mindMapDeleteFailed": "삭제에 실패했어요",
+    "mindMapLoadFailed": "불러오기에 실패했어요",
+    "deleteMindMapTitle": "마인드맵 삭제",
+    "deleteMindMapConfirmation": "이 마인드맵을 삭제하시겠어요?",
+    "analyzingNotesMessage": "노트 분석 중...",
+    "creatingMindMapMessage": "마인드맵 만드는 중",
+    "mindMapGuideTitle": "마인드맵 가이드",
+    "mindMapGuideContent": "이 마인드맵은 노트의 모든 개념을 시각화해요.\n\n• 핀치로 확대/축소\n• 드래그로 이동\n• 새로고침을 탭하여 다시 생성",
+    "mindMapHelpText": "핀치로 확대 • 드래그로 탐색",
+    "noNotesForMindMap": "마인드맵을 생성할 노트가 없어요",
+    "shareNoteTitle": "노트 공유",
+    "shareLinkLabel": "공유 링크",
+    "shareToSocialLabel": "SNS에 공유",
+    "shareWhatsApp": "WhatsApp",
+    "shareTwitter": "Twitter",
+    "shareFacebook": "Facebook",
+    "shareLinkedIn": "LinkedIn",
+    "shareEmail": "이메일",
+    "downloadLabel": "다운로드",
+    "downloadText": "텍스트 (.txt)",
+    "downloadMarkdown": "Markdown (.md)",
+    "sharingPreviewLabel": "공유 중",
+    "linkCopiedSuccess": "링크가 클립보드에 복사되었어요!",
+    "downloadTextSuccess": "다운로드 완료: {title}.txt",
+    "downloadFailed": "다운로드에 실패했어요",
+    "downloadMarkdownSuccess": "다운로드 완료: {title}.md"
+  },
+  "quiz": {
+    "live_lobby": {
+      "room_code": "방 코드",
+      "copy_code": "코드 복사",
+      "share_code": "친구에게 이 코드를 공유하여 참가하게 하세요",
+      "room_code_copied": "방 코드가 복사되었어요!",
+      "players": "플레이어 ({count})",
+      "host_badge": "호스트",
+      "starting": "시작 중...",
+      "start_game": "게임 시작",
+      "waiting_for_host": "호스트가 게임을 시작하기를 기다리고 있어요...",
+      "error_occurred": "오류가 발생했어요"
+    },
+    "live_quiz": {
+      "title": "라이브 퀴즈",
+      "hero_title": "실시간 대결",
+      "hero_subtitle": "친구들과 함께 누가 더 많이 아는지 겨뤄보세요!",
+      "host_game": "게임 호스트",
+      "host_description": "방을 만들고 코드를 친구에게 공유하세요",
+      "creating_room": "방 만드는 중...",
+      "create_room": "방 만들기",
+      "or": "또는",
+      "join_game": "게임 참가",
+      "room_code_label": "방 코드",
+      "room_code_hint": "ABC123",
+      "your_name_label": "이름",
+      "your_name_hint": "이름을 입력하세요",
+      "joining": "참가 중...",
+      "join_room": "방 참가",
+      "please_enter_room_code": "방 코드를 입력해 주세요",
+      "please_enter_name": "이름을 입력해 주세요",
+      "failed_to_create_room": "방 만들기에 실패했어요",
+      "failed_to_join_room": "방 참가에 실패했어요",
+      "error": "오류: {error}"
+    },
+    "match_game": {
+      "title": "매칭 게임",
+      "reset_game": "게임 리셋",
+      "time": "시간",
+      "moves": "이동 수",
+      "matches": "매칭",
+      "questions": "질문",
+      "answers": "답",
+      "congratulations": "축하해요! 🎉",
+      "completed_message": "{seconds}초, {moves}번 이동으로 완료했어요",
+      "play_again": "다시 플레이",
+      "no_flashcards_available": "매칭에 사용할 플래시카드가 없어요",
+      "failed_to_load": "플래시카드를 불러오지 못했어요: {error}",
+      "time_seconds": "{seconds}초"
+    },
+    "mode": {
+      "title": "퀴즈 모드",
+      "hero_title": "지식을 테스트하세요",
+      "hero_subtitle": "플래시카드에서 AI가 문제를 생성해요",
+      "number_of_questions": "문제 수",
+      "question_types": "문제 유형",
+      "multiple_choice": "객관식",
+      "multiple_choice_description": "4개 선택지에서 1개 선택",
+      "true_false": "참/거짓",
+      "true_false_description": "문장이 맞는지 판단하세요",
+      "fill_blank": "빈칸 채우기",
+      "fill_blank_description": "빠진 단어나 구를 입력하세요",
+      "timer": "타이머",
+      "timer_description": "문제당 30초",
+      "generating_quiz": "퀴즈 생성 중...",
+      "generate_start_quiz": "생성 및 시작",
+      "please_select_question_type": "최소 1개의 문제 유형을 선택해 주세요",
+      "failed_to_generate": "퀴즈 생성에 실패했어요: {error}"
+    },
+    "results": {
+      "title": "퀴즈 결과",
+      "score": "점수",
+      "outstanding": "뛰어나요! 🎉",
+      "great_job": "잘했어요! 👏",
+      "good_effort": "좋은 노력이에요! 💪",
+      "keep_practicing": "계속 연습하세요! 📚",
+      "correct": "정답",
+      "incorrect": "오답",
+      "time": "시간",
+      "time_minutes": "{minutes}분",
+      "back_to_study_set": "학습 세트로 돌아가기",
+      "try_again": "다시 도전"
+    },
+    "taking": {
+      "exit_quiz": "퀴즈를 종료할까요?",
+      "exit_message": "진도가 사라져요.",
+      "cancel": "취소",
+      "exit": "종료",
+      "question_progress": "{current}/{total}",
+      "submitting": "제출 중...",
+      "type_answer_here": "여기에 답을 입력하세요...",
+      "submit_answer": "답 제출",
+      "correct_feedback": "정답!",
+      "incorrect_feedback": "오답",
+      "correct_answer": "정답: {answer}",
+      "explanation": "해설",
+      "previous": "이전",
+      "next_question": "다음 문제",
+      "submit_quiz": "퀴즈 제출",
+      "failed_to_submit": "퀴즈 제출에 실패했어요: {error}"
+    }
+  },
+  "research": {
+    "title": "딥 리서치",
+    "messages": {
+      "please_enter_query": "검색어를 입력해 주세요",
+      "creating": "리서치 생성 중...",
+      "loading_report": "리서치 보고서 로딩 중...",
+      "pdf_export_soon": "PDF 내보내기 곧 출시!",
+      "markdown_copied": "Markdown이 클립보드에 복사되었어요!",
+      "report_copied": "보고서가 복사되었어요!",
+      "could_not_open_link": "링크를 열 수 없었어요"
+    },
+    "form": {
+      "query_hint": "예: \"양자 컴퓨팅을 자세히 설명해 줘\"",
+      "ai_powered_research": "AI 리서치",
+      "deep_dive_topic": "모든 주제를 깊이 탐구하세요"
+    },
+    "sections": {
+      "source_types": "📚 소스 유형",
+      "research_depth": "🔍 리서치 깊이",
+      "output_format": "📄 출력 형식"
+    },
+    "source_types": {
+      "documents": "문서",
+      "web": "웹",
+      "academic": "학술"
+    },
+    "depth": {
+      "quick": "빠른",
+      "standard": "표준",
+      "comprehensive": "포괄적"
+    },
+    "output_format": {
+      "detailed": "상세",
+      "summary": "요약",
+      "bullets": "글머리 기호"
+    },
+    "buttons": {
+      "start_research": "딥 리서치 시작",
+      "cancel": "취소"
+    },
+    "recent": {
+      "title": "최근 리서치",
+      "done": "완료",
+      "failed": "실패",
+      "in_progress": "진행 중"
+    },
+    "progress": {
+      "title": "리서치 진행 중",
+      "query_label": "리서치 검색어",
+      "overall_progress": "전체 진도",
+      "pipeline_title": "리서치 파이프라인",
+      "phases": {
+        "planning": "계획 중",
+        "researching": "리서치 중",
+        "synthesizing": "종합 중",
+        "completed": "완료",
+        "failed": "실패",
+        "starting": "시작 중"
+      },
+      "agents": {
+        "planning": "플래닝 에이전트",
+        "planning_desc": "검색어 분석 및 리서치 전략 수립",
+        "research": "리서치 에이전트",
+        "research_desc": "선택된 소스에서 정보 수집",
+        "synthesis": "종합 에이전트",
+        "synthesis_desc": "조사 결과 정리 및 종합"
+      }
+    },
+    "report": {
+      "deep_research": "딥 리서치",
+      "tab_report": "보고서",
+      "tab_sources": "소스 ({count})",
+      "tab_export": "내보내기",
+      "executive_summary": "요약",
+      "key_insights": "핵심 인사이트",
+      "sources_references": "소스 및 참고 문헌",
+      "sources_cited": "{count}개의 소스 인용",
+      "no_sources": "소스를 찾지 못했어요",
+      "knowledge_base_sources": "지식 베이스 ({count})",
+      "web_sources": "웹 소스 ({count})",
+      "study_material": "학습 자료",
+      "relevance": "관련도 {score}%",
+      "relevance_label": "관련도",
+      "citation_copied": "인용이 복사되었어요!",
+      "export_title": "리서치 내보내기",
+      "export_format": "내보내기 형식",
+      "export_pdf": "PDF로 내보내기",
+      "export_pdf_desc": "PDF 문서로 저장",
+      "export_markdown": "Markdown으로 복사",
+      "export_markdown_desc": "인용이 포함된 서식 텍스트",
+      "export_plain": "일반 텍스트로 복사",
+      "export_plain_desc": "서식 없는 간단한 텍스트",
+      "share": "보고서 공유",
+      "share_desc": "다른 앱으로 공유",
+      "citation_style": "인용 스타일",
+      "citation_preview": "미리보기",
+      "delete_confirm_title": "리서치를 삭제할까요?",
+      "delete_confirm_message": "이 리서치 보고서가 영구 삭제돼요.",
+      "delete_confirm_cancel": "취소",
+      "delete_confirm_delete": "삭제"
+    },
+    "date": {
+      "today": "오늘",
+      "yesterday": "어제",
+      "days_ago": "{days}일 전"
+    }
+  },
+  "ai_chat": {
+    "title": "스터디 버디",
+    "history_title": "채팅 기록",
+    "history_subtitle": "AI와의 대화",
+    "messages": {
+      "ask_anything": "무엇이든 물어보세요...",
+      "thinking": "생각 중...",
+      "no_conversations": "아직 대화가 없어요",
+      "start_new": "새 채팅을 시작하세요",
+      "search_conversations": "대화 검색...",
+      "delete_confirm_title": "대화를 삭제할까요?",
+      "delete_confirm_message": "이 대화와 모든 메시지가 영구 삭제돼요.",
+      "delete_confirm_cancel": "취소",
+      "delete_confirm_delete": "삭제"
+    },
+    "empty_state": {
+      "title": "스터디 버디",
+      "description": "학습 자료에 대해 질문하고, 설명, 요약 등을 받아보세요.\n문서를 참조하여 인용이 포함된 답변을 제공해요.",
+      "prompts": {
+        "explain": "이 주제의 핵심 개념을 설명해 줘",
+        "summary": "학습 자료의 요약을 만들어 줘",
+        "important": "기억해야 할 가장 중요한 포인트는?",
+        "examples": "예시를 들어 이해를 도와줘"
+      }
+    },
+    "file_picker": {
+      "gallery": "갤러리에서 선택",
+      "camera": "사진 찍기",
+      "pdf": "PDF 문서 선택"
+    },
+    "history": {
+      "new_chat": "새 채팅",
+      "no_message": "아직 대화가 없어요"
+    },
+    "date": {
+      "today": "오늘",
+      "yesterday": "어제",
+      "days_ago": "{days}일 전"
+    }
+  },
+  "teach_back": {
+    "title": "티치백",
+    "messages": {
+      "please_enter_topic": "주제를 입력해 주세요",
+      "please_select_study_set": "학습 세트를 선택해 주세요",
+      "please_enter_explanation": "설명을 입력해 주세요",
+      "explanation_submitted": "설명이 제출되었어요!",
+      "no_study_sets": "학습 세트를 찾을 수 없어요. 먼저 만들어 주세요!"
+    },
+    "feynman": {
+      "title": "파인만 기법",
+      "step1": "주제 선택",
+      "step1_desc": "개념을 선택하세요",
+      "step2": "쉽게 설명",
+      "step2_desc": "다시 가르치기",
+      "step3": "피드백 받기",
+      "step3_desc": "AI가 평가해요",
+      "step4": "부족한 부분 채우기",
+      "step4_desc": "개선하고 다시 도전"
+    },
+    "form": {
+      "mode_topic": "주제 입력",
+      "mode_study_set": "학습 세트에서",
+      "topic_label": "어떤 주제를 마스터하고 싶으세요?",
+      "topic_hint": "예: 피타고라스 정리, 광합성, 수요와 공급...",
+      "quick_picks": "추천:",
+      "reference_label": "참고 자료 (선택 — AI 평가 정확도가 높아져요)",
+      "reference_hint": "교과서 노트, 강의 내용 또는 핵심 포인트를 붙여넣으세요...",
+      "study_set_label": "학습 세트를 선택하세요 — AI가 플래시카드에서 주제를 자동 생성해요",
+      "study_set_empty": "학습 세트를 찾을 수 없어요. 먼저 만들어 주세요!",
+      "cards_count": "{count}장",
+      "cancel": "취소",
+      "generate_start": "생성 및 시작",
+      "start_teaching": "가르치기 시작",
+      "generating": "생성 중...",
+      "creating": "만드는 중..."
+    },
+    "session": {
+      "essentials_title": "핵심 복습",
+      "load_essentials": "핵심 불러오기",
+      "who_explaining": "누구에게 설명하나요?",
+      "difficulty_eli5": "5살 아이",
+      "difficulty_eli5_desc": "가장 쉽게",
+      "difficulty_classmate": "반 친구",
+      "difficulty_classmate_desc": "보통 수준",
+      "difficulty_expert": "전문가",
+      "difficulty_expert_desc": "전문적으로 깊이 있게",
+      "explanation_title": "나의 설명",
+      "explanation_hint": "자신의 말로 개념을 설명해 보세요...",
+      "characters_count": "{count}자",
+      "submit_explanation": "설명 제출",
+      "submitting": "제출 중...",
+      "review_explanation": "나의 설명 검토",
+      "evaluate_button": "설명 평가하기",
+      "evaluating": "평가 중...",
+      "challenge_button": "도전",
+      "convince_ai_title": "AI를 설득하세요",
+      "convince_ai_desc": "회의적인 AI 학생이 날카로운 질문을 해요. 이해도를 증명하세요!",
+      "convinced_badge": "설득 성공! +20 XP",
+      "skeptical_student": "회의적인 학생",
+      "defend_hint": "이해한 내용을 설명하세요...",
+      "thinking": "생각 중..."
+    },
+    "progress": {
+      "phase_explain": "설명",
+      "phase_submit": "제출",
+      "phase_evaluate": "평가"
+    },
+    "evaluation": {
+      "xp_earned": "+50 XP 획득!",
+      "overall_score": "종합 점수",
+      "score_breakdown": "점수 세부",
+      "accuracy": "정확도",
+      "clarity": "명확성",
+      "completeness": "완성도",
+      "understanding": "이해도",
+      "strengths": "강점",
+      "improve": "개선 방법",
+      "deepen": "이해 심화",
+      "try_again": "다시 도전",
+      "new_topic": "새 주제",
+      "score_excellent": "뛰어난 이해도!",
+      "score_good": "좋은 이해도!",
+      "score_fair": "보통의 이해도",
+      "score_needs_improvement": "개선이 필요해요"
+    },
+    "status": {
+      "pending": "대기 중",
+      "submitted": "제출됨",
+      "evaluated": "평가됨"
+    },
+    "difficulty": {
+      "eli5": "ELI5",
+      "classmate": "반 친구",
+      "expert": "전문가"
+    },
+    "empty_state": {
+      "title": "아직 티치백 세션이 없어요",
+      "subtitle": "파인만 기법으로 이해도를 테스트해 보세요"
+    }
+  },
+  "common": {
+    "cancel": "취소",
+    "delete": "삭제",
+    "close": "닫기",
+    "retry": "재시도",
+    "tryAgain": "다시 시도",
+    "errorGeneric": "문제가 발생했어요",
+    "noData": "데이터 없음",
+    "gotIt": "확인"
+  },
+  "exam_clone": {
+    "list": {
+      "title": "Exam Clone 엔진",
+      "subtitle": "AI 기반 모의 시험",
+      "upload_tooltip": "시험 업로드",
+      "loading": "시험 로딩 중...",
+      "overview": "개요",
+      "your_exams": "나의 시험",
+      "upload_button": "업로드",
+      "no_exams_title": "아직 시험이 없어요",
+      "no_exams_subtitle": "첫 번째 시험을 업로드하여\nAI로 연습 문제를 생성하세요",
+      "upload_exam_button": "시험 업로드",
+      "review_queue": "복습 대기열",
+      "review_queue_subtitle_due": "{count}개 복습",
+      "review_queue_subtitle_caught_up": "모두 완료",
+      "due_count": "{count}개 복습",
+      "bookmarks": "북마크",
+      "bookmarks_subtitle": "저장한 문제",
+      "saved_questions": "저장한 문제",
+      "badges": "배지",
+      "badges_subtitle": "업적",
+      "achievements": "업적",
+      "leaderboard": "리더보드",
+      "leaderboard_subtitle": "랭킹",
+      "rankings": "랭킹",
+      "upload": "업로드",
+      "analysis": "분석",
+      "practice": "연습",
+      "notification_title": "{count}개의 {questions}가 복습 대기 중!",
+      "notification_subtitle": "연습하여 기억을 강화하세요",
+      "notification": {
+        "multiple_due": "{count}문제가 복습 대기 중!",
+        "message": "연습하여 기억을 강화하세요"
+      },
+      "question": "문제",
+      "questions": "문제",
+      "stats": {
+        "exams": "시험",
+        "original": "원본",
+        "generated": "생성됨",
+        "ready": "준비 완료",
+        "failed": "실패",
+        "pending": "대기 중",
+        "processing": "처리 중"
+      },
+      "all_caught_up": "모두 완료",
+      "failed": "처리에 실패했어요",
+      "delete_dialog": {
+        "title": "시험을 삭제할까요?",
+        "message": "이 시험과 모든 생성된 문제가 영구 삭제돼요.",
+        "cancel": "취소",
+        "delete": "삭제"
+      }
+    },
+    "upload": {
+      "title": "시험 업로드",
+      "subtitle": "과거 시험을 업로드하여 연습 문제를 생성하세요",
+      "title_label": "시험 제목 *",
+      "title_hint": "예: 중간고사, 생물학 기말고사",
+      "subject_label": "과목",
+      "subject_hint": "예: 생물학, 수학",
+      "method_label": "업로드 방식",
+      "upload_pdf": "PDF 업로드",
+      "upload_pdf_desc": "시험을 PDF 파일로 업로드",
+      "paste_text": "텍스트 붙여넣기",
+      "paste_text_desc": "시험 텍스트를 복사하여 붙여넣기",
+      "pdf_label": "PDF 파일 선택",
+      "pdf_hint": "탭하여 PDF 선택",
+      "text_label": "시험 텍스트",
+      "text_hint": "시험 문제를 여기에 붙여넣으세요...",
+      "uploading": "업로드 중...",
+      "upload_button": "시험 업로드",
+      "upload_analyze": "업로드 및 분석",
+      "click_upload": "클릭하여 업로드",
+      "file_formats": "지원 형식: PDF, JPG, PNG",
+      "tip_pdf_fail": "PDF가 실패하면 시험을 선명하게 촬영해 보세요",
+      "title_required": "시험 제목을 입력해 주세요",
+      "file_required": "PDF 파일을 선택해 주세요",
+      "text_required": "시험 텍스트를 붙여넣어 주세요",
+      "character_count": "{count}자"
+    },
+    "detail": {
+      "title": "시험 분석",
+      "export_pdf": "PDF 내보내기",
+      "review_queue": "복습 대기열",
+      "live_session": "라이브 세션",
+      "practice": "연습",
+      "coming_soon": "{feature} 곧 출시",
+      "exam_style_analysis": "시험 스타일 분석",
+      "question_types": "문제 유형",
+      "difficulty_distribution": "난이도 분포",
+      "easy": "쉬움",
+      "medium": "보통",
+      "hard": "어려움",
+      "topics_covered": "다루는 주제",
+      "more_topics": "+{count}개",
+      "original": "원본",
+      "generated": "생성됨",
+      "total": "합계",
+      "best_score": "최고 점수",
+      "tabs": {
+        "original": "원본 ({count})",
+        "generated": "생성됨 ({count})",
+        "analytics": "분석"
+      },
+      "generate_more": "문제 더 생성",
+      "no_questions": "아직 문제가 없어요",
+      "no_practice_data": "연습 데이터가 없어요",
+      "complete_practice": "분석을 보려면 최소 1번의 연습 세션을 완료하세요.",
+      "question_type": {
+        "multiple_choice": "객관식",
+        "short_answer": "단답형",
+        "true_false": "참/거짓",
+        "essay": "논술",
+        "fill_blank": "빈칸 채우기"
+      },
+      "correct_answer": "정답",
+      "explanation": "해설"
+    },
+    "badges": {
+      "title": "업적",
+      "subtitle": "연습하여 배지를 획득하세요",
+      "your_progress": "나의 진도",
+      "failed_to_load": "배지를 불러오지 못했어요: {error}",
+      "remaining": "잠금 해제할 배지 {count}개 남음",
+      "all": "전체",
+      "recently_earned": "최근 획득",
+      "earned_on": "{date}에 획득",
+      "from_exam": "{title}에서",
+      "xp_reward": "+{xp} XP"
+    },
+    "bookmarks": {
+      "title": "북마크한 문제",
+      "subtitle": "복습용으로 표시한 문제",
+      "stats_count": "{count}",
+      "stats_label": "북마크한 문제",
+      "from_exams_count": "{count}",
+      "from_exams_label": "서로 다른 시험에서",
+      "difficulty": {
+        "easy": "쉬움",
+        "medium": "보통",
+        "hard": "어려움",
+        "unknown": "알 수 없음"
+      },
+      "options": "선택지:",
+      "correct": "(정답)",
+      "correct_answer": "정답:",
+      "empty_title": "아직 북마크가 없어요",
+      "empty_message": "연습 중에 어려운 문제를 북마크하여 나중에 복습하세요.\n문제의 북마크 아이콘을 클릭하여 여기에 저장할 수 있어요.",
+      "start_practicing": "연습 시작",
+      "failed_to_load": "북마크를 불러오지 못했어요: {error}",
+      "failed_to_remove": "북마크 삭제에 실패했어요: {error}"
+    },
+    "leaderboard": {
+      "title": "리더보드",
+      "subtitle": "나의 순위를 확인하세요",
+      "period": {
+        "weekly": "주간",
+        "monthly": "월간",
+        "all_time": "전체 기간"
+      },
+      "your_rank": "나의 순위",
+      "top_10": "상위 10!",
+      "keep_practicing": "계속 연습하세요",
+      "avg_score": "평균 점수",
+      "correct": "정답",
+      "avg_score_label": "평균 점수",
+      "exams_count": "시험 {count}개",
+      "exams_and_correct": "시험 {exams}개 • 정답 {correct}문제",
+      "empty_title": "아직 데이터가 없어요",
+      "empty_message": "첫 번째로 시험에 도전하여 리더보드에 올라보세요!",
+      "failed_to_load": "리더보드를 불러오지 못했어요: {error}"
+    },
+    "practice": {
+      "title": "연습",
+      "practice_exam": "모의 시험",
+      "questions_available": "{count}문제 이용 가능",
+      "setup": {
+        "number_of_questions": "문제 수",
+        "time_limit_minutes": "제한 시간 (분)",
+        "minutes": "{time}분",
+        "include_questions": "포함할 문제",
+        "original_questions": "원본 시험 문제",
+        "ai_questions": "AI 생성 문제",
+        "start_practice": "연습 시작"
+      },
+      "progress": {
+        "question_of": "문제 {current} / {total}",
+        "answered": "{count}문제 답변 완료",
+        "flagged": "{count}문제 플래그 표시",
+        "time_remaining": "{time}"
+      },
+      "difficulty": {
+        "easy": "쉬움",
+        "medium": "보통",
+        "hard": "어려움"
+      },
+      "actions": {
+        "previous": "이전",
+        "next": "다음",
+        "submit": "제출",
+        "check_answer": "답 확인",
+        "type_answer": "답을 입력하세요..."
+      },
+      "results": {
+        "title": "결과",
+        "score": "{score}%",
+        "excellent": "뛰어나요!",
+        "good_job": "잘했어요!",
+        "keep_practicing": "계속 연습하세요!",
+        "correct": "정답",
+        "incorrect": "오답",
+        "unanswered": "미답변",
+        "time": "시간",
+        "review_answers": "답안 검토",
+        "try_again": "다시 도전"
+      },
+      "review": {
+        "title": "답안 검토",
+        "question_number": "문제 {number}",
+        "your_answer": "나의 답:",
+        "correct_answer": "정답:",
+        "explanation": "해설"
+      },
+      "dialogs": {
+        "exit_title": "시험을 종료할까요?",
+        "exit_message": "진도가 사라져요. {total}문제 중 {answered}문제에 답했어요.",
+        "continue_exam": "시험 계속하기",
+        "exit": "종료",
+        "submit_title": "시험을 제출할까요?",
+        "submit_message": "{total}문제 중 {answered}문제에 답했어요.",
+        "unanswered_warning": "{count}문제가 미답변이에요",
+        "submit": "제출"
+      },
+      "no_questions_available": "이용 가능한 문제가 없어요"
+    },
+    "review_queue": {
+      "title": "복습 대기열",
+      "stats": {
+        "correct": "{count}",
+        "incorrect": "{count}",
+        "progress": "{current}/{total}"
+      },
+      "loading": "복습 대기열 로딩 중...",
+      "difficulty": {
+        "easy": "쉬움",
+        "medium": "보통",
+        "hard": "어려움"
+      },
+      "review_number": "복습 #{count}",
+      "check_answer": "답 확인",
+      "ai_evaluating": "AI가 평가 중...",
+      "next_question": "다음 문제",
+      "finish_review": "복습 완료",
+      "type_answer": "답을 입력하세요:",
+      "type_answer_hint": "여기에 답을 입력하세요...\n(여러 줄로 작성할 수 있어요)",
+      "correct_answer": "정답: {answer}",
+      "get_ai_explanation": "AI 해설 보기",
+      "getting_explanation": "해설 가져오는 중...",
+      "ai_evaluation": "AI 평가",
+      "ai_explanation": "AI 해설",
+      "empty": {
+        "title": "모두 완료했어요!",
+        "message": "현재 복습 대기 중인 문제가 없어요. 복습 대기열을 늘리려면 더 많은 시험을 연습하세요.",
+        "back_button": "시험으로 돌아가기",
+        "refresh_button": "새로고침"
+      },
+      "complete": {
+        "title": "복습 완료!",
+        "message": "지식 강화, 잘했어요",
+        "correct": "정답",
+        "incorrect": "오답",
+        "total": "합계",
+        "accuracy": "정확도",
+        "tip_title": "이 조자로!",
+        "tip_message": "틀린 문제는 더 자주 출제돼요. 간격 반복으로 지식을 장기 기억으로 옮기세요.",
+        "back_button": "시험으로 돌아가기",
+        "review_more": "더 복습하기"
+      },
+      "failed_to_load": "복습 대기열을 불러오지 못했어요: {error}",
+      "failed_to_submit": "복습 완료에 실패했어요: {error}",
+      "failed_explanation": "해설 가져오기에 실패했어요: {error}"
+    }
+  },
+  "problem_solver": {
+    "batch_solver": {
+      "title": "일괄 문제 풀이",
+      "tabs": {
+        "pdf_upload": "PDF 업로드",
+        "text_input": "텍스트 입력"
+      },
+      "pdf_tab": {
+        "upload_label": "PDF 업로드",
+        "upload_hint": "문제가 포함된 PDF 파일을 선택하세요",
+        "extract_button": "문제 추출"
+      },
+      "text_tab": {
+        "title": "문제 붙여넣기",
+        "description": "아래에 문제를 붙여넣으세요. 각 문제는 줄바꿈 또는 번호로 구분하세요.",
+        "hint": "예:\n1. x를 구하시오: 2x + 5 = 15\n2. 반지름 7cm인 원의 넓이를 구하시오\n3. 인수분해: x² - 5x + 6",
+        "extract_button": "문제 추출"
+      },
+      "stats": {
+        "total": "합계",
+        "selected": "선택됨",
+        "solved": "풀림"
+      },
+      "actions": {
+        "solve_selected": "선택한 {count}문제 풀기",
+        "solve_all": "모두 풀기"
+      },
+      "messages": {
+        "enter_text": "텍스트를 입력해 주세요",
+        "problems_solved": "{count}문제가 풀렸어요!"
+      }
+    },
+    "camera_scan": {
+      "title": "문제 스캔",
+      "instructions": "프레임 안에 문제를 위치시키세요",
+      "review_title": "확인 및 편집",
+      "analyzing": "이미지 분석 중...",
+      "analyzing_subtitle": "몇 초 정도 걸릴 수 있어요",
+      "verify_text": "텍스트를 확인해 주세요",
+      "verify_description": "수학 기호가 정확하게 인식되지 않을 수 있어요. 필요한 경우 아래 텍스트를 편집하세요.",
+      "subject_label": "과목",
+      "problem_text_label": "문제 텍스트",
+      "problem_text_hint": "여기서 문제 텍스트를 편집하세요...",
+      "problem_text_tip": "팁: 위첨자에는 ^를 사용하세요 (예: x^2)",
+      "actions": {
+        "retake": "다시 찍기",
+        "solve_problem": "문제 풀기"
+      },
+      "subjects": {
+        "mathematics": "수학",
+        "physics": "물리학",
+        "chemistry": "화학",
+        "biology": "생물학",
+        "computer_science": "컴퓨터 과학",
+        "other": "기타"
+      }
+    },
+    "concept_map": {
+      "title": "개념도",
+      "subtitle": "시각적 학습 로드맵",
+      "central_topic": "핵심 주제",
+      "sections": {
+        "prerequisites": "선수 지식",
+        "prerequisites_subtitle": "먼저 이것을 마스터하세요",
+        "current_concepts": "현재 개념",
+        "current_concepts_subtitle": "지금 학습 중",
+        "next_steps": "다음 단계",
+        "next_steps_subtitle": "다음 학습 내용",
+        "related_topics": "관련 주제",
+        "related_topics_subtitle": "연결 탐색"
+      },
+      "importance": "중요도:",
+      "connection": "관련:"
+    },
+    "formula_cards": {
+      "title": "공식 카드",
+      "progress": "카드 {current} / {total}",
+      "categories": {
+        "rule": "규칙",
+        "concept": "개념",
+        "formula": "공식",
+        "theorem": "정리"
+      },
+      "sides": {
+        "explanation": "해설",
+        "formula": "공식"
+      },
+      "hints": {
+        "tap_to_flip": "탭하여 {side} 보기",
+        "tap_explanation": "탭하여 해설 보기",
+        "tap_formula": "탭하여 공식 보기",
+        "swipe_navigate": "좌우로 스와이프하여 이동"
+      },
+      "actions": {
+        "previous": "이전",
+        "next": "다음",
+        "flip": "뒤집기"
+      },
+      "messages": {
+        "copied": "카드가 클립보드에 복사되었어요"
+      }
+    },
+    "hints": {
+      "title": "가이드 모드",
+      "subtitle": "전체 풀이 대신 힌트를 받아보세요",
+      "problem_label": "문제",
+      "hint_progress": "힌트 {current} / 약 {total}",
+      "next_hint_preview": "다음 힌트: {preview}",
+      "all_revealed": "모든 힌트가 표시되었어요! 풀어보세요.",
+      "all_revealed_status": "모든 힌트 표시 완료",
+      "actions": {
+        "reset": "리셋",
+        "get_first_hint": "첫 번째 힌트 받기",
+        "next_hint": "다음 힌트",
+        "thinking": "생각 중...",
+        "see_solution": "풀이 보기"
+      },
+      "messages": {
+        "hints_reset": "힌트가 리셋되었어요"
+      }
+    },
+    "practice_quiz": {
+      "title": "연습 퀴즈",
+      "title_with_progress": "연습 퀴즈 ({current}/{total})",
+      "question_progress": "문제 {current}/{total}",
+      "stats": {
+        "correct": "정답"
+      },
+      "question_types": {
+        "multiple_choice": "객관식",
+        "true_false": "참 또는 거짓",
+        "fill_blank": "빈칸 채우기"
+      },
+      "feedback": {
+        "correct": "정답!",
+        "incorrect": "오답",
+        "correct_answer": "정답: {answer}",
+        "explanation": "해설"
+      },
+      "actions": {
+        "next_question": "다음 문제",
+        "view_results": "결과 보기"
+      },
+      "results": {
+        "perfect": "만점! 🎉",
+        "great": "훌륭해요! 🌟",
+        "good": "잘했어요! 👍",
+        "practice": "계속 연습하세요! 💪",
+        "quiz_complete": "퀴즈 완료!",
+        "close": "닫기",
+        "try_again": "다시 도전"
+      }
+    },
+    "bookmarks": {
+      "title": "내 북마크",
+      "search_placeholder": "북마크 검색...",
+      "stats": {
+        "total": "합계",
+        "subjects": "과목",
+        "tags": "태그"
+      },
+      "edit_sheet": {
+        "title": "북마크 편집",
+        "tags_label": "태그",
+        "tags_hint": "태그 추가...",
+        "notes_label": "메모",
+        "notes_hint": "여기에 메모를 추가하세요...",
+        "save_button": "변경 사항 저장"
+      },
+      "delete_dialog": {
+        "title": "북마크 삭제",
+        "message": "이 북마크를 삭제하시겠어요?",
+        "cancel": "취소",
+        "delete": "삭제"
+      },
+      "messages": {
+        "updated": "북마크가 업데이트되었어요",
+        "deleted": "북마크가 삭제되었어요"
+      },
+      "empty_state": {
+        "title": "아직 북마크가 없어요",
+        "subtitle": "문제를 저장하여 나중에 확인하세요"
+      }
+    },
+    "history": {
+      "title": "문제 기록",
+      "search_placeholder": "문제 검색...",
+      "delete_dialog": {
+        "title": "문제를 삭제할까요?",
+        "message": "이 문제와 풀이가 영구 삭제돼요.",
+        "cancel": "취소",
+        "delete": "삭제"
+      },
+      "time": {
+        "today": "오늘",
+        "yesterday": "어제",
+        "days_ago": "{days}일 전"
+      }
+    },
+    "input": {
+      "title": "문제 풀이",
+      "subject_label": "과목",
+      "problem_label": "문제",
+      "problem_hint": "문제를 입력하거나 붙여넣으세요...\n\n예: 방정식 2x + 5 = 15를 풀어라",
+      "actions": {
+        "scan": "스캔",
+        "voice": "음성",
+        "image": "이미지",
+        "solve": "문제 풀기",
+        "creating": "만드는 중..."
+      },
+      "image_uploaded": "이미지가 업로드되었어요",
+      "voice_coming_soon": "음성 입력 곧 출시",
+      "how_it_works": "작동 방식",
+      "agents": {
+        "analysis": {
+          "title": "분석 에이전트",
+          "description": "문제를 이해하고 접근법을 파악해요"
+        },
+        "solver": {
+          "title": "풀이 에이전트",
+          "description": "단계별 설명이 포함된 풀이를 생성해요"
+        },
+        "verifier": {
+          "title": "검증 에이전트",
+          "description": "풀이의 정확성을 교차 검증해요"
+        }
+      },
+      "subjects": {
+        "auto_detect": "자동 감지",
+        "mathematics": "수학",
+        "physics": "물리학",
+        "chemistry": "화학",
+        "biology": "생물학",
+        "computer_science": "컴퓨터 과학",
+        "engineering": "공학",
+        "economics": "경제학",
+        "statistics": "통계학"
+      },
+      "menu": {
+        "bookmarks": "북마크",
+        "history": "기록",
+        "batch_solver": "일괄 풀이",
+        "camera_scan": "카메라 스캔"
+      },
+      "messages": {
+        "enter_problem": "문제를 입력하거나 이미지를 업로드해 주세요"
+      }
+    },
+    "similar_problems": {
+      "title": "유사한 문제",
+      "difficulty": {
+        "easy": "쉬움",
+        "medium": "보통",
+        "hard": "어려움"
+      },
+      "solve_this": "이 문제 풀기"
+    },
+    "solution": {
+      "title": "풀이",
+      "final_answer": "최종 답",
+      "learning_tools": "학습 도구",
+      "tools": {
+        "hints": "힌트",
+        "similar": "유사",
+        "quiz": "퀴즈",
+        "chat": "채팅",
+        "concepts": "개념",
+        "formulas": "공식"
+      },
+      "tabs": {
+        "steps": "단계",
+        "code": "코드",
+        "alternatives": "대안",
+        "graph": "그래프",
+        "analysis": "분석",
+        "citations": "인용"
+      },
+      "steps": {
+        "no_solution": "풀이가 없어요",
+        "no_steps": "풀이 단계가 없어요",
+        "step_number": "단계 {number}",
+        "copy": "복사",
+        "step_copied": "단계가 복사되었어요"
+      },
+      "code": {
+        "empty_title": "코드 블록이 없어요"
+      },
+      "alternatives": {
+        "empty_title": "대안적 방법이 없어요"
+      },
+      "graph": {
+        "empty_title": "그래프 데이터가 없어요"
+      },
+      "analysis": {
+        "level_explanation": "{level} 수준 설명",
+        "key_points": "핵심 포인트:",
+        "examples": "예시:",
+        "technical_analysis": "기술적 분석",
+        "no_details": "세부 정보 없음"
+      },
+      "citations": {
+        "empty_title": "인용이 없어요"
+      },
+      "complexity": {
+        "title": "설명 수준",
+        "beginner": "초급",
+        "intermediate": "중급",
+        "advanced": "고급",
+        "expert": "전문가",
+        "loading": "설명 로딩 중..."
+      },
+      "narration": {
+        "title": "풀이 낭독",
+        "listen_tooltip": "풀이 듣기",
+        "completed": "낭독 완료",
+        "no_text": "낭독할 풀이 텍스트가 없어요"
+      },
+      "messages": {
+        "bookmark_added": "북마크에 추가했어요",
+        "bookmark_removed": "북마크에서 제거했어요"
+      }
+    },
+    "solving_progress": {
+      "title": "풀이 중...",
+      "stages": {
+        "analysis": {
+          "title": "분석 에이전트",
+          "description": "문제 이해 중"
+        },
+        "solving": {
+          "title": "풀이 에이전트",
+          "description": "단계별 풀이 생성 중"
+        },
+        "verification": {
+          "title": "검증 에이전트",
+          "description": "정확성 교차 검증 중"
+        }
+      },
+      "status": {
+        "complete": "완료",
+        "solution_ready": "풀이가 준비되었어요!",
+        "redirecting": "풀이로 이동 중...",
+        "failed": "풀이에 실패했어요",
+        "retry": "재시도"
+      }
+    },
+    "study_buddy": {
+      "title": "스터디 버디",
+      "subtitle": "풀이에 대해 추가 질문을 하세요",
+      "welcome_message": "안녕하세요! 스터디 버디예요. 문제의 풀이를 검토했어요. 무엇이든 물어보세요 — 단계를 더 자세히 설명하거나, 대안적 접근법을 제안하거나, 유사한 개념을 연습할 수 있도록 도와드릴게요.",
+      "suggested_questions_title": "추천 질문",
+      "input_placeholder": "추가 질문을 입력하세요...",
+      "problem_label": "문제: {problem}",
+      "export": "내보내기",
+      "suggested": {
+        "explain_step": "2단계를 더 자세히 설명해 줘",
+        "why_approach": "왜 이 접근법을 사용했어?",
+        "other_methods": "다른 풀이 방법은 뭐가 있어?",
+        "simpler_example": "더 쉬운 예시를 알려줘",
+        "concepts_needed": "이것을 이해하려면 어떤 개념이 필요해?"
+      }
+    },
+    "widgets": {
+      "steps_copied": "단계가 클립보드에 복사되었어요",
+      "copy": "복사",
+      "steps": "단계",
+      "no_steps": "이 방법의 단계가 없어요",
+      "advantages": "장점",
+      "disadvantages": "단점",
+      "method_type": {
+        "algebraic": "대수적",
+        "geometric": "기하학적",
+        "numerical": "수치적",
+        "graphical": "그래프적",
+        "analytical": "해석적",
+        "other": "기타"
+      },
+      "status": {
+        "pending": "대기 중",
+        "solving": "풀이 중...",
+        "completed": "완료",
+        "failed": "실패"
+      },
+      "retry": "재시도",
+      "solve": "풀기",
+      "view_solution": "풀이 보기",
+      "search_bookmarks": "북마크 검색...",
+      "no_problem_text": "문제 텍스트가 없어요",
+      "edit": "편집",
+      "delete": "삭제",
+      "date": {
+        "today": "오늘",
+        "yesterday": "어제",
+        "days_ago": "{days}일 전"
+      }
+    }
+  }
+}

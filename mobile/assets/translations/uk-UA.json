@@ -1,0 +1,2224 @@
+{
+  "onboarding": {
+    "skip": "Пропустити",
+    "next": "Далі",
+    "back": "Назад",
+    "get_started": "Почати",
+    "i_have_account": "У мене є акаунт",
+    "app_name": "Studyield",
+    "slide_1": {
+      "title": "Ласкаво просимо до Studyield",
+      "subtitle": "Ваш навчальний помічник на базі AI",
+      "description": "Опануйте будь-який предмет за допомогою розумних флешкарток, AI-розв'язувача задач та персоналізованих навчальних шляхів"
+    },
+    "slide_2": {
+      "title": "Розумні флешкартки",
+      "subtitle": "Вчіться розумніше, а не більше",
+      "description": "Створюйте інтерактивні флешкартки з алгоритмом інтервального повторення, який адаптується до Вашого темпу навчання",
+      "badge": "FREE"
+    },
+    "slide_3": {
+      "title": "AI-розв'язувач задач",
+      "subtitle": "Отримайте миттєву допомогу",
+      "description": "Скануйте будь-яку задачу та отримуйте покрокові розв'язки з детальними поясненнями на базі AI",
+      "badge": "PRO",
+      "features": {
+        "scan": "Сканування задач",
+        "hints": "Отримання підказок",
+        "steps": "Покроково"
+      }
+    },
+    "slide_4": {
+      "title": "Підвищуйте свій рівень",
+      "subtitle": "Зробіть навчання цікавим",
+      "description": "Заробляйте XP, підтримуйте серії та відкривайте досягнення, просуваючись у навчанні",
+      "badge": "FREE"
+    },
+    "slide_5": {
+      "title": "Персоналізовані навчальні шляхи",
+      "subtitle": "Ваша подорож, Ваш шлях",
+      "description": "Отримуйте індивідуальні навчальні плани на основі Ваших цілей, результатів та стилю навчання",
+      "badge": "PRO",
+      "benefits": {
+        "benefit_1": "📚 Індивідуальні навчальні плани",
+        "benefit_2": "🎯 Відстежуйте свій прогрес",
+        "benefit_3": "🚀 Досягайте цілей швидше"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "З поверненням",
+      "subtitle": "Увійдіть, щоб продовжити навчання",
+      "email_label": "Електронна пошта",
+      "email_hint": "Введіть Вашу електронну пошту",
+      "password_label": "Пароль",
+      "password_hint": "Введіть Ваш пароль",
+      "forgot_password": "Забули пароль?",
+      "login_button": "Увійти",
+      "no_account": "Немає акаунту?",
+      "sign_up": "Зареєструватися",
+      "or_continue_with": "Або продовжити з",
+      "google_login": "Продовжити з Google",
+      "apple_login": "Продовжити з Apple"
+    },
+    "register": {
+      "title": "Створити акаунт",
+      "subtitle": "Розпочніть свою навчальну подорож",
+      "name_label": "Повне ім'я",
+      "name_hint": "Введіть Ваше ім'я",
+      "email_label": "Електронна пошта",
+      "email_hint": "Введіть Вашу електронну пошту",
+      "password_label": "Пароль",
+      "password_hint": "Створіть пароль",
+      "confirm_password_label": "Підтвердження пароля",
+      "confirm_password_hint": "Повторіть пароль",
+      "register_button": "Створити акаунт",
+      "have_account": "Вже є акаунт?",
+      "sign_in": "Увійти",
+      "terms_prefix": "Реєструючись, Ви погоджуєтесь з нашими ",
+      "terms": "Умовами використання",
+      "and": " та ",
+      "privacy": "Політикою конфіденційності"
+    },
+    "errors": {
+      "email_required": "Електронна пошта обов'язкова",
+      "email_invalid": "Будь ласка, введіть дійсну електронну адресу",
+      "password_required": "Пароль обов'язковий",
+      "password_min_length": "Пароль повинен містити щонайменше 6 символів",
+      "passwords_not_match": "Паролі не збігаються",
+      "name_required": "Ім'я обов'язкове",
+      "login_failed": "Помилка входу. Перевірте свої облікові дані",
+      "register_failed": "Помилка реєстрації. Спробуйте ще раз"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "Доброго ранку",
+      "afternoon": "Доброго дня",
+      "evening": "Доброго вечора"
+    },
+    "welcome_message": "У Вас {count} карток на повторення",
+    "welcome_message_empty": "Готові продовжити навчальну подорож?",
+    "level": "Рівень {level}",
+    "xp_progress": "{current} / {next} XP",
+    "streak_days": "{days}д",
+    "daily_xp": "{current} / {goal} щоденний XP",
+    "gamification": {
+      "xp": "XP",
+      "day": "день",
+      "days": "днів",
+      "daily_xp": "щоденний XP",
+      "level_names": {
+        "0": "Початківець",
+        "1": "Бронза",
+        "2": "Срібло",
+        "3": "Золото",
+        "4": "Платина",
+        "5": "Діамант",
+        "6": "Майстер",
+        "7": "Грандмайстер",
+        "8": "Чемпіон",
+        "9": "Легенда",
+        "10": "Міфічний",
+        "11": "Безсмертний"
+      }
+    },
+    "upgrade_pro": {
+      "title": "Оновити до Pro",
+      "badge": "ПОПУЛЯРНЕ",
+      "subtitle": "Відкрийте всі преміум-функції та необмежений AI",
+      "offer": "Заощаджуйте 20% з річним планом"
+    },
+    "stats": {
+      "study_sets": "Набори для навчання",
+      "flashcards": "Флешкартки",
+      "due_today": "На сьогодні",
+      "quizzes_done": "Тестів пройдено",
+      "cards": "{count} карток"
+    },
+    "sections": {
+      "quick_actions": "Швидкі дії",
+      "recent_study_sets": "Нещодавні набори",
+      "view_all": "Переглянути все"
+    },
+    "continue_studying": {
+      "title": "Продовжити навчання",
+      "cards_due": "{count} карток на повторення"
+    },
+    "quick_actions": {
+      "new_study_set": {
+        "title": "Новий набір",
+        "description": "Створити нову колекцію"
+      },
+      "exam_clone": {
+        "title": "Клон іспиту",
+        "description": "Генерувати пробні іспити"
+      },
+      "problem_solver": {
+        "title": "Розв'язувач задач",
+        "description": "AI покрокові розв'язки"
+      },
+      "ai_chat": {
+        "title": "AI Чат",
+        "description": "Задавайте питання про нотатки"
+      },
+      "view_analytics": {
+        "title": "Аналітика",
+        "description": "Відстежуйте прогрес навчання"
+      },
+      "knowledge_base": {
+        "title": "База знань",
+        "description": "Завантажуйте та шукайте документи"
+      },
+      "join_live_quiz": {
+        "title": "Онлайн-вікторина",
+        "description": "Грайте з друзями в реальному часі"
+      },
+      "coming_soon": "Незабаром"
+    },
+    "empty_state": {
+      "title": "Ще немає наборів",
+      "subtitle": "Створіть свій перший набір, щоб почати навчання",
+      "button": "Створити набір"
+    }
+  },
+  "study_sets": {
+    "title": "Набори для навчання",
+    "header_title": "Мої набори",
+    "header_subtitle": "Створюйте та керуйте навчальними матеріалами",
+    "search_hint": "Пошук наборів...",
+    "new_study_set": "Новий набір",
+    "create_button": "Створити",
+    "no_results_title": "Нічого не знайдено",
+    "no_results_subtitle": "Жоден набір не відповідає запиту \"{query}\"",
+    "card": {
+      "public": "Публічний",
+      "private": "Приватний",
+      "edit": "Редагувати",
+      "delete": "Видалити",
+      "cards_count": "{count} карток",
+      "docs_count": "{count} документів"
+    },
+    "empty_state": {
+      "title": "Ще немає наборів",
+      "subtitle": "Створіть свій перший набір для організації флешкарток та навчальних матеріалів",
+      "button": "Створити набір"
+    },
+    "messages": {
+      "created": "Набір успішно створено!",
+      "updated": "Набір успішно оновлено!",
+      "deleted": "Набір успішно видалено!",
+      "error": "Помилка завантаження наборів",
+      "retry": "Повторити"
+    },
+    "detail": {
+      "section_statistics": "Статистика",
+      "stat_flashcards_label": "Флешкартки",
+      "stat_notes_label": "Нотатки",
+      "stat_analytics_label": "Аналітика",
+      "quiz_history_title": "Історія тестів",
+      "quiz_history_subtitle": "Переглянути результати тестів",
+      "section_quick_actions": "Швидкі дії",
+      "action_study_session": "Навчальна сесія (Всі картки)",
+      "action_quiz_mode": "Режим тесту",
+      "action_match_game": "Гра на зіставлення",
+      "action_live_quiz": "Онлайн-вікторина",
+      "action_browse_cards": "Переглянути картки",
+      "action_add_cards": "Додати картки",
+      "section_sources": "Джерела",
+      "sources_view_all": "Переглянути все",
+      "sources_document_singular": "Документ",
+      "sources_documents_plural": "Документи",
+      "sources_subtitle": "Навчальні матеріали та посилання",
+      "sources_empty_state": "Ще немає джерел",
+      "sources_add_documents": "Додати документи",
+      "section_recent_activity": "Нещодавня активність",
+      "activity_empty_state": "Немає нещодавньої активності",
+      "menu_edit_study_set": "Редагувати набір",
+      "menu_share": "Поділитися",
+      "menu_delete_study_set": "Видалити набір",
+      "delete_confirm_title": "Видалити набір?",
+      "delete_confirm_message": "Це назавжди видалить \"{title}\" та всі його флешкартки. Цю дію неможливо скасувати.",
+      "delete_confirm_cancel": "Скасувати",
+      "delete_confirm_delete": "Видалити",
+      "study_no_cards_due": "Немає карток на повторення! Чудова робота! 🎉",
+      "study_failed_to_load": "Не вдалося завантажити флешкартки",
+      "add_cards_header": "Додати картки",
+      "add_cards_ready_status": "{count} карт{s}ок готово",
+      "add_cards_submit_button": "Додати до набору",
+      "toast_cards_added_success": "{count} карток успішно додано!",
+      "toast_cards_add_error": "Не вдалося додати картки: {message}"
+    },
+    "create_edit": {
+      "title_create": "Створити набір",
+      "create_study_set": "Створити набір",
+      "title_edit": "Редагувати набір",
+      "cover_image": "Обкладинка",
+      "tap_add_cover": "Натисніть, щоб додати обкладинку",
+      "tap_to_add_cover_image": "Натисніть, щоб додати обкладинку",
+      "title_label": "Назва *",
+      "title_hint": "напр., Біологія 101",
+      "title_required": "Назва обов'язкова",
+      "description_label": "Опис",
+      "description": "Опис",
+      "description_hint": "Про що цей набір?",
+      "tags_label": "Теги",
+      "tags": "Теги",
+      "tags_hint": "біологія, іспит, розділ1",
+      "tags_helper": "Розділяйте теги комами",
+      "exam_date_label": "Дата іспиту (необов'язково)",
+      "exam_date_optional": "Дата іспиту (необов'язково)",
+      "exam_date_hint": "Оберіть дату іспиту",
+      "select_exam_date": "Оберіть дату іспиту",
+      "exam_subject_label": "Предмет іспиту",
+      "exam_subject_hint": "напр., Проміжний іспит, Фінальний іспит",
+      "visibility_public": "Публічний",
+      "visibility_private": "Приватний",
+      "private": "Приватний",
+      "visibility_public_desc": "Будь-хто може переглядати цей набір",
+      "visibility_private_desc": "Тільки Ви можете переглядати цей набір",
+      "private_description": "Тільки Ви можете переглядати цей набір",
+      "save_changes": "Зберегти зміни",
+      "create_button": "Створити набір",
+      "delete_study_set": "Видалити набір",
+      "delete_confirm_title": "Видалити набір?",
+      "delete_confirm_message": "Це назавжди видалить \"{title}\" та всі його флешкартки. Цю дію неможливо скасувати.",
+      "subtitle": "Організуйте свої навчальні матеріали",
+      "title_placeholder": "Введіть назву, напр. 'Біологія 101 — Розділ 3'",
+      "description_placeholder": "Додайте опис (необов'язково)",
+      "more_options": "Більше параметрів",
+      "less_options": "Менше параметрів",
+      "add_tag": "Додати тег...",
+      "cancel": "Скасувати",
+      "public": "Публічний",
+      "visibility_label": "Видимість",
+      "cards_ready_count": "{count} карток готово",
+      "create_with_cards": "Створити з {count} картками",
+      "cards_failed": "Набір створено, але деякі картки не вдалося зберегти",
+      "image_uploaded": "Зображення успішно завантажено!",
+      "upload_failed": "Не вдалося завантажити зображення"
+    },
+    "documents": {
+      "title": "Нотатки",
+      "create_note": "Створити нотатку",
+      "no_notes_title": "Ще немає нотаток",
+      "no_notes_subtitle": "Створюйте нотатки для організації навчального матеріалу",
+      "note_title_label": "Назва",
+      "note_title_hint": "Введіть назву нотатки",
+      "note_content_label": "Зміст",
+      "note_content_hint": "Напишіть свою нотатку тут...",
+      "create_note_button": "Створити нотатку",
+      "fill_both_fields": "Будь ласка, заповніть і назву, і зміст",
+      "note_created": "Нотатку успішно створено!",
+      "failed_to_create": "Не вдалося створити нотатку: {error}"
+    },
+    "flashcard_creation": {
+      "title": "Створити флешкартки",
+      "tab_manual": "Вручну",
+      "tab_ai": "AI генерація",
+      "tab_import": "Імпорт",
+      "create_cards": "Створити {count} {cards}",
+      "add_cards": "Додати {count} {cards}",
+      "card": "Картку",
+      "cards": "Карток",
+      "no_flashcards": "Будь ласка, створіть хоча б одну флешкартку",
+      "no_flashcards_to_add": "Немає флешкарток для додавання"
+    },
+    "quiz_history": {
+      "title": "Історія тестів",
+      "no_history_title": "Немає історії тестів",
+      "no_history_subtitle": "Проходьте тести, щоб побачити тут свою історію",
+      "summary_quizzes": "Тести",
+      "summary_attempts": "Спроби",
+      "summary_best_score": "Найкращий результат",
+      "questions": "{count} запитань",
+      "attempts": "{count} спроб{s}",
+      "attempt": "спроба",
+      "best": "Найкращий: {score}%",
+      "no_attempts": "Ще немає спроб",
+      "time_spent": "{minutes}хв {seconds}с"
+    }
+  },
+  "analytics": {
+    "title": "Аналітика",
+    "timeRange": {
+      "sevenDays": "7 днів",
+      "thirtyDays": "30 днів",
+      "ninetyDays": "90 днів",
+      "allTime": "Весь час"
+    },
+    "stats": {
+      "studyTime": "Час навчання",
+      "cardsReviewed": "Переглянуто карток",
+      "quizzes": "Тести",
+      "avgScore": "Середній бал"
+    },
+    "sections": {
+      "studyActivity": "Навчальна активність",
+      "streak": "Серія",
+      "performance": "Результативність"
+    },
+    "heatmap": {
+      "title": "Теплова карта навчання",
+      "less": "Менше",
+      "more": "Більше"
+    },
+    "cardMastery": {
+      "title": "Засвоєння карток",
+      "noData": "Немає даних про картки"
+    },
+    "retentionCurve": {
+      "title": "Крива запам'ятовування",
+      "noData": "Почніть навчання, щоб побачити криву запам'ятовування"
+    },
+    "studyTime": {
+      "title": "Час навчання",
+      "daily": "Щоденно",
+      "weekly": "Щотижнево",
+      "noData": "Час навчання ще не зафіксовано"
+    },
+    "streak": {
+      "title": "Календар серій",
+      "dayStreak": "днів поспіль",
+      "dayAbbr": {
+        "sun": "Н",
+        "mon": "П",
+        "tue": "В",
+        "wed": "С",
+        "thu": "Ч",
+        "fri": "П",
+        "sat": "С"
+      }
+    },
+    "months": {
+      "january": "Січень",
+      "february": "Лютий",
+      "march": "Березень",
+      "april": "Квітень",
+      "may": "Травень",
+      "june": "Червень",
+      "july": "Липень",
+      "august": "Серпень",
+      "september": "Вересень",
+      "october": "Жовтень",
+      "november": "Листопад",
+      "december": "Грудень"
+    },
+    "cardStatus": {
+      "new": "Нові",
+      "learning": "Вивчаються",
+      "review": "На повторення",
+      "mastered": "Засвоєні"
+    },
+    "chart": {
+      "percentageSymbol": "%",
+      "minutesSymbol": "хв",
+      "dayLabel": "Д"
+    },
+    "time": {
+      "hoursSymbol": "год",
+      "minutesSymbol": "хв"
+    }
+  },
+  "learning_paths": {
+    "title": "Навчальні шляхи",
+    "detail": {
+      "title": "Навчальний шлях",
+      "learning_path": "Навчальний шлях",
+      "complete": "Завершено",
+      "your_journey": "Ваша навчальна подорож",
+      "your_learning_journey": "Ваша навчальна подорож",
+      "next_up": "Наступне",
+      "step_number": "Крок {number}",
+      "steps": "Кроки",
+      "remaining": "Залишилось",
+      "total_time": "Загальний час",
+      "overall_progress": "Загальний прогрес",
+      "stats": {
+        "steps": "Кроки",
+        "remaining": "Залишилось",
+        "total_time": "Загальний час"
+      },
+      "progress": {
+        "overall": "Загальний прогрес",
+        "steps_count": "{completed}/{total} кроків"
+      },
+      "minutes": "{minutes} хвилин",
+      "view_resource": "Переглянути ресурс",
+      "mark_done": "Готово",
+      "mark_as_done": "Позначити як виконане",
+      "step_completed": "Крок виконано!",
+      "path_completed": "Завершено!",
+      "steps_count": "{completed}/{total} кроків",
+      "completed_on": "Завершено {date}"
+    },
+    "validation": {
+      "please_enter_topic": "Будь ласка, введіть тему"
+    },
+    "messages": {
+      "path_created_success": "Навчальний шлях створено!"
+    },
+    "how_it_works": {
+      "title": "Як працюють навчальні шляхи",
+      "step1_title": "Встановіть цілі",
+      "step1_subtitle": "Вкажіть AI тему та рівень",
+      "step2_title": "Отримайте план",
+      "step2_subtitle": "AI створить покроковий план",
+      "step3_title": "Відстежуйте прогрес",
+      "step3_subtitle": "Виконуйте кроки, стежте за прогресом"
+    },
+    "buttons": {
+      "cancel": "Скасувати",
+      "generate_path": "Згенерувати шлях",
+      "generating": "Генерація..."
+    },
+    "form": {
+      "title": "Створити навчальний шлях",
+      "topic_label": "Тема",
+      "topic_hint": "напр., Машинне навчання, Математичний аналіз, Фізика",
+      "current_level_label": "Поточний рівень",
+      "target_level_label": "Цільовий рівень",
+      "level_beginner": "Початківець",
+      "level_intermediate": "Середній",
+      "level_advanced": "Просунутий",
+      "level_expert": "Експерт",
+      "study_time_label": "Час навчання: {hours} годин/тиждень"
+    },
+    "empty_state": {
+      "title": "Ще немає навчальних шляхів",
+      "subtitle": "Створіть свій перший персоналізований навчальний план"
+    },
+    "path_card": {
+      "steps_count": "{completed}/{total} кроків",
+      "hours_label": "{hours}год"
+    },
+    "dialogs": {
+      "delete_confirm_title": "Видалити навчальний шлях?",
+      "delete_confirm_message": "Це назавжди видалить цей шлях та весь прогрес.",
+      "cancel_button": "Скасувати",
+      "delete_button": "Видалити"
+    }
+  },
+  "profile": {
+    "title": "Налаштування",
+    "subtitle": "Керуйте акаунтом та налаштуваннями",
+    "settings": {
+      "profile": {
+        "title": "Профіль",
+        "subtitle": "Ім'я, аватар, освіта, предмети"
+      },
+      "account": {
+        "title": "Налаштування акаунту",
+        "subtitle": "Пароль, безпека, видалення акаунту"
+      },
+      "notifications": {
+        "title": "Налаштування сповіщень",
+        "subtitle": "Керуйте налаштуваннями сповіщень"
+      },
+      "language": {
+        "title": "Мова",
+        "choose": "Оберіть мову",
+        "close": "Закрити"
+      },
+      "subscription": {
+        "title": "Підписка",
+        "subtitle": "План, використання, рахунки"
+      },
+      "logout": {
+        "title": "Вийти",
+        "confirm_title": "Вийти",
+        "confirm_message": "Ви впевнені, що хочете вийти?",
+        "cancel": "Скасувати",
+        "confirm": "Вийти"
+      }
+    },
+    "plan": {
+      "free": "Безкоштовний план",
+      "manage": "Керувати",
+      "upgrade": "Оновити"
+    },
+    "version": "Studyield v1.0.0",
+    "edit": {
+      "title": "Редагувати профіль",
+      "avatar": {
+        "default_initial": "К"
+      },
+      "display_name": {
+        "label": "Ім'я для відображення",
+        "hint": "Введіть Ваше ім'я"
+      },
+      "email": {
+        "label": "Електронна пошта",
+        "placeholder": "Немає електронної пошти",
+        "readonly_note": "Електронну пошту неможливо змінити"
+      },
+      "education_level": {
+        "label": "Рівень освіти",
+        "options": {
+          "high_school": "Середня школа",
+          "undergraduate": "Бакалаврат",
+          "graduate": "Магістратура",
+          "post_graduate": "Аспірантура",
+          "self_learner": "Самоосвіта",
+          "professional": "Професіонал"
+        }
+      },
+      "subjects": {
+        "label": "Предмети, що цікавлять",
+        "common_header": "Популярні предмети",
+        "custom_header": "Ваші власні предмети",
+        "add_custom": {
+          "label": "Додати власний предмет",
+          "hint": "Додати власний предмет"
+        },
+        "options": {
+          "mathematics": "Математика",
+          "physics": "Фізика",
+          "chemistry": "Хімія",
+          "biology": "Біологія",
+          "computer_science": "Інформатика",
+          "english": "Англійська мова",
+          "history": "Історія",
+          "geography": "Географія",
+          "economics": "Економіка",
+          "psychology": "Психологія"
+        }
+      },
+      "button": {
+        "saving": "Збереження...",
+        "save": "Зберегти зміни",
+        "saved": "Збережено!"
+      },
+      "message": {
+        "success": "Профіль успішно оновлено!",
+        "error": "Не вдалося зберегти профіль"
+      }
+    },
+    "account": {
+      "title": "Налаштування акаунту",
+      "change_password": {
+        "title": "Змінити пароль",
+        "subtitle": "Регулярно оновлюйте свій пароль",
+        "current_password_label": "Поточний пароль",
+        "new_password_label": "Новий пароль",
+        "confirm_password_label": "Підтвердити новий пароль",
+        "button": "Змінити пароль"
+      },
+      "validation": {
+        "current_password_required": "Поточний пароль обов'язковий",
+        "password_min_length": "Новий пароль повинен містити щонайменше 8 символів",
+        "passwords_mismatch": "Паролі не збігаються"
+      },
+      "messages": {
+        "password_changed_success": "Пароль успішно змінено!"
+      },
+      "information": {
+        "title": "Інформація про акаунт",
+        "email_label": "Електронна пошта",
+        "plan_label": "План",
+        "plan_free": "Безкоштовний",
+        "email_verified_label": "Електронна пошта підтверджена",
+        "email_verified_yes": "Так",
+        "member_since_label": "Учасник з"
+      },
+      "delete": {
+        "title": "Видалити акаунт",
+        "subtitle": "Назавжди видалити Ваш акаунт",
+        "button": "Видалити мій акаунт",
+        "warning_title": "Цю дію неможливо скасувати!",
+        "warning_message": "Усі Ваші дані буде назавжди видалено.",
+        "confirmation_instruction": "Введіть DELETE для підтвердження:",
+        "confirmation_hint": "DELETE",
+        "confirm_button": "Видалити назавжди",
+        "cancel_button": "Скасувати"
+      }
+    }
+  },
+  "subscription": {
+    "main": {
+      "appbar_title": "Підписка",
+      "header_label": "Змініть або оновіть свій план",
+      "heading": "Оберіть свій план",
+      "subheading": "Відкрийте преміум-функції для прискорення навчання",
+      "billing_yearly": "Щорічно",
+      "billing_lifetime": "Назавжди",
+      "popular_badge": "НАЙПОПУЛЯРНІШИЙ",
+      "plan_trial_title": "7-денна пробна версія",
+      "plan_trial_subtitle": "Спробуйте перед покупкою",
+      "plan_pro_title": "Pro",
+      "plan_pro_lifetime_title": "Довічний Pro",
+      "plan_pro_lifetime_subtitle": "Заплатіть раз, користуйтесь завжди",
+      "plan_pro_yearly_subtitle": "Найкраще для серйозного навчання",
+      "yearly_crossed_price": "$47.88/рік",
+      "lifetime_period": "одноразово",
+      "yearly_period": "/рік",
+      "button_current_plan": "Поточний план",
+      "button_free_forever": "Безкоштовно назавжди",
+      "button_upgrade_lifetime": "Оновити до довічного",
+      "button_upgrade_pro": "Оновити до Pro",
+      "trust_secure_title": "Безпека",
+      "trust_secure_subtitle": "SSL шифрування",
+      "trust_flexible_title": "Гнучкість",
+      "trust_flexible_subtitle": "Скасуйте будь-коли",
+      "trust_free_title": "Безкоштовно назавжди",
+      "trust_free_subtitle": "Кредитна картка не потрібна"
+    },
+    "manage": {
+      "appbar_title": "Керування підпискою",
+      "error_open_portal": "Не вдалося відкрити портал",
+      "cancel_dialog_title": "Скасувати підписку?",
+      "cancel_dialog_content": "Ви зберігатимете доступ до кінця розрахункового періоду.",
+      "cancel_dialog_keep_btn": "Залишити підписку",
+      "cancel_dialog_cancel_btn": "Скасувати",
+      "cancel_success_message": "Підписку буде скасовано в кінці періоду",
+      "cancel_error_message": "Не вдалося скасувати",
+      "default_plan_name": "План Pro",
+      "status_active": "Активний",
+      "price_lifetime": "одноразово",
+      "price_yearly": "/рік",
+      "button_change_plan": "Змінити план",
+      "info_current_period_label": "Поточний період",
+      "info_next_billing_label": "Наступне списання",
+      "card_billing_history_title": "Історія оплат",
+      "card_billing_history_subtitle": "Переглянути минулі рахунки",
+      "card_payment_methods_title": "Способи оплати",
+      "card_payment_methods_subtitle": "Оновити картку або спосіб оплати",
+      "card_cancel_subscription_title": "Скасувати підписку",
+      "card_cancel_subscription_subtitle": "Ви зберігатимете доступ до кінця періоду",
+      "webview_title": "Платіжний портал"
+    },
+    "checkout": {
+      "appbar_title": "Оформлення",
+      "coupon_applied_message": "Купон застосовано!",
+      "payment_success_message": "Оплата успішна!",
+      "payment_error_message": "Помилка оплати",
+      "header_title": "Оновити до {plan}",
+      "header_subtitle_lifetime": "ДОВІЧНА оплата",
+      "header_subtitle_yearly": "ЩОРІЧНА підписка",
+      "order_summary_label": "ПІДСУМОК ЗАМОВЛЕННЯ",
+      "plan_line_item": "План {plan} ({cycle})",
+      "coupon_applied_label": "Купон застосовано",
+      "coupon_discount_amount": "-${amount}",
+      "total_label": "Разом",
+      "billing_period_year": "/рік",
+      "billing_period_month": "/місяць",
+      "coupon_code_label": "Код купона",
+      "coupon_input_placeholder": "Введіть код купона",
+      "coupon_apply_button": "Застосувати",
+      "what_you_get_heading": "Що Ви отримаєте",
+      "features": {
+        "unlimited_ai": "Необмежені AI-запити",
+        "premium_features": "Усі преміум-функції розблоковано",
+        "priority_support": "Пріоритетна підтримка",
+        "advanced_analytics": "Розширена аналітика",
+        "exam_cloning": "Клонування та генерація іспитів",
+        "deep_research": "Можливості глибокого дослідження"
+      },
+      "button_processing": "Обробка...",
+      "button_proceed": "Перейти до оплати",
+      "trust_ssl": "SSL шифрування",
+      "trust_stripe": "На базі Stripe",
+      "trust_cancel_anytime": "Скасуйте будь-коли"
+    },
+    "success": {
+      "welcome_heading": "Ласкаво просимо до Pro!",
+      "payment_successful_message": "Вашу оплату успішно здійснено",
+      "info_plan_label": "План",
+      "info_status_label": "Статус",
+      "info_status_active": "Активний",
+      "features_heading": "Розблоковані функції",
+      "button_continue": "Почати використовувати Pro"
+    },
+    "webview": {
+      "appbar_title": "Завершення оплати",
+      "error_loading_page": "Помилка завантаження сторінки",
+      "cancel_dialog_title": "Скасувати оплату?",
+      "cancel_dialog_content": "Ви впевнені, що хочете скасувати цю оплату?",
+      "cancel_dialog_continue_btn": "Ні, продовжити",
+      "cancel_dialog_cancel_btn": "Так, скасувати"
+    }
+  },
+  "notifications": {
+    "header": {
+      "title": "Сповіщення",
+      "unread_count": "{count} нових",
+      "all_caught_up": "Все переглянуто!",
+      "mark_all_as_read": "Позначити все як прочитане",
+      "clear_all": "Очистити все"
+    },
+    "tabs": {
+      "all": "Усі",
+      "unread": "Непрочитані",
+      "settings": "Налаштування"
+    },
+    "dialogs": {
+      "clear_all_title": "Очистити все?",
+      "clear_all_message": "Це назавжди видалить усі сповіщення.",
+      "cancel": "Скасувати",
+      "delete_all": "Видалити все"
+    },
+    "time": {
+      "just_now": "Щойно",
+      "minutes_ago": "{minutes}хв тому",
+      "hours_ago": "{hours}год тому",
+      "days_ago": "{days}д тому"
+    },
+    "empty": {
+      "no_notifications_title": "Немає сповіщень",
+      "no_notifications_message": "Ми повідомимо Вас, коли станеться\nщось важливе",
+      "all_caught_up_title": "Все переглянуто!",
+      "all_caught_up_message": "Ви прочитали всі сповіщення.\nЧудова робота! 🎉",
+      "feature_stay_updated": "Будьте в курсі",
+      "feature_quick_actions": "Швидкі дії",
+      "feature_track_progress": "Відстежуйте прогрес"
+    },
+    "card": {
+      "delete": "Видалити",
+      "mark_as_read": "Позначити як прочитане"
+    },
+    "types": {
+      "info": "ІНФО",
+      "success": "УСПІХ",
+      "warning": "УВАГА",
+      "reminder": "НАГАДУВАННЯ",
+      "achievement": "ДОСЯГНЕННЯ",
+      "study": "НАВЧАННЯ"
+    },
+    "settings": {
+      "info_card_title": "Будьте в курсі!",
+      "info_card_message": "Увімкніть сповіщення, щоб не пропустити важливі оновлення",
+      "channels_section": "Канали сповіщень",
+      "types_section": "Про що сповіщати",
+      "in_app_title": "Сповіщення в додатку",
+      "in_app_subtitle": "Отримуйте сповіщення під час використання додатку",
+      "email_title": "Сповіщення електронною поштою",
+      "email_subtitle": "Отримуйте важливі оновлення електронною поштою",
+      "push_title": "Push-сповіщення",
+      "push_subtitle": "Отримуйте push-сповіщення на цей пристрій",
+      "study_reminders_title": "Нагадування про навчання",
+      "study_reminders_subtitle": "Нагадування про картки на повторення та навчальні сесії",
+      "achievements_title": "Досягнення та віхи",
+      "achievements_subtitle": "Святкуйте свої навчальні досягнення",
+      "weekly_digest_title": "Тижневий огляд",
+      "weekly_digest_subtitle": "Підсумок Вашого щотижневого прогресу навчання",
+      "footer_message": "Налаштування сповіщень синхронізуються на всіх Ваших пристроях"
+    }
+  },
+  "flashcards": {
+    "add": {
+      "title_edit": "Редагувати флешкартку",
+      "title_add": "Додати флешкартку",
+      "label_front": "Лицьова сторона (Питання)",
+      "hint_front": "Введіть питання або термін",
+      "error_front_required": "Лицьова сторона обов'язкова",
+      "label_back": "Зворотна сторона (Відповідь)",
+      "hint_back": "Введіть відповідь або визначення",
+      "error_back_required": "Зворотна сторона обов'язкова",
+      "label_notes": "Нотатки (необов'язково)",
+      "hint_notes": "Додайте додаткові нотатки або контекст",
+      "label_tags": "Теги (необов'язково)",
+      "hint_tags_example": "розділ1, важливе, повторення",
+      "helper_tags": "Розділяйте теги комами",
+      "button_save_changes": "Зберегти зміни",
+      "button_create": "Створити флешкартку"
+    },
+    "list": {
+      "label_flashcards": "Флешкартки",
+      "sort_newest": "Спочатку нові",
+      "sort_oldest": "Спочатку старі",
+      "sort_difficulty": "За складністю",
+      "menu_newest": "Спочатку нові",
+      "menu_oldest": "Спочатку старі",
+      "menu_difficulty": "За складністю",
+      "toast_created": "Флешкартку успішно створено!",
+      "toast_updated": "Флешкартку успішно оновлено!",
+      "toast_bulk_created": "{count} карток успішно додано!",
+      "toast_deleted": "Флешкартку видалено",
+      "error_title": "Помилка завантаження флешкарток",
+      "button_retry": "Повторити",
+      "filter_all": "Усі",
+      "filter_new": "Нові",
+      "filter_learning": "Вивчаються",
+      "filter_review": "На повторення",
+      "filter_mastered": "Засвоєні",
+      "filter_due": "До повторення",
+      "empty_filter_message": "Немає карток у цій категорії",
+      "button_add_cards": "Додати картки",
+      "modal_add_cards_title": "Додати картки",
+      "button_add_to_set": "Додати до набору",
+      "ready_card_singular": "картка",
+      "ready_cards_plural": "карток",
+      "ready_text": "готово",
+      "empty_title": "Ще немає флешкарток",
+      "empty_message": "Створіть свою першу флешкартку, щоб почати навчання",
+      "empty_button": "Додати картки"
+    },
+    "study": {
+      "card_progress": "Картка {current} з {total}",
+      "question_rating": "Наскільки добре Ви це знали?",
+      "rating_again": "Знову",
+      "rating_again_subtitle": "Забув",
+      "rating_hard": "Важко",
+      "rating_hard_subtitle": "Складно",
+      "rating_good": "Добре",
+      "rating_good_subtitle": "Згадав",
+      "rating_easy": "Легко",
+      "rating_easy_subtitle": "Ідеально",
+      "hint_tap_card": "Натисніть на картку, щоб побачити відповідь",
+      "label_question": "ПИТАННЯ",
+      "label_answer": "ВІДПОВІДЬ",
+      "exit_dialog_title": "Завершити навчальну сесію?",
+      "exit_dialog_message": "Ваш прогрес не буде збережено, якщо Ви вийдете зараз. Ви впевнені?",
+      "exit_button_continue": "Продовжити навчання",
+      "exit_button_exit": "Вийти"
+    },
+    "widgets": {
+      "session_summary": {
+        "title": "Сесію завершено!",
+        "cards_reviewed": "Ви переглянули {count} карток",
+        "accuracy": "Точність",
+        "easy_good": "Легко/Добре",
+        "hard": "Важко",
+        "again": "Знову",
+        "done_button": "Готово"
+      },
+      "ai_assist": {
+        "header": "AI Помічник",
+        "suggest_answer_title": "Запропонувати відповідь",
+        "suggest_answer_description": "Згенерувати повну відповідь",
+        "elaborate_title": "Розширити",
+        "elaborate_description": "Додати більше деталей та контексту",
+        "add_mnemonic_title": "Додати мнемоніку",
+        "add_mnemonic_description": "Створити прийоми для запам'ятовування",
+        "simplify_title": "Спростити",
+        "simplify_description": "Переписати простішою мовою",
+        "suggestion_label": "Пропозиція AI",
+        "try_again_button": "Спробувати знову",
+        "accept_button": "Прийняти",
+        "suggestion_applied_toast": "Пропозицію AI застосовано!"
+      },
+      "ai_generation": {
+        "minimum_chars_error": "Будь ласка, введіть щонайменше 50 символів",
+        "cards_ready_toast": "{count} карток готово до додавання",
+        "info_banner_text": "Дозвольте AI згенерувати флешкартки з Вашого контенту",
+        "banner_text": "Дозвольте AI згенерувати флешкартки з Вашого контенту",
+        "content_label": "Контент",
+        "content_hint": "Вставте свій текст, нотатки або навчальний матеріал тут...",
+        "char_counter_helper": "{count}/50 мінімум символів",
+        "char_count": "{count}/50 мінімум символів",
+        "card_count_label": "Кількість карток",
+        "number_of_cards": "Кількість карток",
+        "card_type_label": "Тип картки",
+        "card_type": "Тип картки",
+        "qa_type": "Питання/Відповідь",
+        "type_qa": "Питання/Відповідь",
+        "fill_blank_type": "Заповнити пропуск",
+        "type_fill_blank": "Заповнити пропуск",
+        "true_false_type": "Правда/Хибність",
+        "type_true_false": "Правда/Хибність",
+        "difficulty_label": "Складність",
+        "difficulty": "Складність",
+        "easy_difficulty": "Легка",
+        "difficulty_easy": "Легка",
+        "medium_difficulty": "Середня",
+        "difficulty_medium": "Середня",
+        "hard_difficulty": "Складна",
+        "difficulty_hard": "Складна",
+        "generating_button": "Генерація...",
+        "generate_button": "Згенерувати за допомогою AI",
+        "generated_cards_title": "Згенеровані картки ({count})",
+        "deselect_all_button": "Зняти вибір з усіх",
+        "select_all_button": "Обрати всі",
+        "card_number_label": "Картка {number}",
+        "answer_label": "Відповідь:",
+        "add_selected_button": "Додати {count} обраних карток"
+      },
+      "manual_creation": {
+        "card_count_label": "{count} {cards}",
+        "card_count": {
+          "zero": "Немає карток",
+          "one": "1 картка",
+          "other": "{count} карток"
+        },
+        "add_card_button": "Додати картку",
+        "add_card": "Додати картку",
+        "empty_state_title": "Ще немає карток",
+        "no_cards": "Ще немає карток",
+        "create_first_card_button": "Створіть свою першу картку",
+        "create_first": "Створіть свою першу картку",
+        "singular_card": "Картка",
+        "plural_cards": "Карток",
+        "card_header_title": "Картка {number}",
+        "ready_badge": "Готово",
+        "delete_card_tooltip": "Видалити картку",
+        "card_type_label": "Тип картки",
+        "qa_type": "Питання/Відповідь",
+        "cloze_type": "Клоуз",
+        "image_occlusion_type": "Перекриття зображення",
+        "front_label": "Лицьова *",
+        "front_hint": "Питання або підказка",
+        "back_label": "Зворотна *",
+        "back_hint": "Відповідь або пояснення",
+        "notes_label": "Нотатки (необов'язково)",
+        "notes_hint": "Додатковий контекст",
+        "tags_label": "Теги (необов'язково)",
+        "tags_hint": "тема1, тема2",
+        "tags_helper": "Розділяйте теги комами"
+      },
+      "editor": {
+        "manual_tab": "Вручну",
+        "ai_tab": "AI",
+        "import_tab": "Імпорт",
+        "tab_manual": "Вручну",
+        "tab_ai": "AI",
+        "tab_import": "Імпорт"
+      },
+      "import": {
+        "recording_saved_toast": "Запис збережено!",
+        "microphone_permission_error": "Доступ до мікрофона відхилено",
+        "recording_started_toast": "Запис розпочато...",
+        "recording_failed_error": "Помилка запису",
+        "file_pick_error": "Не вдалося обрати файл",
+        "camera_open_error": "Не вдалося відкрити камеру",
+        "image_pick_error": "Не вдалося обрати зображення",
+        "no_text_in_image_error": "Текст на зображенні не знайдено",
+        "text_extracted_success": "Текст успішно розпізнано!",
+        "image_process_error": "Не вдалося обробити зображення",
+        "empty_text_error": "Будь ласка, введіть текст для імпорту",
+        "no_file_selected_error": "Будь ласка, оберіть файл",
+        "no_audio_error": "Будь ласка, запишіть або оберіть аудіофайл",
+        "no_image_error": "Будь ласка, скануйте або оберіть зображення",
+        "no_google_docs_url_error": "Будь ласка, введіть URL Google Docs",
+        "no_youtube_url_error": "Будь ласка, введіть URL YouTube",
+        "no_website_url_error": "Будь ласка, введіть URL вебсайту",
+        "cards_ready_toast": "{count} карток готово до додавання",
+        "info_banner_text": "Імпортуйте флешкартки з різних джерел",
+        "banner_text": "Імпортуйте флешкартки з різних джерел",
+        "source_label": "Джерело імпорту",
+        "pdf_source": "Завантаження PDF",
+        "source_pdf": "Завантаження PDF",
+        "youtube_source": "Відео YouTube",
+        "source_youtube": "Відео YouTube",
+        "record_audio_source": "Запис аудіо",
+        "source_record_audio": "Запис аудіо",
+        "audio_file_source": "Аудіофайл",
+        "source_audio_file": "Аудіофайл",
+        "website_source": "URL вебсайту",
+        "source_website": "URL вебсайту",
+        "camera_source": "Сканування камерою",
+        "source_camera": "Сканування камерою",
+        "google_docs_source": "Google Docs",
+        "source_google_docs": "Google Docs",
+        "text_source": "Вставити текст",
+        "source_text": "Вставити текст",
+        "handwritten_source": "Рукописні нотатки",
+        "source_handwritten": "Рукописні нотатки",
+        "text_label": "Вставити текст",
+        "text_hint": "Введіть вміст флешкарток...",
+        "pdf_description": "Завантажте Ваші PDF-документи",
+        "choose_pdf_button": "Обрати PDF",
+        "change_pdf_button": "Змінити PDF",
+        "recording_in_progress_text": "Запис...",
+        "recording_saved_text": "Запис збережено!",
+        "tap_to_record_text": "Натисніть, щоб почати запис",
+        "record_voice_hint": "Запишіть свій голос, і ми його транскрибуємо",
+        "stop_recording_button": "Зупинити запис",
+        "start_recording_button": "Почати запис",
+        "record_again_button": "Записати знову",
+        "choose_audio_button": "Обрати аудіофайл",
+        "change_audio_button": "Змінити файл",
+        "audio_formats_helper": "Підтримується: MP3, WAV, M4A",
+        "camera_title": "Сканування документів камерою",
+        "camera_hint": "Сфотографуйте свої нотатки або підручник",
+        "open_camera_button": "Відкрити камеру",
+        "google_docs_label": "URL Google Docs",
+        "google_docs_hint": "https://docs.google.com/document/d/...",
+        "google_docs_helper": "Вставте посилання для спільного доступу Google Docs",
+        "handwritten_title": "Сканування рукописних нотаток",
+        "handwritten_hint": "Ми розпізнаємо текст з Ваших рукописних нотаток",
+        "take_photo_button": "Зробити фото",
+        "from_gallery_button": "З галереї",
+        "paste_text_label": "Вставити текст",
+        "paste_text_hint": "Введіть вміст флешкарток...",
+        "separator_label": "Роздільник карток",
+        "separator_hint": "напр., \\n\\n або ---",
+        "separator_helper": "Шаблон для розділення карток",
+        "choose_file_button": "Обрати файл",
+        "change_file_button": "Змінити файл",
+        "file_formats_helper": "Підтримується: PDF, TXT, CSV, MD",
+        "youtube_label": "URL YouTube",
+        "youtube_hint": "https://youtube.com/watch?v=...",
+        "youtube_helper": "Ми розпізнаємо транскрипцію",
+        "website_label": "URL вебсайту",
+        "website_hint": "https://example.com",
+        "website_helper": "Ми витягнемо вміст",
+        "importing_button": "Імпортування...",
+        "import_button": "Імпортувати флешкартки",
+        "imported_cards_title": "Імпортовані картки ({count})",
+        "card_number_label": "Картка {number}",
+        "add_to_study_set_button": "Додати {count} карток до набору"
+      }
+    }
+  },
+  "notes": {
+    "title": "Нотатки",
+    "mindMapHistoryTooltip": "Історія ментальних мап",
+    "mindMapTooltip": "Ментальна мапа",
+    "aiGenerateButton": "AI генерація",
+    "addNoteButton": "Додати нотатку",
+    "emptyStateTitle": "Ще немає нотаток",
+    "emptyStateSubtitle": "Створюйте нотатки для організації навчального матеріалу",
+    "createManuallyButton": "Створити вручну",
+    "noSearchResultsTitle": "Нотатки не відповідають пошуку",
+    "noSearchResultsSubtitle": "Спробуйте змінити пошуковий запит або фільтр",
+    "createSuccess": "Нотатку успішно створено!",
+    "deleteSuccess": "Нотатку успішно видалено!",
+    "updateSuccess": "Нотатку успішно оновлено!",
+    "aiNotesGeneratedSuccess": "{count} AI-нотаток згенеровано!",
+    "deleteConfirmationTitle": "Видалити нотатку?",
+    "deleteConfirmationMessage": "Ви впевнені, що хочете видалити \"{title}\"?",
+    "searchPlaceholder": "Пошук нотаток...",
+    "filterAll": "Усі",
+    "filterMoreTags": "+{count} ще",
+    "sortNewest": "Спочатку нові",
+    "sortOldest": "Спочатку старі",
+    "sortTitle": "Назва А-Я",
+    "createNoteTitle": "Створити нотатку",
+    "editNoteTitle": "Редагувати нотатку",
+    "titleLabel": "Назва",
+    "titleHint": "Введіть назву нотатки",
+    "titleValidation": "Будь ласка, введіть назву",
+    "contentLabel": "Зміст",
+    "contentHint": "Напишіть свою нотатку тут...\n\nПідтримується форматування Markdown",
+    "contentValidation": "Будь ласка, введіть зміст",
+    "tagsLabel": "Теги (необов'язково)",
+    "tagsHint": "напр., біологія, важливе, розділ1 (через кому)",
+    "tagsHintEdit": "Через кому",
+    "markdownHelpText": "Ви можете використовувати синтаксис Markdown для форматування:\n• **жирний**, *курсив*, `код`\n• # Заголовок, ## Підзаголовок\n• - Списки",
+    "createNoteSubmitButton": "Створити нотатку",
+    "updateNoteButton": "Оновити нотатку",
+    "pinnedBadge": "Закріплено",
+    "updatedDateLabel": "Оновлено {date}",
+    "generateAITitle": "Згенерувати нотатку за допомогою AI",
+    "generateAISubtitle": "Витягніть контент та створіть розумні нотатки",
+    "sourceTypePDF": "PDF-документ",
+    "sourceTypePDFDescription": "Завантажте PDF-файли",
+    "sourceTypeYouTube": "Відео YouTube",
+    "sourceTypeYouTubeDescription": "Витягти з відео",
+    "sourceTypeWebsite": "URL вебсайту",
+    "sourceTypeWebsiteDescription": "Витягти з вебсторінки",
+    "sourceTypeAudio": "Аудіофайл",
+    "sourceTypeAudioDescription": "Транскрибувати аудіо",
+    "sourceTypeHandwriting": "Рукописне",
+    "sourceTypeHandwritingDescription": "OCR із зображення",
+    "sourceTypeText": "Вставити текст",
+    "sourceTypeTextDescription": "З буфера обміну",
+    "chooseSourceLabel": "Оберіть джерело контенту",
+    "youtubeUrlLabel": "URL YouTube",
+    "youtubeUrlHint": "https://www.youtube.com/watch?v=...",
+    "websiteUrlLabel": "URL вебсайту",
+    "websiteUrlHint": "https://uk.wikipedia.org/wiki/...",
+    "pasteContentLabel": "Вставте свій контент",
+    "pasteContentHint": "Вставте конспект лекції, текст статті або будь-який контент...",
+    "characterCount": "{count} символів",
+    "fileUploadPrompt": "Перетягніть файл сюди або натисніть для вибору",
+    "pdfFileTypes": "PDF, TXT, MD (макс. 20 МБ)",
+    "audioFileTypes": "MP3, WAV, M4A (макс. 50 МБ)",
+    "imageFileTypes": "JPG, PNG, HEIC (макс. 20 МБ)",
+    "extractGenerateButton": "Витягти та згенерувати нотатку",
+    "processingTitle": "Обробка Вашого контенту",
+    "processingSubtitle": "Це може зайняти деякий час...",
+    "processingStep1": "Витягування контенту",
+    "processingStep2": "Аналіз тексту",
+    "processingStep3": "Генерація підсумку",
+    "processingStep4": "Створення нотатки",
+    "extractionSuccess": "Контент успішно витягнуто!",
+    "aiSummaryLabel": "AI Підсумок",
+    "suggestedTagsLabel": "Запропоновані теги",
+    "contentPreviewLabel": "Попередній перегляд контенту ({count} символів)",
+    "startOverButton": "Почати спочатку",
+    "saveNoteButton": "Зберегти нотатку",
+    "generatingPresentationTitle": "Генерація презентації",
+    "generatingPresentationSubtitle": "AI створює слайди з Вашої нотатки...",
+    "generationFailedTitle": "Помилка генерації",
+    "aiGeneratedBadge": "Згенеровано AI",
+    "regenerateButton": "Перегенерувати",
+    "mindMapTitle": "Ментальна мапа",
+    "generatingMindMapMessage": "Генерація ментальної мапи...",
+    "mindMapGenerationFailed": "Не вдалося згенерувати ментальну мапу",
+    "mindMapHistoryTitle": "Історія ментальних мап",
+    "failedToLoadHistory": "Не вдалося завантажити історію",
+    "noMindMapsEmptyTitle": "Ще немає ментальних мап",
+    "noMindMapsEmptySubtitle": "Генеруйте ментальні мапи з Ваших нотаток",
+    "mindMapDeletedSuccess": "Ментальну мапу видалено",
+    "mindMapDeleteFailed": "Не вдалося видалити",
+    "mindMapLoadFailed": "Не вдалося завантажити",
+    "deleteMindMapTitle": "Видалити ментальну мапу",
+    "deleteMindMapConfirmation": "Ви впевнені, що хочете видалити цю ментальну мапу?",
+    "analyzingNotesMessage": "Аналіз Ваших нотаток...",
+    "creatingMindMapMessage": "Створення ментальної мапи",
+    "mindMapGuideTitle": "Керівництво з ментальних мап",
+    "mindMapGuideContent": "Ця ментальна мапа візуалізує всі концепції з Ваших нотаток.\n\n• Щипніть для збільшення/зменшення\n• Перетягніть для переміщення\n• Натисніть оновити для перегенерації",
+    "mindMapHelpText": "Щипніть для збільшення • Перетягніть для перегляду мапи",
+    "noNotesForMindMap": "Немає нотаток для генерації ментальної мапи",
+    "shareNoteTitle": "Поділитися нотаткою",
+    "shareLinkLabel": "Посилання для поширення",
+    "shareToSocialLabel": "Поділитися в соцмережах",
+    "shareWhatsApp": "WhatsApp",
+    "shareTwitter": "Twitter",
+    "shareFacebook": "Facebook",
+    "shareLinkedIn": "LinkedIn",
+    "shareEmail": "Електронна пошта",
+    "downloadLabel": "Завантажити",
+    "downloadText": "Текст (.txt)",
+    "downloadMarkdown": "Markdown (.md)",
+    "sharingPreviewLabel": "Поширення",
+    "linkCopiedSuccess": "Посилання скопійовано до буфера обміну!",
+    "downloadTextSuccess": "Завантажено: {title}.txt",
+    "downloadFailed": "Не вдалося завантажити",
+    "downloadMarkdownSuccess": "Завантажено: {title}.md"
+  },
+  "quiz": {
+    "live_lobby": {
+      "room_code": "Код кімнати",
+      "copy_code": "Копіювати код",
+      "share_code": "Поділіться цим кодом з друзями для приєднання",
+      "room_code_copied": "Код кімнати скопійовано!",
+      "players": "Гравці ({count})",
+      "host_badge": "ВЕДУЧИЙ",
+      "starting": "Запуск...",
+      "start_game": "Почати гру",
+      "waiting_for_host": "Очікування запуску гри ведучим...",
+      "error_occurred": "Сталася помилка"
+    },
+    "live_quiz": {
+      "title": "Онлайн-вікторина",
+      "hero_title": "Змагайтеся в реальному часі",
+      "hero_subtitle": "Грайте з друзями та дізнайтеся, хто знає більше!",
+      "host_game": "Створити гру",
+      "host_description": "Створіть кімнату та поділіться кодом з друзями",
+      "creating_room": "Створення кімнати...",
+      "create_room": "Створити кімнату",
+      "or": "АБО",
+      "join_game": "Приєднатися до гри",
+      "room_code_label": "Код кімнати",
+      "room_code_hint": "ABC123",
+      "your_name_label": "Ваше ім'я",
+      "your_name_hint": "Введіть Ваше ім'я",
+      "joining": "Приєднання...",
+      "join_room": "Приєднатися",
+      "please_enter_room_code": "Будь ласка, введіть код кімнати",
+      "please_enter_name": "Будь ласка, введіть Ваше ім'я",
+      "failed_to_create_room": "Не вдалося створити кімнату",
+      "failed_to_join_room": "Не вдалося приєднатися до кімнати",
+      "error": "Помилка: {error}"
+    },
+    "match_game": {
+      "title": "Гра на зіставлення",
+      "reset_game": "Скинути гру",
+      "time": "Час",
+      "moves": "Ходи",
+      "matches": "Збіги",
+      "questions": "ПИТАННЯ",
+      "answers": "ВІДПОВІДІ",
+      "congratulations": "Вітаємо! 🎉",
+      "completed_message": "Завершено за {seconds} секунд з {moves} ходами",
+      "play_again": "Грати знову",
+      "no_flashcards_available": "Немає доступних флешкарток для зіставлення",
+      "failed_to_load": "Не вдалося завантажити флешкартки: {error}",
+      "time_seconds": "{seconds}с"
+    },
+    "mode": {
+      "title": "Режим тесту",
+      "hero_title": "Перевірте свої знання",
+      "hero_subtitle": "AI-питання згенеровані з Ваших флешкарток",
+      "number_of_questions": "Кількість запитань",
+      "question_types": "Типи запитань",
+      "multiple_choice": "Множинний вибір",
+      "multiple_choice_description": "4 варіанти, оберіть один",
+      "true_false": "Правда / Хибність",
+      "true_false_description": "Визначте, чи правильне твердження",
+      "fill_blank": "Заповнити пропуск",
+      "fill_blank_description": "Введіть пропущене слово або фразу",
+      "timer": "Таймер",
+      "timer_description": "30 секунд на питання",
+      "generating_quiz": "Генерація тесту...",
+      "generate_start_quiz": "Згенерувати та почати тест",
+      "please_select_question_type": "Будь ласка, оберіть хоча б один тип питання",
+      "failed_to_generate": "Не вдалося згенерувати тест: {error}"
+    },
+    "results": {
+      "title": "Результати тесту",
+      "score": "Бал",
+      "outstanding": "Чудово! 🎉",
+      "great_job": "Відмінна робота! 👏",
+      "good_effort": "Хороші старання! 💪",
+      "keep_practicing": "Продовжуйте вправлятися! 📚",
+      "correct": "Правильно",
+      "incorrect": "Неправильно",
+      "time": "Час",
+      "time_minutes": "{minutes}хв",
+      "back_to_study_set": "Повернутися до набору",
+      "try_again": "Спробувати знову"
+    },
+    "taking": {
+      "exit_quiz": "Вийти з тесту?",
+      "exit_message": "Ваш прогрес буде втрачено.",
+      "cancel": "Скасувати",
+      "exit": "Вийти",
+      "question_progress": "{current}/{total}",
+      "submitting": "Надсилання...",
+      "type_answer_here": "Введіть Вашу відповідь тут...",
+      "submit_answer": "Надіслати відповідь",
+      "correct_feedback": "Правильно!",
+      "incorrect_feedback": "Неправильно",
+      "correct_answer": "Правильна відповідь: {answer}",
+      "explanation": "Пояснення",
+      "previous": "Попереднє",
+      "next_question": "Наступне питання",
+      "submit_quiz": "Надіслати тест",
+      "failed_to_submit": "Не вдалося надіслати тест: {error}"
+    }
+  },
+  "research": {
+    "title": "Глибоке дослідження",
+    "messages": {
+      "please_enter_query": "Будь ласка, введіть запит для дослідження",
+      "creating": "Створення дослідження...",
+      "loading_report": "Завантаження звіту...",
+      "pdf_export_soon": "Експорт у PDF незабаром!",
+      "markdown_copied": "Markdown скопійовано до буфера обміну!",
+      "report_copied": "Звіт скопійовано!",
+      "could_not_open_link": "Не вдалося відкрити посилання"
+    },
+    "form": {
+      "query_hint": "напр., \"Поясніть квантові обчислення детально\"",
+      "ai_powered_research": "Дослідження на базі AI",
+      "deep_dive_topic": "Глибоке занурення в будь-яку тему"
+    },
+    "sections": {
+      "source_types": "📚 Типи джерел",
+      "research_depth": "🔍 Глибина дослідження",
+      "output_format": "📄 Формат виводу"
+    },
+    "source_types": {
+      "documents": "Документи",
+      "web": "Веб",
+      "academic": "Академічні"
+    },
+    "depth": {
+      "quick": "Швидке",
+      "standard": "Стандартне",
+      "comprehensive": "Всебічне"
+    },
+    "output_format": {
+      "detailed": "Детальний",
+      "summary": "Підсумок",
+      "bullets": "Тези"
+    },
+    "buttons": {
+      "start_research": "Почати глибоке дослідження",
+      "cancel": "Скасувати"
+    },
+    "recent": {
+      "title": "Нещодавні дослідження",
+      "done": "Завершено",
+      "failed": "Помилка",
+      "in_progress": "В процесі"
+    },
+    "progress": {
+      "title": "Дослідження в процесі",
+      "query_label": "Запит дослідження",
+      "overall_progress": "Загальний прогрес",
+      "pipeline_title": "Конвеєр дослідження",
+      "phases": {
+        "planning": "Планування",
+        "researching": "Дослідження",
+        "synthesizing": "Синтез",
+        "completed": "Завершено",
+        "failed": "Помилка",
+        "starting": "Запуск"
+      },
+      "agents": {
+        "planning": "Агент планування",
+        "planning_desc": "Аналіз запиту та планування стратегії дослідження",
+        "research": "Агент дослідження",
+        "research_desc": "Збір інформації з обраних джерел",
+        "synthesis": "Агент синтезу",
+        "synthesis_desc": "Компіляція та організація результатів"
+      }
+    },
+    "report": {
+      "deep_research": "ГЛИБОКЕ ДОСЛІДЖЕННЯ",
+      "tab_report": "Звіт",
+      "tab_sources": "Джерела ({count})",
+      "tab_export": "Експорт",
+      "executive_summary": "Загальний підсумок",
+      "key_insights": "Ключові висновки",
+      "sources_references": "Джерела та посилання",
+      "sources_cited": "{count} джерел цитовано",
+      "no_sources": "Джерел не знайдено",
+      "knowledge_base_sources": "База знань ({count})",
+      "web_sources": "Вебджерела ({count})",
+      "study_material": "Навчальний матеріал",
+      "relevance": "{score}% Релевантність",
+      "relevance_label": "Релевантність",
+      "citation_copied": "Цитату скопійовано!",
+      "export_title": "Експорт дослідження",
+      "export_format": "Формат експорту",
+      "export_pdf": "Експортувати як PDF",
+      "export_pdf_desc": "Зберегти як PDF-документ",
+      "export_markdown": "Копіювати як Markdown",
+      "export_markdown_desc": "Форматований текст з цитатами",
+      "export_plain": "Копіювати простий текст",
+      "export_plain_desc": "Простий текст без форматування",
+      "share": "Поділитися звітом",
+      "share_desc": "Поділитися через інші додатки",
+      "citation_style": "Стиль цитування",
+      "citation_preview": "ПЕРЕГЛЯД",
+      "delete_confirm_title": "Видалити дослідження?",
+      "delete_confirm_message": "Цей звіт дослідження буде назавжди видалено.",
+      "delete_confirm_cancel": "Скасувати",
+      "delete_confirm_delete": "Видалити"
+    },
+    "date": {
+      "today": "Сьогодні",
+      "yesterday": "Вчора",
+      "days_ago": "{days} днів тому"
+    }
+  },
+  "ai_chat": {
+    "title": "Навчальний помічник",
+    "history_title": "Історія чатів",
+    "history_subtitle": "Ваші AI-розмови",
+    "messages": {
+      "ask_anything": "Запитайте мене будь-що...",
+      "thinking": "Думаю...",
+      "no_conversations": "Ще немає розмов",
+      "start_new": "Почніть новий чат",
+      "search_conversations": "Пошук розмов...",
+      "delete_confirm_title": "Видалити розмову?",
+      "delete_confirm_message": "Це назавжди видалить цю розмову та всі повідомлення.",
+      "delete_confirm_cancel": "Скасувати",
+      "delete_confirm_delete": "Видалити"
+    },
+    "empty_state": {
+      "title": "Навчальний помічник",
+      "description": "Задавайте питання про Ваші навчальні матеріали, отримуйте пояснення, підсумки та багато іншого.\nЯ можу посилатися на Ваші документи та надавати відповіді з цитатами.",
+      "prompts": {
+        "explain": "Поясніть ключові концепції цієї теми",
+        "summary": "Створіть підсумок моїх навчальних матеріалів",
+        "important": "Що найважливіше запам'ятати?",
+        "examples": "Допоможіть мені краще зрозуміти це на прикладах"
+      }
+    },
+    "file_picker": {
+      "gallery": "Обрати з галереї",
+      "camera": "Зробити фото",
+      "pdf": "Обрати PDF-документ"
+    },
+    "history": {
+      "new_chat": "Новий чат",
+      "no_message": "Ще немає розмов"
+    },
+    "date": {
+      "today": "Сьогодні",
+      "yesterday": "Вчора",
+      "days_ago": "{days} днів тому"
+    }
+  },
+  "teach_back": {
+    "title": "Навчання поясненням",
+    "messages": {
+      "please_enter_topic": "Будь ласка, введіть тему",
+      "please_select_study_set": "Будь ласка, оберіть набір для навчання",
+      "please_enter_explanation": "Будь ласка, введіть Ваше пояснення",
+      "explanation_submitted": "Пояснення надіслано!",
+      "no_study_sets": "Набори не знайдено. Спочатку створіть один!"
+    },
+    "feynman": {
+      "title": "Техніка Фейнмана",
+      "step1": "Оберіть тему",
+      "step1_desc": "Виберіть концепцію",
+      "step2": "Поясніть просто",
+      "step2_desc": "Поясніть своїми словами",
+      "step3": "Отримайте відгук",
+      "step3_desc": "AI оцінить",
+      "step4": "Заповніть прогалини",
+      "step4_desc": "Покращте та спробуйте знову"
+    },
+    "form": {
+      "mode_topic": "Введіть тему",
+      "mode_study_set": "З набору",
+      "topic_label": "Яку тему Ви хочете освоїти?",
+      "topic_hint": "напр., Теорема Піфагора, Фотосинтез, Попит та пропозиція...",
+      "quick_picks": "Швидкий вибір:",
+      "reference_label": "Довідковий матеріал (необов'язково — допомагає AI краще оцінити)",
+      "reference_hint": "Вставте нотатки з підручника, конспект лекції або ключові тези тут...",
+      "study_set_label": "Оберіть набір — AI автоматично визначить тему з Ваших флешкарток",
+      "study_set_empty": "Набори не знайдено. Спочатку створіть один!",
+      "cards_count": "{count} карток",
+      "cancel": "Скасувати",
+      "generate_start": "Згенерувати та почати",
+      "start_teaching": "Почати пояснення",
+      "generating": "Генерація...",
+      "creating": "Створення..."
+    },
+    "session": {
+      "essentials_title": "Основні тези",
+      "load_essentials": "Завантажити основні тези",
+      "who_explaining": "Кому Ви пояснюєте?",
+      "difficulty_eli5": "5-річній дитині",
+      "difficulty_eli5_desc": "Максимально просто",
+      "difficulty_classmate": "Однокласнику",
+      "difficulty_classmate_desc": "Звичайний рівень",
+      "difficulty_expert": "Експерту",
+      "difficulty_expert_desc": "Технічна глибина",
+      "explanation_title": "Ваше пояснення",
+      "explanation_hint": "Поясніть концепцію своїми словами...",
+      "characters_count": "{count} символів",
+      "submit_explanation": "Надіслати пояснення",
+      "submitting": "Надсилання...",
+      "review_explanation": "Перегляньте своє пояснення",
+      "evaluate_button": "Оцінити моє пояснення",
+      "evaluating": "Оцінювання...",
+      "challenge_button": "Виклик",
+      "convince_ai_title": "Переконайте AI",
+      "convince_ai_desc": "Скептичний AI-учень ставитиме провокаційні питання. Захистіть своє розуміння!",
+      "convinced_badge": "Переконав! +20 XP",
+      "skeptical_student": "Скептичний учень",
+      "defend_hint": "Захистіть своє розуміння...",
+      "thinking": "Думаю..."
+    },
+    "progress": {
+      "phase_explain": "Поясніть",
+      "phase_submit": "Надішліть",
+      "phase_evaluate": "Оцініть"
+    },
+    "evaluation": {
+      "xp_earned": "+50 XP зароблено!",
+      "overall_score": "Загальний бал",
+      "score_breakdown": "Деталізація балів",
+      "accuracy": "Точність",
+      "clarity": "Чіткість",
+      "completeness": "Повнота",
+      "understanding": "Розуміння",
+      "strengths": "Сильні сторони",
+      "improve": "Як покращити",
+      "deepen": "Поглибте своє розуміння",
+      "try_again": "Спробувати знову",
+      "new_topic": "Нова тема",
+      "score_excellent": "Чудове розуміння!",
+      "score_good": "Хороше розуміння!",
+      "score_fair": "Задовільне розуміння",
+      "score_needs_improvement": "Потребує покращення"
+    },
+    "status": {
+      "pending": "Очікує",
+      "submitted": "Надіслано",
+      "evaluated": "Оцінено"
+    },
+    "difficulty": {
+      "eli5": "ПРОСТО",
+      "classmate": "ОДНОКЛАСНИК",
+      "expert": "ЕКСПЕРТ"
+    },
+    "empty_state": {
+      "title": "Ще немає сесій пояснення",
+      "subtitle": "Перевірте своє розуміння за допомогою техніки Фейнмана"
+    }
+  },
+  "common": {
+    "cancel": "Скасувати",
+    "delete": "Видалити",
+    "close": "Закрити",
+    "retry": "Повторити",
+    "tryAgain": "Спробувати знову",
+    "errorGeneric": "Щось пішло не так",
+    "noData": "Немає даних",
+    "gotIt": "Зрозуміло"
+  },
+  "exam_clone": {
+    "list": {
+      "title": "Клонування іспитів",
+      "subtitle": "Пробні іспити на базі AI",
+      "upload_tooltip": "Завантажити іспит",
+      "loading": "Завантаження іспитів...",
+      "overview": "Огляд",
+      "your_exams": "Ваші іспити",
+      "upload_button": "Завантажити",
+      "no_exams_title": "Ще немає іспитів",
+      "no_exams_subtitle": "Завантажте свій перший іспит, щоб почати\nгенерувати практичні запитання за допомогою AI",
+      "upload_exam_button": "Завантажити іспит",
+      "review_queue": "Черга на повторення",
+      "review_queue_subtitle_due": "{count} до повторення",
+      "review_queue_subtitle_caught_up": "Все повторено",
+      "due_count": "{count} до повторення",
+      "bookmarks": "Закладки",
+      "bookmarks_subtitle": "Збережені запитання",
+      "saved_questions": "Збережені запитання",
+      "badges": "Значки",
+      "badges_subtitle": "Досягнення",
+      "achievements": "Досягнення",
+      "leaderboard": "Таблиця лідерів",
+      "leaderboard_subtitle": "Рейтинги",
+      "rankings": "Рейтинги",
+      "upload": "Завантажити",
+      "analysis": "Аналіз",
+      "practice": "Практика",
+      "notification_title": "{count} {questions} до повторення!",
+      "notification_subtitle": "Час попрактикуватися та зміцнити пам'ять",
+      "notification": {
+        "multiple_due": "{count} запитань до повторення!",
+        "message": "Час попрактикуватися та зміцнити пам'ять"
+      },
+      "question": "Запитання",
+      "questions": "Запитань",
+      "stats": {
+        "exams": "Іспити",
+        "original": "Оригінальні",
+        "generated": "Згенеровані",
+        "ready": "Готові",
+        "failed": "Помилка",
+        "pending": "Очікують",
+        "processing": "Обробка"
+      },
+      "all_caught_up": "Все повторено",
+      "failed": "Помилка обробки",
+      "delete_dialog": {
+        "title": "Видалити іспит?",
+        "message": "Це назавжди видалить цей іспит та всі згенеровані запитання.",
+        "cancel": "Скасувати",
+        "delete": "Видалити"
+      }
+    },
+    "upload": {
+      "title": "Завантажити іспит",
+      "subtitle": "Завантажте минулий іспит для генерації практичних запитань",
+      "title_label": "Назва іспиту *",
+      "title_hint": "напр., Проміжний іспит, Фінал з біології",
+      "subject_label": "Предмет",
+      "subject_hint": "напр., Біологія, Математика",
+      "method_label": "Спосіб завантаження",
+      "upload_pdf": "Завантажити PDF",
+      "upload_pdf_desc": "Завантажте іспит як PDF-файл",
+      "paste_text": "Вставити текст",
+      "paste_text_desc": "Скопіюйте та вставте текст іспиту",
+      "pdf_label": "Оберіть PDF-файл",
+      "pdf_hint": "Натисніть, щоб обрати PDF",
+      "text_label": "Текст іспиту",
+      "text_hint": "Вставте запитання іспиту тут...",
+      "uploading": "Завантаження...",
+      "upload_button": "Завантажити іспит",
+      "upload_analyze": "Завантажити та аналізувати",
+      "click_upload": "Натисніть, щоб завантажити",
+      "file_formats": "Підтримується: PDF, JPG, PNG",
+      "tip_pdf_fail": "Якщо PDF не працює, спробуйте зробити чітке фото іспиту",
+      "title_required": "Будь ласка, введіть назву іспиту",
+      "file_required": "Будь ласка, оберіть PDF-файл",
+      "text_required": "Будь ласка, вставте текст іспиту",
+      "character_count": "{count} символів"
+    },
+    "detail": {
+      "title": "Аналіз іспиту",
+      "export_pdf": "Експорт PDF",
+      "review_queue": "Черга на повторення",
+      "live_session": "Онлайн-сесія",
+      "practice": "Практика",
+      "coming_soon": "{feature} незабаром",
+      "exam_style_analysis": "Аналіз стилю іспиту",
+      "question_types": "Типи запитань",
+      "difficulty_distribution": "Розподіл складності",
+      "easy": "Легко",
+      "medium": "Середньо",
+      "hard": "Складно",
+      "topics_covered": "Охоплені теми",
+      "more_topics": "+{count} ще",
+      "original": "Оригінальні",
+      "generated": "Згенеровані",
+      "total": "Усього",
+      "best_score": "Найкращий бал",
+      "tabs": {
+        "original": "Оригінальні ({count})",
+        "generated": "Згенеровані ({count})",
+        "analytics": "Аналітика"
+      },
+      "generate_more": "Згенерувати більше запитань",
+      "no_questions": "Ще немає запитань",
+      "no_practice_data": "Ще немає даних практики",
+      "complete_practice": "Завершіть хоча б одну практичну сесію, щоб побачити аналітику.",
+      "question_type": {
+        "multiple_choice": "Множинний вибір",
+        "short_answer": "Коротка відповідь",
+        "true_false": "Правда/Хибність",
+        "essay": "Есе",
+        "fill_blank": "Заповнити пропуск"
+      },
+      "correct_answer": "Правильна відповідь",
+      "explanation": "Пояснення"
+    },
+    "badges": {
+      "title": "Досягнення",
+      "subtitle": "Заробляйте значки, практикуючись",
+      "your_progress": "Ваш прогрес",
+      "failed_to_load": "Не вдалося завантажити значки: {error}",
+      "remaining": "{count} значків залишилось розблокувати",
+      "all": "Усі",
+      "recently_earned": "Нещодавно отримані",
+      "earned_on": "Отримано {date}",
+      "from_exam": "з {title}",
+      "xp_reward": "+{xp} XP"
+    },
+    "bookmarks": {
+      "title": "Збережені запитання",
+      "subtitle": "Запитання, позначені для повторення",
+      "stats_count": "{count}",
+      "stats_label": "Збережених запитань",
+      "from_exams_count": "{count}",
+      "from_exams_label": "З різних іспитів",
+      "difficulty": {
+        "easy": "Легко",
+        "medium": "Середньо",
+        "hard": "Складно",
+        "unknown": "Невідомо"
+      },
+      "options": "Варіанти:",
+      "correct": "(Правильно)",
+      "correct_answer": "Правильна відповідь:",
+      "empty_title": "Ще немає закладок",
+      "empty_message": "Додавайте складні запитання в закладки під час практики для подальшого повторення.\nНатисніть значок закладки на будь-якому запитанні, щоб зберегти його тут.",
+      "start_practicing": "Почати практику",
+      "failed_to_load": "Не вдалося завантажити закладки: {error}",
+      "failed_to_remove": "Не вдалося видалити закладку: {error}"
+    },
+    "leaderboard": {
+      "title": "Таблиця лідерів",
+      "subtitle": "Подивіться, на якому Ви місці",
+      "period": {
+        "weekly": "Щотижнево",
+        "monthly": "Щомісячно",
+        "all_time": "За весь час"
+      },
+      "your_rank": "Ваш рейтинг",
+      "top_10": "Топ-10!",
+      "keep_practicing": "Продовжуйте практику",
+      "avg_score": "Середній бал",
+      "correct": "Правильно",
+      "avg_score_label": "середній бал",
+      "exams_count": "{count} іспитів",
+      "exams_and_correct": "{exams} іспитів • {correct} правильних",
+      "empty_title": "Ще немає даних",
+      "empty_message": "Будьте першими, хто пройде іспит та з'явиться в таблиці лідерів!",
+      "failed_to_load": "Не вдалося завантажити таблицю лідерів: {error}"
+    },
+    "practice": {
+      "title": "Практика",
+      "practice_exam": "Практичний іспит",
+      "questions_available": "{count} запитань доступно",
+      "setup": {
+        "number_of_questions": "Кількість запитань",
+        "time_limit_minutes": "Обмеження часу (хвилини)",
+        "minutes": "{time} хв",
+        "include_questions": "Включити запитання",
+        "original_questions": "Оригінальні запитання іспиту",
+        "ai_questions": "AI-згенеровані запитання",
+        "start_practice": "Почати практику"
+      },
+      "progress": {
+        "question_of": "Запитання {current} з {total}",
+        "answered": "{count} відповідей",
+        "flagged": "{count} позначено",
+        "time_remaining": "{time}"
+      },
+      "difficulty": {
+        "easy": "Легко",
+        "medium": "Середньо",
+        "hard": "Складно"
+      },
+      "actions": {
+        "previous": "Попереднє",
+        "next": "Наступне",
+        "submit": "Надіслати",
+        "check_answer": "Перевірити відповідь",
+        "type_answer": "Введіть Вашу відповідь..."
+      },
+      "results": {
+        "title": "Результати",
+        "score": "{score}%",
+        "excellent": "Чудово!",
+        "good_job": "Хороша робота!",
+        "keep_practicing": "Продовжуйте практику!",
+        "correct": "Правильно",
+        "incorrect": "Неправильно",
+        "unanswered": "Без відповіді",
+        "time": "Час",
+        "review_answers": "Переглянути відповіді",
+        "try_again": "Спробувати знову"
+      },
+      "review": {
+        "title": "Перегляд відповідей",
+        "question_number": "Запитання {number}",
+        "your_answer": "Ваша відповідь:",
+        "correct_answer": "Правильна відповідь:",
+        "explanation": "Пояснення"
+      },
+      "dialogs": {
+        "exit_title": "Вийти з іспиту?",
+        "exit_message": "Ваш прогрес буде втрачено. Ви відповіли на {answered} з {total} запитань.",
+        "continue_exam": "Продовжити іспит",
+        "exit": "Вийти",
+        "submit_title": "Надіслати іспит?",
+        "submit_message": "Ви відповіли на {answered} з {total} запитань.",
+        "unanswered_warning": "{count} запитань без відповіді",
+        "submit": "Надіслати"
+      },
+      "no_questions_available": "Немає доступних запитань"
+    },
+    "review_queue": {
+      "title": "Черга на повторення",
+      "stats": {
+        "correct": "{count}",
+        "incorrect": "{count}",
+        "progress": "{current}/{total}"
+      },
+      "loading": "Завантаження черги на повторення...",
+      "difficulty": {
+        "easy": "Легко",
+        "medium": "Середньо",
+        "hard": "Складно"
+      },
+      "review_number": "Повторення #{count}",
+      "check_answer": "Перевірити відповідь",
+      "ai_evaluating": "AI оцінює...",
+      "next_question": "Наступне запитання",
+      "finish_review": "Завершити повторення",
+      "type_answer": "Введіть відповідь:",
+      "type_answer_hint": "Введіть Вашу відповідь тут...\n(Можна писати кілька рядків)",
+      "correct_answer": "Правильна відповідь: {answer}",
+      "get_ai_explanation": "Отримати пояснення AI",
+      "getting_explanation": "Отримання пояснення...",
+      "ai_evaluation": "Оцінка AI",
+      "ai_explanation": "Пояснення AI",
+      "empty": {
+        "title": "Все повторено!",
+        "message": "Зараз у Вас немає запитань на повторення. Проходьте більше іспитів, щоб наповнити чергу на повторення.",
+        "back_button": "Повернутися до іспитів",
+        "refresh_button": "Оновити"
+      },
+      "complete": {
+        "title": "Повторення завершено!",
+        "message": "Чудова робота з закріплення знань",
+        "correct": "Правильно",
+        "incorrect": "Неправильно",
+        "total": "Усього",
+        "accuracy": "Точність",
+        "tip_title": "Так тримати!",
+        "tip_message": "Запитання, на які Ви відповіли неправильно, з'являтимуться частіше. Інтервальне повторення допомагає перенести знання до довготривалої пам'яті.",
+        "back_button": "Повернутися до іспитів",
+        "review_more": "Повторити ще"
+      },
+      "failed_to_load": "Не вдалося завантажити чергу на повторення: {error}",
+      "failed_to_submit": "Не вдалося завершити повторення: {error}",
+      "failed_explanation": "Не вдалося отримати пояснення: {error}"
+    }
+  },
+  "problem_solver": {
+    "batch_solver": {
+      "title": "Пакетний розв'язувач",
+      "tabs": {
+        "pdf_upload": "Завантажити PDF",
+        "text_input": "Текстовий ввід"
+      },
+      "pdf_tab": {
+        "upload_label": "Завантажити PDF",
+        "upload_hint": "Оберіть PDF-файл із задачами",
+        "extract_button": "Витягти задачі"
+      },
+      "text_tab": {
+        "title": "Вставити задачі",
+        "description": "Вставте задачі нижче. Кожна задача повинна бути на новому рядку або розділена номерами.",
+        "hint": "Приклад:\n1. Розв'яжіть рівняння: 2x + 5 = 15\n2. Обчисліть площу кола з радіусом 7 см\n3. Розкладіть на множники: x² - 5x + 6",
+        "extract_button": "Витягти задачі"
+      },
+      "stats": {
+        "total": "Усього",
+        "selected": "Обрано",
+        "solved": "Розв'язано"
+      },
+      "actions": {
+        "solve_selected": "Розв'язати {count} обраних",
+        "solve_all": "Розв'язати всі"
+      },
+      "messages": {
+        "enter_text": "Будь ласка, введіть текст",
+        "problems_solved": "{count} задач розв'язано!"
+      }
+    },
+    "camera_scan": {
+      "title": "Сканувати задачу",
+      "instructions": "Розташуйте задачу в рамці",
+      "review_title": "Перегляд та редагування",
+      "analyzing": "Аналіз зображення...",
+      "analyzing_subtitle": "Це може зайняти кілька секунд",
+      "verify_text": "Будь ласка, перевірте текст",
+      "verify_description": "Математичні символи можуть бути розпізнані неправильно. За потреби відредагуйте текст нижче.",
+      "subject_label": "Предмет",
+      "problem_text_label": "Текст задачі",
+      "problem_text_hint": "Відредагуйте текст задачі тут...",
+      "problem_text_tip": "Порада: Використовуйте ^ для степенів (напр., x^2)",
+      "actions": {
+        "retake": "Перефотографувати",
+        "solve_problem": "Розв'язати задачу"
+      },
+      "subjects": {
+        "mathematics": "Математика",
+        "physics": "Фізика",
+        "chemistry": "Хімія",
+        "biology": "Біологія",
+        "computer_science": "Інформатика",
+        "other": "Інше"
+      }
+    },
+    "concept_map": {
+      "title": "Карта концепцій",
+      "subtitle": "Візуальна навчальна дорожня карта",
+      "central_topic": "Основна тема",
+      "sections": {
+        "prerequisites": "Передумови",
+        "prerequisites_subtitle": "Спочатку опануйте це",
+        "current_concepts": "Поточні концепції",
+        "current_concepts_subtitle": "Зараз вивчаєте",
+        "next_steps": "Наступні кроки",
+        "next_steps_subtitle": "Куди рухатися далі",
+        "related_topics": "Пов'язані теми",
+        "related_topics_subtitle": "Досліджуйте зв'язки"
+      },
+      "importance": "Важливість:",
+      "connection": "Зв'язок:"
+    },
+    "formula_cards": {
+      "title": "Картки формул",
+      "progress": "Картка {current} з {total}",
+      "categories": {
+        "rule": "ПРАВИЛО",
+        "concept": "КОНЦЕПЦІЯ",
+        "formula": "ФОРМУЛА",
+        "theorem": "ТЕОРЕМА"
+      },
+      "sides": {
+        "explanation": "Пояснення",
+        "formula": "формула"
+      },
+      "hints": {
+        "tap_to_flip": "Натисніть, щоб побачити {side}",
+        "tap_explanation": "Натисніть, щоб побачити пояснення",
+        "tap_formula": "Натисніть, щоб побачити формулу",
+        "swipe_navigate": "Проведіть вліво/вправо для навігації"
+      },
+      "actions": {
+        "previous": "Попередня",
+        "next": "Наступна",
+        "flip": "Перевернути"
+      },
+      "messages": {
+        "copied": "Картку скопійовано до буфера обміну"
+      }
+    },
+    "hints": {
+      "title": "Режим підказок",
+      "subtitle": "Отримуйте підказки замість повного розв'язку",
+      "problem_label": "ЗАДАЧА",
+      "hint_progress": "Підказка {current} з ~{total}",
+      "next_hint_preview": "Наступна підказка стосується: {preview}",
+      "all_revealed": "Усі підказки розкрито! Спробуйте розв'язати зараз.",
+      "all_revealed_status": "Усі підказки розкрито",
+      "actions": {
+        "reset": "Скинути",
+        "get_first_hint": "Отримати першу підказку",
+        "next_hint": "Наступна підказка",
+        "thinking": "Думаю...",
+        "see_solution": "Побачити розв'язок"
+      },
+      "messages": {
+        "hints_reset": "Підказки скинуто"
+      }
+    },
+    "practice_quiz": {
+      "title": "Тренувальний тест",
+      "title_with_progress": "Тренувальний тест ({current}/{total})",
+      "question_progress": "Запитання {current}/{total}",
+      "stats": {
+        "correct": "правильно"
+      },
+      "question_types": {
+        "multiple_choice": "Множинний вибір",
+        "true_false": "Правда чи хибність",
+        "fill_blank": "Заповнити пропуск"
+      },
+      "feedback": {
+        "correct": "Правильно!",
+        "incorrect": "Неправильно",
+        "correct_answer": "Правильна відповідь: {answer}",
+        "explanation": "Пояснення"
+      },
+      "actions": {
+        "next_question": "Наступне запитання",
+        "view_results": "Переглянути результати"
+      },
+      "results": {
+        "perfect": "Ідеальний результат! 🎉",
+        "great": "Відмінна робота! 🌟",
+        "good": "Хороші старання! 👍",
+        "practice": "Продовжуйте практику! 💪",
+        "quiz_complete": "Тест завершено!",
+        "close": "Закрити",
+        "try_again": "Спробувати знову"
+      }
+    },
+    "bookmarks": {
+      "title": "Мої закладки",
+      "search_placeholder": "Пошук закладок...",
+      "stats": {
+        "total": "Усього",
+        "subjects": "Предмети",
+        "tags": "Теги"
+      },
+      "edit_sheet": {
+        "title": "Редагувати закладку",
+        "tags_label": "Теги",
+        "tags_hint": "Додати тег...",
+        "notes_label": "Нотатки",
+        "notes_hint": "Додайте свої нотатки тут...",
+        "save_button": "Зберегти зміни"
+      },
+      "delete_dialog": {
+        "title": "Видалити закладку",
+        "message": "Ви впевнені, що хочете видалити цю закладку?",
+        "cancel": "Скасувати",
+        "delete": "Видалити"
+      },
+      "messages": {
+        "updated": "Закладку оновлено",
+        "deleted": "Закладку видалено"
+      },
+      "empty_state": {
+        "title": "Ще немає закладок",
+        "subtitle": "Зберігайте задачі для доступу пізніше"
+      }
+    },
+    "history": {
+      "title": "Історія задач",
+      "search_placeholder": "Пошук задач...",
+      "delete_dialog": {
+        "title": "Видалити задачу?",
+        "message": "Це назавжди видалить цю задачу та її розв'язок.",
+        "cancel": "Скасувати",
+        "delete": "Видалити"
+      },
+      "time": {
+        "today": "Сьогодні",
+        "yesterday": "Вчора",
+        "days_ago": "{days} днів тому"
+      }
+    },
+    "input": {
+      "title": "Розв'язувач задач",
+      "subject_label": "Предмет",
+      "problem_label": "Задача",
+      "problem_hint": "Введіть або вставте задачу тут...\n\nПриклад: Розв'яжіть рівняння 2x + 5 = 15",
+      "actions": {
+        "scan": "Сканувати",
+        "voice": "Голос",
+        "image": "Зображення",
+        "solve": "Розв'язати задачу",
+        "creating": "Створення..."
+      },
+      "image_uploaded": "Зображення завантажено",
+      "voice_coming_soon": "Голосовий ввід незабаром",
+      "how_it_works": "Як це працює",
+      "agents": {
+        "analysis": {
+          "title": "Агент аналізу",
+          "description": "Розуміє задачу та визначає підхід"
+        },
+        "solver": {
+          "title": "Агент розв'язання",
+          "description": "Генерує покрокове розв'язання з поясненнями"
+        },
+        "verifier": {
+          "title": "Агент перевірки",
+          "description": "Перевіряє правильність розв'язку"
+        }
+      },
+      "subjects": {
+        "auto_detect": "Автовизначення",
+        "mathematics": "Математика",
+        "physics": "Фізика",
+        "chemistry": "Хімія",
+        "biology": "Біологія",
+        "computer_science": "Інформатика",
+        "engineering": "Інженерія",
+        "economics": "Економіка",
+        "statistics": "Статистика"
+      },
+      "menu": {
+        "bookmarks": "Закладки",
+        "history": "Історія",
+        "batch_solver": "Пакетний розв'язувач",
+        "camera_scan": "Сканування камерою"
+      },
+      "messages": {
+        "enter_problem": "Будь ласка, введіть задачу або завантажте зображення"
+      }
+    },
+    "similar_problems": {
+      "title": "Подібні задачі",
+      "difficulty": {
+        "easy": "ЛЕГКО",
+        "medium": "СЕРЕДНЬО",
+        "hard": "СКЛАДНО"
+      },
+      "solve_this": "Розв'язати це"
+    },
+    "solution": {
+      "title": "Розв'язок",
+      "final_answer": "Остаточна відповідь",
+      "learning_tools": "Навчальні інструменти",
+      "tools": {
+        "hints": "Підказки",
+        "similar": "Подібні",
+        "quiz": "Тест",
+        "chat": "Чат",
+        "concepts": "Концепції",
+        "formulas": "Формули"
+      },
+      "tabs": {
+        "steps": "Кроки",
+        "code": "Код",
+        "alternatives": "Альтернативи",
+        "graph": "Графік",
+        "analysis": "Аналіз",
+        "citations": "Цитати"
+      },
+      "steps": {
+        "no_solution": "Розв'язок недоступний",
+        "no_steps": "Кроки розв'язку недоступні",
+        "step_number": "Крок {number}",
+        "copy": "Копіювати",
+        "step_copied": "Крок скопійовано"
+      },
+      "code": {
+        "empty_title": "Блоки коду недоступні"
+      },
+      "alternatives": {
+        "empty_title": "Альтернативні методи недоступні"
+      },
+      "graph": {
+        "empty_title": "Дані графіка недоступні"
+      },
+      "analysis": {
+        "level_explanation": "Пояснення рівня {level}",
+        "key_points": "Ключові моменти:",
+        "examples": "Приклади:",
+        "technical_analysis": "Технічний аналіз",
+        "no_details": "Немає деталей"
+      },
+      "citations": {
+        "empty_title": "Цитати недоступні"
+      },
+      "complexity": {
+        "title": "Рівень пояснення",
+        "beginner": "Початківець",
+        "intermediate": "Середній",
+        "advanced": "Просунутий",
+        "expert": "Експерт",
+        "loading": "Завантаження пояснення..."
+      },
+      "narration": {
+        "title": "Озвучення розв'язку",
+        "listen_tooltip": "Прослухати розв'язок",
+        "completed": "Озвучення завершено",
+        "no_text": "Немає тексту розв'язку для озвучення"
+      },
+      "messages": {
+        "bookmark_added": "Закладку додано",
+        "bookmark_removed": "Закладку видалено"
+      }
+    },
+    "solving_progress": {
+      "title": "Розв'язання...",
+      "stages": {
+        "analysis": {
+          "title": "Агент аналізу",
+          "description": "Розуміння задачі"
+        },
+        "solving": {
+          "title": "Агент розв'язання",
+          "description": "Генерація покрокового розв'язку"
+        },
+        "verification": {
+          "title": "Агент перевірки",
+          "description": "Перевірка правильності"
+        }
+      },
+      "status": {
+        "complete": "Завершено",
+        "solution_ready": "Розв'язок готовий!",
+        "redirecting": "Перенаправлення до розв'язку...",
+        "failed": "Помилка розв'язання",
+        "retry": "Повторити"
+      }
+    },
+    "study_buddy": {
+      "title": "Навчальний помічник",
+      "subtitle": "Задавайте додаткові питання про розв'язок",
+      "welcome_message": "Привіт! Я Ваш навчальний помічник. Я переглянув розв'язок Вашої задачі. Запитуйте мене будь-що — я можу пояснити кроки детальніше, запропонувати альтернативні підходи або допомогти попрактикуватися з подібними концепціями.",
+      "suggested_questions_title": "Запропоновані питання",
+      "input_placeholder": "Задайте додаткове питання...",
+      "problem_label": "Задача: {problem}",
+      "export": "Експорт",
+      "suggested": {
+        "explain_step": "Чи можете Ви пояснити крок 2 детальніше?",
+        "why_approach": "Чому ми використали саме такий підхід?",
+        "other_methods": "Які ще є способи розв'язання?",
+        "simpler_example": "Чи можете навести простіший приклад?",
+        "concepts_needed": "Які концепції потрібно зрозуміти для цього?"
+      }
+    },
+    "widgets": {
+      "steps_copied": "Кроки скопійовано до буфера обміну",
+      "copy": "Копіювати",
+      "steps": "Кроки",
+      "no_steps": "Немає кроків для цього методу",
+      "advantages": "Переваги",
+      "disadvantages": "Недоліки",
+      "method_type": {
+        "algebraic": "Алгебраїчний",
+        "geometric": "Геометричний",
+        "numerical": "Числовий",
+        "graphical": "Графічний",
+        "analytical": "Аналітичний",
+        "other": "Інший"
+      },
+      "status": {
+        "pending": "Очікує",
+        "solving": "Розв'язання...",
+        "completed": "Завершено",
+        "failed": "Помилка"
+      },
+      "retry": "Повторити",
+      "solve": "Розв'язати",
+      "view_solution": "Переглянути розв'язок",
+      "search_bookmarks": "Пошук закладок...",
+      "no_problem_text": "Немає тексту задачі",
+      "edit": "Редагувати",
+      "delete": "Видалити",
+      "date": {
+        "today": "Сьогодні",
+        "yesterday": "Вчора",
+        "days_ago": "{days} днів тому"
+      }
+    }
+  }
+}

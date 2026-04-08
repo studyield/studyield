@@ -1,0 +1,2224 @@
+{
+  "onboarding": {
+    "skip": "Пропустить",
+    "next": "Далее",
+    "back": "Назад",
+    "get_started": "Начать",
+    "i_have_account": "У меня есть аккаунт",
+    "app_name": "Studyield",
+    "slide_1": {
+      "title": "Добро пожаловать в Studyield",
+      "subtitle": "Ваш учебный помощник на базе AI",
+      "description": "Освойте любой предмет с помощью умных карточек, AI-решателя задач и персонализированных учебных путей"
+    },
+    "slide_2": {
+      "title": "Умные карточки",
+      "subtitle": "Учитесь умнее, а не больше",
+      "description": "Создавайте интерактивные карточки с алгоритмом интервального повторения, который адаптируется к Вашему темпу обучения",
+      "badge": "FREE"
+    },
+    "slide_3": {
+      "title": "AI-решатель задач",
+      "subtitle": "Получите мгновенную помощь",
+      "description": "Сканируйте любую задачу и получайте пошаговые решения с подробными объяснениями на базе AI",
+      "badge": "PRO",
+      "features": {
+        "scan": "Сканирование задач",
+        "hints": "Получение подсказок",
+        "steps": "Пошагово"
+      }
+    },
+    "slide_4": {
+      "title": "Повышайте свой уровень",
+      "subtitle": "Сделайте обучение увлекательным",
+      "description": "Зарабатывайте XP, поддерживайте серии и открывайте достижения, продвигаясь в учёбе",
+      "badge": "FREE"
+    },
+    "slide_5": {
+      "title": "Персонализированные учебные пути",
+      "subtitle": "Ваш путь, Ваши правила",
+      "description": "Получайте индивидуальные учебные планы на основе Ваших целей, результатов и стиля обучения",
+      "badge": "PRO",
+      "benefits": {
+        "benefit_1": "📚 Индивидуальные учебные планы",
+        "benefit_2": "🎯 Отслеживайте свой прогресс",
+        "benefit_3": "🚀 Достигайте целей быстрее"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "С возвращением",
+      "subtitle": "Войдите, чтобы продолжить обучение",
+      "email_label": "Электронная почта",
+      "email_hint": "Введите Вашу электронную почту",
+      "password_label": "Пароль",
+      "password_hint": "Введите Ваш пароль",
+      "forgot_password": "Забыли пароль?",
+      "login_button": "Войти",
+      "no_account": "Нет аккаунта?",
+      "sign_up": "Зарегистрироваться",
+      "or_continue_with": "Или продолжить с",
+      "google_login": "Продолжить с Google",
+      "apple_login": "Продолжить с Apple"
+    },
+    "register": {
+      "title": "Создать аккаунт",
+      "subtitle": "Начните свой учебный путь",
+      "name_label": "Полное имя",
+      "name_hint": "Введите Ваше имя",
+      "email_label": "Электронная почта",
+      "email_hint": "Введите Вашу электронную почту",
+      "password_label": "Пароль",
+      "password_hint": "Создайте пароль",
+      "confirm_password_label": "Подтверждение пароля",
+      "confirm_password_hint": "Повторите пароль",
+      "register_button": "Создать аккаунт",
+      "have_account": "Уже есть аккаунт?",
+      "sign_in": "Войти",
+      "terms_prefix": "Регистрируясь, Вы соглашаетесь с нашими ",
+      "terms": "Условиями использования",
+      "and": " и ",
+      "privacy": "Политикой конфиденциальности"
+    },
+    "errors": {
+      "email_required": "Электронная почта обязательна",
+      "email_invalid": "Пожалуйста, введите действительный адрес электронной почты",
+      "password_required": "Пароль обязателен",
+      "password_min_length": "Пароль должен содержать не менее 6 символов",
+      "passwords_not_match": "Пароли не совпадают",
+      "name_required": "Имя обязательно",
+      "login_failed": "Ошибка входа. Проверьте свои учётные данные",
+      "register_failed": "Ошибка регистрации. Попробуйте ещё раз"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "Доброе утро",
+      "afternoon": "Добрый день",
+      "evening": "Добрый вечер"
+    },
+    "welcome_message": "У Вас {count} карточек на повторение",
+    "welcome_message_empty": "Готовы продолжить обучение?",
+    "level": "Уровень {level}",
+    "xp_progress": "{current} / {next} XP",
+    "streak_days": "{days}д",
+    "daily_xp": "{current} / {goal} дневной XP",
+    "gamification": {
+      "xp": "XP",
+      "day": "день",
+      "days": "дней",
+      "daily_xp": "дневной XP",
+      "level_names": {
+        "0": "Новичок",
+        "1": "Бронза",
+        "2": "Серебро",
+        "3": "Золото",
+        "4": "Платина",
+        "5": "Бриллиант",
+        "6": "Мастер",
+        "7": "Грандмастер",
+        "8": "Чемпион",
+        "9": "Легенда",
+        "10": "Мифический",
+        "11": "Бессмертный"
+      }
+    },
+    "upgrade_pro": {
+      "title": "Перейти на Pro",
+      "badge": "ПОПУЛЯРНОЕ",
+      "subtitle": "Откройте все премиум-функции и безлимитный AI",
+      "offer": "Сэкономьте 20% с годовым планом"
+    },
+    "stats": {
+      "study_sets": "Наборы для учёбы",
+      "flashcards": "Карточки",
+      "due_today": "На сегодня",
+      "quizzes_done": "Тестов пройдено",
+      "cards": "{count} карточек"
+    },
+    "sections": {
+      "quick_actions": "Быстрые действия",
+      "recent_study_sets": "Недавние наборы",
+      "view_all": "Просмотреть все"
+    },
+    "continue_studying": {
+      "title": "Продолжить обучение",
+      "cards_due": "{count} карточек на повторение"
+    },
+    "quick_actions": {
+      "new_study_set": {
+        "title": "Новый набор",
+        "description": "Создать новую коллекцию"
+      },
+      "exam_clone": {
+        "title": "Клон экзамена",
+        "description": "Генерировать пробные экзамены"
+      },
+      "problem_solver": {
+        "title": "Решатель задач",
+        "description": "AI пошаговые решения"
+      },
+      "ai_chat": {
+        "title": "AI Чат",
+        "description": "Задавайте вопросы о заметках"
+      },
+      "view_analytics": {
+        "title": "Аналитика",
+        "description": "Отслеживайте прогресс обучения"
+      },
+      "knowledge_base": {
+        "title": "База знаний",
+        "description": "Загружайте и ищите документы"
+      },
+      "join_live_quiz": {
+        "title": "Онлайн-викторина",
+        "description": "Играйте с друзьями в реальном времени"
+      },
+      "coming_soon": "Скоро"
+    },
+    "empty_state": {
+      "title": "Наборов пока нет",
+      "subtitle": "Создайте свой первый набор, чтобы начать обучение",
+      "button": "Создать набор"
+    }
+  },
+  "study_sets": {
+    "title": "Наборы для учёбы",
+    "header_title": "Мои наборы",
+    "header_subtitle": "Создавайте и управляйте учебными материалами",
+    "search_hint": "Поиск наборов...",
+    "new_study_set": "Новый набор",
+    "create_button": "Создать",
+    "no_results_title": "Ничего не найдено",
+    "no_results_subtitle": "Ни один набор не соответствует запросу \"{query}\"",
+    "card": {
+      "public": "Публичный",
+      "private": "Приватный",
+      "edit": "Редактировать",
+      "delete": "Удалить",
+      "cards_count": "{count} карточек",
+      "docs_count": "{count} документов"
+    },
+    "empty_state": {
+      "title": "Наборов пока нет",
+      "subtitle": "Создайте свой первый набор для организации карточек и учебных материалов",
+      "button": "Создать набор"
+    },
+    "messages": {
+      "created": "Набор успешно создан!",
+      "updated": "Набор успешно обновлён!",
+      "deleted": "Набор успешно удалён!",
+      "error": "Ошибка загрузки наборов",
+      "retry": "Повторить"
+    },
+    "detail": {
+      "section_statistics": "Статистика",
+      "stat_flashcards_label": "Карточки",
+      "stat_notes_label": "Заметки",
+      "stat_analytics_label": "Аналитика",
+      "quiz_history_title": "История тестов",
+      "quiz_history_subtitle": "Просмотреть результаты тестов",
+      "section_quick_actions": "Быстрые действия",
+      "action_study_session": "Учебная сессия (Все карточки)",
+      "action_quiz_mode": "Режим теста",
+      "action_match_game": "Игра на сопоставление",
+      "action_live_quiz": "Онлайн-викторина",
+      "action_browse_cards": "Просмотреть карточки",
+      "action_add_cards": "Добавить карточки",
+      "section_sources": "Источники",
+      "sources_view_all": "Просмотреть все",
+      "sources_document_singular": "Документ",
+      "sources_documents_plural": "Документы",
+      "sources_subtitle": "Учебные материалы и ссылки",
+      "sources_empty_state": "Источников пока нет",
+      "sources_add_documents": "Добавить документы",
+      "section_recent_activity": "Недавняя активность",
+      "activity_empty_state": "Нет недавней активности",
+      "menu_edit_study_set": "Редактировать набор",
+      "menu_share": "Поделиться",
+      "menu_delete_study_set": "Удалить набор",
+      "delete_confirm_title": "Удалить набор?",
+      "delete_confirm_message": "Это навсегда удалит \"{title}\" и все его карточки. Это действие нельзя отменить.",
+      "delete_confirm_cancel": "Отмена",
+      "delete_confirm_delete": "Удалить",
+      "study_no_cards_due": "Нет карточек на повторение! Отличная работа! 🎉",
+      "study_failed_to_load": "Не удалось загрузить карточки",
+      "add_cards_header": "Добавить карточки",
+      "add_cards_ready_status": "{count} карточ{s}ек готово",
+      "add_cards_submit_button": "Добавить в набор",
+      "toast_cards_added_success": "{count} карточек успешно добавлено!",
+      "toast_cards_add_error": "Не удалось добавить карточки: {message}"
+    },
+    "create_edit": {
+      "title_create": "Создать набор",
+      "create_study_set": "Создать набор",
+      "title_edit": "Редактировать набор",
+      "cover_image": "Обложка",
+      "tap_add_cover": "Нажмите, чтобы добавить обложку",
+      "tap_to_add_cover_image": "Нажмите, чтобы добавить обложку",
+      "title_label": "Название *",
+      "title_hint": "напр., Биология 101",
+      "title_required": "Название обязательно",
+      "description_label": "Описание",
+      "description": "Описание",
+      "description_hint": "О чём этот набор?",
+      "tags_label": "Теги",
+      "tags": "Теги",
+      "tags_hint": "биология, экзамен, глава1",
+      "tags_helper": "Разделяйте теги запятыми",
+      "exam_date_label": "Дата экзамена (необязательно)",
+      "exam_date_optional": "Дата экзамена (необязательно)",
+      "exam_date_hint": "Выберите дату экзамена",
+      "select_exam_date": "Выберите дату экзамена",
+      "exam_subject_label": "Предмет экзамена",
+      "exam_subject_hint": "напр., Промежуточный экзамен, Финальный экзамен",
+      "visibility_public": "Публичный",
+      "visibility_private": "Приватный",
+      "private": "Приватный",
+      "visibility_public_desc": "Любой может просматривать этот набор",
+      "visibility_private_desc": "Только Вы можете просматривать этот набор",
+      "private_description": "Только Вы можете просматривать этот набор",
+      "save_changes": "Сохранить изменения",
+      "create_button": "Создать набор",
+      "delete_study_set": "Удалить набор",
+      "delete_confirm_title": "Удалить набор?",
+      "delete_confirm_message": "Это навсегда удалит \"{title}\" и все его карточки. Это действие нельзя отменить.",
+      "subtitle": "Организуйте свои учебные материалы",
+      "title_placeholder": "Введите название, напр. 'Биология 101 — Глава 3'",
+      "description_placeholder": "Добавьте описание (необязательно)",
+      "more_options": "Больше параметров",
+      "less_options": "Меньше параметров",
+      "add_tag": "Добавить тег...",
+      "cancel": "Отмена",
+      "public": "Публичный",
+      "visibility_label": "Видимость",
+      "cards_ready_count": "{count} карточек готово",
+      "create_with_cards": "Создать с {count} карточками",
+      "cards_failed": "Набор создан, но некоторые карточки не удалось сохранить",
+      "image_uploaded": "Изображение успешно загружено!",
+      "upload_failed": "Не удалось загрузить изображение"
+    },
+    "documents": {
+      "title": "Заметки",
+      "create_note": "Создать заметку",
+      "no_notes_title": "Заметок пока нет",
+      "no_notes_subtitle": "Создавайте заметки для организации учебного материала",
+      "note_title_label": "Название",
+      "note_title_hint": "Введите название заметки",
+      "note_content_label": "Содержание",
+      "note_content_hint": "Напишите свою заметку здесь...",
+      "create_note_button": "Создать заметку",
+      "fill_both_fields": "Пожалуйста, заполните и название, и содержание",
+      "note_created": "Заметка успешно создана!",
+      "failed_to_create": "Не удалось создать заметку: {error}"
+    },
+    "flashcard_creation": {
+      "title": "Создать карточки",
+      "tab_manual": "Вручную",
+      "tab_ai": "AI генерация",
+      "tab_import": "Импорт",
+      "create_cards": "Создать {count} {cards}",
+      "add_cards": "Добавить {count} {cards}",
+      "card": "Карточку",
+      "cards": "Карточек",
+      "no_flashcards": "Пожалуйста, создайте хотя бы одну карточку",
+      "no_flashcards_to_add": "Нет карточек для добавления"
+    },
+    "quiz_history": {
+      "title": "История тестов",
+      "no_history_title": "Нет истории тестов",
+      "no_history_subtitle": "Проходите тесты, чтобы увидеть здесь свою историю",
+      "summary_quizzes": "Тесты",
+      "summary_attempts": "Попытки",
+      "summary_best_score": "Лучший результат",
+      "questions": "{count} вопросов",
+      "attempts": "{count} попыт{s}ок",
+      "attempt": "попытка",
+      "best": "Лучший: {score}%",
+      "no_attempts": "Попыток пока нет",
+      "time_spent": "{minutes}мин {seconds}с"
+    }
+  },
+  "analytics": {
+    "title": "Аналитика",
+    "timeRange": {
+      "sevenDays": "7 дней",
+      "thirtyDays": "30 дней",
+      "ninetyDays": "90 дней",
+      "allTime": "Всё время"
+    },
+    "stats": {
+      "studyTime": "Время учёбы",
+      "cardsReviewed": "Просмотрено карточек",
+      "quizzes": "Тесты",
+      "avgScore": "Средний балл"
+    },
+    "sections": {
+      "studyActivity": "Учебная активность",
+      "streak": "Серия",
+      "performance": "Результативность"
+    },
+    "heatmap": {
+      "title": "Тепловая карта обучения",
+      "less": "Меньше",
+      "more": "Больше"
+    },
+    "cardMastery": {
+      "title": "Усвоение карточек",
+      "noData": "Нет данных о карточках"
+    },
+    "retentionCurve": {
+      "title": "Кривая запоминания",
+      "noData": "Начните учиться, чтобы увидеть кривую запоминания"
+    },
+    "studyTime": {
+      "title": "Время учёбы",
+      "daily": "Ежедневно",
+      "weekly": "Еженедельно",
+      "noData": "Время учёбы пока не зафиксировано"
+    },
+    "streak": {
+      "title": "Календарь серий",
+      "dayStreak": "дней подряд",
+      "dayAbbr": {
+        "sun": "В",
+        "mon": "П",
+        "tue": "В",
+        "wed": "С",
+        "thu": "Ч",
+        "fri": "П",
+        "sat": "С"
+      }
+    },
+    "months": {
+      "january": "Январь",
+      "february": "Февраль",
+      "march": "Март",
+      "april": "Апрель",
+      "may": "Май",
+      "june": "Июнь",
+      "july": "Июль",
+      "august": "Август",
+      "september": "Сентябрь",
+      "october": "Октябрь",
+      "november": "Ноябрь",
+      "december": "Декабрь"
+    },
+    "cardStatus": {
+      "new": "Новые",
+      "learning": "Изучаются",
+      "review": "На повторение",
+      "mastered": "Усвоены"
+    },
+    "chart": {
+      "percentageSymbol": "%",
+      "minutesSymbol": "мин",
+      "dayLabel": "Д"
+    },
+    "time": {
+      "hoursSymbol": "ч",
+      "minutesSymbol": "мин"
+    }
+  },
+  "learning_paths": {
+    "title": "Учебные пути",
+    "detail": {
+      "title": "Учебный путь",
+      "learning_path": "Учебный путь",
+      "complete": "Завершено",
+      "your_journey": "Ваш учебный путь",
+      "your_learning_journey": "Ваш учебный путь",
+      "next_up": "Следующее",
+      "step_number": "Шаг {number}",
+      "steps": "Шаги",
+      "remaining": "Осталось",
+      "total_time": "Общее время",
+      "overall_progress": "Общий прогресс",
+      "stats": {
+        "steps": "Шаги",
+        "remaining": "Осталось",
+        "total_time": "Общее время"
+      },
+      "progress": {
+        "overall": "Общий прогресс",
+        "steps_count": "{completed}/{total} шагов"
+      },
+      "minutes": "{minutes} минут",
+      "view_resource": "Просмотреть ресурс",
+      "mark_done": "Готово",
+      "mark_as_done": "Отметить как выполненное",
+      "step_completed": "Шаг выполнен!",
+      "path_completed": "Завершено!",
+      "steps_count": "{completed}/{total} шагов",
+      "completed_on": "Завершено {date}"
+    },
+    "validation": {
+      "please_enter_topic": "Пожалуйста, введите тему"
+    },
+    "messages": {
+      "path_created_success": "Учебный путь создан!"
+    },
+    "how_it_works": {
+      "title": "Как работают учебные пути",
+      "step1_title": "Установите цели",
+      "step1_subtitle": "Укажите AI тему и уровень",
+      "step2_title": "Получите план",
+      "step2_subtitle": "AI создаст пошаговый план",
+      "step3_title": "Отслеживайте прогресс",
+      "step3_subtitle": "Выполняйте шаги, следите за прогрессом"
+    },
+    "buttons": {
+      "cancel": "Отмена",
+      "generate_path": "Сгенерировать путь",
+      "generating": "Генерация..."
+    },
+    "form": {
+      "title": "Создать учебный путь",
+      "topic_label": "Тема",
+      "topic_hint": "напр., Машинное обучение, Математический анализ, Физика",
+      "current_level_label": "Текущий уровень",
+      "target_level_label": "Целевой уровень",
+      "level_beginner": "Начинающий",
+      "level_intermediate": "Средний",
+      "level_advanced": "Продвинутый",
+      "level_expert": "Эксперт",
+      "study_time_label": "Время учёбы: {hours} часов/неделю"
+    },
+    "empty_state": {
+      "title": "Учебных путей пока нет",
+      "subtitle": "Создайте свой первый персонализированный учебный план"
+    },
+    "path_card": {
+      "steps_count": "{completed}/{total} шагов",
+      "hours_label": "{hours}ч"
+    },
+    "dialogs": {
+      "delete_confirm_title": "Удалить учебный путь?",
+      "delete_confirm_message": "Это навсегда удалит этот путь и весь прогресс.",
+      "cancel_button": "Отмена",
+      "delete_button": "Удалить"
+    }
+  },
+  "profile": {
+    "title": "Настройки",
+    "subtitle": "Управляйте аккаунтом и настройками",
+    "settings": {
+      "profile": {
+        "title": "Профиль",
+        "subtitle": "Имя, аватар, образование, предметы"
+      },
+      "account": {
+        "title": "Настройки аккаунта",
+        "subtitle": "Пароль, безопасность, удаление аккаунта"
+      },
+      "notifications": {
+        "title": "Настройки уведомлений",
+        "subtitle": "Управляйте настройками уведомлений"
+      },
+      "language": {
+        "title": "Язык",
+        "choose": "Выберите язык",
+        "close": "Закрыть"
+      },
+      "subscription": {
+        "title": "Подписка",
+        "subtitle": "План, использование, счета"
+      },
+      "logout": {
+        "title": "Выйти",
+        "confirm_title": "Выйти",
+        "confirm_message": "Вы уверены, что хотите выйти?",
+        "cancel": "Отмена",
+        "confirm": "Выйти"
+      }
+    },
+    "plan": {
+      "free": "Бесплатный план",
+      "manage": "Управлять",
+      "upgrade": "Обновить"
+    },
+    "version": "Studyield v1.0.0",
+    "edit": {
+      "title": "Редактировать профиль",
+      "avatar": {
+        "default_initial": "П"
+      },
+      "display_name": {
+        "label": "Отображаемое имя",
+        "hint": "Введите Ваше имя"
+      },
+      "email": {
+        "label": "Электронная почта",
+        "placeholder": "Нет электронной почты",
+        "readonly_note": "Электронную почту нельзя изменить"
+      },
+      "education_level": {
+        "label": "Уровень образования",
+        "options": {
+          "high_school": "Средняя школа",
+          "undergraduate": "Бакалавриат",
+          "graduate": "Магистратура",
+          "post_graduate": "Аспирантура",
+          "self_learner": "Самообразование",
+          "professional": "Профессионал"
+        }
+      },
+      "subjects": {
+        "label": "Интересующие предметы",
+        "common_header": "Популярные предметы",
+        "custom_header": "Ваши предметы",
+        "add_custom": {
+          "label": "Добавить свой предмет",
+          "hint": "Добавить свой предмет"
+        },
+        "options": {
+          "mathematics": "Математика",
+          "physics": "Физика",
+          "chemistry": "Химия",
+          "biology": "Биология",
+          "computer_science": "Информатика",
+          "english": "Английский язык",
+          "history": "История",
+          "geography": "География",
+          "economics": "Экономика",
+          "psychology": "Психология"
+        }
+      },
+      "button": {
+        "saving": "Сохранение...",
+        "save": "Сохранить изменения",
+        "saved": "Сохранено!"
+      },
+      "message": {
+        "success": "Профиль успешно обновлён!",
+        "error": "Не удалось сохранить профиль"
+      }
+    },
+    "account": {
+      "title": "Настройки аккаунта",
+      "change_password": {
+        "title": "Изменить пароль",
+        "subtitle": "Регулярно обновляйте свой пароль",
+        "current_password_label": "Текущий пароль",
+        "new_password_label": "Новый пароль",
+        "confirm_password_label": "Подтвердите новый пароль",
+        "button": "Изменить пароль"
+      },
+      "validation": {
+        "current_password_required": "Текущий пароль обязателен",
+        "password_min_length": "Новый пароль должен содержать не менее 8 символов",
+        "passwords_mismatch": "Пароли не совпадают"
+      },
+      "messages": {
+        "password_changed_success": "Пароль успешно изменён!"
+      },
+      "information": {
+        "title": "Информация об аккаунте",
+        "email_label": "Электронная почта",
+        "plan_label": "План",
+        "plan_free": "Бесплатный",
+        "email_verified_label": "Электронная почта подтверждена",
+        "email_verified_yes": "Да",
+        "member_since_label": "Участник с"
+      },
+      "delete": {
+        "title": "Удалить аккаунт",
+        "subtitle": "Навсегда удалить Ваш аккаунт",
+        "button": "Удалить мой аккаунт",
+        "warning_title": "Это действие нельзя отменить!",
+        "warning_message": "Все Ваши данные будут навсегда удалены.",
+        "confirmation_instruction": "Введите DELETE для подтверждения:",
+        "confirmation_hint": "DELETE",
+        "confirm_button": "Удалить навсегда",
+        "cancel_button": "Отмена"
+      }
+    }
+  },
+  "subscription": {
+    "main": {
+      "appbar_title": "Подписка",
+      "header_label": "Измените или обновите свой план",
+      "heading": "Выберите свой план",
+      "subheading": "Откройте премиум-функции для ускорения обучения",
+      "billing_yearly": "Ежегодно",
+      "billing_lifetime": "Навсегда",
+      "popular_badge": "САМЫЙ ПОПУЛЯРНЫЙ",
+      "plan_trial_title": "7-дневная пробная версия",
+      "plan_trial_subtitle": "Попробуйте перед покупкой",
+      "plan_pro_title": "Pro",
+      "plan_pro_lifetime_title": "Пожизненный Pro",
+      "plan_pro_lifetime_subtitle": "Заплатите раз, пользуйтесь всегда",
+      "plan_pro_yearly_subtitle": "Лучшее для серьёзного обучения",
+      "yearly_crossed_price": "$47.88/год",
+      "lifetime_period": "единоразово",
+      "yearly_period": "/год",
+      "button_current_plan": "Текущий план",
+      "button_free_forever": "Бесплатно навсегда",
+      "button_upgrade_lifetime": "Перейти на пожизненный",
+      "button_upgrade_pro": "Перейти на Pro",
+      "trust_secure_title": "Безопасность",
+      "trust_secure_subtitle": "SSL шифрование",
+      "trust_flexible_title": "Гибкость",
+      "trust_flexible_subtitle": "Отмените в любое время",
+      "trust_free_title": "Бесплатно навсегда",
+      "trust_free_subtitle": "Кредитная карта не нужна"
+    },
+    "manage": {
+      "appbar_title": "Управление подпиской",
+      "error_open_portal": "Не удалось открыть портал",
+      "cancel_dialog_title": "Отменить подписку?",
+      "cancel_dialog_content": "Вы сохраните доступ до конца расчётного периода.",
+      "cancel_dialog_keep_btn": "Оставить подписку",
+      "cancel_dialog_cancel_btn": "Отменить",
+      "cancel_success_message": "Подписка будет отменена в конце периода",
+      "cancel_error_message": "Не удалось отменить",
+      "default_plan_name": "План Pro",
+      "status_active": "Активный",
+      "price_lifetime": "единоразово",
+      "price_yearly": "/год",
+      "button_change_plan": "Изменить план",
+      "info_current_period_label": "Текущий период",
+      "info_next_billing_label": "Следующее списание",
+      "card_billing_history_title": "История оплат",
+      "card_billing_history_subtitle": "Просмотреть прошлые счета",
+      "card_payment_methods_title": "Способы оплаты",
+      "card_payment_methods_subtitle": "Обновить карту или способ оплаты",
+      "card_cancel_subscription_title": "Отменить подписку",
+      "card_cancel_subscription_subtitle": "Вы сохраните доступ до конца периода",
+      "webview_title": "Платёжный портал"
+    },
+    "checkout": {
+      "appbar_title": "Оформление",
+      "coupon_applied_message": "Купон применён!",
+      "payment_success_message": "Оплата прошла успешно!",
+      "payment_error_message": "Ошибка оплаты",
+      "header_title": "Перейти на {plan}",
+      "header_subtitle_lifetime": "ПОЖИЗНЕННАЯ оплата",
+      "header_subtitle_yearly": "ЕЖЕГОДНАЯ подписка",
+      "order_summary_label": "ИТОГО ЗАКАЗА",
+      "plan_line_item": "План {plan} ({cycle})",
+      "coupon_applied_label": "Купон применён",
+      "coupon_discount_amount": "-${amount}",
+      "total_label": "Итого",
+      "billing_period_year": "/год",
+      "billing_period_month": "/месяц",
+      "coupon_code_label": "Код купона",
+      "coupon_input_placeholder": "Введите код купона",
+      "coupon_apply_button": "Применить",
+      "what_you_get_heading": "Что Вы получите",
+      "features": {
+        "unlimited_ai": "Безлимитные AI-запросы",
+        "premium_features": "Все премиум-функции разблокированы",
+        "priority_support": "Приоритетная поддержка",
+        "advanced_analytics": "Расширенная аналитика",
+        "exam_cloning": "Клонирование и генерация экзаменов",
+        "deep_research": "Возможности глубокого исследования"
+      },
+      "button_processing": "Обработка...",
+      "button_proceed": "Перейти к оплате",
+      "trust_ssl": "SSL шифрование",
+      "trust_stripe": "На базе Stripe",
+      "trust_cancel_anytime": "Отмените в любое время"
+    },
+    "success": {
+      "welcome_heading": "Добро пожаловать в Pro!",
+      "payment_successful_message": "Ваша оплата прошла успешно",
+      "info_plan_label": "План",
+      "info_status_label": "Статус",
+      "info_status_active": "Активный",
+      "features_heading": "Разблокированные функции",
+      "button_continue": "Начать использовать Pro"
+    },
+    "webview": {
+      "appbar_title": "Завершение оплаты",
+      "error_loading_page": "Ошибка загрузки страницы",
+      "cancel_dialog_title": "Отменить оплату?",
+      "cancel_dialog_content": "Вы уверены, что хотите отменить эту оплату?",
+      "cancel_dialog_continue_btn": "Нет, продолжить",
+      "cancel_dialog_cancel_btn": "Да, отменить"
+    }
+  },
+  "notifications": {
+    "header": {
+      "title": "Уведомления",
+      "unread_count": "{count} новых",
+      "all_caught_up": "Всё просмотрено!",
+      "mark_all_as_read": "Отметить все как прочитанные",
+      "clear_all": "Очистить все"
+    },
+    "tabs": {
+      "all": "Все",
+      "unread": "Непрочитанные",
+      "settings": "Настройки"
+    },
+    "dialogs": {
+      "clear_all_title": "Очистить все?",
+      "clear_all_message": "Это навсегда удалит все уведомления.",
+      "cancel": "Отмена",
+      "delete_all": "Удалить все"
+    },
+    "time": {
+      "just_now": "Только что",
+      "minutes_ago": "{minutes}мин назад",
+      "hours_ago": "{hours}ч назад",
+      "days_ago": "{days}д назад"
+    },
+    "empty": {
+      "no_notifications_title": "Нет уведомлений",
+      "no_notifications_message": "Мы уведомим Вас, когда произойдёт\nчто-то важное",
+      "all_caught_up_title": "Всё просмотрено!",
+      "all_caught_up_message": "Вы прочитали все уведомления.\nОтличная работа! 🎉",
+      "feature_stay_updated": "Будьте в курсе",
+      "feature_quick_actions": "Быстрые действия",
+      "feature_track_progress": "Отслеживайте прогресс"
+    },
+    "card": {
+      "delete": "Удалить",
+      "mark_as_read": "Отметить как прочитанное"
+    },
+    "types": {
+      "info": "ИНФО",
+      "success": "УСПЕХ",
+      "warning": "ВНИМАНИЕ",
+      "reminder": "НАПОМИНАНИЕ",
+      "achievement": "ДОСТИЖЕНИЕ",
+      "study": "УЧЁБА"
+    },
+    "settings": {
+      "info_card_title": "Будьте в курсе!",
+      "info_card_message": "Включите уведомления, чтобы не пропустить важные обновления",
+      "channels_section": "Каналы уведомлений",
+      "types_section": "О чём уведомлять",
+      "in_app_title": "Уведомления в приложении",
+      "in_app_subtitle": "Получайте уведомления при использовании приложения",
+      "email_title": "Уведомления по электронной почте",
+      "email_subtitle": "Получайте важные обновления по электронной почте",
+      "push_title": "Push-уведомления",
+      "push_subtitle": "Получайте push-уведомления на это устройство",
+      "study_reminders_title": "Напоминания об учёбе",
+      "study_reminders_subtitle": "Напоминания о карточках на повторение и учебных сессиях",
+      "achievements_title": "Достижения и вехи",
+      "achievements_subtitle": "Отмечайте свои учебные достижения",
+      "weekly_digest_title": "Еженедельный обзор",
+      "weekly_digest_subtitle": "Сводка Вашего еженедельного прогресса обучения",
+      "footer_message": "Настройки уведомлений синхронизируются на всех Ваших устройствах"
+    }
+  },
+  "flashcards": {
+    "add": {
+      "title_edit": "Редактировать карточку",
+      "title_add": "Добавить карточку",
+      "label_front": "Лицевая сторона (Вопрос)",
+      "hint_front": "Введите вопрос или термин",
+      "error_front_required": "Лицевая сторона обязательна",
+      "label_back": "Обратная сторона (Ответ)",
+      "hint_back": "Введите ответ или определение",
+      "error_back_required": "Обратная сторона обязательна",
+      "label_notes": "Заметки (необязательно)",
+      "hint_notes": "Добавьте дополнительные заметки или контекст",
+      "label_tags": "Теги (необязательно)",
+      "hint_tags_example": "глава1, важное, повторение",
+      "helper_tags": "Разделяйте теги запятыми",
+      "button_save_changes": "Сохранить изменения",
+      "button_create": "Создать карточку"
+    },
+    "list": {
+      "label_flashcards": "Карточки",
+      "sort_newest": "Сначала новые",
+      "sort_oldest": "Сначала старые",
+      "sort_difficulty": "По сложности",
+      "menu_newest": "Сначала новые",
+      "menu_oldest": "Сначала старые",
+      "menu_difficulty": "По сложности",
+      "toast_created": "Карточка успешно создана!",
+      "toast_updated": "Карточка успешно обновлена!",
+      "toast_bulk_created": "{count} карточек успешно добавлено!",
+      "toast_deleted": "Карточка удалена",
+      "error_title": "Ошибка загрузки карточек",
+      "button_retry": "Повторить",
+      "filter_all": "Все",
+      "filter_new": "Новые",
+      "filter_learning": "Изучаются",
+      "filter_review": "На повторение",
+      "filter_mastered": "Усвоены",
+      "filter_due": "К повторению",
+      "empty_filter_message": "Нет карточек в этой категории",
+      "button_add_cards": "Добавить карточки",
+      "modal_add_cards_title": "Добавить карточки",
+      "button_add_to_set": "Добавить в набор",
+      "ready_card_singular": "карточка",
+      "ready_cards_plural": "карточек",
+      "ready_text": "готово",
+      "empty_title": "Карточек пока нет",
+      "empty_message": "Создайте свою первую карточку, чтобы начать обучение",
+      "empty_button": "Добавить карточки"
+    },
+    "study": {
+      "card_progress": "Карточка {current} из {total}",
+      "question_rating": "Насколько хорошо Вы это знали?",
+      "rating_again": "Снова",
+      "rating_again_subtitle": "Забыл",
+      "rating_hard": "Трудно",
+      "rating_hard_subtitle": "Сложно",
+      "rating_good": "Хорошо",
+      "rating_good_subtitle": "Вспомнил",
+      "rating_easy": "Легко",
+      "rating_easy_subtitle": "Идеально",
+      "hint_tap_card": "Нажмите на карточку, чтобы увидеть ответ",
+      "label_question": "ВОПРОС",
+      "label_answer": "ОТВЕТ",
+      "exit_dialog_title": "Завершить учебную сессию?",
+      "exit_dialog_message": "Ваш прогресс не будет сохранён, если Вы выйдете сейчас. Вы уверены?",
+      "exit_button_continue": "Продолжить обучение",
+      "exit_button_exit": "Выйти"
+    },
+    "widgets": {
+      "session_summary": {
+        "title": "Сессия завершена!",
+        "cards_reviewed": "Вы просмотрели {count} карточек",
+        "accuracy": "Точность",
+        "easy_good": "Легко/Хорошо",
+        "hard": "Трудно",
+        "again": "Снова",
+        "done_button": "Готово"
+      },
+      "ai_assist": {
+        "header": "AI Помощник",
+        "suggest_answer_title": "Предложить ответ",
+        "suggest_answer_description": "Сгенерировать полный ответ",
+        "elaborate_title": "Расширить",
+        "elaborate_description": "Добавить больше деталей и контекста",
+        "add_mnemonic_title": "Добавить мнемонику",
+        "add_mnemonic_description": "Создать приёмы для запоминания",
+        "simplify_title": "Упростить",
+        "simplify_description": "Переписать более простым языком",
+        "suggestion_label": "Предложение AI",
+        "try_again_button": "Попробовать снова",
+        "accept_button": "Принять",
+        "suggestion_applied_toast": "Предложение AI применено!"
+      },
+      "ai_generation": {
+        "minimum_chars_error": "Пожалуйста, введите не менее 50 символов",
+        "cards_ready_toast": "{count} карточек готово к добавлению",
+        "info_banner_text": "Позвольте AI сгенерировать карточки из Вашего контента",
+        "banner_text": "Позвольте AI сгенерировать карточки из Вашего контента",
+        "content_label": "Контент",
+        "content_hint": "Вставьте свой текст, заметки или учебный материал сюда...",
+        "char_counter_helper": "{count}/50 минимум символов",
+        "char_count": "{count}/50 минимум символов",
+        "card_count_label": "Количество карточек",
+        "number_of_cards": "Количество карточек",
+        "card_type_label": "Тип карточки",
+        "card_type": "Тип карточки",
+        "qa_type": "Вопрос/Ответ",
+        "type_qa": "Вопрос/Ответ",
+        "fill_blank_type": "Заполнить пропуск",
+        "type_fill_blank": "Заполнить пропуск",
+        "true_false_type": "Правда/Ложь",
+        "type_true_false": "Правда/Ложь",
+        "difficulty_label": "Сложность",
+        "difficulty": "Сложность",
+        "easy_difficulty": "Лёгкая",
+        "difficulty_easy": "Лёгкая",
+        "medium_difficulty": "Средняя",
+        "difficulty_medium": "Средняя",
+        "hard_difficulty": "Сложная",
+        "difficulty_hard": "Сложная",
+        "generating_button": "Генерация...",
+        "generate_button": "Сгенерировать с помощью AI",
+        "generated_cards_title": "Сгенерированные карточки ({count})",
+        "deselect_all_button": "Снять выбор со всех",
+        "select_all_button": "Выбрать все",
+        "card_number_label": "Карточка {number}",
+        "answer_label": "Ответ:",
+        "add_selected_button": "Добавить {count} выбранных карточек"
+      },
+      "manual_creation": {
+        "card_count_label": "{count} {cards}",
+        "card_count": {
+          "zero": "Нет карточек",
+          "one": "1 карточка",
+          "other": "{count} карточек"
+        },
+        "add_card_button": "Добавить карточку",
+        "add_card": "Добавить карточку",
+        "empty_state_title": "Карточек пока нет",
+        "no_cards": "Карточек пока нет",
+        "create_first_card_button": "Создайте свою первую карточку",
+        "create_first": "Создайте свою первую карточку",
+        "singular_card": "Карточка",
+        "plural_cards": "Карточек",
+        "card_header_title": "Карточка {number}",
+        "ready_badge": "Готово",
+        "delete_card_tooltip": "Удалить карточку",
+        "card_type_label": "Тип карточки",
+        "qa_type": "Вопрос/Ответ",
+        "cloze_type": "Клоуз",
+        "image_occlusion_type": "Перекрытие изображения",
+        "front_label": "Лицевая *",
+        "front_hint": "Вопрос или подсказка",
+        "back_label": "Обратная *",
+        "back_hint": "Ответ или объяснение",
+        "notes_label": "Заметки (необязательно)",
+        "notes_hint": "Дополнительный контекст",
+        "tags_label": "Теги (необязательно)",
+        "tags_hint": "тема1, тема2",
+        "tags_helper": "Разделяйте теги запятыми"
+      },
+      "editor": {
+        "manual_tab": "Вручную",
+        "ai_tab": "AI",
+        "import_tab": "Импорт",
+        "tab_manual": "Вручную",
+        "tab_ai": "AI",
+        "tab_import": "Импорт"
+      },
+      "import": {
+        "recording_saved_toast": "Запись сохранена!",
+        "microphone_permission_error": "Доступ к микрофону отклонён",
+        "recording_started_toast": "Запись начата...",
+        "recording_failed_error": "Ошибка записи",
+        "file_pick_error": "Не удалось выбрать файл",
+        "camera_open_error": "Не удалось открыть камеру",
+        "image_pick_error": "Не удалось выбрать изображение",
+        "no_text_in_image_error": "Текст на изображении не найден",
+        "text_extracted_success": "Текст успешно извлечён!",
+        "image_process_error": "Не удалось обработать изображение",
+        "empty_text_error": "Пожалуйста, введите текст для импорта",
+        "no_file_selected_error": "Пожалуйста, выберите файл",
+        "no_audio_error": "Пожалуйста, запишите или выберите аудиофайл",
+        "no_image_error": "Пожалуйста, отсканируйте или выберите изображение",
+        "no_google_docs_url_error": "Пожалуйста, введите URL Google Docs",
+        "no_youtube_url_error": "Пожалуйста, введите URL YouTube",
+        "no_website_url_error": "Пожалуйста, введите URL сайта",
+        "cards_ready_toast": "{count} карточек готово к добавлению",
+        "info_banner_text": "Импортируйте карточки из различных источников",
+        "banner_text": "Импортируйте карточки из различных источников",
+        "source_label": "Источник импорта",
+        "pdf_source": "Загрузка PDF",
+        "source_pdf": "Загрузка PDF",
+        "youtube_source": "Видео YouTube",
+        "source_youtube": "Видео YouTube",
+        "record_audio_source": "Запись аудио",
+        "source_record_audio": "Запись аудио",
+        "audio_file_source": "Аудиофайл",
+        "source_audio_file": "Аудиофайл",
+        "website_source": "URL сайта",
+        "source_website": "URL сайта",
+        "camera_source": "Сканирование камерой",
+        "source_camera": "Сканирование камерой",
+        "google_docs_source": "Google Docs",
+        "source_google_docs": "Google Docs",
+        "text_source": "Вставить текст",
+        "source_text": "Вставить текст",
+        "handwritten_source": "Рукописные заметки",
+        "source_handwritten": "Рукописные заметки",
+        "text_label": "Вставить текст",
+        "text_hint": "Введите содержимое карточек...",
+        "pdf_description": "Загрузите Ваши PDF-документы",
+        "choose_pdf_button": "Выбрать PDF",
+        "change_pdf_button": "Изменить PDF",
+        "recording_in_progress_text": "Запись...",
+        "recording_saved_text": "Запись сохранена!",
+        "tap_to_record_text": "Нажмите, чтобы начать запись",
+        "record_voice_hint": "Запишите свой голос, и мы его транскрибируем",
+        "stop_recording_button": "Остановить запись",
+        "start_recording_button": "Начать запись",
+        "record_again_button": "Записать снова",
+        "choose_audio_button": "Выбрать аудиофайл",
+        "change_audio_button": "Изменить файл",
+        "audio_formats_helper": "Поддерживается: MP3, WAV, M4A",
+        "camera_title": "Сканирование документов камерой",
+        "camera_hint": "Сфотографируйте свои заметки или учебник",
+        "open_camera_button": "Открыть камеру",
+        "google_docs_label": "URL Google Docs",
+        "google_docs_hint": "https://docs.google.com/document/d/...",
+        "google_docs_helper": "Вставьте ссылку для совместного доступа Google Docs",
+        "handwritten_title": "Сканирование рукописных заметок",
+        "handwritten_hint": "Мы извлечём текст из Ваших рукописных заметок",
+        "take_photo_button": "Сделать фото",
+        "from_gallery_button": "Из галереи",
+        "paste_text_label": "Вставить текст",
+        "paste_text_hint": "Введите содержимое карточек...",
+        "separator_label": "Разделитель карточек",
+        "separator_hint": "напр., \\n\\n или ---",
+        "separator_helper": "Шаблон для разделения карточек",
+        "choose_file_button": "Выбрать файл",
+        "change_file_button": "Изменить файл",
+        "file_formats_helper": "Поддерживается: PDF, TXT, CSV, MD",
+        "youtube_label": "URL YouTube",
+        "youtube_hint": "https://youtube.com/watch?v=...",
+        "youtube_helper": "Мы извлечём транскрипцию",
+        "website_label": "URL сайта",
+        "website_hint": "https://example.com",
+        "website_helper": "Мы извлечём содержимое",
+        "importing_button": "Импортирование...",
+        "import_button": "Импортировать карточки",
+        "imported_cards_title": "Импортированные карточки ({count})",
+        "card_number_label": "Карточка {number}",
+        "add_to_study_set_button": "Добавить {count} карточек в набор"
+      }
+    }
+  },
+  "notes": {
+    "title": "Заметки",
+    "mindMapHistoryTooltip": "История ментальных карт",
+    "mindMapTooltip": "Ментальная карта",
+    "aiGenerateButton": "AI генерация",
+    "addNoteButton": "Добавить заметку",
+    "emptyStateTitle": "Заметок пока нет",
+    "emptyStateSubtitle": "Создавайте заметки для организации учебного материала",
+    "createManuallyButton": "Создать вручную",
+    "noSearchResultsTitle": "Заметки не соответствуют поиску",
+    "noSearchResultsSubtitle": "Попробуйте изменить поисковый запрос или фильтр",
+    "createSuccess": "Заметка успешно создана!",
+    "deleteSuccess": "Заметка успешно удалена!",
+    "updateSuccess": "Заметка успешно обновлена!",
+    "aiNotesGeneratedSuccess": "{count} AI-заметок сгенерировано!",
+    "deleteConfirmationTitle": "Удалить заметку?",
+    "deleteConfirmationMessage": "Вы уверены, что хотите удалить \"{title}\"?",
+    "searchPlaceholder": "Поиск заметок...",
+    "filterAll": "Все",
+    "filterMoreTags": "+{count} ещё",
+    "sortNewest": "Сначала новые",
+    "sortOldest": "Сначала старые",
+    "sortTitle": "Название А-Я",
+    "createNoteTitle": "Создать заметку",
+    "editNoteTitle": "Редактировать заметку",
+    "titleLabel": "Название",
+    "titleHint": "Введите название заметки",
+    "titleValidation": "Пожалуйста, введите название",
+    "contentLabel": "Содержание",
+    "contentHint": "Напишите свою заметку здесь...\n\nПоддерживается форматирование Markdown",
+    "contentValidation": "Пожалуйста, введите содержание",
+    "tagsLabel": "Теги (необязательно)",
+    "tagsHint": "напр., биология, важное, глава1 (через запятую)",
+    "tagsHintEdit": "Через запятую",
+    "markdownHelpText": "Вы можете использовать синтаксис Markdown для форматирования:\n• **жирный**, *курсив*, `код`\n• # Заголовок, ## Подзаголовок\n• - Списки",
+    "createNoteSubmitButton": "Создать заметку",
+    "updateNoteButton": "Обновить заметку",
+    "pinnedBadge": "Закреплено",
+    "updatedDateLabel": "Обновлено {date}",
+    "generateAITitle": "Сгенерировать заметку с помощью AI",
+    "generateAISubtitle": "Извлеките контент и создайте умные заметки",
+    "sourceTypePDF": "PDF-документ",
+    "sourceTypePDFDescription": "Загрузите PDF-файлы",
+    "sourceTypeYouTube": "Видео YouTube",
+    "sourceTypeYouTubeDescription": "Извлечь из видео",
+    "sourceTypeWebsite": "URL сайта",
+    "sourceTypeWebsiteDescription": "Извлечь с веб-страницы",
+    "sourceTypeAudio": "Аудиофайл",
+    "sourceTypeAudioDescription": "Транскрибировать аудио",
+    "sourceTypeHandwriting": "Рукописное",
+    "sourceTypeHandwritingDescription": "OCR из изображения",
+    "sourceTypeText": "Вставить текст",
+    "sourceTypeTextDescription": "Из буфера обмена",
+    "chooseSourceLabel": "Выберите источник контента",
+    "youtubeUrlLabel": "URL YouTube",
+    "youtubeUrlHint": "https://www.youtube.com/watch?v=...",
+    "websiteUrlLabel": "URL сайта",
+    "websiteUrlHint": "https://ru.wikipedia.org/wiki/...",
+    "pasteContentLabel": "Вставьте свой контент",
+    "pasteContentHint": "Вставьте конспект лекции, текст статьи или любой контент...",
+    "characterCount": "{count} символов",
+    "fileUploadPrompt": "Перетащите файл сюда или нажмите для выбора",
+    "pdfFileTypes": "PDF, TXT, MD (макс. 20 МБ)",
+    "audioFileTypes": "MP3, WAV, M4A (макс. 50 МБ)",
+    "imageFileTypes": "JPG, PNG, HEIC (макс. 20 МБ)",
+    "extractGenerateButton": "Извлечь и сгенерировать заметку",
+    "processingTitle": "Обработка Вашего контента",
+    "processingSubtitle": "Это может занять некоторое время...",
+    "processingStep1": "Извлечение контента",
+    "processingStep2": "Анализ текста",
+    "processingStep3": "Генерация резюме",
+    "processingStep4": "Создание заметки",
+    "extractionSuccess": "Контент успешно извлечён!",
+    "aiSummaryLabel": "AI Резюме",
+    "suggestedTagsLabel": "Предложенные теги",
+    "contentPreviewLabel": "Предварительный просмотр контента ({count} символов)",
+    "startOverButton": "Начать сначала",
+    "saveNoteButton": "Сохранить заметку",
+    "generatingPresentationTitle": "Генерация презентации",
+    "generatingPresentationSubtitle": "AI создаёт слайды из Вашей заметки...",
+    "generationFailedTitle": "Ошибка генерации",
+    "aiGeneratedBadge": "Сгенерировано AI",
+    "regenerateButton": "Перегенерировать",
+    "mindMapTitle": "Ментальная карта",
+    "generatingMindMapMessage": "Генерация ментальной карты...",
+    "mindMapGenerationFailed": "Не удалось сгенерировать ментальную карту",
+    "mindMapHistoryTitle": "История ментальных карт",
+    "failedToLoadHistory": "Не удалось загрузить историю",
+    "noMindMapsEmptyTitle": "Ментальных карт пока нет",
+    "noMindMapsEmptySubtitle": "Генерируйте ментальные карты из Ваших заметок",
+    "mindMapDeletedSuccess": "Ментальная карта удалена",
+    "mindMapDeleteFailed": "Не удалось удалить",
+    "mindMapLoadFailed": "Не удалось загрузить",
+    "deleteMindMapTitle": "Удалить ментальную карту",
+    "deleteMindMapConfirmation": "Вы уверены, что хотите удалить эту ментальную карту?",
+    "analyzingNotesMessage": "Анализ Ваших заметок...",
+    "creatingMindMapMessage": "Создание ментальной карты",
+    "mindMapGuideTitle": "Руководство по ментальным картам",
+    "mindMapGuideContent": "Эта ментальная карта визуализирует все концепции из Ваших заметок.\n\n• Щипком увеличивайте/уменьшайте\n• Перетаскивайте для перемещения\n• Нажмите обновить для перегенерации",
+    "mindMapHelpText": "Щипком для масштабирования • Перетаскивайте для просмотра карты",
+    "noNotesForMindMap": "Нет заметок для генерации ментальной карты",
+    "shareNoteTitle": "Поделиться заметкой",
+    "shareLinkLabel": "Ссылка для отправки",
+    "shareToSocialLabel": "Поделиться в соцсетях",
+    "shareWhatsApp": "WhatsApp",
+    "shareTwitter": "Twitter",
+    "shareFacebook": "Facebook",
+    "shareLinkedIn": "LinkedIn",
+    "shareEmail": "Электронная почта",
+    "downloadLabel": "Скачать",
+    "downloadText": "Текст (.txt)",
+    "downloadMarkdown": "Markdown (.md)",
+    "sharingPreviewLabel": "Отправка",
+    "linkCopiedSuccess": "Ссылка скопирована в буфер обмена!",
+    "downloadTextSuccess": "Скачано: {title}.txt",
+    "downloadFailed": "Не удалось скачать",
+    "downloadMarkdownSuccess": "Скачано: {title}.md"
+  },
+  "quiz": {
+    "live_lobby": {
+      "room_code": "Код комнаты",
+      "copy_code": "Копировать код",
+      "share_code": "Поделитесь этим кодом с друзьями для присоединения",
+      "room_code_copied": "Код комнаты скопирован!",
+      "players": "Игроки ({count})",
+      "host_badge": "ВЕДУЩИЙ",
+      "starting": "Запуск...",
+      "start_game": "Начать игру",
+      "waiting_for_host": "Ожидание запуска игры ведущим...",
+      "error_occurred": "Произошла ошибка"
+    },
+    "live_quiz": {
+      "title": "Онлайн-викторина",
+      "hero_title": "Соревнуйтесь в реальном времени",
+      "hero_subtitle": "Играйте с друзьями и узнайте, кто знает больше!",
+      "host_game": "Создать игру",
+      "host_description": "Создайте комнату и поделитесь кодом с друзьями",
+      "creating_room": "Создание комнаты...",
+      "create_room": "Создать комнату",
+      "or": "ИЛИ",
+      "join_game": "Присоединиться к игре",
+      "room_code_label": "Код комнаты",
+      "room_code_hint": "ABC123",
+      "your_name_label": "Ваше имя",
+      "your_name_hint": "Введите Ваше имя",
+      "joining": "Присоединение...",
+      "join_room": "Присоединиться",
+      "please_enter_room_code": "Пожалуйста, введите код комнаты",
+      "please_enter_name": "Пожалуйста, введите Ваше имя",
+      "failed_to_create_room": "Не удалось создать комнату",
+      "failed_to_join_room": "Не удалось присоединиться к комнате",
+      "error": "Ошибка: {error}"
+    },
+    "match_game": {
+      "title": "Игра на сопоставление",
+      "reset_game": "Сбросить игру",
+      "time": "Время",
+      "moves": "Ходы",
+      "matches": "Совпадения",
+      "questions": "ВОПРОСЫ",
+      "answers": "ОТВЕТЫ",
+      "congratulations": "Поздравляем! 🎉",
+      "completed_message": "Завершено за {seconds} секунд с {moves} ходами",
+      "play_again": "Играть снова",
+      "no_flashcards_available": "Нет доступных карточек для сопоставления",
+      "failed_to_load": "Не удалось загрузить карточки: {error}",
+      "time_seconds": "{seconds}с"
+    },
+    "mode": {
+      "title": "Режим теста",
+      "hero_title": "Проверьте свои знания",
+      "hero_subtitle": "AI-вопросы, сгенерированные из Ваших карточек",
+      "number_of_questions": "Количество вопросов",
+      "question_types": "Типы вопросов",
+      "multiple_choice": "Множественный выбор",
+      "multiple_choice_description": "4 варианта, выберите один",
+      "true_false": "Правда / Ложь",
+      "true_false_description": "Определите, верно ли утверждение",
+      "fill_blank": "Заполнить пропуск",
+      "fill_blank_description": "Введите пропущенное слово или фразу",
+      "timer": "Таймер",
+      "timer_description": "30 секунд на вопрос",
+      "generating_quiz": "Генерация теста...",
+      "generate_start_quiz": "Сгенерировать и начать тест",
+      "please_select_question_type": "Пожалуйста, выберите хотя бы один тип вопроса",
+      "failed_to_generate": "Не удалось сгенерировать тест: {error}"
+    },
+    "results": {
+      "title": "Результаты теста",
+      "score": "Балл",
+      "outstanding": "Превосходно! 🎉",
+      "great_job": "Отличная работа! 👏",
+      "good_effort": "Хорошие старания! 💪",
+      "keep_practicing": "Продолжайте практиковаться! 📚",
+      "correct": "Правильно",
+      "incorrect": "Неправильно",
+      "time": "Время",
+      "time_minutes": "{minutes}мин",
+      "back_to_study_set": "Вернуться к набору",
+      "try_again": "Попробовать снова"
+    },
+    "taking": {
+      "exit_quiz": "Выйти из теста?",
+      "exit_message": "Ваш прогресс будет утерян.",
+      "cancel": "Отмена",
+      "exit": "Выйти",
+      "question_progress": "{current}/{total}",
+      "submitting": "Отправка...",
+      "type_answer_here": "Введите Ваш ответ здесь...",
+      "submit_answer": "Отправить ответ",
+      "correct_feedback": "Правильно!",
+      "incorrect_feedback": "Неправильно",
+      "correct_answer": "Правильный ответ: {answer}",
+      "explanation": "Объяснение",
+      "previous": "Предыдущий",
+      "next_question": "Следующий вопрос",
+      "submit_quiz": "Отправить тест",
+      "failed_to_submit": "Не удалось отправить тест: {error}"
+    }
+  },
+  "research": {
+    "title": "Глубокое исследование",
+    "messages": {
+      "please_enter_query": "Пожалуйста, введите запрос для исследования",
+      "creating": "Создание исследования...",
+      "loading_report": "Загрузка отчёта...",
+      "pdf_export_soon": "Экспорт в PDF скоро!",
+      "markdown_copied": "Markdown скопирован в буфер обмена!",
+      "report_copied": "Отчёт скопирован!",
+      "could_not_open_link": "Не удалось открыть ссылку"
+    },
+    "form": {
+      "query_hint": "напр., \"Объясните квантовые вычисления подробно\"",
+      "ai_powered_research": "Исследование на базе AI",
+      "deep_dive_topic": "Глубокое погружение в любую тему"
+    },
+    "sections": {
+      "source_types": "📚 Типы источников",
+      "research_depth": "🔍 Глубина исследования",
+      "output_format": "📄 Формат вывода"
+    },
+    "source_types": {
+      "documents": "Документы",
+      "web": "Веб",
+      "academic": "Академические"
+    },
+    "depth": {
+      "quick": "Быстрое",
+      "standard": "Стандартное",
+      "comprehensive": "Всестороннее"
+    },
+    "output_format": {
+      "detailed": "Подробный",
+      "summary": "Резюме",
+      "bullets": "Тезисы"
+    },
+    "buttons": {
+      "start_research": "Начать глубокое исследование",
+      "cancel": "Отмена"
+    },
+    "recent": {
+      "title": "Недавние исследования",
+      "done": "Завершено",
+      "failed": "Ошибка",
+      "in_progress": "В процессе"
+    },
+    "progress": {
+      "title": "Исследование в процессе",
+      "query_label": "Запрос исследования",
+      "overall_progress": "Общий прогресс",
+      "pipeline_title": "Конвейер исследования",
+      "phases": {
+        "planning": "Планирование",
+        "researching": "Исследование",
+        "synthesizing": "Синтез",
+        "completed": "Завершено",
+        "failed": "Ошибка",
+        "starting": "Запуск"
+      },
+      "agents": {
+        "planning": "Агент планирования",
+        "planning_desc": "Анализ запроса и планирование стратегии исследования",
+        "research": "Агент исследования",
+        "research_desc": "Сбор информации из выбранных источников",
+        "synthesis": "Агент синтеза",
+        "synthesis_desc": "Компиляция и организация результатов"
+      }
+    },
+    "report": {
+      "deep_research": "ГЛУБОКОЕ ИССЛЕДОВАНИЕ",
+      "tab_report": "Отчёт",
+      "tab_sources": "Источники ({count})",
+      "tab_export": "Экспорт",
+      "executive_summary": "Общее резюме",
+      "key_insights": "Ключевые выводы",
+      "sources_references": "Источники и ссылки",
+      "sources_cited": "{count} источников процитировано",
+      "no_sources": "Источников не найдено",
+      "knowledge_base_sources": "База знаний ({count})",
+      "web_sources": "Веб-источники ({count})",
+      "study_material": "Учебный материал",
+      "relevance": "{score}% Релевантность",
+      "relevance_label": "Релевантность",
+      "citation_copied": "Цитата скопирована!",
+      "export_title": "Экспорт исследования",
+      "export_format": "Формат экспорта",
+      "export_pdf": "Экспортировать как PDF",
+      "export_pdf_desc": "Сохранить как PDF-документ",
+      "export_markdown": "Копировать как Markdown",
+      "export_markdown_desc": "Форматированный текст с цитатами",
+      "export_plain": "Копировать простой текст",
+      "export_plain_desc": "Простой текст без форматирования",
+      "share": "Поделиться отчётом",
+      "share_desc": "Поделиться через другие приложения",
+      "citation_style": "Стиль цитирования",
+      "citation_preview": "ПРЕДПРОСМОТР",
+      "delete_confirm_title": "Удалить исследование?",
+      "delete_confirm_message": "Этот отчёт будет навсегда удалён.",
+      "delete_confirm_cancel": "Отмена",
+      "delete_confirm_delete": "Удалить"
+    },
+    "date": {
+      "today": "Сегодня",
+      "yesterday": "Вчера",
+      "days_ago": "{days} дней назад"
+    }
+  },
+  "ai_chat": {
+    "title": "Учебный помощник",
+    "history_title": "История чатов",
+    "history_subtitle": "Ваши AI-разговоры",
+    "messages": {
+      "ask_anything": "Спросите меня что угодно...",
+      "thinking": "Думаю...",
+      "no_conversations": "Разговоров пока нет",
+      "start_new": "Начните новый чат",
+      "search_conversations": "Поиск разговоров...",
+      "delete_confirm_title": "Удалить разговор?",
+      "delete_confirm_message": "Это навсегда удалит этот разговор и все сообщения.",
+      "delete_confirm_cancel": "Отмена",
+      "delete_confirm_delete": "Удалить"
+    },
+    "empty_state": {
+      "title": "Учебный помощник",
+      "description": "Задавайте вопросы о Ваших учебных материалах, получайте объяснения, резюме и многое другое.\nЯ могу ссылаться на Ваши документы и давать ответы с цитатами.",
+      "prompts": {
+        "explain": "Объясните ключевые концепции этой темы",
+        "summary": "Создайте резюме моих учебных материалов",
+        "important": "Что самое важное запомнить?",
+        "examples": "Помогите мне лучше понять это на примерах"
+      }
+    },
+    "file_picker": {
+      "gallery": "Выбрать из галереи",
+      "camera": "Сделать фото",
+      "pdf": "Выбрать PDF-документ"
+    },
+    "history": {
+      "new_chat": "Новый чат",
+      "no_message": "Разговоров пока нет"
+    },
+    "date": {
+      "today": "Сегодня",
+      "yesterday": "Вчера",
+      "days_ago": "{days} дней назад"
+    }
+  },
+  "teach_back": {
+    "title": "Обучение объяснением",
+    "messages": {
+      "please_enter_topic": "Пожалуйста, введите тему",
+      "please_select_study_set": "Пожалуйста, выберите набор для учёбы",
+      "please_enter_explanation": "Пожалуйста, введите Ваше объяснение",
+      "explanation_submitted": "Объяснение отправлено!",
+      "no_study_sets": "Наборов не найдено. Сначала создайте один!"
+    },
+    "feynman": {
+      "title": "Техника Фейнмана",
+      "step1": "Выберите тему",
+      "step1_desc": "Выберите концепцию",
+      "step2": "Объясните просто",
+      "step2_desc": "Объясните своими словами",
+      "step3": "Получите отзыв",
+      "step3_desc": "AI оценит",
+      "step4": "Заполните пробелы",
+      "step4_desc": "Улучшите и попробуйте снова"
+    },
+    "form": {
+      "mode_topic": "Введите тему",
+      "mode_study_set": "Из набора",
+      "topic_label": "Какую тему Вы хотите освоить?",
+      "topic_hint": "напр., Теорема Пифагора, Фотосинтез, Спрос и предложение...",
+      "quick_picks": "Быстрый выбор:",
+      "reference_label": "Справочный материал (необязательно — помогает AI лучше оценить)",
+      "reference_hint": "Вставьте заметки из учебника, конспект лекции или ключевые тезисы сюда...",
+      "study_set_label": "Выберите набор — AI автоматически определит тему из Ваших карточек",
+      "study_set_empty": "Наборов не найдено. Сначала создайте один!",
+      "cards_count": "{count} карточек",
+      "cancel": "Отмена",
+      "generate_start": "Сгенерировать и начать",
+      "start_teaching": "Начать объяснение",
+      "generating": "Генерация...",
+      "creating": "Создание..."
+    },
+    "session": {
+      "essentials_title": "Основные тезисы",
+      "load_essentials": "Загрузить основные тезисы",
+      "who_explaining": "Кому Вы объясняете?",
+      "difficulty_eli5": "5-летнему ребёнку",
+      "difficulty_eli5_desc": "Максимально просто",
+      "difficulty_classmate": "Однокласснику",
+      "difficulty_classmate_desc": "Обычный уровень",
+      "difficulty_expert": "Эксперту",
+      "difficulty_expert_desc": "Техническая глубина",
+      "explanation_title": "Ваше объяснение",
+      "explanation_hint": "Объясните концепцию своими словами...",
+      "characters_count": "{count} символов",
+      "submit_explanation": "Отправить объяснение",
+      "submitting": "Отправка...",
+      "review_explanation": "Просмотрите своё объяснение",
+      "evaluate_button": "Оценить моё объяснение",
+      "evaluating": "Оценка...",
+      "challenge_button": "Вызов",
+      "convince_ai_title": "Убедите AI",
+      "convince_ai_desc": "Скептичный AI-ученик будет задавать провокационные вопросы. Защитите своё понимание!",
+      "convinced_badge": "Убедил! +20 XP",
+      "skeptical_student": "Скептичный ученик",
+      "defend_hint": "Защитите своё понимание...",
+      "thinking": "Думаю..."
+    },
+    "progress": {
+      "phase_explain": "Объясните",
+      "phase_submit": "Отправьте",
+      "phase_evaluate": "Оцените"
+    },
+    "evaluation": {
+      "xp_earned": "+50 XP заработано!",
+      "overall_score": "Общий балл",
+      "score_breakdown": "Детализация баллов",
+      "accuracy": "Точность",
+      "clarity": "Чёткость",
+      "completeness": "Полнота",
+      "understanding": "Понимание",
+      "strengths": "Сильные стороны",
+      "improve": "Как улучшить",
+      "deepen": "Углубите своё понимание",
+      "try_again": "Попробовать снова",
+      "new_topic": "Новая тема",
+      "score_excellent": "Отличное понимание!",
+      "score_good": "Хорошее понимание!",
+      "score_fair": "Удовлетворительное понимание",
+      "score_needs_improvement": "Требует улучшения"
+    },
+    "status": {
+      "pending": "Ожидает",
+      "submitted": "Отправлено",
+      "evaluated": "Оценено"
+    },
+    "difficulty": {
+      "eli5": "ПРОСТО",
+      "classmate": "ОДНОКЛАССНИК",
+      "expert": "ЭКСПЕРТ"
+    },
+    "empty_state": {
+      "title": "Сессий объяснения пока нет",
+      "subtitle": "Проверьте своё понимание с помощью техники Фейнмана"
+    }
+  },
+  "common": {
+    "cancel": "Отмена",
+    "delete": "Удалить",
+    "close": "Закрыть",
+    "retry": "Повторить",
+    "tryAgain": "Попробовать снова",
+    "errorGeneric": "Что-то пошло не так",
+    "noData": "Нет данных",
+    "gotIt": "Понятно"
+  },
+  "exam_clone": {
+    "list": {
+      "title": "Клонирование экзаменов",
+      "subtitle": "Пробные экзамены на базе AI",
+      "upload_tooltip": "Загрузить экзамен",
+      "loading": "Загрузка экзаменов...",
+      "overview": "Обзор",
+      "your_exams": "Ваши экзамены",
+      "upload_button": "Загрузить",
+      "no_exams_title": "Экзаменов пока нет",
+      "no_exams_subtitle": "Загрузите свой первый экзамен, чтобы начать\nгенерировать практические вопросы с помощью AI",
+      "upload_exam_button": "Загрузить экзамен",
+      "review_queue": "Очередь на повторение",
+      "review_queue_subtitle_due": "{count} к повторению",
+      "review_queue_subtitle_caught_up": "Всё повторено",
+      "due_count": "{count} к повторению",
+      "bookmarks": "Закладки",
+      "bookmarks_subtitle": "Сохранённые вопросы",
+      "saved_questions": "Сохранённые вопросы",
+      "badges": "Значки",
+      "badges_subtitle": "Достижения",
+      "achievements": "Достижения",
+      "leaderboard": "Таблица лидеров",
+      "leaderboard_subtitle": "Рейтинги",
+      "rankings": "Рейтинги",
+      "upload": "Загрузить",
+      "analysis": "Анализ",
+      "practice": "Практика",
+      "notification_title": "{count} {questions} к повторению!",
+      "notification_subtitle": "Время попрактиковаться и укрепить память",
+      "notification": {
+        "multiple_due": "{count} вопросов к повторению!",
+        "message": "Время попрактиковаться и укрепить память"
+      },
+      "question": "Вопрос",
+      "questions": "Вопросов",
+      "stats": {
+        "exams": "Экзамены",
+        "original": "Оригинальные",
+        "generated": "Сгенерированные",
+        "ready": "Готовы",
+        "failed": "Ошибка",
+        "pending": "Ожидают",
+        "processing": "Обработка"
+      },
+      "all_caught_up": "Всё повторено",
+      "failed": "Ошибка обработки",
+      "delete_dialog": {
+        "title": "Удалить экзамен?",
+        "message": "Это навсегда удалит этот экзамен и все сгенерированные вопросы.",
+        "cancel": "Отмена",
+        "delete": "Удалить"
+      }
+    },
+    "upload": {
+      "title": "Загрузить экзамен",
+      "subtitle": "Загрузите прошлый экзамен для генерации практических вопросов",
+      "title_label": "Название экзамена *",
+      "title_hint": "напр., Промежуточный экзамен, Финал по биологии",
+      "subject_label": "Предмет",
+      "subject_hint": "напр., Биология, Математика",
+      "method_label": "Способ загрузки",
+      "upload_pdf": "Загрузить PDF",
+      "upload_pdf_desc": "Загрузите экзамен как PDF-файл",
+      "paste_text": "Вставить текст",
+      "paste_text_desc": "Скопируйте и вставьте текст экзамена",
+      "pdf_label": "Выберите PDF-файл",
+      "pdf_hint": "Нажмите, чтобы выбрать PDF",
+      "text_label": "Текст экзамена",
+      "text_hint": "Вставьте вопросы экзамена сюда...",
+      "uploading": "Загрузка...",
+      "upload_button": "Загрузить экзамен",
+      "upload_analyze": "Загрузить и проанализировать",
+      "click_upload": "Нажмите, чтобы загрузить",
+      "file_formats": "Поддерживается: PDF, JPG, PNG",
+      "tip_pdf_fail": "Если PDF не работает, попробуйте сделать чёткое фото экзамена",
+      "title_required": "Пожалуйста, введите название экзамена",
+      "file_required": "Пожалуйста, выберите PDF-файл",
+      "text_required": "Пожалуйста, вставьте текст экзамена",
+      "character_count": "{count} символов"
+    },
+    "detail": {
+      "title": "Анализ экзамена",
+      "export_pdf": "Экспорт PDF",
+      "review_queue": "Очередь на повторение",
+      "live_session": "Онлайн-сессия",
+      "practice": "Практика",
+      "coming_soon": "{feature} скоро",
+      "exam_style_analysis": "Анализ стиля экзамена",
+      "question_types": "Типы вопросов",
+      "difficulty_distribution": "Распределение сложности",
+      "easy": "Легко",
+      "medium": "Средне",
+      "hard": "Сложно",
+      "topics_covered": "Охваченные темы",
+      "more_topics": "+{count} ещё",
+      "original": "Оригинальные",
+      "generated": "Сгенерированные",
+      "total": "Всего",
+      "best_score": "Лучший балл",
+      "tabs": {
+        "original": "Оригинальные ({count})",
+        "generated": "Сгенерированные ({count})",
+        "analytics": "Аналитика"
+      },
+      "generate_more": "Сгенерировать больше вопросов",
+      "no_questions": "Вопросов пока нет",
+      "no_practice_data": "Данных практики пока нет",
+      "complete_practice": "Завершите хотя бы одну практическую сессию, чтобы увидеть аналитику.",
+      "question_type": {
+        "multiple_choice": "Множественный выбор",
+        "short_answer": "Краткий ответ",
+        "true_false": "Правда/Ложь",
+        "essay": "Эссе",
+        "fill_blank": "Заполнить пропуск"
+      },
+      "correct_answer": "Правильный ответ",
+      "explanation": "Объяснение"
+    },
+    "badges": {
+      "title": "Достижения",
+      "subtitle": "Зарабатывайте значки, практикуясь",
+      "your_progress": "Ваш прогресс",
+      "failed_to_load": "Не удалось загрузить значки: {error}",
+      "remaining": "{count} значков осталось разблокировать",
+      "all": "Все",
+      "recently_earned": "Недавно полученные",
+      "earned_on": "Получено {date}",
+      "from_exam": "из {title}",
+      "xp_reward": "+{xp} XP"
+    },
+    "bookmarks": {
+      "title": "Сохранённые вопросы",
+      "subtitle": "Вопросы, отмеченные для повторения",
+      "stats_count": "{count}",
+      "stats_label": "Сохранённых вопросов",
+      "from_exams_count": "{count}",
+      "from_exams_label": "Из разных экзаменов",
+      "difficulty": {
+        "easy": "Легко",
+        "medium": "Средне",
+        "hard": "Сложно",
+        "unknown": "Неизвестно"
+      },
+      "options": "Варианты:",
+      "correct": "(Правильно)",
+      "correct_answer": "Правильный ответ:",
+      "empty_title": "Закладок пока нет",
+      "empty_message": "Добавляйте сложные вопросы в закладки во время практики для дальнейшего повторения.\nНажмите значок закладки на любом вопросе, чтобы сохранить его здесь.",
+      "start_practicing": "Начать практику",
+      "failed_to_load": "Не удалось загрузить закладки: {error}",
+      "failed_to_remove": "Не удалось удалить закладку: {error}"
+    },
+    "leaderboard": {
+      "title": "Таблица лидеров",
+      "subtitle": "Посмотрите, на каком Вы месте",
+      "period": {
+        "weekly": "Еженедельно",
+        "monthly": "Ежемесячно",
+        "all_time": "За всё время"
+      },
+      "your_rank": "Ваш рейтинг",
+      "top_10": "Топ-10!",
+      "keep_practicing": "Продолжайте практику",
+      "avg_score": "Средний балл",
+      "correct": "Правильно",
+      "avg_score_label": "средний балл",
+      "exams_count": "{count} экзаменов",
+      "exams_and_correct": "{exams} экзаменов • {correct} правильных",
+      "empty_title": "Данных пока нет",
+      "empty_message": "Будьте первыми, кто пройдёт экзамен и появится в таблице лидеров!",
+      "failed_to_load": "Не удалось загрузить таблицу лидеров: {error}"
+    },
+    "practice": {
+      "title": "Практика",
+      "practice_exam": "Практический экзамен",
+      "questions_available": "{count} вопросов доступно",
+      "setup": {
+        "number_of_questions": "Количество вопросов",
+        "time_limit_minutes": "Ограничение времени (минуты)",
+        "minutes": "{time} мин",
+        "include_questions": "Включить вопросы",
+        "original_questions": "Оригинальные вопросы экзамена",
+        "ai_questions": "AI-сгенерированные вопросы",
+        "start_practice": "Начать практику"
+      },
+      "progress": {
+        "question_of": "Вопрос {current} из {total}",
+        "answered": "{count} ответов",
+        "flagged": "{count} отмечено",
+        "time_remaining": "{time}"
+      },
+      "difficulty": {
+        "easy": "Легко",
+        "medium": "Средне",
+        "hard": "Сложно"
+      },
+      "actions": {
+        "previous": "Предыдущий",
+        "next": "Следующий",
+        "submit": "Отправить",
+        "check_answer": "Проверить ответ",
+        "type_answer": "Введите Ваш ответ..."
+      },
+      "results": {
+        "title": "Результаты",
+        "score": "{score}%",
+        "excellent": "Превосходно!",
+        "good_job": "Хорошая работа!",
+        "keep_practicing": "Продолжайте практику!",
+        "correct": "Правильно",
+        "incorrect": "Неправильно",
+        "unanswered": "Без ответа",
+        "time": "Время",
+        "review_answers": "Просмотреть ответы",
+        "try_again": "Попробовать снова"
+      },
+      "review": {
+        "title": "Просмотр ответов",
+        "question_number": "Вопрос {number}",
+        "your_answer": "Ваш ответ:",
+        "correct_answer": "Правильный ответ:",
+        "explanation": "Объяснение"
+      },
+      "dialogs": {
+        "exit_title": "Выйти из экзамена?",
+        "exit_message": "Ваш прогресс будет утерян. Вы ответили на {answered} из {total} вопросов.",
+        "continue_exam": "Продолжить экзамен",
+        "exit": "Выйти",
+        "submit_title": "Отправить экзамен?",
+        "submit_message": "Вы ответили на {answered} из {total} вопросов.",
+        "unanswered_warning": "{count} вопросов без ответа",
+        "submit": "Отправить"
+      },
+      "no_questions_available": "Нет доступных вопросов"
+    },
+    "review_queue": {
+      "title": "Очередь на повторение",
+      "stats": {
+        "correct": "{count}",
+        "incorrect": "{count}",
+        "progress": "{current}/{total}"
+      },
+      "loading": "Загрузка очереди на повторение...",
+      "difficulty": {
+        "easy": "Легко",
+        "medium": "Средне",
+        "hard": "Сложно"
+      },
+      "review_number": "Повторение #{count}",
+      "check_answer": "Проверить ответ",
+      "ai_evaluating": "AI оценивает...",
+      "next_question": "Следующий вопрос",
+      "finish_review": "Завершить повторение",
+      "type_answer": "Введите ответ:",
+      "type_answer_hint": "Введите Ваш ответ здесь...\n(Можно писать несколько строк)",
+      "correct_answer": "Правильный ответ: {answer}",
+      "get_ai_explanation": "Получить объяснение AI",
+      "getting_explanation": "Получение объяснения...",
+      "ai_evaluation": "Оценка AI",
+      "ai_explanation": "Объяснение AI",
+      "empty": {
+        "title": "Всё повторено!",
+        "message": "Сейчас у Вас нет вопросов на повторение. Проходите больше экзаменов, чтобы наполнить очередь на повторение.",
+        "back_button": "Вернуться к экзаменам",
+        "refresh_button": "Обновить"
+      },
+      "complete": {
+        "title": "Повторение завершено!",
+        "message": "Отличная работа по закреплению знаний",
+        "correct": "Правильно",
+        "incorrect": "Неправильно",
+        "total": "Всего",
+        "accuracy": "Точность",
+        "tip_title": "Так держать!",
+        "tip_message": "Вопросы, на которые Вы ответили неправильно, будут появляться чаще. Интервальное повторение помогает перенести знания в долговременную память.",
+        "back_button": "Вернуться к экзаменам",
+        "review_more": "Повторить ещё"
+      },
+      "failed_to_load": "Не удалось загрузить очередь на повторение: {error}",
+      "failed_to_submit": "Не удалось завершить повторение: {error}",
+      "failed_explanation": "Не удалось получить объяснение: {error}"
+    }
+  },
+  "problem_solver": {
+    "batch_solver": {
+      "title": "Пакетный решатель",
+      "tabs": {
+        "pdf_upload": "Загрузить PDF",
+        "text_input": "Текстовый ввод"
+      },
+      "pdf_tab": {
+        "upload_label": "Загрузить PDF",
+        "upload_hint": "Выберите PDF-файл с задачами",
+        "extract_button": "Извлечь задачи"
+      },
+      "text_tab": {
+        "title": "Вставить задачи",
+        "description": "Вставьте задачи ниже. Каждая задача должна быть на новой строке или разделена номерами.",
+        "hint": "Пример:\n1. Решите уравнение: 2x + 5 = 15\n2. Вычислите площадь круга с радиусом 7 см\n3. Разложите на множители: x² - 5x + 6",
+        "extract_button": "Извлечь задачи"
+      },
+      "stats": {
+        "total": "Всего",
+        "selected": "Выбрано",
+        "solved": "Решено"
+      },
+      "actions": {
+        "solve_selected": "Решить {count} выбранных",
+        "solve_all": "Решить все"
+      },
+      "messages": {
+        "enter_text": "Пожалуйста, введите текст",
+        "problems_solved": "{count} задач решено!"
+      }
+    },
+    "camera_scan": {
+      "title": "Сканировать задачу",
+      "instructions": "Расположите задачу в рамке",
+      "review_title": "Просмотр и редактирование",
+      "analyzing": "Анализ изображения...",
+      "analyzing_subtitle": "Это может занять несколько секунд",
+      "verify_text": "Пожалуйста, проверьте текст",
+      "verify_description": "Математические символы могут быть распознаны неправильно. При необходимости отредактируйте текст ниже.",
+      "subject_label": "Предмет",
+      "problem_text_label": "Текст задачи",
+      "problem_text_hint": "Отредактируйте текст задачи здесь...",
+      "problem_text_tip": "Совет: Используйте ^ для степеней (напр., x^2)",
+      "actions": {
+        "retake": "Переснять",
+        "solve_problem": "Решить задачу"
+      },
+      "subjects": {
+        "mathematics": "Математика",
+        "physics": "Физика",
+        "chemistry": "Химия",
+        "biology": "Биология",
+        "computer_science": "Информатика",
+        "other": "Другое"
+      }
+    },
+    "concept_map": {
+      "title": "Карта концепций",
+      "subtitle": "Визуальная учебная дорожная карта",
+      "central_topic": "Основная тема",
+      "sections": {
+        "prerequisites": "Предпосылки",
+        "prerequisites_subtitle": "Сначала освойте это",
+        "current_concepts": "Текущие концепции",
+        "current_concepts_subtitle": "Сейчас изучаете",
+        "next_steps": "Следующие шаги",
+        "next_steps_subtitle": "Куда двигаться дальше",
+        "related_topics": "Связанные темы",
+        "related_topics_subtitle": "Исследуйте связи"
+      },
+      "importance": "Важность:",
+      "connection": "Связь:"
+    },
+    "formula_cards": {
+      "title": "Карточки формул",
+      "progress": "Карточка {current} из {total}",
+      "categories": {
+        "rule": "ПРАВИЛО",
+        "concept": "КОНЦЕПЦИЯ",
+        "formula": "ФОРМУЛА",
+        "theorem": "ТЕОРЕМА"
+      },
+      "sides": {
+        "explanation": "Объяснение",
+        "formula": "формула"
+      },
+      "hints": {
+        "tap_to_flip": "Нажмите, чтобы увидеть {side}",
+        "tap_explanation": "Нажмите, чтобы увидеть объяснение",
+        "tap_formula": "Нажмите, чтобы увидеть формулу",
+        "swipe_navigate": "Проведите влево/вправо для навигации"
+      },
+      "actions": {
+        "previous": "Предыдущая",
+        "next": "Следующая",
+        "flip": "Перевернуть"
+      },
+      "messages": {
+        "copied": "Карточка скопирована в буфер обмена"
+      }
+    },
+    "hints": {
+      "title": "Режим подсказок",
+      "subtitle": "Получайте подсказки вместо полного решения",
+      "problem_label": "ЗАДАЧА",
+      "hint_progress": "Подсказка {current} из ~{total}",
+      "next_hint_preview": "Следующая подсказка касается: {preview}",
+      "all_revealed": "Все подсказки раскрыты! Попробуйте решить сейчас.",
+      "all_revealed_status": "Все подсказки раскрыты",
+      "actions": {
+        "reset": "Сбросить",
+        "get_first_hint": "Получить первую подсказку",
+        "next_hint": "Следующая подсказка",
+        "thinking": "Думаю...",
+        "see_solution": "Увидеть решение"
+      },
+      "messages": {
+        "hints_reset": "Подсказки сброшены"
+      }
+    },
+    "practice_quiz": {
+      "title": "Тренировочный тест",
+      "title_with_progress": "Тренировочный тест ({current}/{total})",
+      "question_progress": "Вопрос {current}/{total}",
+      "stats": {
+        "correct": "правильно"
+      },
+      "question_types": {
+        "multiple_choice": "Множественный выбор",
+        "true_false": "Правда или ложь",
+        "fill_blank": "Заполнить пропуск"
+      },
+      "feedback": {
+        "correct": "Правильно!",
+        "incorrect": "Неправильно",
+        "correct_answer": "Правильный ответ: {answer}",
+        "explanation": "Объяснение"
+      },
+      "actions": {
+        "next_question": "Следующий вопрос",
+        "view_results": "Просмотреть результаты"
+      },
+      "results": {
+        "perfect": "Идеальный результат! 🎉",
+        "great": "Отличная работа! 🌟",
+        "good": "Хорошие старания! 👍",
+        "practice": "Продолжайте практику! 💪",
+        "quiz_complete": "Тест завершён!",
+        "close": "Закрыть",
+        "try_again": "Попробовать снова"
+      }
+    },
+    "bookmarks": {
+      "title": "Мои закладки",
+      "search_placeholder": "Поиск закладок...",
+      "stats": {
+        "total": "Всего",
+        "subjects": "Предметы",
+        "tags": "Теги"
+      },
+      "edit_sheet": {
+        "title": "Редактировать закладку",
+        "tags_label": "Теги",
+        "tags_hint": "Добавить тег...",
+        "notes_label": "Заметки",
+        "notes_hint": "Добавьте свои заметки здесь...",
+        "save_button": "Сохранить изменения"
+      },
+      "delete_dialog": {
+        "title": "Удалить закладку",
+        "message": "Вы уверены, что хотите удалить эту закладку?",
+        "cancel": "Отмена",
+        "delete": "Удалить"
+      },
+      "messages": {
+        "updated": "Закладка обновлена",
+        "deleted": "Закладка удалена"
+      },
+      "empty_state": {
+        "title": "Закладок пока нет",
+        "subtitle": "Сохраняйте задачи для доступа позже"
+      }
+    },
+    "history": {
+      "title": "История задач",
+      "search_placeholder": "Поиск задач...",
+      "delete_dialog": {
+        "title": "Удалить задачу?",
+        "message": "Это навсегда удалит эту задачу и её решение.",
+        "cancel": "Отмена",
+        "delete": "Удалить"
+      },
+      "time": {
+        "today": "Сегодня",
+        "yesterday": "Вчера",
+        "days_ago": "{days} дней назад"
+      }
+    },
+    "input": {
+      "title": "Решатель задач",
+      "subject_label": "Предмет",
+      "problem_label": "Задача",
+      "problem_hint": "Введите или вставьте задачу здесь...\n\nПример: Решите уравнение 2x + 5 = 15",
+      "actions": {
+        "scan": "Сканировать",
+        "voice": "Голос",
+        "image": "Изображение",
+        "solve": "Решить задачу",
+        "creating": "Создание..."
+      },
+      "image_uploaded": "Изображение загружено",
+      "voice_coming_soon": "Голосовой ввод скоро",
+      "how_it_works": "Как это работает",
+      "agents": {
+        "analysis": {
+          "title": "Агент анализа",
+          "description": "Понимает задачу и определяет подход"
+        },
+        "solver": {
+          "title": "Агент решения",
+          "description": "Генерирует пошаговое решение с объяснениями"
+        },
+        "verifier": {
+          "title": "Агент проверки",
+          "description": "Проверяет правильность решения"
+        }
+      },
+      "subjects": {
+        "auto_detect": "Автоопределение",
+        "mathematics": "Математика",
+        "physics": "Физика",
+        "chemistry": "Химия",
+        "biology": "Биология",
+        "computer_science": "Информатика",
+        "engineering": "Инженерия",
+        "economics": "Экономика",
+        "statistics": "Статистика"
+      },
+      "menu": {
+        "bookmarks": "Закладки",
+        "history": "История",
+        "batch_solver": "Пакетный решатель",
+        "camera_scan": "Сканирование камерой"
+      },
+      "messages": {
+        "enter_problem": "Пожалуйста, введите задачу или загрузите изображение"
+      }
+    },
+    "similar_problems": {
+      "title": "Похожие задачи",
+      "difficulty": {
+        "easy": "ЛЕГКО",
+        "medium": "СРЕДНЕ",
+        "hard": "СЛОЖНО"
+      },
+      "solve_this": "Решить это"
+    },
+    "solution": {
+      "title": "Решение",
+      "final_answer": "Окончательный ответ",
+      "learning_tools": "Учебные инструменты",
+      "tools": {
+        "hints": "Подсказки",
+        "similar": "Похожие",
+        "quiz": "Тест",
+        "chat": "Чат",
+        "concepts": "Концепции",
+        "formulas": "Формулы"
+      },
+      "tabs": {
+        "steps": "Шаги",
+        "code": "Код",
+        "alternatives": "Альтернативы",
+        "graph": "График",
+        "analysis": "Анализ",
+        "citations": "Цитаты"
+      },
+      "steps": {
+        "no_solution": "Решение недоступно",
+        "no_steps": "Шаги решения недоступны",
+        "step_number": "Шаг {number}",
+        "copy": "Копировать",
+        "step_copied": "Шаг скопирован"
+      },
+      "code": {
+        "empty_title": "Блоки кода недоступны"
+      },
+      "alternatives": {
+        "empty_title": "Альтернативные методы недоступны"
+      },
+      "graph": {
+        "empty_title": "Данные графика недоступны"
+      },
+      "analysis": {
+        "level_explanation": "Объяснение уровня {level}",
+        "key_points": "Ключевые моменты:",
+        "examples": "Примеры:",
+        "technical_analysis": "Технический анализ",
+        "no_details": "Нет деталей"
+      },
+      "citations": {
+        "empty_title": "Цитаты недоступны"
+      },
+      "complexity": {
+        "title": "Уровень объяснения",
+        "beginner": "Начинающий",
+        "intermediate": "Средний",
+        "advanced": "Продвинутый",
+        "expert": "Эксперт",
+        "loading": "Загрузка объяснения..."
+      },
+      "narration": {
+        "title": "Озвучивание решения",
+        "listen_tooltip": "Прослушать решение",
+        "completed": "Озвучивание завершено",
+        "no_text": "Нет текста решения для озвучивания"
+      },
+      "messages": {
+        "bookmark_added": "Закладка добавлена",
+        "bookmark_removed": "Закладка удалена"
+      }
+    },
+    "solving_progress": {
+      "title": "Решение...",
+      "stages": {
+        "analysis": {
+          "title": "Агент анализа",
+          "description": "Понимание задачи"
+        },
+        "solving": {
+          "title": "Агент решения",
+          "description": "Генерация пошагового решения"
+        },
+        "verification": {
+          "title": "Агент проверки",
+          "description": "Проверка правильности"
+        }
+      },
+      "status": {
+        "complete": "Завершено",
+        "solution_ready": "Решение готово!",
+        "redirecting": "Перенаправление к решению...",
+        "failed": "Ошибка решения",
+        "retry": "Повторить"
+      }
+    },
+    "study_buddy": {
+      "title": "Учебный помощник",
+      "subtitle": "Задавайте дополнительные вопросы о решении",
+      "welcome_message": "Привет! Я Ваш учебный помощник. Я просмотрел решение Вашей задачи. Спрашивайте меня что угодно — я могу объяснить шаги подробнее, предложить альтернативные подходы или помочь попрактиковаться с похожими концепциями.",
+      "suggested_questions_title": "Предложенные вопросы",
+      "input_placeholder": "Задайте дополнительный вопрос...",
+      "problem_label": "Задача: {problem}",
+      "export": "Экспорт",
+      "suggested": {
+        "explain_step": "Можете объяснить шаг 2 подробнее?",
+        "why_approach": "Почему мы использовали именно такой подход?",
+        "other_methods": "Какие ещё есть способы решения?",
+        "simpler_example": "Можете привести более простой пример?",
+        "concepts_needed": "Какие концепции нужно понимать для этого?"
+      }
+    },
+    "widgets": {
+      "steps_copied": "Шаги скопированы в буфер обмена",
+      "copy": "Копировать",
+      "steps": "Шаги",
+      "no_steps": "Нет шагов для этого метода",
+      "advantages": "Преимущества",
+      "disadvantages": "Недостатки",
+      "method_type": {
+        "algebraic": "Алгебраический",
+        "geometric": "Геометрический",
+        "numerical": "Численный",
+        "graphical": "Графический",
+        "analytical": "Аналитический",
+        "other": "Другой"
+      },
+      "status": {
+        "pending": "Ожидает",
+        "solving": "Решение...",
+        "completed": "Завершено",
+        "failed": "Ошибка"
+      },
+      "retry": "Повторить",
+      "solve": "Решить",
+      "view_solution": "Просмотреть решение",
+      "search_bookmarks": "Поиск закладок...",
+      "no_problem_text": "Нет текста задачи",
+      "edit": "Редактировать",
+      "delete": "Удалить",
+      "date": {
+        "today": "Сегодня",
+        "yesterday": "Вчера",
+        "days_ago": "{days} дней назад"
+      }
+    }
+  }
+}

@@ -1,0 +1,2224 @@
+{
+  "onboarding": {
+    "skip": "Pular",
+    "next": "Próximo",
+    "back": "Voltar",
+    "get_started": "Começar",
+    "i_have_account": "Já tenho uma conta",
+    "app_name": "Studyield",
+    "slide_1": {
+      "title": "Bem-vindo ao Studyield",
+      "subtitle": "Seu companheiro de aprendizado com IA",
+      "description": "Domine qualquer assunto com flashcards inteligentes, resolução de problemas com IA e caminhos de aprendizado personalizados"
+    },
+    "slide_2": {
+      "title": "Flashcards inteligentes",
+      "subtitle": "Estude de forma mais inteligente",
+      "description": "Crie flashcards interativos com algoritmo de repetição espaçada que se adapta ao seu ritmo de aprendizado",
+      "badge": "GRÁTIS"
+    },
+    "slide_3": {
+      "title": "Resolvedor de problemas com IA",
+      "subtitle": "Obtenha ajuda instantânea",
+      "description": "Escaneie qualquer problema e obtenha soluções passo a passo com explicações detalhadas usando IA",
+      "badge": "PRO",
+      "features": {
+        "scan": "Escanear problemas",
+        "hints": "Obter dicas",
+        "steps": "Passo a passo"
+      }
+    },
+    "slide_4": {
+      "title": "Eleve seu aprendizado",
+      "subtitle": "Torne o aprendizado divertido",
+      "description": "Ganhe XP, mantenha sequências e desbloqueie conquistas conforme você avança nos seus estudos",
+      "badge": "GRÁTIS"
+    },
+    "slide_5": {
+      "title": "Caminhos de aprendizado personalizados",
+      "subtitle": "Sua jornada, seu jeito",
+      "description": "Receba planos de estudo personalizados com base nos seus objetivos, desempenho e estilo de aprendizado",
+      "badge": "PRO",
+      "benefits": {
+        "benefit_1": "📚 Planos de estudo personalizados",
+        "benefit_2": "🎯 Acompanhe seu progresso",
+        "benefit_3": "🚀 Alcance seus objetivos mais rápido"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bem-vindo de volta",
+      "subtitle": "Entre para continuar aprendendo",
+      "email_label": "E-mail",
+      "email_hint": "Digite seu e-mail",
+      "password_label": "Senha",
+      "password_hint": "Digite sua senha",
+      "forgot_password": "Esqueceu a senha?",
+      "login_button": "Entrar",
+      "no_account": "Não tem uma conta?",
+      "sign_up": "Cadastrar",
+      "or_continue_with": "Ou continue com",
+      "google_login": "Continuar com Google",
+      "apple_login": "Continuar com Apple"
+    },
+    "register": {
+      "title": "Criar conta",
+      "subtitle": "Comece sua jornada de aprendizado",
+      "name_label": "Nome completo",
+      "name_hint": "Digite seu nome",
+      "email_label": "E-mail",
+      "email_hint": "Digite seu e-mail",
+      "password_label": "Senha",
+      "password_hint": "Crie uma senha",
+      "confirm_password_label": "Confirmar senha",
+      "confirm_password_hint": "Digite a senha novamente",
+      "register_button": "Criar conta",
+      "have_account": "Já tem uma conta?",
+      "sign_in": "Entrar",
+      "terms_prefix": "Ao se cadastrar, você concorda com nossos ",
+      "terms": "Termos de Serviço",
+      "and": " e ",
+      "privacy": "Política de Privacidade"
+    },
+    "errors": {
+      "email_required": "O e-mail é obrigatório",
+      "email_invalid": "Digite um e-mail válido",
+      "password_required": "A senha é obrigatória",
+      "password_min_length": "A senha deve ter pelo menos 6 caracteres",
+      "passwords_not_match": "As senhas não coincidem",
+      "name_required": "O nome é obrigatório",
+      "login_failed": "Falha no login. Verifique suas credenciais",
+      "register_failed": "Falha no cadastro. Tente novamente"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "Bom dia",
+      "afternoon": "Boa tarde",
+      "evening": "Boa noite"
+    },
+    "welcome_message": "Você tem {count} cartões aguardando revisão",
+    "welcome_message_empty": "Pronto para continuar sua jornada de aprendizado?",
+    "level": "Nível {level}",
+    "xp_progress": "{current} / {next} XP",
+    "streak_days": "{days}d",
+    "daily_xp": "{current} / {goal} XP diário",
+    "gamification": {
+      "xp": "XP",
+      "day": "dia",
+      "days": "dias",
+      "daily_xp": "XP diário",
+      "level_names": {
+        "0": "Iniciante",
+        "1": "Bronze",
+        "2": "Prata",
+        "3": "Ouro",
+        "4": "Platina",
+        "5": "Diamante",
+        "6": "Mestre",
+        "7": "Grão-Mestre",
+        "8": "Campeão",
+        "9": "Lenda",
+        "10": "Mítico",
+        "11": "Imortal"
+      }
+    },
+    "upgrade_pro": {
+      "title": "Upgrade para Pro",
+      "badge": "POPULAR",
+      "subtitle": "Desbloqueie todos os recursos premium e IA ilimitada",
+      "offer": "Economize 20% com o plano anual"
+    },
+    "stats": {
+      "study_sets": "Conjuntos de estudo",
+      "flashcards": "Flashcards",
+      "due_today": "Para hoje",
+      "quizzes_done": "Quizzes feitos",
+      "cards": "{count} cartões"
+    },
+    "sections": {
+      "quick_actions": "Ações rápidas",
+      "recent_study_sets": "Conjuntos de estudo recentes",
+      "view_all": "Ver tudo"
+    },
+    "continue_studying": {
+      "title": "Continuar estudando",
+      "cards_due": "{count} cartões para revisão"
+    },
+    "quick_actions": {
+      "new_study_set": {
+        "title": "Novo conjunto de estudo",
+        "description": "Criar uma nova coleção"
+      },
+      "exam_clone": {
+        "title": "Clonar exame",
+        "description": "Gerar simulados"
+      },
+      "problem_solver": {
+        "title": "Resolvedor de problemas",
+        "description": "Soluções passo a passo com IA"
+      },
+      "ai_chat": {
+        "title": "Chat com IA",
+        "description": "Faça perguntas sobre suas anotações"
+      },
+      "view_analytics": {
+        "title": "Ver análises",
+        "description": "Acompanhe seu progresso de estudo"
+      },
+      "knowledge_base": {
+        "title": "Base de conhecimento",
+        "description": "Envie e pesquise documentos"
+      },
+      "join_live_quiz": {
+        "title": "Participar de quiz ao vivo",
+        "description": "Jogue com amigos em tempo real"
+      },
+      "coming_soon": "Em breve"
+    },
+    "empty_state": {
+      "title": "Nenhum conjunto de estudo ainda",
+      "subtitle": "Crie seu primeiro conjunto de estudo para começar a aprender",
+      "button": "Criar conjunto de estudo"
+    }
+  },
+  "study_sets": {
+    "title": "Conjuntos de estudo",
+    "header_title": "Meus conjuntos de estudo",
+    "header_subtitle": "Crie e gerencie seu material de estudo",
+    "search_hint": "Buscar conjuntos de estudo...",
+    "new_study_set": "Novo conjunto de estudo",
+    "create_button": "Criar",
+    "no_results_title": "Sem resultados",
+    "no_results_subtitle": "Nenhum conjunto de estudo encontrado para \"{query}\"",
+    "card": {
+      "public": "Público",
+      "private": "Privado",
+      "edit": "Editar",
+      "delete": "Excluir",
+      "cards_count": "{count} cartões",
+      "docs_count": "{count} documentos"
+    },
+    "empty_state": {
+      "title": "Nenhum conjunto de estudo ainda",
+      "subtitle": "Crie seu primeiro conjunto de estudo para organizar seus flashcards e materiais de aprendizado",
+      "button": "Criar conjunto de estudo"
+    },
+    "messages": {
+      "created": "Conjunto de estudo criado com sucesso!",
+      "updated": "Conjunto de estudo atualizado com sucesso!",
+      "deleted": "Conjunto de estudo excluído com sucesso!",
+      "error": "Erro ao carregar conjuntos de estudo",
+      "retry": "Tentar novamente"
+    },
+    "detail": {
+      "section_statistics": "Estatísticas",
+      "stat_flashcards_label": "Flashcards",
+      "stat_notes_label": "Anotações",
+      "stat_analytics_label": "Análises",
+      "quiz_history_title": "Histórico de quizzes",
+      "quiz_history_subtitle": "Veja seu desempenho nos quizzes",
+      "section_quick_actions": "Ações rápidas",
+      "action_study_session": "Sessão de estudo (todos os cartões)",
+      "action_quiz_mode": "Modo quiz",
+      "action_match_game": "Jogo de correspondência",
+      "action_live_quiz": "Quiz ao vivo",
+      "action_browse_cards": "Navegar pelos cartões",
+      "action_add_cards": "Adicionar cartões",
+      "section_sources": "Fontes",
+      "sources_view_all": "Ver tudo",
+      "sources_document_singular": "Documento",
+      "sources_documents_plural": "Documentos",
+      "sources_subtitle": "Materiais de estudo e referências",
+      "sources_empty_state": "Nenhuma fonte ainda",
+      "sources_add_documents": "Adicionar documentos",
+      "section_recent_activity": "Atividade recente",
+      "activity_empty_state": "Nenhuma atividade recente",
+      "menu_edit_study_set": "Editar conjunto de estudo",
+      "menu_share": "Compartilhar",
+      "menu_delete_study_set": "Excluir conjunto de estudo",
+      "delete_confirm_title": "Excluir conjunto de estudo?",
+      "delete_confirm_message": "Isso excluirá permanentemente \"{title}\" e todos os seus flashcards. Esta ação não pode ser desfeita.",
+      "delete_confirm_cancel": "Cancelar",
+      "delete_confirm_delete": "Excluir",
+      "study_no_cards_due": "Nenhum cartão para revisão! Ótimo trabalho! 🎉",
+      "study_failed_to_load": "Falha ao carregar flashcards",
+      "add_cards_header": "Adicionar cartões",
+      "add_cards_ready_status": "{count} cartão{s} pronto{s}",
+      "add_cards_submit_button": "Adicionar ao conjunto de estudo",
+      "toast_cards_added_success": "{count} cartões adicionados com sucesso!",
+      "toast_cards_add_error": "Falha ao adicionar cartões: {message}"
+    },
+    "create_edit": {
+      "title_create": "Criar conjunto de estudo",
+      "create_study_set": "Criar conjunto de estudo",
+      "title_edit": "Editar conjunto de estudo",
+      "cover_image": "Imagem de capa",
+      "tap_add_cover": "Toque para adicionar imagem de capa",
+      "tap_to_add_cover_image": "Toque para adicionar imagem de capa",
+      "title_label": "Título *",
+      "title_hint": "ex.: Biologia 101",
+      "title_required": "O título é obrigatório",
+      "description_label": "Descrição",
+      "description": "Descrição",
+      "description_hint": "Sobre o que é este conjunto de estudo?",
+      "tags_label": "Tags",
+      "tags": "Tags",
+      "tags_hint": "biologia, prova, capítulo1",
+      "tags_helper": "Separe as tags com vírgulas",
+      "exam_date_label": "Data da prova (opcional)",
+      "exam_date_optional": "Data da prova (opcional)",
+      "exam_date_hint": "Selecione a data da prova",
+      "select_exam_date": "Selecione a data da prova",
+      "exam_subject_label": "Disciplina da prova",
+      "exam_subject_hint": "ex.: Prova parcial, Prova final",
+      "visibility_public": "Público",
+      "visibility_private": "Privado",
+      "private": "Privado",
+      "visibility_public_desc": "Qualquer pessoa pode ver este conjunto de estudo",
+      "visibility_private_desc": "Somente você pode ver este conjunto de estudo",
+      "private_description": "Somente você pode ver este conjunto de estudo",
+      "save_changes": "Salvar alterações",
+      "create_button": "Criar conjunto de estudo",
+      "delete_study_set": "Excluir conjunto de estudo",
+      "delete_confirm_title": "Excluir conjunto de estudo?",
+      "delete_confirm_message": "Isso excluirá permanentemente \"{title}\" e todos os seus flashcards. Esta ação não pode ser desfeita.",
+      "subtitle": "Organize seu material de estudo",
+      "title_placeholder": "Digite um título, ex.: 'Biologia 101 — Capítulo 3'",
+      "description_placeholder": "Adicione uma descrição (opcional)",
+      "more_options": "Mais opções",
+      "less_options": "Menos opções",
+      "add_tag": "Adicionar tag...",
+      "cancel": "Cancelar",
+      "public": "Público",
+      "visibility_label": "Visibilidade",
+      "cards_ready_count": "{count} cartões prontos",
+      "create_with_cards": "Criar com {count} cartões",
+      "cards_failed": "Conjunto de estudo criado, mas alguns cartões falharam ao salvar",
+      "image_uploaded": "Imagem enviada com sucesso!",
+      "upload_failed": "Falha ao enviar imagem"
+    },
+    "documents": {
+      "title": "Anotações",
+      "create_note": "Criar anotação",
+      "no_notes_title": "Nenhuma anotação ainda",
+      "no_notes_subtitle": "Crie anotações para organizar seu material de estudo",
+      "note_title_label": "Título",
+      "note_title_hint": "Digite o título da anotação",
+      "note_content_label": "Conteúdo",
+      "note_content_hint": "Escreva sua anotação aqui...",
+      "create_note_button": "Criar anotação",
+      "fill_both_fields": "Preencha ambos os campos",
+      "note_created": "Anotação criada com sucesso!",
+      "failed_to_create": "Falha ao criar anotação: {error}"
+    },
+    "flashcard_creation": {
+      "title": "Criar flashcards",
+      "tab_manual": "Manual",
+      "tab_ai": "Gerar com IA",
+      "tab_import": "Importar",
+      "create_cards": "Criar {count} {cards}",
+      "add_cards": "Adicionar {count} {cards}",
+      "card": "Cartão",
+      "cards": "Cartões",
+      "no_flashcards": "Crie pelo menos um flashcard",
+      "no_flashcards_to_add": "Nenhum flashcard para adicionar"
+    },
+    "quiz_history": {
+      "title": "Histórico de quizzes",
+      "no_history_title": "Sem histórico de quizzes",
+      "no_history_subtitle": "Faça quizzes para ver seu histórico de desempenho aqui",
+      "summary_quizzes": "Quizzes",
+      "summary_attempts": "Tentativas",
+      "summary_best_score": "Melhor nota",
+      "questions": "{count} perguntas",
+      "attempts": "{count} tentativa{s}",
+      "attempt": "tentativa",
+      "best": "Melhor: {score}%",
+      "no_attempts": "Nenhuma tentativa ainda",
+      "time_spent": "{minutes}m {seconds}s"
+    }
+  },
+  "analytics": {
+    "title": "Análises",
+    "timeRange": {
+      "sevenDays": "7 dias",
+      "thirtyDays": "30 dias",
+      "ninetyDays": "90 dias",
+      "allTime": "Todo período"
+    },
+    "stats": {
+      "studyTime": "Tempo de estudo",
+      "cardsReviewed": "Cartões revisados",
+      "quizzes": "Quizzes",
+      "avgScore": "Nota média"
+    },
+    "sections": {
+      "studyActivity": "Atividade de estudo",
+      "streak": "Sequência",
+      "performance": "Desempenho"
+    },
+    "heatmap": {
+      "title": "Mapa de calor de estudo",
+      "less": "Menos",
+      "more": "Mais"
+    },
+    "cardMastery": {
+      "title": "Domínio dos cartões",
+      "noData": "Nenhum dado de cartão disponível"
+    },
+    "retentionCurve": {
+      "title": "Curva de retenção",
+      "noData": "Comece a estudar para ver sua curva de retenção"
+    },
+    "studyTime": {
+      "title": "Tempo de estudo",
+      "daily": "Diário",
+      "weekly": "Semanal",
+      "noData": "Nenhum tempo de estudo registrado ainda"
+    },
+    "streak": {
+      "title": "Calendário de sequência",
+      "dayStreak": "dias de sequência",
+      "dayAbbr": {
+        "sun": "D",
+        "mon": "S",
+        "tue": "T",
+        "wed": "Q",
+        "thu": "Q",
+        "fri": "S",
+        "sat": "S"
+      }
+    },
+    "months": {
+      "january": "Janeiro",
+      "february": "Fevereiro",
+      "march": "Março",
+      "april": "Abril",
+      "may": "Maio",
+      "june": "Junho",
+      "july": "Julho",
+      "august": "Agosto",
+      "september": "Setembro",
+      "october": "Outubro",
+      "november": "Novembro",
+      "december": "Dezembro"
+    },
+    "cardStatus": {
+      "new": "Novo",
+      "learning": "Aprendendo",
+      "review": "Revisão",
+      "mastered": "Dominado"
+    },
+    "chart": {
+      "percentageSymbol": "%",
+      "minutesSymbol": "m",
+      "dayLabel": "D"
+    },
+    "time": {
+      "hoursSymbol": "h",
+      "minutesSymbol": "m"
+    }
+  },
+  "learning_paths": {
+    "title": "Caminhos de aprendizado",
+    "detail": {
+      "title": "Caminho de aprendizado",
+      "learning_path": "Caminho de aprendizado",
+      "complete": "Concluído",
+      "your_journey": "Sua jornada de aprendizado",
+      "your_learning_journey": "Sua jornada de aprendizado",
+      "next_up": "Próximo",
+      "step_number": "Etapa {number}",
+      "steps": "Etapas",
+      "remaining": "Restantes",
+      "total_time": "Tempo total",
+      "overall_progress": "Progresso geral",
+      "stats": {
+        "steps": "Etapas",
+        "remaining": "Restantes",
+        "total_time": "Tempo total"
+      },
+      "progress": {
+        "overall": "Progresso geral",
+        "steps_count": "{completed}/{total} etapas"
+      },
+      "minutes": "{minutes} minutos",
+      "view_resource": "Ver recurso",
+      "mark_done": "Feito",
+      "mark_as_done": "Marcar como feito",
+      "step_completed": "Etapa concluída!",
+      "path_completed": "Concluído!",
+      "steps_count": "{completed}/{total} etapas",
+      "completed_on": "Concluído em {date}"
+    },
+    "validation": {
+      "please_enter_topic": "Digite um tópico"
+    },
+    "messages": {
+      "path_created_success": "Caminho de aprendizado criado!"
+    },
+    "how_it_works": {
+      "title": "Como os caminhos de aprendizado funcionam",
+      "step1_title": "Definir objetivos",
+      "step1_subtitle": "Diga à IA seu tópico e nível",
+      "step2_title": "Obter roteiro",
+      "step2_subtitle": "A IA gera um plano passo a passo",
+      "step3_title": "Acompanhar progresso",
+      "step3_subtitle": "Complete etapas, veja o progresso"
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "generate_path": "Gerar caminho",
+      "generating": "Gerando..."
+    },
+    "form": {
+      "title": "Criar caminho de aprendizado",
+      "topic_label": "Tópico",
+      "topic_hint": "ex.: Machine Learning, Cálculo, Física",
+      "current_level_label": "Nível atual",
+      "target_level_label": "Nível desejado",
+      "level_beginner": "Iniciante",
+      "level_intermediate": "Intermediário",
+      "level_advanced": "Avançado",
+      "level_expert": "Especialista",
+      "study_time_label": "Tempo de estudo: {hours} horas/semana"
+    },
+    "empty_state": {
+      "title": "Nenhum caminho de aprendizado ainda",
+      "subtitle": "Crie seu primeiro roteiro de aprendizado personalizado"
+    },
+    "path_card": {
+      "steps_count": "{completed}/{total} etapas",
+      "hours_label": "{hours}h"
+    },
+    "dialogs": {
+      "delete_confirm_title": "Excluir caminho de aprendizado?",
+      "delete_confirm_message": "Isso excluirá permanentemente este caminho e todo o progresso.",
+      "cancel_button": "Cancelar",
+      "delete_button": "Excluir"
+    }
+  },
+  "profile": {
+    "title": "Configurações",
+    "subtitle": "Gerencie sua conta e preferências",
+    "settings": {
+      "profile": {
+        "title": "Perfil",
+        "subtitle": "Nome, avatar, formação, disciplinas"
+      },
+      "account": {
+        "title": "Configurações da conta",
+        "subtitle": "Senha, segurança, excluir conta"
+      },
+      "notifications": {
+        "title": "Configurações de notificações",
+        "subtitle": "Gerencie as preferências de notificação"
+      },
+      "language": {
+        "title": "Idioma",
+        "choose": "Escolher idioma",
+        "close": "Fechar"
+      },
+      "subscription": {
+        "title": "Assinatura",
+        "subtitle": "Plano, uso, faturas"
+      },
+      "logout": {
+        "title": "Sair",
+        "confirm_title": "Sair",
+        "confirm_message": "Tem certeza de que deseja sair?",
+        "cancel": "Cancelar",
+        "confirm": "Sair"
+      }
+    },
+    "plan": {
+      "free": "Plano gratuito",
+      "manage": "Gerenciar",
+      "upgrade": "Fazer upgrade"
+    },
+    "version": "Studyield v1.0.0",
+    "edit": {
+      "title": "Editar perfil",
+      "avatar": {
+        "default_initial": "U"
+      },
+      "display_name": {
+        "label": "Nome de exibição",
+        "hint": "Digite seu nome"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "Sem e-mail",
+        "readonly_note": "O e-mail não pode ser alterado"
+      },
+      "education_level": {
+        "label": "Nível de formação",
+        "options": {
+          "high_school": "Ensino Médio",
+          "undergraduate": "Graduação",
+          "graduate": "Pós-graduação",
+          "post_graduate": "Doutorado",
+          "self_learner": "Autodidata",
+          "professional": "Profissional"
+        }
+      },
+      "subjects": {
+        "label": "Áreas de interesse",
+        "common_header": "Disciplinas comuns",
+        "custom_header": "Suas disciplinas personalizadas",
+        "add_custom": {
+          "label": "Adicionar disciplina personalizada",
+          "hint": "Adicionar disciplina personalizada"
+        },
+        "options": {
+          "mathematics": "Matemática",
+          "physics": "Física",
+          "chemistry": "Química",
+          "biology": "Biologia",
+          "computer_science": "Ciência da Computação",
+          "english": "Inglês",
+          "history": "História",
+          "geography": "Geografia",
+          "economics": "Economia",
+          "psychology": "Psicologia"
+        }
+      },
+      "button": {
+        "saving": "Salvando...",
+        "save": "Salvar alterações",
+        "saved": "Salvo!"
+      },
+      "message": {
+        "success": "Perfil atualizado com sucesso!",
+        "error": "Falha ao salvar perfil"
+      }
+    },
+    "account": {
+      "title": "Configurações da conta",
+      "change_password": {
+        "title": "Alterar senha",
+        "subtitle": "Atualize sua senha regularmente",
+        "current_password_label": "Senha atual",
+        "new_password_label": "Nova senha",
+        "confirm_password_label": "Confirmar nova senha",
+        "button": "Alterar senha"
+      },
+      "validation": {
+        "current_password_required": "A senha atual é obrigatória",
+        "password_min_length": "A nova senha deve ter pelo menos 8 caracteres",
+        "passwords_mismatch": "As senhas não coincidem"
+      },
+      "messages": {
+        "password_changed_success": "Senha alterada com sucesso!"
+      },
+      "information": {
+        "title": "Informações da conta",
+        "email_label": "E-mail",
+        "plan_label": "Plano",
+        "plan_free": "Gratuito",
+        "email_verified_label": "E-mail verificado",
+        "email_verified_yes": "Sim",
+        "member_since_label": "Membro desde"
+      },
+      "delete": {
+        "title": "Excluir conta",
+        "subtitle": "Exclua sua conta permanentemente",
+        "button": "Excluir minha conta",
+        "warning_title": "Esta ação não pode ser desfeita!",
+        "warning_message": "Todos os seus dados serão excluídos permanentemente.",
+        "confirmation_instruction": "Digite EXCLUIR para confirmar:",
+        "confirmation_hint": "EXCLUIR",
+        "confirm_button": "Excluir definitivamente",
+        "cancel_button": "Cancelar"
+      }
+    }
+  },
+  "subscription": {
+    "main": {
+      "appbar_title": "Assinatura",
+      "header_label": "Altere ou faça upgrade do seu plano",
+      "heading": "Escolha seu plano",
+      "subheading": "Desbloqueie recursos premium para turbinar seu aprendizado",
+      "billing_yearly": "Anual",
+      "billing_lifetime": "Vitalício",
+      "popular_badge": "MAIS POPULAR",
+      "plan_trial_title": "Teste de 7 dias",
+      "plan_trial_subtitle": "Experimente antes de decidir",
+      "plan_pro_title": "Pro",
+      "plan_pro_lifetime_title": "Pro Vitalício",
+      "plan_pro_lifetime_subtitle": "Pague uma vez, use para sempre",
+      "plan_pro_yearly_subtitle": "Ideal para estudantes dedicados",
+      "yearly_crossed_price": "$47,88/ano",
+      "lifetime_period": "único",
+      "yearly_period": "/ano",
+      "button_current_plan": "Plano atual",
+      "button_free_forever": "Gratuito para sempre",
+      "button_upgrade_lifetime": "Upgrade para Vitalício",
+      "button_upgrade_pro": "Upgrade para Pro",
+      "trust_secure_title": "Seguro",
+      "trust_secure_subtitle": "Criptografia SSL",
+      "trust_flexible_title": "Flexível",
+      "trust_flexible_subtitle": "Cancele a qualquer momento",
+      "trust_free_title": "Gratuito para sempre",
+      "trust_free_subtitle": "Sem cartão de crédito para começar"
+    },
+    "manage": {
+      "appbar_title": "Gerenciar assinatura",
+      "error_open_portal": "Falha ao abrir portal",
+      "cancel_dialog_title": "Cancelar assinatura?",
+      "cancel_dialog_content": "Você manterá o acesso até o final do período de cobrança.",
+      "cancel_dialog_keep_btn": "Manter assinatura",
+      "cancel_dialog_cancel_btn": "Cancelar",
+      "cancel_success_message": "A assinatura será cancelada no final do período",
+      "cancel_error_message": "Falha ao cancelar",
+      "default_plan_name": "Plano Pro",
+      "status_active": "Ativo",
+      "price_lifetime": "único",
+      "price_yearly": "/ano",
+      "button_change_plan": "Alterar plano",
+      "info_current_period_label": "Período atual",
+      "info_next_billing_label": "Próxima cobrança",
+      "card_billing_history_title": "Histórico de cobrança",
+      "card_billing_history_subtitle": "Ver faturas anteriores",
+      "card_payment_methods_title": "Métodos de pagamento",
+      "card_payment_methods_subtitle": "Atualizar cartão ou método de pagamento",
+      "card_cancel_subscription_title": "Cancelar assinatura",
+      "card_cancel_subscription_subtitle": "Você manterá o acesso até o final do período",
+      "webview_title": "Portal de cobrança"
+    },
+    "checkout": {
+      "appbar_title": "Checkout",
+      "coupon_applied_message": "Cupom aplicado!",
+      "payment_success_message": "Pagamento realizado com sucesso!",
+      "payment_error_message": "Falha no pagamento",
+      "header_title": "Upgrade para {plan}",
+      "header_subtitle_lifetime": "Pagamento VITALÍCIO",
+      "header_subtitle_yearly": "Assinatura ANUAL",
+      "order_summary_label": "RESUMO DO PEDIDO",
+      "plan_line_item": "Plano {plan} ({cycle})",
+      "coupon_applied_label": "Cupom aplicado",
+      "coupon_discount_amount": "-${amount}",
+      "total_label": "Total",
+      "billing_period_year": "/ano",
+      "billing_period_month": "/mês",
+      "coupon_code_label": "Código do cupom",
+      "coupon_input_placeholder": "Digite o código do cupom",
+      "coupon_apply_button": "Aplicar",
+      "what_you_get_heading": "O que você recebe",
+      "features": {
+        "unlimited_ai": "Solicitações de IA ilimitadas",
+        "premium_features": "Todos os recursos premium desbloqueados",
+        "priority_support": "Suporte prioritário",
+        "advanced_analytics": "Análises avançadas",
+        "exam_cloning": "Clonagem e geração de exames",
+        "deep_research": "Pesquisa aprofundada"
+      },
+      "button_processing": "Processando...",
+      "button_proceed": "Prosseguir para pagamento",
+      "trust_ssl": "Criptografia SSL",
+      "trust_stripe": "Powered by Stripe",
+      "trust_cancel_anytime": "Cancele a qualquer momento"
+    },
+    "success": {
+      "welcome_heading": "Bem-vindo ao Pro!",
+      "payment_successful_message": "Seu pagamento foi realizado com sucesso",
+      "info_plan_label": "Plano",
+      "info_status_label": "Status",
+      "info_status_active": "Ativo",
+      "features_heading": "Recursos desbloqueados",
+      "button_continue": "Começar a usar os recursos Pro"
+    },
+    "webview": {
+      "appbar_title": "Concluir pagamento",
+      "error_loading_page": "Erro ao carregar a página",
+      "cancel_dialog_title": "Cancelar pagamento?",
+      "cancel_dialog_content": "Tem certeza de que deseja cancelar este pagamento?",
+      "cancel_dialog_continue_btn": "Não, continuar",
+      "cancel_dialog_cancel_btn": "Sim, cancelar"
+    }
+  },
+  "notifications": {
+    "header": {
+      "title": "Notificações",
+      "unread_count": "{count} nova(s)",
+      "all_caught_up": "Tudo em dia!",
+      "mark_all_as_read": "Marcar tudo como lido",
+      "clear_all": "Limpar tudo"
+    },
+    "tabs": {
+      "all": "Todas",
+      "unread": "Não lidas",
+      "settings": "Configurações"
+    },
+    "dialogs": {
+      "clear_all_title": "Limpar tudo?",
+      "clear_all_message": "Isso excluirá permanentemente todas as notificações.",
+      "cancel": "Cancelar",
+      "delete_all": "Excluir tudo"
+    },
+    "time": {
+      "just_now": "Agora mesmo",
+      "minutes_ago": "{minutes}m atrás",
+      "hours_ago": "{hours}h atrás",
+      "days_ago": "{days}d atrás"
+    },
+    "empty": {
+      "no_notifications_title": "Sem notificações",
+      "no_notifications_message": "Avisaremos quando algo\nimportante acontecer",
+      "all_caught_up_title": "Tudo em dia!",
+      "all_caught_up_message": "Você leu todas as suas notificações.\nÓtimo trabalho se mantendo atualizado! 🎉",
+      "feature_stay_updated": "Fique atualizado",
+      "feature_quick_actions": "Ações rápidas",
+      "feature_track_progress": "Acompanhe o progresso"
+    },
+    "card": {
+      "delete": "Excluir",
+      "mark_as_read": "Marcar como lido"
+    },
+    "types": {
+      "info": "INFO",
+      "success": "SUCESSO",
+      "warning": "AVISO",
+      "reminder": "LEMBRETE",
+      "achievement": "CONQUISTA",
+      "study": "ESTUDO"
+    },
+    "settings": {
+      "info_card_title": "Fique por dentro!",
+      "info_card_message": "Ative as notificações para não perder atualizações importantes",
+      "channels_section": "Canais de notificação",
+      "types_section": "O que notificar",
+      "in_app_title": "Notificações no app",
+      "in_app_subtitle": "Receba notificações enquanto usa o app",
+      "email_title": "Notificações por e-mail",
+      "email_subtitle": "Receba atualizações importantes por e-mail",
+      "push_title": "Notificações push",
+      "push_subtitle": "Receba alertas push neste dispositivo",
+      "study_reminders_title": "Lembretes de estudo",
+      "study_reminders_subtitle": "Lembretes sobre flashcards e sessões de estudo pendentes",
+      "achievements_title": "Conquistas e marcos",
+      "achievements_subtitle": "Celebre suas conquistas de aprendizado",
+      "weekly_digest_title": "Resumo semanal",
+      "weekly_digest_subtitle": "Resumo do seu progresso semanal de aprendizado",
+      "footer_message": "As preferências de notificação são sincronizadas em todos os seus dispositivos"
+    }
+  },
+  "flashcards": {
+    "add": {
+      "title_edit": "Editar flashcard",
+      "title_add": "Adicionar flashcard",
+      "label_front": "Frente (Pergunta)",
+      "hint_front": "Digite a pergunta ou termo",
+      "error_front_required": "A frente é obrigatória",
+      "label_back": "Verso (Resposta)",
+      "hint_back": "Digite a resposta ou definição",
+      "error_back_required": "O verso é obrigatório",
+      "label_notes": "Notas (opcional)",
+      "hint_notes": "Adicione notas ou contexto adicional",
+      "label_tags": "Tags (opcional)",
+      "hint_tags_example": "capítulo1, importante, revisão",
+      "helper_tags": "Separe as tags com vírgulas",
+      "button_save_changes": "Salvar alterações",
+      "button_create": "Criar flashcard"
+    },
+    "list": {
+      "label_flashcards": "Flashcards",
+      "sort_newest": "Mais recentes",
+      "sort_oldest": "Mais antigos",
+      "sort_difficulty": "Dificuldade",
+      "menu_newest": "Mais recentes",
+      "menu_oldest": "Mais antigos",
+      "menu_difficulty": "Dificuldade",
+      "toast_created": "Flashcard criado com sucesso!",
+      "toast_updated": "Flashcard atualizado com sucesso!",
+      "toast_bulk_created": "{count} cartões adicionados com sucesso!",
+      "toast_deleted": "Flashcard excluído",
+      "error_title": "Erro ao carregar flashcards",
+      "button_retry": "Tentar novamente",
+      "filter_all": "Todos",
+      "filter_new": "Novo",
+      "filter_learning": "Aprendendo",
+      "filter_review": "Revisão",
+      "filter_mastered": "Dominado",
+      "filter_due": "Pendente",
+      "empty_filter_message": "Nenhum cartão nesta categoria",
+      "button_add_cards": "Adicionar cartões",
+      "modal_add_cards_title": "Adicionar cartões",
+      "button_add_to_set": "Adicionar ao conjunto de estudo",
+      "ready_card_singular": "cartão",
+      "ready_cards_plural": "cartões",
+      "ready_text": "pronto",
+      "empty_title": "Nenhum flashcard ainda",
+      "empty_message": "Crie seu primeiro flashcard para começar a aprender",
+      "empty_button": "Adicionar cartões"
+    },
+    "study": {
+      "card_progress": "Cartão {current} de {total}",
+      "question_rating": "Quão bem você sabia?",
+      "rating_again": "De novo",
+      "rating_again_subtitle": "Esqueci",
+      "rating_hard": "Difícil",
+      "rating_hard_subtitle": "Complicado",
+      "rating_good": "Bom",
+      "rating_good_subtitle": "Lembrei",
+      "rating_easy": "Fácil",
+      "rating_easy_subtitle": "Perfeito",
+      "hint_tap_card": "Toque no cartão para revelar a resposta",
+      "label_question": "PERGUNTA",
+      "label_answer": "RESPOSTA",
+      "exit_dialog_title": "Sair da sessão de estudo?",
+      "exit_dialog_message": "Seu progresso não será salvo se você sair agora. Tem certeza?",
+      "exit_button_continue": "Continuar estudando",
+      "exit_button_exit": "Sair"
+    },
+    "widgets": {
+      "session_summary": {
+        "title": "Sessão concluída!",
+        "cards_reviewed": "Você revisou {count} cartões",
+        "accuracy": "Precisão",
+        "easy_good": "Fácil/Bom",
+        "hard": "Difícil",
+        "again": "De novo",
+        "done_button": "Concluído"
+      },
+      "ai_assist": {
+        "header": "Assistente IA",
+        "suggest_answer_title": "Sugerir resposta",
+        "suggest_answer_description": "Gerar uma resposta completa",
+        "elaborate_title": "Elaborar",
+        "elaborate_description": "Adicionar mais detalhes e contexto",
+        "add_mnemonic_title": "Adicionar mnemônico",
+        "add_mnemonic_description": "Criar truques de memorização",
+        "simplify_title": "Simplificar",
+        "simplify_description": "Reescrever em linguagem mais simples",
+        "suggestion_label": "Sugestão da IA",
+        "try_again_button": "Tentar novamente",
+        "accept_button": "Aceitar",
+        "suggestion_applied_toast": "Sugestão da IA aplicada!"
+      },
+      "ai_generation": {
+        "minimum_chars_error": "Digite pelo menos 50 caracteres",
+        "cards_ready_toast": "{count} cartões prontos para adicionar",
+        "info_banner_text": "Deixe a IA gerar flashcards a partir do seu conteúdo",
+        "banner_text": "Deixe a IA gerar flashcards a partir do seu conteúdo",
+        "content_label": "Conteúdo",
+        "content_hint": "Cole seu texto, anotações ou material de estudo aqui...",
+        "char_counter_helper": "{count}/50 caracteres mínimo",
+        "char_count": "{count}/50 caracteres mínimo",
+        "card_count_label": "Número de cartões",
+        "number_of_cards": "Número de cartões",
+        "card_type_label": "Tipo de cartão",
+        "card_type": "Tipo de cartão",
+        "qa_type": "P&R",
+        "type_qa": "P&R",
+        "fill_blank_type": "Preencher lacuna",
+        "type_fill_blank": "Preencher lacuna",
+        "true_false_type": "Verdadeiro/Falso",
+        "type_true_false": "Verdadeiro/Falso",
+        "difficulty_label": "Dificuldade",
+        "difficulty": "Dificuldade",
+        "easy_difficulty": "Fácil",
+        "difficulty_easy": "Fácil",
+        "medium_difficulty": "Médio",
+        "difficulty_medium": "Médio",
+        "hard_difficulty": "Difícil",
+        "difficulty_hard": "Difícil",
+        "generating_button": "Gerando...",
+        "generate_button": "Gerar com IA",
+        "generated_cards_title": "Cartões gerados ({count})",
+        "deselect_all_button": "Desmarcar tudo",
+        "select_all_button": "Selecionar tudo",
+        "card_number_label": "Cartão {number}",
+        "answer_label": "Resposta:",
+        "add_selected_button": "Adicionar {count} cartões selecionados"
+      },
+      "manual_creation": {
+        "card_count_label": "{count} {cards}",
+        "card_count": {
+          "zero": "Nenhum cartão",
+          "one": "1 cartão",
+          "other": "{count} cartões"
+        },
+        "add_card_button": "Adicionar cartão",
+        "add_card": "Adicionar cartão",
+        "empty_state_title": "Nenhum cartão ainda",
+        "no_cards": "Nenhum cartão ainda",
+        "create_first_card_button": "Crie seu primeiro cartão",
+        "create_first": "Crie seu primeiro cartão",
+        "singular_card": "Cartão",
+        "plural_cards": "Cartões",
+        "card_header_title": "Cartão {number}",
+        "ready_badge": "Pronto",
+        "delete_card_tooltip": "Excluir cartão",
+        "card_type_label": "Tipo de cartão",
+        "qa_type": "P&R",
+        "cloze_type": "Cloze",
+        "image_occlusion_type": "Oclusão de imagem",
+        "front_label": "Frente *",
+        "front_hint": "Pergunta ou enunciado",
+        "back_label": "Verso *",
+        "back_hint": "Resposta ou explicação",
+        "notes_label": "Notas (opcional)",
+        "notes_hint": "Contexto adicional",
+        "tags_label": "Tags (opcional)",
+        "tags_hint": "tópico1, tópico2",
+        "tags_helper": "Separe as tags com vírgulas"
+      },
+      "editor": {
+        "manual_tab": "Manual",
+        "ai_tab": "IA",
+        "import_tab": "Importar",
+        "tab_manual": "Manual",
+        "tab_ai": "IA",
+        "tab_import": "Importar"
+      },
+      "import": {
+        "recording_saved_toast": "Gravação salva!",
+        "microphone_permission_error": "Permissão de microfone negada",
+        "recording_started_toast": "Gravação iniciada...",
+        "recording_failed_error": "Falha na gravação",
+        "file_pick_error": "Falha ao selecionar arquivo",
+        "camera_open_error": "Falha ao abrir câmera",
+        "image_pick_error": "Falha ao selecionar imagem",
+        "no_text_in_image_error": "Nenhum texto encontrado na imagem",
+        "text_extracted_success": "Texto extraído com sucesso!",
+        "image_process_error": "Falha ao processar imagem",
+        "empty_text_error": "Digite um texto para importar",
+        "no_file_selected_error": "Selecione um arquivo",
+        "no_audio_error": "Grave ou selecione um arquivo de áudio primeiro",
+        "no_image_error": "Escaneie ou selecione uma imagem primeiro",
+        "no_google_docs_url_error": "Digite a URL do Google Docs",
+        "no_youtube_url_error": "Digite a URL do YouTube",
+        "no_website_url_error": "Digite a URL do site",
+        "cards_ready_toast": "{count} cartões prontos para adicionar",
+        "info_banner_text": "Importe flashcards de diversas fontes",
+        "banner_text": "Importe flashcards de diversas fontes",
+        "source_label": "Fonte de importação",
+        "pdf_source": "Enviar PDF",
+        "source_pdf": "Enviar PDF",
+        "youtube_source": "Vídeo do YouTube",
+        "source_youtube": "Vídeo do YouTube",
+        "record_audio_source": "Gravar áudio",
+        "source_record_audio": "Gravar áudio",
+        "audio_file_source": "Arquivo de áudio",
+        "source_audio_file": "Arquivo de áudio",
+        "website_source": "URL do site",
+        "source_website": "URL do site",
+        "camera_source": "Escanear com câmera",
+        "source_camera": "Escanear com câmera",
+        "google_docs_source": "Google Docs",
+        "source_google_docs": "Google Docs",
+        "text_source": "Colar texto",
+        "source_text": "Colar texto",
+        "handwritten_source": "Notas manuscritas",
+        "source_handwritten": "Notas manuscritas",
+        "text_label": "Colar texto",
+        "text_hint": "Digite o conteúdo dos seus flashcards...",
+        "pdf_description": "Envie seus documentos PDF",
+        "choose_pdf_button": "Escolher PDF",
+        "change_pdf_button": "Alterar PDF",
+        "recording_in_progress_text": "Gravando...",
+        "recording_saved_text": "Gravação salva!",
+        "tap_to_record_text": "Toque para iniciar a gravação",
+        "record_voice_hint": "Grave sua voz e nós transcrevemos",
+        "stop_recording_button": "Parar gravação",
+        "start_recording_button": "Iniciar gravação",
+        "record_again_button": "Gravar novamente",
+        "choose_audio_button": "Escolher arquivo de áudio",
+        "change_audio_button": "Alterar arquivo",
+        "audio_formats_helper": "Formatos suportados: MP3, WAV, M4A",
+        "camera_title": "Escanear documentos com câmera",
+        "camera_hint": "Tire uma foto das suas anotações ou livro",
+        "open_camera_button": "Abrir câmera",
+        "google_docs_label": "URL do Google Docs",
+        "google_docs_hint": "https://docs.google.com/document/d/...",
+        "google_docs_helper": "Cole um link compartilhável do Google Docs",
+        "handwritten_title": "Escanear notas manuscritas",
+        "handwritten_hint": "Extrairemos o texto das suas notas manuscritas",
+        "take_photo_button": "Tirar foto",
+        "from_gallery_button": "Da galeria",
+        "paste_text_label": "Colar texto",
+        "paste_text_hint": "Digite o conteúdo dos seus flashcards...",
+        "separator_label": "Separador de cartões",
+        "separator_hint": "ex.: \\n\\n ou ---",
+        "separator_helper": "Padrão para dividir cartões",
+        "choose_file_button": "Escolher arquivo",
+        "change_file_button": "Alterar arquivo",
+        "file_formats_helper": "Formatos suportados: PDF, TXT, CSV, MD",
+        "youtube_label": "URL do YouTube",
+        "youtube_hint": "https://youtube.com/watch?v=...",
+        "youtube_helper": "Extrairemos a transcrição",
+        "website_label": "URL do site",
+        "website_hint": "https://exemplo.com",
+        "website_helper": "Extrairemos o conteúdo",
+        "importing_button": "Importando...",
+        "import_button": "Importar flashcards",
+        "imported_cards_title": "Cartões importados ({count})",
+        "card_number_label": "Cartão {number}",
+        "add_to_study_set_button": "Adicionar {count} cartões ao conjunto de estudo"
+      }
+    }
+  },
+  "notes": {
+    "title": "Anotações",
+    "mindMapHistoryTooltip": "Histórico de mapas mentais",
+    "mindMapTooltip": "Mapa mental",
+    "aiGenerateButton": "Gerar com IA",
+    "addNoteButton": "Adicionar anotação",
+    "emptyStateTitle": "Nenhuma anotação ainda",
+    "emptyStateSubtitle": "Crie anotações para organizar seu material de aprendizado",
+    "createManuallyButton": "Criar manualmente",
+    "noSearchResultsTitle": "Nenhuma anotação corresponde à sua busca",
+    "noSearchResultsSubtitle": "Tente ajustar sua busca ou filtro",
+    "createSuccess": "Anotação criada com sucesso!",
+    "deleteSuccess": "Anotação excluída com sucesso!",
+    "updateSuccess": "Anotação atualizada com sucesso!",
+    "aiNotesGeneratedSuccess": "{count} anotações geradas com IA!",
+    "deleteConfirmationTitle": "Excluir anotação?",
+    "deleteConfirmationMessage": "Tem certeza de que deseja excluir \"{title}\"?",
+    "searchPlaceholder": "Buscar anotações...",
+    "filterAll": "Todas",
+    "filterMoreTags": "+{count} mais",
+    "sortNewest": "Mais recentes",
+    "sortOldest": "Mais antigas",
+    "sortTitle": "Título A-Z",
+    "createNoteTitle": "Criar anotação",
+    "editNoteTitle": "Editar anotação",
+    "titleLabel": "Título",
+    "titleHint": "Digite o título da anotação",
+    "titleValidation": "Digite um título",
+    "contentLabel": "Conteúdo",
+    "contentHint": "Escreva sua anotação aqui...\n\nSuporta formatação Markdown",
+    "contentValidation": "Digite o conteúdo",
+    "tagsLabel": "Tags (opcional)",
+    "tagsHint": "ex.: biologia, importante, capítulo1 (separadas por vírgula)",
+    "tagsHintEdit": "Separadas por vírgula",
+    "markdownHelpText": "Você pode usar sintaxe Markdown para formatação:\n• **negrito**, *itálico*, `código`\n• # Título, ## Subtítulo\n• - Listas",
+    "createNoteSubmitButton": "Criar anotação",
+    "updateNoteButton": "Atualizar anotação",
+    "pinnedBadge": "Fixada",
+    "updatedDateLabel": "Atualizada em {date}",
+    "generateAITitle": "Gerar anotação com IA",
+    "generateAISubtitle": "Extraia conteúdo e crie anotações inteligentes",
+    "sourceTypePDF": "Documento PDF",
+    "sourceTypePDFDescription": "Envie arquivos PDF",
+    "sourceTypeYouTube": "Vídeo do YouTube",
+    "sourceTypeYouTubeDescription": "Extrair de vídeo",
+    "sourceTypeWebsite": "URL do site",
+    "sourceTypeWebsiteDescription": "Extrair de página web",
+    "sourceTypeAudio": "Arquivo de áudio",
+    "sourceTypeAudioDescription": "Transcrever áudio",
+    "sourceTypeHandwriting": "Manuscrito",
+    "sourceTypeHandwritingDescription": "OCR de imagem",
+    "sourceTypeText": "Colar texto",
+    "sourceTypeTextDescription": "Da área de transferência",
+    "chooseSourceLabel": "Escolha a fonte do conteúdo",
+    "youtubeUrlLabel": "URL do YouTube",
+    "youtubeUrlHint": "https://www.youtube.com/watch?v=...",
+    "websiteUrlLabel": "URL do site",
+    "websiteUrlHint": "https://pt.wikipedia.org/wiki/...",
+    "pasteContentLabel": "Cole seu conteúdo",
+    "pasteContentHint": "Cole anotações de aula, texto de artigo ou qualquer conteúdo...",
+    "characterCount": "{count} caracteres",
+    "fileUploadPrompt": "Arraste o arquivo aqui ou clique para navegar",
+    "pdfFileTypes": "PDF, TXT, MD (máx. 20MB)",
+    "audioFileTypes": "MP3, WAV, M4A (máx. 50MB)",
+    "imageFileTypes": "JPG, PNG, HEIC (máx. 20MB)",
+    "extractGenerateButton": "Extrair e gerar anotação",
+    "processingTitle": "Processando seu conteúdo",
+    "processingSubtitle": "Isso pode levar um momento...",
+    "processingStep1": "Extraindo conteúdo",
+    "processingStep2": "Analisando texto",
+    "processingStep3": "Gerando resumo",
+    "processingStep4": "Criando anotação",
+    "extractionSuccess": "Conteúdo extraído com sucesso!",
+    "aiSummaryLabel": "Resumo da IA",
+    "suggestedTagsLabel": "Tags sugeridas",
+    "contentPreviewLabel": "Pré-visualização do conteúdo ({count} caracteres)",
+    "startOverButton": "Recomeçar",
+    "saveNoteButton": "Salvar anotação",
+    "generatingPresentationTitle": "Gerando apresentação",
+    "generatingPresentationSubtitle": "A IA está criando slides a partir da sua anotação...",
+    "generationFailedTitle": "Falha na geração",
+    "aiGeneratedBadge": "Gerado por IA",
+    "regenerateButton": "Gerar novamente",
+    "mindMapTitle": "Mapa mental",
+    "generatingMindMapMessage": "Gerando mapa mental...",
+    "mindMapGenerationFailed": "Falha ao gerar mapa mental",
+    "mindMapHistoryTitle": "Histórico de mapas mentais",
+    "failedToLoadHistory": "Falha ao carregar histórico",
+    "noMindMapsEmptyTitle": "Nenhum mapa mental ainda",
+    "noMindMapsEmptySubtitle": "Gere mapas mentais a partir das suas anotações",
+    "mindMapDeletedSuccess": "Mapa mental excluído",
+    "mindMapDeleteFailed": "Falha ao excluir",
+    "mindMapLoadFailed": "Falha ao carregar",
+    "deleteMindMapTitle": "Excluir mapa mental",
+    "deleteMindMapConfirmation": "Tem certeza de que deseja excluir este mapa mental?",
+    "analyzingNotesMessage": "Analisando suas anotações...",
+    "creatingMindMapMessage": "Criando mapa mental",
+    "mindMapGuideTitle": "Guia do mapa mental",
+    "mindMapGuideContent": "Este mapa mental visualiza todos os conceitos das suas anotações.\n\n• Aperte para ampliar/reduzir\n• Arraste para navegar\n• Toque em atualizar para gerar novamente",
+    "mindMapHelpText": "Aperte para ampliar • Arraste para explorar o mapa",
+    "noNotesForMindMap": "Nenhuma anotação disponível para gerar mapa mental",
+    "shareNoteTitle": "Compartilhar anotação",
+    "shareLinkLabel": "Link de compartilhamento",
+    "shareToSocialLabel": "Compartilhar nas redes sociais",
+    "shareWhatsApp": "WhatsApp",
+    "shareTwitter": "Twitter",
+    "shareFacebook": "Facebook",
+    "shareLinkedIn": "LinkedIn",
+    "shareEmail": "E-mail",
+    "downloadLabel": "Baixar",
+    "downloadText": "Texto (.txt)",
+    "downloadMarkdown": "Markdown (.md)",
+    "sharingPreviewLabel": "Compartilhando",
+    "linkCopiedSuccess": "Link copiado para a área de transferência!",
+    "downloadTextSuccess": "Baixado: {title}.txt",
+    "downloadFailed": "Falha ao baixar",
+    "downloadMarkdownSuccess": "Baixado: {title}.md"
+  },
+  "quiz": {
+    "live_lobby": {
+      "room_code": "Código da sala",
+      "copy_code": "Copiar código",
+      "share_code": "Compartilhe este código com amigos para participar",
+      "room_code_copied": "Código da sala copiado!",
+      "players": "Jogadores ({count})",
+      "host_badge": "HOST",
+      "starting": "Iniciando...",
+      "start_game": "Iniciar jogo",
+      "waiting_for_host": "Aguardando o host iniciar o jogo...",
+      "error_occurred": "Ocorreu um erro"
+    },
+    "live_quiz": {
+      "title": "Quiz ao vivo",
+      "hero_title": "Compita em tempo real",
+      "hero_subtitle": "Jogue com amigos e veja quem sabe mais!",
+      "host_game": "Criar jogo",
+      "host_description": "Crie uma sala e compartilhe o código com amigos",
+      "creating_room": "Criando sala...",
+      "create_room": "Criar sala",
+      "or": "OU",
+      "join_game": "Entrar em um jogo",
+      "room_code_label": "Código da sala",
+      "room_code_hint": "ABC123",
+      "your_name_label": "Seu nome",
+      "your_name_hint": "Digite seu nome",
+      "joining": "Entrando...",
+      "join_room": "Entrar na sala",
+      "please_enter_room_code": "Digite o código da sala",
+      "please_enter_name": "Digite seu nome",
+      "failed_to_create_room": "Falha ao criar sala",
+      "failed_to_join_room": "Falha ao entrar na sala",
+      "error": "Erro: {error}"
+    },
+    "match_game": {
+      "title": "Jogo de correspondência",
+      "reset_game": "Reiniciar jogo",
+      "time": "Tempo",
+      "moves": "Jogadas",
+      "matches": "Pares",
+      "questions": "PERGUNTAS",
+      "answers": "RESPOSTAS",
+      "congratulations": "Parabéns! 🎉",
+      "completed_message": "Concluído em {seconds} segundos com {moves} jogadas",
+      "play_again": "Jogar novamente",
+      "no_flashcards_available": "Nenhum flashcard disponível para correspondência",
+      "failed_to_load": "Falha ao carregar flashcards: {error}",
+      "time_seconds": "{seconds}s"
+    },
+    "mode": {
+      "title": "Modo quiz",
+      "hero_title": "Teste seu conhecimento",
+      "hero_subtitle": "Perguntas geradas por IA a partir dos seus flashcards",
+      "number_of_questions": "Número de perguntas",
+      "question_types": "Tipos de perguntas",
+      "multiple_choice": "Múltipla escolha",
+      "multiple_choice_description": "4 opções, escolha uma",
+      "true_false": "Verdadeiro / Falso",
+      "true_false_description": "Decida se a afirmação está correta",
+      "fill_blank": "Preencher lacuna",
+      "fill_blank_description": "Digite a palavra ou frase que falta",
+      "timer": "Cronômetro",
+      "timer_description": "30 segundos por pergunta",
+      "generating_quiz": "Gerando quiz...",
+      "generate_start_quiz": "Gerar e iniciar quiz",
+      "please_select_question_type": "Selecione pelo menos um tipo de pergunta",
+      "failed_to_generate": "Falha ao gerar quiz: {error}"
+    },
+    "results": {
+      "title": "Resultados do quiz",
+      "score": "Pontuação",
+      "outstanding": "Excelente! 🎉",
+      "great_job": "Ótimo trabalho! 👏",
+      "good_effort": "Bom esforço! 💪",
+      "keep_practicing": "Continue praticando! 📚",
+      "correct": "Correto",
+      "incorrect": "Incorreto",
+      "time": "Tempo",
+      "time_minutes": "{minutes}m",
+      "back_to_study_set": "Voltar ao conjunto de estudo",
+      "try_again": "Tentar novamente"
+    },
+    "taking": {
+      "exit_quiz": "Sair do quiz?",
+      "exit_message": "Seu progresso será perdido.",
+      "cancel": "Cancelar",
+      "exit": "Sair",
+      "question_progress": "{current}/{total}",
+      "submitting": "Enviando...",
+      "type_answer_here": "Digite sua resposta aqui...",
+      "submit_answer": "Enviar resposta",
+      "correct_feedback": "Correto!",
+      "incorrect_feedback": "Incorreto",
+      "correct_answer": "Resposta correta: {answer}",
+      "explanation": "Explicação",
+      "previous": "Anterior",
+      "next_question": "Próxima pergunta",
+      "submit_quiz": "Enviar quiz",
+      "failed_to_submit": "Falha ao enviar quiz: {error}"
+    }
+  },
+  "research": {
+    "title": "Pesquisa aprofundada",
+    "messages": {
+      "please_enter_query": "Digite uma consulta de pesquisa",
+      "creating": "Criando pesquisa...",
+      "loading_report": "Carregando relatório de pesquisa...",
+      "pdf_export_soon": "Exportação em PDF em breve!",
+      "markdown_copied": "Markdown copiado para a área de transferência!",
+      "report_copied": "Relatório copiado!",
+      "could_not_open_link": "Não foi possível abrir o link"
+    },
+    "form": {
+      "query_hint": "ex.: \"Explique computação quântica em detalhes\"",
+      "ai_powered_research": "Pesquisa com IA",
+      "deep_dive_topic": "Aprofunde-se em qualquer tópico"
+    },
+    "sections": {
+      "source_types": "📚 Tipos de fonte",
+      "research_depth": "🔍 Profundidade da pesquisa",
+      "output_format": "📄 Formato de saída"
+    },
+    "source_types": {
+      "documents": "Documentos",
+      "web": "Web",
+      "academic": "Acadêmico"
+    },
+    "depth": {
+      "quick": "Rápida",
+      "standard": "Padrão",
+      "comprehensive": "Completa"
+    },
+    "output_format": {
+      "detailed": "Detalhado",
+      "summary": "Resumo",
+      "bullets": "Tópicos"
+    },
+    "buttons": {
+      "start_research": "Iniciar pesquisa aprofundada",
+      "cancel": "Cancelar"
+    },
+    "recent": {
+      "title": "Pesquisas recentes",
+      "done": "Concluída",
+      "failed": "Falhou",
+      "in_progress": "Em andamento"
+    },
+    "progress": {
+      "title": "Pesquisa em andamento",
+      "query_label": "Consulta de pesquisa",
+      "overall_progress": "Progresso geral",
+      "pipeline_title": "Pipeline de pesquisa",
+      "phases": {
+        "planning": "Planejando",
+        "researching": "Pesquisando",
+        "synthesizing": "Sintetizando",
+        "completed": "Concluído",
+        "failed": "Falhou",
+        "starting": "Iniciando"
+      },
+      "agents": {
+        "planning": "Agente de planejamento",
+        "planning_desc": "Analisando consulta e planejando estratégia de pesquisa",
+        "research": "Agente de pesquisa",
+        "research_desc": "Coletando informações das fontes selecionadas",
+        "synthesis": "Agente de síntese",
+        "synthesis_desc": "Compilando e organizando descobertas"
+      }
+    },
+    "report": {
+      "deep_research": "PESQUISA APROFUNDADA",
+      "tab_report": "Relatório",
+      "tab_sources": "Fontes ({count})",
+      "tab_export": "Exportar",
+      "executive_summary": "Resumo executivo",
+      "key_insights": "Principais insights",
+      "sources_references": "Fontes e referências",
+      "sources_cited": "{count} fontes citadas",
+      "no_sources": "Nenhuma fonte encontrada",
+      "knowledge_base_sources": "Base de conhecimento ({count})",
+      "web_sources": "Fontes web ({count})",
+      "study_material": "Material de estudo",
+      "relevance": "{score}% Relevância",
+      "relevance_label": "Relevância",
+      "citation_copied": "Citação copiada!",
+      "export_title": "Exportar pesquisa",
+      "export_format": "Formato de exportação",
+      "export_pdf": "Exportar como PDF",
+      "export_pdf_desc": "Salvar como documento PDF",
+      "export_markdown": "Copiar como Markdown",
+      "export_markdown_desc": "Texto formatado com citações",
+      "export_plain": "Copiar texto simples",
+      "export_plain_desc": "Texto simples sem formatação",
+      "share": "Compartilhar relatório",
+      "share_desc": "Compartilhar por outros apps",
+      "citation_style": "Estilo de citação",
+      "citation_preview": "PRÉ-VISUALIZAÇÃO",
+      "delete_confirm_title": "Excluir pesquisa?",
+      "delete_confirm_message": "Este relatório de pesquisa será excluído permanentemente.",
+      "delete_confirm_cancel": "Cancelar",
+      "delete_confirm_delete": "Excluir"
+    },
+    "date": {
+      "today": "Hoje",
+      "yesterday": "Ontem",
+      "days_ago": "{days} dias atrás"
+    }
+  },
+  "ai_chat": {
+    "title": "Parceiro de estudo",
+    "history_title": "Histórico de conversas",
+    "history_subtitle": "Suas conversas com a IA",
+    "messages": {
+      "ask_anything": "Pergunte qualquer coisa...",
+      "thinking": "Pensando...",
+      "no_conversations": "Nenhuma conversa ainda",
+      "start_new": "Inicie uma nova conversa",
+      "search_conversations": "Buscar conversas...",
+      "delete_confirm_title": "Excluir conversa?",
+      "delete_confirm_message": "Isso excluirá permanentemente esta conversa e todas as mensagens.",
+      "delete_confirm_cancel": "Cancelar",
+      "delete_confirm_delete": "Excluir"
+    },
+    "empty_state": {
+      "title": "Parceiro de estudo",
+      "description": "Faça perguntas sobre seu material de estudo, obtenha explicações, resumos e muito mais.\nPosso consultar seus documentos e fornecer respostas com referências.",
+      "prompts": {
+        "explain": "Explique os conceitos-chave deste tópico",
+        "summary": "Crie um resumo do meu material de estudo",
+        "important": "Quais são os pontos mais importantes para lembrar?",
+        "examples": "Me ajude a entender melhor com exemplos"
+      }
+    },
+    "file_picker": {
+      "gallery": "Escolher da galeria",
+      "camera": "Tirar foto",
+      "pdf": "Escolher documento PDF"
+    },
+    "history": {
+      "new_chat": "Nova conversa",
+      "no_message": "Nenhuma conversa ainda"
+    },
+    "date": {
+      "today": "Hoje",
+      "yesterday": "Ontem",
+      "days_ago": "{days} dias atrás"
+    }
+  },
+  "teach_back": {
+    "title": "Ensinar de volta",
+    "messages": {
+      "please_enter_topic": "Digite um tópico",
+      "please_select_study_set": "Selecione um conjunto de estudo",
+      "please_enter_explanation": "Digite sua explicação",
+      "explanation_submitted": "Explicação enviada!",
+      "no_study_sets": "Nenhum conjunto de estudo encontrado. Crie um primeiro!"
+    },
+    "feynman": {
+      "title": "Técnica Feynman",
+      "step1": "Escolher tópico",
+      "step1_desc": "Escolha um conceito",
+      "step2": "Explicar de forma simples",
+      "step2_desc": "Ensine de volta",
+      "step3": "Obter feedback",
+      "step3_desc": "A IA avalia",
+      "step4": "Preencher lacunas",
+      "step4_desc": "Melhorar e tentar novamente"
+    },
+    "form": {
+      "mode_topic": "Digitar tópico",
+      "mode_study_set": "De um conjunto de estudo",
+      "topic_label": "Qual tópico você quer dominar?",
+      "topic_hint": "ex.: Teorema de Pitágoras, Fotossíntese, Oferta e Demanda...",
+      "quick_picks": "Sugestões rápidas:",
+      "reference_label": "Material de referência (opcional — ajuda a IA a avaliar melhor)",
+      "reference_hint": "Cole aqui notas do livro, conteúdo de aula ou pontos-chave...",
+      "study_set_label": "Escolha um conjunto de estudo — a IA gerará automaticamente o tópico dos seus flashcards",
+      "study_set_empty": "Nenhum conjunto de estudo encontrado. Crie um primeiro!",
+      "cards_count": "{count} cartões",
+      "cancel": "Cancelar",
+      "generate_start": "Gerar e iniciar",
+      "start_teaching": "Começar a ensinar",
+      "generating": "Gerando...",
+      "creating": "Criando..."
+    },
+    "session": {
+      "essentials_title": "Revisar o essencial",
+      "load_essentials": "Carregar o essencial",
+      "who_explaining": "Para quem você está explicando?",
+      "difficulty_eli5": "Uma criança de 5 anos",
+      "difficulty_eli5_desc": "O mais simples possível",
+      "difficulty_classmate": "Um colega de classe",
+      "difficulty_classmate_desc": "Nível normal",
+      "difficulty_expert": "Um especialista",
+      "difficulty_expert_desc": "Profundidade técnica",
+      "explanation_title": "Sua explicação",
+      "explanation_hint": "Explique o conceito com suas próprias palavras...",
+      "characters_count": "{count} caracteres",
+      "submit_explanation": "Enviar explicação",
+      "submitting": "Enviando...",
+      "review_explanation": "Revise sua explicação",
+      "evaluate_button": "Avaliar minha explicação",
+      "evaluating": "Avaliando...",
+      "challenge_button": "Desafio",
+      "convince_ai_title": "Convença a IA",
+      "convince_ai_desc": "Um aluno cético de IA fará perguntas desafiadoras. Defenda seu entendimento!",
+      "convinced_badge": "Convencido! +20 XP",
+      "skeptical_student": "Aluno cético",
+      "defend_hint": "Defenda seu entendimento...",
+      "thinking": "Pensando..."
+    },
+    "progress": {
+      "phase_explain": "Explicar",
+      "phase_submit": "Enviar",
+      "phase_evaluate": "Avaliar"
+    },
+    "evaluation": {
+      "xp_earned": "+50 XP ganhos!",
+      "overall_score": "Pontuação geral",
+      "score_breakdown": "Detalhamento da pontuação",
+      "accuracy": "Precisão",
+      "clarity": "Clareza",
+      "completeness": "Completude",
+      "understanding": "Compreensão",
+      "strengths": "Pontos fortes",
+      "improve": "Como melhorar",
+      "deepen": "Aprofunde seu entendimento",
+      "try_again": "Tentar novamente",
+      "new_topic": "Novo tópico",
+      "score_excellent": "Excelente compreensão!",
+      "score_good": "Boa compreensão!",
+      "score_fair": "Compreensão razoável",
+      "score_needs_improvement": "Precisa melhorar"
+    },
+    "status": {
+      "pending": "Pendente",
+      "submitted": "Enviado",
+      "evaluated": "Avaliado"
+    },
+    "difficulty": {
+      "eli5": "ELI5",
+      "classmate": "COLEGA",
+      "expert": "ESPECIALISTA"
+    },
+    "empty_state": {
+      "title": "Nenhuma sessão de ensinar de volta ainda",
+      "subtitle": "Teste seu entendimento usando a Técnica Feynman"
+    }
+  },
+  "common": {
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "close": "Fechar",
+    "retry": "Tentar novamente",
+    "tryAgain": "Tentar novamente",
+    "errorGeneric": "Algo deu errado",
+    "noData": "Sem dados",
+    "gotIt": "Entendi"
+  },
+  "exam_clone": {
+    "list": {
+      "title": "Motor de clonagem de exames",
+      "subtitle": "Simulados com IA",
+      "upload_tooltip": "Enviar exame",
+      "loading": "Carregando exames...",
+      "overview": "Visão geral",
+      "your_exams": "Seus exames",
+      "upload_button": "Enviar",
+      "no_exams_title": "Nenhum exame ainda",
+      "no_exams_subtitle": "Envie seu primeiro exame para começar a gerar\nperguntas de prática com IA",
+      "upload_exam_button": "Enviar exame",
+      "review_queue": "Fila de revisão",
+      "review_queue_subtitle_due": "{count} pendente(s)",
+      "review_queue_subtitle_caught_up": "Tudo em dia",
+      "due_count": "{count} pendente(s)",
+      "bookmarks": "Favoritos",
+      "bookmarks_subtitle": "Perguntas salvas",
+      "saved_questions": "Perguntas salvas",
+      "badges": "Medalhas",
+      "badges_subtitle": "Conquistas",
+      "achievements": "Conquistas",
+      "leaderboard": "Ranking",
+      "leaderboard_subtitle": "Classificações",
+      "rankings": "Classificações",
+      "upload": "Enviar",
+      "analysis": "Análise",
+      "practice": "Praticar",
+      "notification_title": "{count} {questions} pendente(s)!",
+      "notification_subtitle": "Hora de praticar e fortalecer sua memória",
+      "notification": {
+        "multiple_due": "{count} perguntas pendentes!",
+        "message": "Hora de praticar e fortalecer sua memória"
+      },
+      "question": "Pergunta",
+      "questions": "Perguntas",
+      "stats": {
+        "exams": "Exames",
+        "original": "Original",
+        "generated": "Gerado",
+        "ready": "Pronto",
+        "failed": "Falhou",
+        "pending": "Pendente",
+        "processing": "Processando"
+      },
+      "all_caught_up": "Tudo em dia",
+      "failed": "Processamento falhou",
+      "delete_dialog": {
+        "title": "Excluir exame?",
+        "message": "Isso excluirá permanentemente este exame e todas as perguntas geradas.",
+        "cancel": "Cancelar",
+        "delete": "Excluir"
+      }
+    },
+    "upload": {
+      "title": "Enviar exame",
+      "subtitle": "Envie uma prova anterior para gerar perguntas de prática",
+      "title_label": "Título do exame *",
+      "title_hint": "ex.: Prova parcial, Final de Biologia",
+      "subject_label": "Disciplina",
+      "subject_hint": "ex.: Biologia, Matemática",
+      "method_label": "Método de envio",
+      "upload_pdf": "Enviar PDF",
+      "upload_pdf_desc": "Envie o exame como arquivo PDF",
+      "paste_text": "Colar texto",
+      "paste_text_desc": "Copie e cole o texto do exame",
+      "pdf_label": "Selecionar arquivo PDF",
+      "pdf_hint": "Toque para selecionar PDF",
+      "text_label": "Texto do exame",
+      "text_hint": "Cole suas perguntas do exame aqui...",
+      "uploading": "Enviando...",
+      "upload_button": "Enviar exame",
+      "upload_analyze": "Enviar e analisar",
+      "click_upload": "Clique para enviar",
+      "file_formats": "Formatos suportados: PDF, JPG, PNG",
+      "tip_pdf_fail": "Se o PDF falhar, tente tirar uma foto clara do exame",
+      "title_required": "Digite um título para o exame",
+      "file_required": "Selecione um arquivo PDF",
+      "text_required": "Cole o texto do exame",
+      "character_count": "{count} caracteres"
+    },
+    "detail": {
+      "title": "Análise do exame",
+      "export_pdf": "Exportar PDF",
+      "review_queue": "Fila de revisão",
+      "live_session": "Sessão ao vivo",
+      "practice": "Praticar",
+      "coming_soon": "{feature} em breve",
+      "exam_style_analysis": "Análise do estilo do exame",
+      "question_types": "Tipos de perguntas",
+      "difficulty_distribution": "Distribuição de dificuldade",
+      "easy": "Fácil",
+      "medium": "Médio",
+      "hard": "Difícil",
+      "topics_covered": "Tópicos abordados",
+      "more_topics": "+{count} mais",
+      "original": "Original",
+      "generated": "Gerado",
+      "total": "Total",
+      "best_score": "Melhor nota",
+      "tabs": {
+        "original": "Original ({count})",
+        "generated": "Gerado ({count})",
+        "analytics": "Análises"
+      },
+      "generate_more": "Gerar mais perguntas",
+      "no_questions": "Nenhuma pergunta ainda",
+      "no_practice_data": "Sem dados de prática ainda",
+      "complete_practice": "Complete pelo menos uma sessão de prática para ver suas análises.",
+      "question_type": {
+        "multiple_choice": "Múltipla escolha",
+        "short_answer": "Resposta curta",
+        "true_false": "Verdadeiro/Falso",
+        "essay": "Dissertativa",
+        "fill_blank": "Preencher lacuna"
+      },
+      "correct_answer": "Resposta correta",
+      "explanation": "Explicação"
+    },
+    "badges": {
+      "title": "Conquistas",
+      "subtitle": "Ganhe medalhas praticando",
+      "your_progress": "Seu progresso",
+      "failed_to_load": "Falha ao carregar medalhas: {error}",
+      "remaining": "{count} medalhas restantes para desbloquear",
+      "all": "Todas",
+      "recently_earned": "Conquistadas recentemente",
+      "earned_on": "Conquistada em {date}",
+      "from_exam": "de {title}",
+      "xp_reward": "+{xp} XP"
+    },
+    "bookmarks": {
+      "title": "Perguntas favoritadas",
+      "subtitle": "Perguntas marcadas para revisão",
+      "stats_count": "{count}",
+      "stats_label": "Perguntas favoritadas",
+      "from_exams_count": "{count}",
+      "from_exams_label": "De exames diferentes",
+      "difficulty": {
+        "easy": "Fácil",
+        "medium": "Médio",
+        "hard": "Difícil",
+        "unknown": "Desconhecido"
+      },
+      "options": "Opções:",
+      "correct": "(Correto)",
+      "correct_answer": "Resposta correta:",
+      "empty_title": "Nenhum favorito ainda",
+      "empty_message": "Marque perguntas difíceis durante a prática para revisá-las depois.\nClique no ícone de favorito em qualquer pergunta para salvá-la aqui.",
+      "start_practicing": "Começar a praticar",
+      "failed_to_load": "Falha ao carregar favoritos: {error}",
+      "failed_to_remove": "Falha ao remover favorito: {error}"
+    },
+    "leaderboard": {
+      "title": "Ranking",
+      "subtitle": "Veja sua posição",
+      "period": {
+        "weekly": "Semanal",
+        "monthly": "Mensal",
+        "all_time": "Todo período"
+      },
+      "your_rank": "Sua posição",
+      "top_10": "Top 10!",
+      "keep_practicing": "Continue praticando",
+      "avg_score": "Nota média",
+      "correct": "Correto",
+      "avg_score_label": "nota média",
+      "exams_count": "{count} exames",
+      "exams_and_correct": "{exams} exames • {correct} corretas",
+      "empty_title": "Sem dados ainda",
+      "empty_message": "Seja o primeiro a fazer um exame e aparecer no ranking!",
+      "failed_to_load": "Falha ao carregar ranking: {error}"
+    },
+    "practice": {
+      "title": "Praticar",
+      "practice_exam": "Simulado",
+      "questions_available": "{count} perguntas disponíveis",
+      "setup": {
+        "number_of_questions": "Número de perguntas",
+        "time_limit_minutes": "Limite de tempo (minutos)",
+        "minutes": "{time} min",
+        "include_questions": "Incluir perguntas",
+        "original_questions": "Perguntas originais do exame",
+        "ai_questions": "Perguntas geradas por IA",
+        "start_practice": "Iniciar prática"
+      },
+      "progress": {
+        "question_of": "Pergunta {current} de {total}",
+        "answered": "{count} respondida(s)",
+        "flagged": "{count} marcada(s)",
+        "time_remaining": "{time}"
+      },
+      "difficulty": {
+        "easy": "Fácil",
+        "medium": "Médio",
+        "hard": "Difícil"
+      },
+      "actions": {
+        "previous": "Anterior",
+        "next": "Próxima",
+        "submit": "Enviar",
+        "check_answer": "Verificar resposta",
+        "type_answer": "Digite sua resposta..."
+      },
+      "results": {
+        "title": "Resultados",
+        "score": "{score}%",
+        "excellent": "Excelente!",
+        "good_job": "Bom trabalho!",
+        "keep_practicing": "Continue praticando!",
+        "correct": "Correto",
+        "incorrect": "Incorreto",
+        "unanswered": "Não respondida",
+        "time": "Tempo",
+        "review_answers": "Revisar respostas",
+        "try_again": "Tentar novamente"
+      },
+      "review": {
+        "title": "Revisão de respostas",
+        "question_number": "Pergunta {number}",
+        "your_answer": "Sua resposta:",
+        "correct_answer": "Resposta correta:",
+        "explanation": "Explicação"
+      },
+      "dialogs": {
+        "exit_title": "Sair do exame?",
+        "exit_message": "Seu progresso será perdido. Você respondeu {answered} de {total} perguntas.",
+        "continue_exam": "Continuar exame",
+        "exit": "Sair",
+        "submit_title": "Enviar exame?",
+        "submit_message": "Você respondeu {answered} de {total} perguntas.",
+        "unanswered_warning": "{count} perguntas não foram respondidas",
+        "submit": "Enviar"
+      },
+      "no_questions_available": "Nenhuma pergunta disponível"
+    },
+    "review_queue": {
+      "title": "Fila de revisão",
+      "stats": {
+        "correct": "{count}",
+        "incorrect": "{count}",
+        "progress": "{current}/{total}"
+      },
+      "loading": "Carregando fila de revisão...",
+      "difficulty": {
+        "easy": "Fácil",
+        "medium": "Médio",
+        "hard": "Difícil"
+      },
+      "review_number": "Revisão #{count}",
+      "check_answer": "Verificar resposta",
+      "ai_evaluating": "A IA está avaliando...",
+      "next_question": "Próxima pergunta",
+      "finish_review": "Finalizar revisão",
+      "type_answer": "Digite sua resposta:",
+      "type_answer_hint": "Digite sua resposta aqui...\n(Você pode escrever múltiplas linhas)",
+      "correct_answer": "Resposta correta: {answer}",
+      "get_ai_explanation": "Obter explicação da IA",
+      "getting_explanation": "Obtendo explicação...",
+      "ai_evaluation": "Avaliação da IA",
+      "ai_explanation": "Explicação da IA",
+      "empty": {
+        "title": "Tudo em dia!",
+        "message": "Você não tem perguntas pendentes para revisão agora. Pratique mais exames para construir sua fila de revisão.",
+        "back_button": "Voltar aos exames",
+        "refresh_button": "Atualizar"
+      },
+      "complete": {
+        "title": "Revisão concluída!",
+        "message": "Ótimo trabalho reforçando seu conhecimento",
+        "correct": "Correto",
+        "incorrect": "Incorreto",
+        "total": "Total",
+        "accuracy": "Precisão",
+        "tip_title": "Continue assim!",
+        "tip_message": "Perguntas que você errou aparecerão com mais frequência. A repetição espaçada ajuda a transferir o conhecimento para a memória de longo prazo.",
+        "back_button": "Voltar aos exames",
+        "review_more": "Revisar mais"
+      },
+      "failed_to_load": "Falha ao carregar fila de revisão: {error}",
+      "failed_to_submit": "Falha ao concluir revisão: {error}",
+      "failed_explanation": "Falha ao obter explicação: {error}"
+    }
+  },
+  "problem_solver": {
+    "batch_solver": {
+      "title": "Resolvedor em lote",
+      "tabs": {
+        "pdf_upload": "Enviar PDF",
+        "text_input": "Entrada de texto"
+      },
+      "pdf_tab": {
+        "upload_label": "Enviar PDF",
+        "upload_hint": "Selecione um arquivo PDF contendo problemas",
+        "extract_button": "Extrair problemas"
+      },
+      "text_tab": {
+        "title": "Colar problemas",
+        "description": "Cole seus problemas abaixo. Cada problema deve estar em uma nova linha ou separado por números.",
+        "hint": "Exemplo:\n1. Resolva para x: 2x + 5 = 15\n2. Calcule a área de um círculo com raio 7cm\n3. Fatore: x² - 5x + 6",
+        "extract_button": "Extrair problemas"
+      },
+      "stats": {
+        "total": "Total",
+        "selected": "Selecionados",
+        "solved": "Resolvidos"
+      },
+      "actions": {
+        "solve_selected": "Resolver {count} selecionados",
+        "solve_all": "Resolver todos"
+      },
+      "messages": {
+        "enter_text": "Digite algum texto",
+        "problems_solved": "{count} problemas resolvidos!"
+      }
+    },
+    "camera_scan": {
+      "title": "Escanear problema",
+      "instructions": "Posicione o problema dentro do quadro",
+      "review_title": "Revisar e editar",
+      "analyzing": "Analisando imagem...",
+      "analyzing_subtitle": "Isso pode levar alguns segundos",
+      "verify_text": "Verifique o texto",
+      "verify_description": "Símbolos matemáticos podem não ser reconhecidos corretamente. Edite o texto abaixo se necessário.",
+      "subject_label": "Disciplina",
+      "problem_text_label": "Texto do problema",
+      "problem_text_hint": "Edite o texto do problema aqui...",
+      "problem_text_tip": "Dica: Use ^ para sobrescrito (ex.: x^2)",
+      "actions": {
+        "retake": "Refazer",
+        "solve_problem": "Resolver problema"
+      },
+      "subjects": {
+        "mathematics": "Matemática",
+        "physics": "Física",
+        "chemistry": "Química",
+        "biology": "Biologia",
+        "computer_science": "Ciência da Computação",
+        "other": "Outro"
+      }
+    },
+    "concept_map": {
+      "title": "Mapa conceitual",
+      "subtitle": "Roteiro visual de aprendizado",
+      "central_topic": "Tópico central",
+      "sections": {
+        "prerequisites": "Pré-requisitos",
+        "prerequisites_subtitle": "Domine estes primeiro",
+        "current_concepts": "Conceitos atuais",
+        "current_concepts_subtitle": "Aprendendo agora",
+        "next_steps": "Próximos passos",
+        "next_steps_subtitle": "Para onde ir depois",
+        "related_topics": "Tópicos relacionados",
+        "related_topics_subtitle": "Explore conexões"
+      },
+      "importance": "Importância:",
+      "connection": "Conexão:"
+    },
+    "formula_cards": {
+      "title": "Cartões de fórmulas",
+      "progress": "Cartão {current} de {total}",
+      "categories": {
+        "rule": "REGRA",
+        "concept": "CONCEITO",
+        "formula": "FÓRMULA",
+        "theorem": "TEOREMA"
+      },
+      "sides": {
+        "explanation": "Explicação",
+        "formula": "fórmula"
+      },
+      "hints": {
+        "tap_to_flip": "Toque para ver {side}",
+        "tap_explanation": "Toque para ver explicação",
+        "tap_formula": "Toque para ver fórmula",
+        "swipe_navigate": "Deslize para esquerda/direita para navegar"
+      },
+      "actions": {
+        "previous": "Anterior",
+        "next": "Próximo",
+        "flip": "Virar"
+      },
+      "messages": {
+        "copied": "Cartão copiado para a área de transferência"
+      }
+    },
+    "hints": {
+      "title": "Modo guiado",
+      "subtitle": "Receba dicas em vez da solução completa",
+      "problem_label": "PROBLEMA",
+      "hint_progress": "Dica {current} de ~{total}",
+      "next_hint_preview": "Próxima dica aborda: {preview}",
+      "all_revealed": "Todas as dicas reveladas! Tente resolver agora.",
+      "all_revealed_status": "Todas as dicas reveladas",
+      "actions": {
+        "reset": "Reiniciar",
+        "get_first_hint": "Primeira dica",
+        "next_hint": "Próxima dica",
+        "thinking": "Pensando...",
+        "see_solution": "Ver solução"
+      },
+      "messages": {
+        "hints_reset": "Dicas reiniciadas"
+      }
+    },
+    "practice_quiz": {
+      "title": "Quiz de prática",
+      "title_with_progress": "Quiz de prática ({current}/{total})",
+      "question_progress": "Pergunta {current}/{total}",
+      "stats": {
+        "correct": "correto"
+      },
+      "question_types": {
+        "multiple_choice": "Múltipla escolha",
+        "true_false": "Verdadeiro ou falso",
+        "fill_blank": "Preencher lacuna"
+      },
+      "feedback": {
+        "correct": "Correto!",
+        "incorrect": "Incorreto",
+        "correct_answer": "Resposta correta: {answer}",
+        "explanation": "Explicação"
+      },
+      "actions": {
+        "next_question": "Próxima pergunta",
+        "view_results": "Ver resultados"
+      },
+      "results": {
+        "perfect": "Nota perfeita! 🎉",
+        "great": "Ótimo trabalho! 🌟",
+        "good": "Bom esforço! 👍",
+        "practice": "Continue praticando! 💪",
+        "quiz_complete": "Quiz concluído!",
+        "close": "Fechar",
+        "try_again": "Tentar novamente"
+      }
+    },
+    "bookmarks": {
+      "title": "Meus favoritos",
+      "search_placeholder": "Buscar favoritos...",
+      "stats": {
+        "total": "Total",
+        "subjects": "Disciplinas",
+        "tags": "Tags"
+      },
+      "edit_sheet": {
+        "title": "Editar favorito",
+        "tags_label": "Tags",
+        "tags_hint": "Adicionar tag...",
+        "notes_label": "Notas",
+        "notes_hint": "Adicione suas notas aqui...",
+        "save_button": "Salvar alterações"
+      },
+      "delete_dialog": {
+        "title": "Excluir favorito",
+        "message": "Tem certeza de que deseja excluir este favorito?",
+        "cancel": "Cancelar",
+        "delete": "Excluir"
+      },
+      "messages": {
+        "updated": "Favorito atualizado",
+        "deleted": "Favorito excluído"
+      },
+      "empty_state": {
+        "title": "Nenhum favorito ainda",
+        "subtitle": "Salve problemas para acessá-los depois"
+      }
+    },
+    "history": {
+      "title": "Histórico de problemas",
+      "search_placeholder": "Buscar problemas...",
+      "delete_dialog": {
+        "title": "Excluir problema?",
+        "message": "Isso excluirá permanentemente este problema e sua solução.",
+        "cancel": "Cancelar",
+        "delete": "Excluir"
+      },
+      "time": {
+        "today": "Hoje",
+        "yesterday": "Ontem",
+        "days_ago": "{days} dias atrás"
+      }
+    },
+    "input": {
+      "title": "Resolvedor de problemas",
+      "subject_label": "Disciplina",
+      "problem_label": "Problema",
+      "problem_hint": "Digite ou cole seu problema aqui...\n\nExemplo: Resolva a equação 2x + 5 = 15",
+      "actions": {
+        "scan": "Escanear",
+        "voice": "Voz",
+        "image": "Imagem",
+        "solve": "Resolver problema",
+        "creating": "Criando..."
+      },
+      "image_uploaded": "Imagem enviada",
+      "voice_coming_soon": "Entrada por voz em breve",
+      "how_it_works": "Como funciona",
+      "agents": {
+        "analysis": {
+          "title": "Agente de análise",
+          "description": "Entende o problema e identifica a abordagem"
+        },
+        "solver": {
+          "title": "Agente resolvedor",
+          "description": "Gera solução passo a passo com explicações"
+        },
+        "verifier": {
+          "title": "Agente verificador",
+          "description": "Confere a solução quanto à correção"
+        }
+      },
+      "subjects": {
+        "auto_detect": "Detectar automaticamente",
+        "mathematics": "Matemática",
+        "physics": "Física",
+        "chemistry": "Química",
+        "biology": "Biologia",
+        "computer_science": "Ciência da Computação",
+        "engineering": "Engenharia",
+        "economics": "Economia",
+        "statistics": "Estatística"
+      },
+      "menu": {
+        "bookmarks": "Favoritos",
+        "history": "Histórico",
+        "batch_solver": "Resolvedor em lote",
+        "camera_scan": "Escanear com câmera"
+      },
+      "messages": {
+        "enter_problem": "Digite um problema ou envie uma imagem"
+      }
+    },
+    "similar_problems": {
+      "title": "Problemas similares",
+      "difficulty": {
+        "easy": "FÁCIL",
+        "medium": "MÉDIO",
+        "hard": "DIFÍCIL"
+      },
+      "solve_this": "Resolver este"
+    },
+    "solution": {
+      "title": "Solução",
+      "final_answer": "Resposta final",
+      "learning_tools": "Ferramentas de aprendizado",
+      "tools": {
+        "hints": "Dicas",
+        "similar": "Similar",
+        "quiz": "Quiz",
+        "chat": "Chat",
+        "concepts": "Conceitos",
+        "formulas": "Fórmulas"
+      },
+      "tabs": {
+        "steps": "Passos",
+        "code": "Código",
+        "alternatives": "Alternativas",
+        "graph": "Gráfico",
+        "analysis": "Análise",
+        "citations": "Citações"
+      },
+      "steps": {
+        "no_solution": "Nenhuma solução disponível",
+        "no_steps": "Nenhum passo de solução disponível",
+        "step_number": "Passo {number}",
+        "copy": "Copiar",
+        "step_copied": "Passo copiado"
+      },
+      "code": {
+        "empty_title": "Nenhum bloco de código disponível"
+      },
+      "alternatives": {
+        "empty_title": "Nenhum método alternativo disponível"
+      },
+      "graph": {
+        "empty_title": "Nenhum dado de gráfico disponível"
+      },
+      "analysis": {
+        "level_explanation": "Explicação nível {level}",
+        "key_points": "Pontos-chave:",
+        "examples": "Exemplos:",
+        "technical_analysis": "Análise técnica",
+        "no_details": "Sem detalhes"
+      },
+      "citations": {
+        "empty_title": "Nenhuma citação disponível"
+      },
+      "complexity": {
+        "title": "Nível de explicação",
+        "beginner": "Iniciante",
+        "intermediate": "Intermediário",
+        "advanced": "Avançado",
+        "expert": "Especialista",
+        "loading": "Carregando explicação..."
+      },
+      "narration": {
+        "title": "Narração da solução",
+        "listen_tooltip": "Ouvir solução",
+        "completed": "Narração concluída",
+        "no_text": "Nenhum texto de solução disponível para narração"
+      },
+      "messages": {
+        "bookmark_added": "Adicionado aos favoritos",
+        "bookmark_removed": "Removido dos favoritos"
+      }
+    },
+    "solving_progress": {
+      "title": "Resolvendo...",
+      "stages": {
+        "analysis": {
+          "title": "Agente de análise",
+          "description": "Entendendo o problema"
+        },
+        "solving": {
+          "title": "Agente resolvedor",
+          "description": "Gerando solução passo a passo"
+        },
+        "verification": {
+          "title": "Agente verificador",
+          "description": "Verificando a correção"
+        }
+      },
+      "status": {
+        "complete": "Concluído",
+        "solution_ready": "Solução pronta!",
+        "redirecting": "Redirecionando para a solução...",
+        "failed": "Falha na resolução",
+        "retry": "Tentar novamente"
+      }
+    },
+    "study_buddy": {
+      "title": "Parceiro de estudo",
+      "subtitle": "Faça perguntas de acompanhamento sobre a solução",
+      "welcome_message": "Olá! Sou seu parceiro de estudo. Analisei a solução do seu problema. Pergunte qualquer coisa — posso explicar os passos com mais detalhes, sugerir abordagens alternativas ou ajudá-lo a praticar conceitos semelhantes.",
+      "suggested_questions_title": "Perguntas sugeridas",
+      "input_placeholder": "Faça uma pergunta de acompanhamento...",
+      "problem_label": "Problema: {problem}",
+      "export": "Exportar",
+      "suggested": {
+        "explain_step": "Pode explicar o passo 2 com mais detalhes?",
+        "why_approach": "Por que usamos essa abordagem?",
+        "other_methods": "Quais são outros métodos para resolver isso?",
+        "simpler_example": "Pode me dar um exemplo mais simples?",
+        "concepts_needed": "Quais conceitos preciso entender para isso?"
+      }
+    },
+    "widgets": {
+      "steps_copied": "Passos copiados para a área de transferência",
+      "copy": "Copiar",
+      "steps": "Passos",
+      "no_steps": "Nenhum passo disponível para este método",
+      "advantages": "Vantagens",
+      "disadvantages": "Desvantagens",
+      "method_type": {
+        "algebraic": "Algébrico",
+        "geometric": "Geométrico",
+        "numerical": "Numérico",
+        "graphical": "Gráfico",
+        "analytical": "Analítico",
+        "other": "Outro"
+      },
+      "status": {
+        "pending": "Pendente",
+        "solving": "Resolvendo...",
+        "completed": "Concluído",
+        "failed": "Falhou"
+      },
+      "retry": "Tentar novamente",
+      "solve": "Resolver",
+      "view_solution": "Ver solução",
+      "search_bookmarks": "Buscar favoritos...",
+      "no_problem_text": "Sem texto do problema",
+      "edit": "Editar",
+      "delete": "Excluir",
+      "date": {
+        "today": "Hoje",
+        "yesterday": "Ontem",
+        "days_ago": "{days} dias atrás"
+      }
+    }
+  }
+}

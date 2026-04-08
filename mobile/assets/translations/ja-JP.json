@@ -1,0 +1,2714 @@
+{
+  "onboarding": {
+    "skip": "スキップ",
+    "next": "次へ",
+    "back": "戻る",
+    "get_started": "始めましょう",
+    "i_have_account": "アカウントをお持ちの方",
+    "app_name": "Studyield",
+    "slides": {
+      "welcome_title": "Studyieldへようこそ",
+      "welcome_desc": "あなたにぴったりの学習ツール。混乱なし、無駄なし — あなたに合わせた最も賢い学習方法。",
+      "badge_ad_free": "広告なし",
+      "badge_free": "無料",
+      "badge_ai": "AI搭載",
+      "study_sets_title": "AIで素早く学習教材を作成",
+      "study_sets_desc": "ノート作りに時間をかけず、実際の学習に集中。AIがあなたの資料を数秒で学習教材に変換します。",
+      "study_sets_bullet1": "PDFからフラッシュカードを数秒で作成",
+      "study_sets_bullet2": "標準、穴埋め、画像オクルージョンから選択",
+      "study_sets_bullet3": "クラスメートと共有して互いに成長",
+      "ai_chat_title": "あなた専用のチューター、24時間対応",
+      "ai_chat_desc": "オフィスアワーを待つ必要なし。いつでも明確で丁寧な説明を受けられます。",
+      "ai_chat_bullet1": "教材について何でも質問して即座に理解",
+      "ai_chat_bullet2": "あなたのレベルに合わせた説明",
+      "ai_chat_bullet3": "前回の続きから再開、自然な学習体験",
+      "problem_solver_title": "どんな問題も即座に解決",
+      "problem_solver_desc": "行き詰まった瞬間？写真を撮るか入力するだけで、解き方がわかります。",
+      "problem_solver_bullet1": "写真を撮るか入力 — 数学、理科、何でもOK",
+      "problem_solver_bullet2": "「なぜ」と「どうやって」を理解",
+      "problem_solver_bullet3": "試験で使える問題解決力を養成",
+      "exam_clone_title": "自信を持って試験に臨む",
+      "exam_clone_desc": "過去問をアップロードして無制限の練習問題を生成。",
+      "exam_clone_bullet1": "AIが試験の形式、スタイル、難易度を学習",
+      "exam_clone_bullet2": "準備ができるまで何度でも練習",
+      "exam_clone_bullet3": "試験日を設定してカスタマイズされた計画を取得",
+      "live_quiz_title": "一緒に学び、一緒に成長",
+      "live_quiz_desc": "学習セッションを友好的な競争に変えましょう。",
+      "live_quiz_bullet1": "コードで友達を招待 — 数秒で開始",
+      "live_quiz_bullet2": "ライブリーダーボードで競争",
+      "live_quiz_bullet3": "自分の学習セットからの問題",
+      "spaced_rep_title": "学んだことを忘れない",
+      "spaced_rep_desc": "スマートシステムが忘却を防ぎます。",
+      "spaced_rep_bullet1": "難しい概念はマスターするまで繰り返し出題",
+      "spaced_rep_bullet2": "既にマスターした内容は復習をスキップ",
+      "spaced_rep_bullet3": "毎日記憶力が強くなるのを実感",
+      "analytics_title": "成長を見て、モチベーションを維持",
+      "analytics_desc": "実際の進歩を見ることほどモチベーションを高めるものはありません。",
+      "analytics_bullet1": "ヒートマップで数週間・数ヶ月の努力を可視化",
+      "analytics_bullet2": "XPを獲得、レベルアップ、ストリークを構築",
+      "analytics_bullet3": "弱点を早期に発見して試験前に対策",
+      "handwriting_title": "あなたのノートをデジタルに",
+      "handwriting_desc": "写真1枚で手書きノートを検索可能・編集可能なテキストに変換。",
+      "handwriting_bullet1": "ノートやホワイトボードの写真を撮影",
+      "handwriting_bullet2": "乱雑な手書きもAIで正確に読み取り",
+      "handwriting_bullet3": "スキャンしたノートを即座にフラッシュカードに変換",
+      "ad_free_title": "広告主ではなく、あなたのために",
+      "ad_free_desc": "勉強は神聖であるべき。広告で集中を妨げません。",
+      "ad_free_bullet1": "広告ゼロ、ポップアップゼロ — 永遠に",
+      "ad_free_bullet2": "あなたのデータはあなたのもの",
+      "ad_free_bullet3": "深い集中のために設計された静かな空間"
+    },
+    "setup": {
+      "skip_for_now": "今はスキップ",
+      "step_of": "ステップ {current} / {total}",
+      "education_title": "あなたの教育レベルは？",
+      "education_desc": "学習体験をカスタマイズするために使います",
+      "education": {
+        "high_school": "高校生",
+        "high_school_desc": "高校に通う学生",
+        "undergraduate": "大学生",
+        "undergraduate_desc": "学士課程の学生",
+        "graduate": "大学院生",
+        "graduate_desc": "修士課程の学生",
+        "post_graduate": "博士課程",
+        "post_graduate_desc": "博士号または博士研究員",
+        "self_learner": "独学",
+        "self_learner_desc": "自主的に学習",
+        "professional": "社会人",
+        "professional_desc": "仕事をしながら学習"
+      },
+      "subjects_title": "興味のある科目は？",
+      "subjects_desc": "学びたい科目を選択してください",
+      "subjects_selected": "{count}件選択済み",
+      "subject": {
+        "mathematics": "数学",
+        "physics": "物理学",
+        "chemistry": "化学",
+        "biology": "生物学",
+        "computer_science": "コンピュータサイエンス",
+        "history": "歴史",
+        "english": "英語",
+        "economics": "経済学",
+        "psychology": "心理学",
+        "engineering": "工学",
+        "medicine": "医学",
+        "law": "法学",
+        "business": "ビジネス",
+        "art_design": "アート＆デザイン",
+        "statistics": "統計学",
+        "philosophy": "哲学"
+      },
+      "add_custom_subject": "カスタム科目を追加",
+      "add": "追加",
+      "goal_title": "あなたの主な目標は？",
+      "goal_desc": "目標に基づいて体験をカスタマイズします",
+      "goal": {
+        "exam_prep": "試験対策",
+        "exam_prep_desc": "近い試験の準備",
+        "daily_study": "毎日の学習",
+        "daily_study_desc": "一貫した学習習慣を構築",
+        "homework": "宿題",
+        "homework_desc": "課題のサポート",
+        "research": "研究",
+        "research_desc": "トピックを深く掘り下げる",
+        "exploring": "探索中",
+        "exploring_desc": "アプリを試している"
+      },
+      "back": "戻る",
+      "continue": "続ける",
+      "complete": "完了",
+      "done_title": "準備完了！",
+      "done_desc": "パーソナライズされた学習体験の準備ができました",
+      "done_study_set": "学習セットを作成",
+      "done_ai_chat": "AIチャット",
+      "done_track": "進捗を追跡",
+      "go_to_dashboard": "ダッシュボードへ"
+    },
+    "slide_1": {
+      "title": "Studyieldへようこそ",
+      "subtitle": "AIパワード学習パートナー",
+      "description": "あなたにぴったりの学習ツール。シンプルで、賢く、あなたのために作られました。"
+    },
+    "slide_2": {
+      "badge": "無料",
+      "title": "AIで素早く学習教材を作成",
+      "subtitle": "スマートフラッシュカード＆学習セット",
+      "description": "ノート作りの時間を減らし、学習に集中。AIがあなたの資料を学習教材に変換します。"
+    },
+    "slide_3": {
+      "badge": "AI搭載",
+      "title": "どんな問題もすぐに解決",
+      "subtitle": "AI問題解決ツール",
+      "description": "写真を撮るか入力するだけ。解き方を理解できます。",
+      "features": {
+        "scan": "スキャン＆解決",
+        "hints": "スマートヒント",
+        "steps": "ステップバイステップ"
+      }
+    },
+    "slide_4": {
+      "badge": "無料",
+      "title": "モチベーションを維持してレベルアップ",
+      "subtitle": "XP、ストリーク＆実績",
+      "description": "実際の進歩を確認してモチベーションを維持。XPを獲得し、ストリークを構築しましょう。"
+    },
+    "slide_5": {
+      "badge": "AI搭載",
+      "title": "あなた専用の学習パス",
+      "subtitle": "スマート学習プラン",
+      "description": "目標と進捗に合わせてカスタマイズされた学習プランを提供。",
+      "benefits": {
+        "benefit_1": "AIが試験日と目標に合わせたプランを作成",
+        "benefit_2": "進捗を追跡してスケジュール通りに",
+        "benefit_3": "最も必要なことに集中する適応型学習"
+      }
+    },
+    "tour": {
+      "skip": "ツアーをスキップ",
+      "start": "開始",
+      "continue_tour": "続ける",
+      "next": "次へ",
+      "got_it": "わかりました！",
+      "study_set_created": "学習セットを作成しました！",
+      "create_study_set": "学習セット作成",
+      "deep_research": "ディープリサーチ",
+      "ai_flashcard_generator": "AIフラッシュカード生成",
+      "ai_problem_solver": "AI問題解決",
+      "please_select_answer": "回答を選択してください",
+      "practice_quiz": "練習クイズ"
+    },
+    "feature_slide": {
+      "ai_tutor": "AIチューター",
+      "sample_question": "光合成はどのように機能しますか？",
+      "sample_answer": "植物は太陽光をエネルギーに変換して...",
+      "problem_label": "問題",
+      "solution_label": "解答",
+      "live_leaderboard": "ライブリーダーボード",
+      "retention_curve": "記憶曲線",
+      "day_1": "1日目",
+      "today": "今日",
+      "study_heatmap": "学習ヒートマップ",
+      "handwritten": "手書き",
+      "digital": "デジタル",
+      "sample_ocr": "ミトコンドリアはパワーハウス..."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "おかえりなさい",
+      "subtitle": "ログインして学習を続けましょう",
+      "email_label": "メールアドレス",
+      "email_hint": "メールアドレスを入力",
+      "password_label": "パスワード",
+      "password_hint": "パスワードを入力",
+      "forgot_password": "パスワードを忘れた？",
+      "login_button": "ログイン",
+      "no_account": "アカウントをお持ちでない方",
+      "sign_up": "新規登録",
+      "or_continue_with": "または以下でログイン",
+      "google_login": "Googleでログイン",
+      "apple_login": "Appleでログイン"
+    },
+    "register": {
+      "title": "アカウント作成",
+      "subtitle": "学習の旅を始めましょう",
+      "name_label": "名前",
+      "name_hint": "名前を入力",
+      "email_label": "メールアドレス",
+      "email_hint": "メールアドレスを入力",
+      "password_label": "パスワード",
+      "password_hint": "パスワードを作成",
+      "confirm_password_label": "パスワード確認",
+      "confirm_password_hint": "パスワードを再入力",
+      "register_button": "アカウント作成",
+      "have_account": "すでにアカウントをお持ちの方",
+      "sign_in": "ログイン",
+      "terms_prefix": "登録により、",
+      "terms": "利用規約",
+      "and": "と",
+      "privacy": "プライバシーポリシー"
+    },
+    "errors": {
+      "email_required": "メールアドレスは必須です",
+      "email_invalid": "有効なメールアドレスを入力してください",
+      "password_required": "パスワードは必須です",
+      "password_min_length": "パスワードは6文字以上必要です",
+      "passwords_not_match": "パスワードが一致しません",
+      "name_required": "名前は必須です",
+      "login_failed": "ログインに失敗しました。認証情報を確認してください",
+      "register_failed": "登録に失敗しました。もう一度お試しください"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "おはようございます",
+      "afternoon": "こんにちは",
+      "evening": "こんばんは"
+    },
+    "welcome_message": "{count}枚のカードが復習待ちです",
+    "welcome_message_empty": "学習の旅を続ける準備はできていますか？",
+    "level": "レベル {level}",
+    "xp_progress": "{current} / {next} XP",
+    "streak_days": "{days}日",
+    "daily_xp": "{current} / {goal} デイリーXP",
+    "gamification": {
+      "xp": "XP",
+      "day": "日",
+      "days": "日間",
+      "daily_xp": "デイリーXP",
+      "level_names": {
+        "0": "初心者",
+        "1": "ブロンズ",
+        "2": "シルバー",
+        "3": "ゴールド",
+        "4": "プラチナ",
+        "5": "ダイヤモンド",
+        "6": "マスター",
+        "7": "グランドマスター",
+        "8": "チャンピオン",
+        "9": "レジェンド",
+        "10": "ミシック",
+        "11": "イモータル"
+      }
+    },
+    "upgrade_pro": {
+      "title": "Proにアップグレード",
+      "badge": "人気",
+      "subtitle": "すべてのプレミアム機能と無制限AIを解放",
+      "offer": "年間プランで20%節約"
+    },
+    "stats": {
+      "study_sets": "学習セット",
+      "flashcards": "フラッシュカード",
+      "due_today": "今日の期限",
+      "quizzes_done": "クイズ完了",
+      "cards": "{count}枚"
+    },
+    "sections": {
+      "quick_actions": "クイックアクション",
+      "recent_study_sets": "最近の学習セット",
+      "view_all": "すべて表示"
+    },
+    "continue_studying": {
+      "title": "学習を続ける",
+      "cards_due": "{count}枚のカードが復習待ち"
+    },
+    "quick_actions": {
+      "new_study_set": {
+        "title": "新規学習セット",
+        "description": "新しいコレクションを作成"
+      },
+      "exam_clone": {
+        "title": "試験クローン",
+        "description": "練習試験を生成"
+      },
+      "problem_solver": {
+        "title": "問題解決",
+        "description": "AIによるステップ解説"
+      },
+      "ai_chat": {
+        "title": "AIチャット",
+        "description": "ノートについて質問"
+      },
+      "view_analytics": {
+        "title": "分析を表示",
+        "description": "学習進捗を追跡"
+      },
+      "knowledge_base": {
+        "title": "ナレッジベース",
+        "description": "ドキュメントをアップロード＆検索"
+      },
+      "join_live_quiz": {
+        "title": "ライブクイズ参加",
+        "description": "リアルタイムで友達と対戦"
+      },
+      "coming_soon": "近日公開"
+    },
+    "empty_state": {
+      "title": "まだ学習セットがありません",
+      "subtitle": "最初の学習セットを作成して学習を始めましょう",
+      "button": "学習セットを作成"
+    }
+  },
+  "study_sets": {
+    "title": "学習セット",
+    "header_title": "マイ学習セット",
+    "header_subtitle": "学習教材を作成・管理",
+    "search_hint": "学習セットを検索...",
+    "new_study_set": "新規学習セット",
+    "create_button": "作成",
+    "no_results_title": "結果なし",
+    "no_results_subtitle": "「{query}」に一致する学習セットがありません",
+    "card": {
+      "public": "公開",
+      "private": "非公開",
+      "edit": "編集",
+      "delete": "削除",
+      "cards_count": "{count}枚",
+      "docs_count": "{count}件"
+    },
+    "empty_state": {
+      "title": "まだ学習セットがありません",
+      "subtitle": "最初の学習セットを作成してフラッシュカードと学習教材を整理しましょう",
+      "button": "学習セットを作成"
+    },
+    "messages": {
+      "created": "学習セットを作成しました！",
+      "updated": "学習セットを更新しました！",
+      "deleted": "学習セットを削除しました！",
+      "error": "学習セットの読み込みエラー",
+      "retry": "再試行"
+    },
+    "detail": {
+      "section_statistics": "統計",
+      "stat_flashcards_label": "フラッシュカード",
+      "stat_notes_label": "ノート",
+      "stat_analytics_label": "分析",
+      "quiz_history_title": "クイズ履歴",
+      "quiz_history_subtitle": "クイズの成績を確認",
+      "section_quick_actions": "クイックアクション",
+      "action_study_session": "学習セッション（全カード）",
+      "action_quiz_mode": "クイズモード",
+      "action_match_game": "マッチゲーム",
+      "action_live_quiz": "ライブクイズ",
+      "action_browse_cards": "カードを閲覧",
+      "action_add_cards": "カードを追加",
+      "section_sources": "ソース",
+      "sources_view_all": "すべて表示",
+      "sources_document_singular": "ドキュメント",
+      "sources_documents_plural": "ドキュメント",
+      "sources_subtitle": "学習資料と参考文献",
+      "sources_empty_state": "ソースはまだありません",
+      "sources_add_documents": "ドキュメントを追加",
+      "section_recent_activity": "最近のアクティビティ",
+      "activity_empty_state": "最近のアクティビティはありません",
+      "menu_edit_study_set": "学習セットを編集",
+      "menu_share": "共有",
+      "menu_delete_study_set": "学習セットを削除",
+      "delete_confirm_title": "学習セットを削除しますか？",
+      "delete_confirm_message": "「{title}」とすべてのフラッシュカードが完全に削除されます。この操作は元に戻せません。",
+      "delete_confirm_cancel": "キャンセル",
+      "delete_confirm_delete": "削除",
+      "study_no_cards_due": "復習するカードはありません！よくできました！🎉",
+      "study_failed_to_load": "フラッシュカードの読み込みに失敗しました",
+      "add_cards_header": "カードを追加",
+      "add_cards_ready_status": "{count}枚準備完了",
+      "add_cards_submit_button": "学習セットに追加",
+      "toast_cards_added_success": "{count}枚のカードを追加しました！",
+      "toast_cards_add_error": "カードの追加に失敗しました: {message}",
+      "add_cards": "カード追加",
+      "full_view": "全表示",
+      "manage_sources": "ソース管理",
+      "view_full_analytics": "分析を全て表示",
+      "view_full_history": "履歴を全て表示",
+      "practice_section": "練習",
+      "practice_study_session": "学習セッション",
+      "practice_cards_due": "{count}枚が期限",
+      "practice_all_cards": "すべてのカード",
+      "practice_quiz_mode": "クイズモード",
+      "practice_quiz_subtitle": "知識をテスト",
+      "practice_match_game": "マッチゲーム",
+      "practice_match_subtitle": "ペアを合わせる",
+      "practice_live_quiz": "ライブクイズ",
+      "practice_live_subtitle": "友達と遊ぶ",
+      "tab_flashcards": "フラッシュカード",
+      "tab_notes": "ノート",
+      "tab_sources": "ソース",
+      "tab_analytics": "分析",
+      "tab_quiz_history": "クイズ履歴",
+      "stat_flashcards": "フラッシュカード",
+      "stat_sources": "ソース",
+      "stat_due_review": "復習予定",
+      "no_sources_title": "ソースがまだありません",
+      "no_sources_subtitle": "ドキュメントをアップロードしてフラッシュカードを生成",
+      "quiz_quizzes": "クイズ",
+      "quiz_attempts": "回数",
+      "quiz_best_score": "最高スコア",
+      "no_quiz_title": "クイズ履歴がありません",
+      "no_quiz_subtitle": "クイズを受けて結果をここで確認しましょう",
+      "countdown_days": "日",
+      "countdown_hours": "時間",
+      "countdown_minutes": "分",
+      "countdown_seconds": "秒",
+      "no_flashcards_title": "フラッシュカードがまだありません",
+      "no_flashcards_subtitle": "フラッシュカードを追加して学習を始めましょう",
+      "no_notes_title": "ノートがまだありません",
+      "no_notes_subtitle": "ノートを作成して学習教材を整理しましょう",
+      "analytics_total_cards": "総カード数",
+      "analytics_mastery": "習熟度",
+      "analytics_due_now": "復習予定",
+      "analytics_mastered": "マスター済み",
+      "flashcard_edit": "編集",
+      "flashcard_delete": "削除",
+      "flashcard_preview": "プレビュー",
+      "flashcard_delete_title": "カードを削除",
+      "flashcard_delete_message": "このフラッシュカードを削除してもよろしいですか？この操作は元に戻せません。",
+      "flashcard_delete_cancel": "キャンセル",
+      "flashcard_delete_confirm": "削除",
+      "cards_count": "{count}枚のカード",
+      "notes_count": "{count}件のノート",
+      "sources_count": "{count}件のソース",
+      "no_flashcards_button": "カードを追加",
+      "no_notes_button": "ノートを見る",
+      "no_sources_button": "ソースを追加",
+      "no_quiz_button": "クイズを開始"
+    },
+    "create_edit": {
+      "title_create": "学習セットを作成",
+      "create_study_set": "学習セットを作成",
+      "title_edit": "学習セットを編集",
+      "cover_image": "カバー画像",
+      "tap_add_cover": "タップしてカバー画像を追加",
+      "tap_to_add_cover_image": "タップしてカバー画像を追加",
+      "title_label": "タイトル *",
+      "title_hint": "例: 生物学101",
+      "title_required": "タイトルは必須です",
+      "description_label": "説明",
+      "description": "説明",
+      "description_hint": "この学習セットの内容は？",
+      "tags_label": "タグ",
+      "tags": "タグ",
+      "tags_hint": "生物学, 試験, 第1章",
+      "tags_helper": "タグをカンマで区切ってください",
+      "exam_date_label": "試験日（任意）",
+      "exam_date_optional": "試験日（任意）",
+      "exam_date_hint": "試験日を選択",
+      "select_exam_date": "試験日を選択",
+      "exam_subject_label": "試験科目",
+      "exam_subject_hint": "例: 中間試験、期末試験",
+      "visibility_public": "公開",
+      "visibility_private": "非公開",
+      "private": "非公開",
+      "visibility_public_desc": "誰でもこの学習セットを閲覧できます",
+      "visibility_private_desc": "自分だけが閲覧できます",
+      "private_description": "自分だけが閲覧できます",
+      "save_changes": "変更を保存",
+      "create_button": "学習セットを作成",
+      "delete_study_set": "学習セットを削除",
+      "delete_confirm_title": "学習セットを削除しますか？",
+      "delete_confirm_message": "「{title}」とすべてのフラッシュカードが完全に削除されます。この操作は元に戻せません。",
+      "subtitle": "学習教材を整理する",
+      "title_placeholder": "タイトルを入力、例: '生物学101 — 第3章'",
+      "description_placeholder": "説明を追加（任意）",
+      "more_options": "その他のオプション",
+      "less_options": "オプションを閉じる",
+      "add_tag": "タグを追加...",
+      "cancel": "キャンセル",
+      "public": "公開",
+      "visibility_label": "公開設定",
+      "cards_ready_count": "{count}枚準備完了",
+      "create_with_cards": "{count}枚のカードで作成",
+      "cards_failed": "学習セットは作成されましたが、一部のカードの保存に失敗しました",
+      "image_uploaded": "画像をアップロードしました！",
+      "upload_failed": "画像のアップロードに失敗しました"
+    },
+    "documents": {
+      "title": "ノート",
+      "create_note": "ノートを作成",
+      "no_notes_title": "ノートはまだありません",
+      "no_notes_subtitle": "ノートを作成して学習資料を整理しましょう",
+      "note_title_label": "タイトル",
+      "note_title_hint": "ノートのタイトルを入力",
+      "note_content_label": "内容",
+      "note_content_hint": "ここにノートを書いてください...",
+      "create_note_button": "ノートを作成",
+      "fill_both_fields": "タイトルと内容の両方を入力してください",
+      "note_created": "ノートを作成しました！",
+      "failed_to_create": "ノートの作成に失敗しました: {error}",
+      "content": "内容",
+      "write_your_note_here": "ここにノートを書いてください...",
+      "no_notes_yet": "ノートはまだありません",
+      "create_notes_description": "ノートを作成して学習資料を整理しましょう",
+      "failed_to_create_note": "ノートの作成に失敗しました: {error}",
+      "fill_title_and_content": "タイトルと内容の両方を入力してください",
+      "enter_note_title": "ノートのタイトルを入力",
+      "note_created_successfully": "ノートを作成しました！",
+      "notes": "ノート"
+    },
+    "flashcard_creation": {
+      "title": "フラッシュカードを作成",
+      "tab_manual": "手動",
+      "tab_ai": "AI生成",
+      "tab_import": "インポート",
+      "create_cards": "{count}枚の{cards}を作成",
+      "add_cards": "{count}枚の{cards}を追加",
+      "card": "カード",
+      "cards": "カード",
+      "no_flashcards": "少なくとも1枚のフラッシュカードを作成してください",
+      "no_flashcards_to_add": "追加するフラッシュカードがありません",
+      "create_flashcards": "フラッシュカードを作成",
+      "create_at_least_one": "少なくとも1枚のフラッシュカードを作成してください",
+      "ai_generate": "AI生成",
+      "manual": "手動",
+      "import": "インポート"
+    },
+    "quiz_history": {
+      "title": "クイズ履歴",
+      "no_history_title": "クイズ履歴なし",
+      "no_history_subtitle": "クイズを受けて成績履歴を確認しましょう",
+      "summary_quizzes": "クイズ",
+      "summary_attempts": "回答回数",
+      "summary_best_score": "最高スコア",
+      "questions": "{count}問",
+      "attempts": "{count}回",
+      "attempt": "回",
+      "best": "最高: {score}%",
+      "no_attempts": "まだ回答していません",
+      "time_spent": "{minutes}分{seconds}秒",
+      "failed_to_load": "クイズ履歴の読み込みに失敗しました: {error}",
+      "quiz_history": "クイズ履歴",
+      "no_quiz_history": "クイズ履歴なし",
+      "no_quiz_history_description": "クイズを受けて成績履歴を確認しましょう",
+      "quizzes": "クイズ",
+      "best_score": "最高スコア",
+      "questions_and_attempts": "{questionCount}問 • {attemptCount}回",
+      "questions_only": "{questionCount}問 • まだ回答していません",
+      "no_attempts_yet": "まだ回答していません",
+      "questions_and_time": "{totalQuestions}問 • {minutes}分{seconds}秒"
+    }
+  },
+  "analytics": {
+    "title": "分析",
+    "timeRange": {
+      "sevenDays": "7日間",
+      "thirtyDays": "30日間",
+      "ninetyDays": "90日間",
+      "allTime": "全期間"
+    },
+    "stats": {
+      "studyTime": "学習時間",
+      "cardsReviewed": "復習カード数",
+      "quizzes": "クイズ",
+      "avgScore": "平均スコア"
+    },
+    "sections": {
+      "studyActivity": "学習アクティビティ",
+      "streak": "ストリーク",
+      "performance": "パフォーマンス"
+    },
+    "heatmap": {
+      "title": "学習ヒートマップ",
+      "less": "少",
+      "more": "多"
+    },
+    "cardMastery": {
+      "title": "カード習得状況",
+      "noData": "カードデータがありません"
+    },
+    "retentionCurve": {
+      "title": "記憶定着曲線",
+      "noData": "学習を始めて記憶定着曲線を確認しましょう"
+    },
+    "studyTime": {
+      "title": "学習時間",
+      "daily": "日別",
+      "weekly": "週別",
+      "noData": "学習時間はまだ記録されていません"
+    },
+    "streak": {
+      "title": "ストリークカレンダー",
+      "dayStreak": "日連続",
+      "dayAbbr": {
+        "sun": "日",
+        "mon": "月",
+        "tue": "火",
+        "wed": "水",
+        "thu": "木",
+        "fri": "金",
+        "sat": "土"
+      }
+    },
+    "months": {
+      "january": "1月",
+      "february": "2月",
+      "march": "3月",
+      "april": "4月",
+      "may": "5月",
+      "june": "6月",
+      "july": "7月",
+      "august": "8月",
+      "september": "9月",
+      "october": "10月",
+      "november": "11月",
+      "december": "12月"
+    },
+    "cardStatus": {
+      "new": "新規",
+      "learning": "学習中",
+      "review": "復習",
+      "mastered": "習得済み"
+    },
+    "chart": {
+      "percentageSymbol": "%",
+      "minutesSymbol": "分",
+      "dayLabel": "日"
+    },
+    "time": {
+      "hoursSymbol": "時間",
+      "minutesSymbol": "分"
+    }
+  },
+  "learning_paths": {
+    "title": "学習パス",
+    "detail": {
+      "title": "学習パス",
+      "learning_path": "学習パス",
+      "complete": "完了",
+      "your_journey": "あなたの学習の旅",
+      "your_learning_journey": "あなたの学習の旅",
+      "next_up": "次のステップ",
+      "step_number": "ステップ {number}",
+      "steps": "ステップ",
+      "remaining": "残り",
+      "total_time": "合計時間",
+      "overall_progress": "全体の進捗",
+      "stats": {
+        "steps": "ステップ",
+        "remaining": "残り",
+        "total_time": "合計時間"
+      },
+      "progress": {
+        "overall": "全体の進捗",
+        "steps_count": "{completed}/{total} ステップ"
+      },
+      "minutes": "{minutes}分",
+      "view_resource": "リソースを見る",
+      "mark_done": "完了",
+      "mark_as_done": "完了にする",
+      "step_completed": "ステップ完了！",
+      "path_completed": "完了しました！",
+      "steps_count": "{completed}/{total} ステップ",
+      "completed_on": "{date}に完了"
+    },
+    "validation": {
+      "please_enter_topic": "トピックを入力してください"
+    },
+    "messages": {
+      "path_created_success": "学習パスを作成しました！"
+    },
+    "how_it_works": {
+      "title": "学習パスの仕組み",
+      "step1_title": "目標を設定",
+      "step1_subtitle": "AIにトピックとレベルを伝える",
+      "step2_title": "ロードマップを取得",
+      "step2_subtitle": "AIがステップバイステップの計画を作成",
+      "step3_title": "進捗を追跡",
+      "step3_subtitle": "ステップを完了して進捗を確認"
+    },
+    "buttons": {
+      "cancel": "キャンセル",
+      "generate_path": "パスを生成",
+      "generating": "生成中..."
+    },
+    "form": {
+      "title": "学習パスを作成",
+      "topic_label": "トピック",
+      "topic_hint": "例: 機械学習、微積分、物理学",
+      "current_level_label": "現在のレベル",
+      "target_level_label": "目標レベル",
+      "level_beginner": "初級",
+      "level_intermediate": "中級",
+      "level_advanced": "上級",
+      "level_expert": "エキスパート",
+      "study_time_label": "学習時間: 週{hours}時間"
+    },
+    "empty_state": {
+      "title": "学習パスはまだありません",
+      "subtitle": "最初のパーソナライズされた学習ロードマップを作成しましょう"
+    },
+    "path_card": {
+      "steps_count": "{completed}/{total} ステップ",
+      "hours_label": "{hours}時間"
+    },
+    "dialogs": {
+      "delete_confirm_title": "学習パスを削除しますか？",
+      "delete_confirm_message": "このパスとすべての進捗が完全に削除されます。",
+      "cancel_button": "キャンセル",
+      "delete_button": "削除"
+    }
+  },
+  "profile": {
+    "title": "設定",
+    "subtitle": "アカウントと設定を管理",
+    "settings": {
+      "profile": {
+        "title": "プロフィール",
+        "subtitle": "名前、アバター、学歴、科目"
+      },
+      "account": {
+        "title": "アカウント設定",
+        "subtitle": "パスワード、セキュリティ、アカウント削除"
+      },
+      "notifications": {
+        "title": "通知設定",
+        "subtitle": "通知の設定を管理"
+      },
+      "language": {
+        "title": "言語",
+        "choose": "言語を選択",
+        "close": "閉じる"
+      },
+      "subscription": {
+        "title": "サブスクリプション",
+        "subtitle": "プラン、使用状況、請求書"
+      },
+      "logout": {
+        "title": "ログアウト",
+        "confirm_title": "ログアウト",
+        "confirm_message": "ログアウトしてもよろしいですか？",
+        "cancel": "キャンセル",
+        "confirm": "ログアウト"
+      }
+    },
+    "plan": {
+      "free": "無料プラン",
+      "manage": "管理",
+      "upgrade": "アップグレード"
+    },
+    "version": "Studyield v1.0.0",
+    "edit": {
+      "title": "プロフィール編集",
+      "avatar": {
+        "default_initial": "U"
+      },
+      "display_name": {
+        "label": "表示名",
+        "hint": "名前を入力"
+      },
+      "email": {
+        "label": "メールアドレス",
+        "placeholder": "メールなし",
+        "readonly_note": "メールアドレスは変更できません"
+      },
+      "education_level": {
+        "label": "学歴",
+        "options": {
+          "high_school": "高校",
+          "undergraduate": "大学",
+          "graduate": "大学院",
+          "post_graduate": "博士課程",
+          "self_learner": "独学",
+          "professional": "社会人"
+        }
+      },
+      "subjects": {
+        "label": "興味のある科目",
+        "common_header": "一般科目",
+        "custom_header": "カスタム科目",
+        "add_custom": {
+          "label": "カスタム科目を追加",
+          "hint": "カスタム科目を追加"
+        },
+        "options": {
+          "mathematics": "数学",
+          "physics": "物理",
+          "chemistry": "化学",
+          "biology": "生物",
+          "computer_science": "情報科学",
+          "english": "英語",
+          "history": "歴史",
+          "geography": "地理",
+          "economics": "経済",
+          "psychology": "心理学"
+        }
+      },
+      "button": {
+        "saving": "保存中...",
+        "save": "変更を保存",
+        "saved": "保存しました！"
+      },
+      "message": {
+        "success": "プロフィールを更新しました！",
+        "error": "プロフィールの保存に失敗しました"
+      },
+      "add": "追加"
+    },
+    "account": {
+      "title": "アカウント設定",
+      "change_password": {
+        "title": "パスワード変更",
+        "subtitle": "定期的にパスワードを更新してください",
+        "current_password_label": "現在のパスワード",
+        "new_password_label": "新しいパスワード",
+        "confirm_password_label": "新しいパスワードの確認",
+        "button": "パスワードを変更"
+      },
+      "validation": {
+        "current_password_required": "現在のパスワードは必須です",
+        "password_min_length": "新しいパスワードは8文字以上必要です",
+        "passwords_mismatch": "パスワードが一致しません"
+      },
+      "messages": {
+        "password_changed_success": "パスワードを変更しました！"
+      },
+      "information": {
+        "title": "アカウント情報",
+        "email_label": "メールアドレス",
+        "plan_label": "プラン",
+        "plan_free": "無料",
+        "email_verified_label": "メール認証",
+        "email_verified_yes": "認証済み",
+        "member_since_label": "登録日"
+      },
+      "delete": {
+        "title": "アカウント削除",
+        "subtitle": "アカウントを完全に削除",
+        "button": "アカウントを削除",
+        "warning_title": "この操作は元に戻せません！",
+        "warning_message": "すべてのデータが完全に削除されます。",
+        "confirmation_instruction": "確認のため DELETE と入力：",
+        "confirmation_hint": "DELETE",
+        "confirm_button": "完全に削除",
+        "cancel_button": "キャンセル"
+      }
+    }
+  },
+  "subscription": {
+    "main": {
+      "appbar_title": "サブスクリプション",
+      "header_label": "プランの変更・アップグレード",
+      "heading": "プランを選択",
+      "subheading": "プレミアム機能で学習を加速",
+      "billing_monthly": "月額",
+      "billing_yearly": "年額",
+      "billing_yearly_save": "17%お得",
+      "popular_badge": "一番人気",
+      "plan_trial_title": "7日間トライアル",
+      "plan_trial_subtitle": "お試しプラン",
+      "plan_pro_title": "Pro",
+      "plan_pro_monthly_subtitle": "月ごとの柔軟なお支払い",
+      "plan_pro_yearly_subtitle": "本気の学習者に最適",
+      "monthly_period": "/月",
+      "yearly_period": "/年",
+      "button_current_plan": "現在のプラン",
+      "button_free_forever": "永久無料",
+      "button_upgrade_pro": "Proにアップグレード",
+      "features": {
+        "free_study_sets": "スタディセット3つ",
+        "free_flashcards": "フラッシュカード50枚",
+        "free_ai_requests": "AI リクエスト月10回",
+        "basic_quizzes": "基本クイズ",
+        "spaced_repetition": "間隔反復学習 (SM-2)",
+        "cloze_image_occlusion": "穴埋め＆画像オクルージョンカード",
+        "handwriting_ocr": "手書き文字認識",
+        "unlimited_study_sets": "無制限スタディセット",
+        "unlimited_flashcards": "無制限フラッシュカード",
+        "unlimited_ai_requests": "無制限AIリクエスト",
+        "all_quizzes": "全クイズ＋ライブクイズ",
+        "problem_solver": "問題ソルバー＋一括ソルバー",
+        "exam_cloning": "試験クローン",
+        "teach_back_mode": "ティーチバックモード",
+        "learning_paths": "ラーニングパス",
+        "deep_research": "ディープリサーチ",
+        "advanced_analytics": "高度な分析",
+        "knowledge_base": "ナレッジベース",
+        "concept_maps": "コンセプトマップ＋公式カード"
+      },
+      "trust_secure_title": "安全",
+      "trust_secure_subtitle": "SSL暗号化",
+      "trust_flexible_title": "柔軟",
+      "trust_flexible_subtitle": "いつでもキャンセル可能",
+      "trust_free_title": "永久無料",
+      "trust_free_subtitle": "クレジットカード不要"
+    },
+    "manage": {
+      "appbar_title": "サブスクリプション管理",
+      "error_open_portal": "ポータルを開けませんでした",
+      "cancel_dialog_title": "サブスクリプションをキャンセルしますか？",
+      "cancel_dialog_content": "請求期間の終了まで引き続きアクセスできます。",
+      "cancel_dialog_keep_btn": "サブスクリプションを維持",
+      "cancel_dialog_cancel_btn": "キャンセル",
+      "cancel_success_message": "期間終了時にサブスクリプションがキャンセルされます",
+      "cancel_error_message": "キャンセルに失敗しました",
+      "default_plan_name": "Proプラン",
+      "status_active": "有効",
+      "price_monthly": "/月",
+      "price_yearly": "/年",
+      "button_change_plan": "プラン変更",
+      "info_current_period_label": "現在の期間",
+      "info_next_billing_label": "次回請求日",
+      "card_billing_history_title": "請求履歴",
+      "card_billing_history_subtitle": "過去の請求書を表示",
+      "card_payment_methods_title": "お支払い方法",
+      "card_payment_methods_subtitle": "カードまたは支払い方法を更新",
+      "card_cancel_subscription_title": "サブスクリプションをキャンセル",
+      "card_cancel_subscription_subtitle": "期間終了までアクセスは維持されます",
+      "webview_title": "請求ポータル"
+    },
+    "checkout": {
+      "appbar_title": "お支払い",
+      "coupon_applied_message": "クーポン適用済み！",
+      "payment_success_message": "お支払い完了！",
+      "payment_error_message": "お支払いに失敗しました",
+      "header_title": "{plan}にアップグレード",
+      "header_subtitle_monthly": "月額サブスクリプション",
+      "header_subtitle_yearly": "年額サブスクリプション",
+      "order_summary_label": "注文概要",
+      "plan_line_item": "{plan}プラン ({cycle})",
+      "coupon_applied_label": "クーポン適用済み",
+      "coupon_discount_amount": "-${amount}",
+      "total_label": "合計",
+      "billing_period_year": "/年",
+      "billing_period_month": "/月",
+      "coupon_code_label": "クーポンコード",
+      "coupon_input_placeholder": "クーポンコードを入力",
+      "coupon_apply_button": "適用",
+      "what_you_get_heading": "含まれる機能",
+      "features": {
+        "unlimited_ai": "無制限AIリクエスト",
+        "premium_features": "全プレミアム機能のロック解除",
+        "priority_support": "優先サポート",
+        "advanced_analytics": "高度な分析",
+        "exam_cloning": "試験クローン＆生成",
+        "deep_research": "ディープリサーチ機能"
+      },
+      "button_processing": "処理中...",
+      "button_proceed": "お支払いに進む",
+      "trust_ssl": "SSL暗号化",
+      "trust_stripe": "Stripe決済",
+      "trust_cancel_anytime": "いつでもキャンセル可能"
+    },
+    "success": {
+      "welcome_heading": "Proへようこそ！",
+      "payment_successful_message": "お支払いが完了しました",
+      "info_plan_label": "プラン",
+      "info_status_label": "ステータス",
+      "info_status_active": "有効",
+      "features_heading": "解放された機能",
+      "button_continue": "Pro機能を使い始める"
+    },
+    "webview": {
+      "appbar_title": "お支払い完了",
+      "error_loading_page": "ページの読み込みに失敗しました",
+      "cancel_dialog_title": "お支払いをキャンセルしますか？",
+      "cancel_dialog_content": "このお支払いをキャンセルしてもよろしいですか？",
+      "cancel_dialog_continue_btn": "いいえ、続ける",
+      "cancel_dialog_cancel_btn": "はい、キャンセル"
+    },
+    "status_card": {
+      "status": "ステータス",
+      "renews_on": "更新日",
+      "days_remaining": "残り日数",
+      "unlimited_ai": "無制限AIリクエスト",
+      "unlimited_sets": "無制限スタディセット",
+      "storage": "10GBストレージ",
+      "priority_support": "優先サポート"
+    }
+  },
+  "special_offer": {
+    "badge": "ウェルカムオファー",
+    "headline_start": "本日限り ",
+    "headline_discount": "20% OFF",
+    "headline_end": " Pro",
+    "subtitle": "プレミアム機能で学習の可能性を最大限に引き出そう",
+    "features": {
+      "unlimited_title": "すべて無制限",
+      "unlimited_desc": "スタディセット、フラッシュカード、AIリクエストが無制限",
+      "ai_title": "フルAIパワー",
+      "ai_desc": "問題ソルバー、試験クローン、ディープリサーチ、ティーチバックモード",
+      "premium_title": "プレミアムツール",
+      "premium_desc": "高度な分析、ラーニングパス、コンセプトマップ、ナレッジベース"
+    },
+    "pricing": {
+      "monthly": "月額",
+      "yearly": "年額",
+      "best_value": "お得",
+      "per_month": "/月",
+      "per_year": "/年",
+      "save_badge": "20%節約 — 期間限定オファー"
+    },
+    "cta": "今すぐ20%OFFを受け取る",
+    "skip": "後で",
+    "urgency": "もうすぐ終了 — お見逃しなく！"
+  },
+  "notifications": {
+    "header": {
+      "title": "通知",
+      "unread_count": "{count}件の新着",
+      "all_caught_up": "すべて確認済み！",
+      "mark_all_as_read": "すべて既読にする",
+      "clear_all": "すべてクリア"
+    },
+    "tabs": {
+      "all": "すべて",
+      "unread": "未読",
+      "settings": "設定"
+    },
+    "dialogs": {
+      "clear_all_title": "すべてクリアしますか？",
+      "clear_all_message": "すべての通知が完全に削除されます。",
+      "cancel": "キャンセル",
+      "delete_all": "すべて削除"
+    },
+    "time": {
+      "just_now": "たった今",
+      "minutes_ago": "{minutes}分前",
+      "hours_ago": "{hours}時間前",
+      "days_ago": "{days}日前"
+    },
+    "empty": {
+      "no_notifications_title": "通知なし",
+      "no_notifications_message": "重要なことがあればお知らせします",
+      "all_caught_up_title": "すべて確認済み！",
+      "all_caught_up_message": "すべての通知を読みました。\n情報をチェックしていて素晴らしいです！🎉",
+      "feature_stay_updated": "最新情報をチェック",
+      "feature_quick_actions": "クイックアクション",
+      "feature_track_progress": "進捗を追跡"
+    },
+    "card": {
+      "delete": "削除",
+      "mark_as_read": "既読にする"
+    },
+    "types": {
+      "info": "情報",
+      "success": "成功",
+      "warning": "警告",
+      "reminder": "リマインダー",
+      "achievement": "実績",
+      "study": "学習"
+    },
+    "settings": {
+      "info_card_title": "最新情報を逃さない！",
+      "info_card_message": "通知を有効にして重要な更新を見逃さないようにしましょう",
+      "channels_section": "通知チャンネル",
+      "types_section": "通知する内容",
+      "in_app_title": "アプリ内通知",
+      "in_app_subtitle": "アプリ使用中に通知を受け取る",
+      "email_title": "メール通知",
+      "email_subtitle": "重要な更新をメールで受け取る",
+      "push_title": "プッシュ通知",
+      "push_subtitle": "このデバイスでプッシュ通知を受け取る",
+      "study_reminders_title": "学習リマインダー",
+      "study_reminders_subtitle": "フラッシュカードや学習セッションのリマインダー",
+      "achievements_title": "実績とマイルストーン",
+      "achievements_subtitle": "学習の実績をお祝い",
+      "weekly_digest_title": "週間ダイジェスト",
+      "weekly_digest_subtitle": "週間の学習進捗のまとめ",
+      "footer_message": "通知設定はすべてのデバイスで同期されます"
+    }
+  },
+  "flashcards": {
+    "add": {
+      "title_edit": "フラッシュカードを編集",
+      "title_add": "フラッシュカードを追加",
+      "label_front": "表面（質問）",
+      "hint_front": "質問や用語を入力",
+      "error_front_required": "表面は必須です",
+      "label_back": "裏面（回答）",
+      "hint_back": "回答や定義を入力",
+      "error_back_required": "裏面は必須です",
+      "label_notes": "メモ（任意）",
+      "hint_notes": "追加のメモやコンテキストを入力",
+      "label_tags": "タグ（任意）",
+      "hint_tags_example": "第1章, 重要, 復習",
+      "helper_tags": "タグをカンマで区切ってください",
+      "button_save_changes": "変更を保存",
+      "button_create": "フラッシュカードを作成"
+    },
+    "list": {
+      "label_flashcards": "フラッシュカード",
+      "sort_newest": "新しい順",
+      "sort_oldest": "古い順",
+      "sort_difficulty": "難易度順",
+      "menu_newest": "新しい順",
+      "menu_oldest": "古い順",
+      "menu_difficulty": "難易度順",
+      "toast_created": "フラッシュカードを作成しました！",
+      "toast_updated": "フラッシュカードを更新しました！",
+      "toast_bulk_created": "{count}枚のカードを追加しました！",
+      "toast_deleted": "フラッシュカードを削除しました",
+      "error_title": "フラッシュカードの読み込みエラー",
+      "button_retry": "再試行",
+      "filter_all": "すべて",
+      "filter_new": "新規",
+      "filter_learning": "学習中",
+      "filter_review": "復習",
+      "filter_mastered": "習得済み",
+      "filter_due": "期限",
+      "empty_filter_message": "このカテゴリにカードはありません",
+      "button_add_cards": "カードを追加",
+      "modal_add_cards_title": "カードを追加",
+      "button_add_to_set": "学習セットに追加",
+      "ready_card_singular": "枚",
+      "ready_cards_plural": "枚",
+      "ready_text": "準備完了",
+      "empty_title": "フラッシュカードはまだありません",
+      "empty_message": "最初のフラッシュカードを作成して学習を始めましょう",
+      "empty_button": "カードを追加"
+    },
+    "study": {
+      "card_progress": "カード {current}/{total}",
+      "question_rating": "どのくらい覚えていましたか？",
+      "rating_again": "もう一度",
+      "rating_again_subtitle": "忘れた",
+      "rating_hard": "難しい",
+      "rating_hard_subtitle": "困難",
+      "rating_good": "良い",
+      "rating_good_subtitle": "思い出した",
+      "rating_easy": "簡単",
+      "rating_easy_subtitle": "完璧",
+      "hint_tap_card": "タップして回答を表示",
+      "label_question": "質問",
+      "label_answer": "回答",
+      "exit_dialog_title": "学習セッションを終了しますか？",
+      "exit_dialog_message": "今終了すると進捗が保存されません。よろしいですか？",
+      "exit_button_continue": "学習を続ける",
+      "exit_button_exit": "終了"
+    },
+    "widgets": {
+      "session_summary": {
+        "title": "セッション完了！",
+        "cards_reviewed": "{count}枚のカードを復習しました",
+        "accuracy": "正答率",
+        "easy_good": "簡単/良い",
+        "hard": "難しい",
+        "again": "もう一度",
+        "done_button": "完了",
+        "done": "完了"
+      },
+      "ai_assist": {
+        "header": "AIアシスト",
+        "suggest_answer_title": "回答を提案",
+        "suggest_answer_description": "包括的な回答を生成",
+        "elaborate_title": "詳しく説明",
+        "elaborate_description": "詳細とコンテキストを追加",
+        "add_mnemonic_title": "記憶術を追加",
+        "add_mnemonic_description": "覚えやすくするコツを作成",
+        "simplify_title": "簡略化",
+        "simplify_description": "より簡単な言葉で書き直す",
+        "suggestion_label": "AIの提案",
+        "try_again_button": "もう一度試す",
+        "accept_button": "適用",
+        "suggestion_applied_toast": "AIの提案を適用しました！",
+        "title": "AIアシスト",
+        "suggest_answer_desc": "包括的な回答を生成",
+        "elaborate_desc": "詳細とコンテキストを追加",
+        "add_mnemonic_desc": "覚えやすくするコツを作成",
+        "simplify_desc": "より簡単な言葉で書き直す",
+        "ai_suggestion": "AIの提案",
+        "try_again": "もう一度試す",
+        "applied_success": "AIの提案を適用しました！",
+        "accept": "適用"
+      },
+      "ai_generation": {
+        "minimum_chars_error": "50文字以上入力してください",
+        "cards_ready_toast": "{count}枚のカードを追加可能",
+        "info_banner_text": "AIがコンテンツからフラッシュカードを生成します",
+        "banner_text": "AIがコンテンツからフラッシュカードを生成します",
+        "content_label": "コンテンツ",
+        "content_hint": "テキスト、ノート、学習資料をここに貼り付けてください...",
+        "char_counter_helper": "{count}/50文字（最低）",
+        "char_count": "{count}/50文字（最低）",
+        "card_count_label": "カード枚数",
+        "number_of_cards": "カード枚数",
+        "card_type_label": "カードタイプ",
+        "card_type": "カードタイプ",
+        "qa_type": "Q&A",
+        "type_qa": "Q&A",
+        "fill_blank_type": "穴埋め",
+        "type_fill_blank": "穴埋め",
+        "true_false_type": "正誤問題",
+        "type_true_false": "正誤問題",
+        "difficulty_label": "難易度",
+        "difficulty": "難易度",
+        "easy_difficulty": "簡単",
+        "difficulty_easy": "簡単",
+        "medium_difficulty": "普通",
+        "difficulty_medium": "普通",
+        "hard_difficulty": "難しい",
+        "difficulty_hard": "難しい",
+        "generating_button": "生成中...",
+        "generate_button": "AIで生成",
+        "generated_cards_title": "生成されたカード（{count}枚）",
+        "deselect_all_button": "全て選択解除",
+        "select_all_button": "全て選択",
+        "card_number_label": "カード {number}",
+        "answer_label": "回答:",
+        "add_selected_button": "選択した{count}枚を追加",
+        "min_characters_error": "50文字以上入力してください",
+        "cards_ready": "{count}枚のカードを追加可能",
+        "generating": "生成中...",
+        "generated_cards": "生成されたカード（{count}枚）",
+        "deselect_all": "全て選択解除",
+        "select_all": "全て選択",
+        "card_number": "カード {number}",
+        "add_selected": "選択した{count}枚を追加"
+      },
+      "manual_creation": {
+        "card_count_label": "{count}{cards}",
+        "card_count": {
+          "zero": "カードなし",
+          "one": "1枚",
+          "other": "{count}枚"
+        },
+        "add_card_button": "カードを追加",
+        "add_card": "カードを追加",
+        "empty_state_title": "カードはまだありません",
+        "no_cards": "カードはまだありません",
+        "create_first_card_button": "最初のカードを作成",
+        "create_first": "最初のカードを作成",
+        "singular_card": "枚",
+        "plural_cards": "枚",
+        "card_header_title": "カード {number}",
+        "ready_badge": "準備完了",
+        "delete_card_tooltip": "カードを削除",
+        "card_type_label": "カードタイプ",
+        "qa_type": "Q&A",
+        "cloze_type": "穴埋め",
+        "image_occlusion_type": "画像オクルージョン",
+        "front_label": "表面 *",
+        "front_hint": "質問やプロンプト",
+        "back_label": "裏面 *",
+        "back_hint": "回答や説明",
+        "notes_label": "メモ（任意）",
+        "notes_hint": "追加のコンテキスト",
+        "tags_label": "タグ（任意）",
+        "tags_hint": "トピック1, トピック2",
+        "tags_helper": "タグをカンマで区切ってください",
+        "card_number": "カード {number}",
+        "delete_tooltip": "カードを削除",
+        "type_qa": "Q&A",
+        "type_cloze": "穴埋め",
+        "type_image_occlusion": "画像オクルージョン",
+        "ready": "準備完了",
+        "card_type": "カードタイプ"
+      },
+      "editor": {
+        "manual_tab": "手動",
+        "ai_tab": "AI",
+        "import_tab": "インポート",
+        "tab_manual": "手動",
+        "tab_ai": "AI",
+        "tab_import": "インポート"
+      },
+      "import": {
+        "recording_saved_toast": "録音を保存しました！",
+        "microphone_permission_error": "マイクの権限が拒否されました",
+        "recording_started_toast": "録音を開始しました...",
+        "recording_failed_error": "録音に失敗しました",
+        "file_pick_error": "ファイルの選択に失敗しました",
+        "camera_open_error": "カメラの起動に失敗しました",
+        "image_pick_error": "画像の選択に失敗しました",
+        "no_text_in_image_error": "画像にテキストが見つかりません",
+        "text_extracted_success": "テキストを抽出しました！",
+        "image_process_error": "画像の処理に失敗しました",
+        "empty_text_error": "インポートするテキストを入力してください",
+        "no_file_selected_error": "ファイルを選択してください",
+        "no_audio_error": "まず録音するか音声ファイルを選択してください",
+        "no_image_error": "まずスキャンするか画像を選択してください",
+        "no_google_docs_url_error": "Google DocsのURLを入力してください",
+        "no_youtube_url_error": "YouTubeのURLを入力してください",
+        "no_website_url_error": "ウェブサイトのURLを入力してください",
+        "cards_ready_toast": "{count}枚のカードを追加可能",
+        "info_banner_text": "さまざまなソースからフラッシュカードをインポート",
+        "banner_text": "さまざまなソースからフラッシュカードをインポート",
+        "source_label": "インポート元",
+        "pdf_source": "PDFアップロード",
+        "source_pdf": "PDFアップロード",
+        "youtube_source": "YouTube動画",
+        "source_youtube": "YouTube動画",
+        "record_audio_source": "音声録音",
+        "source_record_audio": "音声録音",
+        "audio_file_source": "音声ファイル",
+        "source_audio_file": "音声ファイル",
+        "website_source": "ウェブサイトURL",
+        "source_website": "ウェブサイトURL",
+        "camera_source": "カメラスキャン",
+        "source_camera": "カメラスキャン",
+        "google_docs_source": "Google Docs",
+        "source_google_docs": "Google Docs",
+        "text_source": "テキスト貼り付け",
+        "source_text": "テキスト貼り付け",
+        "handwritten_source": "手書きノート",
+        "source_handwritten": "手書きノート",
+        "text_label": "テキスト貼り付け",
+        "text_hint": "フラッシュカードのコンテンツを入力...",
+        "pdf_description": "PDFドキュメントをアップロード",
+        "choose_pdf_button": "PDFを選択",
+        "change_pdf_button": "PDFを変更",
+        "recording_in_progress_text": "録音中...",
+        "recording_saved_text": "録音を保存しました！",
+        "tap_to_record_text": "タップして録音開始",
+        "record_voice_hint": "音声を録音すると文字起こしします",
+        "stop_recording_button": "録音停止",
+        "start_recording_button": "録音開始",
+        "record_again_button": "再録音",
+        "choose_audio_button": "音声ファイルを選択",
+        "change_audio_button": "ファイルを変更",
+        "audio_formats_helper": "対応形式: MP3, WAV, M4A",
+        "camera_title": "カメラでドキュメントをスキャン",
+        "camera_hint": "ノートや教科書の写真を撮影",
+        "open_camera_button": "カメラを開く",
+        "google_docs_label": "Google Docs URL",
+        "google_docs_hint": "https://docs.google.com/document/d/...",
+        "google_docs_helper": "共有可能なGoogle Docsリンクを貼り付け",
+        "handwritten_title": "手書きノートをスキャン",
+        "handwritten_hint": "手書きノートからテキストを抽出します",
+        "take_photo_button": "写真を撮る",
+        "from_gallery_button": "ギャラリーから",
+        "paste_text_label": "テキスト貼り付け",
+        "paste_text_hint": "フラッシュカードのコンテンツを入力...",
+        "separator_label": "カード区切り",
+        "separator_hint": "例: \\n\\n or ---",
+        "separator_helper": "カードを分割するパターン",
+        "choose_file_button": "ファイルを選択",
+        "change_file_button": "ファイルを変更",
+        "file_formats_helper": "対応形式: PDF, TXT, CSV, MD",
+        "youtube_label": "YouTube URL",
+        "youtube_hint": "https://youtube.com/watch?v=...",
+        "youtube_helper": "字幕を抽出します",
+        "website_label": "ウェブサイトURL",
+        "website_hint": "https://example.com",
+        "website_helper": "コンテンツを抽出します",
+        "importing_button": "インポート中...",
+        "import_button": "フラッシュカードをインポート",
+        "imported_cards_title": "インポートされたカード（{count}枚）",
+        "card_number_label": "カード {number}",
+        "add_to_study_set_button": "{count}枚を学習セットに追加",
+        "mic_permission_denied": "マイクの権限が拒否されました",
+        "file_pick_failed": "ファイルの選択に失敗しました: {error}",
+        "camera_failed": "カメラの起動に失敗しました: {error}",
+        "image_pick_failed": "画像の選択に失敗しました: {error}",
+        "no_text_found": "画像にテキストが見つかりません",
+        "image_process_failed": "画像の処理に失敗しました: {error}",
+        "enter_text_error": "インポートするテキストを入力してください",
+        "select_file_error": "ファイルを選択してください",
+        "select_audio_error": "まず録音するか音声ファイルを選択してください",
+        "select_image_error": "まずスキャンするか画像を選択してください",
+        "enter_gdocs_url_error": "Google DocsのURLを入力してください",
+        "enter_youtube_url_error": "YouTubeのURLを入力してください",
+        "enter_website_url_error": "ウェブサイトのURLを入力してください",
+        "pdf_hint": "PDFドキュメントをアップロード",
+        "record_hint": "音声を録音すると文字起こしします",
+        "add_to_set": "{count}枚を学習セットに追加",
+        "gdocs_label": "Google Docs URL",
+        "gdocs_hint": "https://docs.google.com/document/d/...",
+        "gdocs_helper": "共有可能なGoogle Docsリンクを貼り付け",
+        "recording_saved": "録音を保存しました！",
+        "recording_started": "録音を開始しました...",
+        "recording_failed": "録音に失敗しました",
+        "text_extracted": "テキストの抽出に成功しました！",
+        "cards_ready": "{count}枚のカードを追加可能",
+        "choose_pdf": "PDFを選択",
+        "change_pdf": "PDFを変更",
+        "recording": "録音中...",
+        "tap_to_record": "タップして録音開始",
+        "stop_recording": "録音を停止",
+        "record_again": "再録音",
+        "start_recording": "録音開始",
+        "choose_audio": "音声ファイルを選択",
+        "change_file": "ファイルを変更",
+        "audio_formats": "対応形式: MP3, WAV, M4A",
+        "open_camera": "カメラを開く",
+        "take_photo": "写真を撮る",
+        "from_gallery": "ギャラリーから",
+        "choose_file": "ファイルを選択",
+        "file_formats": "対応形式: PDF, TXT, CSV, MD",
+        "importing": "インポート中...",
+        "imported_cards": "インポートしたカード ({count})",
+        "card_number": "カード {number}"
+      }
+    },
+    "list_item": {
+      "edit_card": "カード編集",
+      "delete_title": "フラッシュカードを削除しますか？",
+      "delete_message": "この操作は取り消せません。"
+    }
+  },
+  "notes": {
+    "title": "ノート",
+    "mindMapHistoryTooltip": "マインドマップ履歴",
+    "mindMapTooltip": "マインドマップ",
+    "aiGenerateButton": "AI生成",
+    "addNoteButton": "ノート追加",
+    "emptyStateTitle": "ノートがまだありません",
+    "emptyStateSubtitle": "ノートを作成して学習教材を整理しましょう",
+    "createManuallyButton": "手動で作成",
+    "noSearchResultsTitle": "検索に一致するノートがありません",
+    "noSearchResultsSubtitle": "検索やフィルターを調整してみてください",
+    "createSuccess": "ノートを作成しました！",
+    "deleteSuccess": "ノートを削除しました！",
+    "updateSuccess": "ノートを更新しました！",
+    "aiNotesGeneratedSuccess": "{count}件のAIノートを生成しました！",
+    "deleteConfirmationTitle": "ノートを削除しますか？",
+    "deleteConfirmationMessage": "「{title}」を削除してもよろしいですか？",
+    "searchPlaceholder": "ノートを検索...",
+    "filterAll": "すべて",
+    "filterMoreTags": "+{count}件",
+    "sortNewest": "新しい順",
+    "sortOldest": "古い順",
+    "sortTitle": "タイトル順",
+    "createNoteTitle": "ノート作成",
+    "editNoteTitle": "ノート編集",
+    "titleLabel": "タイトル",
+    "titleHint": "ノートのタイトルを入力",
+    "titleValidation": "タイトルを入力してください",
+    "contentLabel": "内容",
+    "contentHint": "ここにノートを書いてください...\n\nMarkdown書式に対応しています",
+    "contentValidation": "内容を入力してください",
+    "tagsLabel": "タグ（任意）",
+    "tagsHint": "例: 生物学, 重要, 第1章（カンマ区切り）",
+    "tagsHintEdit": "カンマ区切り",
+    "markdownHelpText": "Markdown記法でフォーマットできます：\n• **太字**, *斜体*, `コード`\n• # 見出し, ## 小見出し\n• - リスト",
+    "createNoteSubmitButton": "ノートを作成",
+    "updateNoteButton": "ノートを更新",
+    "pinnedBadge": "ピン留め",
+    "updatedDateLabel": "更新日 {date}",
+    "generateAITitle": "AIでノートを生成",
+    "generateAISubtitle": "コンテンツを抽出してスマートノートを作成",
+    "sourceTypePDF": "PDFドキュメント",
+    "sourceTypePDFDescription": "PDFファイルをアップロード",
+    "sourceTypeYouTube": "YouTube動画",
+    "sourceTypeYouTubeDescription": "動画から抽出",
+    "sourceTypeWebsite": "ウェブサイトURL",
+    "sourceTypeWebsiteDescription": "ウェブページをスクレイピング",
+    "sourceTypeAudio": "音声ファイル",
+    "sourceTypeAudioDescription": "音声を文字起こし",
+    "sourceTypeHandwriting": "手書き",
+    "sourceTypeHandwritingDescription": "画像からOCR",
+    "sourceTypeText": "テキスト貼り付け",
+    "sourceTypeTextDescription": "クリップボードから",
+    "chooseSourceLabel": "コンテンツソースを選択",
+    "youtubeUrlLabel": "YouTube URL",
+    "youtubeUrlHint": "https://www.youtube.com/watch?v=...",
+    "websiteUrlLabel": "ウェブサイトURL",
+    "websiteUrlHint": "https://en.wikipedia.org/wiki/...",
+    "pasteContentLabel": "コンテンツを貼り付け",
+    "pasteContentHint": "講義ノート、記事テキスト、またはその他のコンテンツを貼り付け...",
+    "characterCount": "{count}文字",
+    "fileUploadPrompt": "ファイルをドロップまたはクリックして選択",
+    "pdfFileTypes": "PDF, TXT, MD（最大20MB）",
+    "audioFileTypes": "MP3, WAV, M4A（最大50MB）",
+    "imageFileTypes": "JPG, PNG, HEIC（最大20MB）",
+    "extractGenerateButton": "抽出してノートを生成",
+    "processingTitle": "コンテンツを処理中",
+    "processingSubtitle": "少々お待ちください...",
+    "processingStep1": "コンテンツを抽出中",
+    "processingStep2": "テキストを分析中",
+    "processingStep3": "要約を生成中",
+    "processingStep4": "ノートを作成中",
+    "extractionSuccess": "コンテンツの抽出に成功しました！",
+    "aiSummaryLabel": "AI要約",
+    "suggestedTagsLabel": "おすすめタグ",
+    "contentPreviewLabel": "コンテンツプレビュー（{count}文字）",
+    "startOverButton": "やり直す",
+    "saveNoteButton": "ノートを保存",
+    "generatingPresentationTitle": "プレゼンテーション生成中",
+    "generatingPresentationSubtitle": "AIがノートからスライドを作成中...",
+    "generationFailedTitle": "生成に失敗しました",
+    "aiGeneratedBadge": "AI生成",
+    "regenerateButton": "再生成",
+    "mindMapTitle": "マインドマップ",
+    "generatingMindMapMessage": "マインドマップを生成中...",
+    "mindMapGenerationFailed": "マインドマップの生成に失敗しました",
+    "mindMapHistoryTitle": "マインドマップ履歴",
+    "failedToLoadHistory": "履歴の読み込みに失敗しました",
+    "noMindMapsEmptyTitle": "マインドマップがまだありません",
+    "noMindMapsEmptySubtitle": "ノートからマインドマップを生成しましょう",
+    "mindMapDeletedSuccess": "マインドマップを削除しました",
+    "mindMapDeleteFailed": "削除に失敗しました",
+    "mindMapLoadFailed": "読み込みに失敗しました",
+    "deleteMindMapTitle": "マインドマップを削除",
+    "deleteMindMapConfirmation": "このマインドマップを削除してもよろしいですか？",
+    "analyzingNotesMessage": "ノートを分析中...",
+    "creatingMindMapMessage": "マインドマップを作成中",
+    "mindMapGuideTitle": "マインドマップガイド",
+    "mindMapGuideContent": "このマインドマップはノートのすべての概念を視覚化します。\n\n• ピンチで拡大/縮小\n• ドラッグで移動\n• 更新ボタンで再生成",
+    "mindMapHelpText": "ピンチで拡大 • ドラッグで探索",
+    "noNotesForMindMap": "マインドマップを生成できるノートがありません",
+    "shareNoteTitle": "ノートを共有",
+    "shareLinkLabel": "リンクを共有",
+    "shareToSocialLabel": "SNSで共有",
+    "shareWhatsApp": "WhatsApp",
+    "shareTwitter": "Twitter",
+    "shareFacebook": "Facebook",
+    "shareLinkedIn": "LinkedIn",
+    "shareEmail": "メール",
+    "downloadLabel": "ダウンロード",
+    "downloadText": "テキスト (.txt)",
+    "downloadMarkdown": "Markdown (.md)",
+    "sharingPreviewLabel": "共有中",
+    "linkCopiedSuccess": "リンクをクリップボードにコピーしました！",
+    "downloadTextSuccess": "ダウンロード完了: {title}.txt",
+    "downloadFailed": "ダウンロードに失敗しました",
+    "downloadMarkdownSuccess": "ダウンロード完了: {title}.md"
+  },
+  "quiz": {
+    "live_lobby": {
+      "room_code": "ルームコード",
+      "copy_code": "コードをコピー",
+      "share_code": "このコードを友達に共有して参加してもらいましょう",
+      "room_code_copied": "ルームコードをコピーしました！",
+      "players": "プレイヤー ({count})",
+      "host_badge": "ホスト",
+      "starting": "開始中...",
+      "start_game": "ゲーム開始",
+      "waiting_for_host": "ホストがゲームを開始するのを待っています...",
+      "error_occurred": "エラーが発生しました"
+    },
+    "live_quiz": {
+      "title": "ライブクイズ",
+      "hero_title": "リアルタイムで対戦",
+      "hero_subtitle": "友達と一緒にプレイ！",
+      "host_game": "ゲームを主催",
+      "host_description": "ルームを作成して友達にコードを共有",
+      "creating_room": "ルーム作成中...",
+      "create_room": "ルーム作成",
+      "or": "または",
+      "join_game": "ゲームに参加",
+      "room_code_label": "ルームコード",
+      "room_code_hint": "ABC123",
+      "your_name_label": "あなたの名前",
+      "your_name_hint": "名前を入力",
+      "joining": "参加中...",
+      "join_room": "ルームに参加",
+      "please_enter_room_code": "ルームコードを入力してください",
+      "please_enter_name": "名前を入力してください",
+      "failed_to_create_room": "ルームの作成に失敗しました",
+      "failed_to_join_room": "ルームへの参加に失敗しました",
+      "error": "エラー: {error}"
+    },
+    "match_game": {
+      "title": "マッチゲーム",
+      "reset_game": "ゲームをリセット",
+      "time": "時間",
+      "moves": "手数",
+      "matches": "マッチ",
+      "questions": "問題",
+      "answers": "回答",
+      "congratulations": "おめでとうございます！ 🎉",
+      "completed_message": "{seconds}秒、{moves}手でクリア",
+      "play_again": "もう一度プレイ",
+      "no_flashcards_available": "マッチングに使えるフラッシュカードがありません",
+      "failed_to_load": "フラッシュカードの読み込みに失敗しました: {error}",
+      "time_seconds": "{seconds}秒"
+    },
+    "mode": {
+      "title": "クイズモード",
+      "hero_title": "知識をテスト",
+      "hero_subtitle": "フラッシュカードからAIが問題を生成",
+      "number_of_questions": "問題数",
+      "question_types": "問題タイプ",
+      "multiple_choice": "選択式",
+      "multiple_choice_description": "4つの選択肢から1つを選択",
+      "true_false": "○×問題",
+      "true_false_description": "文が正しいか判断する",
+      "fill_blank": "穴埋め問題",
+      "fill_blank_description": "空欄に単語やフレーズを入力",
+      "timer": "タイマー",
+      "timer_description": "1問あたり30秒",
+      "generating_quiz": "クイズ生成中...",
+      "generate_start_quiz": "生成してクイズ開始",
+      "please_select_question_type": "少なくとも1つの問題タイプを選択してください",
+      "failed_to_generate": "クイズの生成に失敗しました: {error}"
+    },
+    "results": {
+      "title": "クイズ結果",
+      "score": "スコア",
+      "outstanding": "素晴らしい！ 🎉",
+      "great_job": "よくできました！ 👏",
+      "good_effort": "よく頑張りました！ 💪",
+      "keep_practicing": "練習を続けましょう！ 📚",
+      "correct": "正解",
+      "incorrect": "不正解",
+      "time": "時間",
+      "time_minutes": "{minutes}分",
+      "back_to_study_set": "学習セットに戻る",
+      "try_again": "もう一度"
+    },
+    "taking": {
+      "exit_quiz": "クイズを終了しますか？",
+      "exit_message": "進捗が失われます。",
+      "cancel": "キャンセル",
+      "exit": "終了",
+      "question_progress": "{current}/{total}",
+      "submitting": "送信中...",
+      "type_answer_here": "ここに回答を入力...",
+      "submit_answer": "回答を送信",
+      "correct_feedback": "正解！",
+      "incorrect_feedback": "不正解",
+      "correct_answer": "正解: {answer}",
+      "explanation": "解説",
+      "previous": "前へ",
+      "next_question": "次の問題",
+      "submit_quiz": "クイズを送信",
+      "failed_to_submit": "クイズの送信に失敗しました: {error}"
+    }
+  },
+  "research": {
+    "title": "ディープリサーチ",
+    "messages": {
+      "please_enter_query": "リサーチクエリを入力してください",
+      "creating": "リサーチ作成中...",
+      "loading_report": "リサーチレポートを読み込み中...",
+      "pdf_export_soon": "PDFエクスポートは近日公開！",
+      "markdown_copied": "Markdownをクリップボードにコピーしました！",
+      "report_copied": "レポートをコピーしました！",
+      "could_not_open_link": "リンクを開けませんでした"
+    },
+    "form": {
+      "query_hint": "例: 「量子コンピューティングを詳しく説明」",
+      "ai_powered_research": "AI搭載リサーチ",
+      "deep_dive_topic": "あらゆるトピックを深く掘り下げる"
+    },
+    "sections": {
+      "source_types": "📚 ソースタイプ",
+      "research_depth": "🔍 リサーチの深さ",
+      "output_format": "📄 出力形式"
+    },
+    "source_types": {
+      "documents": "ドキュメント",
+      "web": "ウェブ",
+      "academic": "学術"
+    },
+    "depth": {
+      "quick": "クイック",
+      "standard": "標準",
+      "comprehensive": "包括的"
+    },
+    "output_format": {
+      "detailed": "詳細",
+      "summary": "要約",
+      "bullets": "箇条書き"
+    },
+    "buttons": {
+      "start_research": "ディープリサーチを開始",
+      "cancel": "キャンセル"
+    },
+    "recent": {
+      "title": "最近のリサーチ",
+      "done": "完了",
+      "failed": "失敗",
+      "in_progress": "進行中"
+    },
+    "progress": {
+      "title": "リサーチ進行中",
+      "query_label": "リサーチクエリ",
+      "overall_progress": "全体の進捗",
+      "pipeline_title": "リサーチパイプライン",
+      "phases": {
+        "planning": "計画中",
+        "researching": "調査中",
+        "synthesizing": "統合中",
+        "completed": "完了",
+        "failed": "失敗",
+        "starting": "開始中"
+      },
+      "agents": {
+        "planning": "計画エージェント",
+        "planning_desc": "クエリを分析しリサーチ戦略を計画中",
+        "research": "調査エージェント",
+        "research_desc": "選択したソースから情報を収集中",
+        "synthesis": "統合エージェント",
+        "synthesis_desc": "調査結果を整理・統合中"
+      }
+    },
+    "report": {
+      "deep_research": "ディープリサーチ",
+      "tab_report": "レポート",
+      "tab_sources": "ソース ({count})",
+      "tab_export": "エクスポート",
+      "executive_summary": "エグゼクティブサマリー",
+      "key_insights": "重要なインサイト",
+      "sources_references": "ソースと参考文献",
+      "sources_cited": "{count}件の引用ソース",
+      "no_sources": "ソースが見つかりません",
+      "knowledge_base_sources": "ナレッジベース ({count})",
+      "web_sources": "ウェブソース ({count})",
+      "study_material": "学習教材",
+      "relevance": "関連度 {score}%",
+      "relevance_label": "関連度",
+      "citation_copied": "引用をコピーしました！",
+      "export_title": "リサーチをエクスポート",
+      "export_format": "エクスポート形式",
+      "export_pdf": "PDFとしてエクスポート",
+      "export_pdf_desc": "PDFドキュメントとして保存",
+      "export_markdown": "Markdownとしてコピー",
+      "export_markdown_desc": "引用付きフォーマットテキスト",
+      "export_plain": "プレーンテキストをコピー",
+      "export_plain_desc": "書式なしのシンプルなテキスト",
+      "share": "レポートを共有",
+      "share_desc": "他のアプリで共有",
+      "citation_style": "引用スタイル",
+      "citation_preview": "プレビュー",
+      "delete_confirm_title": "リサーチを削除しますか？",
+      "delete_confirm_message": "このリサーチレポートは完全に削除されます。",
+      "delete_confirm_cancel": "キャンセル",
+      "delete_confirm_delete": "削除"
+    },
+    "date": {
+      "today": "今日",
+      "yesterday": "昨日",
+      "days_ago": "{days}日前"
+    }
+  },
+  "ai_chat": {
+    "title": "スタディバディ",
+    "history_title": "チャット履歴",
+    "history_subtitle": "AIとの会話履歴",
+    "new_conversation": "新しい会話",
+    "messages": {
+      "ask_anything": "何でも聞いてください...",
+      "thinking": "考え中...",
+      "no_conversations": "会話がまだありません",
+      "start_new": "新しいチャットを始めましょう",
+      "search_conversations": "会話を検索...",
+      "delete_confirm_title": "会話を削除しますか？",
+      "delete_confirm_message": "この会話とすべてのメッセージが完全に削除されます。",
+      "delete_confirm_cancel": "キャンセル",
+      "delete_confirm_delete": "削除"
+    },
+    "empty_state": {
+      "title": "スタディバディ",
+      "description": "学習教材について質問して、解説や要約などを入手しましょう。\nドキュメントを参照して引用付きの回答を提供します。",
+      "prompts": {
+        "explain": "このトピックの重要な概念を説明して",
+        "summary": "学習教材の要約を作成して",
+        "important": "覚えるべき最も重要なポイントは？",
+        "examples": "例を使ってもっとわかりやすく説明して"
+      }
+    },
+    "file_picker": {
+      "gallery": "ギャラリーから選択",
+      "camera": "写真を撮る",
+      "pdf": "PDFドキュメントを選択"
+    },
+    "history": {
+      "new_chat": "新しいチャット",
+      "no_message": "会話がまだありません"
+    },
+    "date": {
+      "today": "今日",
+      "yesterday": "昨日",
+      "days_ago": "{days}日前"
+    }
+  },
+  "teach_back": {
+    "title": "ティーチバック",
+    "messages": {
+      "please_enter_topic": "トピックを入力してください",
+      "please_select_study_set": "学習セットを選択してください",
+      "please_enter_explanation": "説明を入力してください",
+      "explanation_submitted": "説明を送信しました！",
+      "no_study_sets": "学習セットが見つかりません。まず作成してください！"
+    },
+    "feynman": {
+      "title": "ファインマン・テクニック",
+      "step1": "トピックを選択",
+      "step1_desc": "概念を選ぶ",
+      "step2": "簡単に説明",
+      "step2_desc": "教え返す",
+      "step3": "フィードバック",
+      "step3_desc": "AIが評価",
+      "step4": "ギャップを埋める",
+      "step4_desc": "改善して再挑戦"
+    },
+    "form": {
+      "mode_topic": "トピックを入力",
+      "mode_study_set": "学習セットから",
+      "topic_label": "マスターしたいトピックは？",
+      "topic_hint": "例: ピタゴラスの定理、光合成、需要と供給...",
+      "quick_picks": "クイック選択:",
+      "reference_label": "参考資料（任意 — AIの評価精度が向上します）",
+      "reference_hint": "教科書のノート、講義内容、要点をここに貼り付け...",
+      "study_set_label": "学習セットを選択 — AIがフラッシュカードからトピックを自動生成します",
+      "study_set_empty": "学習セットが見つかりません。まず作成してください！",
+      "cards_count": "{count}枚のカード",
+      "cancel": "キャンセル",
+      "generate_start": "生成して開始",
+      "start_teaching": "教え始める",
+      "generating": "生成中...",
+      "creating": "作成中..."
+    },
+    "session": {
+      "essentials_title": "要点の確認",
+      "load_essentials": "要点を読み込む",
+      "who_explaining": "誰に説明していますか？",
+      "difficulty_eli5": "5歳児",
+      "difficulty_eli5_desc": "最もシンプルに",
+      "difficulty_classmate": "クラスメート",
+      "difficulty_classmate_desc": "通常レベル",
+      "difficulty_expert": "専門家",
+      "difficulty_expert_desc": "技術的な深さ",
+      "explanation_title": "あなたの説明",
+      "explanation_hint": "概念を自分の言葉で説明してください...",
+      "characters_count": "{count}文字",
+      "submit_explanation": "説明を送信",
+      "submitting": "送信中...",
+      "review_explanation": "説明を確認する",
+      "evaluate_button": "説明を評価する",
+      "evaluating": "評価中...",
+      "challenge_button": "チャレンジ",
+      "convince_ai_title": "AIを納得させよう",
+      "convince_ai_desc": "懐疑的なAI生徒が質問します。あなたの理解を証明しましょう！",
+      "convinced_badge": "納得させた！ +20 XP",
+      "skeptical_student": "懐疑的な生徒",
+      "defend_hint": "あなたの理解を証明してください...",
+      "thinking": "考え中..."
+    },
+    "progress": {
+      "phase_explain": "説明",
+      "phase_submit": "送信",
+      "phase_evaluate": "評価"
+    },
+    "evaluation": {
+      "xp_earned": "+50 XP獲得！",
+      "overall_score": "総合スコア",
+      "score_breakdown": "スコア内訳",
+      "accuracy": "正確性",
+      "clarity": "明瞭さ",
+      "completeness": "完全性",
+      "understanding": "理解度",
+      "strengths": "強み",
+      "improve": "改善ポイント",
+      "deepen": "理解を深める",
+      "try_again": "もう一度",
+      "new_topic": "新しいトピック",
+      "score_excellent": "素晴らしい理解度！",
+      "score_good": "良い理解度！",
+      "score_fair": "まずまずの理解度",
+      "score_needs_improvement": "改善が必要"
+    },
+    "status": {
+      "pending": "保留中",
+      "submitted": "送信済み",
+      "evaluated": "評価済み"
+    },
+    "difficulty": {
+      "eli5": "ELI5",
+      "classmate": "クラスメート",
+      "expert": "エキスパート"
+    },
+    "empty_state": {
+      "title": "ティーチバックセッションがまだありません",
+      "subtitle": "ファインマン・テクニックで理解度をテストしましょう"
+    }
+  },
+  "common": {
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "close": "閉じる",
+    "retry": "再試行",
+    "tryAgain": "もう一度",
+    "errorGeneric": "エラーが発生しました",
+    "noData": "データなし",
+    "gotIt": "了解",
+    "edit": "編集",
+    "save": "保存",
+    "add": "追加",
+    "copy": "コピー",
+    "logout": "ログアウト",
+    "skip": "スキップ",
+    "copied": "コピーしました",
+    "next": "次へ",
+    "continue_action": "続ける",
+    "got_it": "わかりました！",
+    "leave": "退出",
+    "stay": "残る",
+    "more": "その他",
+    "view_full": "全表示",
+    "edit_card": "カード編集",
+    "delete_flashcard_title": "フラッシュカードを削除しますか？",
+    "delete_flashcard_message": "この操作は取り消せません。",
+    "code_copied": "コードをコピーしました",
+    "could_not_open_link": "リンクを開けませんでした",
+    "please_enter_text": "テキストを入力してください",
+    "loading": "読み込み中..."
+  },
+  "exam_clone": {
+    "list": {
+      "title": "試験クローンエンジン",
+      "subtitle": "AI搭載の練習試験",
+      "upload_tooltip": "試験をアップロード",
+      "loading": "試験を読み込み中...",
+      "overview": "概要",
+      "your_exams": "あなたの試験",
+      "upload_button": "アップロード",
+      "no_exams_title": "試験がまだありません",
+      "no_exams_subtitle": "最初の試験をアップロードしてAIで\n練習問題を生成しましょう",
+      "upload_exam_button": "試験をアップロード",
+      "review_queue": "復習キュー",
+      "review_queue_subtitle_due": "{count}件期限",
+      "review_queue_subtitle_caught_up": "すべて完了",
+      "due_count": "{count}件期限",
+      "bookmarks": "ブックマーク",
+      "bookmarks_subtitle": "保存した問題",
+      "saved_questions": "保存した問題",
+      "badges": "バッジ",
+      "badges_subtitle": "実績",
+      "achievements": "実績",
+      "leaderboard": "リーダーボード",
+      "leaderboard_subtitle": "ランキング",
+      "rankings": "ランキング",
+      "upload": "アップロード",
+      "analysis": "分析",
+      "practice": "練習",
+      "notification_title": "{count}{questions}が期限です！",
+      "notification_subtitle": "練習して記憶を強化しましょう",
+      "notification": {
+        "multiple_due": "{count}問が期限です！",
+        "message": "練習して記憶を強化しましょう",
+        "single_due": "1問が期限です！"
+      },
+      "question": "問題",
+      "questions": "問題",
+      "stats": {
+        "exams": "試験",
+        "original": "オリジナル",
+        "generated": "生成済み",
+        "ready": "準備完了",
+        "failed": "失敗",
+        "pending": "保留中",
+        "processing": "処理中"
+      },
+      "all_caught_up": "すべて完了",
+      "failed": "処理に失敗しました",
+      "delete_dialog": {
+        "title": "試験を削除しますか？",
+        "message": "この試験と生成されたすべての問題が完全に削除されます。",
+        "cancel": "キャンセル",
+        "delete": "削除"
+      },
+      "empty": {
+        "title": "試験がまだありません",
+        "message": "最初の試験をアップロードしてAIで練習問題を生成しましょう",
+        "button": "最初の試験をアップロード"
+      }
+    },
+    "upload": {
+      "title": "試験をアップロード",
+      "subtitle": "過去の試験をアップロードして練習問題を生成",
+      "title_label": "試験タイトル *",
+      "title_hint": "例: 中間試験、生物学期末",
+      "subject_label": "科目",
+      "subject_hint": "例: 生物学、数学",
+      "method_label": "アップロード方法",
+      "upload_pdf": "PDFアップロード",
+      "upload_pdf_desc": "試験をPDFファイルとしてアップロード",
+      "paste_text": "テキスト貼り付け",
+      "paste_text_desc": "試験テキストをコピー＆ペースト",
+      "pdf_label": "PDFファイルを選択",
+      "pdf_hint": "タップしてPDFを選択",
+      "text_label": "試験テキスト",
+      "text_hint": "ここに試験問題を貼り付け...",
+      "uploading": "アップロード中...",
+      "upload_button": "試験をアップロード",
+      "upload_analyze": "アップロード＆分析",
+      "click_upload": "クリックしてアップロード",
+      "file_formats": "対応形式: PDF, JPG, PNG",
+      "tip_pdf_fail": "PDFが失敗する場合は試験の鮮明な写真を撮ってみてください",
+      "title_required": "試験タイトルを入力してください",
+      "file_required": "PDFファイルを選択してください",
+      "text_required": "試験テキストを貼り付けてください",
+      "character_count": "{count}文字",
+      "error_title_required": "試験タイトルを入力してください",
+      "error_file_required": "PDFファイルを選択してください",
+      "error_content_required": "試験内容を入力してください"
+    },
+    "detail": {
+      "title": "試験分析",
+      "export_pdf": "PDFエクスポート",
+      "review_queue": "復習キュー",
+      "live_session": "ライブセッション",
+      "practice": "練習",
+      "coming_soon": "{feature}は近日公開",
+      "exam_style_analysis": "試験スタイル分析",
+      "question_types": "問題タイプ",
+      "difficulty_distribution": "難易度分布",
+      "easy": "簡単",
+      "medium": "普通",
+      "hard": "難しい",
+      "topics_covered": "カバーされたトピック",
+      "more_topics": "+{count}件",
+      "original": "オリジナル",
+      "generated": "生成済み",
+      "total": "合計",
+      "best_score": "最高スコア",
+      "tabs": {
+        "original": "オリジナル ({count})",
+        "generated": "生成済み ({count})",
+        "analytics": "分析"
+      },
+      "generate_more": "さらに問題を生成",
+      "no_questions": "問題がまだありません",
+      "no_practice_data": "練習データがまだありません",
+      "complete_practice": "分析を表示するには、少なくとも1回の練習セッションを完了してください。",
+      "question_type": {
+        "multiple_choice": "選択式",
+        "short_answer": "記述式",
+        "true_false": "○×問題",
+        "essay": "小論文",
+        "fill_blank": "穴埋め"
+      },
+      "correct_answer": "正解",
+      "explanation": "解説",
+      "questions_generated": "{count}問を生成しました！",
+      "generate_questions_title": "問題を生成",
+      "generate_questions_subtitle": "AIが試験に基づいてさらに問題を作成",
+      "number_of_questions": "問題数",
+      "difficulty": "難易度",
+      "match_original": "オリジナルに合わせる",
+      "topics_optional": "トピック（任意）",
+      "generating": "生成中...",
+      "generate_count": "{count}問を生成"
+    },
+    "badges": {
+      "title": "実績",
+      "subtitle": "練習してバッジを獲得しよう",
+      "your_progress": "あなたの進捗",
+      "failed_to_load": "バッジの読み込みに失敗しました: {error}",
+      "remaining": "あと{count}個のバッジがロック解除可能",
+      "all": "すべて",
+      "recently_earned": "最近獲得",
+      "earned_on": "{date}に獲得",
+      "from_exam": "{title}から",
+      "xp_reward": "+{xp} XP"
+    },
+    "bookmarks": {
+      "title": "ブックマークした問題",
+      "subtitle": "復習用にマークした問題",
+      "stats_count": "{count}",
+      "stats_label": "ブックマークした問題",
+      "from_exams_count": "{count}",
+      "from_exams_label": "異なる試験から",
+      "difficulty": {
+        "easy": "簡単",
+        "medium": "普通",
+        "hard": "難しい",
+        "unknown": "不明"
+      },
+      "options": "選択肢:",
+      "correct": "（正解）",
+      "correct_answer": "正解:",
+      "empty_title": "ブックマークがまだありません",
+      "empty_message": "練習中に難しい問題をブックマークして後で復習しましょう。\n問題のブックマークアイコンをクリックしてここに保存できます。",
+      "start_practicing": "練習を開始",
+      "failed_to_load": "ブックマークの読み込みに失敗しました: {error}",
+      "failed_to_remove": "ブックマークの削除に失敗しました: {error}"
+    },
+    "leaderboard": {
+      "title": "リーダーボード",
+      "subtitle": "あなたの順位を確認",
+      "period": {
+        "weekly": "週間",
+        "monthly": "月間",
+        "all_time": "全期間"
+      },
+      "your_rank": "あなたの順位",
+      "top_10": "トップ10！",
+      "keep_practicing": "練習を続けよう",
+      "avg_score": "平均スコア",
+      "correct": "正解",
+      "avg_score_label": "平均スコア",
+      "exams_count": "{count}試験",
+      "exams_and_correct": "{exams}試験 • {correct}正解",
+      "empty_title": "データがまだありません",
+      "empty_message": "最初に試験を受けてリーダーボードに載りましょう！",
+      "failed_to_load": "リーダーボードの読み込みに失敗しました: {error}"
+    },
+    "practice": {
+      "title": "練習",
+      "practice_exam": "練習試験",
+      "questions_available": "{count}問利用可能",
+      "setup": {
+        "number_of_questions": "問題数",
+        "time_limit_minutes": "制限時間（分）",
+        "minutes": "{time}分",
+        "include_questions": "含める問題",
+        "original_questions": "オリジナル試験問題",
+        "ai_questions": "AI生成問題",
+        "start_practice": "練習開始",
+        "all": "すべて"
+      },
+      "progress": {
+        "question_of": "問題 {current}/{total}",
+        "answered": "{count}問回答済み",
+        "flagged": "{count}問フラグ付き",
+        "time_remaining": "{time}"
+      },
+      "difficulty": {
+        "easy": "簡単",
+        "medium": "普通",
+        "hard": "難しい"
+      },
+      "actions": {
+        "previous": "前へ",
+        "next": "次へ",
+        "submit": "送信",
+        "check_answer": "回答を確認",
+        "type_answer": "回答を入力..."
+      },
+      "results": {
+        "title": "結果",
+        "score": "{score}%",
+        "excellent": "素晴らしい！",
+        "good_job": "よくできました！",
+        "keep_practicing": "練習を続けましょう！",
+        "correct": "正解",
+        "incorrect": "不正解",
+        "unanswered": "未回答",
+        "time": "時間",
+        "review_answers": "回答を確認",
+        "try_again": "もう一度"
+      },
+      "review": {
+        "title": "回答レビュー",
+        "question_number": "問題 {number}",
+        "your_answer": "あなたの回答:",
+        "correct_answer": "正解:",
+        "explanation": "解説"
+      },
+      "dialogs": {
+        "exit_title": "試験を終了しますか？",
+        "exit_message": "進捗が失われます。{total}問中{answered}問に回答済みです。",
+        "continue_exam": "試験を続ける",
+        "exit": "終了",
+        "submit_title": "試験を送信しますか？",
+        "submit_message": "{total}問中{answered}問に回答しました。",
+        "unanswered_warning": "{count}問が未回答です",
+        "submit": "送信"
+      },
+      "no_questions_available": "利用可能な問題がありません",
+      "bookmark_tooltip": "ブックマーク",
+      "flag_tooltip": "復習用にフラグ"
+    },
+    "review_queue": {
+      "title": "復習キュー",
+      "stats": {
+        "correct": "{count}",
+        "incorrect": "{count}",
+        "progress": "{current}/{total}"
+      },
+      "loading": "復習キューを読み込み中...",
+      "difficulty": {
+        "easy": "簡単",
+        "medium": "普通",
+        "hard": "難しい"
+      },
+      "review_number": "復習 #{count}",
+      "check_answer": "回答を確認",
+      "ai_evaluating": "AIが評価中...",
+      "next_question": "次の問題",
+      "finish_review": "復習を終了",
+      "type_answer": "回答を入力:",
+      "type_answer_hint": "ここに回答を入力...\n（複数行記入可能）",
+      "correct_answer": "正解: {answer}",
+      "get_ai_explanation": "AI解説を取得",
+      "getting_explanation": "解説を取得中...",
+      "ai_evaluation": "AI評価",
+      "ai_explanation": "AI解説",
+      "empty": {
+        "title": "すべて完了！",
+        "message": "現在復習が必要な問題はありません。もっと試験を練習して復習キューを構築しましょう。",
+        "back_button": "試験に戻る",
+        "refresh_button": "更新"
+      },
+      "complete": {
+        "title": "復習完了！",
+        "message": "知識の強化、お疲れ様でした",
+        "correct": "正解",
+        "incorrect": "不正解",
+        "total": "合計",
+        "accuracy": "正答率",
+        "tip_title": "この調子で！",
+        "tip_message": "間違えた問題はより頻繁に出題されます。間隔反復で知識を長期記憶に定着させましょう。",
+        "back_button": "試験に戻る",
+        "review_more": "さらに復習"
+      },
+      "failed_to_load": "復習キューの読み込みに失敗しました: {error}",
+      "failed_to_submit": "復習の完了に失敗しました: {error}",
+      "failed_explanation": "解説の取得に失敗しました: {error}"
+    },
+    "export": {
+      "title": "PDFとしてエクスポート",
+      "subtitle": "エクスポートオプションを設定",
+      "include_answers": "回答を含める",
+      "answers_inline": "問題と一緒に回答を表示",
+      "answers_key_page": "解答欄を別ページに",
+      "include_explanations": "解説を含める",
+      "explanations_desc": "各回答に詳細な解説を追加",
+      "question_filter": "問題フィルター",
+      "filter_all": "すべて",
+      "filter_original": "オリジナル",
+      "filter_generated": "生成済み",
+      "generating": "PDF生成中...",
+      "export_pdf": "PDFをエクスポート",
+      "no_questions": "選択したフィルタでエクスポートできる質問がありません。"
+    },
+    "live_session": {
+      "code_copied": "セッションコードをコピーしました！",
+      "leave_title": "セッションを退出しますか？",
+      "stay": "残る",
+      "enter_display_name": "表示名を入力",
+      "create_session": "セッション作成",
+      "enter_code_hint": "例: ABC123",
+      "start_exam": "試験開始",
+      "submit_answer": "回答を送信",
+      "type_answer_hint": "ここに回答を入力...",
+      "leave": "退出",
+      "end_session": "セッション終了",
+      "type_message_hint": "メッセージを入力...",
+      "apply": "適用",
+      "title_idle": "ライブ試験セッション",
+      "title_lobby": "セッションロビー",
+      "title_question": "問題 {current}/{total}",
+      "title_results": "結果",
+      "title_final": "最終結果",
+      "your_nickname": "ニックネーム",
+      "creating": "作成中...",
+      "host_description": "新しい共同試験セッションを作成し、他の人を招待しましょう。",
+      "or_divider": "または",
+      "join_session": "セッションに参加",
+      "join_description": "ホストが共有したセッションコードを入力して参加。",
+      "joining": "参加中...",
+      "session_code": "セッションコード",
+      "your_answer": "あなたの回答",
+      "correct_feedback": "正解！",
+      "incorrect_feedback": "不正解",
+      "correct_answer_label": "正解: {answer}",
+      "great_job": "よくできました！",
+      "keep_going": "この調子で！",
+      "points": "+{score}ポイント",
+      "exam_complete": "試験完了！",
+      "your_score": "あなたのスコア: {score}"
+    }
+  },
+  "problem_solver": {
+    "batch_solver": {
+      "title": "一括問題解決",
+      "tabs": {
+        "pdf_upload": "PDFアップロード",
+        "text_input": "テキスト入力"
+      },
+      "pdf_tab": {
+        "upload_label": "PDFをアップロード",
+        "upload_hint": "問題を含むPDFファイルを選択",
+        "extract_button": "問題を抽出"
+      },
+      "text_tab": {
+        "title": "問題を貼り付け",
+        "description": "問題を貼り付けてください。各問題は改行または番号で区切ってください。",
+        "hint": "例:\n1. xを求めよ: 2x + 5 = 15\n2. 半径7cmの円の面積を求めよ\n3. 因数分解: x² - 5x + 6",
+        "extract_button": "問題を抽出"
+      },
+      "stats": {
+        "total": "合計",
+        "selected": "選択済み",
+        "solved": "解決済み"
+      },
+      "actions": {
+        "solve_selected": "{count}問を解く",
+        "solve_all": "すべて解く"
+      },
+      "messages": {
+        "enter_text": "テキストを入力してください",
+        "problems_solved": "{count}問を解決しました！"
+      }
+    },
+    "camera_scan": {
+      "title": "問題をスキャン",
+      "instructions": "問題をフレーム内に配置してください",
+      "review_title": "確認＆編集",
+      "analyzing": "画像を分析中...",
+      "analyzing_subtitle": "数秒かかる場合があります",
+      "verify_text": "テキストを確認してください",
+      "verify_description": "数学記号が正しく認識されない場合があります。必要に応じて下のテキストを編集してください。",
+      "subject_label": "科目",
+      "problem_text_label": "問題テキスト",
+      "problem_text_hint": "ここで問題テキストを編集...",
+      "problem_text_tip": "ヒント: 上付き文字には^を使用（例: x^2）",
+      "actions": {
+        "retake": "撮り直す",
+        "solve_problem": "問題を解く"
+      },
+      "subjects": {
+        "mathematics": "数学",
+        "physics": "物理学",
+        "chemistry": "化学",
+        "biology": "生物学",
+        "computer_science": "コンピュータサイエンス",
+        "other": "その他"
+      }
+    },
+    "concept_map": {
+      "title": "コンセプトマップ",
+      "subtitle": "視覚的な学習ロードマップ",
+      "central_topic": "コアトピック",
+      "sections": {
+        "prerequisites": "前提知識",
+        "prerequisites_subtitle": "まずこれをマスター",
+        "current_concepts": "現在の概念",
+        "current_concepts_subtitle": "今学習中",
+        "next_steps": "次のステップ",
+        "next_steps_subtitle": "次に進む方向",
+        "related_topics": "関連トピック",
+        "related_topics_subtitle": "つながりを探索"
+      },
+      "importance": "重要度:",
+      "connection": "関連性:"
+    },
+    "formula_cards": {
+      "title": "公式カード",
+      "progress": "カード {current}/{total}",
+      "categories": {
+        "rule": "法則",
+        "concept": "概念",
+        "formula": "公式",
+        "theorem": "定理"
+      },
+      "sides": {
+        "explanation": "解説",
+        "formula": "公式"
+      },
+      "hints": {
+        "tap_to_flip": "タップして{side}を表示",
+        "tap_explanation": "タップして解説を表示",
+        "tap_formula": "タップして公式を表示",
+        "swipe_navigate": "左右にスワイプで移動"
+      },
+      "actions": {
+        "previous": "前へ",
+        "next": "次へ",
+        "flip": "裏返す"
+      },
+      "messages": {
+        "copied": "カードをクリップボードにコピーしました"
+      }
+    },
+    "hints": {
+      "title": "ガイドモード",
+      "subtitle": "完全な解答ではなくヒントを取得",
+      "problem_label": "問題",
+      "hint_progress": "ヒント {current}/約{total}",
+      "next_hint_preview": "次のヒント: {preview}",
+      "all_revealed": "すべてのヒントが表示されました！解いてみましょう。",
+      "all_revealed_status": "すべてのヒント表示済み",
+      "actions": {
+        "reset": "リセット",
+        "get_first_hint": "最初のヒントを取得",
+        "next_hint": "次のヒント",
+        "thinking": "考え中...",
+        "see_solution": "解答を見る"
+      },
+      "messages": {
+        "hints_reset": "ヒントをリセットしました"
+      },
+      "see_solution": "解答を見る"
+    },
+    "practice_quiz": {
+      "title": "練習クイズ",
+      "title_with_progress": "練習クイズ ({current}/{total})",
+      "question_progress": "問題 {current}/{total}",
+      "stats": {
+        "correct": "正解"
+      },
+      "question_types": {
+        "multiple_choice": "選択式",
+        "true_false": "○×問題",
+        "fill_blank": "穴埋め問題"
+      },
+      "feedback": {
+        "correct": "正解！",
+        "incorrect": "不正解",
+        "correct_answer": "正解: {answer}",
+        "explanation": "解説"
+      },
+      "actions": {
+        "next_question": "次の問題",
+        "view_results": "結果を表示"
+      },
+      "results": {
+        "perfect": "満点！ 🎉",
+        "great": "よくできました！ 🌟",
+        "good": "頑張りました！ 👍",
+        "practice": "練習を続けましょう！ 💪",
+        "quiz_complete": "クイズ完了！",
+        "close": "閉じる",
+        "try_again": "もう一度"
+      }
+    },
+    "bookmarks": {
+      "title": "マイブックマーク",
+      "search_placeholder": "ブックマークを検索...",
+      "stats": {
+        "total": "合計",
+        "subjects": "科目",
+        "tags": "タグ"
+      },
+      "edit_sheet": {
+        "title": "ブックマークを編集",
+        "tags_label": "タグ",
+        "tags_hint": "タグを追加...",
+        "notes_label": "メモ",
+        "notes_hint": "ここにメモを追加...",
+        "save_button": "変更を保存"
+      },
+      "delete_dialog": {
+        "title": "ブックマークを削除",
+        "message": "このブックマークを削除してもよろしいですか？",
+        "cancel": "キャンセル",
+        "delete": "削除"
+      },
+      "messages": {
+        "updated": "ブックマークを更新しました",
+        "deleted": "ブックマークを削除しました"
+      },
+      "empty_state": {
+        "title": "ブックマークがまだありません",
+        "subtitle": "問題を保存して後でアクセスしましょう"
+      },
+      "updated": "ブックマークを更新しました",
+      "delete_confirm": "このブックマークを削除してもよろしいですか？",
+      "deleted": "ブックマークを削除しました"
+    },
+    "history": {
+      "title": "問題履歴",
+      "search_placeholder": "問題を検索...",
+      "delete_dialog": {
+        "title": "問題を削除しますか？",
+        "message": "この問題と解答が完全に削除されます。",
+        "cancel": "キャンセル",
+        "delete": "削除"
+      },
+      "time": {
+        "today": "今日",
+        "yesterday": "昨日",
+        "days_ago": "{days}日前"
+      }
+    },
+    "input": {
+      "title": "問題解決",
+      "subject_label": "科目",
+      "problem_label": "問題",
+      "problem_hint": "ここに問題を入力または貼り付け...\n\n例: 方程式を解け 2x + 5 = 15",
+      "actions": {
+        "scan": "スキャン",
+        "voice": "音声",
+        "image": "画像",
+        "solve": "問題を解く",
+        "creating": "作成中..."
+      },
+      "image_uploaded": "画像をアップロードしました",
+      "voice_coming_soon": "音声入力は近日公開",
+      "how_it_works": "仕組み",
+      "agents": {
+        "analysis": {
+          "title": "分析エージェント",
+          "description": "問題を理解しアプローチを特定"
+        },
+        "solver": {
+          "title": "解答エージェント",
+          "description": "解説付きのステップバイステップ解答を生成"
+        },
+        "verifier": {
+          "title": "検証エージェント",
+          "description": "解答の正確性をクロスチェック"
+        }
+      },
+      "subjects": {
+        "auto_detect": "自動検出",
+        "mathematics": "数学",
+        "physics": "物理学",
+        "chemistry": "化学",
+        "biology": "生物学",
+        "computer_science": "コンピュータサイエンス",
+        "engineering": "工学",
+        "economics": "経済学",
+        "statistics": "統計学"
+      },
+      "menu": {
+        "bookmarks": "ブックマーク",
+        "history": "履歴",
+        "batch_solver": "一括解決",
+        "camera_scan": "カメラスキャン"
+      },
+      "messages": {
+        "enter_problem": "問題を入力するか画像をアップロードしてください"
+      }
+    },
+    "similar_problems": {
+      "title": "類似問題",
+      "difficulty": {
+        "easy": "簡単",
+        "medium": "普通",
+        "hard": "難しい"
+      },
+      "solve_this": "解く"
+    },
+    "solution": {
+      "title": "解答",
+      "final_answer": "最終回答",
+      "learning_tools": "学習ツール",
+      "tools": {
+        "hints": "ヒント",
+        "similar": "類似",
+        "quiz": "クイズ",
+        "chat": "チャット",
+        "concepts": "概念",
+        "formulas": "公式"
+      },
+      "tabs": {
+        "steps": "ステップ",
+        "code": "コード",
+        "alternatives": "別解",
+        "graph": "グラフ",
+        "analysis": "分析",
+        "citations": "引用"
+      },
+      "steps": {
+        "no_solution": "解答がありません",
+        "no_steps": "解答ステップがありません",
+        "step_number": "ステップ {number}",
+        "copy": "コピー",
+        "step_copied": "ステップをコピーしました"
+      },
+      "code": {
+        "empty_title": "コードブロックがありません"
+      },
+      "alternatives": {
+        "empty_title": "代替方法がありません"
+      },
+      "graph": {
+        "empty_title": "グラフデータがありません"
+      },
+      "analysis": {
+        "level_explanation": "{level}レベルの解説",
+        "key_points": "要点:",
+        "examples": "例:",
+        "technical_analysis": "技術的分析",
+        "no_details": "詳細なし"
+      },
+      "citations": {
+        "empty_title": "引用がありません"
+      },
+      "complexity": {
+        "title": "解説レベル",
+        "beginner": "初級",
+        "intermediate": "中級",
+        "advanced": "上級",
+        "expert": "エキスパート",
+        "loading": "解説を読み込み中..."
+      },
+      "narration": {
+        "title": "解答ナレーション",
+        "listen_tooltip": "解答を聞く",
+        "completed": "ナレーション完了",
+        "no_text": "ナレーション用の解答テキストがありません"
+      },
+      "messages": {
+        "bookmark_added": "ブックマークに追加しました",
+        "bookmark_removed": "ブックマークを解除しました"
+      },
+      "generating_narration": "ナレーション生成中...",
+      "loading_explanation": "解説読み込み中...",
+      "step_copied": "ステップをコピーしました",
+      "copy": "コピー",
+      "narration_completed": "ナレーション完了",
+      "no_solution_for_narration": "ナレーション用の解答テキストがありません"
+    },
+    "solving_progress": {
+      "title": "解答中...",
+      "stages": {
+        "analysis": {
+          "title": "分析エージェント",
+          "description": "問題を理解中"
+        },
+        "solving": {
+          "title": "解答エージェント",
+          "description": "ステップバイステップの解答を生成中"
+        },
+        "verification": {
+          "title": "検証エージェント",
+          "description": "正確性をクロスチェック中"
+        }
+      },
+      "status": {
+        "complete": "完了",
+        "solution_ready": "解答が準備できました！",
+        "redirecting": "解答ページに移動中...",
+        "failed": "解答に失敗しました",
+        "retry": "再試行"
+      }
+    },
+    "study_buddy": {
+      "title": "スタディバディ",
+      "subtitle": "解答について質問しよう",
+      "welcome_message": "こんにちは！スタディバディです。あなたの問題の解答を確認しました。何でも聞いてください — ステップの詳しい説明、別のアプローチの提案、類似概念の練習をサポートします。",
+      "suggested_questions_title": "おすすめの質問",
+      "input_placeholder": "フォローアップの質問を入力...",
+      "problem_label": "問題: {problem}",
+      "export": "エクスポート",
+      "suggested": {
+        "explain_step": "ステップ2をもっと詳しく説明してもらえますか？",
+        "why_approach": "なぜこのアプローチを使ったのですか？",
+        "other_methods": "他にどんな解法がありますか？",
+        "simpler_example": "もっと簡単な例を教えてもらえますか？",
+        "concepts_needed": "これを理解するにはどんな概念が必要ですか？"
+      }
+    },
+    "widgets": {
+      "steps_copied": "ステップをクリップボードにコピーしました",
+      "copy": "コピー",
+      "steps": "ステップ",
+      "no_steps": "この方法のステップはありません",
+      "advantages": "利点",
+      "disadvantages": "欠点",
+      "method_type": {
+        "algebraic": "代数的",
+        "geometric": "幾何学的",
+        "numerical": "数値的",
+        "graphical": "グラフ的",
+        "analytical": "解析的",
+        "other": "その他"
+      },
+      "status": {
+        "pending": "保留中",
+        "solving": "解答中...",
+        "completed": "完了",
+        "failed": "失敗"
+      },
+      "retry": "再試行",
+      "solve": "解く",
+      "view_solution": "解答を表示",
+      "search_bookmarks": "ブックマークを検索...",
+      "no_problem_text": "問題テキストなし",
+      "edit": "編集",
+      "delete": "削除",
+      "date": {
+        "today": "今日",
+        "yesterday": "昨日",
+        "days_ago": "{days}日前"
+      }
+    },
+    "batch": {
+      "please_enter_text": "テキストを入力してください",
+      "solve_all": "すべて解く"
+    }
+  },
+  "more": {
+    "title": "その他",
+    "logout": "ログアウト",
+    "logout_subtitle": "アカウントからサインアウト",
+    "section_ai_tools": "AIツール",
+    "section_study_tools": "学習ツール",
+    "section_account": "アカウント",
+    "ai_chat": "AIチャット",
+    "ai_chat_subtitle": "AI学習アシスタントとチャット",
+    "problem_solver": "問題解決",
+    "problem_solver_subtitle": "ステップごとに問題を解く",
+    "deep_research": "ディープリサーチ",
+    "deep_research_subtitle": "あらゆるトピックの詳細調査",
+    "exam_clone": "試験クローン",
+    "exam_clone_subtitle": "試験スタイルの問題で練習",
+    "teach_back": "ティーチバック",
+    "teach_back_subtitle": "概念を教えて学ぶ",
+    "notifications": "通知",
+    "notifications_subtitle": "通知を確認",
+    "subscription": "サブスクリプション",
+    "subscription_subtitle": "プランを管理"
+  },
+  "widgets": {
+    "code_copied": "コードをコピーしました！"
+  },
+  "special_offer_legacy": {}
+}

@@ -1,0 +1,138 @@
+name: studyield
+description: "Studyield - AI-Powered Learning Platform"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.0
+  cached_network_image: ^3.4.1
+  shimmer: ^3.0.0
+  lottie: ^3.0.0
+  fl_chart: ^0.70.0
+  flutter_markdown: ^0.7.0
+  flutter_highlight: ^0.7.0
+  flutter_math_fork: ^0.7.2
+
+  # State Management
+  provider: ^6.1.0
+  flutter_bloc: ^9.0.0
+  equatable: ^2.0.5
+
+  # Navigation
+  go_router: ^14.0.0
+
+  # Networking
+  dio: ^5.7.0
+  connectivity_plus: ^6.0.0
+
+  # Storage
+  shared_preferences: ^2.3.0
+  flutter_secure_storage: ^9.2.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Firebase
+  firebase_core: ^3.0.0
+  firebase_messaging: ^15.0.0
+  firebase_analytics: ^11.0.0
+
+  # Auth
+  google_sign_in: ^6.2.0
+  sign_in_with_apple: ^6.1.0
+
+  # Media
+  image_picker: ^1.1.0
+  file_picker: ^8.0.0
+  permission_handler: ^11.3.0
+  url_launcher: ^6.3.0
+  webview_flutter: ^4.4.2
+  webview_flutter_android: ^3.14.0
+  webview_flutter_wkwebview: ^3.10.0
+  share_plus: ^10.0.0
+  flutter_tts: ^4.0.0
+  camera: ^0.10.5
+  google_mlkit_text_recognition: ^0.11.0
+  flutter_sound: ^9.2.13
+  path: ^1.9.0
+
+  # In-app notifications
+  another_flushbar: ^1.12.30
+  audioplayers: ^6.0.0
+
+  # File Processing
+  syncfusion_flutter_pdf: ^32.2.5
+  csv: ^6.0.0
+
+  # Animations
+  confetti: ^0.7.0
+  tutorial_coach_mark: ^1.2.11
+
+  # WebSocket
+  socket_io_client: ^2.0.3+1
+
+  # Utils
+  intl: ^0.20.0
+  uuid: ^4.5.0
+  path_provider: ^2.1.0
+  package_info_plus: ^8.0.0
+  device_info_plus: ^11.0.0
+  flutter_dotenv: ^5.2.0
+  math_expressions: ^2.6.0
+  easy_localization: ^3.0.7
+  pdf: ^3.11.3
+  printing: ^5.14.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.0
+  hive_generator: ^2.0.0
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/logo/
+    - assets/audios/
+    - assets/translations/
+    - .env
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icons/app_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: false
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#FFFFFF"
+  image: assets/icons/app_icon.png
+  image_dark: assets/icons/app_icon.png
+  android_12:
+    image: assets/icons/app_icon.png
+    icon_background_color: "#FFFFFF"
+    image_dark: assets/icons/app_icon.png
+    icon_background_color_dark: "#FFFFFF"
+  android: true
+  ios: true
+  web: false
+  android_gravity: center
+  ios_content_mode: center
+  fullscreen: true

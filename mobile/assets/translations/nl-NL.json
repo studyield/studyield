@@ -1,0 +1,2224 @@
+{
+  "onboarding": {
+    "skip": "Overslaan",
+    "next": "Volgende",
+    "back": "Terug",
+    "get_started": "Aan de slag",
+    "i_have_account": "Ik heb een account",
+    "app_name": "Studyield",
+    "slide_1": {
+      "title": "Welkom bij Studyield",
+      "subtitle": "Uw AI-aangedreven leerpartner",
+      "description": "Beheers elk onderwerp met slimme flashcards, AI-probleemoplossing en gepersonaliseerde leertrajecten"
+    },
+    "slide_2": {
+      "title": "Slimme flashcards",
+      "subtitle": "Leer slimmer, niet harder",
+      "description": "Maak interactieve flashcards met een herhalingsalgoritme dat zich aanpast aan uw leertempo",
+      "badge": "GRATIS"
+    },
+    "slide_3": {
+      "title": "AI-probleemoplosser",
+      "subtitle": "Direct hulp krijgen",
+      "description": "Scan elk probleem en krijg stapsgewijze oplossingen met gedetailleerde uitleg, aangedreven door AI",
+      "badge": "PRO",
+      "features": {
+        "scan": "Problemen scannen",
+        "hints": "Hints krijgen",
+        "steps": "Stap voor stap"
+      }
+    },
+    "slide_4": {
+      "title": "Verbeter uw leerervaring",
+      "subtitle": "Maak leren leuk",
+      "description": "Verdien XP, houd streaks bij en ontgrendel prestaties terwijl u vordert in uw studie",
+      "badge": "GRATIS"
+    },
+    "slide_5": {
+      "title": "Gepersonaliseerde leertrajecten",
+      "subtitle": "Uw reis, uw manier",
+      "description": "Krijg aangepaste studieplannen op basis van uw doelen, prestaties en leerstijl",
+      "badge": "PRO",
+      "benefits": {
+        "benefit_1": "📚 Aangepaste studieplannen",
+        "benefit_2": "🎯 Volg uw voortgang",
+        "benefit_3": "🚀 Bereik uw doelen sneller"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welkom terug",
+      "subtitle": "Meld u aan om verder te leren",
+      "email_label": "E-mail",
+      "email_hint": "Voer uw e-mailadres in",
+      "password_label": "Wachtwoord",
+      "password_hint": "Voer uw wachtwoord in",
+      "forgot_password": "Wachtwoord vergeten?",
+      "login_button": "Inloggen",
+      "no_account": "Heeft u nog geen account?",
+      "sign_up": "Registreren",
+      "or_continue_with": "Of ga verder met",
+      "google_login": "Doorgaan met Google",
+      "apple_login": "Doorgaan met Apple"
+    },
+    "register": {
+      "title": "Account aanmaken",
+      "subtitle": "Begin uw leerreis",
+      "name_label": "Volledige naam",
+      "name_hint": "Voer uw naam in",
+      "email_label": "E-mail",
+      "email_hint": "Voer uw e-mailadres in",
+      "password_label": "Wachtwoord",
+      "password_hint": "Maak een wachtwoord aan",
+      "confirm_password_label": "Wachtwoord bevestigen",
+      "confirm_password_hint": "Voer wachtwoord opnieuw in",
+      "register_button": "Account aanmaken",
+      "have_account": "Heeft u al een account?",
+      "sign_in": "Inloggen",
+      "terms_prefix": "Door u te registreren gaat u akkoord met onze ",
+      "terms": "Servicevoorwaarden",
+      "and": " en ",
+      "privacy": "Privacybeleid"
+    },
+    "errors": {
+      "email_required": "E-mailadres is verplicht",
+      "email_invalid": "Voer een geldig e-mailadres in",
+      "password_required": "Wachtwoord is verplicht",
+      "password_min_length": "Wachtwoord moet minimaal 6 tekens bevatten",
+      "passwords_not_match": "Wachtwoorden komen niet overeen",
+      "name_required": "Naam is verplicht",
+      "login_failed": "Inloggen mislukt. Controleer uw gegevens",
+      "register_failed": "Registratie mislukt. Probeer het opnieuw"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "Goedemorgen",
+      "afternoon": "Goedemiddag",
+      "evening": "Goedenavond"
+    },
+    "welcome_message": "U heeft {count} kaarten klaar voor herhaling",
+    "welcome_message_empty": "Klaar om uw leerreis voort te zetten?",
+    "level": "Niveau {level}",
+    "xp_progress": "{current} / {next} XP",
+    "streak_days": "{days}d",
+    "daily_xp": "{current} / {goal} dagelijkse XP",
+    "gamification": {
+      "xp": "XP",
+      "day": "dag",
+      "days": "dagen",
+      "daily_xp": "dagelijkse XP",
+      "level_names": {
+        "0": "Beginner",
+        "1": "Brons",
+        "2": "Zilver",
+        "3": "Goud",
+        "4": "Platina",
+        "5": "Diamant",
+        "6": "Meester",
+        "7": "Grootmeester",
+        "8": "Kampioen",
+        "9": "Legende",
+        "10": "Mythisch",
+        "11": "Onsterfelijk"
+      }
+    },
+    "upgrade_pro": {
+      "title": "Upgraden naar Pro",
+      "badge": "POPULAIR",
+      "subtitle": "Ontgrendel alle premiumfuncties en onbeperkte AI",
+      "offer": "Bespaar 20% met een jaarabonnement"
+    },
+    "stats": {
+      "study_sets": "Studiesets",
+      "flashcards": "Flashcards",
+      "due_today": "Vandaag te doen",
+      "quizzes_done": "Quizzen afgerond",
+      "cards": "{count} kaarten"
+    },
+    "sections": {
+      "quick_actions": "Snelle acties",
+      "recent_study_sets": "Recente studiesets",
+      "view_all": "Alles bekijken"
+    },
+    "continue_studying": {
+      "title": "Verder studeren",
+      "cards_due": "{count} kaarten klaar voor herhaling"
+    },
+    "quick_actions": {
+      "new_study_set": {
+        "title": "Nieuwe studieset",
+        "description": "Maak een nieuwe collectie"
+      },
+      "exam_clone": {
+        "title": "Examen kloon",
+        "description": "Genereer oefenexamens"
+      },
+      "problem_solver": {
+        "title": "Probleemoplosser",
+        "description": "AI stapsgewijze oplossingen"
+      },
+      "ai_chat": {
+        "title": "AI Chat",
+        "description": "Stel vragen over uw aantekeningen"
+      },
+      "view_analytics": {
+        "title": "Analyses bekijken",
+        "description": "Volg uw studievoortgang"
+      },
+      "knowledge_base": {
+        "title": "Kennisbank",
+        "description": "Documenten uploaden en doorzoeken"
+      },
+      "join_live_quiz": {
+        "title": "Deelnemen aan live quiz",
+        "description": "Speel met vrienden in realtime"
+      },
+      "coming_soon": "Binnenkort beschikbaar"
+    },
+    "empty_state": {
+      "title": "Nog geen studiesets",
+      "subtitle": "Maak uw eerste studieset om te beginnen met leren",
+      "button": "Studieset aanmaken"
+    }
+  },
+  "study_sets": {
+    "title": "Studiesets",
+    "header_title": "Mijn studiesets",
+    "header_subtitle": "Maak en beheer uw studiemateriaal",
+    "search_hint": "Studiesets zoeken...",
+    "new_study_set": "Nieuwe studieset",
+    "create_button": "Aanmaken",
+    "no_results_title": "Geen resultaten",
+    "no_results_subtitle": "Geen studiesets gevonden voor \"{query}\"",
+    "card": {
+      "public": "Openbaar",
+      "private": "Privé",
+      "edit": "Bewerken",
+      "delete": "Verwijderen",
+      "cards_count": "{count} kaarten",
+      "docs_count": "{count} documenten"
+    },
+    "empty_state": {
+      "title": "Nog geen studiesets",
+      "subtitle": "Maak uw eerste studieset om uw flashcards en leermateriaal te organiseren",
+      "button": "Studieset aanmaken"
+    },
+    "messages": {
+      "created": "Studieset succesvol aangemaakt!",
+      "updated": "Studieset succesvol bijgewerkt!",
+      "deleted": "Studieset succesvol verwijderd!",
+      "error": "Fout bij het laden van studiesets",
+      "retry": "Opnieuw proberen"
+    },
+    "detail": {
+      "section_statistics": "Statistieken",
+      "stat_flashcards_label": "Flashcards",
+      "stat_notes_label": "Aantekeningen",
+      "stat_analytics_label": "Analyses",
+      "quiz_history_title": "Quizgeschiedenis",
+      "quiz_history_subtitle": "Bekijk uw quizprestaties",
+      "section_quick_actions": "Snelle acties",
+      "action_study_session": "Studiesessie (alle kaarten)",
+      "action_quiz_mode": "Quizmodus",
+      "action_match_game": "Koppelspel",
+      "action_live_quiz": "Live quiz",
+      "action_browse_cards": "Kaarten bekijken",
+      "action_add_cards": "Kaarten toevoegen",
+      "section_sources": "Bronnen",
+      "sources_view_all": "Alles bekijken",
+      "sources_document_singular": "Document",
+      "sources_documents_plural": "Documenten",
+      "sources_subtitle": "Studiemateriaal en referenties",
+      "sources_empty_state": "Nog geen bronnen",
+      "sources_add_documents": "Documenten toevoegen",
+      "section_recent_activity": "Recente activiteit",
+      "activity_empty_state": "Geen recente activiteit",
+      "menu_edit_study_set": "Studieset bewerken",
+      "menu_share": "Delen",
+      "menu_delete_study_set": "Studieset verwijderen",
+      "delete_confirm_title": "Studieset verwijderen?",
+      "delete_confirm_message": "Dit verwijdert permanent \"{title}\" en al zijn flashcards. Deze actie kan niet ongedaan worden gemaakt.",
+      "delete_confirm_cancel": "Annuleren",
+      "delete_confirm_delete": "Verwijderen",
+      "study_no_cards_due": "Geen kaarten te herhalen! Goed gedaan! 🎉",
+      "study_failed_to_load": "Flashcards konden niet worden geladen",
+      "add_cards_header": "Kaarten toevoegen",
+      "add_cards_ready_status": "{count} kaart{s} gereed",
+      "add_cards_submit_button": "Toevoegen aan studieset",
+      "toast_cards_added_success": "{count} kaarten succesvol toegevoegd!",
+      "toast_cards_add_error": "Kaarten toevoegen mislukt: {message}"
+    },
+    "create_edit": {
+      "title_create": "Studieset aanmaken",
+      "create_study_set": "Studieset aanmaken",
+      "title_edit": "Studieset bewerken",
+      "cover_image": "Omslagafbeelding",
+      "tap_add_cover": "Tik om omslagafbeelding toe te voegen",
+      "tap_to_add_cover_image": "Tik om omslagafbeelding toe te voegen",
+      "title_label": "Titel *",
+      "title_hint": "bijv. Biologie 101",
+      "title_required": "Titel is verplicht",
+      "description_label": "Beschrijving",
+      "description": "Beschrijving",
+      "description_hint": "Waar gaat deze studieset over?",
+      "tags_label": "Tags",
+      "tags": "Tags",
+      "tags_hint": "biologie, examen, hoofdstuk1",
+      "tags_helper": "Scheid tags met komma's",
+      "exam_date_label": "Examendatum (optioneel)",
+      "exam_date_optional": "Examendatum (optioneel)",
+      "exam_date_hint": "Selecteer examendatum",
+      "select_exam_date": "Selecteer examendatum",
+      "exam_subject_label": "Examenvak",
+      "exam_subject_hint": "bijv. Tussentoets, Eindexamen",
+      "visibility_public": "Openbaar",
+      "visibility_private": "Privé",
+      "private": "Privé",
+      "visibility_public_desc": "Iedereen kan deze studieset bekijken",
+      "visibility_private_desc": "Alleen u kunt deze studieset bekijken",
+      "private_description": "Alleen u kunt deze studieset bekijken",
+      "save_changes": "Wijzigingen opslaan",
+      "create_button": "Studieset aanmaken",
+      "delete_study_set": "Studieset verwijderen",
+      "delete_confirm_title": "Studieset verwijderen?",
+      "delete_confirm_message": "Dit verwijdert permanent \"{title}\" en al zijn flashcards. Deze actie kan niet ongedaan worden gemaakt.",
+      "subtitle": "Organiseer uw studiemateriaal",
+      "title_placeholder": "Voer een titel in, bijv. 'Biologie 101 — Hoofdstuk 3'",
+      "description_placeholder": "Voeg een beschrijving toe (optioneel)",
+      "more_options": "Meer opties",
+      "less_options": "Minder opties",
+      "add_tag": "Tag toevoegen...",
+      "cancel": "Annuleren",
+      "public": "Openbaar",
+      "visibility_label": "Zichtbaarheid",
+      "cards_ready_count": "{count} kaarten gereed",
+      "create_with_cards": "Aanmaken met {count} kaarten",
+      "cards_failed": "Studieset aangemaakt, maar sommige kaarten konden niet worden opgeslagen",
+      "image_uploaded": "Afbeelding succesvol geüpload!",
+      "upload_failed": "Afbeelding uploaden mislukt"
+    },
+    "documents": {
+      "title": "Aantekeningen",
+      "create_note": "Aantekening maken",
+      "no_notes_title": "Nog geen aantekeningen",
+      "no_notes_subtitle": "Maak aantekeningen om uw studiemateriaal te organiseren",
+      "note_title_label": "Titel",
+      "note_title_hint": "Voer titel in",
+      "note_content_label": "Inhoud",
+      "note_content_hint": "Schrijf hier uw aantekening...",
+      "create_note_button": "Aantekening maken",
+      "fill_both_fields": "Vul beide velden in",
+      "note_created": "Aantekening succesvol aangemaakt!",
+      "failed_to_create": "Aantekening aanmaken mislukt: {error}"
+    },
+    "flashcard_creation": {
+      "title": "Flashcards maken",
+      "tab_manual": "Handmatig",
+      "tab_ai": "AI genereren",
+      "tab_import": "Importeren",
+      "create_cards": "{count} {cards} aanmaken",
+      "add_cards": "{count} {cards} toevoegen",
+      "card": "Kaart",
+      "cards": "Kaarten",
+      "no_flashcards": "Maak minimaal één flashcard aan",
+      "no_flashcards_to_add": "Geen flashcards om toe te voegen"
+    },
+    "quiz_history": {
+      "title": "Quizgeschiedenis",
+      "no_history_title": "Geen quizgeschiedenis",
+      "no_history_subtitle": "Maak quizzen om hier uw prestatiegeschiedenis te zien",
+      "summary_quizzes": "Quizzen",
+      "summary_attempts": "Pogingen",
+      "summary_best_score": "Beste score",
+      "questions": "{count} vragen",
+      "attempts": "{count} poging{s}",
+      "attempt": "poging",
+      "best": "Beste: {score}%",
+      "no_attempts": "Nog geen pogingen",
+      "time_spent": "{minutes}m {seconds}s"
+    }
+  },
+  "analytics": {
+    "title": "Analyses",
+    "timeRange": {
+      "sevenDays": "7 dagen",
+      "thirtyDays": "30 dagen",
+      "ninetyDays": "90 dagen",
+      "allTime": "Altijd"
+    },
+    "stats": {
+      "studyTime": "Studietijd",
+      "cardsReviewed": "Kaarten herhaald",
+      "quizzes": "Quizzen",
+      "avgScore": "Gem. score"
+    },
+    "sections": {
+      "studyActivity": "Studieactiviteit",
+      "streak": "Streak",
+      "performance": "Prestaties"
+    },
+    "heatmap": {
+      "title": "Studie-heatmap",
+      "less": "Minder",
+      "more": "Meer"
+    },
+    "cardMastery": {
+      "title": "Kaartbeheersing",
+      "noData": "Geen kaartgegevens beschikbaar"
+    },
+    "retentionCurve": {
+      "title": "Retentiecurve",
+      "noData": "Begin met studeren om uw retentiecurve te zien"
+    },
+    "studyTime": {
+      "title": "Studietijd",
+      "daily": "Dagelijks",
+      "weekly": "Wekelijks",
+      "noData": "Nog geen studietijd geregistreerd"
+    },
+    "streak": {
+      "title": "Streak-kalender",
+      "dayStreak": "dagen streak",
+      "dayAbbr": {
+        "sun": "Z",
+        "mon": "M",
+        "tue": "D",
+        "wed": "W",
+        "thu": "D",
+        "fri": "V",
+        "sat": "Z"
+      }
+    },
+    "months": {
+      "january": "Januari",
+      "february": "Februari",
+      "march": "Maart",
+      "april": "April",
+      "may": "Mei",
+      "june": "Juni",
+      "july": "Juli",
+      "august": "Augustus",
+      "september": "September",
+      "october": "Oktober",
+      "november": "November",
+      "december": "December"
+    },
+    "cardStatus": {
+      "new": "Nieuw",
+      "learning": "Aan het leren",
+      "review": "Herhaling",
+      "mastered": "Beheerst"
+    },
+    "chart": {
+      "percentageSymbol": "%",
+      "minutesSymbol": "m",
+      "dayLabel": "D"
+    },
+    "time": {
+      "hoursSymbol": "u",
+      "minutesSymbol": "m"
+    }
+  },
+  "learning_paths": {
+    "title": "Leertrajecten",
+    "detail": {
+      "title": "Leertraject",
+      "learning_path": "Leertraject",
+      "complete": "Voltooid",
+      "your_journey": "Uw leerreis",
+      "your_learning_journey": "Uw leerreis",
+      "next_up": "Volgende",
+      "step_number": "Stap {number}",
+      "steps": "Stappen",
+      "remaining": "Resterend",
+      "total_time": "Totale tijd",
+      "overall_progress": "Totale voortgang",
+      "stats": {
+        "steps": "Stappen",
+        "remaining": "Resterend",
+        "total_time": "Totale tijd"
+      },
+      "progress": {
+        "overall": "Totale voortgang",
+        "steps_count": "{completed}/{total} stappen"
+      },
+      "minutes": "{minutes} minuten",
+      "view_resource": "Bron bekijken",
+      "mark_done": "Klaar",
+      "mark_as_done": "Markeer als klaar",
+      "step_completed": "Stap voltooid!",
+      "path_completed": "Voltooid!",
+      "steps_count": "{completed}/{total} stappen",
+      "completed_on": "Voltooid op {date}"
+    },
+    "validation": {
+      "please_enter_topic": "Voer een onderwerp in"
+    },
+    "messages": {
+      "path_created_success": "Leertraject aangemaakt!"
+    },
+    "how_it_works": {
+      "title": "Hoe leertrajecten werken",
+      "step1_title": "Doelen stellen",
+      "step1_subtitle": "Vertel AI uw onderwerp en niveau",
+      "step2_title": "Routekaart krijgen",
+      "step2_subtitle": "AI genereert een stapsgewijs plan",
+      "step3_title": "Voortgang bijhouden",
+      "step3_subtitle": "Voltooi stappen, bekijk voortgang"
+    },
+    "buttons": {
+      "cancel": "Annuleren",
+      "generate_path": "Traject genereren",
+      "generating": "Genereren..."
+    },
+    "form": {
+      "title": "Leertraject aanmaken",
+      "topic_label": "Onderwerp",
+      "topic_hint": "bijv. Machine Learning, Calculus, Natuurkunde",
+      "current_level_label": "Huidig niveau",
+      "target_level_label": "Doelniveau",
+      "level_beginner": "Beginner",
+      "level_intermediate": "Gemiddeld",
+      "level_advanced": "Gevorderd",
+      "level_expert": "Expert",
+      "study_time_label": "Studietijd: {hours} uur/week"
+    },
+    "empty_state": {
+      "title": "Nog geen leertrajecten",
+      "subtitle": "Maak uw eerste gepersonaliseerde leerroutekaart"
+    },
+    "path_card": {
+      "steps_count": "{completed}/{total} stappen",
+      "hours_label": "{hours}u"
+    },
+    "dialogs": {
+      "delete_confirm_title": "Leertraject verwijderen?",
+      "delete_confirm_message": "Dit verwijdert permanent dit traject en alle voortgang.",
+      "cancel_button": "Annuleren",
+      "delete_button": "Verwijderen"
+    }
+  },
+  "profile": {
+    "title": "Instellingen",
+    "subtitle": "Beheer uw account en voorkeuren",
+    "settings": {
+      "profile": {
+        "title": "Profiel",
+        "subtitle": "Naam, avatar, opleiding, vakken"
+      },
+      "account": {
+        "title": "Accountinstellingen",
+        "subtitle": "Wachtwoord, beveiliging, account verwijderen"
+      },
+      "notifications": {
+        "title": "Meldingsinstellingen",
+        "subtitle": "Beheer meldingsvoorkeuren"
+      },
+      "language": {
+        "title": "Taal",
+        "choose": "Kies taal",
+        "close": "Sluiten"
+      },
+      "subscription": {
+        "title": "Abonnement",
+        "subtitle": "Plan, gebruik, facturen"
+      },
+      "logout": {
+        "title": "Uitloggen",
+        "confirm_title": "Uitloggen",
+        "confirm_message": "Weet u zeker dat u wilt uitloggen?",
+        "cancel": "Annuleren",
+        "confirm": "Uitloggen"
+      }
+    },
+    "plan": {
+      "free": "Gratis plan",
+      "manage": "Beheren",
+      "upgrade": "Upgraden"
+    },
+    "version": "Studyield v1.0.0",
+    "edit": {
+      "title": "Profiel bewerken",
+      "avatar": {
+        "default_initial": "G"
+      },
+      "display_name": {
+        "label": "Weergavenaam",
+        "hint": "Voer uw naam in"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "Geen e-mail",
+        "readonly_note": "E-mailadres kan niet worden gewijzigd"
+      },
+      "education_level": {
+        "label": "Opleidingsniveau",
+        "options": {
+          "high_school": "Middelbare school",
+          "undergraduate": "Bachelor",
+          "graduate": "Master",
+          "post_graduate": "Postdoctoraal",
+          "self_learner": "Zelfstudie",
+          "professional": "Professional"
+        }
+      },
+      "subjects": {
+        "label": "Interessegebieden",
+        "common_header": "Veelvoorkomende vakken",
+        "custom_header": "Uw eigen vakken",
+        "add_custom": {
+          "label": "Eigen vak toevoegen",
+          "hint": "Eigen vak toevoegen"
+        },
+        "options": {
+          "mathematics": "Wiskunde",
+          "physics": "Natuurkunde",
+          "chemistry": "Scheikunde",
+          "biology": "Biologie",
+          "computer_science": "Informatica",
+          "english": "Engels",
+          "history": "Geschiedenis",
+          "geography": "Aardrijkskunde",
+          "economics": "Economie",
+          "psychology": "Psychologie"
+        }
+      },
+      "button": {
+        "saving": "Opslaan...",
+        "save": "Wijzigingen opslaan",
+        "saved": "Opgeslagen!"
+      },
+      "message": {
+        "success": "Profiel succesvol bijgewerkt!",
+        "error": "Profiel opslaan mislukt"
+      }
+    },
+    "account": {
+      "title": "Accountinstellingen",
+      "change_password": {
+        "title": "Wachtwoord wijzigen",
+        "subtitle": "Werk uw wachtwoord regelmatig bij",
+        "current_password_label": "Huidig wachtwoord",
+        "new_password_label": "Nieuw wachtwoord",
+        "confirm_password_label": "Nieuw wachtwoord bevestigen",
+        "button": "Wachtwoord wijzigen"
+      },
+      "validation": {
+        "current_password_required": "Huidig wachtwoord is verplicht",
+        "password_min_length": "Nieuw wachtwoord moet minimaal 8 tekens bevatten",
+        "passwords_mismatch": "Wachtwoorden komen niet overeen"
+      },
+      "messages": {
+        "password_changed_success": "Wachtwoord succesvol gewijzigd!"
+      },
+      "information": {
+        "title": "Accountinformatie",
+        "email_label": "E-mail",
+        "plan_label": "Plan",
+        "plan_free": "Gratis",
+        "email_verified_label": "E-mail geverifieerd",
+        "email_verified_yes": "Ja",
+        "member_since_label": "Lid sinds"
+      },
+      "delete": {
+        "title": "Account verwijderen",
+        "subtitle": "Verwijder uw account permanent",
+        "button": "Mijn account verwijderen",
+        "warning_title": "Deze actie kan niet ongedaan worden gemaakt!",
+        "warning_message": "Al uw gegevens worden permanent verwijderd.",
+        "confirmation_instruction": "Typ VERWIJDEREN ter bevestiging:",
+        "confirmation_hint": "VERWIJDEREN",
+        "confirm_button": "Definitief verwijderen",
+        "cancel_button": "Annuleren"
+      }
+    }
+  },
+  "subscription": {
+    "main": {
+      "appbar_title": "Abonnement",
+      "header_label": "Wijzig of upgrade uw plan",
+      "heading": "Kies uw plan",
+      "subheading": "Ontgrendel premiumfuncties om uw leerervaring te versterken",
+      "billing_yearly": "Jaarlijks",
+      "billing_lifetime": "Levenslang",
+      "popular_badge": "MEEST POPULAIR",
+      "plan_trial_title": "7 dagen proefperiode",
+      "plan_trial_subtitle": "Probeer voordat u beslist",
+      "plan_pro_title": "Pro",
+      "plan_pro_lifetime_title": "Levenslang Pro",
+      "plan_pro_lifetime_subtitle": "Eenmalig betalen, voor altijd gebruiken",
+      "plan_pro_yearly_subtitle": "Ideaal voor serieuze studenten",
+      "yearly_crossed_price": "$47,88/jr",
+      "lifetime_period": "eenmalig",
+      "yearly_period": "/jaar",
+      "button_current_plan": "Huidig plan",
+      "button_free_forever": "Voor altijd gratis",
+      "button_upgrade_lifetime": "Upgraden naar Levenslang",
+      "button_upgrade_pro": "Upgraden naar Pro",
+      "trust_secure_title": "Beveiligd",
+      "trust_secure_subtitle": "SSL-versleuteld",
+      "trust_flexible_title": "Flexibel",
+      "trust_flexible_subtitle": "Op elk moment opzeggen",
+      "trust_free_title": "Voor altijd gratis",
+      "trust_free_subtitle": "Geen creditcard nodig om te beginnen"
+    },
+    "manage": {
+      "appbar_title": "Abonnement beheren",
+      "error_open_portal": "Portal openen mislukt",
+      "cancel_dialog_title": "Abonnement opzeggen?",
+      "cancel_dialog_content": "U behoudt toegang tot het einde van uw factureringsperiode.",
+      "cancel_dialog_keep_btn": "Abonnement behouden",
+      "cancel_dialog_cancel_btn": "Opzeggen",
+      "cancel_success_message": "Abonnement wordt opgezegd aan het einde van de periode",
+      "cancel_error_message": "Opzeggen mislukt",
+      "default_plan_name": "Pro-plan",
+      "status_active": "Actief",
+      "price_lifetime": "eenmalig",
+      "price_yearly": "/jr",
+      "button_change_plan": "Plan wijzigen",
+      "info_current_period_label": "Huidige periode",
+      "info_next_billing_label": "Volgende facturering",
+      "card_billing_history_title": "Factureringsgeschiedenis",
+      "card_billing_history_subtitle": "Eerdere facturen bekijken",
+      "card_payment_methods_title": "Betaalmethoden",
+      "card_payment_methods_subtitle": "Kaart of betaalmethode bijwerken",
+      "card_cancel_subscription_title": "Abonnement opzeggen",
+      "card_cancel_subscription_subtitle": "U behoudt toegang tot het einde van de periode",
+      "webview_title": "Factureringsportaal"
+    },
+    "checkout": {
+      "appbar_title": "Afrekenen",
+      "coupon_applied_message": "Coupon toegepast!",
+      "payment_success_message": "Betaling geslaagd!",
+      "payment_error_message": "Betaling mislukt",
+      "header_title": "Upgraden naar {plan}",
+      "header_subtitle_lifetime": "EENMALIGE betaling",
+      "header_subtitle_yearly": "JAARLIJKS abonnement",
+      "order_summary_label": "BESTELOVERZICHT",
+      "plan_line_item": "{plan}-plan ({cycle})",
+      "coupon_applied_label": "Coupon toegepast",
+      "coupon_discount_amount": "-${amount}",
+      "total_label": "Totaal",
+      "billing_period_year": "/jaar",
+      "billing_period_month": "/maand",
+      "coupon_code_label": "Couponcode",
+      "coupon_input_placeholder": "Voer couponcode in",
+      "coupon_apply_button": "Toepassen",
+      "what_you_get_heading": "Wat u krijgt",
+      "features": {
+        "unlimited_ai": "Onbeperkte AI-verzoeken",
+        "premium_features": "Alle premiumfuncties ontgrendeld",
+        "priority_support": "Prioriteitsondersteuning",
+        "advanced_analytics": "Geavanceerde analyses",
+        "exam_cloning": "Examen klonen en genereren",
+        "deep_research": "Diepgaand onderzoek"
+      },
+      "button_processing": "Verwerken...",
+      "button_proceed": "Doorgaan naar betaling",
+      "trust_ssl": "SSL-versleuteld",
+      "trust_stripe": "Mogelijk gemaakt door Stripe",
+      "trust_cancel_anytime": "Op elk moment opzeggen"
+    },
+    "success": {
+      "welcome_heading": "Welkom bij Pro!",
+      "payment_successful_message": "Uw betaling is geslaagd",
+      "info_plan_label": "Plan",
+      "info_status_label": "Status",
+      "info_status_active": "Actief",
+      "features_heading": "Ontgrendelde functies",
+      "button_continue": "Begin met Pro-functies"
+    },
+    "webview": {
+      "appbar_title": "Betaling voltooien",
+      "error_loading_page": "Fout bij het laden van de pagina",
+      "cancel_dialog_title": "Betaling annuleren?",
+      "cancel_dialog_content": "Weet u zeker dat u deze betaling wilt annuleren?",
+      "cancel_dialog_continue_btn": "Nee, doorgaan",
+      "cancel_dialog_cancel_btn": "Ja, annuleren"
+    }
+  },
+  "notifications": {
+    "header": {
+      "title": "Meldingen",
+      "unread_count": "{count} nieuw",
+      "all_caught_up": "Alles bijgewerkt!",
+      "mark_all_as_read": "Alles als gelezen markeren",
+      "clear_all": "Alles wissen"
+    },
+    "tabs": {
+      "all": "Alle",
+      "unread": "Ongelezen",
+      "settings": "Instellingen"
+    },
+    "dialogs": {
+      "clear_all_title": "Alles wissen?",
+      "clear_all_message": "Dit verwijdert permanent alle meldingen.",
+      "cancel": "Annuleren",
+      "delete_all": "Alles verwijderen"
+    },
+    "time": {
+      "just_now": "Zojuist",
+      "minutes_ago": "{minutes}m geleden",
+      "hours_ago": "{hours}u geleden",
+      "days_ago": "{days}d geleden"
+    },
+    "empty": {
+      "no_notifications_title": "Geen meldingen",
+      "no_notifications_message": "We laten het u weten wanneer er iets\nbelangrijks gebeurt",
+      "all_caught_up_title": "Alles bijgewerkt!",
+      "all_caught_up_message": "U heeft al uw meldingen gelezen.\nGoed bijgehouden! 🎉",
+      "feature_stay_updated": "Blijf op de hoogte",
+      "feature_quick_actions": "Snelle acties",
+      "feature_track_progress": "Voortgang bijhouden"
+    },
+    "card": {
+      "delete": "Verwijderen",
+      "mark_as_read": "Als gelezen markeren"
+    },
+    "types": {
+      "info": "INFO",
+      "success": "SUCCES",
+      "warning": "WAARSCHUWING",
+      "reminder": "HERINNERING",
+      "achievement": "PRESTATIE",
+      "study": "STUDIE"
+    },
+    "settings": {
+      "info_card_title": "Blijf op de hoogte!",
+      "info_card_message": "Schakel meldingen in om geen belangrijke updates te missen",
+      "channels_section": "Meldingskanalen",
+      "types_section": "Waarover melden",
+      "in_app_title": "In-app meldingen",
+      "in_app_subtitle": "Ontvang meldingen terwijl u de app gebruikt",
+      "email_title": "E-mailmeldingen",
+      "email_subtitle": "Ontvang belangrijke updates per e-mail",
+      "push_title": "Pushmeldingen",
+      "push_subtitle": "Ontvang pushmeldingen op dit apparaat",
+      "study_reminders_title": "Studieherinneringen",
+      "study_reminders_subtitle": "Herinneringen over flashcards en studiesessies",
+      "achievements_title": "Prestaties en mijlpalen",
+      "achievements_subtitle": "Vier uw leerprestaties",
+      "weekly_digest_title": "Wekelijks overzicht",
+      "weekly_digest_subtitle": "Samenvatting van uw wekelijkse leervoortgang",
+      "footer_message": "Meldingsvoorkeuren worden gesynchroniseerd op al uw apparaten"
+    }
+  },
+  "flashcards": {
+    "add": {
+      "title_edit": "Flashcard bewerken",
+      "title_add": "Flashcard toevoegen",
+      "label_front": "Voorzijde (Vraag)",
+      "hint_front": "Voer de vraag of het begrip in",
+      "error_front_required": "Voorzijde is verplicht",
+      "label_back": "Achterzijde (Antwoord)",
+      "hint_back": "Voer het antwoord of de definitie in",
+      "error_back_required": "Achterzijde is verplicht",
+      "label_notes": "Notities (optioneel)",
+      "hint_notes": "Voeg extra notities of context toe",
+      "label_tags": "Tags (optioneel)",
+      "hint_tags_example": "hoofdstuk1, belangrijk, herhaling",
+      "helper_tags": "Scheid tags met komma's",
+      "button_save_changes": "Wijzigingen opslaan",
+      "button_create": "Flashcard aanmaken"
+    },
+    "list": {
+      "label_flashcards": "Flashcards",
+      "sort_newest": "Nieuwste eerst",
+      "sort_oldest": "Oudste eerst",
+      "sort_difficulty": "Moeilijkheidsgraad",
+      "menu_newest": "Nieuwste eerst",
+      "menu_oldest": "Oudste eerst",
+      "menu_difficulty": "Moeilijkheidsgraad",
+      "toast_created": "Flashcard succesvol aangemaakt!",
+      "toast_updated": "Flashcard succesvol bijgewerkt!",
+      "toast_bulk_created": "{count} kaarten succesvol toegevoegd!",
+      "toast_deleted": "Flashcard verwijderd",
+      "error_title": "Fout bij het laden van flashcards",
+      "button_retry": "Opnieuw proberen",
+      "filter_all": "Alle",
+      "filter_new": "Nieuw",
+      "filter_learning": "Aan het leren",
+      "filter_review": "Herhaling",
+      "filter_mastered": "Beheerst",
+      "filter_due": "Te doen",
+      "empty_filter_message": "Geen kaarten in deze categorie",
+      "button_add_cards": "Kaarten toevoegen",
+      "modal_add_cards_title": "Kaarten toevoegen",
+      "button_add_to_set": "Toevoegen aan studieset",
+      "ready_card_singular": "kaart",
+      "ready_cards_plural": "kaarten",
+      "ready_text": "gereed",
+      "empty_title": "Nog geen flashcards",
+      "empty_message": "Maak uw eerste flashcard om te beginnen met leren",
+      "empty_button": "Kaarten toevoegen"
+    },
+    "study": {
+      "card_progress": "Kaart {current} van {total}",
+      "question_rating": "Hoe goed kende u het?",
+      "rating_again": "Opnieuw",
+      "rating_again_subtitle": "Vergeten",
+      "rating_hard": "Moeilijk",
+      "rating_hard_subtitle": "Lastig",
+      "rating_good": "Goed",
+      "rating_good_subtitle": "Herinnerd",
+      "rating_easy": "Makkelijk",
+      "rating_easy_subtitle": "Perfect",
+      "hint_tap_card": "Tik op de kaart om het antwoord te onthullen",
+      "label_question": "VRAAG",
+      "label_answer": "ANTWOORD",
+      "exit_dialog_title": "Studiesessie verlaten?",
+      "exit_dialog_message": "Uw voortgang wordt niet opgeslagen als u nu stopt. Weet u het zeker?",
+      "exit_button_continue": "Doorgaan met studeren",
+      "exit_button_exit": "Verlaten"
+    },
+    "widgets": {
+      "session_summary": {
+        "title": "Sessie voltooid!",
+        "cards_reviewed": "U heeft {count} kaarten herhaald",
+        "accuracy": "Nauwkeurigheid",
+        "easy_good": "Makkelijk/Goed",
+        "hard": "Moeilijk",
+        "again": "Opnieuw",
+        "done_button": "Klaar"
+      },
+      "ai_assist": {
+        "header": "AI-assistent",
+        "suggest_answer_title": "Antwoord voorstellen",
+        "suggest_answer_description": "Genereer een uitgebreid antwoord",
+        "elaborate_title": "Uitwerken",
+        "elaborate_description": "Voeg meer detail en context toe",
+        "add_mnemonic_title": "Ezelsbruggetje toevoegen",
+        "add_mnemonic_description": "Maak geheugentrucs om te onthouden",
+        "simplify_title": "Vereenvoudigen",
+        "simplify_description": "Herschrijf in eenvoudigere taal",
+        "suggestion_label": "AI-suggestie",
+        "try_again_button": "Opnieuw proberen",
+        "accept_button": "Accepteren",
+        "suggestion_applied_toast": "AI-suggestie toegepast!"
+      },
+      "ai_generation": {
+        "minimum_chars_error": "Voer minimaal 50 tekens in",
+        "cards_ready_toast": "{count} kaarten klaar om toe te voegen",
+        "info_banner_text": "Laat AI flashcards genereren uit uw inhoud",
+        "banner_text": "Laat AI flashcards genereren uit uw inhoud",
+        "content_label": "Inhoud",
+        "content_hint": "Plak hier uw tekst, aantekeningen of studiemateriaal...",
+        "char_counter_helper": "{count}/50 tekens minimum",
+        "char_count": "{count}/50 tekens minimum",
+        "card_count_label": "Aantal kaarten",
+        "number_of_cards": "Aantal kaarten",
+        "card_type_label": "Kaarttype",
+        "card_type": "Kaarttype",
+        "qa_type": "V&A",
+        "type_qa": "V&A",
+        "fill_blank_type": "Invuloefening",
+        "type_fill_blank": "Invuloefening",
+        "true_false_type": "Waar/Onwaar",
+        "type_true_false": "Waar/Onwaar",
+        "difficulty_label": "Moeilijkheidsgraad",
+        "difficulty": "Moeilijkheidsgraad",
+        "easy_difficulty": "Makkelijk",
+        "difficulty_easy": "Makkelijk",
+        "medium_difficulty": "Gemiddeld",
+        "difficulty_medium": "Gemiddeld",
+        "hard_difficulty": "Moeilijk",
+        "difficulty_hard": "Moeilijk",
+        "generating_button": "Genereren...",
+        "generate_button": "Genereren met AI",
+        "generated_cards_title": "Gegenereerde kaarten ({count})",
+        "deselect_all_button": "Alles deselecteren",
+        "select_all_button": "Alles selecteren",
+        "card_number_label": "Kaart {number}",
+        "answer_label": "Antwoord:",
+        "add_selected_button": "{count} geselecteerde kaarten toevoegen"
+      },
+      "manual_creation": {
+        "card_count_label": "{count} {cards}",
+        "card_count": {
+          "zero": "Geen kaarten",
+          "one": "1 kaart",
+          "other": "{count} kaarten"
+        },
+        "add_card_button": "Kaart toevoegen",
+        "add_card": "Kaart toevoegen",
+        "empty_state_title": "Nog geen kaarten",
+        "no_cards": "Nog geen kaarten",
+        "create_first_card_button": "Maak uw eerste kaart",
+        "create_first": "Maak uw eerste kaart",
+        "singular_card": "Kaart",
+        "plural_cards": "Kaarten",
+        "card_header_title": "Kaart {number}",
+        "ready_badge": "Gereed",
+        "delete_card_tooltip": "Kaart verwijderen",
+        "card_type_label": "Kaarttype",
+        "qa_type": "V&A",
+        "cloze_type": "Cloze",
+        "image_occlusion_type": "Afbeeldingsocclusie",
+        "front_label": "Voorkant *",
+        "front_hint": "Vraag of opdracht",
+        "back_label": "Achterkant *",
+        "back_hint": "Antwoord of uitleg",
+        "notes_label": "Notities (optioneel)",
+        "notes_hint": "Extra context",
+        "tags_label": "Tags (optioneel)",
+        "tags_hint": "onderwerp1, onderwerp2",
+        "tags_helper": "Scheid tags met komma's"
+      },
+      "editor": {
+        "manual_tab": "Handmatig",
+        "ai_tab": "AI",
+        "import_tab": "Importeren",
+        "tab_manual": "Handmatig",
+        "tab_ai": "AI",
+        "tab_import": "Importeren"
+      },
+      "import": {
+        "recording_saved_toast": "Opname opgeslagen!",
+        "microphone_permission_error": "Microfoontoestemming geweigerd",
+        "recording_started_toast": "Opname gestart...",
+        "recording_failed_error": "Opname mislukt",
+        "file_pick_error": "Bestand selecteren mislukt",
+        "camera_open_error": "Camera openen mislukt",
+        "image_pick_error": "Afbeelding selecteren mislukt",
+        "no_text_in_image_error": "Geen tekst gevonden in afbeelding",
+        "text_extracted_success": "Tekst succesvol geëxtraheerd!",
+        "image_process_error": "Afbeelding verwerken mislukt",
+        "empty_text_error": "Voer tekst in om te importeren",
+        "no_file_selected_error": "Selecteer een bestand",
+        "no_audio_error": "Neem eerst audio op of selecteer een audiobestand",
+        "no_image_error": "Scan of selecteer eerst een afbeelding",
+        "no_google_docs_url_error": "Voer een Google Docs URL in",
+        "no_youtube_url_error": "Voer een YouTube URL in",
+        "no_website_url_error": "Voer een website-URL in",
+        "cards_ready_toast": "{count} kaarten klaar om toe te voegen",
+        "info_banner_text": "Importeer flashcards uit verschillende bronnen",
+        "banner_text": "Importeer flashcards uit verschillende bronnen",
+        "source_label": "Importbron",
+        "pdf_source": "PDF uploaden",
+        "source_pdf": "PDF uploaden",
+        "youtube_source": "YouTube-video",
+        "source_youtube": "YouTube-video",
+        "record_audio_source": "Audio opnemen",
+        "source_record_audio": "Audio opnemen",
+        "audio_file_source": "Audiobestand",
+        "source_audio_file": "Audiobestand",
+        "website_source": "Website-URL",
+        "source_website": "Website-URL",
+        "camera_source": "Camera scannen",
+        "source_camera": "Camera scannen",
+        "google_docs_source": "Google Docs",
+        "source_google_docs": "Google Docs",
+        "text_source": "Tekst plakken",
+        "source_text": "Tekst plakken",
+        "handwritten_source": "Handgeschreven notities",
+        "source_handwritten": "Handgeschreven notities",
+        "text_label": "Tekst plakken",
+        "text_hint": "Voer uw flashcard-inhoud in...",
+        "pdf_description": "Upload uw PDF-documenten",
+        "choose_pdf_button": "PDF kiezen",
+        "change_pdf_button": "PDF wijzigen",
+        "recording_in_progress_text": "Opnemen...",
+        "recording_saved_text": "Opname opgeslagen!",
+        "tap_to_record_text": "Tik om opname te starten",
+        "record_voice_hint": "Neem uw stem op en wij transcriberen het",
+        "stop_recording_button": "Opname stoppen",
+        "start_recording_button": "Opname starten",
+        "record_again_button": "Opnieuw opnemen",
+        "choose_audio_button": "Audiobestand kiezen",
+        "change_audio_button": "Bestand wijzigen",
+        "audio_formats_helper": "Ondersteund: MP3, WAV, M4A",
+        "camera_title": "Documenten scannen met camera",
+        "camera_hint": "Maak een foto van uw aantekeningen of tekstboek",
+        "open_camera_button": "Camera openen",
+        "google_docs_label": "Google Docs URL",
+        "google_docs_hint": "https://docs.google.com/document/d/...",
+        "google_docs_helper": "Plak een deelbare Google Docs-link",
+        "handwritten_title": "Handgeschreven notities scannen",
+        "handwritten_hint": "Wij extraheren tekst uit uw handgeschreven notities",
+        "take_photo_button": "Foto maken",
+        "from_gallery_button": "Uit galerij",
+        "paste_text_label": "Tekst plakken",
+        "paste_text_hint": "Voer uw flashcard-inhoud in...",
+        "separator_label": "Kaartscheidingsteken",
+        "separator_hint": "bijv. \\n\\n of ---",
+        "separator_helper": "Patroon om kaarten te splitsen",
+        "choose_file_button": "Bestand kiezen",
+        "change_file_button": "Bestand wijzigen",
+        "file_formats_helper": "Ondersteund: PDF, TXT, CSV, MD",
+        "youtube_label": "YouTube URL",
+        "youtube_hint": "https://youtube.com/watch?v=...",
+        "youtube_helper": "Wij extraheren het transcript",
+        "website_label": "Website-URL",
+        "website_hint": "https://voorbeeld.nl",
+        "website_helper": "Wij extraheren de inhoud",
+        "importing_button": "Importeren...",
+        "import_button": "Flashcards importeren",
+        "imported_cards_title": "Geïmporteerde kaarten ({count})",
+        "card_number_label": "Kaart {number}",
+        "add_to_study_set_button": "{count} kaarten toevoegen aan studieset"
+      }
+    }
+  },
+  "notes": {
+    "title": "Aantekeningen",
+    "mindMapHistoryTooltip": "Mindmap-geschiedenis",
+    "mindMapTooltip": "Mindmap",
+    "aiGenerateButton": "AI genereren",
+    "addNoteButton": "Aantekening toevoegen",
+    "emptyStateTitle": "Nog geen aantekeningen",
+    "emptyStateSubtitle": "Maak aantekeningen om uw leermateriaal te organiseren",
+    "createManuallyButton": "Handmatig aanmaken",
+    "noSearchResultsTitle": "Geen aantekeningen gevonden",
+    "noSearchResultsSubtitle": "Pas uw zoekopdracht of filter aan",
+    "createSuccess": "Aantekening succesvol aangemaakt!",
+    "deleteSuccess": "Aantekening succesvol verwijderd!",
+    "updateSuccess": "Aantekening succesvol bijgewerkt!",
+    "aiNotesGeneratedSuccess": "{count} AI-aantekeningen gegenereerd!",
+    "deleteConfirmationTitle": "Aantekening verwijderen?",
+    "deleteConfirmationMessage": "Weet u zeker dat u \"{title}\" wilt verwijderen?",
+    "searchPlaceholder": "Aantekeningen zoeken...",
+    "filterAll": "Alle",
+    "filterMoreTags": "+{count} meer",
+    "sortNewest": "Nieuwste eerst",
+    "sortOldest": "Oudste eerst",
+    "sortTitle": "Titel A-Z",
+    "createNoteTitle": "Aantekening maken",
+    "editNoteTitle": "Aantekening bewerken",
+    "titleLabel": "Titel",
+    "titleHint": "Voer titel in",
+    "titleValidation": "Voer een titel in",
+    "contentLabel": "Inhoud",
+    "contentHint": "Schrijf hier uw aantekening...\n\nOndersteunt Markdown-opmaak",
+    "contentValidation": "Voer inhoud in",
+    "tagsLabel": "Tags (optioneel)",
+    "tagsHint": "bijv. biologie, belangrijk, hoofdstuk1 (komma-gescheiden)",
+    "tagsHintEdit": "Komma-gescheiden",
+    "markdownHelpText": "U kunt Markdown-syntax gebruiken voor opmaak:\n• **vet**, *cursief*, `code`\n• # Kop, ## Subkop\n• - Lijsten",
+    "createNoteSubmitButton": "Aantekening maken",
+    "updateNoteButton": "Aantekening bijwerken",
+    "pinnedBadge": "Vastgezet",
+    "updatedDateLabel": "Bijgewerkt {date}",
+    "generateAITitle": "Aantekening genereren met AI",
+    "generateAISubtitle": "Extraheer inhoud en maak slimme aantekeningen",
+    "sourceTypePDF": "PDF-document",
+    "sourceTypePDFDescription": "Upload PDF-bestanden",
+    "sourceTypeYouTube": "YouTube-video",
+    "sourceTypeYouTubeDescription": "Extraheren uit video",
+    "sourceTypeWebsite": "Website-URL",
+    "sourceTypeWebsiteDescription": "Webpagina scrapen",
+    "sourceTypeAudio": "Audiobestand",
+    "sourceTypeAudioDescription": "Audio transcriberen",
+    "sourceTypeHandwriting": "Handgeschreven",
+    "sourceTypeHandwritingDescription": "OCR van afbeelding",
+    "sourceTypeText": "Tekst plakken",
+    "sourceTypeTextDescription": "Vanuit klembord",
+    "chooseSourceLabel": "Kies uw inhoudsbron",
+    "youtubeUrlLabel": "YouTube URL",
+    "youtubeUrlHint": "https://www.youtube.com/watch?v=...",
+    "websiteUrlLabel": "Website-URL",
+    "websiteUrlHint": "https://nl.wikipedia.org/wiki/...",
+    "pasteContentLabel": "Plak uw inhoud",
+    "pasteContentHint": "Plak collegeaantekeningen, artikeltekst of andere inhoud...",
+    "characterCount": "{count} tekens",
+    "fileUploadPrompt": "Sleep bestand hierheen of klik om te bladeren",
+    "pdfFileTypes": "PDF, TXT, MD (max 20MB)",
+    "audioFileTypes": "MP3, WAV, M4A (max 50MB)",
+    "imageFileTypes": "JPG, PNG, HEIC (max 20MB)",
+    "extractGenerateButton": "Extraheren en aantekening genereren",
+    "processingTitle": "Uw inhoud wordt verwerkt",
+    "processingSubtitle": "Dit kan even duren...",
+    "processingStep1": "Inhoud extraheren",
+    "processingStep2": "Tekst analyseren",
+    "processingStep3": "Samenvatting genereren",
+    "processingStep4": "Aantekening aanmaken",
+    "extractionSuccess": "Inhoud succesvol geëxtraheerd!",
+    "aiSummaryLabel": "AI-samenvatting",
+    "suggestedTagsLabel": "Voorgestelde tags",
+    "contentPreviewLabel": "Inhoudsvoorbeeld ({count} tekens)",
+    "startOverButton": "Opnieuw beginnen",
+    "saveNoteButton": "Aantekening opslaan",
+    "generatingPresentationTitle": "Presentatie genereren",
+    "generatingPresentationSubtitle": "AI maakt dia's van uw aantekening...",
+    "generationFailedTitle": "Genereren mislukt",
+    "aiGeneratedBadge": "AI-gegenereerd",
+    "regenerateButton": "Opnieuw genereren",
+    "mindMapTitle": "Mindmap",
+    "generatingMindMapMessage": "Mindmap genereren...",
+    "mindMapGenerationFailed": "Mindmap genereren mislukt",
+    "mindMapHistoryTitle": "Mindmap-geschiedenis",
+    "failedToLoadHistory": "Geschiedenis laden mislukt",
+    "noMindMapsEmptyTitle": "Nog geen mindmaps",
+    "noMindMapsEmptySubtitle": "Genereer mindmaps van uw aantekeningen",
+    "mindMapDeletedSuccess": "Mindmap verwijderd",
+    "mindMapDeleteFailed": "Verwijderen mislukt",
+    "mindMapLoadFailed": "Laden mislukt",
+    "deleteMindMapTitle": "Mindmap verwijderen",
+    "deleteMindMapConfirmation": "Weet u zeker dat u deze mindmap wilt verwijderen?",
+    "analyzingNotesMessage": "Uw aantekeningen analyseren...",
+    "creatingMindMapMessage": "Mindmap aanmaken",
+    "mindMapGuideTitle": "Mindmap-handleiding",
+    "mindMapGuideContent": "Deze mindmap visualiseert alle concepten uit uw aantekeningen.\n\n• Knijp om in/uit te zoomen\n• Sleep om te navigeren\n• Tik op vernieuwen om opnieuw te genereren",
+    "mindMapHelpText": "Knijp om te zoomen • Sleep om de kaart te verkennen",
+    "noNotesForMindMap": "Geen aantekeningen beschikbaar om een mindmap te genereren",
+    "shareNoteTitle": "Aantekening delen",
+    "shareLinkLabel": "Deellink",
+    "shareToSocialLabel": "Delen op social media",
+    "shareWhatsApp": "WhatsApp",
+    "shareTwitter": "Twitter",
+    "shareFacebook": "Facebook",
+    "shareLinkedIn": "LinkedIn",
+    "shareEmail": "E-mail",
+    "downloadLabel": "Downloaden",
+    "downloadText": "Tekst (.txt)",
+    "downloadMarkdown": "Markdown (.md)",
+    "sharingPreviewLabel": "Delen",
+    "linkCopiedSuccess": "Link gekopieerd naar klembord!",
+    "downloadTextSuccess": "Gedownload: {title}.txt",
+    "downloadFailed": "Downloaden mislukt",
+    "downloadMarkdownSuccess": "Gedownload: {title}.md"
+  },
+  "quiz": {
+    "live_lobby": {
+      "room_code": "Kamercode",
+      "copy_code": "Code kopiëren",
+      "share_code": "Deel deze code met vrienden om deel te nemen",
+      "room_code_copied": "Kamercode gekopieerd!",
+      "players": "Spelers ({count})",
+      "host_badge": "HOST",
+      "starting": "Starten...",
+      "start_game": "Spel starten",
+      "waiting_for_host": "Wachten tot de host het spel start...",
+      "error_occurred": "Er is een fout opgetreden"
+    },
+    "live_quiz": {
+      "title": "Live quiz",
+      "hero_title": "Strijd in realtime",
+      "hero_subtitle": "Speel met vrienden en ontdek wie het meeste weet!",
+      "host_game": "Spel hosten",
+      "host_description": "Maak een kamer aan en deel de code met vrienden",
+      "creating_room": "Kamer aanmaken...",
+      "create_room": "Kamer aanmaken",
+      "or": "OF",
+      "join_game": "Deelnemen aan spel",
+      "room_code_label": "Kamercode",
+      "room_code_hint": "ABC123",
+      "your_name_label": "Uw naam",
+      "your_name_hint": "Voer uw naam in",
+      "joining": "Deelnemen...",
+      "join_room": "Kamer betreden",
+      "please_enter_room_code": "Voer de kamercode in",
+      "please_enter_name": "Voer uw naam in",
+      "failed_to_create_room": "Kamer aanmaken mislukt",
+      "failed_to_join_room": "Deelnemen aan kamer mislukt",
+      "error": "Fout: {error}"
+    },
+    "match_game": {
+      "title": "Koppelspel",
+      "reset_game": "Spel resetten",
+      "time": "Tijd",
+      "moves": "Zetten",
+      "matches": "Koppels",
+      "questions": "VRAGEN",
+      "answers": "ANTWOORDEN",
+      "congratulations": "Gefeliciteerd! 🎉",
+      "completed_message": "Voltooid in {seconds} seconden met {moves} zetten",
+      "play_again": "Opnieuw spelen",
+      "no_flashcards_available": "Geen flashcards beschikbaar om te koppelen",
+      "failed_to_load": "Flashcards laden mislukt: {error}",
+      "time_seconds": "{seconds}s"
+    },
+    "mode": {
+      "title": "Quizmodus",
+      "hero_title": "Test uw kennis",
+      "hero_subtitle": "AI-gegenereerde vragen uit uw flashcards",
+      "number_of_questions": "Aantal vragen",
+      "question_types": "Vraagtypen",
+      "multiple_choice": "Meerkeuze",
+      "multiple_choice_description": "4 opties, kies er één",
+      "true_false": "Waar / Onwaar",
+      "true_false_description": "Bepaal of de stelling juist is",
+      "fill_blank": "Invuloefening",
+      "fill_blank_description": "Typ het ontbrekende woord of de ontbrekende zin",
+      "timer": "Timer",
+      "timer_description": "30 seconden per vraag",
+      "generating_quiz": "Quiz genereren...",
+      "generate_start_quiz": "Quiz genereren en starten",
+      "please_select_question_type": "Selecteer minimaal één vraagtype",
+      "failed_to_generate": "Quiz genereren mislukt: {error}"
+    },
+    "results": {
+      "title": "Quizresultaten",
+      "score": "Score",
+      "outstanding": "Uitstekend! 🎉",
+      "great_job": "Goed gedaan! 👏",
+      "good_effort": "Goede inzet! 💪",
+      "keep_practicing": "Blijf oefenen! 📚",
+      "correct": "Juist",
+      "incorrect": "Onjuist",
+      "time": "Tijd",
+      "time_minutes": "{minutes}m",
+      "back_to_study_set": "Terug naar studieset",
+      "try_again": "Opnieuw proberen"
+    },
+    "taking": {
+      "exit_quiz": "Quiz verlaten?",
+      "exit_message": "Uw voortgang gaat verloren.",
+      "cancel": "Annuleren",
+      "exit": "Verlaten",
+      "question_progress": "{current}/{total}",
+      "submitting": "Indienen...",
+      "type_answer_here": "Typ hier uw antwoord...",
+      "submit_answer": "Antwoord indienen",
+      "correct_feedback": "Juist!",
+      "incorrect_feedback": "Onjuist",
+      "correct_answer": "Juiste antwoord: {answer}",
+      "explanation": "Uitleg",
+      "previous": "Vorige",
+      "next_question": "Volgende vraag",
+      "submit_quiz": "Quiz indienen",
+      "failed_to_submit": "Quiz indienen mislukt: {error}"
+    }
+  },
+  "research": {
+    "title": "Diepgaand onderzoek",
+    "messages": {
+      "please_enter_query": "Voer een onderzoeksvraag in",
+      "creating": "Onderzoek aanmaken...",
+      "loading_report": "Onderzoeksrapport laden...",
+      "pdf_export_soon": "PDF-export binnenkort beschikbaar!",
+      "markdown_copied": "Markdown gekopieerd naar klembord!",
+      "report_copied": "Rapport gekopieerd!",
+      "could_not_open_link": "Link kon niet worden geopend"
+    },
+    "form": {
+      "query_hint": "bijv. \"Leg quantumcomputing uitgebreid uit\"",
+      "ai_powered_research": "AI-aangedreven onderzoek",
+      "deep_dive_topic": "Duik diep in elk onderwerp"
+    },
+    "sections": {
+      "source_types": "📚 Brontypen",
+      "research_depth": "🔍 Onderzoeksdiepte",
+      "output_format": "📄 Uitvoerformaat"
+    },
+    "source_types": {
+      "documents": "Documenten",
+      "web": "Web",
+      "academic": "Academisch"
+    },
+    "depth": {
+      "quick": "Snel",
+      "standard": "Standaard",
+      "comprehensive": "Uitgebreid"
+    },
+    "output_format": {
+      "detailed": "Gedetailleerd",
+      "summary": "Samenvatting",
+      "bullets": "Opsomming"
+    },
+    "buttons": {
+      "start_research": "Diepgaand onderzoek starten",
+      "cancel": "Annuleren"
+    },
+    "recent": {
+      "title": "Recent onderzoek",
+      "done": "Voltooid",
+      "failed": "Mislukt",
+      "in_progress": "Bezig"
+    },
+    "progress": {
+      "title": "Onderzoek bezig",
+      "query_label": "Onderzoeksvraag",
+      "overall_progress": "Totale voortgang",
+      "pipeline_title": "Onderzoekspijplijn",
+      "phases": {
+        "planning": "Plannen",
+        "researching": "Onderzoeken",
+        "synthesizing": "Samenvatten",
+        "completed": "Voltooid",
+        "failed": "Mislukt",
+        "starting": "Starten"
+      },
+      "agents": {
+        "planning": "Planningsagent",
+        "planning_desc": "Vraag analyseren en onderzoeksstrategie plannen",
+        "research": "Onderzoeksagent",
+        "research_desc": "Informatie verzamelen uit geselecteerde bronnen",
+        "synthesis": "Synthese-agent",
+        "synthesis_desc": "Bevindingen compileren en organiseren"
+      }
+    },
+    "report": {
+      "deep_research": "DIEPGAAND ONDERZOEK",
+      "tab_report": "Rapport",
+      "tab_sources": "Bronnen ({count})",
+      "tab_export": "Exporteren",
+      "executive_summary": "Samenvatting",
+      "key_insights": "Belangrijkste inzichten",
+      "sources_references": "Bronnen en referenties",
+      "sources_cited": "{count} bronnen aangehaald",
+      "no_sources": "Geen bronnen gevonden",
+      "knowledge_base_sources": "Kennisbank ({count})",
+      "web_sources": "Webbronnen ({count})",
+      "study_material": "Studiemateriaal",
+      "relevance": "{score}% Relevantie",
+      "relevance_label": "Relevantie",
+      "citation_copied": "Citaat gekopieerd!",
+      "export_title": "Onderzoek exporteren",
+      "export_format": "Exportformaat",
+      "export_pdf": "Exporteren als PDF",
+      "export_pdf_desc": "Opslaan als PDF-document",
+      "export_markdown": "Kopiëren als Markdown",
+      "export_markdown_desc": "Opgemaakte tekst met citaten",
+      "export_plain": "Platte tekst kopiëren",
+      "export_plain_desc": "Eenvoudige tekst zonder opmaak",
+      "share": "Rapport delen",
+      "share_desc": "Delen via andere apps",
+      "citation_style": "Citatiestijl",
+      "citation_preview": "VOORBEELD",
+      "delete_confirm_title": "Onderzoek verwijderen?",
+      "delete_confirm_message": "Dit onderzoeksrapport wordt permanent verwijderd.",
+      "delete_confirm_cancel": "Annuleren",
+      "delete_confirm_delete": "Verwijderen"
+    },
+    "date": {
+      "today": "Vandaag",
+      "yesterday": "Gisteren",
+      "days_ago": "{days} dagen geleden"
+    }
+  },
+  "ai_chat": {
+    "title": "Studiebuddy",
+    "history_title": "Chatgeschiedenis",
+    "history_subtitle": "Uw AI-gesprekken",
+    "messages": {
+      "ask_anything": "Vraag mij alles...",
+      "thinking": "Nadenken...",
+      "no_conversations": "Nog geen gesprekken",
+      "start_new": "Begin een nieuw gesprek",
+      "search_conversations": "Gesprekken zoeken...",
+      "delete_confirm_title": "Gesprek verwijderen?",
+      "delete_confirm_message": "Dit verwijdert permanent dit gesprek en alle berichten.",
+      "delete_confirm_cancel": "Annuleren",
+      "delete_confirm_delete": "Verwijderen"
+    },
+    "empty_state": {
+      "title": "Studiebuddy",
+      "description": "Stel vragen over uw studiemateriaal, krijg uitleg, samenvattingen en meer.\nIk kan uw documenten raadplegen en antwoorden met bronvermelding geven.",
+      "prompts": {
+        "explain": "Leg de belangrijkste concepten van dit onderwerp uit",
+        "summary": "Maak een samenvatting van mijn studiemateriaal",
+        "important": "Wat zijn de belangrijkste punten om te onthouden?",
+        "examples": "Help mij dit beter te begrijpen met voorbeelden"
+      }
+    },
+    "file_picker": {
+      "gallery": "Kiezen uit galerij",
+      "camera": "Foto maken",
+      "pdf": "PDF-document kiezen"
+    },
+    "history": {
+      "new_chat": "Nieuw gesprek",
+      "no_message": "Nog geen gesprekken"
+    },
+    "date": {
+      "today": "Vandaag",
+      "yesterday": "Gisteren",
+      "days_ago": "{days} dagen geleden"
+    }
+  },
+  "teach_back": {
+    "title": "Teruguitleggen",
+    "messages": {
+      "please_enter_topic": "Voer een onderwerp in",
+      "please_select_study_set": "Selecteer een studieset",
+      "please_enter_explanation": "Voer uw uitleg in",
+      "explanation_submitted": "Uitleg ingediend!",
+      "no_study_sets": "Geen studiesets gevonden. Maak er eerst een aan!"
+    },
+    "feynman": {
+      "title": "Feynman-techniek",
+      "step1": "Onderwerp kiezen",
+      "step1_desc": "Kies een concept",
+      "step2": "Eenvoudig uitleggen",
+      "step2_desc": "Leg het uit",
+      "step3": "Feedback krijgen",
+      "step3_desc": "AI beoordeelt",
+      "step4": "Hiaten opvullen",
+      "step4_desc": "Verbeteren en opnieuw proberen"
+    },
+    "form": {
+      "mode_topic": "Onderwerp invoeren",
+      "mode_study_set": "Uit studieset",
+      "topic_label": "Welk onderwerp wilt u beheersen?",
+      "topic_hint": "bijv. Stelling van Pythagoras, Fotosynthese, Vraag en Aanbod...",
+      "quick_picks": "Snelle keuzes:",
+      "reference_label": "Referentiemateriaal (optioneel — helpt AI beter te beoordelen)",
+      "reference_hint": "Plak hier leerboeknotities, college-inhoud of belangrijke punten...",
+      "study_set_label": "Kies een studieset — AI genereert automatisch het onderwerp uit uw flashcards",
+      "study_set_empty": "Geen studiesets gevonden. Maak er eerst een aan!",
+      "cards_count": "{count} kaarten",
+      "cancel": "Annuleren",
+      "generate_start": "Genereren en starten",
+      "start_teaching": "Begin met uitleggen",
+      "generating": "Genereren...",
+      "creating": "Aanmaken..."
+    },
+    "session": {
+      "essentials_title": "Essentiële punten bekijken",
+      "load_essentials": "Essentiële punten laden",
+      "who_explaining": "Aan wie legt u het uit?",
+      "difficulty_eli5": "Een 5-jarige",
+      "difficulty_eli5_desc": "Zo eenvoudig mogelijk",
+      "difficulty_classmate": "Een medestudent",
+      "difficulty_classmate_desc": "Normaal niveau",
+      "difficulty_expert": "Een expert",
+      "difficulty_expert_desc": "Technische diepgang",
+      "explanation_title": "Uw uitleg",
+      "explanation_hint": "Leg het concept in eigen woorden uit...",
+      "characters_count": "{count} tekens",
+      "submit_explanation": "Uitleg indienen",
+      "submitting": "Indienen...",
+      "review_explanation": "Bekijk uw uitleg",
+      "evaluate_button": "Mijn uitleg beoordelen",
+      "evaluating": "Beoordelen...",
+      "challenge_button": "Uitdaging",
+      "convince_ai_title": "Overtuig de AI",
+      "convince_ai_desc": "Een sceptische AI-student zal indringende vragen stellen. Verdedig uw begrip!",
+      "convinced_badge": "Overtuigd! +20 XP",
+      "skeptical_student": "Sceptische student",
+      "defend_hint": "Verdedig uw begrip...",
+      "thinking": "Nadenken..."
+    },
+    "progress": {
+      "phase_explain": "Uitleggen",
+      "phase_submit": "Indienen",
+      "phase_evaluate": "Beoordelen"
+    },
+    "evaluation": {
+      "xp_earned": "+50 XP verdiend!",
+      "overall_score": "Totaalscore",
+      "score_breakdown": "Score-uitsplitsing",
+      "accuracy": "Nauwkeurigheid",
+      "clarity": "Duidelijkheid",
+      "completeness": "Volledigheid",
+      "understanding": "Begrip",
+      "strengths": "Sterke punten",
+      "improve": "Hoe te verbeteren",
+      "deepen": "Verdiep uw begrip",
+      "try_again": "Opnieuw proberen",
+      "new_topic": "Nieuw onderwerp",
+      "score_excellent": "Uitstekend begrip!",
+      "score_good": "Goed begrip!",
+      "score_fair": "Redelijk begrip",
+      "score_needs_improvement": "Moet verbeterd worden"
+    },
+    "status": {
+      "pending": "In afwachting",
+      "submitted": "Ingediend",
+      "evaluated": "Beoordeeld"
+    },
+    "difficulty": {
+      "eli5": "ELI5",
+      "classmate": "MEDESTUDENT",
+      "expert": "EXPERT"
+    },
+    "empty_state": {
+      "title": "Nog geen teruguitleg-sessies",
+      "subtitle": "Test uw begrip met de Feynman-techniek"
+    }
+  },
+  "common": {
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "close": "Sluiten",
+    "retry": "Opnieuw proberen",
+    "tryAgain": "Opnieuw proberen",
+    "errorGeneric": "Er is iets misgegaan",
+    "noData": "Geen gegevens",
+    "gotIt": "Begrepen"
+  },
+  "exam_clone": {
+    "list": {
+      "title": "Examen kloon-engine",
+      "subtitle": "AI-aangedreven oefenexamens",
+      "upload_tooltip": "Examen uploaden",
+      "loading": "Examens laden...",
+      "overview": "Overzicht",
+      "your_exams": "Uw examens",
+      "upload_button": "Uploaden",
+      "no_exams_title": "Nog geen examens",
+      "no_exams_subtitle": "Upload uw eerste examen om te beginnen met het genereren\nvan oefenvragen met AI",
+      "upload_exam_button": "Examen uploaden",
+      "review_queue": "Herhalingswachtrij",
+      "review_queue_subtitle_due": "{count} te doen",
+      "review_queue_subtitle_caught_up": "Alles bijgewerkt",
+      "due_count": "{count} te doen",
+      "bookmarks": "Bladwijzers",
+      "bookmarks_subtitle": "Opgeslagen vragen",
+      "saved_questions": "Opgeslagen vragen",
+      "badges": "Badges",
+      "badges_subtitle": "Prestaties",
+      "achievements": "Prestaties",
+      "leaderboard": "Ranglijst",
+      "leaderboard_subtitle": "Klassementen",
+      "rankings": "Klassementen",
+      "upload": "Uploaden",
+      "analysis": "Analyse",
+      "practice": "Oefenen",
+      "notification_title": "{count} {questions} te doen!",
+      "notification_subtitle": "Tijd om te oefenen en uw geheugen te versterken",
+      "notification": {
+        "multiple_due": "{count} vragen te doen!",
+        "message": "Tijd om te oefenen en uw geheugen te versterken"
+      },
+      "question": "Vraag",
+      "questions": "Vragen",
+      "stats": {
+        "exams": "Examens",
+        "original": "Origineel",
+        "generated": "Gegenereerd",
+        "ready": "Gereed",
+        "failed": "Mislukt",
+        "pending": "In afwachting",
+        "processing": "Verwerken"
+      },
+      "all_caught_up": "Alles bijgewerkt",
+      "failed": "Verwerking mislukt",
+      "delete_dialog": {
+        "title": "Examen verwijderen?",
+        "message": "Dit verwijdert permanent dit examen en alle gegenereerde vragen.",
+        "cancel": "Annuleren",
+        "delete": "Verwijderen"
+      }
+    },
+    "upload": {
+      "title": "Examen uploaden",
+      "subtitle": "Upload een eerder examen om oefenvragen te genereren",
+      "title_label": "Examentitel *",
+      "title_hint": "bijv. Tussentoets, Biologie-eindexamen",
+      "subject_label": "Vak",
+      "subject_hint": "bijv. Biologie, Wiskunde",
+      "method_label": "Uploadmethode",
+      "upload_pdf": "PDF uploaden",
+      "upload_pdf_desc": "Upload examen als PDF-bestand",
+      "paste_text": "Tekst plakken",
+      "paste_text_desc": "Kopieer en plak examentekst",
+      "pdf_label": "PDF-bestand selecteren",
+      "pdf_hint": "Tik om PDF te selecteren",
+      "text_label": "Examentekst",
+      "text_hint": "Plak hier uw examenvragen...",
+      "uploading": "Uploaden...",
+      "upload_button": "Examen uploaden",
+      "upload_analyze": "Uploaden en analyseren",
+      "click_upload": "Klik om te uploaden",
+      "file_formats": "Ondersteund: PDF, JPG, PNG",
+      "tip_pdf_fail": "Als PDF niet lukt, probeer dan een duidelijke foto van het examen te maken",
+      "title_required": "Voer een examentitel in",
+      "file_required": "Selecteer een PDF-bestand",
+      "text_required": "Plak examentekst",
+      "character_count": "{count} tekens"
+    },
+    "detail": {
+      "title": "Examenanalyse",
+      "export_pdf": "PDF exporteren",
+      "review_queue": "Herhalingswachtrij",
+      "live_session": "Live sessie",
+      "practice": "Oefenen",
+      "coming_soon": "{feature} binnenkort beschikbaar",
+      "exam_style_analysis": "Examenstijlanalyse",
+      "question_types": "Vraagtypen",
+      "difficulty_distribution": "Moeilijkheidsverdeling",
+      "easy": "Makkelijk",
+      "medium": "Gemiddeld",
+      "hard": "Moeilijk",
+      "topics_covered": "Behandelde onderwerpen",
+      "more_topics": "+{count} meer",
+      "original": "Origineel",
+      "generated": "Gegenereerd",
+      "total": "Totaal",
+      "best_score": "Beste score",
+      "tabs": {
+        "original": "Origineel ({count})",
+        "generated": "Gegenereerd ({count})",
+        "analytics": "Analyses"
+      },
+      "generate_more": "Meer vragen genereren",
+      "no_questions": "Nog geen vragen",
+      "no_practice_data": "Nog geen oefengegevens",
+      "complete_practice": "Voltooi minimaal één oefensessie om uw analyses te bekijken.",
+      "question_type": {
+        "multiple_choice": "Meerkeuze",
+        "short_answer": "Kort antwoord",
+        "true_false": "Waar/Onwaar",
+        "essay": "Essay",
+        "fill_blank": "Invuloefening"
+      },
+      "correct_answer": "Juist antwoord",
+      "explanation": "Uitleg"
+    },
+    "badges": {
+      "title": "Prestaties",
+      "subtitle": "Verdien badges door te oefenen",
+      "your_progress": "Uw voortgang",
+      "failed_to_load": "Badges laden mislukt: {error}",
+      "remaining": "{count} badges nog te ontgrendelen",
+      "all": "Alle",
+      "recently_earned": "Recent verdiend",
+      "earned_on": "Verdiend op {date}",
+      "from_exam": "van {title}",
+      "xp_reward": "+{xp} XP"
+    },
+    "bookmarks": {
+      "title": "Vragen met bladwijzer",
+      "subtitle": "Gemarkeerde vragen voor herhaling",
+      "stats_count": "{count}",
+      "stats_label": "Vragen met bladwijzer",
+      "from_exams_count": "{count}",
+      "from_exams_label": "Uit verschillende examens",
+      "difficulty": {
+        "easy": "Makkelijk",
+        "medium": "Gemiddeld",
+        "hard": "Moeilijk",
+        "unknown": "Onbekend"
+      },
+      "options": "Opties:",
+      "correct": "(Juist)",
+      "correct_answer": "Juist antwoord:",
+      "empty_title": "Nog geen bladwijzers",
+      "empty_message": "Markeer moeilijke vragen tijdens het oefenen om ze later te herhalen.\nKlik op het bladwijzericoon bij een vraag om deze hier op te slaan.",
+      "start_practicing": "Begin met oefenen",
+      "failed_to_load": "Bladwijzers laden mislukt: {error}",
+      "failed_to_remove": "Bladwijzer verwijderen mislukt: {error}"
+    },
+    "leaderboard": {
+      "title": "Ranglijst",
+      "subtitle": "Bekijk uw positie",
+      "period": {
+        "weekly": "Wekelijks",
+        "monthly": "Maandelijks",
+        "all_time": "Altijd"
+      },
+      "your_rank": "Uw positie",
+      "top_10": "Top 10!",
+      "keep_practicing": "Blijf oefenen",
+      "avg_score": "Gem. score",
+      "correct": "Juist",
+      "avg_score_label": "gem. score",
+      "exams_count": "{count} examens",
+      "exams_and_correct": "{exams} examens • {correct} juist",
+      "empty_title": "Nog geen gegevens",
+      "empty_message": "Wees de eerste die een examen maakt en op de ranglijst verschijnt!",
+      "failed_to_load": "Ranglijst laden mislukt: {error}"
+    },
+    "practice": {
+      "title": "Oefenen",
+      "practice_exam": "Oefenexamen",
+      "questions_available": "{count} vragen beschikbaar",
+      "setup": {
+        "number_of_questions": "Aantal vragen",
+        "time_limit_minutes": "Tijdslimiet (minuten)",
+        "minutes": "{time} min",
+        "include_questions": "Vragen opnemen",
+        "original_questions": "Originele examenvragen",
+        "ai_questions": "AI-gegenereerde vragen",
+        "start_practice": "Begin met oefenen"
+      },
+      "progress": {
+        "question_of": "Vraag {current} van {total}",
+        "answered": "{count} beantwoord",
+        "flagged": "{count} gemarkeerd",
+        "time_remaining": "{time}"
+      },
+      "difficulty": {
+        "easy": "Makkelijk",
+        "medium": "Gemiddeld",
+        "hard": "Moeilijk"
+      },
+      "actions": {
+        "previous": "Vorige",
+        "next": "Volgende",
+        "submit": "Indienen",
+        "check_answer": "Antwoord controleren",
+        "type_answer": "Typ uw antwoord..."
+      },
+      "results": {
+        "title": "Resultaten",
+        "score": "{score}%",
+        "excellent": "Uitstekend!",
+        "good_job": "Goed gedaan!",
+        "keep_practicing": "Blijf oefenen!",
+        "correct": "Juist",
+        "incorrect": "Onjuist",
+        "unanswered": "Onbeantwoord",
+        "time": "Tijd",
+        "review_answers": "Antwoorden bekijken",
+        "try_again": "Opnieuw proberen"
+      },
+      "review": {
+        "title": "Antwoorden bekijken",
+        "question_number": "Vraag {number}",
+        "your_answer": "Uw antwoord:",
+        "correct_answer": "Juist antwoord:",
+        "explanation": "Uitleg"
+      },
+      "dialogs": {
+        "exit_title": "Examen verlaten?",
+        "exit_message": "Uw voortgang gaat verloren. U heeft {answered} van de {total} vragen beantwoord.",
+        "continue_exam": "Examen voortzetten",
+        "exit": "Verlaten",
+        "submit_title": "Examen indienen?",
+        "submit_message": "U heeft {answered} van de {total} vragen beantwoord.",
+        "unanswered_warning": "{count} vragen zijn onbeantwoord",
+        "submit": "Indienen"
+      },
+      "no_questions_available": "Geen vragen beschikbaar"
+    },
+    "review_queue": {
+      "title": "Herhalingswachtrij",
+      "stats": {
+        "correct": "{count}",
+        "incorrect": "{count}",
+        "progress": "{current}/{total}"
+      },
+      "loading": "Herhalingswachtrij laden...",
+      "difficulty": {
+        "easy": "Makkelijk",
+        "medium": "Gemiddeld",
+        "hard": "Moeilijk"
+      },
+      "review_number": "Herhaling #{count}",
+      "check_answer": "Antwoord controleren",
+      "ai_evaluating": "AI beoordeelt...",
+      "next_question": "Volgende vraag",
+      "finish_review": "Herhaling afronden",
+      "type_answer": "Typ uw antwoord:",
+      "type_answer_hint": "Typ hier uw antwoord...\n(U kunt meerdere regels schrijven)",
+      "correct_answer": "Juist antwoord: {answer}",
+      "get_ai_explanation": "AI-uitleg krijgen",
+      "getting_explanation": "Uitleg ophalen...",
+      "ai_evaluation": "AI-beoordeling",
+      "ai_explanation": "AI-uitleg",
+      "empty": {
+        "title": "Alles bijgewerkt!",
+        "message": "U heeft momenteel geen vragen te herhalen. Oefen meer examens om uw herhalingswachtrij op te bouwen.",
+        "back_button": "Terug naar examens",
+        "refresh_button": "Vernieuwen"
+      },
+      "complete": {
+        "title": "Herhaling voltooid!",
+        "message": "Goed gedaan met het versterken van uw kennis",
+        "correct": "Juist",
+        "incorrect": "Onjuist",
+        "total": "Totaal",
+        "accuracy": "Nauwkeurigheid",
+        "tip_title": "Ga zo door!",
+        "tip_message": "Vragen die u fout had verschijnen vaker. Gespreide herhaling helpt kennis naar het langetermijngeheugen te verplaatsen.",
+        "back_button": "Terug naar examens",
+        "review_more": "Meer herhalen"
+      },
+      "failed_to_load": "Herhalingswachtrij laden mislukt: {error}",
+      "failed_to_submit": "Herhaling afronden mislukt: {error}",
+      "failed_explanation": "Uitleg ophalen mislukt: {error}"
+    }
+  },
+  "problem_solver": {
+    "batch_solver": {
+      "title": "Batch-probleemoplosser",
+      "tabs": {
+        "pdf_upload": "PDF uploaden",
+        "text_input": "Tekstinvoer"
+      },
+      "pdf_tab": {
+        "upload_label": "PDF uploaden",
+        "upload_hint": "Selecteer een PDF-bestand met opgaven",
+        "extract_button": "Opgaven extraheren"
+      },
+      "text_tab": {
+        "title": "Opgaven plakken",
+        "description": "Plak hieronder uw opgaven. Elke opgave moet op een nieuwe regel staan of gescheiden zijn door nummers.",
+        "hint": "Voorbeeld:\n1. Los op voor x: 2x + 5 = 15\n2. Bereken de oppervlakte van een cirkel met straal 7cm\n3. Ontbind: x² - 5x + 6",
+        "extract_button": "Opgaven extraheren"
+      },
+      "stats": {
+        "total": "Totaal",
+        "selected": "Geselecteerd",
+        "solved": "Opgelost"
+      },
+      "actions": {
+        "solve_selected": "{count} geselecteerde oplossen",
+        "solve_all": "Alles oplossen"
+      },
+      "messages": {
+        "enter_text": "Voer tekst in",
+        "problems_solved": "{count} opgaven opgelost!"
+      }
+    },
+    "camera_scan": {
+      "title": "Opgave scannen",
+      "instructions": "Positioneer de opgave binnen het kader",
+      "review_title": "Controleren en bewerken",
+      "analyzing": "Afbeelding analyseren...",
+      "analyzing_subtitle": "Dit kan enkele seconden duren",
+      "verify_text": "Controleer de tekst",
+      "verify_description": "Wiskundige symbolen worden mogelijk niet correct herkend. Bewerk de tekst hieronder indien nodig.",
+      "subject_label": "Vak",
+      "problem_text_label": "Opgavetekst",
+      "problem_text_hint": "Bewerk hier de opgavetekst...",
+      "problem_text_tip": "Tip: Gebruik ^ voor superscript (bijv. x^2)",
+      "actions": {
+        "retake": "Opnieuw maken",
+        "solve_problem": "Opgave oplossen"
+      },
+      "subjects": {
+        "mathematics": "Wiskunde",
+        "physics": "Natuurkunde",
+        "chemistry": "Scheikunde",
+        "biology": "Biologie",
+        "computer_science": "Informatica",
+        "other": "Overig"
+      }
+    },
+    "concept_map": {
+      "title": "Conceptkaart",
+      "subtitle": "Visuele leerroutekaart",
+      "central_topic": "Kernonderwerp",
+      "sections": {
+        "prerequisites": "Voorkennis",
+        "prerequisites_subtitle": "Beheers deze eerst",
+        "current_concepts": "Huidige concepten",
+        "current_concepts_subtitle": "Nu aan het leren",
+        "next_steps": "Volgende stappen",
+        "next_steps_subtitle": "Waar hierna naartoe",
+        "related_topics": "Gerelateerde onderwerpen",
+        "related_topics_subtitle": "Verken verbanden"
+      },
+      "importance": "Belang:",
+      "connection": "Verband:"
+    },
+    "formula_cards": {
+      "title": "Formulekaarten",
+      "progress": "Kaart {current} van {total}",
+      "categories": {
+        "rule": "REGEL",
+        "concept": "CONCEPT",
+        "formula": "FORMULE",
+        "theorem": "STELLING"
+      },
+      "sides": {
+        "explanation": "Uitleg",
+        "formula": "formule"
+      },
+      "hints": {
+        "tap_to_flip": "Tik om {side} te zien",
+        "tap_explanation": "Tik om uitleg te zien",
+        "tap_formula": "Tik om formule te zien",
+        "swipe_navigate": "Veeg links/rechts om te navigeren"
+      },
+      "actions": {
+        "previous": "Vorige",
+        "next": "Volgende",
+        "flip": "Omdraaien"
+      },
+      "messages": {
+        "copied": "Kaart gekopieerd naar klembord"
+      }
+    },
+    "hints": {
+      "title": "Begeleidingsmodus",
+      "subtitle": "Krijg hints in plaats van de volledige oplossing",
+      "problem_label": "OPGAVE",
+      "hint_progress": "Hint {current} van ~{total}",
+      "next_hint_preview": "Volgende hint gaat over: {preview}",
+      "all_revealed": "Alle hints onthuld! Probeer nu op te lossen.",
+      "all_revealed_status": "Alle hints onthuld",
+      "actions": {
+        "reset": "Resetten",
+        "get_first_hint": "Eerste hint",
+        "next_hint": "Volgende hint",
+        "thinking": "Nadenken...",
+        "see_solution": "Oplossing bekijken"
+      },
+      "messages": {
+        "hints_reset": "Hints gereset"
+      }
+    },
+    "practice_quiz": {
+      "title": "Oefenquiz",
+      "title_with_progress": "Oefenquiz ({current}/{total})",
+      "question_progress": "Vraag {current}/{total}",
+      "stats": {
+        "correct": "juist"
+      },
+      "question_types": {
+        "multiple_choice": "Meerkeuze",
+        "true_false": "Waar of onwaar",
+        "fill_blank": "Invuloefening"
+      },
+      "feedback": {
+        "correct": "Juist!",
+        "incorrect": "Onjuist",
+        "correct_answer": "Juist antwoord: {answer}",
+        "explanation": "Uitleg"
+      },
+      "actions": {
+        "next_question": "Volgende vraag",
+        "view_results": "Resultaten bekijken"
+      },
+      "results": {
+        "perfect": "Perfecte score! 🎉",
+        "great": "Uitstekend! 🌟",
+        "good": "Goede inzet! 👍",
+        "practice": "Blijf oefenen! 💪",
+        "quiz_complete": "Quiz voltooid!",
+        "close": "Sluiten",
+        "try_again": "Opnieuw proberen"
+      }
+    },
+    "bookmarks": {
+      "title": "Mijn bladwijzers",
+      "search_placeholder": "Bladwijzers zoeken...",
+      "stats": {
+        "total": "Totaal",
+        "subjects": "Vakken",
+        "tags": "Tags"
+      },
+      "edit_sheet": {
+        "title": "Bladwijzer bewerken",
+        "tags_label": "Tags",
+        "tags_hint": "Tag toevoegen...",
+        "notes_label": "Notities",
+        "notes_hint": "Voeg hier uw notities toe...",
+        "save_button": "Wijzigingen opslaan"
+      },
+      "delete_dialog": {
+        "title": "Bladwijzer verwijderen",
+        "message": "Weet u zeker dat u deze bladwijzer wilt verwijderen?",
+        "cancel": "Annuleren",
+        "delete": "Verwijderen"
+      },
+      "messages": {
+        "updated": "Bladwijzer bijgewerkt",
+        "deleted": "Bladwijzer verwijderd"
+      },
+      "empty_state": {
+        "title": "Nog geen bladwijzers",
+        "subtitle": "Sla opgaven op om ze later te raadplegen"
+      }
+    },
+    "history": {
+      "title": "Opgavegeschiedenis",
+      "search_placeholder": "Opgaven zoeken...",
+      "delete_dialog": {
+        "title": "Opgave verwijderen?",
+        "message": "Dit verwijdert permanent deze opgave en de oplossing.",
+        "cancel": "Annuleren",
+        "delete": "Verwijderen"
+      },
+      "time": {
+        "today": "Vandaag",
+        "yesterday": "Gisteren",
+        "days_ago": "{days} dagen geleden"
+      }
+    },
+    "input": {
+      "title": "Probleemoplosser",
+      "subject_label": "Vak",
+      "problem_label": "Opgave",
+      "problem_hint": "Typ of plak hier uw opgave...\n\nVoorbeeld: Los de vergelijking op 2x + 5 = 15",
+      "actions": {
+        "scan": "Scannen",
+        "voice": "Stem",
+        "image": "Afbeelding",
+        "solve": "Opgave oplossen",
+        "creating": "Aanmaken..."
+      },
+      "image_uploaded": "Afbeelding geüpload",
+      "voice_coming_soon": "Steminvoer binnenkort beschikbaar",
+      "how_it_works": "Hoe het werkt",
+      "agents": {
+        "analysis": {
+          "title": "Analyse-agent",
+          "description": "Begrijpt de opgave en bepaalt de aanpak"
+        },
+        "solver": {
+          "title": "Oplosser-agent",
+          "description": "Genereert een stapsgewijze oplossing met uitleg"
+        },
+        "verifier": {
+          "title": "Verificatie-agent",
+          "description": "Controleert de oplossing op juistheid"
+        }
+      },
+      "subjects": {
+        "auto_detect": "Automatisch detecteren",
+        "mathematics": "Wiskunde",
+        "physics": "Natuurkunde",
+        "chemistry": "Scheikunde",
+        "biology": "Biologie",
+        "computer_science": "Informatica",
+        "engineering": "Techniek",
+        "economics": "Economie",
+        "statistics": "Statistiek"
+      },
+      "menu": {
+        "bookmarks": "Bladwijzers",
+        "history": "Geschiedenis",
+        "batch_solver": "Batch-oplosser",
+        "camera_scan": "Camera scannen"
+      },
+      "messages": {
+        "enter_problem": "Voer een opgave in of upload een afbeelding"
+      }
+    },
+    "similar_problems": {
+      "title": "Vergelijkbare opgaven",
+      "difficulty": {
+        "easy": "MAKKELIJK",
+        "medium": "GEMIDDELD",
+        "hard": "MOEILIJK"
+      },
+      "solve_this": "Dit oplossen"
+    },
+    "solution": {
+      "title": "Oplossing",
+      "final_answer": "Eindantwoord",
+      "learning_tools": "Leermiddelen",
+      "tools": {
+        "hints": "Hints",
+        "similar": "Vergelijkbaar",
+        "quiz": "Quiz",
+        "chat": "Chat",
+        "concepts": "Concepten",
+        "formulas": "Formules"
+      },
+      "tabs": {
+        "steps": "Stappen",
+        "code": "Code",
+        "alternatives": "Alternatieven",
+        "graph": "Grafiek",
+        "analysis": "Analyse",
+        "citations": "Citaten"
+      },
+      "steps": {
+        "no_solution": "Geen oplossing beschikbaar",
+        "no_steps": "Geen oplossingsstappen beschikbaar",
+        "step_number": "Stap {number}",
+        "copy": "Kopiëren",
+        "step_copied": "Stap gekopieerd"
+      },
+      "code": {
+        "empty_title": "Geen codeblokken beschikbaar"
+      },
+      "alternatives": {
+        "empty_title": "Geen alternatieve methoden beschikbaar"
+      },
+      "graph": {
+        "empty_title": "Geen grafiekgegevens beschikbaar"
+      },
+      "analysis": {
+        "level_explanation": "{level}-uitleg",
+        "key_points": "Kernpunten:",
+        "examples": "Voorbeelden:",
+        "technical_analysis": "Technische analyse",
+        "no_details": "Geen details"
+      },
+      "citations": {
+        "empty_title": "Geen citaten beschikbaar"
+      },
+      "complexity": {
+        "title": "Uitlegniveau",
+        "beginner": "Beginner",
+        "intermediate": "Gemiddeld",
+        "advanced": "Gevorderd",
+        "expert": "Expert",
+        "loading": "Uitleg laden..."
+      },
+      "narration": {
+        "title": "Oplossingsvertelling",
+        "listen_tooltip": "Luister naar oplossing",
+        "completed": "Vertelling voltooid",
+        "no_text": "Geen oplossingstekst beschikbaar voor vertelling"
+      },
+      "messages": {
+        "bookmark_added": "Bladwijzer toegevoegd",
+        "bookmark_removed": "Bladwijzer verwijderd"
+      }
+    },
+    "solving_progress": {
+      "title": "Oplossen...",
+      "stages": {
+        "analysis": {
+          "title": "Analyse-agent",
+          "description": "Opgave begrijpen"
+        },
+        "solving": {
+          "title": "Oplosser-agent",
+          "description": "Stapsgewijze oplossing genereren"
+        },
+        "verification": {
+          "title": "Verificatie-agent",
+          "description": "Juistheid controleren"
+        }
+      },
+      "status": {
+        "complete": "Voltooid",
+        "solution_ready": "Oplossing gereed!",
+        "redirecting": "Doorverwijzen naar oplossing...",
+        "failed": "Oplossen mislukt",
+        "retry": "Opnieuw proberen"
+      }
+    },
+    "study_buddy": {
+      "title": "Studiebuddy",
+      "subtitle": "Stel vervolgvragen over de oplossing",
+      "welcome_message": "Hallo! Ik ben uw studiebuddy. Ik heb de oplossing van uw opgave bekeken. Vraag mij alles — ik kan stappen uitgebreider uitleggen, alternatieve benaderingen voorstellen of u helpen met vergelijkbare concepten.",
+      "suggested_questions_title": "Voorgestelde vragen",
+      "input_placeholder": "Stel een vervolgvraag...",
+      "problem_label": "Opgave: {problem}",
+      "export": "Exporteren",
+      "suggested": {
+        "explain_step": "Kunt u stap 2 uitgebreider uitleggen?",
+        "why_approach": "Waarom hebben we deze aanpak gebruikt?",
+        "other_methods": "Welke andere methoden zijn er om dit op te lossen?",
+        "simpler_example": "Kunt u een eenvoudiger voorbeeld geven?",
+        "concepts_needed": "Welke concepten moet ik begrijpen voor deze opgave?"
+      }
+    },
+    "widgets": {
+      "steps_copied": "Stappen gekopieerd naar klembord",
+      "copy": "Kopiëren",
+      "steps": "Stappen",
+      "no_steps": "Geen stappen beschikbaar voor deze methode",
+      "advantages": "Voordelen",
+      "disadvantages": "Nadelen",
+      "method_type": {
+        "algebraic": "Algebraïsch",
+        "geometric": "Geometrisch",
+        "numerical": "Numeriek",
+        "graphical": "Grafisch",
+        "analytical": "Analytisch",
+        "other": "Overig"
+      },
+      "status": {
+        "pending": "In afwachting",
+        "solving": "Oplossen...",
+        "completed": "Voltooid",
+        "failed": "Mislukt"
+      },
+      "retry": "Opnieuw proberen",
+      "solve": "Oplossen",
+      "view_solution": "Oplossing bekijken",
+      "search_bookmarks": "Bladwijzers zoeken...",
+      "no_problem_text": "Geen opgavetekst",
+      "edit": "Bewerken",
+      "delete": "Verwijderen",
+      "date": {
+        "today": "Vandaag",
+        "yesterday": "Gisteren",
+        "days_ago": "{days} dagen geleden"
+      }
+    }
+  }
+}

@@ -1,0 +1,2224 @@
+{
+  "onboarding": {
+    "skip": "跳过",
+    "next": "下一步",
+    "back": "返回",
+    "get_started": "开始使用",
+    "i_have_account": "我已有账号",
+    "app_name": "Studyield",
+    "slide_1": {
+      "title": "欢迎使用 Studyield",
+      "subtitle": "您的 AI 学习助手",
+      "description": "通过智能闪卡、AI 解题和个性化学习路径，轻松掌握任何学科"
+    },
+    "slide_2": {
+      "title": "智能闪卡",
+      "subtitle": "更聪明地学习",
+      "description": "创建交互式闪卡，采用间隔重复算法，自动适应您的学习节奏",
+      "badge": "免费"
+    },
+    "slide_3": {
+      "title": "AI 解题器",
+      "subtitle": "即时获取帮助",
+      "description": "扫描任何题目，获取由 AI 驱动的逐步解答和详细解释",
+      "badge": "PRO",
+      "features": {
+        "scan": "扫描题目",
+        "hints": "获取提示",
+        "steps": "逐步解答"
+      }
+    },
+    "slide_4": {
+      "title": "升级您的学习",
+      "subtitle": "让学习充满乐趣",
+      "description": "在学习过程中获得 XP、保持连续学习记录并解锁成就",
+      "badge": "免费"
+    },
+    "slide_5": {
+      "title": "个性化学习路径",
+      "subtitle": "属于您的学习之旅",
+      "description": "根据您的目标、表现和学习风格获取定制化学习计划",
+      "badge": "PRO",
+      "benefits": {
+        "benefit_1": "📚 定制学习计划",
+        "benefit_2": "🎯 追踪学习进度",
+        "benefit_3": "🚀 更快实现目标"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "欢迎回来",
+      "subtitle": "登录以继续学习",
+      "email_label": "邮箱",
+      "email_hint": "请输入邮箱地址",
+      "password_label": "密码",
+      "password_hint": "请输入密码",
+      "forgot_password": "忘记密码？",
+      "login_button": "登录",
+      "no_account": "还没有账号？",
+      "sign_up": "注册",
+      "or_continue_with": "或通过以下方式继续",
+      "google_login": "使用 Google 登录",
+      "apple_login": "使用 Apple 登录"
+    },
+    "register": {
+      "title": "创建账号",
+      "subtitle": "开启您的学习之旅",
+      "name_label": "姓名",
+      "name_hint": "请输入姓名",
+      "email_label": "邮箱",
+      "email_hint": "请输入邮箱地址",
+      "password_label": "密码",
+      "password_hint": "创建密码",
+      "confirm_password_label": "确认密码",
+      "confirm_password_hint": "再次输入密码",
+      "register_button": "创建账号",
+      "have_account": "已有账号？",
+      "sign_in": "登录",
+      "terms_prefix": "注册即表示您同意我们的",
+      "terms": "服务条款",
+      "and": "和",
+      "privacy": "隐私政策"
+    },
+    "errors": {
+      "email_required": "请输入邮箱地址",
+      "email_invalid": "请输入有效的邮箱地址",
+      "password_required": "请输入密码",
+      "password_min_length": "密码至少需要6个字符",
+      "passwords_not_match": "两次输入的密码不一致",
+      "name_required": "请输入姓名",
+      "login_failed": "登录失败，请检查您的凭据",
+      "register_failed": "注册失败，请重试"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "早上好",
+      "afternoon": "下午好",
+      "evening": "晚上好"
+    },
+    "welcome_message": "您有 {count} 张卡片等待复习",
+    "welcome_message_empty": "准备好继续您的学习之旅了吗？",
+    "level": "等级 {level}",
+    "xp_progress": "{current} / {next} XP",
+    "streak_days": "{days}天",
+    "daily_xp": "{current} / {goal} 每日 XP",
+    "gamification": {
+      "xp": "XP",
+      "day": "天",
+      "days": "天",
+      "daily_xp": "每日 XP",
+      "level_names": {
+        "0": "新手",
+        "1": "青铜",
+        "2": "白银",
+        "3": "黄金",
+        "4": "铂金",
+        "5": "钻石",
+        "6": "大师",
+        "7": "宗师",
+        "8": "冠军",
+        "9": "传奇",
+        "10": "神话",
+        "11": "不朽"
+      }
+    },
+    "upgrade_pro": {
+      "title": "升级到 Pro",
+      "badge": "热门",
+      "subtitle": "解锁所有高级功能和无限 AI",
+      "offer": "年付方案享八折优惠"
+    },
+    "stats": {
+      "study_sets": "学习集",
+      "flashcards": "闪卡",
+      "due_today": "今日待复习",
+      "quizzes_done": "已完成测验",
+      "cards": "{count} 张卡片"
+    },
+    "sections": {
+      "quick_actions": "快捷操作",
+      "recent_study_sets": "最近的学习集",
+      "view_all": "查看全部"
+    },
+    "continue_studying": {
+      "title": "继续学习",
+      "cards_due": "{count} 张卡片待复习"
+    },
+    "quick_actions": {
+      "new_study_set": {
+        "title": "新建学习集",
+        "description": "创建新的学习合集"
+      },
+      "exam_clone": {
+        "title": "考试克隆",
+        "description": "生成模拟考试"
+      },
+      "problem_solver": {
+        "title": "解题器",
+        "description": "AI 逐步解答"
+      },
+      "ai_chat": {
+        "title": "AI 对话",
+        "description": "就笔记内容提问"
+      },
+      "view_analytics": {
+        "title": "查看分析",
+        "description": "追踪学习进度"
+      },
+      "knowledge_base": {
+        "title": "知识库",
+        "description": "上传和搜索文档"
+      },
+      "join_live_quiz": {
+        "title": "加入实时测验",
+        "description": "与好友实时竞答"
+      },
+      "coming_soon": "即将推出"
+    },
+    "empty_state": {
+      "title": "暂无学习集",
+      "subtitle": "创建您的第一个学习集开始学习",
+      "button": "创建学习集"
+    }
+  },
+  "study_sets": {
+    "title": "学习集",
+    "header_title": "我的学习集",
+    "header_subtitle": "创建和管理您的学习材料",
+    "search_hint": "搜索学习集...",
+    "new_study_set": "新建学习集",
+    "create_button": "创建",
+    "no_results_title": "未找到结果",
+    "no_results_subtitle": "没有匹配{query}的学习集",
+    "card": {
+      "public": "公开",
+      "private": "私密",
+      "edit": "编辑",
+      "delete": "删除",
+      "cards_count": "{count} 张卡片",
+      "docs_count": "{count} 篇文档"
+    },
+    "empty_state": {
+      "title": "暂无学习集",
+      "subtitle": "创建您的第一个学习集，整理闪卡和学习材料",
+      "button": "创建学习集"
+    },
+    "messages": {
+      "created": "学习集创建成功！",
+      "updated": "学习集更新成功！",
+      "deleted": "学习集已删除！",
+      "error": "加载学习集时出错",
+      "retry": "重试"
+    },
+    "detail": {
+      "section_statistics": "统计",
+      "stat_flashcards_label": "闪卡",
+      "stat_notes_label": "笔记",
+      "stat_analytics_label": "分析",
+      "quiz_history_title": "测验历史",
+      "quiz_history_subtitle": "查看测验表现",
+      "section_quick_actions": "快捷操作",
+      "action_study_session": "学习会话（所有卡片）",
+      "action_quiz_mode": "测验模式",
+      "action_match_game": "配对游戏",
+      "action_live_quiz": "实时测验",
+      "action_browse_cards": "浏览卡片",
+      "action_add_cards": "添加卡片",
+      "section_sources": "资料来源",
+      "sources_view_all": "查看全部",
+      "sources_document_singular": "文档",
+      "sources_documents_plural": "文档",
+      "sources_subtitle": "学习材料和参考资料",
+      "sources_empty_state": "暂无资料来源",
+      "sources_add_documents": "添加文档",
+      "section_recent_activity": "最近活动",
+      "activity_empty_state": "暂无活动",
+      "menu_edit_study_set": "编辑学习集",
+      "menu_share": "分享",
+      "menu_delete_study_set": "删除学习集",
+      "delete_confirm_title": "删除学习集？",
+      "delete_confirm_message": "这将永久删除\"{title}\"及其所有闪卡，此操作不可撤销。",
+      "delete_confirm_cancel": "取消",
+      "delete_confirm_delete": "删除",
+      "study_no_cards_due": "没有待复习的卡片！做得好！🎉",
+      "study_failed_to_load": "加载闪卡失败",
+      "add_cards_header": "添加卡片",
+      "add_cards_ready_status": "{count} 张卡片已就绪",
+      "add_cards_submit_button": "添加到学习集",
+      "toast_cards_added_success": "成功添加 {count} 张卡片！",
+      "toast_cards_add_error": "添加卡片失败：{message}"
+    },
+    "create_edit": {
+      "title_create": "创建学习集",
+      "create_study_set": "创建学习集",
+      "title_edit": "编辑学习集",
+      "cover_image": "封面图片",
+      "tap_add_cover": "点击添加封面图片",
+      "tap_to_add_cover_image": "点击添加封面图片",
+      "title_label": "标题 *",
+      "title_hint": "例如：生物学 101",
+      "title_required": "标题为必填项",
+      "description_label": "描述",
+      "description": "描述",
+      "description_hint": "这个学习集关于什么？",
+      "tags_label": "标签",
+      "tags": "标签",
+      "tags_hint": "生物学, 考试, 第一章",
+      "tags_helper": "用逗号分隔标签",
+      "exam_date_label": "考试日期（可选）",
+      "exam_date_optional": "考试日期（可选）",
+      "exam_date_hint": "选择考试日期",
+      "select_exam_date": "选择考试日期",
+      "exam_subject_label": "考试科目",
+      "exam_subject_hint": "例如：期中考试、期末考试",
+      "visibility_public": "公开",
+      "visibility_private": "私密",
+      "private": "私密",
+      "visibility_public_desc": "任何人都可以查看此学习集",
+      "visibility_private_desc": "仅您自己可以查看此学习集",
+      "private_description": "仅您自己可以查看此学习集",
+      "save_changes": "保存更改",
+      "create_button": "创建学习集",
+      "delete_study_set": "删除学习集",
+      "delete_confirm_title": "删除学习集？",
+      "delete_confirm_message": "这将永久删除\"{title}\"及其所有闪卡，此操作不可撤销。",
+      "subtitle": "整理您的学习材料",
+      "title_placeholder": "输入标题，例如\"生物学 101 — 第三章\"",
+      "description_placeholder": "添加描述（可选）",
+      "more_options": "更多选项",
+      "less_options": "收起选项",
+      "add_tag": "添加标签...",
+      "cancel": "取消",
+      "public": "公开",
+      "visibility_label": "可见性",
+      "cards_ready_count": "{count} 张卡片已就绪",
+      "create_with_cards": "创建并包含 {count} 张卡片",
+      "cards_failed": "学习集已创建，但部分卡片保存失败",
+      "image_uploaded": "图片上传成功！",
+      "upload_failed": "图片上传失败"
+    },
+    "documents": {
+      "title": "笔记",
+      "create_note": "创建笔记",
+      "no_notes_title": "暂无笔记",
+      "no_notes_subtitle": "创建笔记以整理学习材料",
+      "note_title_label": "标题",
+      "note_title_hint": "输入笔记标题",
+      "note_content_label": "内容",
+      "note_content_hint": "在此编写笔记...",
+      "create_note_button": "创建笔记",
+      "fill_both_fields": "请填写标题和内容",
+      "note_created": "笔记创建成功！",
+      "failed_to_create": "创建笔记失败：{error}"
+    },
+    "flashcard_creation": {
+      "title": "创建闪卡",
+      "tab_manual": "手动",
+      "tab_ai": "AI 生成",
+      "tab_import": "导入",
+      "create_cards": "创建 {count} 张{cards}",
+      "add_cards": "添加 {count} 张{cards}",
+      "card": "卡片",
+      "cards": "卡片",
+      "no_flashcards": "请至少创建一张闪卡",
+      "no_flashcards_to_add": "没有可添加的闪卡"
+    },
+    "quiz_history": {
+      "title": "测验历史",
+      "no_history_title": "暂无测验历史",
+      "no_history_subtitle": "参加测验后可在此查看表现记录",
+      "summary_quizzes": "测验",
+      "summary_attempts": "尝试次数",
+      "summary_best_score": "最高分",
+      "questions": "{count} 道题",
+      "attempts": "{count} 次尝试",
+      "attempt": "次尝试",
+      "best": "最高：{score}%",
+      "no_attempts": "暂无尝试",
+      "time_spent": "{minutes}分{seconds}秒"
+    }
+  },
+  "analytics": {
+    "title": "数据分析",
+    "timeRange": {
+      "sevenDays": "7 天",
+      "thirtyDays": "30 天",
+      "ninetyDays": "90 天",
+      "allTime": "全部"
+    },
+    "stats": {
+      "studyTime": "学习时间",
+      "cardsReviewed": "已复习卡片",
+      "quizzes": "测验",
+      "avgScore": "平均分"
+    },
+    "sections": {
+      "studyActivity": "学习活动",
+      "streak": "连续学习",
+      "performance": "表现"
+    },
+    "heatmap": {
+      "title": "学习热力图",
+      "less": "少",
+      "more": "多"
+    },
+    "cardMastery": {
+      "title": "卡片掌握度",
+      "noData": "暂无卡片数据"
+    },
+    "retentionCurve": {
+      "title": "记忆曲线",
+      "noData": "开始学习后即可查看记忆曲线"
+    },
+    "studyTime": {
+      "title": "学习时间",
+      "daily": "每日",
+      "weekly": "每周",
+      "noData": "暂无学习时间记录"
+    },
+    "streak": {
+      "title": "连续学习日历",
+      "dayStreak": "天连续学习",
+      "dayAbbr": {
+        "sun": "日",
+        "mon": "一",
+        "tue": "二",
+        "wed": "三",
+        "thu": "四",
+        "fri": "五",
+        "sat": "六"
+      }
+    },
+    "months": {
+      "january": "一月",
+      "february": "二月",
+      "march": "三月",
+      "april": "四月",
+      "may": "五月",
+      "june": "六月",
+      "july": "七月",
+      "august": "八月",
+      "september": "九月",
+      "october": "十月",
+      "november": "十一月",
+      "december": "十二月"
+    },
+    "cardStatus": {
+      "new": "新卡片",
+      "learning": "学习中",
+      "review": "复习",
+      "mastered": "已掌握"
+    },
+    "chart": {
+      "percentageSymbol": "%",
+      "minutesSymbol": "分",
+      "dayLabel": "天"
+    },
+    "time": {
+      "hoursSymbol": "时",
+      "minutesSymbol": "分"
+    }
+  },
+  "learning_paths": {
+    "title": "学习路径",
+    "detail": {
+      "title": "学习路径",
+      "learning_path": "学习路径",
+      "complete": "完成",
+      "your_journey": "您的学习之旅",
+      "your_learning_journey": "您的学习之旅",
+      "next_up": "下一步",
+      "step_number": "第 {number} 步",
+      "steps": "步骤",
+      "remaining": "剩余",
+      "total_time": "总时间",
+      "overall_progress": "总体进度",
+      "stats": {
+        "steps": "步骤",
+        "remaining": "剩余",
+        "total_time": "总时间"
+      },
+      "progress": {
+        "overall": "总体进度",
+        "steps_count": "{completed}/{total} 步"
+      },
+      "minutes": "{minutes} 分钟",
+      "view_resource": "查看资源",
+      "mark_done": "完成",
+      "mark_as_done": "标记为已完成",
+      "step_completed": "步骤已完成！",
+      "path_completed": "已完成！",
+      "steps_count": "{completed}/{total} 步",
+      "completed_on": "完成于 {date}"
+    },
+    "validation": {
+      "please_enter_topic": "请输入主题"
+    },
+    "messages": {
+      "path_created_success": "学习路径已创建！"
+    },
+    "how_it_works": {
+      "title": "学习路径工作原理",
+      "step1_title": "设定目标",
+      "step1_subtitle": "告诉 AI 您的主题和水平",
+      "step2_title": "获取路线图",
+      "step2_subtitle": "AI 生成分步学习计划",
+      "step3_title": "追踪进度",
+      "step3_subtitle": "完成步骤，查看进度"
+    },
+    "buttons": {
+      "cancel": "取消",
+      "generate_path": "生成路径",
+      "generating": "正在生成..."
+    },
+    "form": {
+      "title": "创建学习路径",
+      "topic_label": "主题",
+      "topic_hint": "例如：机器学习、微积分、物理学",
+      "current_level_label": "当前水平",
+      "target_level_label": "目标水平",
+      "level_beginner": "初学者",
+      "level_intermediate": "中级",
+      "level_advanced": "高级",
+      "level_expert": "专家",
+      "study_time_label": "学习时间：每周 {hours} 小时"
+    },
+    "empty_state": {
+      "title": "暂无学习路径",
+      "subtitle": "创建您的第一个个性化学习路线图"
+    },
+    "path_card": {
+      "steps_count": "{completed}/{total} 步",
+      "hours_label": "{hours}小时"
+    },
+    "dialogs": {
+      "delete_confirm_title": "删除学习路径？",
+      "delete_confirm_message": "这将永久删除此路径及所有进度。",
+      "cancel_button": "取消",
+      "delete_button": "删除"
+    }
+  },
+  "profile": {
+    "title": "设置",
+    "subtitle": "管理您的账号和偏好设置",
+    "settings": {
+      "profile": {
+        "title": "个人资料",
+        "subtitle": "姓名、头像、教育背景、学科"
+      },
+      "account": {
+        "title": "账号设置",
+        "subtitle": "密码、安全、删除账号"
+      },
+      "notifications": {
+        "title": "通知设置",
+        "subtitle": "管理通知偏好"
+      },
+      "language": {
+        "title": "语言",
+        "choose": "选择语言",
+        "close": "关闭"
+      },
+      "subscription": {
+        "title": "订阅",
+        "subtitle": "套餐、用量、发票"
+      },
+      "logout": {
+        "title": "退出登录",
+        "confirm_title": "退出登录",
+        "confirm_message": "确定要退出登录吗？",
+        "cancel": "取消",
+        "confirm": "退出登录"
+      }
+    },
+    "plan": {
+      "free": "免费套餐",
+      "manage": "管理",
+      "upgrade": "升级"
+    },
+    "version": "Studyield v1.0.0",
+    "edit": {
+      "title": "编辑个人资料",
+      "avatar": {
+        "default_initial": "用"
+      },
+      "display_name": {
+        "label": "显示名称",
+        "hint": "请输入姓名"
+      },
+      "email": {
+        "label": "邮箱",
+        "placeholder": "未设置邮箱",
+        "readonly_note": "邮箱无法更改"
+      },
+      "education_level": {
+        "label": "教育程度",
+        "options": {
+          "high_school": "高中",
+          "undergraduate": "本科",
+          "graduate": "研究生",
+          "post_graduate": "博士后",
+          "self_learner": "自学者",
+          "professional": "职业人士"
+        }
+      },
+      "subjects": {
+        "label": "感兴趣的学科",
+        "common_header": "常见学科",
+        "custom_header": "自定义学科",
+        "add_custom": {
+          "label": "添加自定义学科",
+          "hint": "添加自定义学科"
+        },
+        "options": {
+          "mathematics": "数学",
+          "physics": "物理",
+          "chemistry": "化学",
+          "biology": "生物",
+          "computer_science": "计算机科学",
+          "english": "英语",
+          "history": "历史",
+          "geography": "地理",
+          "economics": "经济学",
+          "psychology": "心理学"
+        }
+      },
+      "button": {
+        "saving": "保存中...",
+        "save": "保存更改",
+        "saved": "已保存！"
+      },
+      "message": {
+        "success": "个人资料更新成功！",
+        "error": "保存个人资料失败"
+      }
+    },
+    "account": {
+      "title": "账号设置",
+      "change_password": {
+        "title": "修改密码",
+        "subtitle": "定期更新密码",
+        "current_password_label": "当前密码",
+        "new_password_label": "新密码",
+        "confirm_password_label": "确认新密码",
+        "button": "修改密码"
+      },
+      "validation": {
+        "current_password_required": "请输入当前密码",
+        "password_min_length": "新密码至少需要8个字符",
+        "passwords_mismatch": "两次输入的密码不一致"
+      },
+      "messages": {
+        "password_changed_success": "密码修改成功！"
+      },
+      "information": {
+        "title": "账号信息",
+        "email_label": "邮箱",
+        "plan_label": "套餐",
+        "plan_free": "免费",
+        "email_verified_label": "邮箱已验证",
+        "email_verified_yes": "是",
+        "member_since_label": "注册时间"
+      },
+      "delete": {
+        "title": "删除账号",
+        "subtitle": "永久删除您的账号",
+        "button": "删除我的账号",
+        "warning_title": "此操作不可撤销！",
+        "warning_message": "您的所有数据将被永久删除。",
+        "confirmation_instruction": "输入 DELETE 以确认：",
+        "confirmation_hint": "DELETE",
+        "confirm_button": "永久删除",
+        "cancel_button": "取消"
+      }
+    }
+  },
+  "subscription": {
+    "main": {
+      "appbar_title": "订阅",
+      "header_label": "更改或升级套餐",
+      "heading": "选择您的套餐",
+      "subheading": "解锁高级功能，为学习加速",
+      "billing_yearly": "年付",
+      "billing_lifetime": "终身",
+      "popular_badge": "最受欢迎",
+      "plan_trial_title": "7 天试用",
+      "plan_trial_subtitle": "先试后决定",
+      "plan_pro_title": "Pro",
+      "plan_pro_lifetime_title": "终身 Pro",
+      "plan_pro_lifetime_subtitle": "一次付费，永久使用",
+      "plan_pro_yearly_subtitle": "适合认真学习的您",
+      "yearly_crossed_price": "$47.88/年",
+      "lifetime_period": "一次性",
+      "yearly_period": "/年",
+      "button_current_plan": "当前套餐",
+      "button_free_forever": "永久免费",
+      "button_upgrade_lifetime": "升级到终身版",
+      "button_upgrade_pro": "升级到 Pro",
+      "trust_secure_title": "安全",
+      "trust_secure_subtitle": "SSL 加密",
+      "trust_flexible_title": "灵活",
+      "trust_flexible_subtitle": "随时取消",
+      "trust_free_title": "永久免费",
+      "trust_free_subtitle": "无需信用卡即可开始"
+    },
+    "manage": {
+      "appbar_title": "管理订阅",
+      "error_open_portal": "打开管理门户失败",
+      "cancel_dialog_title": "取消订阅？",
+      "cancel_dialog_content": "您可以继续使用到当前计费周期结束。",
+      "cancel_dialog_keep_btn": "保留订阅",
+      "cancel_dialog_cancel_btn": "取消订阅",
+      "cancel_success_message": "订阅将在计费周期结束时取消",
+      "cancel_error_message": "取消失败",
+      "default_plan_name": "Pro 套餐",
+      "status_active": "已激活",
+      "price_lifetime": "一次性",
+      "price_yearly": "/年",
+      "button_change_plan": "更换套餐",
+      "info_current_period_label": "当前周期",
+      "info_next_billing_label": "下次计费",
+      "card_billing_history_title": "账单历史",
+      "card_billing_history_subtitle": "查看历史发票",
+      "card_payment_methods_title": "支付方式",
+      "card_payment_methods_subtitle": "更新银行卡或支付方式",
+      "card_cancel_subscription_title": "取消订阅",
+      "card_cancel_subscription_subtitle": "您可以继续使用到周期结束",
+      "webview_title": "账单门户"
+    },
+    "checkout": {
+      "appbar_title": "结账",
+      "coupon_applied_message": "优惠券已使用！",
+      "payment_success_message": "支付成功！",
+      "payment_error_message": "支付失败",
+      "header_title": "升级到 {plan}",
+      "header_subtitle_lifetime": "终身付款",
+      "header_subtitle_yearly": "年度订阅",
+      "order_summary_label": "订单摘要",
+      "plan_line_item": "{plan} 套餐（{cycle}）",
+      "coupon_applied_label": "已使用优惠券",
+      "coupon_discount_amount": "-${amount}",
+      "total_label": "合计",
+      "billing_period_year": "/年",
+      "billing_period_month": "/月",
+      "coupon_code_label": "优惠券代码",
+      "coupon_input_placeholder": "输入优惠券代码",
+      "coupon_apply_button": "使用",
+      "what_you_get_heading": "您将获得",
+      "features": {
+        "unlimited_ai": "无限 AI 请求",
+        "premium_features": "所有高级功能已解锁",
+        "priority_support": "优先支持",
+        "advanced_analytics": "高级数据分析",
+        "exam_cloning": "考试克隆与生成",
+        "deep_research": "深度研究功能"
+      },
+      "button_processing": "处理中...",
+      "button_proceed": "前往支付",
+      "trust_ssl": "SSL 加密",
+      "trust_stripe": "由 Stripe 提供支持",
+      "trust_cancel_anytime": "随时取消"
+    },
+    "success": {
+      "welcome_heading": "欢迎加入 Pro！",
+      "payment_successful_message": "您的支付已成功",
+      "info_plan_label": "套餐",
+      "info_status_label": "状态",
+      "info_status_active": "已激活",
+      "features_heading": "已解锁功能",
+      "button_continue": "开始使用 Pro 功能"
+    },
+    "webview": {
+      "appbar_title": "完成支付",
+      "error_loading_page": "页面加载出错",
+      "cancel_dialog_title": "取消支付？",
+      "cancel_dialog_content": "确定要取消此次支付吗？",
+      "cancel_dialog_continue_btn": "否，继续",
+      "cancel_dialog_cancel_btn": "是，取消"
+    }
+  },
+  "notifications": {
+    "header": {
+      "title": "通知",
+      "unread_count": "{count} 条新消息",
+      "all_caught_up": "全部已读！",
+      "mark_all_as_read": "全部标为已读",
+      "clear_all": "清除全部"
+    },
+    "tabs": {
+      "all": "全部",
+      "unread": "未读",
+      "settings": "设置"
+    },
+    "dialogs": {
+      "clear_all_title": "清除全部？",
+      "clear_all_message": "这将永久删除所有通知。",
+      "cancel": "取消",
+      "delete_all": "全部删除"
+    },
+    "time": {
+      "just_now": "刚刚",
+      "minutes_ago": "{minutes}分钟前",
+      "hours_ago": "{hours}小时前",
+      "days_ago": "{days}天前"
+    },
+    "empty": {
+      "no_notifications_title": "暂无通知",
+      "no_notifications_message": "当有重要事项时我们会通知您",
+      "all_caught_up_title": "全部已读！",
+      "all_caught_up_message": "您已阅读所有通知。\n及时了解最新动态，做得好！🎉",
+      "feature_stay_updated": "保持更新",
+      "feature_quick_actions": "快捷操作",
+      "feature_track_progress": "追踪进度"
+    },
+    "card": {
+      "delete": "删除",
+      "mark_as_read": "标为已读"
+    },
+    "types": {
+      "info": "信息",
+      "success": "成功",
+      "warning": "警告",
+      "reminder": "提醒",
+      "achievement": "成就",
+      "study": "学习"
+    },
+    "settings": {
+      "info_card_title": "保持关注！",
+      "info_card_message": "启用通知以免错过重要更新",
+      "channels_section": "通知渠道",
+      "types_section": "通知内容",
+      "in_app_title": "应用内通知",
+      "in_app_subtitle": "使用应用时接收通知",
+      "email_title": "邮件通知",
+      "email_subtitle": "通过邮件获取重要更新",
+      "push_title": "推送通知",
+      "push_subtitle": "在此设备上接收推送通知",
+      "study_reminders_title": "学习提醒",
+      "study_reminders_subtitle": "待复习闪卡和学习会话的提醒",
+      "achievements_title": "成就和里程碑",
+      "achievements_subtitle": "庆祝您的学习成就",
+      "weekly_digest_title": "每周摘要",
+      "weekly_digest_subtitle": "每周学习进度总结",
+      "footer_message": "通知偏好设置在所有设备间同步"
+    }
+  },
+  "flashcards": {
+    "add": {
+      "title_edit": "编辑闪卡",
+      "title_add": "添加闪卡",
+      "label_front": "正面（问题）",
+      "hint_front": "输入问题或术语",
+      "error_front_required": "正面内容为必填项",
+      "label_back": "背面（答案）",
+      "hint_back": "输入答案或定义",
+      "error_back_required": "背面内容为必填项",
+      "label_notes": "备注（可选）",
+      "hint_notes": "添加补充说明或上下文",
+      "label_tags": "标签（可选）",
+      "hint_tags_example": "第一章, 重要, 复习",
+      "helper_tags": "用逗号分隔标签",
+      "button_save_changes": "保存更改",
+      "button_create": "创建闪卡"
+    },
+    "list": {
+      "label_flashcards": "闪卡",
+      "sort_newest": "最新优先",
+      "sort_oldest": "最早优先",
+      "sort_difficulty": "难度",
+      "menu_newest": "最新优先",
+      "menu_oldest": "最早优先",
+      "menu_difficulty": "难度",
+      "toast_created": "闪卡创建成功！",
+      "toast_updated": "闪卡更新成功！",
+      "toast_bulk_created": "成功添加 {count} 张卡片！",
+      "toast_deleted": "闪卡已删除",
+      "error_title": "加载闪卡出错",
+      "button_retry": "重试",
+      "filter_all": "全部",
+      "filter_new": "新卡片",
+      "filter_learning": "学习中",
+      "filter_review": "复习",
+      "filter_mastered": "已掌握",
+      "filter_due": "待复习",
+      "empty_filter_message": "此分类暂无卡片",
+      "button_add_cards": "添加卡片",
+      "modal_add_cards_title": "添加卡片",
+      "button_add_to_set": "添加到学习集",
+      "ready_card_singular": "张卡片",
+      "ready_cards_plural": "张卡片",
+      "ready_text": "已就绪",
+      "empty_title": "暂无闪卡",
+      "empty_message": "创建您的第一张闪卡开始学习",
+      "empty_button": "添加卡片"
+    },
+    "study": {
+      "card_progress": "第 {current} 张，共 {total} 张",
+      "question_rating": "您记得怎么样？",
+      "rating_again": "再来一次",
+      "rating_again_subtitle": "忘了",
+      "rating_hard": "困难",
+      "rating_hard_subtitle": "很难",
+      "rating_good": "良好",
+      "rating_good_subtitle": "记起来了",
+      "rating_easy": "简单",
+      "rating_easy_subtitle": "完美",
+      "hint_tap_card": "点击卡片查看答案",
+      "label_question": "问题",
+      "label_answer": "答案",
+      "exit_dialog_title": "退出学习？",
+      "exit_dialog_message": "退出后进度将不会保存，确定要退出吗？",
+      "exit_button_continue": "继续学习",
+      "exit_button_exit": "退出"
+    },
+    "widgets": {
+      "session_summary": {
+        "title": "学习完成！",
+        "cards_reviewed": "您复习了 {count} 张卡片",
+        "accuracy": "正确率",
+        "easy_good": "简单/良好",
+        "hard": "困难",
+        "again": "再来一次",
+        "done_button": "完成"
+      },
+      "ai_assist": {
+        "header": "AI 助手",
+        "suggest_answer_title": "建议答案",
+        "suggest_answer_description": "生成全面的答案",
+        "elaborate_title": "详细阐述",
+        "elaborate_description": "添加更多细节和上下文",
+        "add_mnemonic_title": "添加助记法",
+        "add_mnemonic_description": "创建记忆技巧",
+        "simplify_title": "简化",
+        "simplify_description": "用更简单的语言改写",
+        "suggestion_label": "AI 建议",
+        "try_again_button": "再试一次",
+        "accept_button": "采纳",
+        "suggestion_applied_toast": "AI 建议已应用！"
+      },
+      "ai_generation": {
+        "minimum_chars_error": "请至少输入50个字符",
+        "cards_ready_toast": "{count} 张卡片已就绪",
+        "info_banner_text": "让 AI 从您的内容生成闪卡",
+        "banner_text": "让 AI 从您的内容生成闪卡",
+        "content_label": "内容",
+        "content_hint": "在此粘贴您的文本、笔记或学习材料...",
+        "char_counter_helper": "{count}/50 最少字符数",
+        "char_count": "{count}/50 最少字符数",
+        "card_count_label": "卡片数量",
+        "number_of_cards": "卡片数量",
+        "card_type_label": "卡片类型",
+        "card_type": "卡片类型",
+        "qa_type": "问答",
+        "type_qa": "问答",
+        "fill_blank_type": "填空",
+        "type_fill_blank": "填空",
+        "true_false_type": "判断对错",
+        "type_true_false": "判断对错",
+        "difficulty_label": "难度",
+        "difficulty": "难度",
+        "easy_difficulty": "简单",
+        "difficulty_easy": "简单",
+        "medium_difficulty": "中等",
+        "difficulty_medium": "中等",
+        "hard_difficulty": "困难",
+        "difficulty_hard": "困难",
+        "generating_button": "正在生成...",
+        "generate_button": "AI 生成",
+        "generated_cards_title": "已生成的卡片（{count}）",
+        "deselect_all_button": "取消全选",
+        "select_all_button": "全选",
+        "card_number_label": "卡片 {number}",
+        "answer_label": "答案：",
+        "add_selected_button": "添加 {count} 张选中的卡片"
+      },
+      "manual_creation": {
+        "card_count_label": "{count} 张{cards}",
+        "card_count": {
+          "zero": "没有卡片",
+          "one": "1 张卡片",
+          "other": "{count} 张卡片"
+        },
+        "add_card_button": "添加卡片",
+        "add_card": "添加卡片",
+        "empty_state_title": "暂无卡片",
+        "no_cards": "暂无卡片",
+        "create_first_card_button": "创建第一张卡片",
+        "create_first": "创建第一张卡片",
+        "singular_card": "卡片",
+        "plural_cards": "卡片",
+        "card_header_title": "卡片 {number}",
+        "ready_badge": "就绪",
+        "delete_card_tooltip": "删除卡片",
+        "card_type_label": "卡片类型",
+        "qa_type": "问答",
+        "cloze_type": "完形填空",
+        "image_occlusion_type": "图片遮挡",
+        "front_label": "正面 *",
+        "front_hint": "问题或提示",
+        "back_label": "背面 *",
+        "back_hint": "答案或解释",
+        "notes_label": "备注（可选）",
+        "notes_hint": "补充说明",
+        "tags_label": "标签（可选）",
+        "tags_hint": "主题1, 主题2",
+        "tags_helper": "用逗号分隔标签"
+      },
+      "editor": {
+        "manual_tab": "手动",
+        "ai_tab": "AI",
+        "import_tab": "导入",
+        "tab_manual": "手动",
+        "tab_ai": "AI",
+        "tab_import": "导入"
+      },
+      "import": {
+        "recording_saved_toast": "录音已保存！",
+        "microphone_permission_error": "麦克风权限被拒绝",
+        "recording_started_toast": "开始录音...",
+        "recording_failed_error": "录音失败",
+        "file_pick_error": "选择文件失败",
+        "camera_open_error": "打开相机失败",
+        "image_pick_error": "选择图片失败",
+        "no_text_in_image_error": "图片中未找到文字",
+        "text_extracted_success": "文字提取成功！",
+        "image_process_error": "处理图片失败",
+        "empty_text_error": "请输入要导入的文本",
+        "no_file_selected_error": "请选择文件",
+        "no_audio_error": "请先录制或选择音频文件",
+        "no_image_error": "请先扫描或选择图片",
+        "no_google_docs_url_error": "请输入 Google Docs 链接",
+        "no_youtube_url_error": "请输入 YouTube 链接",
+        "no_website_url_error": "请输入网站链接",
+        "cards_ready_toast": "{count} 张卡片已就绪",
+        "info_banner_text": "从多种来源导入闪卡",
+        "banner_text": "从多种来源导入闪卡",
+        "source_label": "导入来源",
+        "pdf_source": "PDF 上传",
+        "source_pdf": "PDF 上传",
+        "youtube_source": "YouTube 视频",
+        "source_youtube": "YouTube 视频",
+        "record_audio_source": "录制音频",
+        "source_record_audio": "录制音频",
+        "audio_file_source": "音频文件",
+        "source_audio_file": "音频文件",
+        "website_source": "网站链接",
+        "source_website": "网站链接",
+        "camera_source": "相机扫描",
+        "source_camera": "相机扫描",
+        "google_docs_source": "Google Docs",
+        "source_google_docs": "Google Docs",
+        "text_source": "粘贴文本",
+        "source_text": "粘贴文本",
+        "handwritten_source": "手写笔记",
+        "source_handwritten": "手写笔记",
+        "text_label": "粘贴文本",
+        "text_hint": "输入闪卡内容...",
+        "pdf_description": "上传您的 PDF 文档",
+        "choose_pdf_button": "选择 PDF",
+        "change_pdf_button": "更换 PDF",
+        "recording_in_progress_text": "录制中...",
+        "recording_saved_text": "录音已保存！",
+        "tap_to_record_text": "点击开始录音",
+        "record_voice_hint": "录制语音，我们将为您转录",
+        "stop_recording_button": "停止录制",
+        "start_recording_button": "开始录制",
+        "record_again_button": "重新录制",
+        "choose_audio_button": "选择音频文件",
+        "change_audio_button": "更换文件",
+        "audio_formats_helper": "支持格式：MP3、WAV、M4A",
+        "camera_title": "用相机扫描文档",
+        "camera_hint": "拍摄笔记或教材的照片",
+        "open_camera_button": "打开相机",
+        "google_docs_label": "Google Docs 链接",
+        "google_docs_hint": "https://docs.google.com/document/d/...",
+        "google_docs_helper": "粘贴一个可共享的 Google Docs 链接",
+        "handwritten_title": "扫描手写笔记",
+        "handwritten_hint": "我们将从手写笔记中提取文字",
+        "take_photo_button": "拍照",
+        "from_gallery_button": "从相册选择",
+        "paste_text_label": "粘贴文本",
+        "paste_text_hint": "输入闪卡内容...",
+        "separator_label": "卡片分隔符",
+        "separator_hint": "例如：\\n\\n 或 ---",
+        "separator_helper": "用于分割卡片的模式",
+        "choose_file_button": "选择文件",
+        "change_file_button": "更换文件",
+        "file_formats_helper": "支持格式：PDF、TXT、CSV、MD",
+        "youtube_label": "YouTube 链接",
+        "youtube_hint": "https://youtube.com/watch?v=...",
+        "youtube_helper": "我们将提取视频字幕",
+        "website_label": "网站链接",
+        "website_hint": "https://example.com",
+        "website_helper": "我们将提取网页内容",
+        "importing_button": "导入中...",
+        "import_button": "导入闪卡",
+        "imported_cards_title": "已导入的卡片（{count}）",
+        "card_number_label": "卡片 {number}",
+        "add_to_study_set_button": "添加 {count} 张卡片到学习集"
+      }
+    }
+  },
+  "notes": {
+    "title": "笔记",
+    "mindMapHistoryTooltip": "思维导图历史",
+    "mindMapTooltip": "思维导图",
+    "aiGenerateButton": "AI 生成",
+    "addNoteButton": "添加笔记",
+    "emptyStateTitle": "暂无笔记",
+    "emptyStateSubtitle": "创建笔记以整理学习材料",
+    "createManuallyButton": "手动创建",
+    "noSearchResultsTitle": "没有匹配的笔记",
+    "noSearchResultsSubtitle": "尝试调整搜索或筛选条件",
+    "createSuccess": "笔记创建成功！",
+    "deleteSuccess": "笔记删除成功！",
+    "updateSuccess": "笔记更新成功！",
+    "aiNotesGeneratedSuccess": "已生成 {count} 篇 AI 笔记！",
+    "deleteConfirmationTitle": "删除笔记？",
+    "deleteConfirmationMessage": "确定要删除\"{title}\"吗？",
+    "searchPlaceholder": "搜索笔记...",
+    "filterAll": "全部",
+    "filterMoreTags": "+{count} 更多",
+    "sortNewest": "最新优先",
+    "sortOldest": "最早优先",
+    "sortTitle": "标题 A-Z",
+    "createNoteTitle": "创建笔记",
+    "editNoteTitle": "编辑笔记",
+    "titleLabel": "标题",
+    "titleHint": "输入笔记标题",
+    "titleValidation": "请输入标题",
+    "contentLabel": "内容",
+    "contentHint": "在此编写笔记...\n\n支持 Markdown 格式",
+    "contentValidation": "请输入内容",
+    "tagsLabel": "标签（可选）",
+    "tagsHint": "例如：生物学, 重要, 第一章（逗号分隔）",
+    "tagsHintEdit": "逗号分隔",
+    "markdownHelpText": "您可以使用 Markdown 语法进行格式化：\n• **粗体**、*斜体*、`代码`\n• # 标题、## 副标题\n• - 列表",
+    "createNoteSubmitButton": "创建笔记",
+    "updateNoteButton": "更新笔记",
+    "pinnedBadge": "已置顶",
+    "updatedDateLabel": "更新于 {date}",
+    "generateAITitle": "AI 生成笔记",
+    "generateAISubtitle": "提取内容并创建智能笔记",
+    "sourceTypePDF": "PDF 文档",
+    "sourceTypePDFDescription": "上传 PDF 文件",
+    "sourceTypeYouTube": "YouTube 视频",
+    "sourceTypeYouTubeDescription": "从视频中提取",
+    "sourceTypeWebsite": "网站链接",
+    "sourceTypeWebsiteDescription": "抓取网页内容",
+    "sourceTypeAudio": "音频文件",
+    "sourceTypeAudioDescription": "转录音频",
+    "sourceTypeHandwriting": "手写",
+    "sourceTypeHandwritingDescription": "从图片 OCR",
+    "sourceTypeText": "粘贴文本",
+    "sourceTypeTextDescription": "从剪贴板",
+    "chooseSourceLabel": "选择内容来源",
+    "youtubeUrlLabel": "YouTube 链接",
+    "youtubeUrlHint": "https://www.youtube.com/watch?v=...",
+    "websiteUrlLabel": "网站链接",
+    "websiteUrlHint": "https://zh.wikipedia.org/wiki/...",
+    "pasteContentLabel": "粘贴内容",
+    "pasteContentHint": "粘贴课堂笔记、文章内容或任何材料...",
+    "characterCount": "{count} 个字符",
+    "fileUploadPrompt": "将文件拖放到此处或点击浏览",
+    "pdfFileTypes": "PDF、TXT、MD（最大 20MB）",
+    "audioFileTypes": "MP3、WAV、M4A（最大 50MB）",
+    "imageFileTypes": "JPG、PNG、HEIC（最大 20MB）",
+    "extractGenerateButton": "提取并生成笔记",
+    "processingTitle": "正在处理您的内容",
+    "processingSubtitle": "这可能需要一些时间...",
+    "processingStep1": "提取内容",
+    "processingStep2": "分析文本",
+    "processingStep3": "生成摘要",
+    "processingStep4": "创建笔记",
+    "extractionSuccess": "内容提取成功！",
+    "aiSummaryLabel": "AI 摘要",
+    "suggestedTagsLabel": "建议标签",
+    "contentPreviewLabel": "内容预览（{count} 个字符）",
+    "startOverButton": "重新开始",
+    "saveNoteButton": "保存笔记",
+    "generatingPresentationTitle": "正在生成演示文稿",
+    "generatingPresentationSubtitle": "AI 正在根据笔记创建幻灯片...",
+    "generationFailedTitle": "生成失败",
+    "aiGeneratedBadge": "AI 生成",
+    "regenerateButton": "重新生成",
+    "mindMapTitle": "思维导图",
+    "generatingMindMapMessage": "正在生成思维导图...",
+    "mindMapGenerationFailed": "生成思维导图失败",
+    "mindMapHistoryTitle": "思维导图历史",
+    "failedToLoadHistory": "加载历史失败",
+    "noMindMapsEmptyTitle": "暂无思维导图",
+    "noMindMapsEmptySubtitle": "从笔记生成思维导图",
+    "mindMapDeletedSuccess": "思维导图已删除",
+    "mindMapDeleteFailed": "删除失败",
+    "mindMapLoadFailed": "加载失败",
+    "deleteMindMapTitle": "删除思维导图",
+    "deleteMindMapConfirmation": "确定要删除这个思维导图吗？",
+    "analyzingNotesMessage": "正在分析笔记...",
+    "creatingMindMapMessage": "正在创建思维导图",
+    "mindMapGuideTitle": "思维导图指南",
+    "mindMapGuideContent": "此思维导图将笔记中的所有概念可视化。\n\n• 双指缩放\n• 拖动以平移\n• 点击刷新以重新生成",
+    "mindMapHelpText": "双指缩放 • 拖动以探索导图",
+    "noNotesForMindMap": "没有可用于生成思维导图的笔记",
+    "shareNoteTitle": "分享笔记",
+    "shareLinkLabel": "分享链接",
+    "shareToSocialLabel": "分享到社交媒体",
+    "shareWhatsApp": "WhatsApp",
+    "shareTwitter": "Twitter",
+    "shareFacebook": "Facebook",
+    "shareLinkedIn": "LinkedIn",
+    "shareEmail": "邮件",
+    "downloadLabel": "下载",
+    "downloadText": "文本 (.txt)",
+    "downloadMarkdown": "Markdown (.md)",
+    "sharingPreviewLabel": "分享中",
+    "linkCopiedSuccess": "链接已复制到剪贴板！",
+    "downloadTextSuccess": "已下载：{title}.txt",
+    "downloadFailed": "下载失败",
+    "downloadMarkdownSuccess": "已下载：{title}.md"
+  },
+  "quiz": {
+    "live_lobby": {
+      "room_code": "房间代码",
+      "copy_code": "复制代码",
+      "share_code": "将此代码分享给好友以加入",
+      "room_code_copied": "房间代码已复制！",
+      "players": "玩家（{count}）",
+      "host_badge": "房主",
+      "starting": "即将开始...",
+      "start_game": "开始游戏",
+      "waiting_for_host": "等待房主开始游戏...",
+      "error_occurred": "发生错误"
+    },
+    "live_quiz": {
+      "title": "实时测验",
+      "hero_title": "实时竞答",
+      "hero_subtitle": "与好友一起比拼知识！",
+      "host_game": "创建房间",
+      "host_description": "创建房间并分享代码给好友",
+      "creating_room": "创建房间中...",
+      "create_room": "创建房间",
+      "or": "或者",
+      "join_game": "加入房间",
+      "room_code_label": "房间代码",
+      "room_code_hint": "ABC123",
+      "your_name_label": "您的名字",
+      "your_name_hint": "输入您的名字",
+      "joining": "加入中...",
+      "join_room": "加入房间",
+      "please_enter_room_code": "请输入房间代码",
+      "please_enter_name": "请输入您的名字",
+      "failed_to_create_room": "创建房间失败",
+      "failed_to_join_room": "加入房间失败",
+      "error": "错误：{error}"
+    },
+    "match_game": {
+      "title": "配对游戏",
+      "reset_game": "重新开始",
+      "time": "时间",
+      "moves": "步数",
+      "matches": "匹配",
+      "questions": "问题",
+      "answers": "答案",
+      "congratulations": "恭喜！🎉",
+      "completed_message": "用时 {seconds} 秒，{moves} 步完成",
+      "play_again": "再玩一次",
+      "no_flashcards_available": "没有可用的闪卡进行配对",
+      "failed_to_load": "加载闪卡失败：{error}",
+      "time_seconds": "{seconds}秒"
+    },
+    "mode": {
+      "title": "测验模式",
+      "hero_title": "测试您的知识",
+      "hero_subtitle": "基于闪卡的 AI 生成题目",
+      "number_of_questions": "题目数量",
+      "question_types": "题目类型",
+      "multiple_choice": "选择题",
+      "multiple_choice_description": "4 个选项，选择一个",
+      "true_false": "判断题",
+      "true_false_description": "判断陈述是否正确",
+      "fill_blank": "填空题",
+      "fill_blank_description": "输入缺失的单词或短语",
+      "timer": "计时器",
+      "timer_description": "每题 30 秒",
+      "generating_quiz": "正在生成测验...",
+      "generate_start_quiz": "生成并开始测验",
+      "please_select_question_type": "请至少选择一种题目类型",
+      "failed_to_generate": "生成测验失败：{error}"
+    },
+    "results": {
+      "title": "测验结果",
+      "score": "得分",
+      "outstanding": "出色！🎉",
+      "great_job": "做得好！👏",
+      "good_effort": "不错！💪",
+      "keep_practicing": "继续加油！📚",
+      "correct": "正确",
+      "incorrect": "错误",
+      "time": "用时",
+      "time_minutes": "{minutes}分钟",
+      "back_to_study_set": "返回学习集",
+      "try_again": "再试一次"
+    },
+    "taking": {
+      "exit_quiz": "退出测验？",
+      "exit_message": "您的进度将会丢失。",
+      "cancel": "取消",
+      "exit": "退出",
+      "question_progress": "{current}/{total}",
+      "submitting": "提交中...",
+      "type_answer_here": "在此输入答案...",
+      "submit_answer": "提交答案",
+      "correct_feedback": "正确！",
+      "incorrect_feedback": "错误",
+      "correct_answer": "正确答案：{answer}",
+      "explanation": "解释",
+      "previous": "上一题",
+      "next_question": "下一题",
+      "submit_quiz": "提交测验",
+      "failed_to_submit": "提交测验失败：{error}"
+    }
+  },
+  "research": {
+    "title": "深度研究",
+    "messages": {
+      "please_enter_query": "请输入研究问题",
+      "creating": "正在创建研究...",
+      "loading_report": "正在加载研究报告...",
+      "pdf_export_soon": "PDF 导出即将推出！",
+      "markdown_copied": "Markdown 已复制到剪贴板！",
+      "report_copied": "报告已复制！",
+      "could_not_open_link": "无法打开链接"
+    },
+    "form": {
+      "query_hint": "例如：\"详细解释量子计算\"",
+      "ai_powered_research": "AI 驱动研究",
+      "deep_dive_topic": "深入探讨任何主题"
+    },
+    "sections": {
+      "source_types": "📚 资料类型",
+      "research_depth": "🔍 研究深度",
+      "output_format": "📄 输出格式"
+    },
+    "source_types": {
+      "documents": "文档",
+      "web": "网页",
+      "academic": "学术"
+    },
+    "depth": {
+      "quick": "快速",
+      "standard": "标准",
+      "comprehensive": "全面"
+    },
+    "output_format": {
+      "detailed": "详细",
+      "summary": "摘要",
+      "bullets": "要点"
+    },
+    "buttons": {
+      "start_research": "开始深度研究",
+      "cancel": "取消"
+    },
+    "recent": {
+      "title": "最近研究",
+      "done": "已完成",
+      "failed": "失败",
+      "in_progress": "进行中"
+    },
+    "progress": {
+      "title": "研究进行中",
+      "query_label": "研究问题",
+      "overall_progress": "总体进度",
+      "pipeline_title": "研究流程",
+      "phases": {
+        "planning": "规划中",
+        "researching": "研究中",
+        "synthesizing": "综合中",
+        "completed": "已完成",
+        "failed": "失败",
+        "starting": "启动中"
+      },
+      "agents": {
+        "planning": "规划代理",
+        "planning_desc": "分析问题并制定研究策略",
+        "research": "研究代理",
+        "research_desc": "从所选来源收集信息",
+        "synthesis": "综合代理",
+        "synthesis_desc": "汇编和整理研究结果"
+      }
+    },
+    "report": {
+      "deep_research": "深度研究",
+      "tab_report": "报告",
+      "tab_sources": "来源（{count}）",
+      "tab_export": "导出",
+      "executive_summary": "概要",
+      "key_insights": "关键洞察",
+      "sources_references": "来源与参考",
+      "sources_cited": "引用了 {count} 个来源",
+      "no_sources": "未找到来源",
+      "knowledge_base_sources": "知识库（{count}）",
+      "web_sources": "网页来源（{count}）",
+      "study_material": "学习材料",
+      "relevance": "{score}% 相关性",
+      "relevance_label": "相关性",
+      "citation_copied": "引用已复制！",
+      "export_title": "导出研究",
+      "export_format": "导出格式",
+      "export_pdf": "导出为 PDF",
+      "export_pdf_desc": "保存为 PDF 文档",
+      "export_markdown": "复制为 Markdown",
+      "export_markdown_desc": "带引用的格式化文本",
+      "export_plain": "复制纯文本",
+      "export_plain_desc": "无格式的简单文本",
+      "share": "分享报告",
+      "share_desc": "通过其他应用分享",
+      "citation_style": "引用格式",
+      "citation_preview": "预览",
+      "delete_confirm_title": "删除研究？",
+      "delete_confirm_message": "此研究报告将被永久删除。",
+      "delete_confirm_cancel": "取消",
+      "delete_confirm_delete": "删除"
+    },
+    "date": {
+      "today": "今天",
+      "yesterday": "昨天",
+      "days_ago": "{days} 天前"
+    }
+  },
+  "ai_chat": {
+    "title": "学习伙伴",
+    "history_title": "聊天记录",
+    "history_subtitle": "您的 AI 对话",
+    "messages": {
+      "ask_anything": "随便问我...",
+      "thinking": "思考中...",
+      "no_conversations": "暂无对话",
+      "start_new": "开始新的对话",
+      "search_conversations": "搜索对话...",
+      "delete_confirm_title": "删除对话？",
+      "delete_confirm_message": "这将永久删除此对话及所有消息。",
+      "delete_confirm_cancel": "取消",
+      "delete_confirm_delete": "删除"
+    },
+    "empty_state": {
+      "title": "学习伙伴",
+      "description": "就学习材料提问，获取解释、摘要等。\n我可以引用您的文档并提供带引用的答案。",
+      "prompts": {
+        "explain": "解释这个主题的关键概念",
+        "summary": "为我的学习材料创建摘要",
+        "important": "最重要的知识点是什么？",
+        "examples": "用例子帮我更好地理解"
+      }
+    },
+    "file_picker": {
+      "gallery": "从相册选择",
+      "camera": "拍照",
+      "pdf": "选择 PDF 文档"
+    },
+    "history": {
+      "new_chat": "新对话",
+      "no_message": "暂无对话"
+    },
+    "date": {
+      "today": "今天",
+      "yesterday": "昨天",
+      "days_ago": "{days} 天前"
+    }
+  },
+  "teach_back": {
+    "title": "教学反馈",
+    "messages": {
+      "please_enter_topic": "请输入主题",
+      "please_select_study_set": "请选择学习集",
+      "please_enter_explanation": "请输入您的解释",
+      "explanation_submitted": "解释已提交！",
+      "no_study_sets": "未找到学习集，请先创建一个！"
+    },
+    "feynman": {
+      "title": "费曼学习法",
+      "step1": "选择主题",
+      "step1_desc": "选一个概念",
+      "step2": "简单解释",
+      "step2_desc": "用自己的话讲",
+      "step3": "获取反馈",
+      "step3_desc": "AI 评估",
+      "step4": "填补空白",
+      "step4_desc": "改进并重试"
+    },
+    "form": {
+      "mode_topic": "输入主题",
+      "mode_study_set": "从学习集选择",
+      "topic_label": "您想掌握什么主题？",
+      "topic_hint": "例如：勾股定理、光合作用、供给与需求...",
+      "quick_picks": "快速选择：",
+      "reference_label": "参考资料（可选 — 帮助 AI 更好地评估）",
+      "reference_hint": "在此粘贴教材笔记、讲义内容或要点...",
+      "study_set_label": "选择学习集 — AI 将从闪卡中自动生成主题",
+      "study_set_empty": "未找到学习集，请先创建一个！",
+      "cards_count": "{count} 张卡片",
+      "cancel": "取消",
+      "generate_start": "生成并开始",
+      "start_teaching": "开始教学",
+      "generating": "正在生成...",
+      "creating": "正在创建..."
+    },
+    "session": {
+      "essentials_title": "复习要点",
+      "load_essentials": "加载要点",
+      "who_explaining": "您在向谁解释？",
+      "difficulty_eli5": "5 岁小孩",
+      "difficulty_eli5_desc": "最简单的表达",
+      "difficulty_classmate": "同学",
+      "difficulty_classmate_desc": "正常水平",
+      "difficulty_expert": "专家",
+      "difficulty_expert_desc": "专业深度",
+      "explanation_title": "您的解释",
+      "explanation_hint": "用自己的话解释这个概念...",
+      "characters_count": "{count} 个字符",
+      "submit_explanation": "提交解释",
+      "submitting": "提交中...",
+      "review_explanation": "审查您的解释",
+      "evaluate_button": "评估我的解释",
+      "evaluating": "评估中...",
+      "challenge_button": "挑战",
+      "convince_ai_title": "说服 AI",
+      "convince_ai_desc": "一个持怀疑态度的 AI 学生会提出深入的问题。捍卫您的理解！",
+      "convinced_badge": "已说服！+20 XP",
+      "skeptical_student": "怀疑的学生",
+      "defend_hint": "捍卫您的理解...",
+      "thinking": "思考中..."
+    },
+    "progress": {
+      "phase_explain": "解释",
+      "phase_submit": "提交",
+      "phase_evaluate": "评估"
+    },
+    "evaluation": {
+      "xp_earned": "+50 XP 已获得！",
+      "overall_score": "总分",
+      "score_breakdown": "分项评分",
+      "accuracy": "准确性",
+      "clarity": "清晰度",
+      "completeness": "完整性",
+      "understanding": "理解程度",
+      "strengths": "优势",
+      "improve": "改进建议",
+      "deepen": "深化理解",
+      "try_again": "再试一次",
+      "new_topic": "新主题",
+      "score_excellent": "理解出色！",
+      "score_good": "理解良好！",
+      "score_fair": "理解一般",
+      "score_needs_improvement": "需要改进"
+    },
+    "status": {
+      "pending": "待处理",
+      "submitted": "已提交",
+      "evaluated": "已评估"
+    },
+    "difficulty": {
+      "eli5": "幼儿级",
+      "classmate": "同学级",
+      "expert": "专家级"
+    },
+    "empty_state": {
+      "title": "暂无教学反馈",
+      "subtitle": "使用费曼学习法测试您的理解"
+    }
+  },
+  "common": {
+    "cancel": "取消",
+    "delete": "删除",
+    "close": "关闭",
+    "retry": "重试",
+    "tryAgain": "再试一次",
+    "errorGeneric": "出了点问题",
+    "noData": "暂无数据",
+    "gotIt": "知道了"
+  },
+  "exam_clone": {
+    "list": {
+      "title": "考试克隆引擎",
+      "subtitle": "AI 驱动的模拟考试",
+      "upload_tooltip": "上传考试",
+      "loading": "正在加载考试...",
+      "overview": "概览",
+      "your_exams": "我的考试",
+      "upload_button": "上传",
+      "no_exams_title": "暂无考试",
+      "no_exams_subtitle": "上传您的第一份考试\n开始用 AI 生成练习题",
+      "upload_exam_button": "上传考试",
+      "review_queue": "复习队列",
+      "review_queue_subtitle_due": "{count} 道待复习",
+      "review_queue_subtitle_caught_up": "全部完成",
+      "due_count": "{count} 道待复习",
+      "bookmarks": "收藏",
+      "bookmarks_subtitle": "收藏的题目",
+      "saved_questions": "已保存的题目",
+      "badges": "徽章",
+      "badges_subtitle": "成就",
+      "achievements": "成就",
+      "leaderboard": "排行榜",
+      "leaderboard_subtitle": "排名",
+      "rankings": "排名",
+      "upload": "上传",
+      "analysis": "分析",
+      "practice": "练习",
+      "notification_title": "{count} 道{questions}待复习！",
+      "notification_subtitle": "是时候练习巩固记忆了",
+      "notification": {
+        "multiple_due": "{count} 道题目待复习！",
+        "message": "是时候练习巩固记忆了"
+      },
+      "question": "题目",
+      "questions": "题目",
+      "stats": {
+        "exams": "考试",
+        "original": "原始",
+        "generated": "生成",
+        "ready": "就绪",
+        "failed": "失败",
+        "pending": "待处理",
+        "processing": "处理中"
+      },
+      "all_caught_up": "全部完成",
+      "failed": "处理失败",
+      "delete_dialog": {
+        "title": "删除考试？",
+        "message": "这将永久删除此考试及所有生成的题目。",
+        "cancel": "取消",
+        "delete": "删除"
+      }
+    },
+    "upload": {
+      "title": "上传考试",
+      "subtitle": "上传往年考试以生成练习题",
+      "title_label": "考试标题 *",
+      "title_hint": "例如：期中考试、生物学期末考试",
+      "subject_label": "科目",
+      "subject_hint": "例如：生物学、数学",
+      "method_label": "上传方式",
+      "upload_pdf": "上传 PDF",
+      "upload_pdf_desc": "以 PDF 文件形式上传考试",
+      "paste_text": "粘贴文本",
+      "paste_text_desc": "复制粘贴考试文本",
+      "pdf_label": "选择 PDF 文件",
+      "pdf_hint": "点击选择 PDF",
+      "text_label": "考试文本",
+      "text_hint": "在此粘贴考试题目...",
+      "uploading": "上传中...",
+      "upload_button": "上传考试",
+      "upload_analyze": "上传并分析",
+      "click_upload": "点击上传",
+      "file_formats": "支持格式：PDF、JPG、PNG",
+      "tip_pdf_fail": "如果 PDF 上传失败，请尝试拍摄考试的清晰照片",
+      "title_required": "请输入考试标题",
+      "file_required": "请选择 PDF 文件",
+      "text_required": "请粘贴考试文本",
+      "character_count": "{count} 个字符"
+    },
+    "detail": {
+      "title": "考试分析",
+      "export_pdf": "导出 PDF",
+      "review_queue": "复习队列",
+      "live_session": "实时会话",
+      "practice": "练习",
+      "coming_soon": "{feature}即将推出",
+      "exam_style_analysis": "考试风格分析",
+      "question_types": "题目类型",
+      "difficulty_distribution": "难度分布",
+      "easy": "简单",
+      "medium": "中等",
+      "hard": "困难",
+      "topics_covered": "涵盖主题",
+      "more_topics": "+{count} 更多",
+      "original": "原始",
+      "generated": "生成",
+      "total": "总计",
+      "best_score": "最高分",
+      "tabs": {
+        "original": "原始（{count}）",
+        "generated": "生成（{count}）",
+        "analytics": "分析"
+      },
+      "generate_more": "生成更多题目",
+      "no_questions": "暂无题目",
+      "no_practice_data": "暂无练习数据",
+      "complete_practice": "至少完成一次练习才能查看分析。",
+      "question_type": {
+        "multiple_choice": "选择题",
+        "short_answer": "简答题",
+        "true_false": "判断题",
+        "essay": "论述题",
+        "fill_blank": "填空题"
+      },
+      "correct_answer": "正确答案",
+      "explanation": "解释"
+    },
+    "badges": {
+      "title": "成就",
+      "subtitle": "通过练习获得徽章",
+      "your_progress": "您的进度",
+      "failed_to_load": "加载徽章失败：{error}",
+      "remaining": "还有 {count} 个徽章待解锁",
+      "all": "全部",
+      "recently_earned": "最近获得",
+      "earned_on": "获得于 {date}",
+      "from_exam": "来自 {title}",
+      "xp_reward": "+{xp} XP"
+    },
+    "bookmarks": {
+      "title": "收藏的题目",
+      "subtitle": "标记复习的题目",
+      "stats_count": "{count}",
+      "stats_label": "收藏的题目",
+      "from_exams_count": "{count}",
+      "from_exams_label": "来自不同考试",
+      "difficulty": {
+        "easy": "简单",
+        "medium": "中等",
+        "hard": "困难",
+        "unknown": "未知"
+      },
+      "options": "选项：",
+      "correct": "（正确）",
+      "correct_answer": "正确答案：",
+      "empty_title": "暂无收藏",
+      "empty_message": "在练习中收藏难题，以便日后复习。\n点击任何题目上的收藏图标即可保存到此处。",
+      "start_practicing": "开始练习",
+      "failed_to_load": "加载收藏失败：{error}",
+      "failed_to_remove": "移除收藏失败：{error}"
+    },
+    "leaderboard": {
+      "title": "排行榜",
+      "subtitle": "查看您的排名",
+      "period": {
+        "weekly": "本周",
+        "monthly": "本月",
+        "all_time": "总榜"
+      },
+      "your_rank": "您的排名",
+      "top_10": "前 10 名！",
+      "keep_practicing": "继续练习",
+      "avg_score": "平均分",
+      "correct": "正确",
+      "avg_score_label": "平均分",
+      "exams_count": "{count} 场考试",
+      "exams_and_correct": "{exams} 场考试 • {correct} 道正确",
+      "empty_title": "暂无数据",
+      "empty_message": "成为第一个参加考试并出现在排行榜上的人！",
+      "failed_to_load": "加载排行榜失败：{error}"
+    },
+    "practice": {
+      "title": "练习",
+      "practice_exam": "模拟考试",
+      "questions_available": "{count} 道题目可用",
+      "setup": {
+        "number_of_questions": "题目数量",
+        "time_limit_minutes": "时间限制（分钟）",
+        "minutes": "{time} 分钟",
+        "include_questions": "包含题目",
+        "original_questions": "原始考试题目",
+        "ai_questions": "AI 生成题目",
+        "start_practice": "开始练习"
+      },
+      "progress": {
+        "question_of": "第 {current} 题，共 {total} 题",
+        "answered": "已答 {count} 题",
+        "flagged": "已标记 {count} 题",
+        "time_remaining": "{time}"
+      },
+      "difficulty": {
+        "easy": "简单",
+        "medium": "中等",
+        "hard": "困难"
+      },
+      "actions": {
+        "previous": "上一题",
+        "next": "下一题",
+        "submit": "提交",
+        "check_answer": "检查答案",
+        "type_answer": "输入答案..."
+      },
+      "results": {
+        "title": "结果",
+        "score": "{score}%",
+        "excellent": "优秀！",
+        "good_job": "做得好！",
+        "keep_practicing": "继续加油！",
+        "correct": "正确",
+        "incorrect": "错误",
+        "unanswered": "未作答",
+        "time": "用时",
+        "review_answers": "查看答案",
+        "try_again": "再试一次"
+      },
+      "review": {
+        "title": "答案回顾",
+        "question_number": "第 {number} 题",
+        "your_answer": "您的答案：",
+        "correct_answer": "正确答案：",
+        "explanation": "解释"
+      },
+      "dialogs": {
+        "exit_title": "退出考试？",
+        "exit_message": "您的进度将会丢失。您已回答 {answered} / {total} 道题目。",
+        "continue_exam": "继续考试",
+        "exit": "退出",
+        "submit_title": "提交考试？",
+        "submit_message": "您已回答 {answered} / {total} 道题目。",
+        "unanswered_warning": "{count} 道题目未作答",
+        "submit": "提交"
+      },
+      "no_questions_available": "暂无可用题目"
+    },
+    "review_queue": {
+      "title": "复习队列",
+      "stats": {
+        "correct": "{count}",
+        "incorrect": "{count}",
+        "progress": "{current}/{total}"
+      },
+      "loading": "正在加载复习队列...",
+      "difficulty": {
+        "easy": "简单",
+        "medium": "中等",
+        "hard": "困难"
+      },
+      "review_number": "复习 #{count}",
+      "check_answer": "检查答案",
+      "ai_evaluating": "AI 正在评估...",
+      "next_question": "下一题",
+      "finish_review": "完成复习",
+      "type_answer": "输入答案：",
+      "type_answer_hint": "在此输入答案...\n（可以输入多行）",
+      "correct_answer": "正确答案：{answer}",
+      "get_ai_explanation": "获取 AI 解释",
+      "getting_explanation": "正在获取解释...",
+      "ai_evaluation": "AI 评估",
+      "ai_explanation": "AI 解释",
+      "empty": {
+        "title": "全部完成！",
+        "message": "目前没有待复习的题目。多做练习来充实复习队列。",
+        "back_button": "返回考试",
+        "refresh_button": "刷新"
+      },
+      "complete": {
+        "title": "复习完成！",
+        "message": "做得好，巩固知识很重要",
+        "correct": "正确",
+        "incorrect": "错误",
+        "total": "总计",
+        "accuracy": "正确率",
+        "tip_title": "继续加油！",
+        "tip_message": "答错的题目会更频繁出现。间隔重复有助于将知识转移到长期记忆中。",
+        "back_button": "返回考试",
+        "review_more": "继续复习"
+      },
+      "failed_to_load": "加载复习队列失败：{error}",
+      "failed_to_submit": "完成复习失败：{error}",
+      "failed_explanation": "获取解释失败：{error}"
+    }
+  },
+  "problem_solver": {
+    "batch_solver": {
+      "title": "批量解题器",
+      "tabs": {
+        "pdf_upload": "PDF 上传",
+        "text_input": "文本输入"
+      },
+      "pdf_tab": {
+        "upload_label": "上传 PDF",
+        "upload_hint": "选择包含题目的 PDF 文件",
+        "extract_button": "提取题目"
+      },
+      "text_tab": {
+        "title": "粘贴题目",
+        "description": "在下方粘贴题目。每道题应独占一行或用数字分隔。",
+        "hint": "示例：\n1. 解方程：2x + 5 = 15\n2. 计算半径为 7cm 的圆的面积\n3. 因式分解：x² - 5x + 6",
+        "extract_button": "提取题目"
+      },
+      "stats": {
+        "total": "总计",
+        "selected": "已选",
+        "solved": "已解"
+      },
+      "actions": {
+        "solve_selected": "解答 {count} 道选中的题",
+        "solve_all": "全部解答"
+      },
+      "messages": {
+        "enter_text": "请输入文本",
+        "problems_solved": "已解答 {count} 道题！"
+      }
+    },
+    "camera_scan": {
+      "title": "扫描题目",
+      "instructions": "将题目放在取景框内",
+      "review_title": "审查与编辑",
+      "analyzing": "正在分析图片...",
+      "analyzing_subtitle": "这可能需要几秒钟",
+      "verify_text": "请核实文本",
+      "verify_description": "数学符号可能无法被正确识别，请根据需要编辑下方文本。",
+      "subject_label": "科目",
+      "problem_text_label": "题目文本",
+      "problem_text_hint": "在此编辑题目文本...",
+      "problem_text_tip": "提示：使用 ^ 表示上标（例如 x^2）",
+      "actions": {
+        "retake": "重拍",
+        "solve_problem": "解答题目"
+      },
+      "subjects": {
+        "mathematics": "数学",
+        "physics": "物理",
+        "chemistry": "化学",
+        "biology": "生物",
+        "computer_science": "计算机科学",
+        "other": "其他"
+      }
+    },
+    "concept_map": {
+      "title": "概念图",
+      "subtitle": "可视化学习路线",
+      "central_topic": "核心主题",
+      "sections": {
+        "prerequisites": "前置知识",
+        "prerequisites_subtitle": "先掌握这些",
+        "current_concepts": "当前概念",
+        "current_concepts_subtitle": "正在学习",
+        "next_steps": "下一步",
+        "next_steps_subtitle": "接下来学什么",
+        "related_topics": "相关主题",
+        "related_topics_subtitle": "探索关联"
+      },
+      "importance": "重要性：",
+      "connection": "关联："
+    },
+    "formula_cards": {
+      "title": "公式卡片",
+      "progress": "第 {current} 张，共 {total} 张",
+      "categories": {
+        "rule": "规则",
+        "concept": "概念",
+        "formula": "公式",
+        "theorem": "定理"
+      },
+      "sides": {
+        "explanation": "解释",
+        "formula": "公式"
+      },
+      "hints": {
+        "tap_to_flip": "点击查看{side}",
+        "tap_explanation": "点击查看解释",
+        "tap_formula": "点击查看公式",
+        "swipe_navigate": "左右滑动以切换"
+      },
+      "actions": {
+        "previous": "上一张",
+        "next": "下一张",
+        "flip": "翻转"
+      },
+      "messages": {
+        "copied": "卡片已复制到剪贴板"
+      }
+    },
+    "hints": {
+      "title": "引导模式",
+      "subtitle": "获取提示而非完整解答",
+      "problem_label": "题目",
+      "hint_progress": "提示 {current} / 约 {total}",
+      "next_hint_preview": "下一条提示涉及：{preview}",
+      "all_revealed": "所有提示已显示！现在试试自己解答。",
+      "all_revealed_status": "所有提示已显示",
+      "actions": {
+        "reset": "重置",
+        "get_first_hint": "获取第一个提示",
+        "next_hint": "下一个提示",
+        "thinking": "思考中...",
+        "see_solution": "查看解答"
+      },
+      "messages": {
+        "hints_reset": "提示已重置"
+      }
+    },
+    "practice_quiz": {
+      "title": "练习测验",
+      "title_with_progress": "练习测验（{current}/{total}）",
+      "question_progress": "第 {current}/{total} 题",
+      "stats": {
+        "correct": "正确"
+      },
+      "question_types": {
+        "multiple_choice": "选择题",
+        "true_false": "判断题",
+        "fill_blank": "填空题"
+      },
+      "feedback": {
+        "correct": "正确！",
+        "incorrect": "错误",
+        "correct_answer": "正确答案：{answer}",
+        "explanation": "解释"
+      },
+      "actions": {
+        "next_question": "下一题",
+        "view_results": "查看结果"
+      },
+      "results": {
+        "perfect": "满分！🎉",
+        "great": "做得好！🌟",
+        "good": "不错！👍",
+        "practice": "继续加油！💪",
+        "quiz_complete": "测验完成！",
+        "close": "关闭",
+        "try_again": "再试一次"
+      }
+    },
+    "bookmarks": {
+      "title": "我的收藏",
+      "search_placeholder": "搜索收藏...",
+      "stats": {
+        "total": "总计",
+        "subjects": "科目",
+        "tags": "标签"
+      },
+      "edit_sheet": {
+        "title": "编辑收藏",
+        "tags_label": "标签",
+        "tags_hint": "添加标签...",
+        "notes_label": "备注",
+        "notes_hint": "在此添加备注...",
+        "save_button": "保存更改"
+      },
+      "delete_dialog": {
+        "title": "删除收藏",
+        "message": "确定要删除此收藏吗？",
+        "cancel": "取消",
+        "delete": "删除"
+      },
+      "messages": {
+        "updated": "收藏已更新",
+        "deleted": "收藏已删除"
+      },
+      "empty_state": {
+        "title": "暂无收藏",
+        "subtitle": "保存题目以便日后查看"
+      }
+    },
+    "history": {
+      "title": "解题历史",
+      "search_placeholder": "搜索题目...",
+      "delete_dialog": {
+        "title": "删除题目？",
+        "message": "这将永久删除此题目及其解答。",
+        "cancel": "取消",
+        "delete": "删除"
+      },
+      "time": {
+        "today": "今天",
+        "yesterday": "昨天",
+        "days_ago": "{days} 天前"
+      }
+    },
+    "input": {
+      "title": "解题器",
+      "subject_label": "科目",
+      "problem_label": "题目",
+      "problem_hint": "在此输入或粘贴题目...\n\n示例：解方程 2x + 5 = 15",
+      "actions": {
+        "scan": "扫描",
+        "voice": "语音",
+        "image": "图片",
+        "solve": "解答题目",
+        "creating": "正在创建..."
+      },
+      "image_uploaded": "图片已上传",
+      "voice_coming_soon": "语音输入即将推出",
+      "how_it_works": "工作原理",
+      "agents": {
+        "analysis": {
+          "title": "分析代理",
+          "description": "理解题目并确定解题方法"
+        },
+        "solver": {
+          "title": "解题代理",
+          "description": "生成带详细解释的逐步解答"
+        },
+        "verifier": {
+          "title": "验证代理",
+          "description": "交叉验证解答的正确性"
+        }
+      },
+      "subjects": {
+        "auto_detect": "自动检测",
+        "mathematics": "数学",
+        "physics": "物理",
+        "chemistry": "化学",
+        "biology": "生物",
+        "computer_science": "计算机科学",
+        "engineering": "工程",
+        "economics": "经济学",
+        "statistics": "统计学"
+      },
+      "menu": {
+        "bookmarks": "收藏",
+        "history": "历史",
+        "batch_solver": "批量解题",
+        "camera_scan": "相机扫描"
+      },
+      "messages": {
+        "enter_problem": "请输入题目或上传图片"
+      }
+    },
+    "similar_problems": {
+      "title": "相似题目",
+      "difficulty": {
+        "easy": "简单",
+        "medium": "中等",
+        "hard": "困难"
+      },
+      "solve_this": "解答此题"
+    },
+    "solution": {
+      "title": "解答",
+      "final_answer": "最终答案",
+      "learning_tools": "学习工具",
+      "tools": {
+        "hints": "提示",
+        "similar": "相似题",
+        "quiz": "测验",
+        "chat": "对话",
+        "concepts": "概念",
+        "formulas": "公式"
+      },
+      "tabs": {
+        "steps": "步骤",
+        "code": "代码",
+        "alternatives": "替代方法",
+        "graph": "图表",
+        "analysis": "分析",
+        "citations": "引用"
+      },
+      "steps": {
+        "no_solution": "暂无解答",
+        "no_steps": "暂无解题步骤",
+        "step_number": "第 {number} 步",
+        "copy": "复制",
+        "step_copied": "步骤已复制"
+      },
+      "code": {
+        "empty_title": "暂无代码块"
+      },
+      "alternatives": {
+        "empty_title": "暂无替代方法"
+      },
+      "graph": {
+        "empty_title": "暂无图表数据"
+      },
+      "analysis": {
+        "level_explanation": "{level}级解释",
+        "key_points": "要点：",
+        "examples": "示例：",
+        "technical_analysis": "技术分析",
+        "no_details": "暂无详情"
+      },
+      "citations": {
+        "empty_title": "暂无引用"
+      },
+      "complexity": {
+        "title": "解释级别",
+        "beginner": "初学者",
+        "intermediate": "中级",
+        "advanced": "高级",
+        "expert": "专家",
+        "loading": "正在加载解释..."
+      },
+      "narration": {
+        "title": "解答朗读",
+        "listen_tooltip": "听解答",
+        "completed": "朗读完成",
+        "no_text": "没有可供朗读的解答文本"
+      },
+      "messages": {
+        "bookmark_added": "已添加收藏",
+        "bookmark_removed": "已移除收藏"
+      }
+    },
+    "solving_progress": {
+      "title": "解题中...",
+      "stages": {
+        "analysis": {
+          "title": "分析代理",
+          "description": "理解题目"
+        },
+        "solving": {
+          "title": "解题代理",
+          "description": "生成逐步解答"
+        },
+        "verification": {
+          "title": "验证代理",
+          "description": "交叉验证正确性"
+        }
+      },
+      "status": {
+        "complete": "完成",
+        "solution_ready": "解答已就绪！",
+        "redirecting": "正在跳转到解答...",
+        "failed": "解题失败",
+        "retry": "重试"
+      }
+    },
+    "study_buddy": {
+      "title": "学习伙伴",
+      "subtitle": "就解答提出后续问题",
+      "welcome_message": "你好！我是您的学习伙伴。我已经查看了您题目的解答。随时向我提问——我可以更详细地解释步骤、建议其他方法或帮您练习类似的概念。",
+      "suggested_questions_title": "建议的问题",
+      "input_placeholder": "提一个后续问题...",
+      "problem_label": "题目：{problem}",
+      "export": "导出",
+      "suggested": {
+        "explain_step": "能更详细地解释第 2 步吗？",
+        "why_approach": "为什么使用这个方法？",
+        "other_methods": "还有什么其他解法？",
+        "simpler_example": "能给我一个更简单的例子吗？",
+        "concepts_needed": "理解这道题需要哪些概念？"
+      }
+    },
+    "widgets": {
+      "steps_copied": "步骤已复制到剪贴板",
+      "copy": "复制",
+      "steps": "步骤",
+      "no_steps": "此方法暂无步骤",
+      "advantages": "优势",
+      "disadvantages": "劣势",
+      "method_type": {
+        "algebraic": "代数",
+        "geometric": "几何",
+        "numerical": "数值",
+        "graphical": "图形",
+        "analytical": "分析",
+        "other": "其他"
+      },
+      "status": {
+        "pending": "待处理",
+        "solving": "解题中...",
+        "completed": "已完成",
+        "failed": "失败"
+      },
+      "retry": "重试",
+      "solve": "解答",
+      "view_solution": "查看解答",
+      "search_bookmarks": "搜索收藏...",
+      "no_problem_text": "暂无题目文本",
+      "edit": "编辑",
+      "delete": "删除",
+      "date": {
+        "today": "今天",
+        "yesterday": "昨天",
+        "days_ago": "{days} 天前"
+      }
+    }
+  }
+}

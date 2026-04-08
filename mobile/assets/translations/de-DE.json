@@ -1,0 +1,2224 @@
+{
+  "onboarding": {
+    "skip": "Überspringen",
+    "next": "Weiter",
+    "back": "Zurück",
+    "get_started": "Loslegen",
+    "i_have_account": "Ich habe bereits ein Konto",
+    "app_name": "Studyield",
+    "slide_1": {
+      "title": "Willkommen bei Studyield",
+      "subtitle": "Ihr KI-gestützter Lernbegleiter",
+      "description": "Meistern Sie jedes Fach mit intelligenten Lernkarten, KI-Problemlösung und personalisierten Lernpfaden"
+    },
+    "slide_2": {
+      "title": "Intelligente Lernkarten",
+      "subtitle": "Lernen Sie schlauer, nicht härter",
+      "description": "Erstellen Sie interaktive Lernkarten mit einem Spaced-Repetition-Algorithmus, der sich Ihrem Lerntempo anpasst",
+      "badge": "KOSTENLOS"
+    },
+    "slide_3": {
+      "title": "KI-Problemlöser",
+      "subtitle": "Sofortige Hilfe erhalten",
+      "description": "Scannen Sie jedes Problem und erhalten Sie Schritt-für-Schritt-Lösungen mit ausführlichen Erklärungen – powered by AI",
+      "badge": "PRO",
+      "features": {
+        "scan": "Probleme scannen",
+        "hints": "Hinweise erhalten",
+        "steps": "Schritt für Schritt"
+      }
+    },
+    "slide_4": {
+      "title": "Lernen auf dem nächsten Level",
+      "subtitle": "Lernen mit Spaß",
+      "description": "Verdienen Sie XP, halten Sie Ihre Lernsträhne aufrecht und schalten Sie Erfolge frei, während Sie lernen",
+      "badge": "KOSTENLOS"
+    },
+    "slide_5": {
+      "title": "Personalisierte Lernpfade",
+      "subtitle": "Ihr Weg, Ihr Tempo",
+      "description": "Erhalten Sie maßgeschneiderte Lernpläne basierend auf Ihren Zielen, Leistungen und Ihrem Lernstil",
+      "badge": "PRO",
+      "benefits": {
+        "benefit_1": "📚 Maßgeschneiderte Lernpläne",
+        "benefit_2": "🎯 Fortschritt verfolgen",
+        "benefit_3": "🚀 Ziele schneller erreichen"
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Willkommen zurück",
+      "subtitle": "Melden Sie sich an, um weiterzulernen",
+      "email_label": "E-Mail",
+      "email_hint": "Geben Sie Ihre E-Mail-Adresse ein",
+      "password_label": "Passwort",
+      "password_hint": "Geben Sie Ihr Passwort ein",
+      "forgot_password": "Passwort vergessen?",
+      "login_button": "Anmelden",
+      "no_account": "Noch kein Konto?",
+      "sign_up": "Registrieren",
+      "or_continue_with": "Oder fortfahren mit",
+      "google_login": "Weiter mit Google",
+      "apple_login": "Weiter mit Apple"
+    },
+    "register": {
+      "title": "Konto erstellen",
+      "subtitle": "Starten Sie Ihre Lernreise",
+      "name_label": "Vollständiger Name",
+      "name_hint": "Geben Sie Ihren Namen ein",
+      "email_label": "E-Mail",
+      "email_hint": "Geben Sie Ihre E-Mail-Adresse ein",
+      "password_label": "Passwort",
+      "password_hint": "Passwort erstellen",
+      "confirm_password_label": "Passwort bestätigen",
+      "confirm_password_hint": "Passwort erneut eingeben",
+      "register_button": "Konto erstellen",
+      "have_account": "Bereits ein Konto?",
+      "sign_in": "Anmelden",
+      "terms_prefix": "Mit der Registrierung stimmen Sie unseren ",
+      "terms": "Nutzungsbedingungen",
+      "and": " und ",
+      "privacy": "Datenschutzrichtlinie"
+    },
+    "errors": {
+      "email_required": "E-Mail-Adresse ist erforderlich",
+      "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "password_required": "Passwort ist erforderlich",
+      "password_min_length": "Das Passwort muss mindestens 6 Zeichen lang sein",
+      "passwords_not_match": "Die Passwörter stimmen nicht überein",
+      "name_required": "Name ist erforderlich",
+      "login_failed": "Anmeldung fehlgeschlagen. Bitte überprüfen Sie Ihre Anmeldedaten",
+      "register_failed": "Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "Guten Morgen",
+      "afternoon": "Guten Tag",
+      "evening": "Guten Abend"
+    },
+    "welcome_message": "Sie haben {count} Karten zur Wiederholung",
+    "welcome_message_empty": "Bereit, Ihre Lernreise fortzusetzen?",
+    "level": "Level {level}",
+    "xp_progress": "{current} / {next} XP",
+    "streak_days": "{days}T",
+    "daily_xp": "{current} / {goal} tägliche XP",
+    "gamification": {
+      "xp": "XP",
+      "day": "Tag",
+      "days": "Tage",
+      "daily_xp": "Tägliche XP",
+      "level_names": {
+        "0": "Anfänger",
+        "1": "Bronze",
+        "2": "Silber",
+        "3": "Gold",
+        "4": "Platin",
+        "5": "Diamant",
+        "6": "Meister",
+        "7": "Großmeister",
+        "8": "Champion",
+        "9": "Legende",
+        "10": "Mythisch",
+        "11": "Unsterblich"
+      }
+    },
+    "upgrade_pro": {
+      "title": "Auf Pro upgraden",
+      "badge": "BELIEBT",
+      "subtitle": "Alle Premium-Funktionen & unbegrenzte KI freischalten",
+      "offer": "20 % sparen mit dem Jahresplan"
+    },
+    "stats": {
+      "study_sets": "Lernsets",
+      "flashcards": "Lernkarten",
+      "due_today": "Heute fällig",
+      "quizzes_done": "Abgeschlossene Quiz",
+      "cards": "{count} Karten"
+    },
+    "sections": {
+      "quick_actions": "Schnellaktionen",
+      "recent_study_sets": "Letzte Lernsets",
+      "view_all": "Alle anzeigen"
+    },
+    "continue_studying": {
+      "title": "Weiterlernen",
+      "cards_due": "{count} Karten zur Wiederholung fällig"
+    },
+    "quick_actions": {
+      "new_study_set": {
+        "title": "Neues Lernset",
+        "description": "Neue Sammlung erstellen"
+      },
+      "exam_clone": {
+        "title": "Prüfungsklon",
+        "description": "Übungsprüfungen generieren"
+      },
+      "problem_solver": {
+        "title": "Problemlöser",
+        "description": "KI-Schritt-für-Schritt-Lösungen"
+      },
+      "ai_chat": {
+        "title": "KI-Chat",
+        "description": "Fragen zu Ihren Notizen stellen"
+      },
+      "view_analytics": {
+        "title": "Analysen anzeigen",
+        "description": "Lernfortschritt verfolgen"
+      },
+      "knowledge_base": {
+        "title": "Wissensdatenbank",
+        "description": "Dokumente hochladen & durchsuchen"
+      },
+      "join_live_quiz": {
+        "title": "Live-Quiz beitreten",
+        "description": "In Echtzeit mit Freunden spielen"
+      },
+      "coming_soon": "Demnächst verfügbar"
+    },
+    "empty_state": {
+      "title": "Noch keine Lernsets",
+      "subtitle": "Erstellen Sie Ihr erstes Lernset, um mit dem Lernen zu beginnen",
+      "button": "Lernset erstellen"
+    }
+  },
+  "study_sets": {
+    "title": "Lernsets",
+    "header_title": "Meine Lernsets",
+    "header_subtitle": "Erstellen und verwalten Sie Ihre Lernmaterialien",
+    "search_hint": "Lernsets durchsuchen...",
+    "new_study_set": "Neues Lernset",
+    "create_button": "Erstellen",
+    "no_results_title": "Keine Ergebnisse",
+    "no_results_subtitle": "Keine Lernsets passend zu {query}",
+    "card": {
+      "public": "Öffentlich",
+      "private": "Privat",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "cards_count": "{count} Karten",
+      "docs_count": "{count} Dokumente"
+    },
+    "empty_state": {
+      "title": "Noch keine Lernsets",
+      "subtitle": "Erstellen Sie Ihr erstes Lernset, um Ihre Lernkarten und Materialien zu organisieren",
+      "button": "Lernset erstellen"
+    },
+    "messages": {
+      "created": "Lernset erfolgreich erstellt!",
+      "updated": "Lernset erfolgreich aktualisiert!",
+      "deleted": "Lernset erfolgreich gelöscht!",
+      "error": "Fehler beim Laden der Lernsets",
+      "retry": "Erneut versuchen"
+    },
+    "detail": {
+      "section_statistics": "Statistiken",
+      "stat_flashcards_label": "Lernkarten",
+      "stat_notes_label": "Notizen",
+      "stat_analytics_label": "Analysen",
+      "quiz_history_title": "Quiz-Verlauf",
+      "quiz_history_subtitle": "Ihre Quiz-Leistung anzeigen",
+      "section_quick_actions": "Schnellaktionen",
+      "action_study_session": "Lernsitzung (Alle Karten)",
+      "action_quiz_mode": "Quiz-Modus",
+      "action_match_game": "Zuordnungsspiel",
+      "action_live_quiz": "Live-Quiz",
+      "action_browse_cards": "Karten durchsuchen",
+      "action_add_cards": "Karten hinzufügen",
+      "section_sources": "Quellen",
+      "sources_view_all": "Alle anzeigen",
+      "sources_document_singular": "Dokument",
+      "sources_documents_plural": "Dokumente",
+      "sources_subtitle": "Lernmaterialien und Referenzen",
+      "sources_empty_state": "Noch keine Quellen",
+      "sources_add_documents": "Dokumente hinzufügen",
+      "section_recent_activity": "Letzte Aktivität",
+      "activity_empty_state": "Keine aktuelle Aktivität",
+      "menu_edit_study_set": "Lernset bearbeiten",
+      "menu_share": "Teilen",
+      "menu_delete_study_set": "Lernset löschen",
+      "delete_confirm_title": "Lernset löschen?",
+      "delete_confirm_message": "Dies löscht {title}\" und alle zugehörigen Lernkarten unwiderruflich.",
+      "delete_confirm_cancel": "Abbrechen",
+      "delete_confirm_delete": "Löschen",
+      "study_no_cards_due": "Keine Karten zur Wiederholung fällig! Großartig! 🎉",
+      "study_failed_to_load": "Lernkarten konnten nicht geladen werden",
+      "add_cards_header": "Karten hinzufügen",
+      "add_cards_ready_status": "{count} Karte{s} bereit",
+      "add_cards_submit_button": "Zum Lernset hinzufügen",
+      "toast_cards_added_success": "{count} Karten erfolgreich hinzugefügt!",
+      "toast_cards_add_error": "Karten konnten nicht hinzugefügt werden: {message}"
+    },
+    "create_edit": {
+      "title_create": "Lernset erstellen",
+      "create_study_set": "Lernset erstellen",
+      "title_edit": "Lernset bearbeiten",
+      "cover_image": "Titelbild",
+      "tap_add_cover": "Tippen Sie, um ein Titelbild hinzuzufügen",
+      "tap_to_add_cover_image": "Tippen Sie, um ein Titelbild hinzuzufügen",
+      "title_label": "Titel *",
+      "title_hint": "z. B. Biologie 101",
+      "title_required": "Titel ist erforderlich",
+      "description_label": "Beschreibung",
+      "description": "Beschreibung",
+      "description_hint": "Worum geht es in diesem Lernset?",
+      "tags_label": "Tags",
+      "tags": "Tags",
+      "tags_hint": "Biologie, Prüfung, Kapitel1",
+      "tags_helper": "Tags mit Kommas trennen",
+      "exam_date_label": "Prüfungsdatum (Optional)",
+      "exam_date_optional": "Prüfungsdatum (Optional)",
+      "exam_date_hint": "Prüfungsdatum auswählen",
+      "select_exam_date": "Prüfungsdatum auswählen",
+      "exam_subject_label": "Prüfungsfach",
+      "exam_subject_hint": "z. B. Zwischenprüfung, Abschlussprüfung",
+      "visibility_public": "Öffentlich",
+      "visibility_private": "Privat",
+      "private": "Privat",
+      "visibility_public_desc": "Jeder kann dieses Lernset sehen",
+      "visibility_private_desc": "Nur Sie können dieses Lernset sehen",
+      "private_description": "Nur Sie können dieses Lernset sehen",
+      "save_changes": "Änderungen speichern",
+      "create_button": "Lernset erstellen",
+      "delete_study_set": "Lernset löschen",
+      "delete_confirm_title": "Lernset löschen?",
+      "delete_confirm_message": "Dies löscht {title}\" und alle zugehörigen Lernkarten unwiderruflich.",
+      "subtitle": "Organisieren Sie Ihre Lernmaterialien",
+      "title_placeholder": "Titel eingeben, z. B. Biologie 101 — Kapitel 3\"",
+      "description_placeholder": "Beschreibung hinzufügen (optional)",
+      "more_options": "Weitere Optionen",
+      "less_options": "Weniger Optionen",
+      "add_tag": "Tag hinzufügen...",
+      "cancel": "Abbrechen",
+      "public": "Öffentlich",
+      "visibility_label": "Sichtbarkeit",
+      "cards_ready_count": "{count} Karten bereit",
+      "create_with_cards": "Mit {count} Karten erstellen",
+      "cards_failed": "Lernset erstellt, aber einige Karten konnten nicht gespeichert werden",
+      "image_uploaded": "Bild erfolgreich hochgeladen!",
+      "upload_failed": "Bild konnte nicht hochgeladen werden"
+    },
+    "documents": {
+      "title": "Notizen",
+      "create_note": "Notiz erstellen",
+      "no_notes_title": "Noch keine Notizen",
+      "no_notes_subtitle": "Erstellen Sie Notizen, um Ihr Lernmaterial zu organisieren",
+      "note_title_label": "Titel",
+      "note_title_hint": "Notiztitel eingeben",
+      "note_content_label": "Inhalt",
+      "note_content_hint": "Schreiben Sie Ihre Notiz hier...",
+      "create_note_button": "Notiz erstellen",
+      "fill_both_fields": "Bitte füllen Sie Titel und Inhalt aus",
+      "note_created": "Notiz erfolgreich erstellt!",
+      "failed_to_create": "Notiz konnte nicht erstellt werden: {error}"
+    },
+    "flashcard_creation": {
+      "title": "Lernkarten erstellen",
+      "tab_manual": "Manuell",
+      "tab_ai": "KI-Generierung",
+      "tab_import": "Importieren",
+      "create_cards": "{count} {cards} erstellen",
+      "add_cards": "{count} {cards} hinzufügen",
+      "card": "Karte",
+      "cards": "Karten",
+      "no_flashcards": "Bitte erstellen Sie mindestens eine Lernkarte",
+      "no_flashcards_to_add": "Keine Lernkarten zum Hinzufügen"
+    },
+    "quiz_history": {
+      "title": "Quiz-Verlauf",
+      "no_history_title": "Kein Quiz-Verlauf",
+      "no_history_subtitle": "Absolvieren Sie Quizze, um Ihren Leistungsverlauf hier zu sehen",
+      "summary_quizzes": "Quizze",
+      "summary_attempts": "Versuche",
+      "summary_best_score": "Beste Punktzahl",
+      "questions": "{count} Fragen",
+      "attempts": "{count} Versuch{s}",
+      "attempt": "Versuch",
+      "best": "Beste: {score}%",
+      "no_attempts": "Noch keine Versuche",
+      "time_spent": "{minutes}min {seconds}s"
+    }
+  },
+  "analytics": {
+    "title": "Analysen",
+    "timeRange": {
+      "sevenDays": "7 Tage",
+      "thirtyDays": "30 Tage",
+      "ninetyDays": "90 Tage",
+      "allTime": "Gesamt"
+    },
+    "stats": {
+      "studyTime": "Lernzeit",
+      "cardsReviewed": "Wiederholte Karten",
+      "quizzes": "Quizze",
+      "avgScore": "Ø Punktzahl"
+    },
+    "sections": {
+      "studyActivity": "Lernaktivität",
+      "streak": "Lernsträhne",
+      "performance": "Leistung"
+    },
+    "heatmap": {
+      "title": "Lern-Heatmap",
+      "less": "Weniger",
+      "more": "Mehr"
+    },
+    "cardMastery": {
+      "title": "Kartenbeherrschung",
+      "noData": "Keine Kartendaten verfügbar"
+    },
+    "retentionCurve": {
+      "title": "Merkfähigkeitskurve",
+      "noData": "Beginnen Sie mit dem Lernen, um Ihre Merkfähigkeitskurve zu sehen"
+    },
+    "studyTime": {
+      "title": "Lernzeit",
+      "daily": "Täglich",
+      "weekly": "Wöchentlich",
+      "noData": "Noch keine Lernzeit erfasst"
+    },
+    "streak": {
+      "title": "Lernsträhne-Kalender",
+      "dayStreak": "Tage in Folge",
+      "dayAbbr": {
+        "sun": "S",
+        "mon": "M",
+        "tue": "D",
+        "wed": "M",
+        "thu": "D",
+        "fri": "F",
+        "sat": "S"
+      }
+    },
+    "months": {
+      "january": "Januar",
+      "february": "Februar",
+      "march": "März",
+      "april": "April",
+      "may": "Mai",
+      "june": "Juni",
+      "july": "Juli",
+      "august": "August",
+      "september": "September",
+      "october": "Oktober",
+      "november": "November",
+      "december": "Dezember"
+    },
+    "cardStatus": {
+      "new": "Neu",
+      "learning": "Lernend",
+      "review": "Wiederholung",
+      "mastered": "Gemeistert"
+    },
+    "chart": {
+      "percentageSymbol": "%",
+      "minutesSymbol": "min",
+      "dayLabel": "T"
+    },
+    "time": {
+      "hoursSymbol": "h",
+      "minutesSymbol": "min"
+    }
+  },
+  "learning_paths": {
+    "title": "Lernpfade",
+    "detail": {
+      "title": "Lernpfad",
+      "learning_path": "Lernpfad",
+      "complete": "Abgeschlossen",
+      "your_journey": "Ihre Lernreise",
+      "your_learning_journey": "Ihre Lernreise",
+      "next_up": "Als Nächstes",
+      "step_number": "Schritt {number}",
+      "steps": "Schritte",
+      "remaining": "Verbleibend",
+      "total_time": "Gesamtzeit",
+      "overall_progress": "Gesamtfortschritt",
+      "stats": {
+        "steps": "Schritte",
+        "remaining": "Verbleibend",
+        "total_time": "Gesamtzeit"
+      },
+      "progress": {
+        "overall": "Gesamtfortschritt",
+        "steps_count": "{completed}/{total} Schritte"
+      },
+      "minutes": "{minutes} Minuten",
+      "view_resource": "Ressource anzeigen",
+      "mark_done": "Erledigt",
+      "mark_as_done": "Als erledigt markieren",
+      "step_completed": "Schritt abgeschlossen!",
+      "path_completed": "Abgeschlossen!",
+      "steps_count": "{completed}/{total} Schritte",
+      "completed_on": "Abgeschlossen am {date}"
+    },
+    "validation": {
+      "please_enter_topic": "Bitte geben Sie ein Thema ein"
+    },
+    "messages": {
+      "path_created_success": "Lernpfad erstellt!"
+    },
+    "how_it_works": {
+      "title": "So funktionieren Lernpfade",
+      "step1_title": "Ziele setzen",
+      "step1_subtitle": "Teilen Sie der KI Ihr Thema und Niveau mit",
+      "step2_title": "Fahrplan erhalten",
+      "step2_subtitle": "KI erstellt einen Schritt-für-Schritt-Plan",
+      "step3_title": "Fortschritt verfolgen",
+      "step3_subtitle": "Schritte abschließen, Fortschritt sehen"
+    },
+    "buttons": {
+      "cancel": "Abbrechen",
+      "generate_path": "Pfad generieren",
+      "generating": "Wird generiert..."
+    },
+    "form": {
+      "title": "Lernpfad erstellen",
+      "topic_label": "Thema",
+      "topic_hint": "z. B. Maschinelles Lernen, Analysis, Physik",
+      "current_level_label": "Aktuelles Niveau",
+      "target_level_label": "Zielniveau",
+      "level_beginner": "Anfänger",
+      "level_intermediate": "Fortgeschritten",
+      "level_advanced": "Weit Fortgeschritten",
+      "level_expert": "Experte",
+      "study_time_label": "Lernzeit: {hours} Stunden/Woche"
+    },
+    "empty_state": {
+      "title": "Noch keine Lernpfade",
+      "subtitle": "Erstellen Sie Ihren ersten personalisierten Lernfahrplan"
+    },
+    "path_card": {
+      "steps_count": "{completed}/{total} Schritte",
+      "hours_label": "{hours}h"
+    },
+    "dialogs": {
+      "delete_confirm_title": "Lernpfad löschen?",
+      "delete_confirm_message": "Dies löscht diesen Pfad und den gesamten Fortschritt unwiderruflich.",
+      "cancel_button": "Abbrechen",
+      "delete_button": "Löschen"
+    }
+  },
+  "profile": {
+    "title": "Einstellungen",
+    "subtitle": "Verwalten Sie Ihr Konto und Ihre Einstellungen",
+    "settings": {
+      "profile": {
+        "title": "Profil",
+        "subtitle": "Name, Avatar, Bildung, Fächer"
+      },
+      "account": {
+        "title": "Kontoeinstellungen",
+        "subtitle": "Passwort, Sicherheit, Konto löschen"
+      },
+      "notifications": {
+        "title": "Benachrichtigungseinstellungen",
+        "subtitle": "Benachrichtigungen verwalten"
+      },
+      "language": {
+        "title": "Sprache",
+        "choose": "Sprache wählen",
+        "close": "Schließen"
+      },
+      "subscription": {
+        "title": "Abonnement",
+        "subtitle": "Plan, Nutzung, Rechnungen"
+      },
+      "logout": {
+        "title": "Abmelden",
+        "confirm_title": "Abmelden",
+        "confirm_message": "Möchten Sie sich wirklich abmelden?",
+        "cancel": "Abbrechen",
+        "confirm": "Abmelden"
+      }
+    },
+    "plan": {
+      "free": "Kostenloser Plan",
+      "manage": "Verwalten",
+      "upgrade": "Upgraden"
+    },
+    "version": "Studyield v1.0.0",
+    "edit": {
+      "title": "Profil bearbeiten",
+      "avatar": {
+        "default_initial": "B"
+      },
+      "display_name": {
+        "label": "Anzeigename",
+        "hint": "Geben Sie Ihren Namen ein"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "Keine E-Mail",
+        "readonly_note": "E-Mail kann nicht geändert werden"
+      },
+      "education_level": {
+        "label": "Bildungsniveau",
+        "options": {
+          "high_school": "Gymnasium",
+          "undergraduate": "Bachelor",
+          "graduate": "Master",
+          "post_graduate": "Doktorand",
+          "self_learner": "Selbstlerner",
+          "professional": "Berufstätig"
+        }
+      },
+      "subjects": {
+        "label": "Interessengebiete",
+        "common_header": "Häufige Fächer",
+        "custom_header": "Eigene Fächer",
+        "add_custom": {
+          "label": "Eigenes Fach hinzufügen",
+          "hint": "Eigenes Fach hinzufügen"
+        },
+        "options": {
+          "mathematics": "Mathematik",
+          "physics": "Physik",
+          "chemistry": "Chemie",
+          "biology": "Biologie",
+          "computer_science": "Informatik",
+          "english": "Englisch",
+          "history": "Geschichte",
+          "geography": "Geographie",
+          "economics": "Wirtschaftswissenschaften",
+          "psychology": "Psychologie"
+        }
+      },
+      "button": {
+        "saving": "Wird gespeichert...",
+        "save": "Änderungen speichern",
+        "saved": "Gespeichert!"
+      },
+      "message": {
+        "success": "Profil erfolgreich aktualisiert!",
+        "error": "Profil konnte nicht gespeichert werden"
+      }
+    },
+    "account": {
+      "title": "Kontoeinstellungen",
+      "change_password": {
+        "title": "Passwort ändern",
+        "subtitle": "Aktualisieren Sie Ihr Passwort regelmäßig",
+        "current_password_label": "Aktuelles Passwort",
+        "new_password_label": "Neues Passwort",
+        "confirm_password_label": "Neues Passwort bestätigen",
+        "button": "Passwort ändern"
+      },
+      "validation": {
+        "current_password_required": "Aktuelles Passwort ist erforderlich",
+        "password_min_length": "Das neue Passwort muss mindestens 8 Zeichen lang sein",
+        "passwords_mismatch": "Die Passwörter stimmen nicht überein"
+      },
+      "messages": {
+        "password_changed_success": "Passwort erfolgreich geändert!"
+      },
+      "information": {
+        "title": "Kontoinformationen",
+        "email_label": "E-Mail",
+        "plan_label": "Plan",
+        "plan_free": "Kostenlos",
+        "email_verified_label": "E-Mail verifiziert",
+        "email_verified_yes": "Ja",
+        "member_since_label": "Mitglied seit"
+      },
+      "delete": {
+        "title": "Konto löschen",
+        "subtitle": "Ihr Konto dauerhaft löschen",
+        "button": "Mein Konto löschen",
+        "warning_title": "Diese Aktion kann nicht rückgängig gemacht werden!",
+        "warning_message": "Alle Ihre Daten werden dauerhaft gelöscht.",
+        "confirmation_instruction": "Geben Sie DELETE zur Bestätigung ein:",
+        "confirmation_hint": "DELETE",
+        "confirm_button": "Endgültig löschen",
+        "cancel_button": "Abbrechen"
+      }
+    }
+  },
+  "subscription": {
+    "main": {
+      "appbar_title": "Abonnement",
+      "header_label": "Plan ändern oder upgraden",
+      "heading": "Wählen Sie Ihren Plan",
+      "subheading": "Schalten Sie Premium-Funktionen frei und beschleunigen Sie Ihr Lernen",
+      "billing_yearly": "Jährlich",
+      "billing_lifetime": "Lebenslang",
+      "popular_badge": "AM BELIEBTESTEN",
+      "plan_trial_title": "7-Tage-Testversion",
+      "plan_trial_subtitle": "Erst testen, dann entscheiden",
+      "plan_pro_title": "Pro",
+      "plan_pro_lifetime_title": "Lebenslang Pro",
+      "plan_pro_lifetime_subtitle": "Einmal zahlen, für immer nutzen",
+      "plan_pro_yearly_subtitle": "Ideal für ernsthafte Lerner",
+      "yearly_crossed_price": "47,88 $/Jahr",
+      "lifetime_period": "Einmalig",
+      "yearly_period": "/Jahr",
+      "button_current_plan": "Aktueller Plan",
+      "button_free_forever": "Für immer kostenlos",
+      "button_upgrade_lifetime": "Auf Lebenslang upgraden",
+      "button_upgrade_pro": "Auf Pro upgraden",
+      "trust_secure_title": "Sicher",
+      "trust_secure_subtitle": "SSL-verschlüsselt",
+      "trust_flexible_title": "Flexibel",
+      "trust_flexible_subtitle": "Jederzeit kündbar",
+      "trust_free_title": "Für immer kostenlos",
+      "trust_free_subtitle": "Keine Kreditkarte erforderlich"
+    },
+    "manage": {
+      "appbar_title": "Abonnement verwalten",
+      "error_open_portal": "Portal konnte nicht geöffnet werden",
+      "cancel_dialog_title": "Abonnement kündigen?",
+      "cancel_dialog_content": "Sie behalten den Zugang bis zum Ende Ihres Abrechnungszeitraums.",
+      "cancel_dialog_keep_btn": "Abonnement behalten",
+      "cancel_dialog_cancel_btn": "Kündigen",
+      "cancel_success_message": "Abonnement wird zum Periodenende gekündigt",
+      "cancel_error_message": "Kündigung fehlgeschlagen",
+      "default_plan_name": "Pro-Plan",
+      "status_active": "Aktiv",
+      "price_lifetime": "Einmalig",
+      "price_yearly": "/Jahr",
+      "button_change_plan": "Plan ändern",
+      "info_current_period_label": "Aktueller Zeitraum",
+      "info_next_billing_label": "Nächste Abrechnung",
+      "card_billing_history_title": "Abrechnungsverlauf",
+      "card_billing_history_subtitle": "Vergangene Rechnungen anzeigen",
+      "card_payment_methods_title": "Zahlungsmethoden",
+      "card_payment_methods_subtitle": "Karte oder Zahlungsmethode aktualisieren",
+      "card_cancel_subscription_title": "Abonnement kündigen",
+      "card_cancel_subscription_subtitle": "Zugang bis Periodenende behalten",
+      "webview_title": "Abrechnungsportal"
+    },
+    "checkout": {
+      "appbar_title": "Bezahlung",
+      "coupon_applied_message": "Gutschein angewendet!",
+      "payment_success_message": "Zahlung erfolgreich!",
+      "payment_error_message": "Zahlung fehlgeschlagen",
+      "header_title": "Upgrade auf {plan}",
+      "header_subtitle_lifetime": "LEBENSLANGE Zahlung",
+      "header_subtitle_yearly": "JÄHRLICHES Abonnement",
+      "order_summary_label": "BESTELLÜBERSICHT",
+      "plan_line_item": "{plan}-Plan ({cycle})",
+      "coupon_applied_label": "Gutschein angewendet",
+      "coupon_discount_amount": "-{amount} $",
+      "total_label": "Gesamt",
+      "billing_period_year": "/Jahr",
+      "billing_period_month": "/Monat",
+      "coupon_code_label": "Gutscheincode",
+      "coupon_input_placeholder": "Gutscheincode eingeben",
+      "coupon_apply_button": "Anwenden",
+      "what_you_get_heading": "Das erhalten Sie",
+      "features": {
+        "unlimited_ai": "Unbegrenzte KI-Anfragen",
+        "premium_features": "Alle Premium-Funktionen freigeschaltet",
+        "priority_support": "Prioritäts-Support",
+        "advanced_analytics": "Erweiterte Analysen",
+        "exam_cloning": "Prüfungsklonen & -generierung",
+        "deep_research": "Tiefgehende Recherchefunktionen"
+      },
+      "button_processing": "Wird verarbeitet...",
+      "button_proceed": "Zur Zahlung",
+      "trust_ssl": "SSL-verschlüsselt",
+      "trust_stripe": "Powered by Stripe",
+      "trust_cancel_anytime": "Jederzeit kündbar"
+    },
+    "success": {
+      "welcome_heading": "Willkommen bei Pro!",
+      "payment_successful_message": "Ihre Zahlung war erfolgreich",
+      "info_plan_label": "Plan",
+      "info_status_label": "Status",
+      "info_status_active": "Aktiv",
+      "features_heading": "Freigeschaltete Funktionen",
+      "button_continue": "Pro-Funktionen nutzen"
+    },
+    "webview": {
+      "appbar_title": "Zahlung abschließen",
+      "error_loading_page": "Fehler beim Laden der Seite",
+      "cancel_dialog_title": "Zahlung abbrechen?",
+      "cancel_dialog_content": "Möchten Sie diese Zahlung wirklich abbrechen?",
+      "cancel_dialog_continue_btn": "Nein, fortfahren",
+      "cancel_dialog_cancel_btn": "Ja, abbrechen"
+    }
+  },
+  "notifications": {
+    "header": {
+      "title": "Benachrichtigungen",
+      "unread_count": "{count} neue",
+      "all_caught_up": "Alles gelesen!",
+      "mark_all_as_read": "Alle als gelesen markieren",
+      "clear_all": "Alle löschen"
+    },
+    "tabs": {
+      "all": "Alle",
+      "unread": "Ungelesen",
+      "settings": "Einstellungen"
+    },
+    "dialogs": {
+      "clear_all_title": "Alle löschen?",
+      "clear_all_message": "Dies löscht alle Benachrichtigungen dauerhaft.",
+      "cancel": "Abbrechen",
+      "delete_all": "Alle löschen"
+    },
+    "time": {
+      "just_now": "Gerade eben",
+      "minutes_ago": "Vor {minutes} Min.",
+      "hours_ago": "Vor {hours} Std.",
+      "days_ago": "Vor {days} Tagen"
+    },
+    "empty": {
+      "no_notifications_title": "Keine Benachrichtigungen",
+      "no_notifications_message": "Wir benachrichtigen Sie, wenn etwas\nWichtiges passiert",
+      "all_caught_up_title": "Alles gelesen!",
+      "all_caught_up_message": "Sie haben alle Benachrichtigungen gelesen.\nGut gemacht! 🎉",
+      "feature_stay_updated": "Auf dem Laufenden bleiben",
+      "feature_quick_actions": "Schnellaktionen",
+      "feature_track_progress": "Fortschritt verfolgen"
+    },
+    "card": {
+      "delete": "Löschen",
+      "mark_as_read": "Als gelesen markieren"
+    },
+    "types": {
+      "info": "INFO",
+      "success": "ERFOLG",
+      "warning": "WARNUNG",
+      "reminder": "ERINNERUNG",
+      "achievement": "ERFOLG",
+      "study": "LERNEN"
+    },
+    "settings": {
+      "info_card_title": "Bleiben Sie informiert!",
+      "info_card_message": "Aktivieren Sie Benachrichtigungen, um keine wichtigen Updates zu verpassen",
+      "channels_section": "Benachrichtigungskanäle",
+      "types_section": "Worüber benachrichtigen",
+      "in_app_title": "In-App-Benachrichtigungen",
+      "in_app_subtitle": "Benachrichtigungen während der App-Nutzung erhalten",
+      "email_title": "E-Mail-Benachrichtigungen",
+      "email_subtitle": "Wichtige Updates per E-Mail erhalten",
+      "push_title": "Push-Benachrichtigungen",
+      "push_subtitle": "Push-Benachrichtigungen auf diesem Gerät erhalten",
+      "study_reminders_title": "Lernerinnerungen",
+      "study_reminders_subtitle": "Erinnerungen an fällige Lernkarten und Lernsitzungen",
+      "achievements_title": "Erfolge & Meilensteine",
+      "achievements_subtitle": "Feiern Sie Ihre Lernerfolge",
+      "weekly_digest_title": "Wöchentliche Zusammenfassung",
+      "weekly_digest_subtitle": "Zusammenfassung Ihres wöchentlichen Lernfortschritts",
+      "footer_message": "Benachrichtigungseinstellungen werden auf allen Geräten synchronisiert"
+    }
+  },
+  "flashcards": {
+    "add": {
+      "title_edit": "Lernkarte bearbeiten",
+      "title_add": "Lernkarte hinzufügen",
+      "label_front": "Vorderseite (Frage)",
+      "hint_front": "Geben Sie die Frage oder den Begriff ein",
+      "error_front_required": "Vorderseite ist erforderlich",
+      "label_back": "Rückseite (Antwort)",
+      "hint_back": "Geben Sie die Antwort oder Definition ein",
+      "error_back_required": "Rückseite ist erforderlich",
+      "label_notes": "Notizen (Optional)",
+      "hint_notes": "Zusätzliche Anmerkungen oder Kontext hinzufügen",
+      "label_tags": "Tags (Optional)",
+      "hint_tags_example": "Kapitel1, wichtig, Wiederholung",
+      "helper_tags": "Tags mit Kommas trennen",
+      "button_save_changes": "Änderungen speichern",
+      "button_create": "Lernkarte erstellen"
+    },
+    "list": {
+      "label_flashcards": "Lernkarten",
+      "sort_newest": "Neueste zuerst",
+      "sort_oldest": "Älteste zuerst",
+      "sort_difficulty": "Schwierigkeit",
+      "menu_newest": "Neueste zuerst",
+      "menu_oldest": "Älteste zuerst",
+      "menu_difficulty": "Schwierigkeit",
+      "toast_created": "Lernkarte erfolgreich erstellt!",
+      "toast_updated": "Lernkarte erfolgreich aktualisiert!",
+      "toast_bulk_created": "{count} Karten erfolgreich hinzugefügt!",
+      "toast_deleted": "Lernkarte gelöscht",
+      "error_title": "Fehler beim Laden der Lernkarten",
+      "button_retry": "Erneut versuchen",
+      "filter_all": "Alle",
+      "filter_new": "Neu",
+      "filter_learning": "Lernend",
+      "filter_review": "Wiederholung",
+      "filter_mastered": "Gemeistert",
+      "filter_due": "Fällig",
+      "empty_filter_message": "Keine Karten in dieser Kategorie",
+      "button_add_cards": "Karten hinzufügen",
+      "modal_add_cards_title": "Karten hinzufügen",
+      "button_add_to_set": "Zum Lernset hinzufügen",
+      "ready_card_singular": "Karte",
+      "ready_cards_plural": "Karten",
+      "ready_text": "bereit",
+      "empty_title": "Noch keine Lernkarten",
+      "empty_message": "Erstellen Sie Ihre erste Lernkarte, um mit dem Lernen zu beginnen",
+      "empty_button": "Karten hinzufügen"
+    },
+    "study": {
+      "card_progress": "Karte {current} von {total}",
+      "question_rating": "Wie gut wussten Sie es?",
+      "rating_again": "Nochmal",
+      "rating_again_subtitle": "Vergessen",
+      "rating_hard": "Schwer",
+      "rating_hard_subtitle": "Schwierig",
+      "rating_good": "Gut",
+      "rating_good_subtitle": "Erinnert",
+      "rating_easy": "Leicht",
+      "rating_easy_subtitle": "Perfekt",
+      "hint_tap_card": "Tippen Sie auf die Karte, um die Antwort zu sehen",
+      "label_question": "FRAGE",
+      "label_answer": "ANTWORT",
+      "exit_dialog_title": "Lernsitzung beenden?",
+      "exit_dialog_message": "Ihr Fortschritt wird nicht gespeichert. Möchten Sie wirklich beenden?",
+      "exit_button_continue": "Weiterlernen",
+      "exit_button_exit": "Beenden"
+    },
+    "widgets": {
+      "session_summary": {
+        "title": "Sitzung abgeschlossen!",
+        "cards_reviewed": "Sie haben {count} Karten wiederholt",
+        "accuracy": "Genauigkeit",
+        "easy_good": "Leicht/Gut",
+        "hard": "Schwer",
+        "again": "Nochmal",
+        "done_button": "Fertig"
+      },
+      "ai_assist": {
+        "header": "KI-Assistent",
+        "suggest_answer_title": "Antwort vorschlagen",
+        "suggest_answer_description": "Eine umfassende Antwort generieren",
+        "elaborate_title": "Ausführlicher",
+        "elaborate_description": "Mehr Details und Kontext hinzufügen",
+        "add_mnemonic_title": "Eselsbrücke hinzufügen",
+        "add_mnemonic_description": "Merkhilfen zum Erinnern erstellen",
+        "simplify_title": "Vereinfachen",
+        "simplify_description": "In einfacherer Sprache umschreiben",
+        "suggestion_label": "KI-Vorschlag",
+        "try_again_button": "Erneut versuchen",
+        "accept_button": "Übernehmen",
+        "suggestion_applied_toast": "KI-Vorschlag angewendet!"
+      },
+      "ai_generation": {
+        "minimum_chars_error": "Bitte geben Sie mindestens 50 Zeichen ein",
+        "cards_ready_toast": "{count} Karten bereit zum Hinzufügen",
+        "info_banner_text": "Lassen Sie KI Lernkarten aus Ihren Inhalten generieren",
+        "banner_text": "Lassen Sie KI Lernkarten aus Ihren Inhalten generieren",
+        "content_label": "Inhalt",
+        "content_hint": "Fügen Sie hier Ihren Text, Ihre Notizen oder Ihr Lernmaterial ein...",
+        "char_counter_helper": "{count}/50 Zeichen Minimum",
+        "char_count": "{count}/50 Zeichen Minimum",
+        "card_count_label": "Anzahl der Karten",
+        "number_of_cards": "Anzahl der Karten",
+        "card_type_label": "Kartentyp",
+        "card_type": "Kartentyp",
+        "qa_type": "Frage & Antwort",
+        "type_qa": "Frage & Antwort",
+        "fill_blank_type": "Lückentext",
+        "type_fill_blank": "Lückentext",
+        "true_false_type": "Wahr/Falsch",
+        "type_true_false": "Wahr/Falsch",
+        "difficulty_label": "Schwierigkeit",
+        "difficulty": "Schwierigkeit",
+        "easy_difficulty": "Leicht",
+        "difficulty_easy": "Leicht",
+        "medium_difficulty": "Mittel",
+        "difficulty_medium": "Mittel",
+        "hard_difficulty": "Schwer",
+        "difficulty_hard": "Schwer",
+        "generating_button": "Wird generiert...",
+        "generate_button": "Mit KI generieren",
+        "generated_cards_title": "Generierte Karten ({count})",
+        "deselect_all_button": "Alle abwählen",
+        "select_all_button": "Alle auswählen",
+        "card_number_label": "Karte {number}",
+        "answer_label": "Antwort:",
+        "add_selected_button": "{count} ausgewählte Karten hinzufügen"
+      },
+      "manual_creation": {
+        "card_count_label": "{count} {cards}",
+        "card_count": {
+          "zero": "Keine Karten",
+          "one": "1 Karte",
+          "other": "{count} Karten"
+        },
+        "add_card_button": "Karte hinzufügen",
+        "add_card": "Karte hinzufügen",
+        "empty_state_title": "Noch keine Karten",
+        "no_cards": "Noch keine Karten",
+        "create_first_card_button": "Erste Karte erstellen",
+        "create_first": "Erste Karte erstellen",
+        "singular_card": "Karte",
+        "plural_cards": "Karten",
+        "card_header_title": "Karte {number}",
+        "ready_badge": "Bereit",
+        "delete_card_tooltip": "Karte löschen",
+        "card_type_label": "Kartentyp",
+        "qa_type": "Frage & Antwort",
+        "cloze_type": "Lückentext",
+        "image_occlusion_type": "Bildverdeckung",
+        "front_label": "Vorderseite *",
+        "front_hint": "Frage oder Aufforderung",
+        "back_label": "Rückseite *",
+        "back_hint": "Antwort oder Erklärung",
+        "notes_label": "Notizen (Optional)",
+        "notes_hint": "Zusätzlicher Kontext",
+        "tags_label": "Tags (Optional)",
+        "tags_hint": "Thema1, Thema2",
+        "tags_helper": "Tags mit Kommas trennen"
+      },
+      "editor": {
+        "manual_tab": "Manuell",
+        "ai_tab": "KI",
+        "import_tab": "Importieren",
+        "tab_manual": "Manuell",
+        "tab_ai": "KI",
+        "tab_import": "Importieren"
+      },
+      "import": {
+        "recording_saved_toast": "Aufnahme gespeichert!",
+        "microphone_permission_error": "Mikrofonzugriff verweigert",
+        "recording_started_toast": "Aufnahme gestartet...",
+        "recording_failed_error": "Aufnahme fehlgeschlagen",
+        "file_pick_error": "Datei konnte nicht ausgewählt werden",
+        "camera_open_error": "Kamera konnte nicht geöffnet werden",
+        "image_pick_error": "Bild konnte nicht ausgewählt werden",
+        "no_text_in_image_error": "Kein Text im Bild gefunden",
+        "text_extracted_success": "Text erfolgreich extrahiert!",
+        "image_process_error": "Bild konnte nicht verarbeitet werden",
+        "empty_text_error": "Bitte geben Sie Text zum Importieren ein",
+        "no_file_selected_error": "Bitte wählen Sie eine Datei aus",
+        "no_audio_error": "Bitte nehmen Sie zuerst Audio auf oder wählen Sie eine Audiodatei aus",
+        "no_image_error": "Bitte scannen oder wählen Sie zuerst ein Bild aus",
+        "no_google_docs_url_error": "Bitte geben Sie eine Google Docs URL ein",
+        "no_youtube_url_error": "Bitte geben Sie eine YouTube URL ein",
+        "no_website_url_error": "Bitte geben Sie eine Website-URL ein",
+        "cards_ready_toast": "{count} Karten bereit zum Hinzufügen",
+        "info_banner_text": "Lernkarten aus verschiedenen Quellen importieren",
+        "banner_text": "Lernkarten aus verschiedenen Quellen importieren",
+        "source_label": "Importquelle",
+        "pdf_source": "PDF hochladen",
+        "source_pdf": "PDF hochladen",
+        "youtube_source": "YouTube-Video",
+        "source_youtube": "YouTube-Video",
+        "record_audio_source": "Audio aufnehmen",
+        "source_record_audio": "Audio aufnehmen",
+        "audio_file_source": "Audiodatei",
+        "source_audio_file": "Audiodatei",
+        "website_source": "Website-URL",
+        "source_website": "Website-URL",
+        "camera_source": "Kamera-Scan",
+        "source_camera": "Kamera-Scan",
+        "google_docs_source": "Google Docs",
+        "source_google_docs": "Google Docs",
+        "text_source": "Text einfügen",
+        "source_text": "Text einfügen",
+        "handwritten_source": "Handschriftliche Notizen",
+        "source_handwritten": "Handschriftliche Notizen",
+        "text_label": "Text einfügen",
+        "text_hint": "Geben Sie Ihren Lernkarteninhalt ein...",
+        "pdf_description": "Laden Sie Ihre PDF-Dokumente hoch",
+        "choose_pdf_button": "PDF auswählen",
+        "change_pdf_button": "PDF ändern",
+        "recording_in_progress_text": "Aufnahme...",
+        "recording_saved_text": "Aufnahme gespeichert!",
+        "tap_to_record_text": "Tippen, um Aufnahme zu starten",
+        "record_voice_hint": "Nehmen Sie Ihre Stimme auf und wir transkribieren sie",
+        "stop_recording_button": "Aufnahme stoppen",
+        "start_recording_button": "Aufnahme starten",
+        "record_again_button": "Erneut aufnehmen",
+        "choose_audio_button": "Audiodatei auswählen",
+        "change_audio_button": "Datei ändern",
+        "audio_formats_helper": "Unterstützt: MP3, WAV, M4A",
+        "camera_title": "Dokumente mit Kamera scannen",
+        "camera_hint": "Fotografieren Sie Ihre Notizen oder Ihr Lehrbuch",
+        "open_camera_button": "Kamera öffnen",
+        "google_docs_label": "Google Docs URL",
+        "google_docs_hint": "https://docs.google.com/document/d/...",
+        "google_docs_helper": "Einen teilbaren Google-Docs-Link einfügen",
+        "handwritten_title": "Handschriftliche Notizen scannen",
+        "handwritten_hint": "Wir extrahieren Text aus Ihren handschriftlichen Notizen",
+        "take_photo_button": "Foto aufnehmen",
+        "from_gallery_button": "Aus der Galerie",
+        "paste_text_label": "Text einfügen",
+        "paste_text_hint": "Geben Sie Ihren Lernkarteninhalt ein...",
+        "separator_label": "Kartentrenner",
+        "separator_hint": "z. B. \\n\\n oder ---",
+        "separator_helper": "Muster zum Trennen von Karten",
+        "choose_file_button": "Datei auswählen",
+        "change_file_button": "Datei ändern",
+        "file_formats_helper": "Unterstützt: PDF, TXT, CSV, MD",
+        "youtube_label": "YouTube-URL",
+        "youtube_hint": "https://youtube.com/watch?v=...",
+        "youtube_helper": "Wir extrahieren das Transkript",
+        "website_label": "Website-URL",
+        "website_hint": "https://example.com",
+        "website_helper": "Wir extrahieren den Inhalt",
+        "importing_button": "Wird importiert...",
+        "import_button": "Lernkarten importieren",
+        "imported_cards_title": "Importierte Karten ({count})",
+        "card_number_label": "Karte {number}",
+        "add_to_study_set_button": "{count} Karten zum Lernset hinzufügen"
+      }
+    }
+  },
+  "notes": {
+    "title": "Notizen",
+    "mindMapHistoryTooltip": "Mindmap-Verlauf",
+    "mindMapTooltip": "Mindmap",
+    "aiGenerateButton": "KI-Generierung",
+    "addNoteButton": "Notiz hinzufügen",
+    "emptyStateTitle": "Noch keine Notizen",
+    "emptyStateSubtitle": "Erstellen Sie Notizen, um Ihr Lernmaterial zu organisieren",
+    "createManuallyButton": "Manuell erstellen",
+    "noSearchResultsTitle": "Keine passenden Notizen",
+    "noSearchResultsSubtitle": "Versuchen Sie, Ihre Suche oder den Filter anzupassen",
+    "createSuccess": "Notiz erfolgreich erstellt!",
+    "deleteSuccess": "Notiz erfolgreich gelöscht!",
+    "updateSuccess": "Notiz erfolgreich aktualisiert!",
+    "aiNotesGeneratedSuccess": "{count} KI-Notizen generiert!",
+    "deleteConfirmationTitle": "Notiz löschen?",
+    "deleteConfirmationMessage": "Möchten Sie {title}\" wirklich löschen?",
+    "searchPlaceholder": "Notizen durchsuchen...",
+    "filterAll": "Alle",
+    "filterMoreTags": "+{count} weitere",
+    "sortNewest": "Neueste zuerst",
+    "sortOldest": "Älteste zuerst",
+    "sortTitle": "Titel A-Z",
+    "createNoteTitle": "Notiz erstellen",
+    "editNoteTitle": "Notiz bearbeiten",
+    "titleLabel": "Titel",
+    "titleHint": "Notiztitel eingeben",
+    "titleValidation": "Bitte geben Sie einen Titel ein",
+    "contentLabel": "Inhalt",
+    "contentHint": "Schreiben Sie Ihre Notiz hier...\n\nMarkdown-Formatierung wird unterstützt",
+    "contentValidation": "Bitte geben Sie Inhalt ein",
+    "tagsLabel": "Tags (Optional)",
+    "tagsHint": "z. B. Biologie, wichtig, Kapitel1 (kommagetrennt)",
+    "tagsHintEdit": "Kommagetrennt",
+    "markdownHelpText": "Sie können Markdown-Syntax für die Formatierung verwenden:\n• **fett**, *kursiv*, `Code`\n• # Überschrift, ## Unterüberschrift\n• - Listen",
+    "createNoteSubmitButton": "Notiz erstellen",
+    "updateNoteButton": "Notiz aktualisieren",
+    "pinnedBadge": "Angepinnt",
+    "updatedDateLabel": "Aktualisiert am {date}",
+    "generateAITitle": "Notiz mit KI generieren",
+    "generateAISubtitle": "Inhalt extrahieren und intelligente Notizen erstellen",
+    "sourceTypePDF": "PDF-Dokument",
+    "sourceTypePDFDescription": "PDF-Dateien hochladen",
+    "sourceTypeYouTube": "YouTube-Video",
+    "sourceTypeYouTubeDescription": "Aus Video extrahieren",
+    "sourceTypeWebsite": "Website-URL",
+    "sourceTypeWebsiteDescription": "Webseite auslesen",
+    "sourceTypeAudio": "Audiodatei",
+    "sourceTypeAudioDescription": "Audio transkribieren",
+    "sourceTypeHandwriting": "Handschrift",
+    "sourceTypeHandwritingDescription": "OCR aus Bild",
+    "sourceTypeText": "Text einfügen",
+    "sourceTypeTextDescription": "Aus Zwischenablage",
+    "chooseSourceLabel": "Wählen Sie Ihre Inhaltsquelle",
+    "youtubeUrlLabel": "YouTube-URL",
+    "youtubeUrlHint": "https://www.youtube.com/watch?v=...",
+    "websiteUrlLabel": "Website-URL",
+    "websiteUrlHint": "https://de.wikipedia.org/wiki/...",
+    "pasteContentLabel": "Inhalt einfügen",
+    "pasteContentHint": "Vorlesungsnotizen, Artikeltext oder andere Inhalte einfügen...",
+    "characterCount": "{count} Zeichen",
+    "fileUploadPrompt": "Datei hier ablegen oder zum Durchsuchen klicken",
+    "pdfFileTypes": "PDF, TXT, MD (max. 20 MB)",
+    "audioFileTypes": "MP3, WAV, M4A (max. 50 MB)",
+    "imageFileTypes": "JPG, PNG, HEIC (max. 20 MB)",
+    "extractGenerateButton": "Extrahieren & Notiz generieren",
+    "processingTitle": "Inhalt wird verarbeitet",
+    "processingSubtitle": "Dies kann einen Moment dauern...",
+    "processingStep1": "Inhalt extrahieren",
+    "processingStep2": "Text analysieren",
+    "processingStep3": "Zusammenfassung generieren",
+    "processingStep4": "Notiz erstellen",
+    "extractionSuccess": "Inhalt erfolgreich extrahiert!",
+    "aiSummaryLabel": "KI-Zusammenfassung",
+    "suggestedTagsLabel": "Vorgeschlagene Tags",
+    "contentPreviewLabel": "Inhaltsvorschau ({count} Zeichen)",
+    "startOverButton": "Von vorne beginnen",
+    "saveNoteButton": "Notiz speichern",
+    "generatingPresentationTitle": "Präsentation wird generiert",
+    "generatingPresentationSubtitle": "KI erstellt Folien aus Ihrer Notiz...",
+    "generationFailedTitle": "Generierung fehlgeschlagen",
+    "aiGeneratedBadge": "KI-generiert",
+    "regenerateButton": "Neu generieren",
+    "mindMapTitle": "Mindmap",
+    "generatingMindMapMessage": "Mindmap wird generiert...",
+    "mindMapGenerationFailed": "Mindmap konnte nicht generiert werden",
+    "mindMapHistoryTitle": "Mindmap-Verlauf",
+    "failedToLoadHistory": "Verlauf konnte nicht geladen werden",
+    "noMindMapsEmptyTitle": "Noch keine Mindmaps",
+    "noMindMapsEmptySubtitle": "Mindmaps aus Ihren Notizen generieren",
+    "mindMapDeletedSuccess": "Mindmap gelöscht",
+    "mindMapDeleteFailed": "Löschen fehlgeschlagen",
+    "mindMapLoadFailed": "Laden fehlgeschlagen",
+    "deleteMindMapTitle": "Mindmap löschen",
+    "deleteMindMapConfirmation": "Möchten Sie diese Mindmap wirklich löschen?",
+    "analyzingNotesMessage": "Notizen werden analysiert...",
+    "creatingMindMapMessage": "Mindmap wird erstellt",
+    "mindMapGuideTitle": "Mindmap-Anleitung",
+    "mindMapGuideContent": "Diese Mindmap visualisiert alle Konzepte aus Ihren Notizen.\n\n• Zum Zoomen zusammenziehen\n• Zum Schwenken ziehen\n• Auf Aktualisieren tippen, um neu zu generieren",
+    "mindMapHelpText": "Zusammenziehen zum Zoomen • Ziehen zum Erkunden",
+    "noNotesForMindMap": "Keine Notizen zum Generieren einer Mindmap verfügbar",
+    "shareNoteTitle": "Notiz teilen",
+    "shareLinkLabel": "Link teilen",
+    "shareToSocialLabel": "In sozialen Medien teilen",
+    "shareWhatsApp": "WhatsApp",
+    "shareTwitter": "Twitter",
+    "shareFacebook": "Facebook",
+    "shareLinkedIn": "LinkedIn",
+    "shareEmail": "E-Mail",
+    "downloadLabel": "Herunterladen",
+    "downloadText": "Text (.txt)",
+    "downloadMarkdown": "Markdown (.md)",
+    "sharingPreviewLabel": "Wird geteilt",
+    "linkCopiedSuccess": "Link in die Zwischenablage kopiert!",
+    "downloadTextSuccess": "Heruntergeladen: {title}.txt",
+    "downloadFailed": "Download fehlgeschlagen",
+    "downloadMarkdownSuccess": "Heruntergeladen: {title}.md"
+  },
+  "quiz": {
+    "live_lobby": {
+      "room_code": "Raumcode",
+      "copy_code": "Code kopieren",
+      "share_code": "Teilen Sie diesen Code mit Freunden zum Beitreten",
+      "room_code_copied": "Raumcode kopiert!",
+      "players": "Spieler ({count})",
+      "host_badge": "HOST",
+      "starting": "Wird gestartet...",
+      "start_game": "Spiel starten",
+      "waiting_for_host": "Warten auf den Host, um das Spiel zu starten...",
+      "error_occurred": "Ein Fehler ist aufgetreten"
+    },
+    "live_quiz": {
+      "title": "Live-Quiz",
+      "hero_title": "Echtzeit-Wettbewerb",
+      "hero_subtitle": "Spielen Sie mit Freunden und finden Sie heraus, wer mehr weiß!",
+      "host_game": "Spiel erstellen",
+      "host_description": "Erstellen Sie einen Raum und teilen Sie den Code mit Freunden",
+      "creating_room": "Raum wird erstellt...",
+      "create_room": "Raum erstellen",
+      "or": "ODER",
+      "join_game": "Spiel beitreten",
+      "room_code_label": "Raumcode",
+      "room_code_hint": "ABC123",
+      "your_name_label": "Ihr Name",
+      "your_name_hint": "Geben Sie Ihren Namen ein",
+      "joining": "Beitritt...",
+      "join_room": "Raum beitreten",
+      "please_enter_room_code": "Bitte geben Sie einen Raumcode ein",
+      "please_enter_name": "Bitte geben Sie Ihren Namen ein",
+      "failed_to_create_room": "Raum konnte nicht erstellt werden",
+      "failed_to_join_room": "Beitritt zum Raum fehlgeschlagen",
+      "error": "Fehler: {error}"
+    },
+    "match_game": {
+      "title": "Zuordnungsspiel",
+      "reset_game": "Spiel zurücksetzen",
+      "time": "Zeit",
+      "moves": "Züge",
+      "matches": "Treffer",
+      "questions": "FRAGEN",
+      "answers": "ANTWORTEN",
+      "congratulations": "Glückwunsch! 🎉",
+      "completed_message": "In {seconds} Sekunden mit {moves} Zügen abgeschlossen",
+      "play_again": "Nochmal spielen",
+      "no_flashcards_available": "Keine Lernkarten zum Zuordnen verfügbar",
+      "failed_to_load": "Lernkarten konnten nicht geladen werden: {error}",
+      "time_seconds": "{seconds}s"
+    },
+    "mode": {
+      "title": "Quiz-Modus",
+      "hero_title": "Testen Sie Ihr Wissen",
+      "hero_subtitle": "KI-generierte Fragen aus Ihren Lernkarten",
+      "number_of_questions": "Anzahl der Fragen",
+      "question_types": "Fragetypen",
+      "multiple_choice": "Multiple Choice",
+      "multiple_choice_description": "4 Optionen, eine wählen",
+      "true_false": "Wahr / Falsch",
+      "true_false_description": "Entscheiden Sie, ob die Aussage stimmt",
+      "fill_blank": "Lückentext",
+      "fill_blank_description": "Geben Sie das fehlende Wort oder den Ausdruck ein",
+      "timer": "Timer",
+      "timer_description": "30 Sekunden pro Frage",
+      "generating_quiz": "Quiz wird generiert...",
+      "generate_start_quiz": "Quiz generieren & starten",
+      "please_select_question_type": "Bitte wählen Sie mindestens einen Fragetyp",
+      "failed_to_generate": "Quiz konnte nicht generiert werden: {error}"
+    },
+    "results": {
+      "title": "Quiz-Ergebnisse",
+      "score": "Punktzahl",
+      "outstanding": "Hervorragend! 🎉",
+      "great_job": "Gut gemacht! 👏",
+      "good_effort": "Guter Einsatz! 💪",
+      "keep_practicing": "Weiter üben! 📚",
+      "correct": "Richtig",
+      "incorrect": "Falsch",
+      "time": "Zeit",
+      "time_minutes": "{minutes} Min.",
+      "back_to_study_set": "Zurück zum Lernset",
+      "try_again": "Erneut versuchen"
+    },
+    "taking": {
+      "exit_quiz": "Quiz beenden?",
+      "exit_message": "Ihr Fortschritt geht verloren.",
+      "cancel": "Abbrechen",
+      "exit": "Beenden",
+      "question_progress": "{current}/{total}",
+      "submitting": "Wird abgegeben...",
+      "type_answer_here": "Geben Sie Ihre Antwort ein...",
+      "submit_answer": "Antwort abgeben",
+      "correct_feedback": "Richtig!",
+      "incorrect_feedback": "Falsch",
+      "correct_answer": "Richtige Antwort: {answer}",
+      "explanation": "Erklärung",
+      "previous": "Zurück",
+      "next_question": "Nächste Frage",
+      "submit_quiz": "Quiz abgeben",
+      "failed_to_submit": "Quiz konnte nicht abgegeben werden: {error}"
+    }
+  },
+  "research": {
+    "title": "Tiefgehende Recherche",
+    "messages": {
+      "please_enter_query": "Bitte geben Sie eine Forschungsfrage ein",
+      "creating": "Recherche wird erstellt...",
+      "loading_report": "Forschungsbericht wird geladen...",
+      "pdf_export_soon": "PDF-Export kommt bald!",
+      "markdown_copied": "Markdown in die Zwischenablage kopiert!",
+      "report_copied": "Bericht kopiert!",
+      "could_not_open_link": "Link konnte nicht geöffnet werden"
+    },
+    "form": {
+      "query_hint": "z. B. Erklären Sie Quantencomputing im Detail\"",
+      "ai_powered_research": "KI-gestützte Recherche",
+      "deep_dive_topic": "Vertiefen Sie sich in jedes Thema"
+    },
+    "sections": {
+      "source_types": "📚 Quellentypen",
+      "research_depth": "🔍 Recherchetiefe",
+      "output_format": "📄 Ausgabeformat"
+    },
+    "source_types": {
+      "documents": "Dokumente",
+      "web": "Web",
+      "academic": "Akademisch"
+    },
+    "depth": {
+      "quick": "Schnell",
+      "standard": "Standard",
+      "comprehensive": "Umfassend"
+    },
+    "output_format": {
+      "detailed": "Detailliert",
+      "summary": "Zusammenfassung",
+      "bullets": "Stichpunkte"
+    },
+    "buttons": {
+      "start_research": "Tiefgehende Recherche starten",
+      "cancel": "Abbrechen"
+    },
+    "recent": {
+      "title": "Letzte Recherchen",
+      "done": "Abgeschlossen",
+      "failed": "Fehlgeschlagen",
+      "in_progress": "In Bearbeitung"
+    },
+    "progress": {
+      "title": "Recherche läuft",
+      "query_label": "Forschungsfrage",
+      "overall_progress": "Gesamtfortschritt",
+      "pipeline_title": "Recherche-Pipeline",
+      "phases": {
+        "planning": "Planung",
+        "researching": "Recherche",
+        "synthesizing": "Synthese",
+        "completed": "Abgeschlossen",
+        "failed": "Fehlgeschlagen",
+        "starting": "Wird gestartet"
+      },
+      "agents": {
+        "planning": "Planungs-Agent",
+        "planning_desc": "Analyse der Anfrage und Planung der Recherchestrategie",
+        "research": "Recherche-Agent",
+        "research_desc": "Informationen aus ausgewählten Quellen sammeln",
+        "synthesis": "Synthese-Agent",
+        "synthesis_desc": "Ergebnisse zusammenstellen und organisieren"
+      }
+    },
+    "report": {
+      "deep_research": "TIEFGEHENDE RECHERCHE",
+      "tab_report": "Bericht",
+      "tab_sources": "Quellen ({count})",
+      "tab_export": "Exportieren",
+      "executive_summary": "Zusammenfassung",
+      "key_insights": "Wichtige Erkenntnisse",
+      "sources_references": "Quellen & Referenzen",
+      "sources_cited": "{count} Quellen zitiert",
+      "no_sources": "Keine Quellen gefunden",
+      "knowledge_base_sources": "Wissensdatenbank ({count})",
+      "web_sources": "Webquellen ({count})",
+      "study_material": "Lernmaterial",
+      "relevance": "{score} % Relevanz",
+      "relevance_label": "Relevanz",
+      "citation_copied": "Zitat kopiert!",
+      "export_title": "Recherche exportieren",
+      "export_format": "Exportformat",
+      "export_pdf": "Als PDF exportieren",
+      "export_pdf_desc": "Als PDF-Dokument speichern",
+      "export_markdown": "Als Markdown kopieren",
+      "export_markdown_desc": "Formatierter Text mit Zitaten",
+      "export_plain": "Als Klartext kopieren",
+      "export_plain_desc": "Einfacher Text ohne Formatierung",
+      "share": "Bericht teilen",
+      "share_desc": "Über andere Apps teilen",
+      "citation_style": "Zitierstil",
+      "citation_preview": "VORSCHAU",
+      "delete_confirm_title": "Recherche löschen?",
+      "delete_confirm_message": "Dieser Forschungsbericht wird dauerhaft gelöscht.",
+      "delete_confirm_cancel": "Abbrechen",
+      "delete_confirm_delete": "Löschen"
+    },
+    "date": {
+      "today": "Heute",
+      "yesterday": "Gestern",
+      "days_ago": "Vor {days} Tagen"
+    }
+  },
+  "ai_chat": {
+    "title": "Lernbuddy",
+    "history_title": "Chatverlauf",
+    "history_subtitle": "Ihre KI-Gespräche",
+    "messages": {
+      "ask_anything": "Fragen Sie mich alles...",
+      "thinking": "Denkt nach...",
+      "no_conversations": "Noch keine Gespräche",
+      "start_new": "Starten Sie einen neuen Chat",
+      "search_conversations": "Gespräche durchsuchen...",
+      "delete_confirm_title": "Gespräch löschen?",
+      "delete_confirm_message": "Dies löscht dieses Gespräch und alle Nachrichten dauerhaft.",
+      "delete_confirm_cancel": "Abbrechen",
+      "delete_confirm_delete": "Löschen"
+    },
+    "empty_state": {
+      "title": "Lernbuddy",
+      "description": "Stellen Sie Fragen zu Ihren Lernmaterialien, erhalten Sie Erklärungen, Zusammenfassungen und mehr.\nIch kann Ihre Dokumente referenzieren und Antworten mit Quellenangaben liefern.",
+      "prompts": {
+        "explain": "Erklären Sie die Schlüsselkonzepte dieses Themas",
+        "summary": "Erstellen Sie eine Zusammenfassung meiner Lernmaterialien",
+        "important": "Was sind die wichtigsten Punkte zum Merken?",
+        "examples": "Helfen Sie mir, dies mit Beispielen besser zu verstehen"
+      }
+    },
+    "file_picker": {
+      "gallery": "Aus Galerie auswählen",
+      "camera": "Foto aufnehmen",
+      "pdf": "PDF-Dokument auswählen"
+    },
+    "history": {
+      "new_chat": "Neuer Chat",
+      "no_message": "Noch keine Gespräche"
+    },
+    "date": {
+      "today": "Heute",
+      "yesterday": "Gestern",
+      "days_ago": "Vor {days} Tagen"
+    }
+  },
+  "teach_back": {
+    "title": "Lehrübung",
+    "messages": {
+      "please_enter_topic": "Bitte geben Sie ein Thema ein",
+      "please_select_study_set": "Bitte wählen Sie ein Lernset aus",
+      "please_enter_explanation": "Bitte geben Sie Ihre Erklärung ein",
+      "explanation_submitted": "Erklärung eingereicht!",
+      "no_study_sets": "Keine Lernsets gefunden. Erstellen Sie zuerst eines!"
+    },
+    "feynman": {
+      "title": "Feynman-Technik",
+      "step1": "Thema wählen",
+      "step1_desc": "Konzept aussuchen",
+      "step2": "Einfach erklären",
+      "step2_desc": "Zurücklernen",
+      "step3": "Feedback erhalten",
+      "step3_desc": "KI bewertet",
+      "step4": "Lücken füllen",
+      "step4_desc": "Verbessern & wiederholen"
+    },
+    "form": {
+      "mode_topic": "Thema eingeben",
+      "mode_study_set": "Aus Lernset",
+      "topic_label": "Welches Thema möchten Sie meistern?",
+      "topic_hint": "z. B. Satz des Pythagoras, Photosynthese, Angebot & Nachfrage...",
+      "quick_picks": "Schnellauswahl:",
+      "reference_label": "Referenzmaterial (optional — hilft der KI bei besserer Bewertung)",
+      "reference_hint": "Lehrbuchnotizen, Vorlesungsinhalte oder Kernpunkte hier einfügen...",
+      "study_set_label": "Wählen Sie ein Lernset — KI generiert das Thema automatisch aus Ihren Lernkarten",
+      "study_set_empty": "Keine Lernsets gefunden. Erstellen Sie zuerst eines!",
+      "cards_count": "{count} Karten",
+      "cancel": "Abbrechen",
+      "generate_start": "Generieren & starten",
+      "start_teaching": "Lehren beginnen",
+      "generating": "Wird generiert...",
+      "creating": "Wird erstellt..."
+    },
+    "session": {
+      "essentials_title": "Grundlagen wiederholen",
+      "load_essentials": "Grundlagen laden",
+      "who_explaining": "Wem erklären Sie es?",
+      "difficulty_eli5": "Einem 5-Jährigen",
+      "difficulty_eli5_desc": "So einfach wie möglich",
+      "difficulty_classmate": "Einem Mitschüler",
+      "difficulty_classmate_desc": "Normales Niveau",
+      "difficulty_expert": "Einem Experten",
+      "difficulty_expert_desc": "Fachliche Tiefe",
+      "explanation_title": "Ihre Erklärung",
+      "explanation_hint": "Erklären Sie das Konzept in Ihren eigenen Worten...",
+      "characters_count": "{count} Zeichen",
+      "submit_explanation": "Erklärung einreichen",
+      "submitting": "Wird eingereicht...",
+      "review_explanation": "Ihre Erklärung überprüfen",
+      "evaluate_button": "Meine Erklärung bewerten",
+      "evaluating": "Wird bewertet...",
+      "challenge_button": "Herausforderung",
+      "convince_ai_title": "Überzeugen Sie die KI",
+      "convince_ai_desc": "Ein skeptischer KI-Schüler wird Ihnen tiefgehende Fragen stellen. Verteidigen Sie Ihr Verständnis!",
+      "convinced_badge": "Überzeugt! +20 XP",
+      "skeptical_student": "Skeptischer Schüler",
+      "defend_hint": "Verteidigen Sie Ihr Verständnis...",
+      "thinking": "Denkt nach..."
+    },
+    "progress": {
+      "phase_explain": "Erklären",
+      "phase_submit": "Einreichen",
+      "phase_evaluate": "Bewerten"
+    },
+    "evaluation": {
+      "xp_earned": "+50 XP verdient!",
+      "overall_score": "Gesamtpunktzahl",
+      "score_breakdown": "Punkteverteilung",
+      "accuracy": "Genauigkeit",
+      "clarity": "Klarheit",
+      "completeness": "Vollständigkeit",
+      "understanding": "Verständnis",
+      "strengths": "Stärken",
+      "improve": "Verbesserungsvorschläge",
+      "deepen": "Verständnis vertiefen",
+      "try_again": "Erneut versuchen",
+      "new_topic": "Neues Thema",
+      "score_excellent": "Ausgezeichnetes Verständnis!",
+      "score_good": "Gutes Verständnis!",
+      "score_fair": "Mittelmäßiges Verständnis",
+      "score_needs_improvement": "Verbesserungsbedarf"
+    },
+    "status": {
+      "pending": "Ausstehend",
+      "submitted": "Eingereicht",
+      "evaluated": "Bewertet"
+    },
+    "difficulty": {
+      "eli5": "EINFACH",
+      "classmate": "MITSCHÜLER",
+      "expert": "EXPERTE"
+    },
+    "empty_state": {
+      "title": "Noch keine Lehrübungen",
+      "subtitle": "Testen Sie Ihr Verständnis mit der Feynman-Technik"
+    }
+  },
+  "common": {
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "close": "Schließen",
+    "retry": "Erneut versuchen",
+    "tryAgain": "Erneut versuchen",
+    "errorGeneric": "Etwas ist schiefgelaufen",
+    "noData": "Keine Daten",
+    "gotIt": "Verstanden"
+  },
+  "exam_clone": {
+    "list": {
+      "title": "Prüfungsklon-Engine",
+      "subtitle": "KI-gestützte Übungsprüfungen",
+      "upload_tooltip": "Prüfung hochladen",
+      "loading": "Prüfungen werden geladen...",
+      "overview": "Übersicht",
+      "your_exams": "Meine Prüfungen",
+      "upload_button": "Hochladen",
+      "no_exams_title": "Noch keine Prüfungen",
+      "no_exams_subtitle": "Laden Sie Ihre erste Prüfung hoch, um\nÜbungsfragen mit KI zu generieren",
+      "upload_exam_button": "Prüfung hochladen",
+      "review_queue": "Wiederholungswarteschlange",
+      "review_queue_subtitle_due": "{count} fällig",
+      "review_queue_subtitle_caught_up": "Alles erledigt",
+      "due_count": "{count} fällig",
+      "bookmarks": "Lesezeichen",
+      "bookmarks_subtitle": "Gespeicherte Fragen",
+      "saved_questions": "Gespeicherte Fragen",
+      "badges": "Abzeichen",
+      "badges_subtitle": "Erfolge",
+      "achievements": "Erfolge",
+      "leaderboard": "Bestenliste",
+      "leaderboard_subtitle": "Ranglisten",
+      "rankings": "Ranglisten",
+      "upload": "Hochladen",
+      "analysis": "Analyse",
+      "practice": "Übung",
+      "notification_title": "{count} {questions} fällig!",
+      "notification_subtitle": "Zeit zum Üben und zur Gedächtnisstärkung",
+      "notification": {
+        "multiple_due": "{count} Fragen fällig!",
+        "message": "Zeit zum Üben und zur Gedächtnisstärkung"
+      },
+      "question": "Frage",
+      "questions": "Fragen",
+      "stats": {
+        "exams": "Prüfungen",
+        "original": "Original",
+        "generated": "Generiert",
+        "ready": "Bereit",
+        "failed": "Fehlgeschlagen",
+        "pending": "Ausstehend",
+        "processing": "In Bearbeitung"
+      },
+      "all_caught_up": "Alles erledigt",
+      "failed": "Verarbeitung fehlgeschlagen",
+      "delete_dialog": {
+        "title": "Prüfung löschen?",
+        "message": "Dies löscht diese Prüfung und alle generierten Fragen dauerhaft.",
+        "cancel": "Abbrechen",
+        "delete": "Löschen"
+      }
+    },
+    "upload": {
+      "title": "Prüfung hochladen",
+      "subtitle": "Laden Sie eine vergangene Prüfung hoch, um Übungsfragen zu generieren",
+      "title_label": "Prüfungstitel *",
+      "title_hint": "z. B. Zwischenprüfung, Biologie-Abschluss",
+      "subject_label": "Fach",
+      "subject_hint": "z. B. Biologie, Mathematik",
+      "method_label": "Hochlademethode",
+      "upload_pdf": "PDF hochladen",
+      "upload_pdf_desc": "Prüfung als PDF-Datei hochladen",
+      "paste_text": "Text einfügen",
+      "paste_text_desc": "Prüfungstext kopieren und einfügen",
+      "pdf_label": "PDF-Datei auswählen",
+      "pdf_hint": "Tippen Sie, um eine PDF auszuwählen",
+      "text_label": "Prüfungstext",
+      "text_hint": "Fügen Sie Ihre Prüfungsfragen hier ein...",
+      "uploading": "Wird hochgeladen...",
+      "upload_button": "Prüfung hochladen",
+      "upload_analyze": "Hochladen & analysieren",
+      "click_upload": "Zum Hochladen klicken",
+      "file_formats": "Unterstützt: PDF, JPG, PNG",
+      "tip_pdf_fail": "Falls PDF fehlschlägt, versuchen Sie ein klares Foto der Prüfung",
+      "title_required": "Bitte geben Sie einen Prüfungstitel ein",
+      "file_required": "Bitte wählen Sie eine PDF-Datei aus",
+      "text_required": "Bitte fügen Sie den Prüfungstext ein",
+      "character_count": "{count} Zeichen"
+    },
+    "detail": {
+      "title": "Prüfungsanalyse",
+      "export_pdf": "PDF exportieren",
+      "review_queue": "Wiederholungswarteschlange",
+      "live_session": "Live-Sitzung",
+      "practice": "Übung",
+      "coming_soon": "{feature} kommt bald",
+      "exam_style_analysis": "Prüfungsstil-Analyse",
+      "question_types": "Fragetypen",
+      "difficulty_distribution": "Schwierigkeitsverteilung",
+      "easy": "Leicht",
+      "medium": "Mittel",
+      "hard": "Schwer",
+      "topics_covered": "Abgedeckte Themen",
+      "more_topics": "+{count} weitere",
+      "original": "Original",
+      "generated": "Generiert",
+      "total": "Gesamt",
+      "best_score": "Beste Punktzahl",
+      "tabs": {
+        "original": "Original ({count})",
+        "generated": "Generiert ({count})",
+        "analytics": "Analysen"
+      },
+      "generate_more": "Mehr Fragen generieren",
+      "no_questions": "Noch keine Fragen",
+      "no_practice_data": "Noch keine Übungsdaten",
+      "complete_practice": "Schließen Sie mindestens eine Übungssitzung ab, um Ihre Analysen zu sehen.",
+      "question_type": {
+        "multiple_choice": "Multiple Choice",
+        "short_answer": "Kurzantwort",
+        "true_false": "Wahr/Falsch",
+        "essay": "Aufsatz",
+        "fill_blank": "Lückentext"
+      },
+      "correct_answer": "Richtige Antwort",
+      "explanation": "Erklärung"
+    },
+    "badges": {
+      "title": "Erfolge",
+      "subtitle": "Verdienen Sie Abzeichen durch Üben",
+      "your_progress": "Ihr Fortschritt",
+      "failed_to_load": "Abzeichen konnten nicht geladen werden: {error}",
+      "remaining": "{count} Abzeichen noch freizuschalten",
+      "all": "Alle",
+      "recently_earned": "Kürzlich verdient",
+      "earned_on": "Verdient am {date}",
+      "from_exam": "von {title}",
+      "xp_reward": "+{xp} XP"
+    },
+    "bookmarks": {
+      "title": "Gemerkte Fragen",
+      "subtitle": "Zur Wiederholung markierte Fragen",
+      "stats_count": "{count}",
+      "stats_label": "Gemerkte Fragen",
+      "from_exams_count": "{count}",
+      "from_exams_label": "Aus verschiedenen Prüfungen",
+      "difficulty": {
+        "easy": "Leicht",
+        "medium": "Mittel",
+        "hard": "Schwer",
+        "unknown": "Unbekannt"
+      },
+      "options": "Optionen:",
+      "correct": "(Richtig)",
+      "correct_answer": "Richtige Antwort:",
+      "empty_title": "Noch keine Lesezeichen",
+      "empty_message": "Markieren Sie schwierige Fragen während der Übung, um sie später zu wiederholen.\nKlicken Sie auf das Lesezeichen-Symbol bei einer Frage, um sie hier zu speichern.",
+      "start_practicing": "Übung starten",
+      "failed_to_load": "Lesezeichen konnten nicht geladen werden: {error}",
+      "failed_to_remove": "Lesezeichen konnte nicht entfernt werden: {error}"
+    },
+    "leaderboard": {
+      "title": "Bestenliste",
+      "subtitle": "Sehen Sie Ihre Platzierung",
+      "period": {
+        "weekly": "Wöchentlich",
+        "monthly": "Monatlich",
+        "all_time": "Gesamt"
+      },
+      "your_rank": "Ihre Platzierung",
+      "top_10": "Top 10!",
+      "keep_practicing": "Weiter üben",
+      "avg_score": "Ø Punktzahl",
+      "correct": "Richtig",
+      "avg_score_label": "Ø Punktzahl",
+      "exams_count": "{count} Prüfungen",
+      "exams_and_correct": "{exams} Prüfungen • {correct} richtig",
+      "empty_title": "Noch keine Daten",
+      "empty_message": "Seien Sie der Erste, der eine Prüfung ablegt und auf der Bestenliste erscheint!",
+      "failed_to_load": "Bestenliste konnte nicht geladen werden: {error}"
+    },
+    "practice": {
+      "title": "Übung",
+      "practice_exam": "Übungsprüfung",
+      "questions_available": "{count} Fragen verfügbar",
+      "setup": {
+        "number_of_questions": "Anzahl der Fragen",
+        "time_limit_minutes": "Zeitlimit (Minuten)",
+        "minutes": "{time} Min.",
+        "include_questions": "Fragen einbeziehen",
+        "original_questions": "Original-Prüfungsfragen",
+        "ai_questions": "KI-generierte Fragen",
+        "start_practice": "Übung starten"
+      },
+      "progress": {
+        "question_of": "Frage {current} von {total}",
+        "answered": "{count} beantwortet",
+        "flagged": "{count} markiert",
+        "time_remaining": "{time}"
+      },
+      "difficulty": {
+        "easy": "Leicht",
+        "medium": "Mittel",
+        "hard": "Schwer"
+      },
+      "actions": {
+        "previous": "Zurück",
+        "next": "Weiter",
+        "submit": "Abgeben",
+        "check_answer": "Antwort prüfen",
+        "type_answer": "Geben Sie Ihre Antwort ein..."
+      },
+      "results": {
+        "title": "Ergebnisse",
+        "score": "{score}%",
+        "excellent": "Ausgezeichnet!",
+        "good_job": "Gut gemacht!",
+        "keep_practicing": "Weiter üben!",
+        "correct": "Richtig",
+        "incorrect": "Falsch",
+        "unanswered": "Unbeantwortet",
+        "time": "Zeit",
+        "review_answers": "Antworten überprüfen",
+        "try_again": "Erneut versuchen"
+      },
+      "review": {
+        "title": "Antwortüberprüfung",
+        "question_number": "Frage {number}",
+        "your_answer": "Ihre Antwort:",
+        "correct_answer": "Richtige Antwort:",
+        "explanation": "Erklärung"
+      },
+      "dialogs": {
+        "exit_title": "Prüfung beenden?",
+        "exit_message": "Ihr Fortschritt geht verloren. Sie haben {answered} von {total} Fragen beantwortet.",
+        "continue_exam": "Prüfung fortsetzen",
+        "exit": "Beenden",
+        "submit_title": "Prüfung abgeben?",
+        "submit_message": "Sie haben {answered} von {total} Fragen beantwortet.",
+        "unanswered_warning": "{count} Fragen sind unbeantwortet",
+        "submit": "Abgeben"
+      },
+      "no_questions_available": "Keine Fragen verfügbar"
+    },
+    "review_queue": {
+      "title": "Wiederholungswarteschlange",
+      "stats": {
+        "correct": "{count}",
+        "incorrect": "{count}",
+        "progress": "{current}/{total}"
+      },
+      "loading": "Wiederholungswarteschlange wird geladen...",
+      "difficulty": {
+        "easy": "Leicht",
+        "medium": "Mittel",
+        "hard": "Schwer"
+      },
+      "review_number": "Wiederholung #{count}",
+      "check_answer": "Antwort prüfen",
+      "ai_evaluating": "KI bewertet...",
+      "next_question": "Nächste Frage",
+      "finish_review": "Wiederholung beenden",
+      "type_answer": "Geben Sie Ihre Antwort ein:",
+      "type_answer_hint": "Geben Sie Ihre Antwort hier ein...\n(Sie können mehrere Zeilen schreiben)",
+      "correct_answer": "Richtige Antwort: {answer}",
+      "get_ai_explanation": "KI-Erklärung erhalten",
+      "getting_explanation": "Erklärung wird geladen...",
+      "ai_evaluation": "KI-Bewertung",
+      "ai_explanation": "KI-Erklärung",
+      "empty": {
+        "title": "Alles erledigt!",
+        "message": "Sie haben derzeit keine fälligen Fragen zur Wiederholung. Üben Sie mehr Prüfungen, um Ihre Wiederholungswarteschlange zu füllen.",
+        "back_button": "Zurück zu Prüfungen",
+        "refresh_button": "Aktualisieren"
+      },
+      "complete": {
+        "title": "Wiederholung abgeschlossen!",
+        "message": "Gut gemacht, Ihr Wissen wird gefestigt",
+        "correct": "Richtig",
+        "incorrect": "Falsch",
+        "total": "Gesamt",
+        "accuracy": "Genauigkeit",
+        "tip_title": "Weiter so!",
+        "tip_message": "Falsch beantwortete Fragen erscheinen häufiger. Spaced Repetition hilft, Wissen ins Langzeitgedächtnis zu übertragen.",
+        "back_button": "Zurück zu Prüfungen",
+        "review_more": "Mehr wiederholen"
+      },
+      "failed_to_load": "Wiederholungswarteschlange konnte nicht geladen werden: {error}",
+      "failed_to_submit": "Wiederholung konnte nicht abgeschlossen werden: {error}",
+      "failed_explanation": "Erklärung konnte nicht geladen werden: {error}"
+    }
+  },
+  "problem_solver": {
+    "batch_solver": {
+      "title": "Stapel-Problemlöser",
+      "tabs": {
+        "pdf_upload": "PDF hochladen",
+        "text_input": "Texteingabe"
+      },
+      "pdf_tab": {
+        "upload_label": "PDF hochladen",
+        "upload_hint": "Wählen Sie eine PDF-Datei mit Aufgaben",
+        "extract_button": "Aufgaben extrahieren"
+      },
+      "text_tab": {
+        "title": "Aufgaben einfügen",
+        "description": "Fügen Sie Ihre Aufgaben unten ein. Jede Aufgabe sollte in einer neuen Zeile stehen oder mit Nummern getrennt sein.",
+        "hint": "Beispiel:\n1. Lösen Sie nach x auf: 2x + 5 = 15\n2. Berechnen Sie die Fläche eines Kreises mit Radius 7 cm\n3. Faktorisieren Sie: x² - 5x + 6",
+        "extract_button": "Aufgaben extrahieren"
+      },
+      "stats": {
+        "total": "Gesamt",
+        "selected": "Ausgewählt",
+        "solved": "Gelöst"
+      },
+      "actions": {
+        "solve_selected": "{count} Ausgewählte lösen",
+        "solve_all": "Alle lösen"
+      },
+      "messages": {
+        "enter_text": "Bitte geben Sie einen Text ein",
+        "problems_solved": "{count} Aufgaben gelöst!"
+      }
+    },
+    "camera_scan": {
+      "title": "Aufgabe scannen",
+      "instructions": "Positionieren Sie die Aufgabe im Rahmen",
+      "review_title": "Überprüfen & Bearbeiten",
+      "analyzing": "Bild wird analysiert...",
+      "analyzing_subtitle": "Dies kann einige Sekunden dauern",
+      "verify_text": "Bitte überprüfen Sie den Text",
+      "verify_description": "Mathematische Symbole werden möglicherweise nicht korrekt erkannt. Bearbeiten Sie den Text bei Bedarf.",
+      "subject_label": "Fach",
+      "problem_text_label": "Aufgabentext",
+      "problem_text_hint": "Bearbeiten Sie den Aufgabentext hier...",
+      "problem_text_tip": "Tipp: Verwenden Sie ^ für Hochzeichen (z. B. x^2)",
+      "actions": {
+        "retake": "Erneut aufnehmen",
+        "solve_problem": "Aufgabe lösen"
+      },
+      "subjects": {
+        "mathematics": "Mathematik",
+        "physics": "Physik",
+        "chemistry": "Chemie",
+        "biology": "Biologie",
+        "computer_science": "Informatik",
+        "other": "Sonstiges"
+      }
+    },
+    "concept_map": {
+      "title": "Konzeptkarte",
+      "subtitle": "Visueller Lernfahrplan",
+      "central_topic": "Kernthema",
+      "sections": {
+        "prerequisites": "Voraussetzungen",
+        "prerequisites_subtitle": "Zuerst meistern",
+        "current_concepts": "Aktuelle Konzepte",
+        "current_concepts_subtitle": "Aktuell lernend",
+        "next_steps": "Nächste Schritte",
+        "next_steps_subtitle": "Wohin als Nächstes",
+        "related_topics": "Verwandte Themen",
+        "related_topics_subtitle": "Verbindungen erkunden"
+      },
+      "importance": "Wichtigkeit:",
+      "connection": "Verbindung:"
+    },
+    "formula_cards": {
+      "title": "Formelkarten",
+      "progress": "Karte {current} von {total}",
+      "categories": {
+        "rule": "REGEL",
+        "concept": "KONZEPT",
+        "formula": "FORMEL",
+        "theorem": "THEOREM"
+      },
+      "sides": {
+        "explanation": "Erklärung",
+        "formula": "Formel"
+      },
+      "hints": {
+        "tap_to_flip": "Tippen, um {side} zu sehen",
+        "tap_explanation": "Tippen, um Erklärung zu sehen",
+        "tap_formula": "Tippen, um Formel zu sehen",
+        "swipe_navigate": "Links/rechts wischen zum Navigieren"
+      },
+      "actions": {
+        "previous": "Vorherige",
+        "next": "Nächste",
+        "flip": "Umdrehen"
+      },
+      "messages": {
+        "copied": "Karte in die Zwischenablage kopiert"
+      }
+    },
+    "hints": {
+      "title": "Geführter Modus",
+      "subtitle": "Hinweise statt der vollständigen Lösung erhalten",
+      "problem_label": "AUFGABE",
+      "hint_progress": "Hinweis {current} von ~{total}",
+      "next_hint_preview": "Nächster Hinweis behandelt: {preview}",
+      "all_revealed": "Alle Hinweise aufgedeckt! Versuchen Sie jetzt zu lösen.",
+      "all_revealed_status": "Alle Hinweise aufgedeckt",
+      "actions": {
+        "reset": "Zurücksetzen",
+        "get_first_hint": "Ersten Hinweis erhalten",
+        "next_hint": "Nächster Hinweis",
+        "thinking": "Denkt nach...",
+        "see_solution": "Lösung anzeigen"
+      },
+      "messages": {
+        "hints_reset": "Hinweise zurückgesetzt"
+      }
+    },
+    "practice_quiz": {
+      "title": "Übungsquiz",
+      "title_with_progress": "Übungsquiz ({current}/{total})",
+      "question_progress": "Frage {current}/{total}",
+      "stats": {
+        "correct": "richtig"
+      },
+      "question_types": {
+        "multiple_choice": "Multiple Choice",
+        "true_false": "Wahr oder Falsch",
+        "fill_blank": "Lückentext"
+      },
+      "feedback": {
+        "correct": "Richtig!",
+        "incorrect": "Falsch",
+        "correct_answer": "Richtige Antwort: {answer}",
+        "explanation": "Erklärung"
+      },
+      "actions": {
+        "next_question": "Nächste Frage",
+        "view_results": "Ergebnisse anzeigen"
+      },
+      "results": {
+        "perfect": "Perfekte Punktzahl! 🎉",
+        "great": "Großartig! 🌟",
+        "good": "Guter Einsatz! 👍",
+        "practice": "Weiter üben! 💪",
+        "quiz_complete": "Quiz abgeschlossen!",
+        "close": "Schließen",
+        "try_again": "Erneut versuchen"
+      }
+    },
+    "bookmarks": {
+      "title": "Meine Lesezeichen",
+      "search_placeholder": "Lesezeichen durchsuchen...",
+      "stats": {
+        "total": "Gesamt",
+        "subjects": "Fächer",
+        "tags": "Tags"
+      },
+      "edit_sheet": {
+        "title": "Lesezeichen bearbeiten",
+        "tags_label": "Tags",
+        "tags_hint": "Tag hinzufügen...",
+        "notes_label": "Notizen",
+        "notes_hint": "Ihre Notizen hier hinzufügen...",
+        "save_button": "Änderungen speichern"
+      },
+      "delete_dialog": {
+        "title": "Lesezeichen löschen",
+        "message": "Möchten Sie dieses Lesezeichen wirklich löschen?",
+        "cancel": "Abbrechen",
+        "delete": "Löschen"
+      },
+      "messages": {
+        "updated": "Lesezeichen aktualisiert",
+        "deleted": "Lesezeichen gelöscht"
+      },
+      "empty_state": {
+        "title": "Noch keine Lesezeichen",
+        "subtitle": "Speichern Sie Aufgaben für späteren Zugriff"
+      }
+    },
+    "history": {
+      "title": "Aufgabenverlauf",
+      "search_placeholder": "Aufgaben durchsuchen...",
+      "delete_dialog": {
+        "title": "Aufgabe löschen?",
+        "message": "Dies löscht diese Aufgabe und ihre Lösung dauerhaft.",
+        "cancel": "Abbrechen",
+        "delete": "Löschen"
+      },
+      "time": {
+        "today": "Heute",
+        "yesterday": "Gestern",
+        "days_ago": "Vor {days} Tagen"
+      }
+    },
+    "input": {
+      "title": "Problemlöser",
+      "subject_label": "Fach",
+      "problem_label": "Aufgabe",
+      "problem_hint": "Geben Sie Ihre Aufgabe ein oder fügen Sie sie ein...\n\nBeispiel: Lösen Sie die Gleichung 2x + 5 = 15",
+      "actions": {
+        "scan": "Scannen",
+        "voice": "Sprache",
+        "image": "Bild",
+        "solve": "Aufgabe lösen",
+        "creating": "Wird erstellt..."
+      },
+      "image_uploaded": "Bild hochgeladen",
+      "voice_coming_soon": "Spracheingabe kommt bald",
+      "how_it_works": "So funktioniert es",
+      "agents": {
+        "analysis": {
+          "title": "Analyse-Agent",
+          "description": "Versteht die Aufgabe und identifiziert den Lösungsansatz"
+        },
+        "solver": {
+          "title": "Löser-Agent",
+          "description": "Generiert Schritt-für-Schritt-Lösung mit Erklärungen"
+        },
+        "verifier": {
+          "title": "Prüfer-Agent",
+          "description": "Überprüft die Lösung auf Korrektheit"
+        }
+      },
+      "subjects": {
+        "auto_detect": "Automatisch erkennen",
+        "mathematics": "Mathematik",
+        "physics": "Physik",
+        "chemistry": "Chemie",
+        "biology": "Biologie",
+        "computer_science": "Informatik",
+        "engineering": "Ingenieurwesen",
+        "economics": "Wirtschaftswissenschaften",
+        "statistics": "Statistik"
+      },
+      "menu": {
+        "bookmarks": "Lesezeichen",
+        "history": "Verlauf",
+        "batch_solver": "Stapel-Löser",
+        "camera_scan": "Kamera-Scan"
+      },
+      "messages": {
+        "enter_problem": "Bitte geben Sie eine Aufgabe ein oder laden Sie ein Bild hoch"
+      }
+    },
+    "similar_problems": {
+      "title": "Ähnliche Aufgaben",
+      "difficulty": {
+        "easy": "LEICHT",
+        "medium": "MITTEL",
+        "hard": "SCHWER"
+      },
+      "solve_this": "Diese lösen"
+    },
+    "solution": {
+      "title": "Lösung",
+      "final_answer": "Endgültige Antwort",
+      "learning_tools": "Lernwerkzeuge",
+      "tools": {
+        "hints": "Hinweise",
+        "similar": "Ähnliche",
+        "quiz": "Quiz",
+        "chat": "Chat",
+        "concepts": "Konzepte",
+        "formulas": "Formeln"
+      },
+      "tabs": {
+        "steps": "Schritte",
+        "code": "Code",
+        "alternatives": "Alternativen",
+        "graph": "Graph",
+        "analysis": "Analyse",
+        "citations": "Zitate"
+      },
+      "steps": {
+        "no_solution": "Keine Lösung verfügbar",
+        "no_steps": "Keine Lösungsschritte verfügbar",
+        "step_number": "Schritt {number}",
+        "copy": "Kopieren",
+        "step_copied": "Schritt kopiert"
+      },
+      "code": {
+        "empty_title": "Keine Codeblöcke verfügbar"
+      },
+      "alternatives": {
+        "empty_title": "Keine alternativen Methoden verfügbar"
+      },
+      "graph": {
+        "empty_title": "Keine Graphdaten verfügbar"
+      },
+      "analysis": {
+        "level_explanation": "Erklärung auf {level}-Niveau",
+        "key_points": "Kernpunkte:",
+        "examples": "Beispiele:",
+        "technical_analysis": "Technische Analyse",
+        "no_details": "Keine Details"
+      },
+      "citations": {
+        "empty_title": "Keine Zitate verfügbar"
+      },
+      "complexity": {
+        "title": "Erklärungsniveau",
+        "beginner": "Anfänger",
+        "intermediate": "Fortgeschritten",
+        "advanced": "Weit Fortgeschritten",
+        "expert": "Experte",
+        "loading": "Erklärung wird geladen..."
+      },
+      "narration": {
+        "title": "Lösungsvorlesung",
+        "listen_tooltip": "Lösung anhören",
+        "completed": "Vorlesung abgeschlossen",
+        "no_text": "Kein Lösungstext zum Vorlesen verfügbar"
+      },
+      "messages": {
+        "bookmark_added": "Lesezeichen hinzugefügt",
+        "bookmark_removed": "Lesezeichen entfernt"
+      }
+    },
+    "solving_progress": {
+      "title": "Wird gelöst...",
+      "stages": {
+        "analysis": {
+          "title": "Analyse-Agent",
+          "description": "Aufgabe wird verstanden"
+        },
+        "solving": {
+          "title": "Löser-Agent",
+          "description": "Schritt-für-Schritt-Lösung wird generiert"
+        },
+        "verification": {
+          "title": "Prüfer-Agent",
+          "description": "Korrektheit wird überprüft"
+        }
+      },
+      "status": {
+        "complete": "Abgeschlossen",
+        "solution_ready": "Lösung bereit!",
+        "redirecting": "Weiterleitung zur Lösung...",
+        "failed": "Lösung fehlgeschlagen",
+        "retry": "Erneut versuchen"
+      }
+    },
+    "study_buddy": {
+      "title": "Lernbuddy",
+      "subtitle": "Stellen Sie Folgefragen zur Lösung",
+      "welcome_message": "Hallo! Ich bin Ihr Lernbuddy. Ich habe die Lösung zu Ihrer Aufgabe geprüft. Fragen Sie mich alles – ich kann Schritte genauer erklären, alternative Ansätze vorschlagen oder Ihnen bei der Übung ähnlicher Konzepte helfen.",
+      "suggested_questions_title": "Vorgeschlagene Fragen",
+      "input_placeholder": "Stellen Sie eine Folgefrage...",
+      "problem_label": "Aufgabe: {problem}",
+      "export": "Exportieren",
+      "suggested": {
+        "explain_step": "Können Sie Schritt 2 genauer erklären?",
+        "why_approach": "Warum haben wir diesen Ansatz verwendet?",
+        "other_methods": "Welche anderen Methoden gibt es?",
+        "simpler_example": "Können Sie mir ein einfacheres Beispiel geben?",
+        "concepts_needed": "Welche Konzepte muss ich verstehen?"
+      }
+    },
+    "widgets": {
+      "steps_copied": "Schritte in die Zwischenablage kopiert",
+      "copy": "Kopieren",
+      "steps": "Schritte",
+      "no_steps": "Keine Schritte für diese Methode verfügbar",
+      "advantages": "Vorteile",
+      "disadvantages": "Nachteile",
+      "method_type": {
+        "algebraic": "Algebraisch",
+        "geometric": "Geometrisch",
+        "numerical": "Numerisch",
+        "graphical": "Graphisch",
+        "analytical": "Analytisch",
+        "other": "Sonstiges"
+      },
+      "status": {
+        "pending": "Ausstehend",
+        "solving": "Wird gelöst...",
+        "completed": "Abgeschlossen",
+        "failed": "Fehlgeschlagen"
+      },
+      "retry": "Erneut versuchen",
+      "solve": "Lösen",
+      "view_solution": "Lösung anzeigen",
+      "search_bookmarks": "Lesezeichen durchsuchen...",
+      "no_problem_text": "Kein Aufgabentext",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "date": {
+        "today": "Heute",
+        "yesterday": "Gestern",
+        "days_ago": "Vor {days} Tagen"
+      }
+    }
+  }
+}

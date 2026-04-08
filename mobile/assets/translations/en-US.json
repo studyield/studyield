@@ -1,0 +1,2778 @@
+{
+  "onboarding": {
+    "skip": "Skip",
+    "next": "Next",
+    "back": "Back",
+    "get_started": "Get Started",
+    "i_have_account": "I have an account",
+    "app_name": "Studyield",
+    "slides": {
+      "welcome_title": "Welcome to Studyield",
+      "welcome_desc": "You deserve a study tool that actually gets you. No clutter, no confusion — just the smartest way to learn, built around you.",
+      "badge_ad_free": "Ad-Free",
+      "badge_free": "Free to Use",
+      "badge_ai": "AI-Powered",
+      "study_sets_title": "Learn Faster with AI-Built Materials",
+      "study_sets_desc": "Spend less time making notes and more time actually learning. AI turns your documents into ready-to-use study materials in seconds.",
+      "study_sets_bullet1": "Go from PDF to flashcards in seconds — AI does the heavy lifting",
+      "study_sets_bullet2": "Choose how you learn best — standard, cloze, or image occlusion",
+      "study_sets_bullet3": "Share with classmates and help each other succeed",
+      "ai_chat_title": "Your Personal Tutor, Available 24/7",
+      "ai_chat_desc": "No more waiting for office hours or feeling embarrassed to ask. Get clear, patient explanations whenever you need them.",
+      "ai_chat_bullet1": "Ask anything about your materials and get instant clarity",
+      "ai_chat_bullet2": "Explanations match your level — you'll actually understand",
+      "ai_chat_bullet3": "Picks up where you left off, so learning feels natural",
+      "problem_solver_title": "Get Unstuck on Any Problem, Instantly",
+      "problem_solver_desc": "That frustrating moment when you're stuck at 2 AM? Gone. Snap a photo or type it in, and finally understand how to solve it.",
+      "problem_solver_bullet1": "Snap a photo or type any problem — math, science, anything",
+      "problem_solver_bullet2": "Understand the 'how' and 'why', not just the final answer",
+      "problem_solver_bullet3": "Build real problem-solving skills you can use on exam day",
+      "exam_clone_title": "Walk Into Every Exam With Confidence",
+      "exam_clone_desc": "The best way to beat exam anxiety? Practice until it feels easy. Upload a past paper and get unlimited questions that match the real thing.",
+      "exam_clone_bullet1": "AI learns your exam's format, style, and difficulty level",
+      "exam_clone_bullet2": "Practice as many times as you need until you feel ready",
+      "exam_clone_bullet3": "Set your exam date and get a countdown with a personalized plan",
+      "live_quiz_title": "Study Together, Grow Together",
+      "live_quiz_desc": "Learning doesn't have to be lonely. Turn study sessions into friendly competitions and motivate each other to keep going.",
+      "live_quiz_bullet1": "Invite friends with a simple code — start in seconds",
+      "live_quiz_bullet2": "Compete on live leaderboards and celebrate each other's wins",
+      "live_quiz_bullet3": "Questions from your own study sets — fun and actually useful",
+      "spaced_rep_title": "Never Forget What You've Learned",
+      "spaced_rep_desc": "Ever studied hard for a test, only to forget everything a week later? Our smart system makes sure that never happens again.",
+      "spaced_rep_bullet1": "Tough concepts come back more often until they finally click",
+      "spaced_rep_bullet2": "Already mastered it? You won't waste time reviewing it again",
+      "spaced_rep_bullet3": "Watch your retention grow stronger every single day",
+      "analytics_title": "See Your Growth, Stay Motivated",
+      "analytics_desc": "Nothing keeps you going like seeing real progress. Track every study session, celebrate milestones, and know exactly where you stand.",
+      "analytics_bullet1": "Beautiful heatmaps show your dedication over weeks and months",
+      "analytics_bullet2": "Earn XP, level up, and build streaks that keep you motivated",
+      "analytics_bullet3": "Spot weak areas early so you can fix them before exams",
+      "handwriting_title": "Your Notes Deserve to Be Digital",
+      "handwriting_desc": "All those handwritten notes you've been collecting? One photo turns them into searchable, editable text you can study from anywhere.",
+      "handwriting_bullet1": "Snap a photo of any notebook page or whiteboard",
+      "handwriting_bullet2": "Even messy handwriting gets read accurately by AI vision",
+      "handwriting_bullet3": "Instantly turn scanned notes into flashcards — like magic",
+      "ad_free_title": "Built for You, Not Advertisers",
+      "ad_free_desc": "We believe studying should be sacred. No ads will ever interrupt your focus. No data sold. Just a pure, honest tool made with love for students.",
+      "ad_free_bullet1": "Zero ads, zero pop-ups, zero sponsored content — forever",
+      "ad_free_bullet2": "Your data stays yours — we never sell it to anyone",
+      "ad_free_bullet3": "A calm, clean space designed for deep focus and real learning"
+    },
+    "setup": {
+      "skip_for_now": "Skip for now",
+      "step_of": "Step {current} of {total}",
+      "education_title": "What's your education level?",
+      "education_desc": "This helps us personalize your learning experience",
+      "education": {
+        "high_school": "High School",
+        "high_school_desc": "Secondary school student",
+        "undergraduate": "Undergraduate",
+        "undergraduate_desc": "Bachelor's degree student",
+        "graduate": "Graduate",
+        "graduate_desc": "Master's degree student",
+        "post_graduate": "Post Graduate",
+        "post_graduate_desc": "PhD or post-doctoral",
+        "self_learner": "Self Learner",
+        "self_learner_desc": "Learning independently",
+        "professional": "Professional",
+        "professional_desc": "Working professional"
+      },
+      "subjects_title": "What subjects interest you?",
+      "subjects_desc": "Select the subjects you want to study",
+      "subjects_selected": "{count} selected",
+      "subject": {
+        "mathematics": "Mathematics",
+        "physics": "Physics",
+        "chemistry": "Chemistry",
+        "biology": "Biology",
+        "computer_science": "Computer Science",
+        "history": "History",
+        "english": "English",
+        "economics": "Economics",
+        "psychology": "Psychology",
+        "engineering": "Engineering",
+        "medicine": "Medicine",
+        "law": "Law",
+        "business": "Business",
+        "art_design": "Art & Design",
+        "statistics": "Statistics",
+        "philosophy": "Philosophy"
+      },
+      "add_custom_subject": "Add custom subject",
+      "add": "Add",
+      "goal_title": "What's your main goal?",
+      "goal_desc": "We'll customize your experience based on your goal",
+      "goal": {
+        "exam_prep": "Exam Preparation",
+        "exam_prep_desc": "Prepare for upcoming exams",
+        "daily_study": "Daily Study",
+        "daily_study_desc": "Build a consistent study habit",
+        "homework": "Homework Help",
+        "homework_desc": "Get help with assignments",
+        "research": "Research",
+        "research_desc": "Deep dive into topics",
+        "exploring": "Just Exploring",
+        "exploring_desc": "Trying out the app"
+      },
+      "back": "Back",
+      "continue": "Continue",
+      "complete": "Complete",
+      "done_title": "You're all set!",
+      "done_desc": "Your personalized learning experience is ready",
+      "done_study_set": "Create Study Set",
+      "done_ai_chat": "AI Chat",
+      "done_track": "Track Progress",
+      "go_to_dashboard": "Go to Dashboard"
+    },
+    "slide_1": {
+      "title": "Welcome to Studyield",
+      "subtitle": "Your AI-Powered Study Companion",
+      "description": "You deserve a study tool that actually gets you. No clutter, no confusion — just the smartest way to learn, built around you."
+    },
+    "slide_2": {
+      "badge": "Free to Use",
+      "title": "Learn Faster with AI-Built Materials",
+      "subtitle": "Smart Flashcards & Study Sets",
+      "description": "Spend less time making notes and more time actually learning. AI turns your documents into ready-to-use study materials in seconds."
+    },
+    "slide_3": {
+      "badge": "AI-Powered",
+      "title": "Get Unstuck on Any Problem, Instantly",
+      "subtitle": "AI Problem Solver",
+      "description": "Snap a photo or type it in, and finally understand how to solve it.",
+      "features": {
+        "scan": "Scan & Solve",
+        "hints": "Smart Hints",
+        "steps": "Step-by-Step"
+      }
+    },
+    "slide_4": {
+      "badge": "Free to Use",
+      "title": "Stay Motivated, Level Up",
+      "subtitle": "XP, Streaks & Achievements",
+      "description": "Nothing keeps you going like seeing real progress. Earn XP, build streaks, and level up as you learn."
+    },
+    "slide_5": {
+      "badge": "AI-Powered",
+      "title": "Your Personalized Learning Path",
+      "subtitle": "Smart Study Plans",
+      "description": "Get a customized study plan that adapts to your goals and progress.",
+      "benefits": {
+        "benefit_1": "AI creates a plan tailored to your exam dates and goals",
+        "benefit_2": "Track your progress and stay on schedule",
+        "benefit_3": "Adaptive learning that focuses on what you need most"
+      }
+    },
+    "tour": {
+      "skip": "Skip Tour",
+      "start": "Start",
+      "continue_tour": "Continue",
+      "next": "Next",
+      "got_it": "Got it!",
+      "study_set_created": "Study set created!",
+      "create_study_set": "Create Study Set",
+      "deep_research": "Deep Research",
+      "ai_flashcard_generator": "AI Flashcard Generator",
+      "ai_problem_solver": "AI Problem Solver",
+      "please_select_answer": "Please select an answer",
+      "practice_quiz": "Practice Quiz",
+      "task_research": "Research any topic with AI",
+      "task_flashcards": "Create AI flashcards",
+      "task_solve": "Solve problems instantly",
+      "task_quiz": "Take a practice quiz",
+      "follow_tooltips": "Follow the tooltips on each screen to complete the tasks",
+      "welcome_offer": "We have a special welcome offer waiting for you!",
+      "start_interactive": "Start Interactive Tour",
+      "claim_offer": "Claim Offer Now",
+      "sample_set_title": "My First Study Set",
+      "sample_set_desc": "Learning the basics",
+      "hint_set_name": "e.g., Biology Chapter 1",
+      "hint_set_desc": "Add a brief description...",
+      "step_enter_topic": "Enter Your Topic",
+      "step_start_research": "Start Deep Research",
+      "step_generate_ai": "Generate with AI",
+      "step_enter_problem": "Enter Any Problem",
+      "step_get_solution": "Get Instant Solution",
+      "step_read_select": "Read & Select",
+      "step_submit_learn": "Submit & Learn",
+      "hint_research_topic": "e.g., Quantum Computing, Climate Change...",
+      "hint_flashcard_topic": "e.g., World War 2, Photosynthesis...",
+      "hint_problem": "Type or paste your problem here..."
+    },
+    "feature_slide": {
+      "ai_tutor": "AI Tutor",
+      "sample_question": "How does photosynthesis work?",
+      "sample_answer": "Plants convert sunlight into energy through...",
+      "problem_label": "PROBLEM",
+      "solution_label": "SOLUTION",
+      "live_leaderboard": "LIVE LEADERBOARD",
+      "retention_curve": "RETENTION CURVE",
+      "day_1": "Day 1",
+      "today": "Today",
+      "study_heatmap": "Study Heatmap",
+      "handwritten": "HANDWRITTEN",
+      "digital": "DIGITAL",
+      "sample_ocr": "The mitochondria is the..."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to continue learning",
+      "email_label": "Email",
+      "email_hint": "Enter your email",
+      "password_label": "Password",
+      "password_hint": "Enter your password",
+      "forgot_password": "Forgot password?",
+      "login_button": "Sign In",
+      "no_account": "Don't have an account?",
+      "sign_up": "Sign Up",
+      "or_continue_with": "Or continue with",
+      "google_login": "Continue with Google",
+      "apple_login": "Continue with Apple"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Start your learning journey",
+      "name_label": "Full Name",
+      "name_hint": "Enter your name",
+      "email_label": "Email",
+      "email_hint": "Enter your email",
+      "password_label": "Password",
+      "password_hint": "Create a password",
+      "confirm_password_label": "Confirm Password",
+      "confirm_password_hint": "Re-enter password",
+      "register_button": "Create Account",
+      "have_account": "Already have an account?",
+      "sign_in": "Sign In",
+      "terms_prefix": "By signing up, you agree to our ",
+      "terms": "Terms of Service",
+      "and": " and ",
+      "privacy": "Privacy Policy"
+    },
+    "errors": {
+      "email_required": "Email is required",
+      "email_invalid": "Please enter a valid email",
+      "password_required": "Password is required",
+      "password_min_length": "Password must be at least 6 characters",
+      "passwords_not_match": "Passwords do not match",
+      "name_required": "Name is required",
+      "login_failed": "Login failed. Please check your credentials",
+      "register_failed": "Registration failed. Please try again"
+    },
+    "forgot_password": {
+      "email_label": "Email",
+      "send_reset_link": "Send Reset Link",
+      "back_to_sign_in": "Back to Sign In"
+    },
+    "social": {
+      "google": "Google",
+      "apple": "Apple"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening"
+    },
+    "welcome_message": "You have {count} cards waiting for review",
+    "welcome_message_empty": "Ready to continue your learning journey?",
+    "level": "Level {level}",
+    "xp_progress": "{current} / {next} XP",
+    "streak_days": "{days}d",
+    "daily_xp": "{current} / {goal} daily XP",
+    "gamification": {
+      "xp": "XP",
+      "day": "day",
+      "days": "days",
+      "daily_xp": "daily XP",
+      "level_names": {
+        "0": "Beginner",
+        "1": "Bronze",
+        "2": "Silver",
+        "3": "Gold",
+        "4": "Platinum",
+        "5": "Diamond",
+        "6": "Master",
+        "7": "Grandmaster",
+        "8": "Champion",
+        "9": "Legend",
+        "10": "Mythic",
+        "11": "Immortal"
+      }
+    },
+    "upgrade_pro": {
+      "title": "Upgrade to Pro",
+      "badge": "POPULAR",
+      "subtitle": "Unlock all premium features & unlimited AI",
+      "offer": "Save 20% with yearly plan"
+    },
+    "stats": {
+      "study_sets": "Study Sets",
+      "flashcards": "Flashcards",
+      "due_today": "Due Today",
+      "quizzes_done": "Quizzes Done",
+      "cards": "{count} cards"
+    },
+    "sections": {
+      "quick_actions": "Quick Actions",
+      "recent_study_sets": "Recent Study Sets",
+      "view_all": "View All"
+    },
+    "continue_studying": {
+      "title": "Continue studying",
+      "cards_due": "{count} cards due for review"
+    },
+    "quick_actions": {
+      "new_study_set": {
+        "title": "New Study Set",
+        "description": "Create a new collection"
+      },
+      "exam_clone": {
+        "title": "Exam Clone",
+        "description": "Generate practice exams"
+      },
+      "problem_solver": {
+        "title": "Problem Solver",
+        "description": "AI step-by-step solutions"
+      },
+      "ai_chat": {
+        "title": "AI Chat",
+        "description": "Ask questions about your notes"
+      },
+      "view_analytics": {
+        "title": "View Analytics",
+        "description": "Track your study progress"
+      },
+      "knowledge_base": {
+        "title": "Knowledge Base",
+        "description": "Upload & search documents"
+      },
+      "join_live_quiz": {
+        "title": "Join Live Quiz",
+        "description": "Play with friends in real-time"
+      },
+      "coming_soon": "Coming Soon"
+    },
+    "empty_state": {
+      "title": "No study sets yet",
+      "subtitle": "Create your first study set to start learning",
+      "button": "Create Study Set"
+    }
+  },
+  "study_sets": {
+    "title": "Study Sets",
+    "header_title": "My Study Sets",
+    "header_subtitle": "Create and manage your study materials",
+    "search_hint": "Search study sets...",
+    "new_study_set": "New Study Set",
+    "create_button": "Create",
+    "no_results_title": "No Results",
+    "no_results_subtitle": "No study sets match \"{query}\"",
+    "card": {
+      "public": "Public",
+      "private": "Private",
+      "edit": "Edit",
+      "delete": "Delete",
+      "cards_count": "{count} cards",
+      "docs_count": "{count} docs"
+    },
+    "empty_state": {
+      "title": "No Study Sets Yet",
+      "subtitle": "Create your first study set to organize your flashcards and learning materials",
+      "button": "Create Study Set"
+    },
+    "messages": {
+      "created": "Study set created successfully!",
+      "updated": "Study set updated successfully!",
+      "deleted": "Study set deleted successfully!",
+      "error": "Error Loading Study Sets",
+      "retry": "Retry"
+    },
+    "detail": {
+      "section_statistics": "Statistics",
+      "stat_flashcards_label": "Flashcards",
+      "stat_notes_label": "Notes",
+      "stat_analytics_label": "Analytics",
+      "quiz_history_title": "Quiz History",
+      "quiz_history_subtitle": "View your quiz performance",
+      "section_quick_actions": "Quick Actions",
+      "action_study_session": "Study Session (All cards)",
+      "action_quiz_mode": "Quiz Mode",
+      "action_match_game": "Match Game",
+      "action_live_quiz": "Live Quiz",
+      "action_browse_cards": "Browse Cards",
+      "action_add_cards": "Add Cards",
+      "section_sources": "Sources",
+      "sources_view_all": "View All",
+      "sources_document_singular": "Document",
+      "sources_documents_plural": "Documents",
+      "sources_subtitle": "Study materials and references",
+      "sources_empty_state": "No sources yet",
+      "sources_add_documents": "Add Documents",
+      "section_recent_activity": "Recent Activity",
+      "activity_empty_state": "No recent activity",
+      "menu_edit_study_set": "Edit Study Set",
+      "menu_share": "Share",
+      "menu_delete_study_set": "Delete Study Set",
+      "delete_confirm_title": "Delete Study Set?",
+      "delete_confirm_message": "This will permanently delete \"{title}\" and all its flashcards. This action cannot be undone.",
+      "delete_confirm_cancel": "Cancel",
+      "delete_confirm_delete": "Delete",
+      "study_no_cards_due": "No cards due for review! Great job! 🎉",
+      "study_failed_to_load": "Failed to load flashcards",
+      "add_cards_header": "Add Cards",
+      "add_cards_ready_status": "{count} card{s} ready",
+      "add_cards_submit_button": "Add to Study Set",
+      "toast_cards_added_success": "{count} cards added successfully!",
+      "toast_cards_add_error": "Failed to add cards: {message}",
+      "add_cards": "Add Cards",
+      "full_view": "Full View",
+      "manage_sources": "Manage Sources",
+      "view_full_analytics": "View Full Analytics",
+      "view_full_history": "View Full History",
+      "tab_flashcards": "Flashcards",
+      "tab_notes": "Notes",
+      "tab_sources": "Sources",
+      "tab_analytics": "Analytics",
+      "tab_quiz_history": "Quiz History",
+      "stat_flashcards": "Flashcards",
+      "stat_sources": "Sources",
+      "stat_due_review": "Due for Review",
+      "action_quiz": "Quiz Mode",
+      "action_match": "Match Game",
+      "countdown_days": "Days",
+      "countdown_hours": "Hours",
+      "countdown_minutes": "Minutes",
+      "countdown_seconds": "Seconds",
+      "no_flashcards_title": "No flashcards yet",
+      "no_flashcards_subtitle": "Add flashcards to start studying",
+      "no_notes_title": "No notes yet",
+      "no_notes_subtitle": "Create notes to organize your study material",
+      "no_sources_title": "No sources yet",
+      "no_sources_subtitle": "Upload documents to generate flashcards",
+      "analytics_total_cards": "Total Cards",
+      "analytics_mastery": "Mastery",
+      "analytics_due_now": "Due Now",
+      "analytics_mastered": "Mastered",
+      "quiz_quizzes": "Quizzes",
+      "quiz_attempts": "Attempts",
+      "quiz_best_score": "Best Score",
+      "no_quiz_title": "No quiz history",
+      "no_quiz_subtitle": "Take a quiz to see your results here",
+      "practice_section": "Practice",
+      "practice_study_session": "Study Session",
+      "practice_cards_due": "{count} cards due",
+      "practice_all_cards": "All cards",
+      "practice_quiz_mode": "Quiz Mode",
+      "practice_quiz_subtitle": "Test your knowledge",
+      "practice_match_game": "Match Game",
+      "practice_match_subtitle": "Match pairs",
+      "practice_live_quiz": "Live Quiz",
+      "practice_live_subtitle": "Play with friends",
+      "flashcard_edit": "Edit",
+      "flashcard_delete": "Delete",
+      "flashcard_preview": "Preview",
+      "flashcard_delete_title": "Delete Card",
+      "flashcard_delete_message": "Are you sure you want to delete this flashcard? This action cannot be undone.",
+      "flashcard_delete_cancel": "Cancel",
+      "flashcard_delete_confirm": "Delete",
+      "cards_count": "{count} cards",
+      "notes_count": "{count} notes",
+      "sources_count": "{count} sources",
+      "no_flashcards_button": "Add Cards",
+      "no_notes_button": "View Notes",
+      "no_sources_button": "Add Sources",
+      "no_quiz_button": "Start Quiz"
+    },
+    "create_edit": {
+      "title_create": "Create Study Set",
+      "create_study_set": "Create Study Set",
+      "title_edit": "Edit Study Set",
+      "cover_image": "Cover Image",
+      "tap_add_cover": "Tap to add cover image",
+      "tap_to_add_cover_image": "Tap to add cover image",
+      "title_label": "Title *",
+      "title_hint": "e.g., Biology 101",
+      "title_required": "Title is required",
+      "description_label": "Description",
+      "description": "Description",
+      "description_hint": "What is this study set about?",
+      "tags_label": "Tags",
+      "tags": "Tags",
+      "tags_hint": "biology, exam, chapter1",
+      "tags_helper": "Separate tags with commas",
+      "exam_date_label": "Exam Date (Optional)",
+      "exam_date_optional": "Exam Date (Optional)",
+      "exam_date_hint": "Select exam date",
+      "select_exam_date": "Select exam date",
+      "exam_subject_label": "Exam Subject",
+      "exam_subject_hint": "e.g., Midterm Exam, Final Exam",
+      "visibility_public": "Public",
+      "visibility_private": "Private",
+      "private": "Private",
+      "visibility_public_desc": "Anyone can view this study set",
+      "visibility_private_desc": "Only you can view this study set",
+      "private_description": "Only you can view this study set",
+      "save_changes": "Save Changes",
+      "create_button": "Create Study Set",
+      "delete_study_set": "Delete Study Set",
+      "delete_confirm_title": "Delete Study Set?",
+      "delete_confirm_message": "This will permanently delete \"{title}\" and all its flashcards. This action cannot be undone.",
+      "subtitle": "Organize your study materials",
+      "title_placeholder": "Enter a title, e.g. 'Biology 101 — Chapter 3'",
+      "description_placeholder": "Add a description (optional)",
+      "more_options": "More Options",
+      "less_options": "Less Options",
+      "add_tag": "Add a tag...",
+      "cancel": "Cancel",
+      "public": "Public",
+      "visibility_label": "Visibility",
+      "cards_ready_count": "{count} cards ready",
+      "create_with_cards": "Create with {count} cards",
+      "cards_failed": "Study set created but some cards failed to save",
+      "image_uploaded": "Image uploaded successfully!",
+      "upload_failed": "Failed to upload image"
+    },
+    "documents": {
+      "title": "Notes",
+      "create_note": "Create Note",
+      "no_notes_title": "No Notes Yet",
+      "no_notes_subtitle": "Create notes to organize your study material",
+      "note_title_label": "Title",
+      "note_title_hint": "Enter note title",
+      "note_content_label": "Content",
+      "note_content_hint": "Write your note here...",
+      "create_note_button": "Create Note",
+      "fill_both_fields": "Please fill in both title and content",
+      "note_created": "Note created successfully!",
+      "failed_to_create": "Failed to create note: {error}",
+      "content": "Content",
+      "write_your_note_here": "Write your note here...",
+      "no_notes_yet": "No Notes Yet",
+      "create_notes_description": "Create notes to organize your study material",
+      "failed_to_create_note": "Failed to create note: {error}",
+      "fill_title_and_content": "Please fill in both title and content",
+      "enter_note_title": "Enter note title",
+      "note_created_successfully": "Note created successfully!",
+      "notes": "Notes"
+    },
+    "flashcard_creation": {
+      "title": "Create Flashcards",
+      "tab_manual": "Manual",
+      "tab_ai": "AI Generate",
+      "tab_import": "Import",
+      "create_cards": "Create {count} {cards}",
+      "add_cards": "Add {count} {cards}",
+      "card": "Card",
+      "cards": "Cards",
+      "no_flashcards": "Please create at least one flashcard",
+      "no_flashcards_to_add": "No flashcards to add",
+      "create_flashcards": "Create Flashcards",
+      "create_at_least_one": "Please create at least one flashcard",
+      "ai_generate": "AI Generate",
+      "manual": "Manual",
+      "import": "Import"
+    },
+    "quiz_history": {
+      "title": "Quiz History",
+      "no_history_title": "No Quiz History",
+      "no_history_subtitle": "Take quizzes to see your performance history here",
+      "summary_quizzes": "Quizzes",
+      "summary_attempts": "Attempts",
+      "summary_best_score": "Best Score",
+      "questions": "{count} questions",
+      "attempts": "{count} attempt{s}",
+      "attempt": "attempt",
+      "best": "Best: {score}%",
+      "no_attempts": "No attempts yet",
+      "time_spent": "{minutes}m {seconds}s",
+      "failed_to_load": "Failed to load quiz history: {error}",
+      "quiz_history": "Quiz History",
+      "no_quiz_history": "No Quiz History",
+      "no_quiz_history_description": "Take quizzes to see your performance history here",
+      "quizzes": "Quizzes",
+      "best_score": "Best Score",
+      "questions_and_attempts": "{questionCount} questions • {attemptCount} attempts",
+      "questions_only": "{questionCount} questions • No attempts yet",
+      "no_attempts_yet": "No attempts yet",
+      "questions_and_time": "{totalQuestions} questions • {minutes}m {seconds}s"
+    },
+    "analytics_screen": {
+      "total_reviewed": "Total Reviewed",
+      "mastery": "Mastery",
+      "avg_difficulty": "Avg Difficulty",
+      "due_now": "Due Now"
+    }
+  },
+  "analytics": {
+    "title": "Analytics",
+    "timeRange": {
+      "sevenDays": "7 Days",
+      "thirtyDays": "30 Days",
+      "ninetyDays": "90 Days",
+      "allTime": "All Time"
+    },
+    "stats": {
+      "studyTime": "Study Time",
+      "cardsReviewed": "Cards Reviewed",
+      "quizzes": "Quizzes",
+      "avgScore": "Avg Score"
+    },
+    "sections": {
+      "studyActivity": "Study Activity",
+      "streak": "Streak",
+      "performance": "Performance"
+    },
+    "heatmap": {
+      "title": "Study Heatmap",
+      "less": "Less",
+      "more": "More"
+    },
+    "cardMastery": {
+      "title": "Card Mastery",
+      "noData": "No card data available"
+    },
+    "retentionCurve": {
+      "title": "Retention Curve",
+      "noData": "Start studying to see your retention curve"
+    },
+    "studyTime": {
+      "title": "Study Time",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "noData": "No study time recorded yet"
+    },
+    "streak": {
+      "title": "Streak Calendar",
+      "dayStreak": "day streak",
+      "dayAbbr": {
+        "sun": "S",
+        "mon": "M",
+        "tue": "T",
+        "wed": "W",
+        "thu": "T",
+        "fri": "F",
+        "sat": "S"
+      }
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    },
+    "cardStatus": {
+      "new": "New",
+      "learning": "Learning",
+      "review": "Review",
+      "mastered": "Mastered"
+    },
+    "chart": {
+      "percentageSymbol": "%",
+      "minutesSymbol": "m",
+      "dayLabel": "D"
+    },
+    "time": {
+      "hoursSymbol": "h",
+      "minutesSymbol": "m"
+    }
+  },
+  "learning_paths": {
+    "title": "Learning Paths",
+    "detail": {
+      "title": "Learning Path",
+      "learning_path": "Learning Path",
+      "complete": "Complete",
+      "your_journey": "Your Learning Journey",
+      "your_learning_journey": "Your Learning Journey",
+      "next_up": "Next Up",
+      "step_number": "Step {number}",
+      "steps": "Steps",
+      "remaining": "Remaining",
+      "total_time": "Total Time",
+      "overall_progress": "Overall Progress",
+      "stats": {
+        "steps": "Steps",
+        "remaining": "Remaining",
+        "total_time": "Total Time"
+      },
+      "progress": {
+        "overall": "Overall Progress",
+        "steps_count": "{completed}/{total} steps"
+      },
+      "minutes": "{minutes} minutes",
+      "view_resource": "View Resource",
+      "mark_done": "Done",
+      "mark_as_done": "Mark as Done",
+      "step_completed": "Step completed!",
+      "path_completed": "Completed!",
+      "steps_count": "{completed}/{total} steps",
+      "completed_on": "Completed on {date}"
+    },
+    "validation": {
+      "please_enter_topic": "Please enter a topic"
+    },
+    "messages": {
+      "path_created_success": "Learning path created!"
+    },
+    "how_it_works": {
+      "title": "How Learning Paths Work",
+      "step1_title": "Set Goals",
+      "step1_subtitle": "Tell AI your topic & level",
+      "step2_title": "Get Roadmap",
+      "step2_subtitle": "AI generates step-by-step plan",
+      "step3_title": "Track Progress",
+      "step3_subtitle": "Complete steps, see progress"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "generate_path": "Generate Path",
+      "generating": "Generating..."
+    },
+    "form": {
+      "title": "Create Learning Path",
+      "topic_label": "Topic",
+      "topic_hint": "e.g., Machine Learning, Calculus, Physics",
+      "current_level_label": "Current Level",
+      "target_level_label": "Target Level",
+      "level_beginner": "Beginner",
+      "level_intermediate": "Intermediate",
+      "level_advanced": "Advanced",
+      "level_expert": "Expert",
+      "study_time_label": "Study Time: {hours} hours/week"
+    },
+    "empty_state": {
+      "title": "No learning paths yet",
+      "subtitle": "Create your first personalized learning roadmap"
+    },
+    "path_card": {
+      "steps_count": "{completed}/{total} steps",
+      "hours_label": "{hours}h"
+    },
+    "dialogs": {
+      "delete_confirm_title": "Delete Learning Path?",
+      "delete_confirm_message": "This will permanently delete this path and all progress.",
+      "cancel_button": "Cancel",
+      "delete_button": "Delete"
+    }
+  },
+  "profile": {
+    "title": "Settings",
+    "subtitle": "Manage your account and preferences",
+    "settings": {
+      "profile": {
+        "title": "Profile",
+        "subtitle": "Name, avatar, education, subjects"
+      },
+      "account": {
+        "title": "Account Settings",
+        "subtitle": "Password, security, delete account"
+      },
+      "notifications": {
+        "title": "Notification Settings",
+        "subtitle": "Manage notification preferences"
+      },
+      "language": {
+        "title": "Language",
+        "choose": "Choose Language",
+        "close": "Close"
+      },
+      "subscription": {
+        "title": "Subscription",
+        "subtitle": "Plan, usage, invoices"
+      },
+      "logout": {
+        "title": "Logout",
+        "confirm_title": "Logout",
+        "confirm_message": "Are you sure you want to logout?",
+        "cancel": "Cancel",
+        "confirm": "Logout"
+      }
+    },
+    "plan": {
+      "free": "Free Plan",
+      "manage": "Manage",
+      "upgrade": "Upgrade"
+    },
+    "version": "Studyield v1.0.0",
+    "edit": {
+      "title": "Edit Profile",
+      "avatar": {
+        "default_initial": "U"
+      },
+      "display_name": {
+        "label": "Display Name",
+        "hint": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "No email",
+        "readonly_note": "Email cannot be changed"
+      },
+      "education_level": {
+        "label": "Education Level",
+        "options": {
+          "high_school": "High School",
+          "undergraduate": "Undergraduate",
+          "graduate": "Graduate",
+          "post_graduate": "Post Graduate",
+          "self_learner": "Self Learner",
+          "professional": "Professional"
+        }
+      },
+      "subjects": {
+        "label": "Subjects of Interest",
+        "common_header": "Common Subjects",
+        "custom_header": "Your Custom Subjects",
+        "add_custom": {
+          "label": "Add Custom Subject",
+          "hint": "Add custom subject"
+        },
+        "options": {
+          "mathematics": "Mathematics",
+          "physics": "Physics",
+          "chemistry": "Chemistry",
+          "biology": "Biology",
+          "computer_science": "Computer Science",
+          "english": "English",
+          "history": "History",
+          "geography": "Geography",
+          "economics": "Economics",
+          "psychology": "Psychology"
+        }
+      },
+      "button": {
+        "saving": "Saving...",
+        "save": "Save Changes",
+        "saved": "Saved!"
+      },
+      "message": {
+        "success": "Profile updated successfully!",
+        "error": "Failed to save profile"
+      },
+      "add": "Add"
+    },
+    "account": {
+      "title": "Account Settings",
+      "change_password": {
+        "title": "Change Password",
+        "subtitle": "Update your password regularly",
+        "current_password_label": "Current Password",
+        "new_password_label": "New Password",
+        "confirm_password_label": "Confirm New Password",
+        "button": "Change Password"
+      },
+      "validation": {
+        "current_password_required": "Current password is required",
+        "password_min_length": "New password must be at least 8 characters",
+        "passwords_mismatch": "Passwords do not match"
+      },
+      "messages": {
+        "password_changed_success": "Password changed successfully!"
+      },
+      "information": {
+        "title": "Account Information",
+        "email_label": "Email",
+        "plan_label": "Plan",
+        "plan_free": "Free",
+        "email_verified_label": "Email Verified",
+        "email_verified_yes": "Yes",
+        "member_since_label": "Member Since"
+      },
+      "delete": {
+        "title": "Delete Account",
+        "subtitle": "Permanently delete your account",
+        "button": "Delete My Account",
+        "warning_title": "This action cannot be undone!",
+        "warning_message": "All your data will be permanently deleted.",
+        "confirmation_instruction": "Type DELETE to confirm:",
+        "confirmation_hint": "DELETE",
+        "confirm_button": "Delete Forever",
+        "cancel_button": "Cancel"
+      }
+    }
+  },
+  "subscription": {
+    "main": {
+      "appbar_title": "Subscription",
+      "header_label": "Change or upgrade your plan",
+      "heading": "Choose Your Plan",
+      "subheading": "Unlock premium features to supercharge your learning",
+      "billing_monthly": "Monthly",
+      "billing_yearly": "Yearly",
+      "billing_yearly_save": "Save 17%",
+      "popular_badge": "MOST POPULAR",
+      "plan_trial_title": "7-Day Trial",
+      "plan_trial_subtitle": "Try before you commit",
+      "plan_pro_title": "Pro",
+      "plan_pro_monthly_subtitle": "Flexible monthly billing",
+      "plan_pro_yearly_subtitle": "Best value for serious learners",
+      "monthly_period": "/month",
+      "yearly_period": "/year",
+      "button_current_plan": "Current Plan",
+      "button_free_forever": "Free Forever",
+      "button_upgrade_pro": "Upgrade to Pro",
+      "features": {
+        "free_study_sets": "3 Study Sets",
+        "free_flashcards": "50 Flashcards",
+        "free_ai_requests": "10 AI Requests/month",
+        "basic_quizzes": "Basic Quizzes",
+        "spaced_repetition": "Spaced Repetition (SM-2)",
+        "cloze_image_occlusion": "Cloze & Image Occlusion Cards",
+        "handwriting_ocr": "Handwriting OCR",
+        "unlimited_study_sets": "Unlimited Study Sets",
+        "unlimited_flashcards": "Unlimited Flashcards",
+        "unlimited_ai_requests": "Unlimited AI Requests",
+        "all_quizzes": "All Quizzes + Live Quiz",
+        "problem_solver": "Problem Solver + Batch Solver",
+        "exam_cloning": "Exam Cloning",
+        "teach_back_mode": "Teach Back Mode",
+        "learning_paths": "Learning Paths",
+        "deep_research": "Deep Research",
+        "advanced_analytics": "Advanced Analytics",
+        "knowledge_base": "Knowledge Base",
+        "concept_maps": "Concept Maps + Formula Cards"
+      },
+      "trust_secure_title": "Secure",
+      "trust_secure_subtitle": "SSL encrypted",
+      "trust_flexible_title": "Flexible",
+      "trust_flexible_subtitle": "Cancel anytime",
+      "trust_free_title": "Free Forever",
+      "trust_free_subtitle": "No credit card to start"
+    },
+    "manage": {
+      "appbar_title": "Manage Subscription",
+      "error_open_portal": "Failed to open portal",
+      "cancel_dialog_title": "Cancel Subscription?",
+      "cancel_dialog_content": "You'll keep access until the end of your billing period.",
+      "cancel_dialog_keep_btn": "Keep Subscription",
+      "cancel_dialog_cancel_btn": "Cancel",
+      "cancel_success_message": "Subscription will cancel at period end",
+      "cancel_error_message": "Failed to cancel",
+      "default_plan_name": "Pro Plan",
+      "status_active": "Active",
+      "price_monthly": "/mo",
+      "price_yearly": "/yr",
+      "button_change_plan": "Change Plan",
+      "info_current_period_label": "Current period",
+      "info_next_billing_label": "Next billing",
+      "card_billing_history_title": "Billing History",
+      "card_billing_history_subtitle": "View past invoices",
+      "card_payment_methods_title": "Payment Methods",
+      "card_payment_methods_subtitle": "Update card or payment method",
+      "card_cancel_subscription_title": "Cancel Subscription",
+      "card_cancel_subscription_subtitle": "You'll keep access until period end",
+      "webview_title": "Billing Portal"
+    },
+    "checkout": {
+      "appbar_title": "Checkout",
+      "coupon_applied_message": "Coupon applied!",
+      "payment_success_message": "Payment successful!",
+      "payment_error_message": "Payment failed",
+      "header_title": "Upgrade to {plan}",
+      "header_subtitle_monthly": "MONTHLY subscription",
+      "header_subtitle_yearly": "YEARLY subscription",
+      "order_summary_label": "ORDER SUMMARY",
+      "plan_line_item": "{plan} Plan ({cycle})",
+      "coupon_applied_label": "Coupon Applied",
+      "coupon_discount_amount": "-${amount}",
+      "total_label": "Total",
+      "billing_period_year": "/year",
+      "billing_period_month": "/month",
+      "coupon_code_label": "Coupon Code",
+      "coupon_input_placeholder": "Enter coupon code",
+      "coupon_apply_button": "Apply",
+      "what_you_get_heading": "What You Get",
+      "features": {
+        "unlimited_ai": "Unlimited AI requests",
+        "premium_features": "All premium features unlocked",
+        "priority_support": "Priority support",
+        "advanced_analytics": "Advanced analytics",
+        "exam_cloning": "Exam cloning & generation",
+        "deep_research": "Deep research capabilities"
+      },
+      "button_processing": "Processing...",
+      "button_proceed": "Proceed to Payment",
+      "trust_ssl": "SSL Encrypted",
+      "trust_stripe": "Powered by Stripe",
+      "trust_cancel_anytime": "Cancel Anytime"
+    },
+    "success": {
+      "welcome_heading": "Welcome to Pro!",
+      "payment_successful_message": "Your payment was successful",
+      "info_plan_label": "Plan",
+      "info_status_label": "Status",
+      "info_status_active": "Active",
+      "features_heading": "Unlocked Features",
+      "button_continue": "Start Using Pro Features"
+    },
+    "webview": {
+      "appbar_title": "Complete Payment",
+      "error_loading_page": "Error loading page",
+      "cancel_dialog_title": "Cancel Payment?",
+      "cancel_dialog_content": "Are you sure you want to cancel this payment?",
+      "cancel_dialog_continue_btn": "No, Continue",
+      "cancel_dialog_cancel_btn": "Yes, Cancel"
+    },
+    "status_card": {
+      "status": "Status",
+      "renews_on": "Renews on",
+      "days_remaining": "Days remaining",
+      "unlimited_ai": "Unlimited AI Requests",
+      "unlimited_sets": "Unlimited Study Sets",
+      "storage": "10GB Storage",
+      "priority_support": "Priority Support"
+    }
+  },
+  "special_offer": {
+    "badge": "Welcome Offer",
+    "headline_start": "Get ",
+    "headline_discount": "20% OFF",
+    "headline_end": " Pro Today",
+    "subtitle": "Unlock your full learning potential with premium features",
+    "features": {
+      "unlimited_title": "Unlimited Everything",
+      "unlimited_desc": "Unlimited study sets, flashcards, and AI requests — no limits",
+      "ai_title": "Full AI Power",
+      "ai_desc": "Problem solver, exam cloning, deep research, and teach-back mode",
+      "premium_title": "Premium Tools",
+      "premium_desc": "Advanced analytics, learning paths, concept maps, and knowledge base"
+    },
+    "pricing": {
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "best_value": "Best Value",
+      "per_month": "/month",
+      "per_year": "/year",
+      "save_badge": "SAVE 20% — Limited Offer"
+    },
+    "cta": "Claim Your 20% Off Now",
+    "skip": "Maybe Later",
+    "urgency": "Offer ends soon — don't miss out!"
+  },
+  "notifications": {
+    "header": {
+      "title": "Notifications",
+      "unread_count": "{count} new",
+      "all_caught_up": "All caught up!",
+      "mark_all_as_read": "Mark all as read",
+      "clear_all": "Clear all"
+    },
+    "tabs": {
+      "all": "All",
+      "unread": "Unread",
+      "settings": "Settings"
+    },
+    "dialogs": {
+      "clear_all_title": "Clear All?",
+      "clear_all_message": "This will permanently delete all notifications.",
+      "cancel": "Cancel",
+      "delete_all": "Delete All"
+    },
+    "time": {
+      "just_now": "Just now",
+      "minutes_ago": "{minutes}m ago",
+      "hours_ago": "{hours}h ago",
+      "days_ago": "{days}d ago"
+    },
+    "empty": {
+      "no_notifications_title": "No Notifications",
+      "no_notifications_message": "We'll notify you when something\nimportant happens",
+      "all_caught_up_title": "All Caught Up!",
+      "all_caught_up_message": "You've read all your notifications.\nGreat job staying updated! 🎉",
+      "feature_stay_updated": "Stay Updated",
+      "feature_quick_actions": "Quick Actions",
+      "feature_track_progress": "Track Progress"
+    },
+    "card": {
+      "delete": "Delete",
+      "mark_as_read": "Mark as read"
+    },
+    "types": {
+      "info": "INFO",
+      "success": "SUCCESS",
+      "warning": "WARNING",
+      "reminder": "REMINDER",
+      "achievement": "ACHIEVEMENT",
+      "study": "STUDY"
+    },
+    "settings": {
+      "info_card_title": "Stay in the loop!",
+      "info_card_message": "Enable notifications to never miss important updates",
+      "channels_section": "Notification Channels",
+      "types_section": "What to Notify",
+      "in_app_title": "In-App Notifications",
+      "in_app_subtitle": "Receive notifications while using the app",
+      "email_title": "Email Notifications",
+      "email_subtitle": "Get important updates via email",
+      "push_title": "Push Notifications",
+      "push_subtitle": "Receive push alerts on this device",
+      "study_reminders_title": "Study Reminders",
+      "study_reminders_subtitle": "Reminders about due flashcards and study sessions",
+      "achievements_title": "Achievements & Milestones",
+      "achievements_subtitle": "Celebrate your learning achievements",
+      "weekly_digest_title": "Weekly Digest",
+      "weekly_digest_subtitle": "Summary of your weekly learning progress",
+      "footer_message": "Notification preferences sync across all your devices"
+    }
+  },
+  "flashcards": {
+    "add": {
+      "title_edit": "Edit Flashcard",
+      "title_add": "Add Flashcard",
+      "label_front": "Front Side (Question)",
+      "hint_front": "Enter the question or term",
+      "error_front_required": "Front side is required",
+      "label_back": "Back Side (Answer)",
+      "hint_back": "Enter the answer or definition",
+      "error_back_required": "Back side is required",
+      "label_notes": "Notes (Optional)",
+      "hint_notes": "Add additional notes or context",
+      "label_tags": "Tags (Optional)",
+      "hint_tags_example": "chapter1, important, review",
+      "helper_tags": "Separate tags with commas",
+      "button_save_changes": "Save Changes",
+      "button_create": "Create Flashcard"
+    },
+    "list": {
+      "label_flashcards": "Flashcards",
+      "sort_newest": "Newest First",
+      "sort_oldest": "Oldest First",
+      "sort_difficulty": "Difficulty",
+      "menu_newest": "Newest First",
+      "menu_oldest": "Oldest First",
+      "menu_difficulty": "Difficulty",
+      "toast_created": "Flashcard created successfully!",
+      "toast_updated": "Flashcard updated successfully!",
+      "toast_bulk_created": "{count} cards added successfully!",
+      "toast_deleted": "Flashcard deleted",
+      "error_title": "Error Loading Flashcards",
+      "button_retry": "Retry",
+      "filter_all": "All",
+      "filter_new": "New",
+      "filter_learning": "Learning",
+      "filter_review": "Review",
+      "filter_mastered": "Mastered",
+      "filter_due": "Due",
+      "empty_filter_message": "No cards in this category",
+      "button_add_cards": "Add Cards",
+      "modal_add_cards_title": "Add Cards",
+      "button_add_to_set": "Add to Study Set",
+      "ready_card_singular": "card",
+      "ready_cards_plural": "cards",
+      "ready_text": "ready",
+      "empty_title": "No Flashcards Yet",
+      "empty_message": "Create your first flashcard to start learning",
+      "empty_button": "Add Cards"
+    },
+    "study": {
+      "card_progress": "Card {current} of {total}",
+      "question_rating": "How well did you know it?",
+      "rating_again": "Again",
+      "rating_again_subtitle": "Forgot",
+      "rating_hard": "Hard",
+      "rating_hard_subtitle": "Difficult",
+      "rating_good": "Good",
+      "rating_good_subtitle": "Recalled",
+      "rating_easy": "Easy",
+      "rating_easy_subtitle": "Perfect",
+      "hint_tap_card": "Tap card to reveal answer",
+      "label_question": "QUESTION",
+      "label_answer": "ANSWER",
+      "exit_dialog_title": "Exit Study Session?",
+      "exit_dialog_message": "Your progress will not be saved if you exit now. Are you sure?",
+      "exit_button_continue": "Continue Studying",
+      "exit_button_exit": "Exit"
+    },
+    "widgets": {
+      "session_summary": {
+        "title": "Session Complete!",
+        "cards_reviewed": "You reviewed {count} cards",
+        "accuracy": "Accuracy",
+        "easy_good": "Easy/Good",
+        "hard": "Hard",
+        "again": "Again",
+        "done_button": "Done",
+        "done": "Done"
+      },
+      "ai_assist": {
+        "header": "AI Assist",
+        "suggest_answer_title": "Suggest Answer",
+        "suggest_answer_description": "Generate a comprehensive answer",
+        "elaborate_title": "Elaborate",
+        "elaborate_description": "Add more detail and context",
+        "add_mnemonic_title": "Add Mnemonic",
+        "add_mnemonic_description": "Create memory tricks to remember",
+        "simplify_title": "Simplify",
+        "simplify_description": "Rewrite in simpler language",
+        "suggestion_label": "AI Suggestion",
+        "try_again_button": "Try Again",
+        "accept_button": "Accept",
+        "suggestion_applied_toast": "AI suggestion applied!",
+        "title": "AI Assist",
+        "suggest_answer_desc": "Generate a comprehensive answer",
+        "elaborate_desc": "Add more detail and context",
+        "add_mnemonic_desc": "Create memory tricks to remember",
+        "simplify_desc": "Rewrite in simpler language",
+        "ai_suggestion": "AI Suggestion",
+        "try_again": "Try Again",
+        "applied_success": "AI suggestion applied!",
+        "accept": "Accept"
+      },
+      "ai_generation": {
+        "minimum_chars_error": "Please enter at least 50 characters",
+        "cards_ready_toast": "{count} cards ready to add",
+        "info_banner_text": "Let AI generate flashcards from your content",
+        "banner_text": "Let AI generate flashcards from your content",
+        "content_label": "Content",
+        "content_hint": "Paste your text, notes, or study material here...",
+        "char_counter_helper": "{count}/50 characters minimum",
+        "char_count": "{count}/50 characters minimum",
+        "card_count_label": "Number of Cards",
+        "number_of_cards": "Number of Cards",
+        "card_type_label": "Card Type",
+        "card_type": "Card Type",
+        "qa_type": "Q&A",
+        "type_qa": "Q&A",
+        "fill_blank_type": "Fill in Blank",
+        "type_fill_blank": "Fill in Blank",
+        "true_false_type": "True/False",
+        "type_true_false": "True/False",
+        "difficulty_label": "Difficulty",
+        "difficulty": "Difficulty",
+        "easy_difficulty": "Easy",
+        "difficulty_easy": "Easy",
+        "medium_difficulty": "Medium",
+        "difficulty_medium": "Medium",
+        "hard_difficulty": "Hard",
+        "difficulty_hard": "Hard",
+        "generating_button": "Generating...",
+        "generate_button": "Generate with AI",
+        "generated_cards_title": "Generated Cards ({count})",
+        "deselect_all_button": "Deselect All",
+        "select_all_button": "Select All",
+        "card_number_label": "Card {number}",
+        "answer_label": "Answer:",
+        "add_selected_button": "Add {count} Selected Cards",
+        "min_characters_error": "Please enter at least 50 characters",
+        "cards_ready": "{count} cards ready to add",
+        "generating": "Generating...",
+        "generated_cards": "Generated Cards ({count})",
+        "deselect_all": "Deselect All",
+        "select_all": "Select All",
+        "card_number": "Card {number}",
+        "add_selected": "Add {count} Selected Cards"
+      },
+      "manual_creation": {
+        "card_count_label": "{count} {cards}",
+        "card_count": {
+          "zero": "No cards",
+          "one": "1 Card",
+          "other": "{count} Cards"
+        },
+        "add_card_button": "Add Card",
+        "add_card": "Add Card",
+        "empty_state_title": "No cards yet",
+        "no_cards": "No cards yet",
+        "create_first_card_button": "Create your first card",
+        "create_first": "Create your first card",
+        "singular_card": "Card",
+        "plural_cards": "Cards",
+        "card_header_title": "Card {number}",
+        "ready_badge": "Ready",
+        "delete_card_tooltip": "Delete card",
+        "card_type_label": "Card Type",
+        "qa_type": "Q&A",
+        "cloze_type": "Cloze",
+        "image_occlusion_type": "Image Occlusion",
+        "front_label": "Front *",
+        "front_hint": "Question or prompt",
+        "back_label": "Back *",
+        "back_hint": "Answer or explanation",
+        "notes_label": "Notes (Optional)",
+        "notes_hint": "Additional context",
+        "tags_label": "Tags (Optional)",
+        "tags_hint": "topic1, topic2",
+        "tags_helper": "Separate tags with commas",
+        "card_number": "Card {number}",
+        "delete_tooltip": "Delete card",
+        "type_qa": "Q&A",
+        "type_cloze": "Cloze",
+        "type_image_occlusion": "Image Occlusion",
+        "ready": "Ready",
+        "card_type": "Card Type"
+      },
+      "editor": {
+        "manual_tab": "Manual",
+        "ai_tab": "AI",
+        "import_tab": "Import",
+        "tab_manual": "Manual",
+        "tab_ai": "AI",
+        "tab_import": "Import"
+      },
+      "import": {
+        "recording_saved_toast": "Recording saved!",
+        "microphone_permission_error": "Microphone permission denied",
+        "recording_started_toast": "Recording started...",
+        "recording_failed_error": "Recording failed",
+        "file_pick_error": "Failed to pick file",
+        "camera_open_error": "Failed to open camera",
+        "image_pick_error": "Failed to pick image",
+        "no_text_in_image_error": "No text found in image",
+        "text_extracted_success": "Text extracted successfully!",
+        "image_process_error": "Failed to process image",
+        "empty_text_error": "Please enter text to import",
+        "no_file_selected_error": "Please select a file",
+        "no_audio_error": "Please record or select an audio file first",
+        "no_image_error": "Please scan or select an image first",
+        "no_google_docs_url_error": "Please enter Google Docs URL",
+        "no_youtube_url_error": "Please enter YouTube URL",
+        "no_website_url_error": "Please enter website URL",
+        "cards_ready_toast": "{count} cards ready to add",
+        "info_banner_text": "Import flashcards from various sources",
+        "banner_text": "Import flashcards from various sources",
+        "source_label": "Import Source",
+        "pdf_source": "PDF Upload",
+        "source_pdf": "PDF Upload",
+        "youtube_source": "YouTube Video",
+        "source_youtube": "YouTube Video",
+        "record_audio_source": "Record Audio",
+        "source_record_audio": "Record Audio",
+        "audio_file_source": "Audio File",
+        "source_audio_file": "Audio File",
+        "website_source": "Website URL",
+        "source_website": "Website URL",
+        "camera_source": "Camera Scan",
+        "source_camera": "Camera Scan",
+        "google_docs_source": "Google Docs",
+        "source_google_docs": "Google Docs",
+        "text_source": "Paste Text",
+        "source_text": "Paste Text",
+        "handwritten_source": "Handwritten Notes",
+        "source_handwritten": "Handwritten Notes",
+        "text_label": "Paste Text",
+        "text_hint": "Enter your flashcard content...",
+        "pdf_description": "Upload your PDF documents",
+        "choose_pdf_button": "Choose PDF",
+        "change_pdf_button": "Change PDF",
+        "recording_in_progress_text": "Recording...",
+        "recording_saved_text": "Recording saved!",
+        "tap_to_record_text": "Tap to start recording",
+        "record_voice_hint": "Record your voice and we'll transcribe it",
+        "stop_recording_button": "Stop Recording",
+        "start_recording_button": "Start Recording",
+        "record_again_button": "Record Again",
+        "choose_audio_button": "Choose Audio File",
+        "change_audio_button": "Change File",
+        "audio_formats_helper": "Supports: MP3, WAV, M4A",
+        "camera_title": "Scan documents with camera",
+        "camera_hint": "Take a photo of your notes or textbook",
+        "open_camera_button": "Open Camera",
+        "google_docs_label": "Google Docs URL",
+        "google_docs_hint": "https://docs.google.com/document/d/...",
+        "google_docs_helper": "Paste a shareable Google Docs link",
+        "handwritten_title": "Scan handwritten notes",
+        "handwritten_hint": "We'll extract text from your handwritten notes",
+        "take_photo_button": "Take Photo",
+        "from_gallery_button": "From Gallery",
+        "paste_text_label": "Paste Text",
+        "paste_text_hint": "Enter your flashcard content...",
+        "separator_label": "Card Separator",
+        "separator_hint": "e.g., \\n\\n or ---",
+        "separator_helper": "Pattern to split cards",
+        "choose_file_button": "Choose File",
+        "change_file_button": "Change File",
+        "file_formats_helper": "Supports: PDF, TXT, CSV, MD",
+        "youtube_label": "YouTube URL",
+        "youtube_hint": "https://youtube.com/watch?v=...",
+        "youtube_helper": "We'll extract the transcript",
+        "website_label": "Website URL",
+        "website_hint": "https://example.com",
+        "website_helper": "We'll extract the content",
+        "importing_button": "Importing...",
+        "import_button": "Import Flashcards",
+        "imported_cards_title": "Imported Cards ({count})",
+        "card_number_label": "Card {number}",
+        "add_to_study_set_button": "Add {count} Cards to Study Set",
+        "mic_permission_denied": "Microphone permission denied",
+        "file_pick_failed": "Failed to pick file: {error}",
+        "camera_failed": "Failed to open camera: {error}",
+        "image_pick_failed": "Failed to pick image: {error}",
+        "no_text_found": "No text found in image",
+        "image_process_failed": "Failed to process image: {error}",
+        "enter_text_error": "Please enter text to import",
+        "select_file_error": "Please select a file",
+        "select_audio_error": "Please record or select an audio file first",
+        "select_image_error": "Please scan or select an image first",
+        "enter_gdocs_url_error": "Please enter Google Docs URL",
+        "enter_youtube_url_error": "Please enter YouTube URL",
+        "enter_website_url_error": "Please enter website URL",
+        "pdf_hint": "Upload your PDF documents",
+        "record_hint": "Record your voice and we'll transcribe it",
+        "add_to_set": "Add {count} Cards to Study Set",
+        "gdocs_label": "Google Docs URL",
+        "gdocs_hint": "https://docs.google.com/document/d/...",
+        "gdocs_helper": "Paste a shareable Google Docs link",
+        "recording_saved": "Recording saved!",
+        "recording_started": "Recording started...",
+        "recording_failed": "Recording failed",
+        "text_extracted": "Text extracted successfully!",
+        "cards_ready": "{count} cards ready to add",
+        "choose_pdf": "Choose PDF",
+        "change_pdf": "Change PDF",
+        "recording": "Recording...",
+        "tap_to_record": "Tap to start recording",
+        "stop_recording": "Stop Recording",
+        "record_again": "Record Again",
+        "start_recording": "Start Recording",
+        "choose_audio": "Choose Audio File",
+        "change_file": "Change File",
+        "audio_formats": "Supports: MP3, WAV, M4A",
+        "open_camera": "Open Camera",
+        "take_photo": "Take Photo",
+        "from_gallery": "From Gallery",
+        "choose_file": "Choose File",
+        "file_formats": "Supports: PDF, TXT, CSV, MD",
+        "importing": "Importing...",
+        "imported_cards": "Imported Cards ({count})",
+        "card_number": "Card {number}"
+      }
+    },
+    "list_item": {
+      "edit_card": "Edit Card",
+      "delete_title": "Delete Flashcard?",
+      "delete_message": "This action cannot be undone."
+    }
+  },
+  "notes": {
+    "title": "Notes",
+    "mindMapHistoryTooltip": "Mind Map History",
+    "mindMapTooltip": "Mind Map",
+    "aiGenerateButton": "AI Generate",
+    "addNoteButton": "Add Note",
+    "emptyStateTitle": "No Notes Yet",
+    "emptyStateSubtitle": "Create notes to organize your learning material",
+    "createManuallyButton": "Create Manually",
+    "noSearchResultsTitle": "No notes match your search",
+    "noSearchResultsSubtitle": "Try adjusting your search or filter",
+    "createSuccess": "Note created successfully!",
+    "deleteSuccess": "Note deleted successfully!",
+    "updateSuccess": "Note updated successfully!",
+    "aiNotesGeneratedSuccess": "{count} AI notes generated!",
+    "deleteConfirmationTitle": "Delete Note?",
+    "deleteConfirmationMessage": "Are you sure you want to delete \"{title}\"?",
+    "searchPlaceholder": "Search notes...",
+    "filterAll": "All",
+    "filterMoreTags": "+{count} more",
+    "sortNewest": "Newest First",
+    "sortOldest": "Oldest First",
+    "sortTitle": "Title A-Z",
+    "createNoteTitle": "Create Note",
+    "editNoteTitle": "Edit Note",
+    "titleLabel": "Title",
+    "titleHint": "Enter note title",
+    "titleValidation": "Please enter a title",
+    "contentLabel": "Content",
+    "contentHint": "Write your note here...\n\nSupports Markdown formatting",
+    "contentValidation": "Please enter content",
+    "tagsLabel": "Tags (Optional)",
+    "tagsHint": "e.g., biology, important, chapter1 (comma separated)",
+    "tagsHintEdit": "Comma separated",
+    "markdownHelpText": "You can use Markdown syntax for formatting:\n• **bold**, *italic*, `code`\n• # Heading, ## Subheading\n• - Lists",
+    "createNoteSubmitButton": "Create Note",
+    "updateNoteButton": "Update Note",
+    "pinnedBadge": "Pinned",
+    "updatedDateLabel": "Updated {date}",
+    "generateAITitle": "Generate Note with AI",
+    "generateAISubtitle": "Extract content and create smart notes",
+    "sourceTypePDF": "PDF Document",
+    "sourceTypePDFDescription": "Upload PDF files",
+    "sourceTypeYouTube": "YouTube Video",
+    "sourceTypeYouTubeDescription": "Extract from video",
+    "sourceTypeWebsite": "Website URL",
+    "sourceTypeWebsiteDescription": "Scrape webpage",
+    "sourceTypeAudio": "Audio File",
+    "sourceTypeAudioDescription": "Transcribe audio",
+    "sourceTypeHandwriting": "Handwritten",
+    "sourceTypeHandwritingDescription": "OCR from image",
+    "sourceTypeText": "Paste Text",
+    "sourceTypeTextDescription": "From clipboard",
+    "chooseSourceLabel": "Choose your content source",
+    "youtubeUrlLabel": "YouTube URL",
+    "youtubeUrlHint": "https://www.youtube.com/watch?v=...",
+    "websiteUrlLabel": "Website URL",
+    "websiteUrlHint": "https://en.wikipedia.org/wiki/...",
+    "pasteContentLabel": "Paste your content",
+    "pasteContentHint": "Paste lecture notes, article text, or any content...",
+    "characterCount": "{count} characters",
+    "fileUploadPrompt": "Drop file here or click to browse",
+    "pdfFileTypes": "PDF, TXT, MD (max 20MB)",
+    "audioFileTypes": "MP3, WAV, M4A (max 50MB)",
+    "imageFileTypes": "JPG, PNG, HEIC (max 20MB)",
+    "extractGenerateButton": "Extract & Generate Note",
+    "processingTitle": "Processing your content",
+    "processingSubtitle": "This may take a moment...",
+    "processingStep1": "Extracting content",
+    "processingStep2": "Analyzing text",
+    "processingStep3": "Generating summary",
+    "processingStep4": "Creating note",
+    "extractionSuccess": "Content extracted successfully!",
+    "aiSummaryLabel": "AI Summary",
+    "suggestedTagsLabel": "Suggested Tags",
+    "contentPreviewLabel": "Content Preview ({count} characters)",
+    "startOverButton": "Start Over",
+    "saveNoteButton": "Save Note",
+    "generatingPresentationTitle": "Generating Presentation",
+    "generatingPresentationSubtitle": "AI is creating slides from your note...",
+    "generationFailedTitle": "Generation Failed",
+    "aiGeneratedBadge": "AI Generated",
+    "regenerateButton": "Regenerate",
+    "mindMapTitle": "Mind Map",
+    "generatingMindMapMessage": "Generating mind map...",
+    "mindMapGenerationFailed": "Failed to generate mind map",
+    "mindMapHistoryTitle": "Mind Map History",
+    "failedToLoadHistory": "Failed to load history",
+    "noMindMapsEmptyTitle": "No mind maps yet",
+    "noMindMapsEmptySubtitle": "Generate mind maps from your notes",
+    "mindMapDeletedSuccess": "Mind map deleted",
+    "mindMapDeleteFailed": "Failed to delete",
+    "mindMapLoadFailed": "Failed to load",
+    "deleteMindMapTitle": "Delete Mind Map",
+    "deleteMindMapConfirmation": "Are you sure you want to delete this mind map?",
+    "analyzingNotesMessage": "Analyzing your notes...",
+    "creatingMindMapMessage": "Creating mind map",
+    "mindMapGuideTitle": "Mind Map Guide",
+    "mindMapGuideContent": "This mind map visualizes all concepts from your notes.\n\n• Pinch to zoom in/out\n• Drag to pan around\n• Tap refresh to regenerate",
+    "mindMapHelpText": "Pinch to zoom • Drag to explore the map",
+    "noNotesForMindMap": "No notes available to generate mind map",
+    "shareNoteTitle": "Share Note",
+    "shareLinkLabel": "Share Link",
+    "shareToSocialLabel": "Share to Social",
+    "shareWhatsApp": "WhatsApp",
+    "shareTwitter": "Twitter",
+    "shareFacebook": "Facebook",
+    "shareLinkedIn": "LinkedIn",
+    "shareEmail": "Email",
+    "downloadLabel": "Download",
+    "downloadText": "Text (.txt)",
+    "downloadMarkdown": "Markdown (.md)",
+    "sharingPreviewLabel": "Sharing",
+    "linkCopiedSuccess": "Link copied to clipboard!",
+    "downloadTextSuccess": "Downloaded: {title}.txt",
+    "downloadFailed": "Failed to download",
+    "downloadMarkdownSuccess": "Downloaded: {title}.md",
+    "source_types": {
+      "pdf": "PDF",
+      "youtube": "YouTube",
+      "website": "Website",
+      "audio": "Audio",
+      "handwriting": "Handwriting",
+      "text": "Text"
+    }
+  },
+  "quiz": {
+    "live_lobby": {
+      "room_code": "Room Code",
+      "copy_code": "Copy code",
+      "share_code": "Share this code with friends to join",
+      "room_code_copied": "Room code copied!",
+      "players": "Players ({count})",
+      "host_badge": "HOST",
+      "starting": "Starting...",
+      "start_game": "Start Game",
+      "waiting_for_host": "Waiting for host to start the game...",
+      "error_occurred": "An error occurred"
+    },
+    "live_quiz": {
+      "title": "Live Quiz",
+      "hero_title": "Compete in Real-Time",
+      "hero_subtitle": "Play with friends and see who knows more!",
+      "host_game": "Host a Game",
+      "host_description": "Create a room and share the code with friends",
+      "creating_room": "Creating Room...",
+      "create_room": "Create Room",
+      "or": "OR",
+      "join_game": "Join a Game",
+      "room_code_label": "Room Code",
+      "room_code_hint": "ABC123",
+      "your_name_label": "Your Name",
+      "your_name_hint": "Enter your name",
+      "joining": "Joining...",
+      "join_room": "Join Room",
+      "please_enter_room_code": "Please enter room code",
+      "please_enter_name": "Please enter your name",
+      "failed_to_create_room": "Failed to create room",
+      "failed_to_join_room": "Failed to join room",
+      "error": "Error: {error}"
+    },
+    "match_game": {
+      "title": "Match Game",
+      "reset_game": "Reset game",
+      "time": "Time",
+      "moves": "Moves",
+      "matches": "Matches",
+      "questions": "QUESTIONS",
+      "answers": "ANSWERS",
+      "congratulations": "Congratulations! 🎉",
+      "completed_message": "Completed in {seconds} seconds with {moves} moves",
+      "play_again": "Play Again",
+      "no_flashcards_available": "No flashcards available for matching",
+      "failed_to_load": "Failed to load flashcards: {error}",
+      "time_seconds": "{seconds}s"
+    },
+    "mode": {
+      "title": "Quiz Mode",
+      "hero_title": "Test Your Knowledge",
+      "hero_subtitle": "AI-generated questions from your flashcards",
+      "number_of_questions": "Number of Questions",
+      "question_types": "Question Types",
+      "multiple_choice": "Multiple Choice",
+      "multiple_choice_description": "4 options, pick one",
+      "true_false": "True / False",
+      "true_false_description": "Decide if the statement is correct",
+      "fill_blank": "Fill in the Blank",
+      "fill_blank_description": "Type the missing word or phrase",
+      "timer": "Timer",
+      "timer_description": "30 seconds per question",
+      "generating_quiz": "Generating Quiz...",
+      "generate_start_quiz": "Generate & Start Quiz",
+      "please_select_question_type": "Please select at least one question type",
+      "failed_to_generate": "Failed to generate quiz: {error}"
+    },
+    "results": {
+      "title": "Quiz Results",
+      "score": "Score",
+      "outstanding": "Outstanding! 🎉",
+      "great_job": "Great job! 👏",
+      "good_effort": "Good effort! 💪",
+      "keep_practicing": "Keep practicing! 📚",
+      "correct": "Correct",
+      "incorrect": "Incorrect",
+      "time": "Time",
+      "time_minutes": "{minutes}m",
+      "back_to_study_set": "Back to Study Set",
+      "try_again": "Try Again"
+    },
+    "taking": {
+      "exit_quiz": "Exit Quiz?",
+      "exit_message": "Your progress will be lost.",
+      "cancel": "Cancel",
+      "exit": "Exit",
+      "question_progress": "{current}/{total}",
+      "submitting": "Submitting...",
+      "type_answer_here": "Type your answer here...",
+      "submit_answer": "Submit Answer",
+      "correct_feedback": "Correct!",
+      "incorrect_feedback": "Incorrect",
+      "correct_answer": "Correct answer: {answer}",
+      "explanation": "Explanation",
+      "previous": "Previous",
+      "next_question": "Next Question",
+      "submit_quiz": "Submit Quiz",
+      "failed_to_submit": "Failed to submit quiz: {error}"
+    }
+  },
+  "research": {
+    "title": "Deep Research",
+    "messages": {
+      "please_enter_query": "Please enter a research query",
+      "creating": "Creating Research...",
+      "loading_report": "Loading research report...",
+      "pdf_export_soon": "PDF export coming soon!",
+      "markdown_copied": "Markdown copied to clipboard!",
+      "report_copied": "Report copied!",
+      "could_not_open_link": "Could not open link"
+    },
+    "form": {
+      "query_hint": "e.g., \"Explain quantum computing in detail\"",
+      "ai_powered_research": "AI-Powered Research",
+      "deep_dive_topic": "Deep dive into any topic"
+    },
+    "sections": {
+      "source_types": "📚 Source Types",
+      "research_depth": "🔍 Research Depth",
+      "output_format": "📄 Output Format"
+    },
+    "source_types": {
+      "documents": "Documents",
+      "web": "Web",
+      "academic": "Academic"
+    },
+    "depth": {
+      "quick": "Quick",
+      "standard": "Standard",
+      "comprehensive": "Comprehensive"
+    },
+    "output_format": {
+      "detailed": "Detailed",
+      "summary": "Summary",
+      "bullets": "Bullets"
+    },
+    "buttons": {
+      "start_research": "Start Deep Research",
+      "cancel": "Cancel"
+    },
+    "recent": {
+      "title": "Recent Research",
+      "done": "Done",
+      "failed": "Failed",
+      "in_progress": "In Progress"
+    },
+    "progress": {
+      "title": "Research in Progress",
+      "query_label": "Research Query",
+      "overall_progress": "Overall Progress",
+      "pipeline_title": "Research Pipeline",
+      "phases": {
+        "planning": "Planning",
+        "researching": "Researching",
+        "synthesizing": "Synthesizing",
+        "completed": "Completed",
+        "failed": "Failed",
+        "starting": "Starting"
+      },
+      "agents": {
+        "planning": "Planning Agent",
+        "planning_desc": "Analyzing query and planning research strategy",
+        "research": "Research Agent",
+        "research_desc": "Gathering information from selected sources",
+        "synthesis": "Synthesis Agent",
+        "synthesis_desc": "Compiling and organizing findings"
+      }
+    },
+    "report": {
+      "deep_research": "DEEP RESEARCH",
+      "tab_report": "Report",
+      "tab_sources": "Sources ({count})",
+      "tab_export": "Export",
+      "executive_summary": "Executive Summary",
+      "key_insights": "Key Insights",
+      "sources_references": "Sources & References",
+      "sources_cited": "{count} sources cited",
+      "no_sources": "No sources found",
+      "knowledge_base_sources": "Knowledge Base ({count})",
+      "web_sources": "Web Sources ({count})",
+      "study_material": "Study Material",
+      "relevance": "{score}% Relevance",
+      "relevance_label": "Relevance",
+      "citation_copied": "Citation copied!",
+      "export_title": "Export Research",
+      "export_format": "Export Format",
+      "export_pdf": "Export as PDF",
+      "export_pdf_desc": "Save as PDF document",
+      "export_markdown": "Copy as Markdown",
+      "export_markdown_desc": "Formatted text with citations",
+      "export_plain": "Copy Plain Text",
+      "export_plain_desc": "Simple text without formatting",
+      "share": "Share Report",
+      "share_desc": "Share via other apps",
+      "citation_style": "Citation Style",
+      "citation_preview": "PREVIEW",
+      "delete_confirm_title": "Delete Research?",
+      "delete_confirm_message": "This research report will be permanently deleted.",
+      "delete_confirm_cancel": "Cancel",
+      "delete_confirm_delete": "Delete"
+    },
+    "date": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "days_ago": "{days} days ago"
+    }
+  },
+  "ai_chat": {
+    "title": "Study Buddy",
+    "history_title": "Chat History",
+    "history_subtitle": "Your AI conversations",
+    "new_conversation": "New Conversation",
+    "messages": {
+      "ask_anything": "Ask me anything...",
+      "thinking": "Thinking...",
+      "no_conversations": "No conversations yet",
+      "start_new": "Start a new chat to begin",
+      "search_conversations": "Search conversations...",
+      "delete_confirm_title": "Delete Conversation?",
+      "delete_confirm_message": "This will permanently delete this conversation and all messages.",
+      "delete_confirm_cancel": "Cancel",
+      "delete_confirm_delete": "Delete"
+    },
+    "empty_state": {
+      "title": "Study Buddy",
+      "description": "Ask questions about your study materials, get explanations, summaries, and more.\nI can reference your documents and provide cited answers.",
+      "prompts": {
+        "explain": "Explain the key concepts of this topic",
+        "summary": "Create a summary of my study materials",
+        "important": "What are the most important points to remember?",
+        "examples": "Help me understand this better with examples"
+      }
+    },
+    "file_picker": {
+      "gallery": "Pick from gallery",
+      "camera": "Take photo",
+      "pdf": "Pick PDF document"
+    },
+    "history": {
+      "new_chat": "New Chat",
+      "no_message": "No conversations yet"
+    },
+    "date": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "days_ago": "{days} days ago"
+    }
+  },
+  "teach_back": {
+    "title": "Teach Back",
+    "messages": {
+      "please_enter_topic": "Please enter a topic",
+      "please_select_study_set": "Please select a study set",
+      "please_enter_explanation": "Please enter your explanation",
+      "explanation_submitted": "Explanation submitted!",
+      "no_study_sets": "No study sets found. Create one first!"
+    },
+    "feynman": {
+      "title": "Feynman Technique",
+      "step1": "Choose Topic",
+      "step1_desc": "Pick a concept",
+      "step2": "Explain Simply",
+      "step2_desc": "Teach it back",
+      "step3": "Get Feedback",
+      "step3_desc": "AI evaluates",
+      "step4": "Fill Gaps",
+      "step4_desc": "Improve & retry"
+    },
+    "form": {
+      "mode_topic": "Enter Topic",
+      "mode_study_set": "From Study Set",
+      "topic_label": "What topic do you want to master?",
+      "topic_hint": "e.g., Pythagorean Theorem, Photosynthesis, Supply & Demand...",
+      "quick_picks": "Quick picks:",
+      "reference_label": "Reference material (optional — helps AI evaluate better)",
+      "reference_hint": "Paste textbook notes, lecture content, or key points here...",
+      "study_set_label": "Pick a study set — AI will auto-generate the topic from your flashcards",
+      "study_set_empty": "No study sets found. Create one first!",
+      "cards_count": "{count} cards",
+      "cancel": "Cancel",
+      "generate_start": "Generate & Start",
+      "start_teaching": "Start Teaching",
+      "generating": "Generating...",
+      "creating": "Creating..."
+    },
+    "session": {
+      "essentials_title": "Review Essentials",
+      "load_essentials": "Load Essentials",
+      "who_explaining": "Who are you explaining to?",
+      "difficulty_eli5": "A 5-year-old",
+      "difficulty_eli5_desc": "Simplest possible",
+      "difficulty_classmate": "A classmate",
+      "difficulty_classmate_desc": "Normal level",
+      "difficulty_expert": "An expert",
+      "difficulty_expert_desc": "Technical depth",
+      "explanation_title": "Your Explanation",
+      "explanation_hint": "Explain the concept in your own words...",
+      "characters_count": "{count} characters",
+      "submit_explanation": "Submit Explanation",
+      "submitting": "Submitting...",
+      "review_explanation": "Review your explanation",
+      "evaluate_button": "Evaluate My Explanation",
+      "evaluating": "Evaluating...",
+      "challenge_button": "Challenge",
+      "convince_ai_title": "Convince the AI",
+      "convince_ai_desc": "A skeptical AI student will ask probing questions. Defend your understanding!",
+      "convinced_badge": "Convinced! +20 XP",
+      "skeptical_student": "Skeptical Student",
+      "defend_hint": "Defend your understanding...",
+      "thinking": "Thinking..."
+    },
+    "progress": {
+      "phase_explain": "Explain",
+      "phase_submit": "Submit",
+      "phase_evaluate": "Evaluate"
+    },
+    "evaluation": {
+      "xp_earned": "+50 XP earned!",
+      "overall_score": "Overall Score",
+      "score_breakdown": "Score Breakdown",
+      "accuracy": "Accuracy",
+      "clarity": "Clarity",
+      "completeness": "Completeness",
+      "understanding": "Understanding",
+      "strengths": "Strengths",
+      "improve": "How to Improve",
+      "deepen": "Deepen Your Understanding",
+      "try_again": "Try Again",
+      "new_topic": "New Topic",
+      "score_excellent": "Excellent understanding!",
+      "score_good": "Good understanding!",
+      "score_fair": "Fair understanding",
+      "score_needs_improvement": "Needs improvement"
+    },
+    "status": {
+      "pending": "Pending",
+      "submitted": "Submitted",
+      "evaluated": "Evaluated"
+    },
+    "difficulty": {
+      "eli5": "ELI5",
+      "classmate": "CLASSMATE",
+      "expert": "EXPERT"
+    },
+    "empty_state": {
+      "title": "No teach back sessions yet",
+      "subtitle": "Test your understanding using the Feynman Technique"
+    }
+  },
+  "common": {
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "close": "Close",
+    "retry": "Retry",
+    "tryAgain": "Try Again",
+    "errorGeneric": "Something went wrong",
+    "noData": "No data",
+    "gotIt": "Got it",
+    "edit": "Edit",
+    "save": "Save",
+    "add": "Add",
+    "copy": "Copy",
+    "logout": "Logout",
+    "skip": "Skip",
+    "copied": "Copied",
+    "next": "Next",
+    "continue_action": "Continue",
+    "got_it": "Got it!",
+    "leave": "Leave",
+    "stay": "Stay",
+    "more": "More",
+    "view_full": "Full View",
+    "edit_card": "Edit Card",
+    "delete_flashcard_title": "Delete Flashcard?",
+    "delete_flashcard_message": "This action cannot be undone.",
+    "code_copied": "Code copied to clipboard",
+    "could_not_open_link": "Could not open link",
+    "please_enter_text": "Please enter some text",
+    "loading": "Loading..."
+  },
+  "exam_clone": {
+    "list": {
+      "title": "Exam Clone Engine",
+      "subtitle": "AI-powered practice exams",
+      "upload_tooltip": "Upload Exam",
+      "loading": "Loading exams...",
+      "overview": "Overview",
+      "your_exams": "Your Exams",
+      "upload_button": "Upload",
+      "no_exams_title": "No Exams Yet",
+      "no_exams_subtitle": "Upload your first exam to start generating\npractice questions with AI",
+      "upload_exam_button": "Upload Exam",
+      "review_queue": "Review Queue",
+      "review_queue_subtitle_due": "{count} due",
+      "review_queue_subtitle_caught_up": "All caught up",
+      "due_count": "{count} due",
+      "bookmarks": "Bookmarks",
+      "bookmarks_subtitle": "Saved questions",
+      "saved_questions": "Saved Questions",
+      "badges": "Badges",
+      "badges_subtitle": "Achievements",
+      "achievements": "Achievements",
+      "leaderboard": "Leaderboard",
+      "leaderboard_subtitle": "Rankings",
+      "rankings": "Rankings",
+      "upload": "Upload",
+      "analysis": "Analysis",
+      "practice": "Practice",
+      "notification_title": "{count} {questions} Due!",
+      "notification_subtitle": "Time to practice and strengthen your memory",
+      "notification": {
+        "multiple_due": "{count} Questions Due!",
+        "message": "Time to practice and strengthen your memory",
+        "single_due": "1 Question Due!"
+      },
+      "question": "Question",
+      "questions": "Questions",
+      "stats": {
+        "exams": "Exams",
+        "original": "Original",
+        "generated": "Generated",
+        "ready": "Ready",
+        "failed": "Failed",
+        "pending": "Pending",
+        "processing": "Processing"
+      },
+      "all_caught_up": "All caught up",
+      "failed": "Processing Failed",
+      "delete_dialog": {
+        "title": "Delete Exam?",
+        "message": "This will permanently delete this exam and all generated questions.",
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "empty": {
+        "title": "No Exams Yet",
+        "message": "Upload your first exam to start generating practice questions with AI",
+        "button": "Upload Your First Exam"
+      }
+    },
+    "upload": {
+      "title": "Upload Exam",
+      "subtitle": "Upload a past exam to generate practice questions",
+      "title_label": "Exam Title *",
+      "title_hint": "e.g., Midterm Exam, Biology Final",
+      "subject_label": "Subject",
+      "subject_hint": "e.g., Biology, Mathematics",
+      "method_label": "Upload Method",
+      "upload_pdf": "Upload PDF",
+      "upload_pdf_desc": "Upload exam as PDF file",
+      "paste_text": "Paste Text",
+      "paste_text_desc": "Copy and paste exam text",
+      "pdf_label": "Select PDF File",
+      "pdf_hint": "Tap to select PDF",
+      "text_label": "Exam Text",
+      "text_hint": "Paste your exam questions here...",
+      "uploading": "Uploading...",
+      "upload_button": "Upload Exam",
+      "upload_analyze": "Upload & Analyze",
+      "click_upload": "Click to upload",
+      "file_formats": "Supported: PDF, JPG, PNG",
+      "tip_pdf_fail": "If PDF fails, try taking a clear photo of the exam",
+      "title_required": "Please enter an exam title",
+      "file_required": "Please select a PDF file",
+      "text_required": "Please paste exam text",
+      "character_count": "{count} characters",
+      "error_title_required": "Please enter an exam title",
+      "error_file_required": "Please select a PDF file",
+      "error_content_required": "Please enter exam content"
+    },
+    "detail": {
+      "title": "Exam Analysis",
+      "export_pdf": "Export PDF",
+      "review_queue": "Review Queue",
+      "live_session": "Live Session",
+      "practice": "Practice",
+      "coming_soon": "{feature} coming soon",
+      "exam_style_analysis": "Exam Style Analysis",
+      "question_types": "Question Types",
+      "difficulty_distribution": "Difficulty Distribution",
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard",
+      "topics_covered": "Topics Covered",
+      "more_topics": "+{count} more",
+      "original": "Original",
+      "generated": "Generated",
+      "total": "Total",
+      "best_score": "Best Score",
+      "tabs": {
+        "original": "Original ({count})",
+        "generated": "Generated ({count})",
+        "analytics": "Analytics"
+      },
+      "generate_more": "Generate More Questions",
+      "no_questions": "No questions yet",
+      "no_practice_data": "No Practice Data Yet",
+      "complete_practice": "Complete at least one practice session to see your analytics.",
+      "question_type": {
+        "multiple_choice": "Multiple Choice",
+        "short_answer": "Short Answer",
+        "true_false": "True/False",
+        "essay": "Essay",
+        "fill_blank": "Fill in Blank"
+      },
+      "correct_answer": "Correct Answer",
+      "explanation": "Explanation",
+      "questions_generated": "{count} questions generated!",
+      "generate_questions_title": "Generate Questions",
+      "generate_questions_subtitle": "Let AI create more questions based on your exam",
+      "number_of_questions": "Number of Questions",
+      "difficulty": "Difficulty",
+      "match_original": "Match Original",
+      "topics_optional": "Topics (optional)",
+      "generating": "Generating...",
+      "generate_count": "Generate {count} Questions"
+    },
+    "badges": {
+      "title": "Achievements",
+      "subtitle": "Earn badges by practicing",
+      "your_progress": "Your Progress",
+      "failed_to_load": "Failed to load badges: {error}",
+      "remaining": "{count} badges remaining to unlock",
+      "all": "All",
+      "recently_earned": "Recently Earned",
+      "earned_on": "Earned {date}",
+      "from_exam": "from {title}",
+      "xp_reward": "+{xp} XP"
+    },
+    "bookmarks": {
+      "title": "Bookmarked Questions",
+      "subtitle": "Questions flagged for review",
+      "stats_count": "{count}",
+      "stats_label": "Bookmarked Questions",
+      "from_exams_count": "{count}",
+      "from_exams_label": "From different exams",
+      "difficulty": {
+        "easy": "Easy",
+        "medium": "Medium",
+        "hard": "Hard",
+        "unknown": "Unknown"
+      },
+      "options": "Options:",
+      "correct": "(Correct)",
+      "correct_answer": "Correct Answer:",
+      "empty_title": "No Bookmarks Yet",
+      "empty_message": "Bookmark difficult questions during practice to review them later.\nClick the bookmark icon on any question to save it here.",
+      "start_practicing": "Start Practicing",
+      "failed_to_load": "Failed to load bookmarks: {error}",
+      "failed_to_remove": "Failed to remove bookmark: {error}"
+    },
+    "leaderboard": {
+      "title": "Leaderboard",
+      "subtitle": "See how you rank",
+      "period": {
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "all_time": "All Time"
+      },
+      "your_rank": "Your Rank",
+      "top_10": "Top 10!",
+      "keep_practicing": "Keep practicing",
+      "avg_score": "Avg Score",
+      "correct": "Correct",
+      "avg_score_label": "avg score",
+      "exams_count": "{count} exams",
+      "exams_and_correct": "{exams} exams • {correct} correct",
+      "empty_title": "No Data Yet",
+      "empty_message": "Be the first to take an exam and appear on the leaderboard!",
+      "failed_to_load": "Failed to load leaderboard: {error}"
+    },
+    "practice": {
+      "title": "Practice",
+      "practice_exam": "Practice Exam",
+      "questions_available": "{count} questions available",
+      "setup": {
+        "number_of_questions": "Number of Questions",
+        "time_limit_minutes": "Time Limit (minutes)",
+        "minutes": "{time} min",
+        "include_questions": "Include Questions",
+        "original_questions": "Original Exam Questions",
+        "ai_questions": "AI Generated Questions",
+        "start_practice": "Start Practice",
+        "all": "All"
+      },
+      "progress": {
+        "question_of": "Question {current} of {total}",
+        "answered": "{count} answered",
+        "flagged": "{count} flagged",
+        "time_remaining": "{time}"
+      },
+      "difficulty": {
+        "easy": "Easy",
+        "medium": "Medium",
+        "hard": "Hard"
+      },
+      "actions": {
+        "previous": "Previous",
+        "next": "Next",
+        "submit": "Submit",
+        "check_answer": "Check Answer",
+        "type_answer": "Type your answer..."
+      },
+      "results": {
+        "title": "Results",
+        "score": "{score}%",
+        "excellent": "Excellent!",
+        "good_job": "Good Job!",
+        "keep_practicing": "Keep Practicing!",
+        "correct": "Correct",
+        "incorrect": "Incorrect",
+        "unanswered": "Unanswered",
+        "time": "Time",
+        "review_answers": "Review Answers",
+        "try_again": "Try Again"
+      },
+      "review": {
+        "title": "Answer Review",
+        "question_number": "Question {number}",
+        "your_answer": "Your Answer:",
+        "correct_answer": "Correct Answer:",
+        "explanation": "Explanation"
+      },
+      "dialogs": {
+        "exit_title": "Exit Exam?",
+        "exit_message": "Your progress will be lost. You have answered {answered} of {total} questions.",
+        "continue_exam": "Continue Exam",
+        "exit": "Exit",
+        "submit_title": "Submit Exam?",
+        "submit_message": "You have answered {answered} of {total} questions.",
+        "unanswered_warning": "{count} questions are unanswered",
+        "submit": "Submit"
+      },
+      "no_questions_available": "No questions available",
+      "bookmark_tooltip": "Bookmark",
+      "flag_tooltip": "Flag for review"
+    },
+    "review_queue": {
+      "title": "Review Queue",
+      "stats": {
+        "correct": "{count}",
+        "incorrect": "{count}",
+        "progress": "{current}/{total}"
+      },
+      "loading": "Loading review queue...",
+      "difficulty": {
+        "easy": "Easy",
+        "medium": "Medium",
+        "hard": "Hard"
+      },
+      "review_number": "Review #{count}",
+      "check_answer": "Check Answer",
+      "ai_evaluating": "AI is evaluating...",
+      "next_question": "Next Question",
+      "finish_review": "Finish Review",
+      "type_answer": "Type your answer:",
+      "type_answer_hint": "Type your answer here...\n(You can write multiple lines)",
+      "correct_answer": "Correct answer: {answer}",
+      "get_ai_explanation": "Get AI Explanation",
+      "getting_explanation": "Getting Explanation...",
+      "ai_evaluation": "AI Evaluation",
+      "ai_explanation": "AI Explanation",
+      "empty": {
+        "title": "All Caught Up!",
+        "message": "You don't have any questions due for review right now. Practice more exams to build your review queue.",
+        "back_button": "Back to Exams",
+        "refresh_button": "Refresh"
+      },
+      "complete": {
+        "title": "Review Complete!",
+        "message": "Great job reinforcing your knowledge",
+        "correct": "Correct",
+        "incorrect": "Incorrect",
+        "total": "Total",
+        "accuracy": "Accuracy",
+        "tip_title": "Keep it up!",
+        "tip_message": "Questions you got wrong will appear more frequently. Spaced repetition helps move knowledge to long-term memory.",
+        "back_button": "Back to Exams",
+        "review_more": "Review More"
+      },
+      "failed_to_load": "Failed to load review queue: {error}",
+      "failed_to_submit": "Failed to complete review: {error}",
+      "failed_explanation": "Failed to get explanation: {error}"
+    },
+    "export": {
+      "title": "Export as PDF",
+      "subtitle": "Configure your export options",
+      "include_answers": "Include Answers",
+      "answers_inline": "Answers shown inline with questions",
+      "answers_key_page": "Answer key on separate page",
+      "include_explanations": "Include Explanations",
+      "explanations_desc": "Add detailed explanations for each answer",
+      "question_filter": "Question Filter",
+      "filter_all": "All",
+      "filter_original": "Original",
+      "filter_generated": "Generated",
+      "generating": "Generating PDF...",
+      "export_pdf": "Export PDF",
+      "no_questions": "No questions to export with the selected filter."
+    },
+    "live_session": {
+      "code_copied": "Session code copied!",
+      "leave_title": "Leave Session?",
+      "stay": "Stay",
+      "enter_display_name": "Enter a display name",
+      "create_session": "Create Session",
+      "enter_code_hint": "e.g. ABC123",
+      "start_exam": "Start Exam",
+      "submit_answer": "Submit Answer",
+      "type_answer_hint": "Type your answer here...",
+      "leave": "Leave",
+      "end_session": "End Session",
+      "type_message_hint": "Type a message...",
+      "apply": "Apply",
+      "title_idle": "Live Exam Session",
+      "title_lobby": "Session Lobby",
+      "title_question": "Question {current}/{total}",
+      "title_results": "Results",
+      "title_final": "Final Results",
+      "your_nickname": "Your Nickname",
+      "creating": "Creating...",
+      "host_description": "Host a new collaborative exam session and invite others to join.",
+      "or_divider": "OR",
+      "join_session": "Join Session",
+      "join_description": "Enter a session code shared by the host to join.",
+      "joining": "Joining...",
+      "session_code": "Session Code",
+      "your_answer": "Your Answer",
+      "correct_feedback": "Correct!",
+      "incorrect_feedback": "Incorrect",
+      "correct_answer_label": "Correct answer: {answer}",
+      "great_job": "Great Job!",
+      "keep_going": "Keep Going!",
+      "points": "+{score} points",
+      "exam_complete": "Exam Complete!",
+      "your_score": "Your Score: {score}"
+    }
+  },
+  "problem_solver": {
+    "batch_solver": {
+      "title": "Batch Problem Solver",
+      "tabs": {
+        "pdf_upload": "PDF Upload",
+        "text_input": "Text Input"
+      },
+      "pdf_tab": {
+        "upload_label": "Upload PDF",
+        "upload_hint": "Select a PDF file containing problems",
+        "extract_button": "Extract Problems"
+      },
+      "text_tab": {
+        "title": "Paste Problems",
+        "description": "Paste your problems below. Each problem should be on a new line or separated by numbers.",
+        "hint": "Example:\n1. Solve for x: 2x + 5 = 15\n2. Calculate the area of a circle with radius 7cm\n3. Factor: x² - 5x + 6",
+        "extract_button": "Extract Problems"
+      },
+      "stats": {
+        "total": "Total",
+        "selected": "Selected",
+        "solved": "Solved"
+      },
+      "actions": {
+        "solve_selected": "Solve {count} Selected",
+        "solve_all": "Solve All"
+      },
+      "messages": {
+        "enter_text": "Please enter some text",
+        "problems_solved": "{count} problems solved!"
+      }
+    },
+    "camera_scan": {
+      "title": "Scan Problem",
+      "instructions": "Position the problem within the frame",
+      "review_title": "Review & Edit",
+      "analyzing": "Analyzing image...",
+      "analyzing_subtitle": "This may take a few seconds",
+      "verify_text": "Please verify the text",
+      "verify_description": "Math symbols may not be recognized correctly. Edit the text below if needed.",
+      "subject_label": "Subject",
+      "problem_text_label": "Problem Text",
+      "problem_text_hint": "Edit the problem text here...",
+      "problem_text_tip": "Tip: Use ^ for superscripts (e.g., x^2)",
+      "actions": {
+        "retake": "Retake",
+        "solve_problem": "Solve Problem"
+      },
+      "subjects": {
+        "mathematics": "Mathematics",
+        "physics": "Physics",
+        "chemistry": "Chemistry",
+        "biology": "Biology",
+        "computer_science": "Computer Science",
+        "other": "Other"
+      }
+    },
+    "concept_map": {
+      "title": "Concept Map",
+      "subtitle": "Visual learning roadmap",
+      "central_topic": "Core Topic",
+      "sections": {
+        "prerequisites": "Prerequisites",
+        "prerequisites_subtitle": "Master these first",
+        "current_concepts": "Current Concepts",
+        "current_concepts_subtitle": "Learning now",
+        "next_steps": "Next Steps",
+        "next_steps_subtitle": "Where to go next",
+        "related_topics": "Related Topics",
+        "related_topics_subtitle": "Explore connections"
+      },
+      "importance": "Importance:",
+      "connection": "Connection:",
+      "prerequisites": "Prerequisites",
+      "current_concepts": "Current Concepts",
+      "next_steps": "Next Steps",
+      "related_topics": "Related Topics"
+    },
+    "formula_cards": {
+      "title": "Formula Cards",
+      "progress": "Card {current} of {total}",
+      "categories": {
+        "rule": "RULE",
+        "concept": "CONCEPT",
+        "formula": "FORMULA",
+        "theorem": "THEOREM"
+      },
+      "sides": {
+        "explanation": "Explanation",
+        "formula": "formula"
+      },
+      "hints": {
+        "tap_to_flip": "Tap to see {side}",
+        "tap_explanation": "Tap to see explanation",
+        "tap_formula": "Tap to see formula",
+        "swipe_navigate": "Swipe left/right to navigate"
+      },
+      "actions": {
+        "previous": "Previous",
+        "next": "Next",
+        "flip": "Flip"
+      },
+      "messages": {
+        "copied": "Card copied to clipboard"
+      }
+    },
+    "hints": {
+      "title": "Guide Me Mode",
+      "subtitle": "Get hints instead of the full solution",
+      "problem_label": "PROBLEM",
+      "hint_progress": "Hint {current} of ~{total}",
+      "next_hint_preview": "Next hint covers: {preview}",
+      "all_revealed": "All hints revealed! Try solving now.",
+      "all_revealed_status": "All Hints Revealed",
+      "actions": {
+        "reset": "Reset",
+        "get_first_hint": "Get First Hint",
+        "next_hint": "Next Hint",
+        "thinking": "Thinking...",
+        "see_solution": "See Solution"
+      },
+      "messages": {
+        "hints_reset": "Hints reset"
+      },
+      "see_solution": "See Solution"
+    },
+    "practice_quiz": {
+      "title": "Practice Quiz",
+      "title_with_progress": "Practice Quiz ({current}/{total})",
+      "question_progress": "Question {current}/{total}",
+      "stats": {
+        "correct": "correct"
+      },
+      "question_types": {
+        "multiple_choice": "Multiple Choice",
+        "true_false": "True or False",
+        "fill_blank": "Fill in the Blank"
+      },
+      "feedback": {
+        "correct": "Correct!",
+        "incorrect": "Incorrect",
+        "correct_answer": "Correct answer: {answer}",
+        "explanation": "Explanation"
+      },
+      "actions": {
+        "next_question": "Next Question",
+        "view_results": "View Results"
+      },
+      "results": {
+        "perfect": "Perfect Score! 🎉",
+        "great": "Great Job! 🌟",
+        "good": "Good Effort! 👍",
+        "practice": "Keep Practicing! 💪",
+        "quiz_complete": "Quiz Complete!",
+        "close": "Close",
+        "try_again": "Try Again"
+      }
+    },
+    "bookmarks": {
+      "title": "My Bookmarks",
+      "search_placeholder": "Search bookmarks...",
+      "stats": {
+        "total": "Total",
+        "subjects": "Subjects",
+        "tags": "Tags"
+      },
+      "edit_sheet": {
+        "title": "Edit Bookmark",
+        "tags_label": "Tags",
+        "tags_hint": "Add a tag...",
+        "notes_label": "Notes",
+        "notes_hint": "Add your notes here...",
+        "save_button": "Save Changes"
+      },
+      "delete_dialog": {
+        "title": "Delete Bookmark",
+        "message": "Are you sure you want to delete this bookmark?",
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "messages": {
+        "updated": "Bookmark updated",
+        "deleted": "Bookmark deleted"
+      },
+      "empty_state": {
+        "title": "No bookmarks yet",
+        "subtitle": "Save problems to access them later"
+      },
+      "updated": "Bookmark updated",
+      "delete_confirm": "Are you sure you want to delete this bookmark?",
+      "deleted": "Bookmark deleted",
+      "hint_tag": "Add a tag...",
+      "hint_notes": "Add your notes here..."
+    },
+    "history": {
+      "title": "Problem History",
+      "search_placeholder": "Search problems...",
+      "delete_dialog": {
+        "title": "Delete Problem?",
+        "message": "This will permanently delete this problem and its solution.",
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "time": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "days_ago": "{days} days ago"
+      }
+    },
+    "input": {
+      "title": "Problem Solver",
+      "subject_label": "Subject",
+      "problem_label": "Problem",
+      "problem_hint": "Type or paste your problem here...\n\nExample: Solve the equation 2x + 5 = 15",
+      "actions": {
+        "scan": "Scan",
+        "voice": "Voice",
+        "image": "Image",
+        "solve": "Solve Problem",
+        "creating": "Creating..."
+      },
+      "image_uploaded": "Image uploaded",
+      "voice_coming_soon": "Voice input coming soon",
+      "how_it_works": "How It Works",
+      "agents": {
+        "analysis": {
+          "title": "Analysis Agent",
+          "description": "Understands the problem and identifies the approach"
+        },
+        "solver": {
+          "title": "Solver Agent",
+          "description": "Generates step-by-step solution with explanations"
+        },
+        "verifier": {
+          "title": "Verifier Agent",
+          "description": "Cross-checks the solution for correctness"
+        }
+      },
+      "subjects": {
+        "auto_detect": "Auto-detect",
+        "mathematics": "Mathematics",
+        "physics": "Physics",
+        "chemistry": "Chemistry",
+        "biology": "Biology",
+        "computer_science": "Computer Science",
+        "engineering": "Engineering",
+        "economics": "Economics",
+        "statistics": "Statistics"
+      },
+      "menu": {
+        "bookmarks": "Bookmarks",
+        "history": "History",
+        "batch_solver": "Batch Solver",
+        "camera_scan": "Camera Scan"
+      },
+      "messages": {
+        "enter_problem": "Please enter a problem or upload an image"
+      }
+    },
+    "similar_problems": {
+      "title": "Similar Problems",
+      "difficulty": {
+        "easy": "EASY",
+        "medium": "MEDIUM",
+        "hard": "HARD"
+      },
+      "solve_this": "Solve This"
+    },
+    "solution": {
+      "title": "Solution",
+      "final_answer": "Final Answer",
+      "learning_tools": "Learning Tools",
+      "tools": {
+        "hints": "Hints",
+        "similar": "Similar",
+        "quiz": "Quiz",
+        "chat": "Chat",
+        "concepts": "Concepts",
+        "formulas": "Formulas"
+      },
+      "tabs": {
+        "steps": "Steps",
+        "code": "Code",
+        "alternatives": "Alternatives",
+        "graph": "Graph",
+        "analysis": "Analysis",
+        "citations": "Citations"
+      },
+      "steps": {
+        "no_solution": "No solution available",
+        "no_steps": "No solution steps available",
+        "step_number": "Step {number}",
+        "copy": "Copy",
+        "step_copied": "Step copied"
+      },
+      "code": {
+        "empty_title": "No code blocks available"
+      },
+      "alternatives": {
+        "empty_title": "No alternative methods available"
+      },
+      "graph": {
+        "empty_title": "No graph data available"
+      },
+      "analysis": {
+        "level_explanation": "{level} Level Explanation",
+        "key_points": "Key Points:",
+        "examples": "Examples:",
+        "technical_analysis": "Technical Analysis",
+        "no_details": "No details"
+      },
+      "citations": {
+        "empty_title": "No citations available"
+      },
+      "complexity": {
+        "title": "Explanation Level",
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "expert": "Expert",
+        "loading": "Loading explanation..."
+      },
+      "narration": {
+        "title": "Solution Narration",
+        "listen_tooltip": "Listen to solution",
+        "completed": "Narration completed",
+        "no_text": "No solution text available for narration"
+      },
+      "messages": {
+        "bookmark_added": "Bookmark added",
+        "bookmark_removed": "Bookmark removed"
+      },
+      "generating_narration": "Generating narration...",
+      "loading_explanation": "Loading explanation...",
+      "step_copied": "Step copied",
+      "copy": "Copy",
+      "narration_completed": "Narration completed",
+      "no_solution_for_narration": "No solution text available for narration"
+    },
+    "solving_progress": {
+      "title": "Solving...",
+      "stages": {
+        "analysis": {
+          "title": "Analysis Agent",
+          "description": "Understanding the problem"
+        },
+        "solving": {
+          "title": "Solver Agent",
+          "description": "Generating step-by-step solution"
+        },
+        "verification": {
+          "title": "Verifier Agent",
+          "description": "Cross-checking correctness"
+        }
+      },
+      "status": {
+        "complete": "Complete",
+        "solution_ready": "Solution Ready!",
+        "redirecting": "Redirecting to solution...",
+        "failed": "Solving Failed",
+        "retry": "Retry"
+      }
+    },
+    "study_buddy": {
+      "title": "Study Buddy",
+      "subtitle": "Ask follow-up questions about the solution",
+      "welcome_message": "Hi! I'm your Study Buddy. I've reviewed the solution to your problem. Ask me anything - I can explain steps in more detail, suggest alternative approaches, or help you practice similar concepts.",
+      "suggested_questions_title": "Suggested questions",
+      "input_placeholder": "Ask a follow-up question...",
+      "problem_label": "Problem: {problem}",
+      "export": "Export",
+      "suggested": {
+        "explain_step": "Can you explain step 2 in more detail?",
+        "why_approach": "Why did we use this approach?",
+        "other_methods": "What are other methods to solve this?",
+        "simpler_example": "Can you give me a simpler example?",
+        "concepts_needed": "What concepts do I need to understand this?"
+      },
+      "hint_message": "Ask a follow-up question..."
+    },
+    "widgets": {
+      "steps_copied": "Steps copied to clipboard",
+      "copy": "Copy",
+      "steps": "Steps",
+      "no_steps": "No steps available for this method",
+      "advantages": "Advantages",
+      "disadvantages": "Disadvantages",
+      "method_type": {
+        "algebraic": "Algebraic",
+        "geometric": "Geometric",
+        "numerical": "Numerical",
+        "graphical": "Graphical",
+        "analytical": "Analytical",
+        "other": "Other"
+      },
+      "status": {
+        "pending": "Pending",
+        "solving": "Solving...",
+        "completed": "Completed",
+        "failed": "Failed"
+      },
+      "retry": "Retry",
+      "solve": "Solve",
+      "view_solution": "View Solution",
+      "search_bookmarks": "Search bookmarks...",
+      "no_problem_text": "No problem text",
+      "edit": "Edit",
+      "delete": "Delete",
+      "date": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "days_ago": "{days} days ago"
+      }
+    },
+    "batch": {
+      "please_enter_text": "Please enter some text",
+      "solve_all": "Solve All",
+      "hint_problems": "Example:\n1. Solve for x: 2x + 5 = 15\n2. Calculate the area"
+    }
+  },
+  "more": {
+    "title": "More",
+    "logout": "Logout",
+    "logout_subtitle": "Sign out of your account",
+    "section_ai_tools": "AI TOOLS",
+    "section_study_tools": "STUDY TOOLS",
+    "section_account": "ACCOUNT",
+    "ai_chat": "AI Chat",
+    "ai_chat_subtitle": "Chat with AI study assistant",
+    "problem_solver": "Problem Solver",
+    "problem_solver_subtitle": "Solve any problem step by step",
+    "deep_research": "Deep Research",
+    "deep_research_subtitle": "In-depth research on any topic",
+    "exam_clone": "Exam Clone",
+    "exam_clone_subtitle": "Practice with exam-style questions",
+    "teach_back": "Teach Back",
+    "teach_back_subtitle": "Learn by teaching concepts",
+    "notifications": "Notifications",
+    "notifications_subtitle": "View your notifications",
+    "subscription": "Subscription",
+    "subscription_subtitle": "Manage your plan"
+  },
+  "widgets": {
+    "code_copied": "Code copied!"
+  },
+  "navigation": {
+    "home": "Home",
+    "library": "Library",
+    "stats": "Stats",
+    "analytics": "Analytics",
+    "learn": "Learn",
+    "more": "More",
+    "profile": "Profile"
+  },
+  "special_offer_legacy": {}
+}
