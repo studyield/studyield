@@ -16,7 +16,12 @@ import {
 import { FilesInterceptor } from '@nestjs/platform-express';
 import { Response } from 'express';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiConsumes } from '@nestjs/swagger';
-import { ChatService, CreateConversationDto, SendMessageDto, SendMessageWithFilesDto } from './chat.service';
+import {
+  ChatService,
+  CreateConversationDto,
+  SendMessageDto,
+  SendMessageWithFilesDto,
+} from './chat.service';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
 import { CurrentUser, JwtPayload } from '../../common';
 import { SubscriptionService } from '../subscription/subscription.service';
@@ -34,10 +39,7 @@ export class ChatController {
   @Post('conversations')
   @ApiOperation({ summary: 'Create a new conversation' })
   @ApiResponse({ status: 201, description: 'Conversation created' })
-  async createConversation(
-    @CurrentUser() user: JwtPayload,
-    @Body() dto: CreateConversationDto,
-  ) {
+  async createConversation(@CurrentUser() user: JwtPayload, @Body() dto: CreateConversationDto) {
     return this.chatService.createConversation(user.sub, dto);
   }
 

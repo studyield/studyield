@@ -86,18 +86,32 @@ export class ResearchService {
       `INSERT INTO research_sessions (id, user_id, query, knowledge_base_ids, status, sources, depth, settings, created_at, updated_at)
        VALUES ($1, $2, $3, $4, 'pending', $5, $6, $7, $8, $9)
        RETURNING *`,
-      [id, userId, dto.query, JSON.stringify(dto.knowledgeBaseIds || []), JSON.stringify([]), depth, JSON.stringify(settings), now, now],
+      [
+        id,
+        userId,
+        dto.query,
+        JSON.stringify(dto.knowledgeBaseIds || []),
+        JSON.stringify([]),
+        depth,
+        JSON.stringify(settings),
+        now,
+        now,
+      ],
     );
 
     this.logger.log(`Research session created: ${id}`);
     return this.mapSession(result!);
   }
 
-  async research(sessionId: string, userId: string, includeWebSearch = true): Promise<ResearchSession> {
+  async research(
+    sessionId: string,
+    userId: string,
+    includeWebSearch = true,
+  ): Promise<ResearchSession> {
     const session = await this.findByIdWithAccess(sessionId, userId);
     const sources: ResearchSource[] = [];
     const depthCfg = DEPTH_CONFIG[session.depth] || DEPTH_CONFIG.standard;
-    const webEnabled = includeWebSearch && (session.settings.includeWebSearch !== false);
+    const webEnabled = includeWebSearch && session.settings.includeWebSearch !== false;
 
     try {
       // ── Phase 1: Planning ─────────────────────────
@@ -108,9 +122,16 @@ export class ResearchService {
         message: 'Generating research plan and subtopics...',
       });
 
-      const planResult = await this.aiService.completeJson<{ subtopics: string[]; searchQueries: string[] }>(
+      const planResult = await this.aiService.completeJson<{
+        subtopics: string[];
+        searchQueries: string[];
+      }>(
         [
-          { role: 'system', content: 'You are a research planning agent. Analyze the query and produce subtopics and search queries.' },
+          {
+            role: 'system',
+            content:
+              'You are a research planning agent. Analyze the query and produce subtopics and search queries.',
+          },
           {
             role: 'user',
             content: `Research query: "${session.query}"\nDepth: ${session.depth}\nGenerate a research plan.\n\nReturn JSON: { "subtopics": ["..."], "searchQueries": ["..."] }`,
@@ -164,7 +185,10 @@ export class ResearchService {
           : [session.query];
 
         for (const q of queries) {
-          const webResults = await this.webSearchService.search(q, Math.ceil(depthCfg.maxSources / queries.length));
+          const webResults = await this.webSearchService.search(
+            q,
+            Math.ceil(depthCfg.maxSources / queries.length),
+          );
           for (const r of webResults) {
             sources.push({
               type: 'web',
@@ -199,7 +223,9 @@ export class ResearchService {
         message: 'Synthesizing findings into structured report...',
       });
 
-      const sourcesContext = uniqueSources.map((s, i) => `[${i + 1}] ${s.title}${s.url ? ` (${s.url})` : ''}: ${s.content}`).join('\n\n');
+      const sourcesContext = uniqueSources
+        .map((s, i) => `[${i + 1}] ${s.title}${s.url ? ` (${s.url})` : ''}: ${s.content}`)
+        .join('\n\n');
 
       const formatInstruction =
         session.settings.outputFormat === 'bullets'
@@ -240,7 +266,11 @@ Return in JSON format:
       try {
         result = await this.aiService.completeJson<{ synthesis: string; outline: ResearchOutline }>(
           [
-            { role: 'system', content: 'You are an expert research synthesizer and report writer. Produce well-structured, citation-rich reports.' },
+            {
+              role: 'system',
+              content:
+                'You are an expert research synthesizer and report writer. Produce well-structured, citation-rich reports.',
+            },
             { role: 'user', content: synthesisPrompt },
           ],
           { maxTokens: depthCfg.maxTokens },
@@ -250,7 +280,11 @@ Return in JSON format:
         // Retry with higher token limit in case response was truncated
         result = await this.aiService.completeJson<{ synthesis: string; outline: ResearchOutline }>(
           [
-            { role: 'system', content: 'You are an expert research synthesizer. Return ONLY valid JSON. Keep the response concise.' },
+            {
+              role: 'system',
+              content:
+                'You are an expert research synthesizer. Return ONLY valid JSON. Keep the response concise.',
+            },
             { role: 'user', content: synthesisPrompt },
           ],
           { maxTokens: Math.min(depthCfg.maxTokens * 2, 16384) },
@@ -292,7 +326,10 @@ Return in JSON format:
   }
 
   async findById(id: string): Promise<ResearchSession | null> {
-    const result = await this.db.queryOne<ResearchSession>('SELECT * FROM research_sessions WHERE id = $1', [id]);
+    const result = await this.db.queryOne<ResearchSession>(
+      'SELECT * FROM research_sessions WHERE id = $1',
+      [id],
+    );
     return result ? this.mapSession(result) : null;
   }
 
@@ -304,7 +341,10 @@ Return in JSON format:
   }
 
   async findByUser(userId: string): Promise<ResearchSession[]> {
-    const results = await this.db.queryMany<ResearchSession>('SELECT * FROM research_sessions WHERE user_id = $1 ORDER BY created_at DESC', [userId]);
+    const results = await this.db.queryMany<ResearchSession>(
+      'SELECT * FROM research_sessions WHERE user_id = $1 ORDER BY created_at DESC',
+      [userId],
+    );
     return results.map((r) => this.mapSession(r));
   }
 
@@ -314,7 +354,11 @@ Return in JSON format:
   }
 
   private async updateStatus(id: string, status: ResearchSession['status']): Promise<void> {
-    await this.db.query('UPDATE research_sessions SET status = $1, updated_at = $2 WHERE id = $3', [status, new Date(), id]);
+    await this.db.query('UPDATE research_sessions SET status = $1, updated_at = $2 WHERE id = $3', [
+      status,
+      new Date(),
+      id,
+    ]);
   }
 
   private mapSession(row: unknown): ResearchSession {
@@ -323,13 +367,27 @@ Return in JSON format:
       id: r.id as string,
       userId: r.user_id as string,
       query: r.query as string,
-      knowledgeBaseIds: typeof r.knowledge_base_ids === 'string' ? JSON.parse(r.knowledge_base_ids) : (r.knowledge_base_ids as string[]) || [],
+      knowledgeBaseIds:
+        typeof r.knowledge_base_ids === 'string'
+          ? JSON.parse(r.knowledge_base_ids)
+          : (r.knowledge_base_ids as string[]) || [],
       status: r.status as ResearchSession['status'],
-      sources: typeof r.sources === 'string' ? JSON.parse(r.sources) : (r.sources as ResearchSource[]) || [],
+      sources:
+        typeof r.sources === 'string'
+          ? JSON.parse(r.sources)
+          : (r.sources as ResearchSource[]) || [],
       synthesis: r.synthesis as string | null,
-      outline: r.outline ? (typeof r.outline === 'string' ? JSON.parse(r.outline) : (r.outline as ResearchOutline)) : null,
+      outline: r.outline
+        ? typeof r.outline === 'string'
+          ? JSON.parse(r.outline)
+          : (r.outline as ResearchOutline)
+        : null,
       depth: (r.depth as ResearchSession['depth']) || 'standard',
-      settings: r.settings ? (typeof r.settings === 'string' ? JSON.parse(r.settings) : (r.settings as ResearchSettings)) : {},
+      settings: r.settings
+        ? typeof r.settings === 'string'
+          ? JSON.parse(r.settings)
+          : (r.settings as ResearchSettings)
+        : {},
       createdAt: new Date(r.created_at as string),
       updatedAt: new Date(r.updated_at as string),
     };

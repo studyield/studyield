@@ -59,14 +59,17 @@ export class LiveQuizService {
   private rooms = new Map<string, LiveRoom>();
 
   // Callback for emitting events (set by gateway)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private emitCallback: ((roomCode: string, event: string, data: any) => void) | null = null;
 
   constructor(private readonly db: DatabaseService) {}
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setEmitCallback(callback: (roomCode: string, event: string, data: any) => void) {
     this.emitCallback = callback;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private emit(roomCode: string, event: string, data: any) {
     if (this.emitCallback) {
       this.emitCallback(roomCode, event, data);
@@ -83,14 +86,18 @@ export class LiveQuizService {
     return code;
   }
 
-  createRoom(hostId: string, studySetId: string, questions: Omit<LiveQuestion, 'playerAnswers'>[]): LiveRoom {
+  createRoom(
+    hostId: string,
+    studySetId: string,
+    questions: Omit<LiveQuestion, 'playerAnswers'>[],
+  ): LiveRoom {
     const code = this.generateRoomCode();
     const room: LiveRoom = {
       code,
       hostId,
       studySetId,
       players: new Map(),
-      questions: questions.map(q => ({ ...q, playerAnswers: new Map() })),
+      questions: questions.map((q) => ({ ...q, playerAnswers: new Map() })),
       currentQuestionIndex: -1,
       status: 'waiting',
       questionStartTime: null,
@@ -168,7 +175,9 @@ export class LiveQuizService {
     // Clear any existing answers for this question
     question.playerAnswers.clear();
 
-    this.logger.log(`Starting question ${room.currentQuestionIndex + 1}/${room.questions.length} for room ${code}`);
+    this.logger.log(
+      `Starting question ${room.currentQuestionIndex + 1}/${room.questions.length} for room ${code}`,
+    );
 
     // Emit question to all players
     this.emit(code, 'question:start', {
@@ -193,7 +202,6 @@ export class LiveQuizService {
     room.status = 'result';
 
     const question = room.questions[room.currentQuestionIndex];
-    const playerAnswers = Array.from(question.playerAnswers.values());
 
     // Players who didn't answer get 0 points
     room.players.forEach((player, playerId) => {
@@ -283,7 +291,9 @@ export class LiveQuizService {
     }
 
     // Calculate time remaining
-    const elapsed = room.questionStartTime ? (Date.now() - room.questionStartTime) / 1000 : question.timeLimit;
+    const elapsed = room.questionStartTime
+      ? (Date.now() - room.questionStartTime) / 1000
+      : question.timeLimit;
     const timeRemaining = Math.max(0, question.timeLimit - elapsed);
 
     const correct = answerIndex === question.correctIndex;
@@ -307,7 +317,9 @@ export class LiveQuizService {
     };
     question.playerAnswers.set(playerId, playerAnswer);
 
-    this.logger.log(`Player ${player.name} answered Q${questionIndex + 1}: ${correct ? 'correct' : 'wrong'} (+${points})`);
+    this.logger.log(
+      `Player ${player.name} answered Q${questionIndex + 1}: ${correct ? 'correct' : 'wrong'} (+${points})`,
+    );
 
     // Check if all players have answered
     if (question.playerAnswers.size >= room.players.size) {
@@ -332,7 +344,10 @@ export class LiveQuizService {
       .map((p, index) => ({ ...p, rank: index + 1 }));
   }
 
-  getAnswerStats(code: string, questionIndex: number): { option: string; count: number; percentage: number }[] {
+  getAnswerStats(
+    code: string,
+    questionIndex: number,
+  ): { option: string; count: number; percentage: number }[] {
     const room = this.rooms.get(code.toUpperCase());
     if (!room || questionIndex >= room.questions.length) return [];
 
@@ -340,8 +355,9 @@ export class LiveQuizService {
     const totalAnswers = question.playerAnswers.size;
 
     return question.options.map((option, index) => {
-      const count = Array.from(question.playerAnswers.values())
-        .filter(a => a.answerIndex === index).length;
+      const count = Array.from(question.playerAnswers.values()).filter(
+        (a) => a.answerIndex === index,
+      ).length;
       return {
         option,
         count,
@@ -370,7 +386,7 @@ export class LiveQuizService {
       code: room.code,
       studySetId: room.studySetId,
       totalQuestions: room.questions.length,
-      players: Array.from(room.players.values()).map(p => ({
+      players: Array.from(room.players.values()).map((p) => ({
         id: p.id,
         name: p.name,
         score: p.score,
@@ -425,7 +441,15 @@ export class LiveQuizService {
           `INSERT INTO live_quiz_participants (session_id, user_id, player_name, score, correct_answers, total_answers, rank)
            VALUES ($1, $2, $3, $4, $5, $6, $7)
            RETURNING id`,
-          [sessionId, player.id, player.name, player.score, player.correctAnswers, player.answers, i + 1],
+          [
+            sessionId,
+            player.id,
+            player.name,
+            player.score,
+            player.correctAnswers,
+            player.answers,
+            i + 1,
+          ],
         );
 
         if (!participantResult) continue;
@@ -455,7 +479,9 @@ export class LiveQuizService {
         }
       }
 
-      this.logger.log(`Quiz history saved: session ${sessionId} with ${leaderboard.length} participants`);
+      this.logger.log(
+        `Quiz history saved: session ${sessionId} with ${leaderboard.length} participants`,
+      );
     } catch (error) {
       this.logger.error(`Failed to save quiz history: ${error}`);
       throw error;
@@ -465,7 +491,9 @@ export class LiveQuizService {
   /**
    * Get user's live quiz history
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async getUserHistory(userId: string, limit = 20): Promise<any[]> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const results = await this.db.queryMany<any>(
       `SELECT
         s.id,

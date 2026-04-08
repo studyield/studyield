@@ -74,34 +74,28 @@ export class UsersService {
   }
 
   async findById(id: string): Promise<User | null> {
-    const result = await this.db.queryOne<User>(
-      'SELECT * FROM users WHERE id = $1',
-      [id],
-    );
+    const result = await this.db.queryOne<User>('SELECT * FROM users WHERE id = $1', [id]);
     return result ? this.mapUser(result) : null;
   }
 
   async findByEmail(email: string): Promise<User | null> {
-    const result = await this.db.queryOne<User>(
-      'SELECT * FROM users WHERE email = $1',
-      [email.toLowerCase()],
-    );
+    const result = await this.db.queryOne<User>('SELECT * FROM users WHERE email = $1', [
+      email.toLowerCase(),
+    ]);
     return result ? this.mapUser(result) : null;
   }
 
   async findByGoogleId(googleId: string): Promise<User | null> {
-    const result = await this.db.queryOne<User>(
-      'SELECT * FROM users WHERE google_id = $1',
-      [googleId],
-    );
+    const result = await this.db.queryOne<User>('SELECT * FROM users WHERE google_id = $1', [
+      googleId,
+    ]);
     return result ? this.mapUser(result) : null;
   }
 
   async findByAppleId(appleId: string): Promise<User | null> {
-    const result = await this.db.queryOne<User>(
-      'SELECT * FROM users WHERE apple_id = $1',
-      [appleId],
-    );
+    const result = await this.db.queryOne<User>('SELECT * FROM users WHERE apple_id = $1', [
+      appleId,
+    ]);
     return result ? this.mapUser(result) : null;
   }
 
@@ -154,41 +148,41 @@ export class UsersService {
   }
 
   async updatePassword(id: string, hashedPassword: string): Promise<void> {
-    await this.db.query(
-      'UPDATE users SET password = $1, updated_at = $2 WHERE id = $3',
-      [hashedPassword, new Date(), id],
-    );
+    await this.db.query('UPDATE users SET password = $1, updated_at = $2 WHERE id = $3', [
+      hashedPassword,
+      new Date(),
+      id,
+    ]);
     this.logger.log(`Password updated for user: ${id}`);
   }
 
   async updateLastLogin(id: string): Promise<void> {
-    await this.db.query(
-      'UPDATE users SET last_login_at = $1 WHERE id = $2',
-      [new Date(), id],
-    );
+    await this.db.query('UPDATE users SET last_login_at = $1 WHERE id = $2', [new Date(), id]);
   }
 
   async verifyEmail(id: string): Promise<void> {
-    await this.db.query(
-      'UPDATE users SET email_verified = true, updated_at = $1 WHERE id = $2',
-      [new Date(), id],
-    );
+    await this.db.query('UPDATE users SET email_verified = true, updated_at = $1 WHERE id = $2', [
+      new Date(),
+      id,
+    ]);
     this.logger.log(`Email verified for user: ${id}`);
   }
 
   async linkGoogleAccount(id: string, googleId: string): Promise<void> {
-    await this.db.query(
-      'UPDATE users SET google_id = $1, updated_at = $2 WHERE id = $3',
-      [googleId, new Date(), id],
-    );
+    await this.db.query('UPDATE users SET google_id = $1, updated_at = $2 WHERE id = $3', [
+      googleId,
+      new Date(),
+      id,
+    ]);
     this.logger.log(`Google account linked for user: ${id}`);
   }
 
   async linkAppleAccount(id: string, appleId: string): Promise<void> {
-    await this.db.query(
-      'UPDATE users SET apple_id = $1, updated_at = $2 WHERE id = $3',
-      [appleId, new Date(), id],
-    );
+    await this.db.query('UPDATE users SET apple_id = $1, updated_at = $2 WHERE id = $3', [
+      appleId,
+      new Date(),
+      id,
+    ]);
     this.logger.log(`Apple account linked for user: ${id}`);
   }
 
@@ -242,14 +236,19 @@ export class UsersService {
     const LEVEL_THRESHOLDS = [0, 100, 300, 600, 1000, 1500, 2200, 3000, 4000, 5500, 7500, 10000];
 
     const [xpResult, dailyXpResult, streak] = await Promise.all([
-      this.db.queryOne<{ total_xp: string }>(
-        `SELECT COALESCE(SUM(xp), 0) as total_xp FROM user_xp_events WHERE user_id = $1`,
-        [id],
-      ).catch(() => ({ total_xp: '0' })),
-      this.db.queryOne<{ daily_xp: string }>(
-        `SELECT COALESCE(SUM(xp), 0) as daily_xp FROM user_xp_events WHERE user_id = $1 AND created_at >= CURRENT_DATE`,
-        [id],
-      ).catch(() => ({ daily_xp: '0' })),
+      this.db
+        .queryOne<{
+          total_xp: string;
+        }>(`SELECT COALESCE(SUM(xp), 0) as total_xp FROM user_xp_events WHERE user_id = $1`, [id])
+        .catch(() => ({ total_xp: '0' })),
+      this.db
+        .queryOne<{
+          daily_xp: string;
+        }>(
+          `SELECT COALESCE(SUM(xp), 0) as daily_xp FROM user_xp_events WHERE user_id = $1 AND created_at >= CURRENT_DATE`,
+          [id],
+        )
+        .catch(() => ({ daily_xp: '0' })),
       this.calculateStreak(id),
     ]);
 
@@ -282,7 +281,7 @@ export class UsersService {
     try {
       await this.db.query(
         `INSERT INTO user_xp_events (id, user_id, type, xp, created_at) VALUES ($1, $2, $3, $4, $5)`,
-        [require('uuid').v4(), id, type, xp, new Date()],
+        [uuidv4(), id, type, xp, new Date()],
       );
     } catch (error) {
       this.logger.warn(`Failed to record XP event: ${error}`);
@@ -370,9 +369,10 @@ export class UsersService {
       educationLevel: r.education_level as string | null,
       subjects: subjects,
       profileCompleted: (r.profile_completed as boolean) || false,
-      preferences: typeof r.preferences === 'string'
-        ? JSON.parse(r.preferences)
-        : (r.preferences as Record<string, unknown>) || {},
+      preferences:
+        typeof r.preferences === 'string'
+          ? JSON.parse(r.preferences)
+          : (r.preferences as Record<string, unknown>) || {},
       createdAt: new Date(r.created_at as string),
       updatedAt: new Date(r.updated_at as string),
       lastLoginAt: r.last_login_at ? new Date(r.last_login_at as string) : null,

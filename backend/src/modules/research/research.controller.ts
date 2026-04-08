@@ -1,4 +1,14 @@
-import { Controller, Get, Post, Delete, Body, Param, UseGuards, HttpCode, HttpStatus } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Delete,
+  Body,
+  Param,
+  UseGuards,
+  HttpCode,
+  HttpStatus,
+} from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
 import { ResearchService, CreateResearchDto } from './research.service';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
@@ -20,7 +30,11 @@ export class ResearchController {
 
   @Post(':id/start')
   @ApiOperation({ summary: 'Start research' })
-  async start(@CurrentUser() user: JwtPayload, @Param('id') id: string, @Body() body: { includeWebSearch?: boolean }) {
+  async start(
+    @CurrentUser() user: JwtPayload,
+    @Param('id') id: string,
+    @Body() body: { includeWebSearch?: boolean },
+  ) {
     return this.researchService.research(id, user.sub, body.includeWebSearch ?? true);
   }
 

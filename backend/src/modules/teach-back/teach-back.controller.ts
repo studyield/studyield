@@ -1,6 +1,22 @@
-import { Controller, Get, Post, Delete, Body, Param, UseGuards, HttpCode, HttpStatus } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Delete,
+  Body,
+  Param,
+  UseGuards,
+  HttpCode,
+  HttpStatus,
+} from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
-import { TeachBackService, CreateTeachBackDto, SubmitExplanationDto, ChallengeResponseDto, CreateFromStudySetDto } from './teach-back.service';
+import {
+  TeachBackService,
+  CreateTeachBackDto,
+  SubmitExplanationDto,
+  ChallengeResponseDto,
+  CreateFromStudySetDto,
+} from './teach-back.service';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
 import { CurrentUser, JwtPayload, PlanFeature } from '../../common';
 
@@ -44,7 +60,11 @@ export class TeachBackController {
 
   @Post(':id/submit')
   @ApiOperation({ summary: 'Submit explanation' })
-  async submit(@CurrentUser() user: JwtPayload, @Param('id') id: string, @Body() dto: SubmitExplanationDto) {
+  async submit(
+    @CurrentUser() user: JwtPayload,
+    @Param('id') id: string,
+    @Body() dto: SubmitExplanationDto,
+  ) {
     return this.teachBackService.submitExplanation(id, user.sub, dto);
   }
 

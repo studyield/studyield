@@ -14,7 +14,10 @@ import { WsExceptionFilter } from '../../common/filters/ws-exception.filter';
 @WebSocketGateway({
   namespace: 'chat',
   cors: {
-    origin: process.env.CORS_ORIGINS?.split(',') || ['http://localhost:3010', 'http://localhost:5189'],
+    origin: process.env.CORS_ORIGINS?.split(',') || [
+      'http://localhost:3010',
+      'http://localhost:5189',
+    ],
     credentials: true,
   },
 })
@@ -27,20 +30,14 @@ export class ChatGateway {
   server: Server;
 
   @SubscribeMessage('join')
-  handleJoin(
-    @MessageBody() data: { conversationId: string },
-    @ConnectedSocket() client: Socket,
-  ) {
+  handleJoin(@MessageBody() data: { conversationId: string }, @ConnectedSocket() client: Socket) {
     client.join(`conversation:${data.conversationId}`);
     this.logger.debug(`Client ${client.id} joined conversation ${data.conversationId}`);
     return { event: 'joined', data: { conversationId: data.conversationId } };
   }
 
   @SubscribeMessage('leave')
-  handleLeave(
-    @MessageBody() data: { conversationId: string },
-    @ConnectedSocket() client: Socket,
-  ) {
+  handleLeave(@MessageBody() data: { conversationId: string }, @ConnectedSocket() client: Socket) {
     client.leave(`conversation:${data.conversationId}`);
     this.logger.debug(`Client ${client.id} left conversation ${data.conversationId}`);
     return { event: 'left', data: { conversationId: data.conversationId } };

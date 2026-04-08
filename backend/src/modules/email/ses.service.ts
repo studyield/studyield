@@ -84,7 +84,9 @@ export class SESService {
       const toAddresses = this.normalizeAddresses(options.to);
       const ccAddresses = options.cc ? this.normalizeAddresses(options.cc) : undefined;
       const bccAddresses = options.bcc ? this.normalizeAddresses(options.bcc) : undefined;
-      const replyToAddresses = options.replyTo ? this.normalizeAddresses(options.replyTo) : undefined;
+      const replyToAddresses = options.replyTo
+        ? this.normalizeAddresses(options.replyTo)
+        : undefined;
 
       const command = new SendEmailCommand({
         Source: from,
@@ -120,7 +122,9 @@ export class SESService {
 
       const response = await this.sesClient!.send(command);
 
-      this.logger.log(`Email sent successfully via SES: ${options.subject} to ${toAddresses.join(', ')}`);
+      this.logger.log(
+        `Email sent successfully via SES: ${options.subject} to ${toAddresses.join(', ')}`,
+      );
       this.logger.log(`SES Message ID: ${response.MessageId}`);
 
       return {

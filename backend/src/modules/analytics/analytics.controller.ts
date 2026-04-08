@@ -34,7 +34,10 @@ export class AnalyticsController {
 
   @Post('track')
   @ApiOperation({ summary: 'Track an event' })
-  async trackEvent(@CurrentUser() user: JwtPayload, @Body() body: { eventType: string; metadata?: Record<string, unknown> }) {
+  async trackEvent(
+    @CurrentUser() user: JwtPayload,
+    @Body() body: { eventType: string; metadata?: Record<string, unknown> },
+  ) {
     await this.analyticsService.trackEvent(user.sub, body.eventType, body.metadata);
     return { tracked: true };
   }
