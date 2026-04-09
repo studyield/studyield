@@ -15,7 +15,6 @@ import {
   Gift,
   CreditCard,
   Calendar,
-  Shield,
   ExternalLink,
   AlertTriangle,
   Receipt,

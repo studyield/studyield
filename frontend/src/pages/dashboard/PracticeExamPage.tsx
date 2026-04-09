@@ -17,8 +17,6 @@ import {
   Play,
   X,
   RotateCcw,
-  Trophy,
-  Target,
   Brain,
   BookOpen,
   Bookmark,

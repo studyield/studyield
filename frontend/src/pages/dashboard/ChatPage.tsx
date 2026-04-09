@@ -36,7 +36,7 @@ const SUGGESTED_QUESTION_KEYS = [
 
 function CitationBadge({
   index,
-  citation,
+  citation: _citation,
   onClick,
   sourceLabel,
 }: {

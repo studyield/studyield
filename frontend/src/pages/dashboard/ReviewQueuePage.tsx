@@ -19,7 +19,6 @@ import {
   RotateCcw,
   Lightbulb,
   ChevronRight,
-  AlertCircle,
 } from 'lucide-react';
 
 interface ReviewQuestion {

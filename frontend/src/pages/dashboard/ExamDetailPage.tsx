@@ -42,9 +42,6 @@ import {
   ResponsiveContainer,
   BarChart,
   Bar,
-  PieChart,
-  Pie,
-  Cell,
 } from 'recharts';
 
 interface ExamStyle {
@@ -109,7 +106,6 @@ const DIFFICULTY_COLORS = {
   hard: 'bg-red-500/10 text-red-500 border-red-500/20',
 };
 
-const CHART_COLORS = ['#22c55e', '#f59e0b', '#ef4444', '#8b5cf6', '#3b82f6'];
 
 const QUESTION_TYPE_LABELS: Record<string, string> = {
   multiple_choice: 'Multiple Choice',
@@ -616,7 +612,7 @@ function ExportPdfModal({
 }
 
 // Analytics Tab Component
-function AnalyticsTab({ analytics, examId }: { analytics: Analytics | null; examId: string }) {
+function AnalyticsTab({ analytics, examId: _examId }: { analytics: Analytics | null; examId: string }) {
   const { t } = useTranslation();
   if (!analytics || analytics.totalAttempts === 0) {
     return (
@@ -715,7 +711,7 @@ function AnalyticsTab({ analytics, examId }: { analytics: Analytics | null; exam
           <div>
             <h3 className="font-medium mb-4">{t('examDetail.performanceByTopic')}</h3>
             <div className="space-y-3">
-              {analytics.topicPerformance.map((topic, i) => (
+              {analytics.topicPerformance.map((topic) => (
                 <div key={topic.topic}>
                   <div className="flex items-center justify-between text-sm mb-1">
                     <span>{topic.topic}</span>

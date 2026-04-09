@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { DashboardLayout } from '@/layouts/DashboardLayout';
 import { Button } from '@/components/ui/button';
@@ -23,9 +23,7 @@ import {
   Lightbulb,
   Play,
   Terminal,
-  ExternalLink,
   ArrowLeft,
-  Share2,
   Bookmark,
   BookmarkCheck,
   ShieldCheck,
@@ -412,7 +410,7 @@ export function SolutionPage() {
     setTimeout(() => setCopiedStep(null), 2000);
   };
 
-  const runCode = async (code: string) => {
+  const runCode = async (_code: string) => {
     setIsRunning(true);
     setCodeOutput(null);
     try {

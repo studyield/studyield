@@ -15,7 +15,6 @@ import {
   X,
   ChevronDown,
   Library,
-  Brain,
   MessageSquare,
   Sparkles,
   Bell,

@@ -42,7 +42,7 @@ export function ResearchReportPage() {
         // Initialize all sections as included
         if (data.outline?.sections) {
           const initial: Record<string, boolean> = {};
-          data.outline.sections.forEach((s, i) => {
+          data.outline.sections.forEach((_s, i) => {
             initial[`section-${i}`] = true;
           });
           setIncludeSections(initial);
@@ -446,7 +446,7 @@ function SourceCard({
   source,
   index,
   onCopy,
-  citationStyle,
+  citationStyle: _citationStyle,
   formatCitation,
 }: {
   source: ResearchSource;
