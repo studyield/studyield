@@ -311,7 +311,7 @@ export function SourcesTab({ studySetId }: SourcesTabProps) {
                       </p>
                       {source.extractedText.length > 500 && (
                         <p className="text-xs text-muted-foreground mt-2">
-                          {t('sourcesTab.andMore', { count: source.extractedText.length.toLocaleString() })}
+                          {t('sourcesTab.andMore', { count: source.extractedText.length })}
                         </p>
                       )}
                     </div>

@@ -27,7 +27,6 @@ export function PomodoroTimer({ onSessionComplete, className, compact = false }:
   const [completedPomodoros, setCompletedPomodoros] = useState(0);
   const [soundEnabled, setSoundEnabled] = useState(true);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const config = TIMER_CONFIG[mode];
 

@@ -2,14 +2,26 @@ const { Pool } = require('pg');
 const fs = require('fs');
 const path = require('path');
 
-// Load environment variables (prefer .env.local, then .env.production, then .env)
-const envPath = fs.existsSync(path.join(__dirname, '..', '.env.local'))
-  ? path.join(__dirname, '..', '.env.local')
-  : fs.existsSync(path.join(__dirname, '..', '.env.production'))
-  ? path.join(__dirname, '..', '.env.production')
-  : undefined;
+// Load environment variables only in non-Docker environments
+// In Docker, environment variables are already set via docker-compose
+if (process.env.NODE_ENV !== 'production') {
+  try {
+    // Try to load dotenv if available (for local development)
+    const dotenv = require('dotenv');
+    const envPath = fs.existsSync(path.join(__dirname, '..', '.env.local'))
+      ? path.join(__dirname, '..', '.env.local')
+      : fs.existsSync(path.join(__dirname, '..', '.env.production'))
+      ? path.join(__dirname, '..', '.env.production')
+      : path.join(__dirname, '..', '.env');
 
-require('dotenv').config({ path: envPath });
+    if (fs.existsSync(envPath)) {
+      dotenv.config({ path: envPath });
+    }
+  } catch (err) {
+    // dotenv not available (production build), use existing env vars
+    console.log('Using environment variables from system');
+  }
+}
 
 const pool = new Pool({
   host: process.env.DATABASE_HOST || 'localhost',

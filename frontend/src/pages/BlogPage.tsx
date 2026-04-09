@@ -10,7 +10,6 @@ import {
   Rocket,
   ArrowRight,
   Clock,
-  Calendar,
   Tag,
   ChevronLeft,
   ChevronRight,

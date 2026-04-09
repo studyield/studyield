@@ -16,6 +16,7 @@ import {
   HelpCircle,
   ChevronDown,
   Users,
+  Zap,
 } from 'lucide-react';
 import { PublicLayout } from '@/layouts/PublicLayout';
 import { Button } from '@/components/ui/button';
@@ -217,7 +218,7 @@ export function PricingPage() {
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground"
               >
                 <Users className="w-4 h-4 text-green-500" />
-                <span>{t('pricing.socialProof', { count: SOCIAL_PROOF_COUNT.toLocaleString() })}</span>
+                <span>{t('pricing.socialProof', { count: SOCIAL_PROOF_COUNT })}</span>
               </motion.div>
             </motion.div>
           </div>

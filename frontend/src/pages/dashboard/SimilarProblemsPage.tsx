@@ -7,13 +7,10 @@ import { Spinner } from '@/components/ui/spinner';
 import { useProblemSolverStore } from '@/stores/useProblemSolverStore';
 import { motion } from 'framer-motion';
 import 'katex/dist/katex.min.css';
-import { InlineMath } from 'react-katex';
 import {
   ArrowLeft,
   Lightbulb,
   Sparkles,
-  BarChart3,
-  ChevronRight,
   Info,
 } from 'lucide-react';
 

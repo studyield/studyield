@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Sparkles, Shield, RefreshCcw, Lock, Users } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { useAuth } from '@/contexts/AuthContext';
 import { type BillingCycle, SOCIAL_PROOF_COUNT } from '@/config/pricing';
 import { BillingToggle } from '@/components/pricing/BillingToggle';
@@ -105,7 +104,7 @@ export function PricingSection() {
           className="flex items-center justify-center gap-2 mb-8 text-sm text-muted-foreground"
         >
           <Users className="w-4 h-4 text-green-500" />
-          <span>{t('pricing.socialProof', { count: SOCIAL_PROOF_COUNT.toLocaleString() })}</span>
+          <span>{t('pricing.socialProof', { count: SOCIAL_PROOF_COUNT })}</span>
         </motion.div>
 
         {/* Billing Toggle */}
