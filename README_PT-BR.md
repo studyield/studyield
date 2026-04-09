@@ -41,12 +41,11 @@ Studyield é uma **plataforma de aprendizagem de código aberto impulsionada por
 
 Ao contrário das plataformas de aprendizagem tradicionais que se concentram apenas na entrega de conteúdo ou ferramentas de tutoria de IA que carecem de recursos de estudo abrangentes, Studyield oferece um ecossistema de aprendizagem completo com 6 recursos de IA poderosos, um kit completo de ferramentas de estudo e acesso multiplataforma.
 
-<!-- TODO: Add product screenshot/GIF here -->
-<!-- <p align="center">
-  <img src="docs/screenshots/hero.png" alt="Studyield Dashboard">
+<p align="center">
+  <img src=".github/screenshots/dashboard-home.png" alt="Studyield Dashboard" width="800">
   <br>
   <em>Painel de aprendizagem impulsionado por IA do Studyield</em>
-</p> -->
+</p>
 
 ### Como funciona
 
@@ -332,6 +331,7 @@ Studyield é mais do que apenas outro projeto de código aberto -- é uma oportu
 - Participe de discussões técnicas e decisões de design
 
 **🎯 Faça um impacto real**
+- 💬 [Discord Community](https://discord.gg/9JEk6WSM) -- Join our Discord server
 - Seu código ajudará estudantes a aprender de forma mais eficaz e alcançar seus objetivos acadêmicos
 - Veja seus recursos sendo usados em ambientes de produção
 - Influencie a direção do EdTech de código aberto
@@ -367,6 +367,7 @@ Comece a contribuir em **menos de 5 minutos**:
 
 ```bash
 # Faça fork do repositório no GitHub, depois clone seu fork
+- 💬 [Discord Community](https://discord.gg/9JEk6WSM) -- Join our Discord server
 git clone https://github.com/YOUR_USERNAME/studyield.git
 cd studyield
 
@@ -404,12 +405,14 @@ Escolha com base em seu nível de experiência:
 - 🔐 [Recursos de segurança](https://github.com/studyield/studyield/issues?q=is%3Aissue+is%3Aopen+label%3Asecurity)
 
 ### Passo 3: Faça suas alterações
+- 💬 [Discord Community](https://discord.gg/9JEk6WSM) -- Join our Discord server
 
 ```bash
 # Crie um novo branch
 git checkout -b feature/your-feature-name
 
 # Faça suas alterações
+- 💬 [Discord Community](https://discord.gg/9JEk6WSM) -- Join our Discord server
 # - Código backend: /backend/src/modules
 # - Código frontend: /frontend/src
 # - Código móvel: /mobile/lib
@@ -447,6 +450,7 @@ git push origin feature/your-feature-name
 📖 **Leia o código** -- Navegue pelos módulos e componentes existentes para referência
 
 ❓ **Faça perguntas** -- Participe de nossas [Discussões](https://github.com/studyield/studyield/discussions) se estiver preso
+- 💬 [Discord Community](https://discord.gg/9JEk6WSM) -- Join our Discord server
 
 🧪 **Escreva testes** -- PRs com testes são mesclados mais rapidamente
 
@@ -455,6 +459,7 @@ git push origin feature/your-feature-name
 ### Precisa de ajuda?
 
 - 💬 [Discussões no GitHub](https://github.com/studyield/studyield/discussions) -- Faça perguntas, compartilhe ideias
+- 💬 [Discord Community](https://discord.gg/9JEk6WSM) -- Join our Discord server
 - 📖 [Guia de Contribuição](CONTRIBUTING.md) -- Diretrizes detalhadas de contribuição
 - 🐛 [GitHub Issues](https://github.com/studyield/studyield/issues) -- Relate bugs ou solicite recursos
 - 📧 [E-mail](mailto:support@studyield.com) -- Contato direto com mantenedores
@@ -497,6 +502,7 @@ Conecte-se com desenvolvedores, obtenha ajuda e fique atualizado sobre os últim
 | Plataforma | Propósito | Link |
 |----------|---------|------|
 | 💡 **Discussões no GitHub** | Fazer perguntas, compartilhar ideias, solicitações de recursos | [Iniciar Discussão](https://github.com/studyield/studyield/discussions) |
+| 💬 **Discord** | Junte-se à nossa comunidade, chat em tempo real | [Entrar no Discord](https://discord.gg/9JEk6WSM) |
 | 🐦 **Twitter/X** | Atualizações de produtos, anúncios, dicas | [@studyield](https://twitter.com/studyield) |
 | 📧 **E-mail** | Contato direto com mantenedores | support@studyield.com |
 | 🌐 **Website** | Documentação, guias, blog | [studyield.com](https://studyield.com) |

@@ -41,12 +41,11 @@ Studyield es una **plataforma de aprendizaje de código abierto impulsada por IA
 
 A diferencia de las plataformas de aprendizaje tradicionales que se centran únicamente en la entrega de contenido o las herramientas de tutoría de IA que carecen de funciones de estudio integrales, Studyield te brinda un ecosistema de aprendizaje completo con 6 características de IA potentes, un conjunto completo de herramientas de estudio y acceso multiplataforma.
 
-<!-- TODO: Add product screenshot/GIF here -->
-<!-- <p align="center">
-  <img src="docs/screenshots/hero.png" alt="Studyield Dashboard">
+<p align="center">
+  <img src=".github/screenshots/dashboard-home.png" alt="Studyield Dashboard" width="800">
   <br>
   <em>Panel de aprendizaje impulsado por IA de Studyield</em>
-</p> -->
+</p>
 
 ### Cómo funciona
 
@@ -455,6 +454,7 @@ git push origin feature/your-feature-name
 ### ¿Necesitas ayuda?
 
 - 💬 [Discusiones de GitHub](https://github.com/studyield/studyield/discussions) -- Haz preguntas, comparte ideas
+- 💬 [Comunidad Discord](https://discord.gg/9JEk6WSM) -- Únete a nuestro servidor Discord
 - 📖 [Guía de contribución](CONTRIBUTING.md) -- Pautas detalladas de contribución
 - 🐛 [GitHub Issues](https://github.com/studyield/studyield/issues) -- Informa errores o solicita características
 - 📧 [Correo electrónico](mailto:support@studyield.com) -- Contacto directo con mantenedores
@@ -497,6 +497,7 @@ git push origin feature/your-feature-name
 | Plataforma | Propósito | Enlace |
 |----------|---------|------|
 | 💡 **Discusiones de GitHub** | Hacer preguntas, compartir ideas, solicitudes de características | [Iniciar discusión](https://github.com/studyield/studyield/discussions) |
+| 💬 **Discord** | Únete a nuestra comunidad, chat en tiempo real | [Unirse a Discord](https://discord.gg/9JEk6WSM) |
 | 🐦 **Twitter/X** | Actualizaciones de productos, anuncios, consejos | [@studyield](https://twitter.com/studyield) |
 | 📧 **Correo electrónico** | Contacto directo con mantenedores | support@studyield.com |
 | 🌐 **Sitio web** | Documentación, guías, blog | [studyield.com](https://studyield.com) |

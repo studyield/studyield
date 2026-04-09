@@ -41,12 +41,11 @@ Studyield est une **plateforme d'apprentissage open source alimentée par l'IA**
 
 Contrairement aux plateformes d'apprentissage traditionnelles qui se concentrent uniquement sur la diffusion de contenu ou aux outils de tutorat IA qui manquent de fonctionnalités d'étude complètes, Studyield vous offre un écosystème d'apprentissage complet avec 6 fonctionnalités IA puissantes, une boîte à outils d'étude complète et un accès multiplateforme.
 
-<!-- TODO: Add product screenshot/GIF here -->
-<!-- <p align="center">
-  <img src="docs/screenshots/hero.png" alt="Studyield Dashboard">
+<p align="center">
+  <img src=".github/screenshots/dashboard-home.png" alt="Studyield Dashboard" width="800">
   <br>
   <em>Tableau de bord d'apprentissage alimenté par IA de Studyield</em>
-</p> -->
+</p>
 
 ### Comment ça marche
 
@@ -447,6 +446,7 @@ git push origin feature/your-feature-name
 📖 **Lisez le code** -- Parcourez les modules et composants existants pour référence
 
 ❓ **Posez des questions** -- Rejoignez nos [Discussions](https://github.com/studyield/studyield/discussions) si vous êtes bloqué
+- 💬 [Discord Community](https://discord.gg/9JEk6WSM) -- Join our Discord server
 
 🧪 **Écrivez des tests** -- Les PR avec tests sont fusionnées plus rapidement
 
@@ -455,6 +455,7 @@ git push origin feature/your-feature-name
 ### Besoin d'aide ?
 
 - 💬 [Discussions GitHub](https://github.com/studyield/studyield/discussions) -- Posez des questions, partagez des idées
+- 💬 [Discord Community](https://discord.gg/9JEk6WSM) -- Join our Discord server
 - 📖 [Guide de contribution](CONTRIBUTING.md) -- Directives de contribution détaillées
 - 🐛 [GitHub Issues](https://github.com/studyield/studyield/issues) -- Signalez des bugs ou demandez des fonctionnalités
 - 📧 [Email](mailto:support@studyield.com) -- Contact direct avec les mainteneurs
@@ -497,6 +498,7 @@ Connectez-vous avec des développeurs, obtenez de l'aide et restez informé des 
 | Plateforme | Objectif | Lien |
 |----------|---------|------|
 | 💡 **Discussions GitHub** | Poser des questions, partager des idées, demandes de fonctionnalités | [Démarrer une discussion](https://github.com/studyield/studyield/discussions) |
+| 💬 **Discord** | Rejoindre notre communauté, chat en temps réel | [Rejoindre Discord](https://discord.gg/9JEk6WSM) |
 | 🐦 **Twitter/X** | Mises à jour produit, annonces, conseils | [@studyield](https://twitter.com/studyield) |
 | 📧 **Email** | Contact direct avec les mainteneurs | support@studyield.com |
 | 🌐 **Site web** | Documentation, guides, blog | [studyield.com](https://studyield.com) |

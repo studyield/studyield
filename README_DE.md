@@ -41,12 +41,11 @@ Studyield ist eine **Open-Source KI-gestützte Lernplattform**, die Studenten hi
 
 Im Gegensatz zu traditionellen Lernplattformen, die sich ausschließlich auf die Bereitstellung von Inhalten konzentrieren, oder KI-Tutoring-Tools, denen umfassende Lernfunktionen fehlen, bietet Studyield ein vollständiges Lern-Ökosystem mit 6 leistungsstarken KI-Funktionen, einem kompletten Lernwerkzeug-Kit und plattformübergreifendem Zugriff.
 
-<!-- TODO: Add product screenshot/GIF here -->
-<!-- <p align="center">
-  <img src="docs/screenshots/hero.png" alt="Studyield Dashboard">
+<p align="center">
+  <img src=".github/screenshots/dashboard-home.png" alt="Studyield Dashboard" width="800">
   <br>
   <em>Studyields KI-gestütztes Lern-Dashboard</em>
-</p> -->
+</p>
 
 ### Wie es funktioniert
 
@@ -455,6 +454,7 @@ git push origin feature/your-feature-name
 ### Brauchen Sie Hilfe?
 
 - 💬 [GitHub-Diskussionen](https://github.com/studyield/studyield/discussions) -- Stellen Sie Fragen, teilen Sie Ideen
+- 💬 [Discord Community](https://discord.gg/9JEk6WSM) -- Join our Discord server
 - 📖 [Beitragsleitfaden](CONTRIBUTING.md) -- Detaillierte Beitragsrichtlinien
 - 🐛 [GitHub Issues](https://github.com/studyield/studyield/issues) -- Melden Sie Bugs oder fordern Sie Funktionen an
 - 📧 [E-Mail](mailto:support@studyield.com) -- Direkter Kontakt mit Maintainern
@@ -497,6 +497,7 @@ Vernetzen Sie sich mit Entwicklern, erhalten Sie Hilfe und bleiben Sie über die
 | Plattform | Zweck | Link |
 |----------|---------|------|
 | 💡 **GitHub-Diskussionen** | Fragen stellen, Ideen teilen, Funktionsanfragen | [Diskussion starten](https://github.com/studyield/studyield/discussions) |
+| 💬 **Discord** | Community beitreten, Echtzeit-Chat | [Discord beitreten](https://discord.gg/9JEk6WSM) |
 | 🐦 **Twitter/X** | Produktupdates, Ankündigungen, Tipps | [@studyield](https://twitter.com/studyield) |
 | 📧 **E-Mail** | Direkter Kontakt mit Maintainern | support@studyield.com |
 | 🌐 **Website** | Dokumentation, Leitfäden, Blog | [studyield.com](https://studyield.com) |

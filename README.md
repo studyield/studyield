@@ -41,12 +41,11 @@ Studyield is an **open-source AI-powered learning platform** that helps students
 
 Unlike traditional learning platforms that focus solely on content delivery or AI tutoring tools that lack comprehensive study features, Studyield gives you a complete learning ecosystem with 6 killer AI features, a full study toolkit, and multi-platform access.
 
-<!-- TODO: Add product screenshot/GIF here -->
-<!-- <p align="center">
-  <img src="docs/screenshots/hero.png" alt="Studyield Dashboard">
+<p align="center">
+  <img src=".github/screenshots/dashboard-home.png" alt="Studyield Dashboard" width="800">
   <br>
   <em>Studyield's AI-powered learning dashboard</em>
-</p> -->
+</p>
 
 ### How It Works
 
@@ -455,6 +454,7 @@ git push origin feature/your-feature-name
 ### Need Help?
 
 - 💬 [GitHub Discussions](https://github.com/studyield/studyield/discussions) -- Ask questions, share ideas
+- 💬 [Discord Community](https://discord.gg/9JEk6WSM) -- Join our Discord server
 - 📖 [Contributing Guide](CONTRIBUTING.md) -- Detailed contribution guidelines
 - 🐛 [GitHub Issues](https://github.com/studyield/studyield/issues) -- Report bugs or request features
 - 📧 [Email](mailto:support@studyield.com) -- Direct contact with maintainers
@@ -497,6 +497,7 @@ Connect with developers, get help, and stay updated on Studyield's latest develo
 | Platform | Purpose | Link |
 |----------|---------|------|
 | 💡 **GitHub Discussions** | Ask questions, share ideas, feature requests | [Start Discussion](https://github.com/studyield/studyield/discussions) |
+| 💬 **Discord** | Join our community, real-time chat | [Join Discord](https://discord.gg/9JEk6WSM) |
 | 🐦 **Twitter/X** | Product updates, announcements, tips | [@studyield](https://twitter.com/studyield) |
 | 📧 **Email** | Direct contact with maintainers | support@studyield.com |
 | 🌐 **Website** | Documentation, guides, blog | [studyield.com](https://studyield.com) |

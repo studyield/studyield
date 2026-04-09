@@ -41,6 +41,12 @@ Studyield - это **образовательная платформа с отк
 
 В отличие от традиционных образовательных платформ, которые фокусируются исключительно на доставке контента, или инструментов ИИ-репетиторства, которым не хватает комплексных функций обучения, Studyield предоставляет вам полную образовательную экосистему с 6 мощными функциями ИИ, полным набором инструментов для обучения и многоплатформенным доступом.
 
+<p align="center">
+  <img src=".github/screenshots/dashboard-home.png" alt="Studyield Dashboard" width="800">
+  <br>
+  <em>Обучающая панель Studyield на основе ИИ</em>
+</p>
+
 ### Как это работает
 
 1. **Загрузите свои материалы** -- Добавьте учебные материалы (PDF, документы, прошлые экзамены) в свою базу знаний
@@ -265,6 +271,9 @@ docker compose --env-file .env.docker up -d
 <p align="center">
   <a href="https://github.com/studyield/studyield/discussions">
     <img src="https://img.shields.io/badge/GitHub-Discussions-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Discussions">
+  </a>
+  <a href="https://discord.gg/9JEk6WSM">
+    <img src="https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
   <a href="https://twitter.com/studyield">
     <img src="https://img.shields.io/badge/Twitter-Follow%20Us-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
