@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/contexts/AuthContext';
@@ -321,10 +321,12 @@ function SpacedRepVisual() {
 
 // Analytics: mini dashboard with charts
 function AnalyticsVisual() {
-  const heatmapColors = Array.from({ length: 28 }).map(() => {
-    const intensity = Math.random();
-    return intensity > 0.7 ? '#22c55e' : intensity > 0.4 ? '#86efac' : intensity > 0.15 ? '#dcfce7' : '#f3f4f6';
-  });
+  const [heatmapColors] = React.useState(() =>
+    Array.from({ length: 28 }).map(() => {
+      const intensity = Math.random();
+      return intensity > 0.7 ? '#22c55e' : intensity > 0.4 ? '#86efac' : intensity > 0.15 ? '#dcfce7' : '#f3f4f6';
+    })
+  );
   return (
     <div className="w-52 mx-auto mb-4">
       <motion.div

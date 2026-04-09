@@ -52,7 +52,9 @@ export function LearningPathDetailPage() {
     (async () => {
       try {
         setPath(await learningPathsService.get(id));
-      } catch {}
+      } catch {
+        // Silently ignore fetch errors
+      }
       setLoading(false);
     })();
   }, [id]);
@@ -63,7 +65,9 @@ export function LearningPathDetailPage() {
     try {
       const updated = await learningPathsService.completeStep(id, stepId);
       setPath(updated);
-    } catch {}
+    } catch {
+      // Silently ignore completion errors
+    }
     setCompleting(null);
   };
 

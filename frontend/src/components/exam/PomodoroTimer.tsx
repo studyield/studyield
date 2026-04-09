@@ -34,7 +34,8 @@ export function PomodoroTimer({ onSessionComplete, className, compact = false }:
     if (!soundEnabled) return;
     // Create a simple beep sound using Web Audio API
     try {
-      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const AudioContextClass = window.AudioContext || (window as Window & typeof globalThis & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+      const audioContext = new (AudioContextClass as typeof AudioContext)();
       const oscillator = audioContext.createOscillator();
       const gainNode = audioContext.createGain();
 
@@ -48,7 +49,7 @@ export function PomodoroTimer({ onSessionComplete, className, compact = false }:
 
       oscillator.start(audioContext.currentTime);
       oscillator.stop(audioContext.currentTime + 0.5);
-    } catch (e) {
+    } catch {
       console.log('Audio not supported');
     }
   }, [soundEnabled]);

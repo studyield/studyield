@@ -120,8 +120,8 @@ export function LoginPage() {
     try {
       await googleLogin(response.credential);
       navigate('/dashboard');
-    } catch (err: any) {
-      setError(err.message || t('auth.login.googleFailed'));
+    } catch (err) {
+      setError((err as Error).message || t('auth.login.googleFailed'));
     } finally {
       setSocialLoading('');
     }
@@ -153,9 +153,9 @@ export function LoginPage() {
 
       await appleLogin(idToken, userData);
       navigate('/dashboard');
-    } catch (err: any) {
-      if (err.error !== 'popup_closed_by_user') {
-        setError(err.message || t('auth.login.appleFailed'));
+    } catch (err) {
+      if ((err as { error?: string }).error !== 'popup_closed_by_user') {
+        setError((err as Error).message || t('auth.login.appleFailed'));
       }
     } finally {
       setSocialLoading('');
@@ -170,8 +170,8 @@ export function LoginPage() {
     try {
       await login(email, password);
       navigate('/dashboard');
-    } catch (err: any) {
-      setError(err.message || t('auth.login.signInFailed'));
+    } catch (err) {
+      setError((err as Error).message || t('auth.login.signInFailed'));
     } finally {
       setIsLoading(false);
     }

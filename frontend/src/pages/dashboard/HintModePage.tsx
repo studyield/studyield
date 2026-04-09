@@ -42,7 +42,9 @@ export function HintModePage() {
   useEffect(() => {
     if (!id) return;
     (async () => {
-      try { setSession(await problemSolverService.get(id)); } catch {}
+      try { setSession(await problemSolverService.get(id)); } catch {
+        // Silently ignore fetch errors
+      }
       setLoading(false);
     })();
   }, [id]);
@@ -54,7 +56,9 @@ export function HintModePage() {
       const res = await problemSolverService.getNextHint(id);
       setHints(prev => [...prev, res]);
       setIsLastHint(res.isLastHint);
-    } catch {}
+    } catch {
+      // Silently ignore fetch errors
+    }
     setGettingHint(false);
   };
 
@@ -64,7 +68,9 @@ export function HintModePage() {
       await problemSolverService.resetHints(id);
       setHints([]);
       setIsLastHint(false);
-    } catch {}
+    } catch {
+      // Silently ignore reset errors
+    }
   };
 
   return (

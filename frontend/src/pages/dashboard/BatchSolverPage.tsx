@@ -33,14 +33,18 @@ export function BatchSolverPage() {
       const content = res.data.text || res.data.content || '';
       setText(content);
       setProblems(await problemSolverService.batchExtractProblems(content));
-    } catch {}
+    } catch {
+      // Silently ignore extraction errors
+    }
     setExtracting(false);
   };
 
   const extractFromText = async () => {
     if (!text.trim()) return;
     setExtracting(true);
-    try { setProblems(await problemSolverService.batchExtractProblems(text)); } catch {}
+    try { setProblems(await problemSolverService.batchExtractProblems(text)); } catch {
+      // Silently ignore extraction errors
+    }
     setExtracting(false);
   };
 
@@ -49,7 +53,9 @@ export function BatchSolverPage() {
     try {
       const sessionId = await createAndSolve(problems[idx]);
       if (sessionId) setSolvedIds(prev => ({ ...prev, [idx]: sessionId }));
-    } catch {}
+    } catch {
+      // Silently ignore solve errors
+    }
     setSolvingIdx(null);
   };
 

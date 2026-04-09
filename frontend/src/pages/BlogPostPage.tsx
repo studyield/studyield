@@ -50,48 +50,6 @@ function formatDate(dateString: string) {
 
 function renderMarkdown(content: string) {
   // Simple markdown-to-HTML: headings, bold, italic, lists, tables, hr, links, code
-  let html = content
-    // Code blocks
-    .replace(/```(\w+)?\n([\s\S]*?)```/g, '<pre class="bg-muted rounded-lg p-4 overflow-x-auto my-4 text-sm"><code>$2</code></pre>')
-    // Inline code
-    .replace(/`([^`]+)`/g, '<code class="bg-muted px-1.5 py-0.5 rounded text-sm font-mono">$1</code>')
-    // Headings
-    .replace(/^### (.+)$/gm, '<h3 class="text-xl font-bold mt-8 mb-3">$1</h3>')
-    .replace(/^## (.+)$/gm, '<h2 class="text-2xl font-black mt-10 mb-4">$2</h2>')
-    // Bold
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    // Italic
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    // HR
-    .replace(/^---$/gm, '<hr class="my-8 border-border" />')
-    // Unordered lists
-    .replace(/^- (.+)$/gm, '<li class="ml-6 list-disc">$1</li>')
-    // Ordered lists
-    .replace(/^\d+\. (.+)$/gm, '<li class="ml-6 list-decimal">$1</li>')
-    // Tables
-    .replace(/\|(.+)\|/g, (match) => {
-      const cells = match.split('|').filter(c => c.trim());
-      if (cells.every(c => /^[\s-:]+$/.test(c))) return ''; // separator row
-      const isHeader = cells.some(c => c.includes('---'));
-      if (isHeader) return '';
-      const cellHtml = cells.map(c => `<td class="border border-border px-3 py-2">${c.trim()}</td>`).join('');
-      return `<tr>${cellHtml}</tr>`;
-    })
-    // Paragraphs - wrap lines that aren't already HTML
-    .replace(/^(?!<[a-z]|$)(.+)$/gm, '<p class="mb-4 leading-relaxed">$1</p>');
-
-  // Wrap consecutive li elements
-  html = html.replace(/((?:<li[^>]*>.*?<\/li>\s*)+)/g, '<ul class="my-4 space-y-1">$1</ul>');
-
-  // Wrap consecutive tr elements in table
-  html = html.replace(/((?:<tr>.*?<\/tr>\s*)+)/g, '<table class="w-full border-collapse border border-border my-4 text-sm">$1</table>');
-
-  // Fix h2 backreference
-  html = html.replace(/<h2 class="text-2xl font-black mt-10 mb-4">\$2<\/h2>/g, '');
-  // Re-apply h2 properly
-  html = content.replace(/^## (.+)$/gm, '<h2 class="text-2xl font-black mt-10 mb-4">$1</h2>');
-
-  // Full re-render with proper pipeline
   let result = content;
   result = result
     .replace(/```(\w+)?\n([\s\S]*?)```/g, '<pre class="bg-muted rounded-lg p-4 overflow-x-auto my-4 text-sm"><code>$2</code></pre>')

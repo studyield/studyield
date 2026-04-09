@@ -185,6 +185,7 @@ export function MatchGamePage() {
 
   useEffect(() => {
     if (flashcards.length >= 2 && !gameStarted) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       initGame();
     }
   }, [flashcards, gameStarted, initGame]);

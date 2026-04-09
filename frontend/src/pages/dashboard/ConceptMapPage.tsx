@@ -21,7 +21,9 @@ export function ConceptMapPage() {
       try {
         const res = await problemSolverService.getConceptMap(id);
         setData(res);
-      } catch {}
+      } catch {
+        // Silently ignore fetch errors
+      }
       setLoading(false);
     })();
   }, [id]);

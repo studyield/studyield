@@ -22,20 +22,26 @@ import {
 const confettiColors = ['#22c55e', '#3b82f6', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4'];
 
 function ConfettiParticle({ delay, x }: { delay: number; x: number }) {
-  const color = confettiColors[Math.floor(Math.random() * confettiColors.length)];
-  const size = 6 + Math.random() * 6;
+  const randomValues = React.useMemo(() => ({
+    color: confettiColors[Math.floor(Math.random() * confettiColors.length)],
+    size: 6 + Math.random() * 6,
+    xOffset: (Math.random() - 0.5) * 100,
+    rotation: 360 + Math.random() * 360,
+    duration: 2 + Math.random(),
+    shape: Math.random() > 0.5 ? '50%' : '2px',
+  }), []);
 
   return (
     <motion.div
       initial={{ opacity: 1, y: -20, x, rotate: 0 }}
-      animate={{ opacity: 0, y: 300, x: x + (Math.random() - 0.5) * 100, rotate: 360 + Math.random() * 360 }}
-      transition={{ duration: 2 + Math.random(), delay, ease: 'easeOut' }}
+      animate={{ opacity: 0, y: 300, x: x + randomValues.xOffset, rotate: randomValues.rotation }}
+      transition={{ duration: randomValues.duration, delay, ease: 'easeOut' }}
       className="absolute top-0 pointer-events-none"
       style={{
-        width: size,
-        height: size,
-        borderRadius: Math.random() > 0.5 ? '50%' : '2px',
-        backgroundColor: color,
+        width: randomValues.size,
+        height: randomValues.size,
+        borderRadius: randomValues.shape,
+        backgroundColor: randomValues.color,
       }}
     />
   );
@@ -76,11 +82,11 @@ export function PaymentSuccessPage() {
     return () => clearTimeout(timer);
   }, [refreshUser, searchParams, t]);
 
-  const confettiParticles = Array.from({ length: 30 }, (_, i) => ({
+  const confettiParticles = React.useMemo(() => Array.from({ length: 30 }, (_, i) => ({
     id: i,
     delay: Math.random() * 0.5,
     x: Math.random() * 500 - 250,
-  }));
+  })), []);
 
   return (
     <DashboardLayout>

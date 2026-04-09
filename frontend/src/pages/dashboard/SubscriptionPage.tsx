@@ -14,7 +14,6 @@ import {
   Shield,
   ArrowRight,
   Star,
-  Infinity,
   Clock,
 } from 'lucide-react';
 import {

@@ -100,6 +100,7 @@ function UploadDemo({ isActive, isCompleted }: { isActive: boolean; isCompleted:
     });
 
     return () => timeouts.forEach(t => clearTimeout(t));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isActive, isCompleted]);
 
   return (
@@ -167,6 +168,7 @@ function GenerateDemo({ isActive, isCompleted }: { isActive: boolean; isComplete
     });
 
     return () => timeouts.forEach(t => clearTimeout(t));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isActive, isCompleted]);
 
   return (
@@ -206,6 +208,7 @@ function StudyDemo({ isActive, isCompleted }: { isActive: boolean; isCompleted: 
 
   useEffect(() => {
     if (isCompleted) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setProgress(100);
       setCurrentCard(2);
       return;
@@ -300,6 +303,7 @@ function MasterDemo({ isActive, isCompleted }: { isActive: boolean; isCompleted:
     timeouts.push(setTimeout(() => setShowBadge(true), 1600));
 
     return () => timeouts.forEach(t => clearTimeout(t));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isActive, isCompleted]);
 
   return (

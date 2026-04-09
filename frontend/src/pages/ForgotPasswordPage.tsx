@@ -25,8 +25,8 @@ export function ForgotPasswordPage() {
     try {
       await forgotPassword(email);
       setIsSubmitted(true);
-    } catch (err: any) {
-      setError(err.message || t('auth.forgotPassword.sendFailed'));
+    } catch (err) {
+      setError((err as Error).message || t('auth.forgotPassword.sendFailed'));
     } finally {
       setIsLoading(false);
     }

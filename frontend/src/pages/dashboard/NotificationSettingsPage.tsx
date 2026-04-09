@@ -103,7 +103,9 @@ export function NotificationSettingsPage() {
       try {
         const res = await api.get(ENDPOINTS.notifications.preferences);
         setPrefs({ ...DEFAULT_PREFS, ...res.data });
-      } catch {}
+      } catch {
+        // Silently ignore fetch errors
+      }
       setLoading(false);
     };
     loadPrefs();
@@ -119,7 +121,9 @@ export function NotificationSettingsPage() {
       await api.post(ENDPOINTS.notifications.preferences, prefs);
       setSaved(true);
       setTimeout(() => setSaved(false), 2000);
-    } catch {}
+    } catch {
+      // Silently ignore save errors
+    }
     setSaving(false);
   };
 

@@ -57,7 +57,9 @@ export function ResearchReportPage() {
     try {
       await researchService.delete(id);
       navigate('/dashboard/research');
-    } catch {}
+    } catch {
+      // Silently ignore delete errors
+    }
   };
 
   const handleCopyText = async (text: string) => {
@@ -446,7 +448,6 @@ function SourceCard({
   source,
   index,
   onCopy,
-  citationStyle: _citationStyle,
   formatCitation,
 }: {
   source: ResearchSource;

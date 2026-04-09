@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { DashboardLayout } from '@/layouts/DashboardLayout';
@@ -15,7 +15,7 @@ import {
   BookOpen,
   Layers,
   HardDrive,
-  Infinity,
+  Infinity as InfinityIcon,
   Calendar,
   ArrowUpRight,
 } from 'lucide-react';
@@ -46,16 +46,20 @@ export function UsagePage() {
     (async () => {
       try {
         setUsage(await subscriptionService.getUsage());
-      } catch {}
+      } catch {
+        // Silently ignore errors
+      }
       setLoading(false);
     })();
   }, []);
 
   // Calculate next reset date (1st of next month)
-  const nextReset = new Date();
-  nextReset.setDate(1);
-  nextReset.setMonth(nextReset.getMonth() + 1);
-  const daysUntilReset = Math.ceil((nextReset.getTime() - Date.now()) / 86400000);
+  const daysUntilReset = React.useMemo(() => {
+    const nextReset = new Date();
+    nextReset.setDate(1);
+    nextReset.setMonth(nextReset.getMonth() + 1);
+    return Math.ceil((nextReset.getTime() - Date.now()) / 86400000);
+  }, []);
 
   if (loading) {
     return (
@@ -131,7 +135,7 @@ export function UsagePage() {
                       <p className="text-xs text-muted-foreground">
                         {isUnlimited ? (
                           <span className="flex items-center gap-1">
-                            <Infinity className="w-3 h-3" /> {t('usagePage.unlimited')}
+                            <InfinityIcon className="w-3 h-3" /> {t('usagePage.unlimited')}
                           </span>
                         ) : isStorage ? (
                           t('usagePage.usedOfStorage', { used: displayUsed, limit: displayLimit })

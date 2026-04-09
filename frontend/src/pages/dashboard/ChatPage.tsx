@@ -36,12 +36,10 @@ const SUGGESTED_QUESTION_KEYS = [
 
 function CitationBadge({
   index,
-  citation: _citation,
   onClick,
   sourceLabel,
 }: {
   index: number;
-  citation: Citation;
   onClick: () => void;
   sourceLabel: string;
 }) {

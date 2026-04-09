@@ -17,7 +17,9 @@ export function SolverBookmarksPage() {
 
   useEffect(() => {
     (async () => {
-      try { setBookmarks(await problemSolverService.getBookmarks()); } catch {}
+      try { setBookmarks(await problemSolverService.getBookmarks()); } catch {
+        // Silently ignore fetch errors
+      }
       setLoading(false);
     })();
   }, []);
@@ -26,7 +28,9 @@ export function SolverBookmarksPage() {
     try {
       await problemSolverService.removeBookmark(sessionId);
       setBookmarks(prev => prev.filter(b => b.sessionId !== sessionId));
-    } catch {}
+    } catch {
+      // Silently ignore remove errors
+    }
   };
 
   const filtered = bookmarks.filter(b =>

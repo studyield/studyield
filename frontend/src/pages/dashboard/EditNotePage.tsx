@@ -79,7 +79,7 @@ export function EditNotePage() {
         tags,
       });
       navigate(`/dashboard/study-sets/${studySetId}/notes/${noteId}`);
-    } catch (err) {
+    } catch {
       setError(t('editNote.errorUpdate'));
     } finally {
       setIsSaving(false);

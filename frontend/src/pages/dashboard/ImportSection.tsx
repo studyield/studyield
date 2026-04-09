@@ -188,19 +188,24 @@ function CardCountPicker({
 }
 
 function WaveformBars({ isActive }: { isActive: boolean }) {
+  const bars = React.useMemo(() => Array.from({ length: 30 }, () => ({
+    height: Math.random() * 56 + 8,
+    duration: 0.4 + Math.random() * 0.4,
+  })), []);
+
   return (
     <div className="flex items-center justify-center gap-[3px] h-20">
-      {Array.from({ length: 30 }).map((_, i) => (
+      {bars.map((bar, i) => (
         <motion.div
           key={i}
           className="w-1 rounded-full bg-emerald-500"
           animate={
             isActive
-              ? { height: [6, Math.random() * 56 + 8, 6] }
+              ? { height: [6, bar.height, 6] }
               : { height: 6 }
           }
           transition={{
-            duration: 0.4 + Math.random() * 0.4,
+            duration: bar.duration,
             repeat: Infinity,
             repeatType: 'reverse',
             delay: i * 0.02,
@@ -1417,7 +1422,7 @@ export function ImportSection({ onCardsImported, studySetId }: ImportSectionProp
   };
 
   // ── Website submit ───────────────────────────────────────────────
-  const handleWebsiteSubmit = async (url: string, count: number, _includeImages: boolean) => {
+  const handleWebsiteSubmit = async (url: string, count: number) => {
     await processWithAI('website', ENDPOINTS.content.extractWebsite, { url }, count, undefined, {
       title: new URL(url).hostname,
       url,

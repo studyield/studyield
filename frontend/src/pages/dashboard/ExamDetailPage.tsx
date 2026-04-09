@@ -612,7 +612,7 @@ function ExportPdfModal({
 }
 
 // Analytics Tab Component
-function AnalyticsTab({ analytics, examId: _examId }: { analytics: Analytics | null; examId: string }) {
+function AnalyticsTab({ analytics }: { analytics: Analytics | null }) {
   const { t } = useTranslation();
   if (!analytics || analytics.totalAttempts === 0) {
     return (

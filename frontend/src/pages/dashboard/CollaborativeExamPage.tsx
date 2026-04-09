@@ -129,7 +129,7 @@ export default function CollaborativeExamPage() {
       setPhase('lobby');
     });
 
-    newSocket.on('joined-session', ({ sessionId, examCloneId: _examId, status, hostId }) => {
+    newSocket.on('joined-session', ({ sessionId, status, hostId }) => {
       setSessionId(sessionId);
       setIsHost(hostId === user?.id);
       setPhase(status === 'in_progress' ? 'playing' : 'lobby');
@@ -154,6 +154,7 @@ export default function CollaborativeExamPage() {
       setPhase('playing');
       setCurrentQuestionIndex(0);
       setTimeLeft(30);
+      // eslint-disable-next-line react-hooks/immutability
       fetchQuestions(questionIds);
     });
 
@@ -260,7 +261,7 @@ export default function CollaborativeExamPage() {
       setQuestions(data.slice(0, 10));
 
       socket.emit('start-session', { code: sessionCode, questionIds });
-    } catch (err) {
+    } catch {
       setError('Failed to load questions');
     }
   };

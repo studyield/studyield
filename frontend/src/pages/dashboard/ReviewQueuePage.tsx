@@ -65,8 +65,8 @@ export default function ReviewQueuePage() {
         setStats({ correct: 0, incorrect: 0, total: data.length });
         setPhase('question');
       }
-    } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to load review queue');
+    } catch (err) {
+      setError((err as { response?: { data?: { message?: string } } }).response?.data?.message || 'Failed to load review queue');
       setPhase('empty');
     }
   }, []);

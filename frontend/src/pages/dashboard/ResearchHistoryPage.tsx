@@ -44,7 +44,9 @@ export function ResearchHistoryPage() {
     try {
       await researchService.delete(id);
       setSessions((prev) => prev.filter((s) => s.id !== id));
-    } catch {}
+    } catch {
+      // Silently ignore delete errors
+    }
   };
 
   const handleClick = (session: ResearchSession) => {

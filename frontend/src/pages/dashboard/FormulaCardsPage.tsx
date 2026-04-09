@@ -43,7 +43,9 @@ export function FormulaCardsPage() {
       try {
         const res = await problemSolverService.getFormulaCards(id);
         setCards(res);
-      } catch {}
+      } catch {
+        // Silently ignore fetch errors
+      }
       setLoading(false);
     })();
   }, [id]);

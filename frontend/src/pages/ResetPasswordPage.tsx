@@ -48,8 +48,9 @@ export function ResetPasswordPage() {
     try {
       await resetPassword(token, password);
       setIsSuccess(true);
-    } catch (err: any) {
-      setError(err.message || t('auth.resetPassword.resetFailed'));
+    } catch (err: unknown) {
+      const error = err as Error;
+      setError(error.message || t('auth.resetPassword.resetFailed'));
     } finally {
       setIsLoading(false);
     }

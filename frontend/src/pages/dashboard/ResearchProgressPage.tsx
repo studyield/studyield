@@ -111,6 +111,7 @@ export function ResearchProgressPage() {
     if (!id) return;
 
     // First fetch initial session state
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchSession().then((done) => {
       if (done) return;
 
