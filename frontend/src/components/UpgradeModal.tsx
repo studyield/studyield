@@ -60,7 +60,6 @@ export function UpgradeModal({ open: controlledOpen, onClose: controlledOnClose,
 
   const price = getPrice('pro', selectedCycle);
   const isMonthly = selectedCycle === 'monthly';
-  const isYearly = selectedCycle === 'yearly';
 
   return (
     <AnimatePresence>

@@ -5,14 +5,13 @@ import { DashboardLayout } from '@/layouts/DashboardLayout';
 import { Button } from '@/components/ui/button';
 import { Spinner } from '@/components/ui/spinner';
 import { motion } from 'framer-motion';
-import type { LearningPath, LearningStep } from '@/services/learningPaths';
+import type { LearningPath } from '@/services/learningPaths';
 import { learningPathsService } from '@/services/learningPaths';
 import {
   ArrowLeft,
   Route,
   Clock,
   CheckCircle,
-  Circle,
   BookOpen,
   HelpCircle,
   Dumbbell,

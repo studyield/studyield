@@ -1,10 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, type ReactElement } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { DashboardLayout } from '@/layouts/DashboardLayout';
 import { useProblemSolverStore } from '@/stores/useProblemSolverStore';
 import { Spinner } from '@/components/ui/spinner';
 import { motion, AnimatePresence } from 'framer-motion';
+import { cn } from '@/lib/utils';
 import {
   Brain,
   Zap,
@@ -14,9 +15,21 @@ import {
   Circle,
   ArrowRight,
   AlertTriangle,
+  type LucideIcon,
 } from 'lucide-react';
 
-const AGENTS = [
+interface Agent {
+  key: string;
+  stage: string;
+  labelKey: string;
+  descKey: string;
+  icon: LucideIcon;
+  color: string;
+  bgClass: string;
+  textClass: string;
+}
+
+const AGENTS: Agent[] = [
   {
     key: 'analysis',
     stage: 'analyzing',
@@ -24,6 +37,8 @@ const AGENTS = [
     descKey: 'solvingProgress.agents.analysisDesc',
     icon: Brain,
     color: 'blue',
+    bgClass: 'bg-blue-500/10',
+    textClass: 'text-blue-500',
   },
   {
     key: 'solving',
@@ -32,6 +47,8 @@ const AGENTS = [
     descKey: 'solvingProgress.agents.solverDesc',
     icon: Zap,
     color: 'amber',
+    bgClass: 'bg-amber-500/10',
+    textClass: 'text-amber-500',
   },
   {
     key: 'verification',
@@ -40,6 +57,8 @@ const AGENTS = [
     descKey: 'solvingProgress.agents.verifierDesc',
     icon: ShieldCheck,
     color: 'green',
+    bgClass: 'bg-green-500/10',
+    textClass: 'text-green-500',
   },
 ];
 
@@ -47,7 +66,7 @@ function getAgentStatus(
   agentStage: string,
   currentStage: string,
   stageResults: Record<string, unknown>,
-) {
+): 'active' | 'completed' | 'pending' {
   const order = ['analyzing', 'solving', 'verifying', 'completed', 'failed'];
   const currentIdx = order.indexOf(currentStage);
   const agentIdx = order.indexOf(agentStage);
@@ -145,7 +164,7 @@ export function SolvingProgressPage() {
           transition={{ delay: 0.1 }}
           className="space-y-4"
         >
-          {AGENTS.map((agent, idx) => {
+          {AGENTS.map((agent, idx): ReactElement => {
             const status = getAgentStatus(agent.stage, solveStage, stageResults);
             const chunkText = streamChunks[agent.key] || '';
 
@@ -164,18 +183,18 @@ export function SolvingProgressPage() {
                   }`}
                 >
                   <div className="flex items-center gap-4">
-                    {/* Status icon */}
                     <div
-                      className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${
+                      className={cn(
+                        'w-12 h-12 rounded-xl flex items-center justify-center shrink-0',
                         status === 'active'
-                          ? `bg-${agent.color}-500/10`
+                          ? agent.bgClass
                           : status === 'completed'
                             ? 'bg-green-500/10'
                             : 'bg-muted/50'
-                      }`}
+                      )}
                     >
                       {status === 'active' ? (
-                        <Loader2 className={`w-5 h-5 text-${agent.color}-500 animate-spin`} />
+                        <Loader2 className={cn('w-5 h-5 animate-spin', agent.textClass)} />
                       ) : status === 'completed' ? (
                         <CheckCircle className="w-5 h-5 text-green-500" />
                       ) : (
@@ -183,22 +202,20 @@ export function SolvingProgressPage() {
                       )}
                     </div>
 
-                    {/* Info */}
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-sm">{t(agent.labelKey)}</p>
+                      <p className="font-semibold text-sm">{t(agent.labelKey) as string}</p>
                       <p className="text-xs text-muted-foreground">
                         {status === 'active'
-                          ? t(agent.descKey) + '...'
+                          ? (t(agent.descKey) as string) + '...'
                           : status === 'completed'
-                            ? t('solvingProgress.done')
-                            : t('solvingProgress.waiting')}
+                            ? (t('solvingProgress.done') as string)
+                            : (t('solvingProgress.waiting') as string)}
                       </p>
                     </div>
 
-                    {/* Confidence badge */}
-                    {status === 'completed' && stageResults[agent.key] && (
+                    {status === 'completed' && Boolean(stageResults[agent.key]) && (
                       <span className="px-2 py-0.5 bg-green-500/10 text-green-500 rounded-full text-xs font-medium">
-                        {((stageResults[agent.key] as { confidence?: number })?.confidence ?? 0.9) * 100 | 0}%
+                        {Math.floor(((stageResults[agent.key] as { confidence?: number })?.confidence ?? 0.9) * 100)}%
                       </span>
                     )}
                   </div>

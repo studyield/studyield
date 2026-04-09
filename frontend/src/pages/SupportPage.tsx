@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import {
   Search,
   BookOpen,
-  MessageSquare,
   FileText,
   ChevronRight,
   HelpCircle,

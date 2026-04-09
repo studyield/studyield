@@ -45,6 +45,7 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "clickhouse": "^2.6.0",
+    "dotenv": "^16.4.5",
     "eventsource-parser": "^1.1.1",
     "firebase-admin": "^13.6.1",
     "google-auth-library": "^9.4.1",

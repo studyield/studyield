@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { DashboardLayout } from '@/layouts/DashboardLayout';
 import { Button } from '@/components/ui/button';
 import { Spinner } from '@/components/ui/spinner';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import type { QuizQuestion } from '@/services/problemSolver';
 import { problemSolverService } from '@/services/problemSolver';
 import { ArrowLeft, CheckCircle, XCircle, Trophy, RotateCcw, Zap } from 'lucide-react';
