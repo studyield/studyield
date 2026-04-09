@@ -457,7 +457,7 @@ git push origin feature/your-feature-name
 - 💬 [GitHub 토론](https://github.com/studyield/studyield/discussions) -- 질문하기, 아이디어 공유
 - 📖 [기여 가이드](CONTRIBUTING.md) -- 자세한 기여 가이드라인
 - 🐛 [GitHub Issues](https://github.com/studyield/studyield/issues) -- 버그 보고 또는 기능 요청
-- 📧 [이메일](mailto:hello@studyield.com) -- 유지 관리자에게 직접 연락
+- 📧 [이메일](mailto:support@studyield.com) -- 유지 관리자에게 직접 연락
 
 ## 기여하기
 
@@ -498,7 +498,7 @@ Studyield에 기여해 주신 모든 멋진 분들께 감사드립니다! 🎉
 |----------|---------|------|
 | 💡 **GitHub 토론** | 질문하기, 아이디어 공유, 기능 요청 | [토론 시작](https://github.com/studyield/studyield/discussions) |
 | 🐦 **Twitter/X** | 제품 업데이트, 공지, 팁 | [@studyield](https://twitter.com/studyield) |
-| 📧 **이메일** | 유지 관리자에게 직접 연락 | hello@studyield.com |
+| 📧 **이메일** | 유지 관리자에게 직접 연락 | support@studyield.com |
 | 🌐 **웹사이트** | 문서, 가이드, 블로그 | [studyield.com](https://studyield.com) |
 
 ### 커뮤니티 가이드라인

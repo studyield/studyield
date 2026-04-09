@@ -457,7 +457,7 @@ git push origin feature/your-feature-name
 - 💬 [GitHub-Diskussionen](https://github.com/studyield/studyield/discussions) -- Stellen Sie Fragen, teilen Sie Ideen
 - 📖 [Beitragsleitfaden](CONTRIBUTING.md) -- Detaillierte Beitragsrichtlinien
 - 🐛 [GitHub Issues](https://github.com/studyield/studyield/issues) -- Melden Sie Bugs oder fordern Sie Funktionen an
-- 📧 [E-Mail](mailto:hello@studyield.com) -- Direkter Kontakt mit Maintainern
+- 📧 [E-Mail](mailto:support@studyield.com) -- Direkter Kontakt mit Maintainern
 
 ## Beitragen
 
@@ -498,7 +498,7 @@ Vernetzen Sie sich mit Entwicklern, erhalten Sie Hilfe und bleiben Sie über die
 |----------|---------|------|
 | 💡 **GitHub-Diskussionen** | Fragen stellen, Ideen teilen, Funktionsanfragen | [Diskussion starten](https://github.com/studyield/studyield/discussions) |
 | 🐦 **Twitter/X** | Produktupdates, Ankündigungen, Tipps | [@studyield](https://twitter.com/studyield) |
-| 📧 **E-Mail** | Direkter Kontakt mit Maintainern | hello@studyield.com |
+| 📧 **E-Mail** | Direkter Kontakt mit Maintainern | support@studyield.com |
 | 🌐 **Website** | Dokumentation, Leitfäden, Blog | [studyield.com](https://studyield.com) |
 
 ### Community-Richtlinien
