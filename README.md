@@ -2,6 +2,13 @@
   <a href="https://studyield.com">
     <img src="frontend/public/logos/studyield-logo.png" alt="Studyield" width="80">
   </a>
+  <h1 align="center">Studyield</h1>
+  <p align="center">
+    <strong>Open-source AI-powered learning platform</strong>
+  </p>
+  <p align="center">
+    Learn smarter with AI-powered exam prep, multi-agent problem solving, knowledge graphs, and more.
+  </p>
 </p>
 
 <p align="center">
