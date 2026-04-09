@@ -457,7 +457,7 @@ git push origin feature/your-feature-name
 - 💬 [GitHub讨论](https://github.com/studyield/studyield/discussions) -- 提问、分享想法
 - 📖 [贡献指南](CONTRIBUTING.md) -- 详细的贡献指南
 - 🐛 [GitHub Issues](https://github.com/studyield/studyield/issues) -- 报告错误或请求功能
-- 📧 [电子邮件](mailto:hello@studyield.com) -- 直接联系维护者
+- 📧 [电子邮件](mailto:support@studyield.com) -- 直接联系维护者
 
 ## 贡献
 
@@ -498,7 +498,7 @@ git push origin feature/your-feature-name
 |----------|---------|------|
 | 💡 **GitHub讨论** | 提问、分享想法、功能请求 | [开始讨论](https://github.com/studyield/studyield/discussions) |
 | 🐦 **Twitter/X** | 产品更新、公告、提示 | [@studyield](https://twitter.com/studyield) |
-| 📧 **电子邮件** | 直接联系维护者 | hello@studyield.com |
+| 📧 **电子邮件** | 直接联系维护者 | support@studyield.com |
 | 🌐 **网站** | 文档、指南、博客 | [studyield.com](https://studyield.com) |
 
 ### 社区准则
