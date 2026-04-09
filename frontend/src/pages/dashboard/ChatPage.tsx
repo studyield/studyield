@@ -147,7 +147,6 @@ function MessageBubble({
             <CitationBadge
               key={i}
               index={citIndex}
-              citation={citation}
               onClick={() => onCitationClick(citation, citIndex)}
               sourceLabel={t('chat.source', { index: citIndex + 1 })}
             />

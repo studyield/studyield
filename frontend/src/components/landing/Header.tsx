@@ -34,7 +34,6 @@ const features = [
 
 const navLinks = [
   { nameKey: 'nav.features', href: '/features', hasDropdown: true },
-  { nameKey: 'nav.pricing', href: '/pricing' },
   { nameKey: 'nav.blog', href: '/blog' },
   { nameKey: 'nav.tutorial', href: '/tutorial' },
   { nameKey: 'nav.about', href: '/about' },
