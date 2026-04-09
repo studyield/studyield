@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { DashboardLayout } from '@/layouts/DashboardLayout';
 import { Button } from '@/components/ui/button';
@@ -23,9 +23,7 @@ import {
   Lightbulb,
   Play,
   Terminal,
-  ExternalLink,
   ArrowLeft,
-  Share2,
   Bookmark,
   BookmarkCheck,
   ShieldCheck,
@@ -186,6 +184,7 @@ function RenderMath({ text }: { text: unknown }) {
 
     const latex = remaining.slice(blockStart + 2, blockEnd);
     try {
+      // eslint-disable-next-line react-hooks/error-boundaries
       parts.push(
         <div key={key++} className="my-2 overflow-x-auto">
           <BlockMath math={latex} />
@@ -218,6 +217,7 @@ function RenderInlineMath({ text }: { text: string }) {
       parts.push(text.slice(lastIdx, match.index));
     }
     try {
+      {/* eslint-disable-next-line react-hooks/error-boundaries */}
       parts.push(<InlineMath key={match.index} math={match[1]} />);
     } catch {
       parts.push(
@@ -335,7 +335,9 @@ export function SolutionPage() {
         await problemSolverService.addBookmark(id);
         setIsBookmarked(true);
       }
-    } catch {}
+    } catch {
+      // Silently ignore bookmark errors
+    }
     setBookmarkLoading(false);
   };
 
@@ -344,7 +346,9 @@ export function SolutionPage() {
     setAltLoading(true);
     try {
       setAltMethods(await problemSolverService.getAlternativeMethods(id));
-    } catch {}
+    } catch {
+      // Silently ignore fetch errors
+    }
     setAltLoading(false);
   };
 
@@ -355,7 +359,9 @@ export function SolutionPage() {
     try {
       const res = await problemSolverService.explainAtLevel(id, level);
       setEli5Explanation(res.explanation);
-    } catch {}
+    } catch {
+      // Silently ignore fetch errors
+    }
     setEli5Loading(false);
   };
 
@@ -381,7 +387,9 @@ export function SolutionPage() {
       utterance.onend = () => setIsSpeaking(false);
       window.speechSynthesis.speak(utterance);
       setIsSpeaking(true);
-    } catch {}
+    } catch {
+      // Silently ignore narration errors
+    }
     setNarrationLoading(false);
   };
 
@@ -412,7 +420,7 @@ export function SolutionPage() {
     setTimeout(() => setCopiedStep(null), 2000);
   };
 
-  const runCode = async (code: string) => {
+  const runCode = async (_code: string) => {
     setIsRunning(true);
     setCodeOutput(null);
     try {

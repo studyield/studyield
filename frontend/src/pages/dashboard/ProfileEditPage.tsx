@@ -118,7 +118,9 @@ export function ProfileEditPage() {
       await refreshUser();
       setSaved(true);
       setTimeout(() => setSaved(false), 2000);
-    } catch {}
+    } catch {
+      // Silently ignore save errors
+    }
     setSaving(false);
   };
 

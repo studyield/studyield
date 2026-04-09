@@ -190,6 +190,7 @@ export function DashboardHomePage() {
       .then(res => res.json())
       .then(setLottieData)
       .catch(() => {});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fetchStudySets]);
 
   const fetchUserStats = async () => {

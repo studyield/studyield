@@ -54,16 +54,19 @@ export function TeachBackPage() {
   const [studySetsLoading, setStudySetsLoading] = useState(false);
   const [selectedStudySetId, setSelectedStudySetId] = useState('');
 
-  useEffect(() => {
-    loadSessions();
-  }, []);
-
   const loadSessions = async () => {
     try {
       setSessions(await teachBackService.list());
-    } catch {}
+    } catch {
+      // Silently ignore fetch errors
+    }
     setLoading(false);
   };
+
+  useEffect(() => {
+    loadSessions();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const loadStudySets = async () => {
     if (studySets.length > 0) return;
@@ -78,7 +81,9 @@ export function TeachBackPage() {
           flashcardsCount: (s.flashcardsCount || s.flashcards_count || 0) as number,
         })),
       );
-    } catch {}
+    } catch {
+      // Silently ignore fetch errors
+    }
     setStudySetsLoading(false);
   };
 
@@ -88,7 +93,9 @@ export function TeachBackPage() {
     try {
       const session = await teachBackService.create(topic.trim(), reference.trim() || undefined);
       navigate(`/dashboard/teach-back/${session.id}`);
-    } catch {}
+    } catch {
+      // Silently ignore creation errors
+    }
     setCreating(false);
   };
 
@@ -98,7 +105,9 @@ export function TeachBackPage() {
     try {
       const session = await teachBackService.createFromStudySet(selectedStudySetId);
       navigate(`/dashboard/teach-back/${session.id}`);
-    } catch {}
+    } catch {
+      // Silently ignore creation errors
+    }
     setCreating(false);
   };
 
@@ -107,7 +116,9 @@ export function TeachBackPage() {
     try {
       await teachBackService.delete(id);
       setSessions((prev) => prev.filter((s) => s.id !== id));
-    } catch {}
+    } catch {
+      // Silently ignore delete errors
+    }
   };
 
   const getStatusBadge = (status: TeachBackSession['status'], score?: number) => {

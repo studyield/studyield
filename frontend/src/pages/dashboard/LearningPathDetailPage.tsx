@@ -5,14 +5,13 @@ import { DashboardLayout } from '@/layouts/DashboardLayout';
 import { Button } from '@/components/ui/button';
 import { Spinner } from '@/components/ui/spinner';
 import { motion } from 'framer-motion';
-import type { LearningPath, LearningStep } from '@/services/learningPaths';
+import type { LearningPath } from '@/services/learningPaths';
 import { learningPathsService } from '@/services/learningPaths';
 import {
   ArrowLeft,
   Route,
   Clock,
   CheckCircle,
-  Circle,
   BookOpen,
   HelpCircle,
   Dumbbell,
@@ -53,7 +52,9 @@ export function LearningPathDetailPage() {
     (async () => {
       try {
         setPath(await learningPathsService.get(id));
-      } catch {}
+      } catch {
+        // Silently ignore fetch errors
+      }
       setLoading(false);
     })();
   }, [id]);
@@ -64,7 +65,9 @@ export function LearningPathDetailPage() {
     try {
       const updated = await learningPathsService.completeStep(id, stepId);
       setPath(updated);
-    } catch {}
+    } catch {
+      // Silently ignore completion errors
+    }
     setCompleting(null);
   };
 

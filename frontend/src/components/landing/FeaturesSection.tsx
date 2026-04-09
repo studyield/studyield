@@ -250,7 +250,7 @@ function DocumentDemo() {
 }
 
 // Generic animated demo for features without custom demos
-function GenericFeatureDemo({ icon: Icon, gradient, title, items }: { icon: any; gradient: string; title: string; items: string[] }) {
+function GenericFeatureDemo({ icon: Icon, gradient, title, items }: { icon: React.ComponentType<{ className?: string }>; gradient: string; title: string; items: string[] }) {
   const [activeItem, setActiveItem] = useState(0);
 
   useEffect(() => {
@@ -298,7 +298,7 @@ interface FeatureTab {
   key: string;
   title: string;
   description: string;
-  icon: any;
+  icon: React.ComponentType<{ className?: string }>;
   gradient: string;
   accentColor: string;
   href: string;

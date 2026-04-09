@@ -16,9 +16,9 @@ CREATE TABLE IF NOT EXISTS exam_attempts (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-CREATE INDEX idx_exam_attempts_user ON exam_attempts(user_id);
-CREATE INDEX idx_exam_attempts_exam ON exam_attempts(exam_clone_id);
-CREATE INDEX idx_exam_attempts_created ON exam_attempts(created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_exam_attempts_user ON exam_attempts(user_id);
+CREATE INDEX IF NOT EXISTS idx_exam_attempts_exam ON exam_attempts(exam_clone_id);
+CREATE INDEX IF NOT EXISTS idx_exam_attempts_created ON exam_attempts(created_at DESC);
 
 -- Spaced Repetition Review Queue
 CREATE TABLE IF NOT EXISTS exam_review_queue (
@@ -34,8 +34,8 @@ CREATE TABLE IF NOT EXISTS exam_review_queue (
     UNIQUE(user_id, question_id)
 );
 
-CREATE INDEX idx_review_queue_user ON exam_review_queue(user_id);
-CREATE INDEX idx_review_queue_due ON exam_review_queue(next_review_at);
+CREATE INDEX IF NOT EXISTS idx_review_queue_user ON exam_review_queue(user_id);
+CREATE INDEX IF NOT EXISTS idx_review_queue_due ON exam_review_queue(next_review_at);
 
 -- Exam Templates table
 CREATE TABLE IF NOT EXISTS exam_templates (
@@ -110,7 +110,8 @@ INSERT INTO exam_templates (id, name, slug, description, category, question_type
  '{"easy": 30, "medium": 50, "hard": 20}'::jsonb,
  180, 60,
  '["MCQ section", "Written section", "Practical application"]'::jsonb,
- '["Bangla", "English", "Physics", "Chemistry", "Biology", "Math", "Accounting", "Economics"]'::jsonb);
+ '["Bangla", "English", "Physics", "Chemistry", "Biology", "Math", "Accounting", "Economics"]'::jsonb)
+ON CONFLICT (slug) DO NOTHING;
 
 -- Collaborative Exam Sessions (for live group practice)
 CREATE TABLE IF NOT EXISTS exam_sessions (
@@ -127,8 +128,8 @@ CREATE TABLE IF NOT EXISTS exam_sessions (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
-CREATE INDEX idx_exam_sessions_code ON exam_sessions(code);
-CREATE INDEX idx_exam_sessions_host ON exam_sessions(host_id);
+CREATE INDEX IF NOT EXISTS idx_exam_sessions_code ON exam_sessions(code);
+CREATE INDEX IF NOT EXISTS idx_exam_sessions_host ON exam_sessions(host_id);
 
 -- Session Participants
 CREATE TABLE IF NOT EXISTS exam_session_participants (
@@ -145,5 +146,5 @@ CREATE TABLE IF NOT EXISTS exam_session_participants (
     UNIQUE(session_id, user_id)
 );
 
-CREATE INDEX idx_session_participants_session ON exam_session_participants(session_id);
-CREATE INDEX idx_session_participants_user ON exam_session_participants(user_id);
+CREATE INDEX IF NOT EXISTS idx_session_participants_session ON exam_session_participants(session_id);
+CREATE INDEX IF NOT EXISTS idx_session_participants_user ON exam_session_participants(user_id);

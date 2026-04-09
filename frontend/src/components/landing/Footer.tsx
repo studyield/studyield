@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  GraduationCap,
   Twitter,
   Github,
   Linkedin,
@@ -20,7 +19,6 @@ import { Button } from '@/components/ui/button';
 const footerLinks = {
   product: [
     { nameKey: 'footer.links.features', href: '/features' },
-    { nameKey: 'footer.links.pricing', href: '/pricing' },
     { nameKey: 'footer.links.blog', href: '/blog' },
     { nameKey: 'footer.links.tutorial', href: '/tutorial' },
     { nameKey: 'footer.links.aboutUs', href: '/about' },

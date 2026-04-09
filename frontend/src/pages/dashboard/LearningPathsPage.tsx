@@ -9,7 +9,6 @@ import type { LearningPath } from '@/services/learningPaths';
 import { learningPathsService } from '@/services/learningPaths';
 import {
   Route,
-  Plus,
   Sparkles,
   ChevronRight,
   Trash2,

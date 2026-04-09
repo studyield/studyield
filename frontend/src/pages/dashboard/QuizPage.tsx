@@ -293,6 +293,7 @@ function QuizQuestionScreen({
     if (timeLeft <= 0) {
       if (!hasSubmittedRef.current) {
         hasSubmittedRef.current = true;
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setSelectedAnswer('');
         setShowFeedback(true);
       }
@@ -760,6 +761,7 @@ export function QuizPage() {
         setPhase('configure');
       }
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [studySetId]
   );
 

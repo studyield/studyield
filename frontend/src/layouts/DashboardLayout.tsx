@@ -5,7 +5,6 @@ import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { NotificationBell } from '@/components/NotificationBell';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
-import { UpgradeModal } from '@/components/UpgradeModal';
 import { cn } from '@/lib/utils';
 import {
   LayoutDashboard,
@@ -15,7 +14,6 @@ import {
   X,
   ChevronDown,
   Library,
-  Brain,
   MessageSquare,
   Sparkles,
   Bell,
@@ -243,9 +241,6 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         {/* Page content */}
         <main className="p-4 lg:p-6">{children}</main>
       </div>
-
-      {/* Global upgrade modal — auto-opens on 403 upgrade responses */}
-      <UpgradeModal />
     </div>
   );
 }

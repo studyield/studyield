@@ -66,21 +66,6 @@ api.interceptors.response.use(
       }
     }
 
-    // If 403 with upgrade flag, dispatch upgrade event for UpgradeModal
-    if (error.response?.status === 403) {
-      const data = error.response.data as Record<string, unknown>;
-      if (data?.upgrade) {
-        window.dispatchEvent(
-          new CustomEvent('plan:upgrade-required', {
-            detail: {
-              feature: data.feature as string | undefined,
-              limit: data.limit as boolean | undefined,
-              message: data.message as string | undefined,
-            },
-          }),
-        );
-      }
-    }
 
     return Promise.reject(error);
   }

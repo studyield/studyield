@@ -106,7 +106,9 @@ export function DeepResearchPage() {
     try {
       await researchService.delete(id);
       setRecentSessions((prev) => prev.filter((s) => s.id !== id));
-    } catch {}
+    } catch {
+      // Silently ignore delete errors
+    }
   };
 
   const statusColors: Record<string, string> = {

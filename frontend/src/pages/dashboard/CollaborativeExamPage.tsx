@@ -66,7 +66,7 @@ export default function CollaborativeExamPage() {
   const [socket, setSocket] = useState<Socket | null>(null);
   const [phase, setPhase] = useState<SessionPhase>('idle');
   const [sessionCode, setSessionCode] = useState<string | null>(joinCode);
-  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [, setSessionId] = useState<string | null>(null);
   const [isHost, setIsHost] = useState(false);
   const [participants, setParticipants] = useState<Participant[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -129,7 +129,7 @@ export default function CollaborativeExamPage() {
       setPhase('lobby');
     });
 
-    newSocket.on('joined-session', ({ sessionId, examCloneId: examId, status, hostId }) => {
+    newSocket.on('joined-session', ({ sessionId, status, hostId }) => {
       setSessionId(sessionId);
       setIsHost(hostId === user?.id);
       setPhase(status === 'in_progress' ? 'playing' : 'lobby');
@@ -154,6 +154,7 @@ export default function CollaborativeExamPage() {
       setPhase('playing');
       setCurrentQuestionIndex(0);
       setTimeLeft(30);
+      // eslint-disable-next-line react-hooks/immutability
       fetchQuestions(questionIds);
     });
 
@@ -260,7 +261,7 @@ export default function CollaborativeExamPage() {
       setQuestions(data.slice(0, 10));
 
       socket.emit('start-session', { code: sessionCode, questionIds });
-    } catch (err) {
+    } catch {
       setError('Failed to load questions');
     }
   };

@@ -34,7 +34,6 @@ const features = [
 
 const navLinks = [
   { nameKey: 'nav.features', href: '/features', hasDropdown: true },
-  { nameKey: 'nav.pricing', href: '/pricing' },
   { nameKey: 'nav.blog', href: '/blog' },
   { nameKey: 'nav.tutorial', href: '/tutorial' },
   { nameKey: 'nav.about', href: '/about' },
@@ -60,6 +59,7 @@ export function Header() {
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
 
   // Prevent body scroll when mobile menu is open

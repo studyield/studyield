@@ -26,6 +26,7 @@ export function EditFlashcardPage() {
 
   useEffect(() => {
     if (flashcard) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setFormData({
         front: flashcard.front,
         back: flashcard.back,

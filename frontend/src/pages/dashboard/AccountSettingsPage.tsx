@@ -75,7 +75,9 @@ export function AccountSettingsPage() {
       await api.delete(ENDPOINTS.users.profile);
       await logout();
       navigate('/');
-    } catch {}
+    } catch {
+      // Silently ignore delete errors
+    }
     setDeleting(false);
   };
 

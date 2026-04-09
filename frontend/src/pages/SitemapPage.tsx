@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import {
   Map,
   Home,
-  DollarSign,
   Zap,
   Mail,
   Shield,
@@ -55,7 +54,6 @@ export function SitemapPage() {
         { name: t('sitemapPage.links.home'), href: '/', icon: Home, description: t('sitemapPage.links.homeDesc') },
         { name: t('sitemapPage.links.aboutUs'), href: '/about', icon: BookOpen, description: t('sitemapPage.links.aboutUsDesc') },
         { name: t('sitemapPage.links.features'), href: '/features', icon: Zap, description: t('sitemapPage.links.featuresDesc') },
-        { name: t('sitemapPage.links.pricing'), href: '/pricing', icon: DollarSign, description: t('sitemapPage.links.pricingDesc') },
         { name: t('sitemapPage.links.contact'), href: '/contact', icon: Mail, description: t('sitemapPage.links.contactDesc') },
       ],
     },
@@ -110,7 +108,6 @@ export function SitemapPage() {
   const quickLinks = [
     { name: t('sitemapPage.links.home'), href: '/', icon: Home, color: 'bg-blue-500' },
     { name: t('sitemapPage.links.features'), href: '/features', icon: Zap, color: 'bg-violet-500' },
-    { name: t('sitemapPage.links.pricing'), href: '/pricing', icon: DollarSign, color: 'bg-emerald-500' },
     { name: t('sitemapPage.links.support'), href: '/support', icon: HelpCircle, color: 'bg-amber-500' },
     { name: t('sitemapPage.links.signIn'), href: '/login', icon: LogIn, color: 'bg-rose-500' },
     { name: t('sitemapPage.links.getStarted'), href: '/register', icon: UserPlus, color: 'bg-cyan-500' },

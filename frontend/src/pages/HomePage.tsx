@@ -5,7 +5,6 @@ import {
   FeaturesSection,
   HowItWorksSection,
   TestimonialsSection,
-  PricingSection,
   FAQSection,
   CTASection,
 } from '@/components/landing';
@@ -18,7 +17,6 @@ export function HomePage() {
       <FeaturesSection />
       <HowItWorksSection />
       <TestimonialsSection />
-      <PricingSection />
       <FAQSection />
       <CTASection />
     </PublicLayout>

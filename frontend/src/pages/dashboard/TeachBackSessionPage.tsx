@@ -169,7 +169,9 @@ export function TeachBackSessionPage() {
           setChallengeMessages(s.challengeMessages);
           setShowChallenge(true);
         }
-      } catch {}
+      } catch {
+        // Silently ignore errors
+      }
       setLoading(false);
     })();
   }, [id]);
@@ -177,6 +179,7 @@ export function TeachBackSessionPage() {
   // Recording timer
   useEffect(() => {
     if (isRecording) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setRecordingTime(0);
       timerRef.current = setInterval(() => setRecordingTime((t) => t + 1), 1000);
     } else {
@@ -195,7 +198,9 @@ export function TeachBackSessionPage() {
     setEssentialsLoading(true);
     try {
       setEssentials(await teachBackService.getEssentials(id));
-    } catch {}
+    } catch {
+      // Silently ignore errors
+    }
     setEssentialsLoading(false);
   };
 
@@ -232,13 +237,17 @@ export function TeachBackSessionPage() {
           });
           const text = res.data?.text?.trim();
           if (text) setExplanation((prev) => (prev ? prev + ' ' + text : text));
-        } catch {}
+        } catch {
+          // Silently ignore errors
+        }
         setIsTranscribing(false);
       };
 
       recorder.start();
       setIsRecording(true);
-    } catch {}
+    } catch {
+      // Silently ignore errors
+    }
   };
 
   const handleSubmit = async () => {
@@ -247,7 +256,9 @@ export function TeachBackSessionPage() {
     try {
       const updated = await teachBackService.submit(id, explanation.trim(), difficultyLevel);
       setSession(updated);
-    } catch {}
+    } catch {
+      // Silently ignore errors
+    }
     setSubmitting(false);
   };
 
@@ -257,7 +268,9 @@ export function TeachBackSessionPage() {
     try {
       const updated = await teachBackService.evaluate(id);
       setSession(updated);
-    } catch {}
+    } catch {
+      // Silently ignore errors
+    }
     setEvaluating(false);
   };
 
@@ -277,7 +290,9 @@ export function TeachBackSessionPage() {
     try {
       const result = await teachBackService.startChallenge(id);
       setChallengeMessages(result.messages);
-    } catch {}
+    } catch {
+      // Silently ignore errors
+    }
     setChallengeLoading(false);
   };
 
@@ -292,7 +307,9 @@ export function TeachBackSessionPage() {
       const result = await teachBackService.respondToChallenge(id, userMsg);
       setChallengeMessages(result.messages);
       if (result.convinced) setConvinced(true);
-    } catch {}
+    } catch {
+      // Silently ignore errors
+    }
     setChallengeLoading(false);
   };
 

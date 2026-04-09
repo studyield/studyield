@@ -901,7 +901,7 @@ export function PresentationView({ note, onClose }: PresentationViewProps) {
                     {slide.title}
                   </p>
                   <div className="text-[8px] leading-tight opacity-70 line-clamp-4">
-                    {slide.content.replace(/[#*_=\[\]()]/g, '').slice(0, 150)}
+                    {slide.content.replace(/[#*_=[\]()]/g, '').slice(0, 150)}
                   </div>
                   <div className="absolute bottom-2 right-2 text-xs font-bold opacity-50">
                     {idx + 1}

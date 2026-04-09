@@ -21,7 +21,15 @@ interface ExportOptions {
 
 declare module 'jspdf' {
   interface jsPDF {
-    autoTable: (options: any) => jsPDF;
+    autoTable: (options: {
+      startY?: number;
+      head?: string[][];
+      body?: string[][];
+      theme?: string;
+      headStyles?: { fillColor: number[] };
+      columnStyles?: Record<number, { cellWidth?: number | string; halign?: string }>;
+      margin?: { left?: number; right?: number };
+    }) => jsPDF;
   }
 }
 

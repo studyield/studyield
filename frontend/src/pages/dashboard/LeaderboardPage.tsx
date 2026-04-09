@@ -12,12 +12,9 @@ import {
   Trophy,
   Medal,
   Crown,
-  TrendingUp,
-  Target,
   Users,
   Loader2,
   ChevronUp,
-  ChevronDown,
   Minus,
 } from 'lucide-react';
 

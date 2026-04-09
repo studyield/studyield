@@ -196,7 +196,7 @@ function extractKeyConcepts(content: string, maxConcepts = 5): string[] {
   // Clean content
   const cleanText = content
     .replace(/<[^>]*>/g, '')
-    .replace(/[#*_=\[\]()]/g, '')
+    .replace(/[#*_=[\]()]/g, '')
     .toLowerCase();
 
   // Split into sentences and extract noun phrases (simplified)
@@ -638,6 +638,7 @@ export function MindMapView({ notes, onNoteClick, onClose }: MindMapViewProps) {
     setPan({ x: 0, y: 0 });
     setZoom(1);
     setSelectedNode(null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [notes, mapMode, selectedNote]);
 
   // Calculate positions

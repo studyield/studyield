@@ -178,7 +178,7 @@ export function GenerateNotePage() {
         sourceUrl: sourceType === 'youtube' || sourceType === 'website' ? url : undefined,
       });
       navigate(`/dashboard/study-sets/${studySetId}`);
-    } catch (err) {
+    } catch {
       setError(t('generateNote.errorSave'));
     } finally {
       setIsProcessing(false);

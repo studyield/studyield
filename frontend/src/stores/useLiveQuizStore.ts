@@ -67,7 +67,7 @@ interface LiveQuizState {
   reset: () => void;
 }
 
-function mapPlayers(players: any[], hostId: string): Player[] {
+function mapPlayers(players: Array<{ id: string; name: string; avatarUrl?: string; score?: number; correctAnswers?: number; answers?: number }>, hostId: string): Player[] {
   if (!Array.isArray(players)) return [];
   return players.map((p) => ({
     id: p.id,
@@ -155,7 +155,7 @@ export const useLiveQuizStore = create<LiveQuizState>((set, get) => {
       });
 
       // Room events
-      socket.on('room:created', (room: any) => {
+      socket.on('room:created', (room: { code: string; hostId: string; players?: Array<{ id: string; name: string; avatarUrl?: string; score?: number; correctAnswers?: number; answers?: number }> }) => {
         console.log('[LiveQuiz] room:created:', room);
         roomHostId = room.hostId;
         set({
@@ -167,7 +167,7 @@ export const useLiveQuizStore = create<LiveQuizState>((set, get) => {
         });
       });
 
-      socket.on('room:joined', (room: any) => {
+      socket.on('room:joined', (room: { code: string; hostId: string; players?: Array<{ id: string; name: string; avatarUrl?: string; score?: number; correctAnswers?: number; answers?: number }> }) => {
         console.log('[LiveQuiz] room:joined:', room);
         roomHostId = room.hostId;
         set({
@@ -178,7 +178,7 @@ export const useLiveQuizStore = create<LiveQuizState>((set, get) => {
         });
       });
 
-      socket.on('room:updated', (room: any) => {
+      socket.on('room:updated', (room: { hostId?: string; players?: Array<{ id: string; name: string; avatarUrl?: string; score?: number; correctAnswers?: number; answers?: number }> }) => {
         if (room.hostId) roomHostId = room.hostId;
         set({ players: mapPlayers(room.players || [], roomHostId || '') });
       });
@@ -197,7 +197,7 @@ export const useLiveQuizStore = create<LiveQuizState>((set, get) => {
       });
 
       // Question start
-      socket.on('question:start', (data: any) => {
+      socket.on('question:start', (data: { index: number; question: string; options?: string[]; timeLimit?: number; total: number }) => {
         console.log('[LiveQuiz] question:start:', data);
         clearCountdown();
         clearTimer();
@@ -269,7 +269,7 @@ export const useLiveQuizStore = create<LiveQuizState>((set, get) => {
       });
 
       // Game finished
-      socket.on('game:finished', (data: { leaderboard: any[]; totalQuestions: number }) => {
+      socket.on('game:finished', (data: { leaderboard: Array<{ id: string; name: string; avatarUrl?: string; score?: number; correctAnswers?: number; answers?: number }>; totalQuestions: number }) => {
         console.log('[LiveQuiz] game:finished:', data);
         clearTimer();
         clearCountdown();
@@ -277,7 +277,7 @@ export const useLiveQuizStore = create<LiveQuizState>((set, get) => {
         set({ finalRankings: rankings, phase: 'finished' });
       });
 
-      socket.on('error', (data: any) => {
+      socket.on('error', (data: string | { message?: string }) => {
         console.error('[LiveQuiz] error:', data);
         const message = typeof data === 'string' ? data : data?.message || 'Unknown error';
         set({ error: message });

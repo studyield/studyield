@@ -62,7 +62,7 @@ export function CreateNotePage() {
         sourceType: 'manual',
       });
       navigate(`/dashboard/study-sets/${studySetId}`);
-    } catch (err) {
+    } catch {
       setError(t('createNote.errorCreate'));
     }
   };

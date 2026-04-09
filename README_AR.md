@@ -41,6 +41,12 @@ Studyield هي **منصة تعليمية مفتوحة المصدر مدعومة 
 
 على عكس منصات التعلم التقليدية التي تركز فقط على تقديم المحتوى أو أدوات التدريس بالذكاء الاصطناعي التي تفتقر إلى ميزات الدراسة الشاملة، توفر Studyield نظامًا تعليميًا كاملاً مع 6 ميزات قوية للذكاء الاصطناعي، ومجموعة أدوات دراسية كاملة، والوصول عبر منصات متعددة.
 
+<p align="center">
+  <img src=".github/screenshots/dashboard-home.png" alt="Studyield Dashboard" width="800">
+  <br>
+  <em>لوحة التحكم التعليمية المدعومة بالذكاء الاصطناعي من Studyield</em>
+</p>
+
 ### كيف يعمل
 
 1. **ارفع موادك** -- أضف مواد الدراسة (PDF، المستندات، الامتحانات السابقة) إلى قاعدة معرفتك
@@ -284,6 +290,9 @@ docker compose --env-file .env.docker up -d
 <p align="center">
   <a href="https://github.com/studyield/studyield/discussions">
     <img src="https://img.shields.io/badge/GitHub-Discussions-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Discussions">
+  </a>
+  <a href="https://discord.gg/9JEk6WSM">
+    <img src="https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
   <a href="https://twitter.com/studyield">
     <img src="https://img.shields.io/badge/Twitter-Follow%20Us-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">

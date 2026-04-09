@@ -515,6 +515,7 @@ function JoinOrCreate() {
   const [mode, setMode] = useState<'choose' | 'join'>(urlCode ? 'join' : hasStudySet ? 'choose' : 'join');
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (urlCode) setJoinCode(urlCode.toUpperCase());
   }, [urlCode]);
 
@@ -524,6 +525,7 @@ function JoinOrCreate() {
 
   useEffect(() => {
     if (phase === 'lobby') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsCreating(false);
       setIsJoining(false);
     }

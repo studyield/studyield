@@ -42,7 +42,7 @@ export function ResearchReportPage() {
         // Initialize all sections as included
         if (data.outline?.sections) {
           const initial: Record<string, boolean> = {};
-          data.outline.sections.forEach((s, i) => {
+          data.outline.sections.forEach((_s, i) => {
             initial[`section-${i}`] = true;
           });
           setIncludeSections(initial);
@@ -57,7 +57,9 @@ export function ResearchReportPage() {
     try {
       await researchService.delete(id);
       navigate('/dashboard/research');
-    } catch {}
+    } catch {
+      // Silently ignore delete errors
+    }
   };
 
   const handleCopyText = async (text: string) => {
@@ -446,7 +448,6 @@ function SourceCard({
   source,
   index,
   onCopy,
-  citationStyle,
   formatCitation,
 }: {
   source: ResearchSource;
