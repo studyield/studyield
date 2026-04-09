@@ -6,7 +6,6 @@ import { FullPageSpinner } from '@/components/ui/spinner';
 import {
   HomePage,
   AboutPage,
-  PricingPage,
   FeaturesPage,
   ContactPage,
   PrivacyPage,
@@ -78,11 +77,6 @@ import {
   AccountSettingsPage,
   NotificationSettingsPage,
   AppearanceSettingsPage,
-  SubscriptionPage,
-  CheckoutPage,
-  PaymentSuccessPage,
-  ManageSubscriptionPage,
-  BillingHistoryPage,
   ChatPage,
   ChatHistoryPage,
 } from '@/pages/dashboard';
@@ -177,7 +171,6 @@ function App() {
         {/* Public marketing routes */}
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/pricing" element={<PricingPage />} />
       <Route path="/features" element={<FeaturesPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/privacy" element={<PrivacyPage />} />
@@ -685,47 +678,6 @@ function App() {
         element={
           <ProtectedRoute>
             <AppearanceSettingsPage />
-          </ProtectedRoute>
-        }
-      />
-      {/* Subscription Routes */}
-      <Route
-        path="/dashboard/subscription"
-        element={
-          <ProtectedRoute>
-            <SubscriptionPage />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/dashboard/subscription/checkout"
-        element={
-          <ProtectedRoute>
-            <CheckoutPage />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/dashboard/subscription/success"
-        element={
-          <ProtectedRoute>
-            <PaymentSuccessPage />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/dashboard/subscription/manage"
-        element={
-          <ProtectedRoute>
-            <ManageSubscriptionPage />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/dashboard/subscription/billing"
-        element={
-          <ProtectedRoute>
-            <BillingHistoryPage />
           </ProtectedRoute>
         }
       />

@@ -423,7 +423,7 @@ export default function ExamDetailPage() {
 
           {/* Content */}
           {activeTab === 'analytics' ? (
-            <AnalyticsTab analytics={analytics} examId={id!} />
+            <AnalyticsTab analytics={analytics} />
           ) : (
             <QuestionsTab
               questions={displayedQuestions}

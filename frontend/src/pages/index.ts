@@ -1,6 +1,5 @@
 export { HomePage } from './HomePage';
 export { AboutPage } from './AboutPage';
-export { PricingPage } from './PricingPage';
 export { FeaturesPage } from './FeaturesPage';
 export { ContactPage } from './ContactPage';
 export { PrivacyPage } from './PrivacyPage';
