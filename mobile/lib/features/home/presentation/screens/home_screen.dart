@@ -45,8 +45,6 @@ import '../../../teach_back/presentation/bloc/teach_back_bloc.dart';
 import '../../../teach_back/data/repositories/teach_back_repository_impl.dart';
 import '../../../profile/presentation/screens/profile_screen.dart';
 import '../../../notifications/presentation/screens/notifications_screen.dart';
-import '../../../subscription/presentation/screens/subscription_screen.dart';
-import '../../../subscription/presentation/screens/manage_subscription_screen.dart';
 import '../../../../core/widgets/badges/pro_badge.dart';
 import '../../../../core/widgets/navigation/app_bottom_nav.dart';
 
@@ -408,132 +406,10 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildUpgradeProBanner() {
-    final theme = Theme.of(context);
-
-    return GestureDetector(
-      onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => const SubscriptionScreen()),
-        );
-      },
-      child: Container(
-        padding: EdgeInsets.all(AppDimensions.space20),
-        decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            colors: [Color(0xFF9333EA), Color(0xFF7C3AED)],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          borderRadius: BorderRadius.circular(AppDimensions.radiusMedium),
-          boxShadow: [
-            BoxShadow(
-              color: const Color(0xFF9333EA).withOpacity(0.4),
-              blurRadius: 20,
-              offset: const Offset(0, 8),
-            ),
-          ],
-        ),
-        child: Row(
-          children: [
-            Container(
-              width: 56,
-              height: 56,
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.2),
-                borderRadius: BorderRadius.circular(16),
-              ),
-              child: const Icon(
-                Icons.workspace_premium,
-                color: Colors.white,
-                size: 32,
-              ),
-            ),
-            const SizedBox(width: 16),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text(
-                        'home.upgrade_pro.title'.tr(),
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFFFD700),
-                          borderRadius: BorderRadius.circular(6),
-                        ),
-                        child: Text(
-                          'home.upgrade_pro.badge'.tr(),
-                          style: const TextStyle(
-                            color: Color(0xFF9333EA),
-                            fontSize: 9,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 0.5,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    'home.upgrade_pro.subtitle'.tr(),
-                    style: TextStyle(
-                      color: Colors.white.withOpacity(0.9),
-                      fontSize: 13,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: Text(
-                          'home.upgrade_pro.offer'.tr(),
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 11,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            const Icon(
-              Icons.arrow_forward_ios,
-              color: Colors.white,
-              size: 20,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final auth = context.watch<AuthProvider>();
     final theme = Theme.of(context);
-
-    // Debug: Check subscription status
-    print('🏠 HomeScreen - User: ${auth.user?.email}');
-    print('🏠 HomeScreen - Subscription: ${auth.user?.subscription?.planDisplayName}');
-    print('🏠 HomeScreen - isPro: ${auth.user?.isPro}');
 
     return Scaffold(
       extendBody: false,
@@ -589,18 +465,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   SizedBox(width: AppDimensions.space12),
-                  // Pro Badge
-                  if (auth.user?.subscription?.isPro == true)
-                    ProBadge(
-                      planName: 'PRO',
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (_) => const ManageSubscriptionScreen(),
-                          ),
-                        );
-                      },
-                    ),
                 ],
               ),
               actions: [
@@ -819,12 +683,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
 
                   SizedBox(height: AppDimensions.space16),
-
-                  // Upgrade to Pro Banner (at bottom, matching frontend)
-                  if (auth.user?.isPro != true) ...[
-                    _buildUpgradeProBanner(),
-                    SizedBox(height: AppDimensions.space16),
-                  ],
                 ]),
               ),
             ),

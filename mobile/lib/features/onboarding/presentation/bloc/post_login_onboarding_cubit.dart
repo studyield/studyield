@@ -71,12 +71,7 @@ class PostLoginOnboardingCubit extends Cubit<PostLoginOnboardingState> {
     }
   }
 
-  /// Move to special offer screen
-  void showSpecialOffer() {
-    emit(state.copyWith(currentStep: OnboardingStep.specialOffer));
-  }
-
-  /// Mark special offer as seen
+  /// Mark special offer as seen (deprecated - no longer used)
   Future<void> markOfferSeen() async {
     await _dataSource.markSpecialOfferSeen();
     emit(state.copyWith(offerShown: true));

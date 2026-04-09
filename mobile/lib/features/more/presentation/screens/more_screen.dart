@@ -24,8 +24,6 @@ import '../../../research/presentation/screens/research_screen.dart';
 import '../../../research/presentation/bloc/research_bloc.dart';
 import '../../../research/data/repositories/research_repository_impl.dart';
 import '../../../notifications/presentation/screens/notifications_screen.dart';
-import '../../../subscription/presentation/screens/subscription_screen.dart';
-import '../../../subscription/presentation/screens/manage_subscription_screen.dart';
 import '../../../auth/presentation/screens/login_screen.dart';
 
 class MoreScreen extends StatefulWidget {
@@ -264,20 +262,6 @@ class _MoreScreenState extends State<MoreScreen> {
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(builder: (_) => const NotificationsScreen()),
-              ),
-            ),
-            _MenuItemData(
-              icon: Icons.workspace_premium_outlined,
-              title: 'more.subscription'.tr(),
-              subtitle: 'more.subscription_subtitle'.tr(),
-              color: const Color(0xFF06B6D4),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => user?.isPro == true
-                      ? const ManageSubscriptionScreen()
-                      : const SubscriptionScreen(),
-                ),
               ),
             ),
           ]),

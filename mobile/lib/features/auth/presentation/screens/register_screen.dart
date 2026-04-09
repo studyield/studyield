@@ -13,7 +13,6 @@ import '../../../../providers/auth_provider.dart';
 import '../../../onboarding/constants/onboarding_constants.dart';
 import '../../../onboarding/presentation/screens/setup_wizard_screen.dart';
 import '../../../onboarding/presentation/screens/post_login_onboarding_wrapper.dart';
-import '../../../onboarding/presentation/screens/special_offer_screen.dart';
 import '../../../main_navigation/main_screen.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
@@ -138,34 +137,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
             } else {
               // Existing user — check if they've seen the special offer
               final prefs = await SharedPreferences.getInstance();
-              final hasSeenOffer = prefs.getBool(OnboardingConstants.hasSeenWelcomeOfferKey) ?? false;
-
-              if (!hasSeenOffer) {
-                navigator.pushAndRemoveUntil(
-                  MaterialPageRoute(
-                    builder: (_) => SpecialOfferScreen(
-                      onComplete: () {
-                        navigator.pushAndRemoveUntil(
-                          MaterialPageRoute(builder: (_) => const MainScreen(initialPage: 0)),
-                          (route) => false,
-                        );
-                      },
-                      onSkip: () {
-                        navigator.pushAndRemoveUntil(
-                          MaterialPageRoute(builder: (_) => const MainScreen(initialPage: 0)),
-                          (route) => false,
-                        );
-                      },
-                    ),
-                  ),
-                  (route) => false,
-                );
-              } else {
-                navigator.pushAndRemoveUntil(
-                  MaterialPageRoute(builder: (_) => const MainScreen(initialPage: 0)),
-                  (route) => false,
-                );
-              }
+              // Navigate directly to main screen
+              navigator.pushAndRemoveUntil(
+                MaterialPageRoute(builder: (_) => const MainScreen(initialPage: 0)),
+                (route) => false,
+              );
             }
           }
         },

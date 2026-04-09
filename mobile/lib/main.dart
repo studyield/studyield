@@ -50,7 +50,6 @@ import 'features/exam_clone/data/repositories/exam_clone_repository_impl.dart';
 import 'features/onboarding/presentation/screens/pre_login_onboarding_screen.dart';
 import 'features/onboarding/presentation/screens/post_login_onboarding_wrapper.dart';
 import 'features/onboarding/presentation/screens/setup_wizard_screen.dart';
-import 'features/onboarding/presentation/screens/special_offer_screen.dart';
 import 'features/onboarding/constants/onboarding_constants.dart';
 import 'features/onboarding/data/datasources/onboarding_local_datasource.dart';
 import 'core/services/firebase_messaging_service.dart';
@@ -377,18 +376,6 @@ class _AppWrapperState extends State<AppWrapper> {
               setState(() {
                 _setupWizardCompleted = true;
               });
-            },
-          );
-        }
-
-        // Setup done — check if special offer should be shown (only once)
-        if (!_hasSeenSpecialOffer && !_offerDismissed) {
-          return SpecialOfferScreen(
-            onComplete: () {
-              setState(() => _offerDismissed = true);
-            },
-            onSkip: () {
-              setState(() => _offerDismissed = true);
             },
           );
         }

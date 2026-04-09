@@ -3,7 +3,6 @@ import 'package:equatable/equatable.dart';
 enum OnboardingStep {
   welcome,           // Welcome modal
   guidedTour,        // Interactive demo with tooltips
-  specialOffer,      // Purchase offer
   completed,         // Finished
 }
 

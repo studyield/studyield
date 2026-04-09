@@ -7,8 +7,6 @@ import '../../../../providers/auth_provider.dart';
 import '../../../../core/widgets/navigation/app_bottom_nav.dart';
 import '../../../../core/network/api_client.dart';
 import '../../../../config/api_config.dart';
-import '../../../subscription/presentation/screens/subscription_screen.dart';
-import '../../../subscription/presentation/screens/manage_subscription_screen.dart';
 import '../../../notifications/presentation/screens/notifications_screen.dart';
 import '../../../auth/presentation/screens/login_screen.dart';
 import 'profile_edit_screen.dart';
@@ -172,35 +170,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           const SizedBox(height: 8),
                           Row(
                             children: [
-                              // Plan badge
-                              GestureDetector(
-                                onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (_) => user?.isPro == true
-                                          ? const ManageSubscriptionScreen()
-                                          : const SubscriptionScreen(),
-                                    ),
-                                  );
-                                },
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF10B981).withValues(alpha: 0.1),
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                  child: Text(
-                                    '${user?.planDisplayName ?? 'profile.plan.free'.tr()}${user?.isPro != true ? ' — ${'profile.plan.upgrade'.tr()}' : ''}',
-                                    style: const TextStyle(
-                                      color: Color(0xFF10B981),
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(width: 6),
                               // Level badge
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
@@ -290,24 +259,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
             // Language Setting Card
             _buildLanguageSettingCard(context),
-            const SizedBox(height: 12),
-
-            _buildSettingCard(
-              context,
-              icon: Icons.credit_card,
-              iconColor: const Color(0xFF06B6D4),
-              title: 'profile.settings.subscription.title'.tr(),
-              subtitle: 'profile.settings.subscription.subtitle'.tr(),
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => user?.isPro == true
-                        ? const ManageSubscriptionScreen()
-                        : const SubscriptionScreen(),
-                  ),
-                );
-              },
-            ),
 
             const SizedBox(height: 24),
 

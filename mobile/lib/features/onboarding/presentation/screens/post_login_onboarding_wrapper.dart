@@ -7,7 +7,6 @@ import '../bloc/post_login_onboarding_cubit.dart';
 import '../bloc/post_login_onboarding_state.dart';
 import 'welcome_onboarding_modal.dart';
 import 'guided_tour_screen.dart';
-import 'special_offer_screen.dart';
 import '../../../main_navigation/main_screen.dart';
 import '../../../study_sets/presentation/bloc/study_sets_bloc.dart';
 import '../../../study_sets/data/datasources/study_sets_remote_datasource.dart';
@@ -103,20 +102,10 @@ class _OnboardingNavigator extends StatelessWidget {
           case OnboardingStep.guidedTour:
             return GuidedTourScreen(
               onComplete: () {
-                context.read<PostLoginOnboardingCubit>().showSpecialOffer();
+                context.read<PostLoginOnboardingCubit>().completeOnboarding();
               },
               onSkip: () {
                 context.read<PostLoginOnboardingCubit>().skipOnboarding();
-              },
-            );
-
-          case OnboardingStep.specialOffer:
-            return SpecialOfferScreen(
-              onComplete: () {
-                context.read<PostLoginOnboardingCubit>().completeOnboarding();
-              },
-              onSkip: () {
-                context.read<PostLoginOnboardingCubit>().completeOnboarding();
               },
             );
 
