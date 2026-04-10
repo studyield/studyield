@@ -143,7 +143,7 @@ export function TestimonialsSection() {
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [currentIndex, measureCardWidth, offsetBase, x]);
 
   // Animate when currentIndex changes (skip during wrapping)
   useEffect(() => {

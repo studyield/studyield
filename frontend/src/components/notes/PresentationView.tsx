@@ -207,7 +207,7 @@ export function PresentationView({ note, onClose }: PresentationViewProps) {
     } finally {
       setIsLoading(false);
     }
-  }, [note.content, note.title]);
+  }, [note.content, note.title, t]);
 
   // Generate slides on mount
   useEffect(() => {
@@ -230,6 +230,17 @@ export function PresentationView({ note, onClose }: PresentationViewProps) {
     },
     [totalSlides]
   );
+
+  // Fullscreen
+  const toggleFullscreen = useCallback(() => {
+    if (!document.fullscreenElement) {
+      containerRef.current?.requestFullscreen();
+      setIsFullscreen(true);
+    } else {
+      document.exitFullscreen();
+      setIsFullscreen(false);
+    }
+  }, []);
 
   // Keyboard navigation
   useEffect(() => {
@@ -286,7 +297,7 @@ export function PresentationView({ note, onClose }: PresentationViewProps) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [goNext, goPrev, totalSlides, showOverview, isFullscreen, onClose, isLoading]);
+  }, [goNext, goPrev, totalSlides, showOverview, isFullscreen, onClose, isLoading, toggleFullscreen]);
 
   // Timer
   useEffect(() => {
@@ -321,17 +332,6 @@ export function PresentationView({ note, onClose }: PresentationViewProps) {
       if (autoPlayRef.current) clearInterval(autoPlayRef.current);
     };
   }, [isPlaying, autoSlideInterval, totalSlides, isLoading]);
-
-  // Fullscreen
-  const toggleFullscreen = useCallback(() => {
-    if (!document.fullscreenElement) {
-      containerRef.current?.requestFullscreen();
-      setIsFullscreen(true);
-    } else {
-      document.exitFullscreen();
-      setIsFullscreen(false);
-    }
-  }, []);
 
   // Listen for fullscreen changes
   useEffect(() => {

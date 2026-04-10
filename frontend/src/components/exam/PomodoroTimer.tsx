@@ -96,7 +96,7 @@ export function PomodoroTimer({ onSessionComplete, className, compact = false }:
         clearInterval(intervalRef.current);
       }
     };
-  }, [isRunning, handleComplete]);
+  }, [isRunning, handleComplete, timeLeft]);
 
   const toggleTimer = () => {
     setIsRunning((prev) => !prev);

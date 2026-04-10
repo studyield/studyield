@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { DashboardLayout } from '@/layouts/DashboardLayout';
@@ -104,7 +104,8 @@ function extractMetadata(step: { output?: unknown; confidence?: number } | null)
     if (typeof val === 'string') {
       try {
         return findMeta(JSON.parse(val));
-      } catch {
+      } catch (err) {
+        console.error('JSON parse error:', err);
         return null;
       }
     }
@@ -122,7 +123,8 @@ function extractMetadata(step: { output?: unknown; confidence?: number } | null)
     if (typeof val === 'string') {
       try {
         return findConfidence(JSON.parse(val));
-      } catch {
+      } catch (err) {
+        console.error('JSON parse error:', err);
         return null;
       }
     }
@@ -183,20 +185,12 @@ function RenderMath({ text }: { text: unknown }) {
     }
 
     const latex = remaining.slice(blockStart + 2, blockEnd);
-    try {
-      // eslint-disable-next-line react-hooks/error-boundaries
-      parts.push(
-        <div key={key++} className="my-2 overflow-x-auto">
-          <BlockMath math={latex} />
-        </div>,
-      );
-    } catch {
-      parts.push(
-        <code key={key++} className="text-sm bg-muted px-1 rounded">
-          {latex}
-        </code>,
-      );
-    }
+    // Render BlockMath (errors will be caught by error boundary)
+    parts.push(
+      <div key={key++} className="my-2 overflow-x-auto">
+        <BlockMath math={latex} />
+      </div>
+    );
     remaining = remaining.slice(blockEnd + 2);
   }
 
@@ -216,16 +210,8 @@ function RenderInlineMath({ text }: { text: string }) {
     if (match.index > lastIdx) {
       parts.push(text.slice(lastIdx, match.index));
     }
-    try {
-      {/* eslint-disable-next-line react-hooks/error-boundaries */}
-      parts.push(<InlineMath key={match.index} math={match[1]} />);
-    } catch {
-      parts.push(
-        <code key={match.index} className="text-sm bg-muted px-1 rounded">
-          {match[1]}
-        </code>,
-      );
-    }
+    // Render InlineMath (errors will be caught by error boundary)
+    parts.push(<InlineMath key={match.index} math={match[1]} />);
     lastIdx = regex.lastIndex;
   }
 
@@ -313,16 +299,29 @@ export function SolutionPage() {
   // Check bookmark status
   useEffect(() => {
     if (id) {
-      problemSolverService.isBookmarked(id).then(setIsBookmarked).catch(() => {});
+      problemSolverService.isBookmarked(id).then(setIsBookmarked).catch((err) => {
+        console.error('Failed to check bookmark status:', err);
+      });
     }
   }, [id]);
+
+  const loadAlternativeMethods = useCallback(async () => {
+    if (!id || altMethods.length > 0) return;
+    setAltLoading(true);
+    try {
+      setAltMethods(await problemSolverService.getAlternativeMethods(id));
+    } catch (err) {
+      console.error('Failed to load alternative methods:', err);
+    }
+    setAltLoading(false);
+  }, [id, altMethods.length]);
 
   // Auto-load alt methods when tab is clicked
   useEffect(() => {
     if (activeTab === 'alternatives') {
       loadAlternativeMethods();
     }
-  }, [activeTab]);
+  }, [activeTab, loadAlternativeMethods]);
 
   const toggleBookmark = async () => {
     if (!id) return;
@@ -335,21 +334,10 @@ export function SolutionPage() {
         await problemSolverService.addBookmark(id);
         setIsBookmarked(true);
       }
-    } catch {
-      // Silently ignore bookmark errors
+    } catch (err) {
+      console.error('Failed to toggle bookmark:', err);
     }
     setBookmarkLoading(false);
-  };
-
-  const loadAlternativeMethods = async () => {
-    if (!id || altMethods.length > 0) return;
-    setAltLoading(true);
-    try {
-      setAltMethods(await problemSolverService.getAlternativeMethods(id));
-    } catch {
-      // Silently ignore fetch errors
-    }
-    setAltLoading(false);
   };
 
   const changeComplexity = async (level: string) => {
@@ -359,8 +347,8 @@ export function SolutionPage() {
     try {
       const res = await problemSolverService.explainAtLevel(id, level);
       setEli5Explanation(res.explanation);
-    } catch {
-      // Silently ignore fetch errors
+    } catch (err) {
+      console.error('Failed to fetch explanation:', err);
     }
     setEli5Loading(false);
   };
@@ -387,8 +375,8 @@ export function SolutionPage() {
       utterance.onend = () => setIsSpeaking(false);
       window.speechSynthesis.speak(utterance);
       setIsSpeaking(true);
-    } catch {
-      // Silently ignore narration errors
+    } catch (err) {
+      console.error('Failed to load narration:', err);
     }
     setNarrationLoading(false);
   };
@@ -420,11 +408,12 @@ export function SolutionPage() {
     setTimeout(() => setCopiedStep(null), 2000);
   };
 
-  const runCode = async (_code: string) => {
+  const runCode = async (code: string) => {
     setIsRunning(true);
     setCodeOutput(null);
     try {
       // In production, this would call the code sandbox API
+      console.log('Code to run:', code);
       setCodeOutput('Code execution requires a running sandbox server.\nOutput will appear here.');
     } finally {
       setIsRunning(false);

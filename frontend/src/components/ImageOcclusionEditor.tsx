@@ -74,12 +74,12 @@ export function ImageOcclusionEditor({ imageUrl, regions, onRegionsChange, onIma
     setIsDrawing(false);
     setDrawStart(null);
     setDrawCurrent(null);
-  }, [isDrawing, drawStart, drawCurrent, regions, onRegionsChange]);
+  }, [isDrawing, drawStart, drawCurrent, regions, onRegionsChange, t]);
 
-  const deleteRegion = (id: string) => {
+  const deleteRegion = useCallback((id: string) => {
     onRegionsChange(regions.filter((r) => r.id !== id));
     if (selectedId === id) setSelectedId(null);
-  };
+  }, [regions, onRegionsChange, selectedId]);
 
   const updateLabel = (id: string, label: string) => {
     onRegionsChange(regions.map((r) => r.id === id ? { ...r, label } : r));
@@ -111,7 +111,7 @@ export function ImageOcclusionEditor({ imageUrl, regions, onRegionsChange, onIma
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [selectedId]);
+  }, [selectedId, deleteRegion]);
 
   if (!imageUrl) {
     return (

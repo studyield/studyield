@@ -34,6 +34,7 @@ interface ExamQuestion {
   explanation: string | null;
   difficulty: string;
   topic: string | null;
+  isOriginal?: boolean;
 }
 
 interface UserAnswer {
@@ -112,10 +113,10 @@ export default function PracticeExamPage() {
     // Select questions
     let available = [...questions];
     if (!includeOriginal) {
-      available = available.filter((q) => !(q as any).isOriginal);
+      available = available.filter((q) => !q.isOriginal);
     }
     if (!includeGenerated) {
-      available = available.filter((q) => (q as any).isOriginal);
+      available = available.filter((q) => q.isOriginal);
     }
 
     // Shuffle and pick

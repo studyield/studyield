@@ -629,16 +629,18 @@ export function MindMapView({ notes, onNoteClick, onClose }: MindMapViewProps) {
 
   // Rebuild tree when notes or mode changes
   useEffect(() => {
-    if (mapMode === 'single' && selectedNote) {
-      setTree(buildSingleNoteMindMap(selectedNote));
-    } else {
-      setTree(buildMindMapTree(notes));
-    }
-    // Reset view when switching
-    setPan({ x: 0, y: 0 });
-    setZoom(1);
-    setSelectedNode(null);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Batch state updates in microtask to avoid cascading renders
+    queueMicrotask(() => {
+      if (mapMode === 'single' && selectedNote) {
+        setTree(buildSingleNoteMindMap(selectedNote));
+      } else {
+        setTree(buildMindMapTree(notes));
+      }
+      // Reset view when switching
+      setPan({ x: 0, y: 0 });
+      setZoom(1);
+      setSelectedNode(null);
+    });
   }, [notes, mapMode, selectedNote]);
 
   // Calculate positions

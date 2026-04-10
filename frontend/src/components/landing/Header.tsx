@@ -58,8 +58,7 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    setIsMobileMenuOpen(false);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    queueMicrotask(() => setIsMobileMenuOpen(false));
   }, [location.pathname]);
 
   // Prevent body scroll when mobile menu is open

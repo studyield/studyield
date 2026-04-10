@@ -95,7 +95,7 @@ export function DocumentsTab({ studySetId }: DocumentsTabProps) {
     } finally {
       setIsLoading(false);
     }
-  }, [studySetId]);
+  }, [studySetId, t]);
 
   // Initial fetch
   useEffect(() => {
@@ -168,7 +168,7 @@ export function DocumentsTab({ studySetId }: DocumentsTabProps) {
       setIsUploading(false);
       setUploadProgress(0);
     },
-    [studySetId]
+    [studySetId, t]
   );
 
   const handleDrop = useCallback(
@@ -202,7 +202,7 @@ export function DocumentsTab({ studySetId }: DocumentsTabProps) {
       console.error('Failed to delete document:', err);
       setError(t('documentsTab.failedDelete'));
     }
-  }, []);
+  }, [t]);
 
   const handleDownload = useCallback(async (doc: Document) => {
     try {

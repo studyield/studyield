@@ -154,8 +154,7 @@ export default function CollaborativeExamPage() {
       setPhase('playing');
       setCurrentQuestionIndex(0);
       setTimeLeft(30);
-      // eslint-disable-next-line react-hooks/immutability
-      fetchQuestions(questionIds);
+      void fetchQuestions(questionIds);
     });
 
     newSocket.on('participant-finished', ({ userId, score, correctCount }) => {
@@ -184,14 +183,25 @@ export default function CollaborativeExamPage() {
     return () => {
       newSocket.disconnect();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.id]);
+
+  const handleJoinSession = useCallback(() => {
+    if (!socket || !sessionCode) return;
+    setPhase('joining');
+    setError(null);
+    socket.emit('join-session', {
+      code: sessionCode.toUpperCase(),
+      nickname: nickname || user?.name || 'Player',
+    });
+  }, [socket, sessionCode, nickname, user?.name]);
 
   // Auto-join if code is provided
   useEffect(() => {
     if (socket?.connected && joinCode && phase === 'idle') {
       handleJoinSession();
     }
-  }, [socket?.connected, joinCode, phase]);
+  }, [socket?.connected, joinCode, phase, handleJoinSession]);
 
   // Timer logic
   useEffect(() => {
@@ -220,7 +230,7 @@ export default function CollaborativeExamPage() {
     }
   }, [chatMessages]);
 
-  const fetchQuestions = async (questionIds: string[]) => {
+  const fetchQuestions = useCallback(async (questionIds: string[]) => {
     try {
       const { data } = await api.get(ENDPOINTS.examClone.questions(examCloneId!));
       const filteredQuestions = data.filter((q: Question) => questionIds.includes(q.id));
@@ -228,7 +238,7 @@ export default function CollaborativeExamPage() {
     } catch (err) {
       console.error('Failed to fetch questions:', err);
     }
-  };
+  }, [examCloneId]);
 
   const handleCreateSession = async () => {
     if (!socket || !examCloneId) return;
@@ -242,16 +252,6 @@ export default function CollaborativeExamPage() {
     });
   };
 
-  const handleJoinSession = useCallback(() => {
-    if (!socket || !sessionCode) return;
-    setPhase('joining');
-    setError(null);
-    socket.emit('join-session', {
-      code: sessionCode.toUpperCase(),
-      nickname: nickname || user?.name || 'Player',
-    });
-  }, [socket, sessionCode, nickname, user?.name]);
-
   const handleStartSession = async () => {
     if (!socket || !sessionCode || !examCloneId) return;
 
@@ -261,7 +261,8 @@ export default function CollaborativeExamPage() {
       setQuestions(data.slice(0, 10));
 
       socket.emit('start-session', { code: sessionCode, questionIds });
-    } catch {
+    } catch (err) {
+      console.error('Failed to load questions:', err);
       setError('Failed to load questions');
     }
   };

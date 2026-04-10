@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -510,6 +510,7 @@ function JoinOrCreate() {
   const [isCreating, setIsCreating] = useState(false);
   const [isJoining, setIsJoining] = useState(false);
   const { id: studySetId, code: urlCode } = useParams<{ id?: string; code?: string }>();
+  const hasAttemptedAutoJoin = useRef(false);
 
   const hasStudySet = !!studySetId;
   const [mode, setMode] = useState<'choose' | 'join'>(urlCode ? 'join' : hasStudySet ? 'choose' : 'join');
@@ -532,11 +533,12 @@ function JoinOrCreate() {
   }, [phase]);
 
   useEffect(() => {
-    if (urlCode && socket?.connected && user && !isJoining && phase === 'idle') {
-      setIsJoining(true);
+    if (urlCode && socket?.connected && user && !hasAttemptedAutoJoin.current && phase === 'idle') {
+      hasAttemptedAutoJoin.current = true;
+      // Auto-join without setting loading state to avoid setState in effect
       joinRoom(urlCode.toUpperCase(), user?.name || user?.email?.split('@')[0] || 'Player');
     }
-  }, [urlCode, socket?.connected, user, phase]);
+  }, [urlCode, socket?.connected, user, phase, joinRoom]);
 
   const handleCreate = () => {
     if (studySetId) {

@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   Upload,
@@ -283,18 +283,24 @@ function MasterDemo({ isActive, isCompleted }: { isActive: boolean; isCompleted:
 
   useEffect(() => {
     if (isCompleted) {
-      setStars(3);
-      setShowBadge(true);
+      queueMicrotask(() => {
+        setStars(3);
+        setShowBadge(true);
+      });
       return;
     }
     if (!isActive) {
-      setStars(0);
-      setShowBadge(false);
+      queueMicrotask(() => {
+        setStars(0);
+        setShowBadge(false);
+      });
       return;
     }
 
-    setShowBadge(false);
-    setStars(0);
+    queueMicrotask(() => {
+      setShowBadge(false);
+      setStars(0);
+    });
 
     const timeouts: ReturnType<typeof setTimeout>[] = [];
     timeouts.push(setTimeout(() => setStars(1), 400));
@@ -303,7 +309,6 @@ function MasterDemo({ isActive, isCompleted }: { isActive: boolean; isCompleted:
     timeouts.push(setTimeout(() => setShowBadge(true), 1600));
 
     return () => timeouts.forEach(t => clearTimeout(t));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isActive, isCompleted]);
 
   return (
@@ -569,7 +574,7 @@ export function HowItWorksSection() {
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
 
   // Step durations in milliseconds
-  const stepDurations = [2500, 2500, 2500, 2500];
+  const stepDurations = useMemo(() => [2500, 2500, 2500, 2500], []);
 
   useEffect(() => {
     const runStepSequence = () => {
@@ -596,7 +601,7 @@ export function HowItWorksSection() {
     const interval = setInterval(runStepSequence, totalCycleTime);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [stepDurations]);
 
   const stepLabelKeys = ['howItWorks.stepLabels.upload', 'howItWorks.stepLabels.generate', 'howItWorks.stepLabels.study', 'howItWorks.stepLabels.master'];
   const stepColors = [

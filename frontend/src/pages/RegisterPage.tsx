@@ -119,8 +119,9 @@ export function RegisterPage() {
     try {
       await googleLogin(response.credential);
       navigate('/dashboard');
-    } catch (err: any) {
-      setError(err.message || t('auth.register.googleFailed'));
+    } catch (err) {
+      const error = err as Error;
+      setError(error.message || t('auth.register.googleFailed'));
     } finally {
       setSocialLoading('');
     }
@@ -152,9 +153,10 @@ export function RegisterPage() {
 
       await appleLogin(idToken, userData);
       navigate('/dashboard');
-    } catch (err: any) {
-      if (err.error !== 'popup_closed_by_user') {
-        setError(err.message || t('auth.register.appleFailed'));
+    } catch (err) {
+      const error = err as { error?: string; message?: string };
+      if (error.error !== 'popup_closed_by_user') {
+        setError(error.message || t('auth.register.appleFailed'));
       }
     } finally {
       setSocialLoading('');
@@ -189,8 +191,9 @@ export function RegisterPage() {
       navigate('/login', {
         state: { message: t('auth.register.accountCreated') },
       });
-    } catch (err: any) {
-      setError(err.message || t('auth.register.registrationFailed'));
+    } catch (err) {
+      const error = err as Error;
+      setError(error.message || t('auth.register.registrationFailed'));
     } finally {
       setIsLoading(false);
     }

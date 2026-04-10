@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import {
   BookOpen,
   Brain,
@@ -39,12 +39,12 @@ function AIChatDemo() {
   const [messages, setMessages] = useState<{ role: string; text: string }[]>([]);
   const [isTyping, setIsTyping] = useState(false);
 
-  const conversation = [
+  const conversation = useMemo(() => [
     { role: 'user', text: 'What is photosynthesis?' },
     { role: 'ai', text: 'Photosynthesis is the process by which plants convert sunlight, water, and CO₂ into glucose and oxygen.\n6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂' },
     { role: 'user', text: 'Create flashcards from this' },
     { role: 'ai', text: '✨ Generated 5 flashcards!\n• Definition\n• Chemical Equation\n• Inputs & Outputs' },
-  ];
+  ], []);
 
   useEffect(() => {
     const runChat = async () => {
@@ -64,7 +64,7 @@ function AIChatDemo() {
     runChat();
     const interval = setInterval(runChat, 11000);
     return () => clearInterval(interval);
-  }, []);
+  }, [conversation]);
 
   return (
     <div className="bg-card/80 backdrop-blur-xl rounded-xl border border-border/50 overflow-hidden h-full shadow-lg flex flex-col">
@@ -120,7 +120,7 @@ function FlashcardDemo() {
     const flip = setInterval(() => setIsFlipped(prev => !prev), 2000);
     const card = setInterval(() => { setIsFlipped(false); setTimeout(() => setCardIndex(prev => (prev + 1) % cards.length), 300); }, 4000);
     return () => { clearInterval(flip); clearInterval(card); };
-  }, []);
+  }, [cards.length]);
 
   return (
     <div className="relative h-full flex items-center justify-center p-3" style={{ perspective: '800px' }}>

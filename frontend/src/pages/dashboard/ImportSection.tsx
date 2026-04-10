@@ -188,10 +188,10 @@ function CardCountPicker({
 }
 
 function WaveformBars({ isActive }: { isActive: boolean }) {
-  const bars = React.useMemo(() => Array.from({ length: 30 }, () => ({
+  const [bars] = React.useState(() => Array.from({ length: 30 }, () => ({
     height: Math.random() * 56 + 8,
     duration: 0.4 + Math.random() * 0.4,
-  })), []);
+  })));
 
   return (
     <div className="flex items-center justify-center gap-[3px] h-20">
@@ -420,7 +420,8 @@ function AudioRecordScreen({
       setStatus('recording');
       setDuration(0);
       timerRef.current = setInterval(() => setDuration((d) => d + 1), 1000);
-    } catch {
+    } catch (err) {
+      console.error('Microphone access error:', err);
       setError('Microphone access denied. Please allow microphone access in your browser settings.');
     }
   };
@@ -707,9 +708,10 @@ function CameraScreen({
       setIsCameraActive(true);
       if (videoRef.current) {
         videoRef.current.srcObject = s;
-        videoRef.current.play();
+        void videoRef.current.play();
       }
-    } catch {
+    } catch (err) {
+      console.error('Camera access error:', err);
       setError('Camera access denied. Please allow camera access in your browser settings.');
     }
   }, []);
@@ -1477,16 +1479,20 @@ export function ImportSection({ onCardsImported, studySetId }: ImportSectionProp
           camera: 'file',
           handwriting: 'handwriting',
         };
-        await saveSource({
-          type: sourceTypeMap[result.source] || 'file',
-          title: result.sourceMetadata.title,
-          url: result.sourceMetadata.url,
-          fileName: result.sourceMetadata.fileName,
-          fileSize: result.sourceMetadata.fileSize,
-          mimeType: result.sourceMetadata.mimeType,
-          extractedText: result.sourceMetadata.extractedText,
-          flashcardsGenerated: result.cards.length,
-        });
+        try {
+          await saveSource({
+            type: sourceTypeMap[result.source] || 'file',
+            title: result.sourceMetadata.title,
+            url: result.sourceMetadata.url,
+            fileName: result.sourceMetadata.fileName,
+            fileSize: result.sourceMetadata.fileSize,
+            mimeType: result.sourceMetadata.mimeType,
+            extractedText: result.sourceMetadata.extractedText,
+            flashcardsGenerated: result.cards.length,
+          });
+        } catch (err) {
+          console.error('Failed to save source metadata:', err);
+        }
       }
 
       onCardsImported(result.cards);
