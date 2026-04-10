@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://studyield.com">
-    <img src="frontend/public/STUDYIELD2.png" alt="Studyield - AI-संचालित परीक्षा तैयारी, मल्टी-एजेंट समस्या समाधान, ज्ञान ग्राफ और अधिक के साथ स्मार्ट तरीके से सीखें">
+    <img src="frontend/public/logos/studyield-logo.png" alt="Studyield" width="80">
   </a>
 </p>
 
