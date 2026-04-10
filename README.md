@@ -77,7 +77,6 @@ Unlike traditional learning platforms that focus solely on content delivery or A
 - **🗺️ Learning Paths** -- AI-generated optimal study routes
 - **📊 Progress Analytics** -- Track study time, mastery levels, and learning velocity
 - **🌍 12 Languages** -- Full i18n support (EN, JA, ZH, KO, ES, FR, DE, PT, AR, BN, HI, RU)
-- **📱 Web + Mobile** -- React frontend and Flutter mobile app
 
 ## What Problem We Solve
 
@@ -127,7 +126,7 @@ Students today are drowning in information but starving for effective learning t
 | **Progress Analytics** | ✅ | ✅ | ⚠️ Basic | ❌ | ✅ |
 | **Self-Hosted** | ✅ | ❌ | ✅ | ❌ | ❌ |
 | **Open Source** | ✅ Apache 2.0 | ❌ | ✅ AGPL | ❌ | ❌ |
-| **Multi-Platform** | ✅ Web + Mobile | ✅ | ✅ | ✅ | ✅ |
+| **Multi-Platform** | ✅ Web | ✅ | ✅ | ✅ | ✅ |
 | **Learning Curve** | 🟢 Low | 🟢 Low | 🟡 Medium | 🟢 Low | 🟢 Low |
 
 ### What Makes Studyield Unique?
@@ -185,7 +184,6 @@ Studyield is an **actively maintained** project with a growing community. Here's
 - ✅ **27 Backend Modules** -- auth, ai, content, exam-clone, problem-solver, teach-back, research, code-sandbox, and more
 - ✅ **120+ API Endpoints** -- Comprehensive REST + WebSocket API
 - ✅ **12 Languages** -- Full internationalization support
-- ✅ **3 Platform Support** -- Web (React), Mobile (Flutter), API
 - ✅ **Docker Deployment** -- One-command self-hosting
 
 ### Why These Numbers Matter
@@ -261,8 +259,6 @@ This starts PostgreSQL, Redis, Qdrant, and ClickHouse via Docker, then launches 
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                   │
 │  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐    │
-│  │   React Web  │     │   Flutter    │     │  REST + WS   │    │
-│  │  (Frontend)  │────▶│    Mobile    │────▶│     API      │    │
 │  └──────────────┘     └──────────────┘     └──────┬───────┘    │
 │                                                     │            │
 │  ┌──────────────────────────────────────────────────┼──────────┐│
@@ -287,7 +283,6 @@ This starts PostgreSQL, Redis, Qdrant, and ClickHouse via Docker, then launches 
 
 **Frontend** (`/frontend`) -- React 19, Vite, TypeScript, Tailwind CSS, Radix UI (shadcn), Zustand, React Query, i18next
 
-**Mobile** (`/mobile`) -- Flutter 3.10+, Provider + BLoC, Dio, Go Router, Firebase, Easy Localization
 
 **Backend** (`/backend`) -- NestJS 10, TypeScript, PostgreSQL (raw SQL), Redis, Qdrant, ClickHouse, BullMQ, Socket.io
 
@@ -297,7 +292,6 @@ This starts PostgreSQL, Redis, Qdrant, and ClickHouse via Docker, then launches 
 |-------|------------|
 | **Backend** | NestJS 10, TypeScript, PostgreSQL (raw SQL), Redis, Qdrant, ClickHouse, BullMQ, Socket.io |
 | **Frontend** | React 19, Vite, TypeScript, Tailwind CSS, Radix UI (shadcn), Zustand, React Query, i18next |
-| **Mobile** | Flutter 3.10+, Provider + BLoC, Dio, Go Router, Firebase, Easy Localization |
 | **AI** | OpenRouter (Claude, GPT, etc.), OpenAI Embeddings, LangChain |
 | **Infrastructure** | Docker Compose, Nginx, PM2, GitHub Actions CI/CD |
 | **Storage** | Cloudflare R2, AWS SES, Firebase Cloud Messaging |
@@ -305,7 +299,6 @@ This starts PostgreSQL, Redis, Qdrant, and ClickHouse via Docker, then launches 
 
 ## i18n
 
-Studyield supports 12 languages via i18next (frontend) and Easy Localization (mobile):
 
 - English, 日本語, 中文, 한국어, Español, Français, Deutsch, Português, العربية, বাংলা, हिन्दी, Русский
 
@@ -320,7 +313,6 @@ Studyield is more than just another open-source project -- it's an opportunity t
 **📚 Learn Modern Tech Stack**
 - **NestJS + TypeScript** -- Enterprise-grade backend architecture with dependency injection and modular design
 - **React 19 + Vite** -- Latest React features with blazing-fast builds
-- **Flutter** -- Cross-platform mobile development for iOS and Android
 - **AI/ML Integration** -- Work with LLMs, embeddings, vector databases, and multi-agent systems
 - **Real-Time Systems** -- WebSockets, streaming, and event-driven architecture
 - **DevOps** -- Docker, CI/CD, self-hosting, and infrastructure as code
@@ -418,7 +410,6 @@ git checkout -b feature/your-feature-name
 # Make your changes
 # - Backend code: /backend/src/modules
 # - Frontend code: /frontend/src
-# - Mobile code: /mobile/lib
 
 # Test your changes
 # Backend: cd backend && npm run test
@@ -529,7 +520,7 @@ Copyright 2025 Studyield Contributors.
 
 ## Acknowledgments
 
-Built with NestJS, React, Flutter, PostgreSQL, Redis, Qdrant, ClickHouse, OpenRouter, and many other amazing open-source technologies.
+Built with NestJS, React, PostgreSQL, Redis, Qdrant, ClickHouse, OpenRouter, and many other amazing open-source technologies.
 
 ---
 

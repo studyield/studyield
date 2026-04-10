@@ -34,16 +34,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replaced console.error with NestJS Logger service
 - Removed token debug logging from WebSocket auth guard
 - Disabled production sourcemaps in Vite build
-- Enabled `avoid_print` lint rule for Flutter mobile
-- Pinned `intl` dependency version in mobile
 
 ### Removed
 - Proprietary INFO INLET license
 - Hardcoded API keys and secrets from example files
 - Hardcoded server IPs from documentation
-- Internal development markdown files (12 mobile docs, root ONBOARDING plan)
 - Token substring logging from authentication flows
-- Production URL fallbacks from frontend and mobile config
+- Production URL fallbacks from frontend config
 - `.DS_Store` files from version control
 
 ### Security
@@ -52,7 +49,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added DOMPurify to sanitize dangerouslySetInnerHTML content (XSS prevention)
 - Fixed CORS wildcard fallback to restrict origins
 - Removed sensitive token logging from WebSocket guard
-- Added Firebase config files to `.gitignore`
 
 ## [0.1.0] - 2025-02-05
 
@@ -60,7 +56,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial AI-powered learning platform
 - NestJS backend with 27 modules and 120+ REST endpoints
 - React 19 frontend with Vite, Tailwind CSS, and Radix UI
-- Flutter mobile app with Provider + BLoC state management
 - 6 killer AI features:
   - Exam Clone: upload past exams, generate practice questions
   - Multi-Agent Problem Solver: analysis, solution, verification agents
@@ -80,7 +75,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ClickHouse analytics
 - Cloudflare R2 file storage
 - Socket.io real-time WebSocket updates (6 namespaces)
-- i18n support for 12 languages (web + mobile)
-- Firebase push notifications (mobile)
+- i18n support for 12 languages
 - GitHub Actions CI/CD pipeline
 - Production deployment with PM2 and Nginx

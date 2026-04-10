@@ -58,8 +58,6 @@ body:
       label: Platform
       options:
         - Web (Frontend)
-        - Mobile (iOS)
-        - Mobile (Android)
         - Backend API
     validations:
       required: true
@@ -92,7 +90,6 @@ body:
         - Safari
         - Edge
         - Other
-        - N/A (mobile or API)
 
   - type: textarea
     id: additional

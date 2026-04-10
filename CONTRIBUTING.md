@@ -42,7 +42,6 @@ Open a [Feature Request](https://github.com/studyield/studyield/issues/new?templ
 - Redis 7+
 - Qdrant (optional, for vector search)
 - ClickHouse (optional, for analytics)
-- Flutter SDK 3.10+ (for mobile development)
 - Docker & Docker Compose (recommended for infrastructure)
 
 ### Quick Start (Docker)
@@ -69,11 +68,7 @@ cp .env.example .env
 npm install
 npm run dev
 
-# Setup mobile (optional, new terminal)
-cd mobile
 cp .env.example .env
-flutter pub get
-flutter run
 ```
 
 ### One-Command Start
@@ -121,7 +116,6 @@ studyield/
       locales/                # i18n translations (12 languages)
       hooks/                  # Custom React hooks
       contexts/               # Auth context
-  mobile/                     # Flutter mobile app
     lib/
       api/                    # Dio HTTP client
       models/                 # Data models
@@ -141,15 +135,9 @@ Studyield supports 12 languages and we welcome translation contributions!
 3. Register the new locale in the i18n configuration
 4. Add the language option to the language switcher
 
-### Mobile
-1. Copy `mobile/assets/translations/en-US.json` to a new file
-2. Translate all values
-3. Register in the app's localization configuration
-
 ## Code Style
 
 - **TypeScript** for backend and frontend
-- **Dart** for mobile (Flutter)
 - **Prettier** for formatting (`npm run format` in backend)
 - **ESLint** for linting (`npm run lint`)
 - Follow existing patterns in the codebase
@@ -168,11 +156,6 @@ npm test -- --coverage      # Coverage report
 cd frontend
 npm run lint                # Lint check
 npm run typecheck           # Type check
-
-# Mobile
-cd mobile
-flutter test                # Run all tests
-flutter analyze             # Static analysis
 ```
 
 ## Pull Request Guidelines

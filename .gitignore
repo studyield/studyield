@@ -21,7 +21,6 @@ backend/.env.example.production
 frontend/.env
 frontend/.env.production
 frontend/.env.local
-mobile/.env
 
 # IDE
 .vscode/
@@ -85,25 +84,6 @@ secrets/
 .claude/
 backend/.claude/
 docs/internal/
-
-# Flutter/Dart
-mobile/.dart_tool/
-mobile/.packages
-mobile/.pub/
-mobile/build/
-mobile/.flutter-plugins
-mobile/.flutter-plugins-dependencies
-mobile/pubspec.lock
-mobile/ios/Pods/
-mobile/ios/.symlinks/
-mobile/ios/Flutter/Flutter.framework
-mobile/ios/Flutter/Flutter.podspec
-mobile/android/.gradle/
-mobile/android/key.properties
-mobile/android/app/google-services.json
-mobile/ios/Runner/GoogleService-Info.plist
-mobile/.idea/
-mobile/mobile.iml
 
 # Local development
 .local/
