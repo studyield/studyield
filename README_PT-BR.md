@@ -479,7 +479,7 @@ Damos as boas-vindas a contribuições! Veja nosso [Guia de Contribuição](CONT
 Obrigado a todas as pessoas incríveis que contribuíram para o Studyield! 🎉
 
 <a href="https://github.com/studyield/studyield/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=studyield/studyield&anon=1&max=100&columns=10" />
+  <img src="https://contrib.rocks/image?repo=studyield/studyield&max=100&columns=10" />
 </a>
 
 Quer ver seu rosto aqui? Confira nosso [Guia de Contribuição](CONTRIBUTING.md) e comece a contribuir hoje!

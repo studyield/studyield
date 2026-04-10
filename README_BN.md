@@ -261,7 +261,7 @@ docker compose --env-file .env.docker up -d
 Studyield-এ অবদান রেখেছেন এমন সকল আশ্চর্যজনক মানুষদের ধন্যবাদ! 🎉
 
 <a href="https://github.com/studyield/studyield/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=studyield/studyield&anon=1&max=100&columns=10" />
+  <img src="https://contrib.rocks/image?repo=studyield/studyield&max=100&columns=10" />
 </a>
 
 ## 💬 আমাদের সম্প্রদায়ে যোগ দিন

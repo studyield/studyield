@@ -474,7 +474,7 @@ Wir begrüßen Beiträge! Siehe unseren [Beitragsleitfaden](CONTRIBUTING.md), um
 Vielen Dank an alle großartigen Menschen, die zu Studyield beigetragen haben! 🎉
 
 <a href="https://github.com/studyield/studyield/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=studyield/studyield&anon=1&max=100&columns=10" />
+  <img src="https://contrib.rocks/image?repo=studyield/studyield&max=100&columns=10" />
 </a>
 
 Möchten Sie Ihr Gesicht hier sehen? Schauen Sie sich unseren [Beitragsleitfaden](CONTRIBUTING.md) an und beginnen Sie noch heute beizutragen!

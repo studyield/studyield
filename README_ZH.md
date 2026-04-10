@@ -474,7 +474,7 @@ git push origin feature/your-feature-name
 感谢所有为Studyield做出贡献的了不起的人！🎉
 
 <a href="https://github.com/studyield/studyield/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=studyield/studyield&anon=1&max=100&columns=10" />
+  <img src="https://contrib.rocks/image?repo=studyield/studyield&max=100&columns=10" />
 </a>
 
 想在这里看到您的面孔吗？查看我们的[贡献指南](CONTRIBUTING.md)并立即开始贡献！
