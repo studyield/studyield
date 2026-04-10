@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://studyield.com">
-    <img src="frontend/public/STUDYIELD2.png" alt="Studyield - Lernen Sie intelligenter mit KI-gestützter Prüfungsvorbereitung, Multi-Agenten-Problemlösung, Wissensgraphen und mehr">
+    <img src="frontend/public/logos/studyield-logo.png" alt="Studyield" width="80">
   </a>
 </p>
 
@@ -474,7 +474,7 @@ Wir begrüßen Beiträge! Siehe unseren [Beitragsleitfaden](CONTRIBUTING.md), um
 Vielen Dank an alle großartigen Menschen, die zu Studyield beigetragen haben! 🎉
 
 <a href="https://github.com/studyield/studyield/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=studyield/studyield&anon=1&max=100&columns=10" />
+  <img src="https://contrib.rocks/image?repo=studyield/studyield&max=100&columns=10" />
 </a>
 
 Möchten Sie Ihr Gesicht hier sehen? Schauen Sie sich unseren [Beitragsleitfaden](CONTRIBUTING.md) an und beginnen Sie noch heute beizutragen!

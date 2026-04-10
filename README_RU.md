@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://studyield.com">
-    <img src="frontend/public/STUDYIELD2.png" alt="Studyield - Учитесь умнее с подготовкой к экзаменам на основе ИИ, мультиагентным решением задач, графами знаний и многим другим">
+    <img src="frontend/public/logos/studyield-logo.png" alt="Studyield" width="80">
   </a>
 </p>
 
@@ -261,7 +261,7 @@ docker compose --env-file .env.docker up -d
 Спасибо всем замечательным людям, которые внесли вклад в Studyield! 🎉
 
 <a href="https://github.com/studyield/studyield/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=studyield/studyield&anon=1&max=100&columns=10" />
+  <img src="https://contrib.rocks/image?repo=studyield/studyield&max=100&columns=10" />
 </a>
 
 ## 💬 Присоединяйтесь к нашему сообществу

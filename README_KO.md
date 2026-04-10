@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://studyield.com">
-    <img src="frontend/public/STUDYIELD2.png" alt="Studyield - AI 기반 시험 준비, 멀티 에이전트 문제 해결, 지식 그래프 등으로 더 스마트하게 학습하세요">
+    <img src="frontend/public/logos/studyield-logo.png" alt="Studyield" width="80">
   </a>
 </p>
 
@@ -475,7 +475,7 @@ git push origin feature/your-feature-name
 Studyield에 기여해 주신 모든 멋진 분들께 감사드립니다! 🎉
 
 <a href="https://github.com/studyield/studyield/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=studyield/studyield&anon=1&max=100&columns=10" />
+  <img src="https://contrib.rocks/image?repo=studyield/studyield&max=100&columns=10" />
 </a>
 
 여기에서 귀하의 얼굴을 보고 싶으신가요? [기여 가이드](CONTRIBUTING.md)를 확인하고 오늘부터 기여를 시작하세요!
