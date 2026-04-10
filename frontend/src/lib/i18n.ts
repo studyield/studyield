@@ -13,9 +13,12 @@ import nl from '@/locales/nl.json';
 import es from '@/locales/es.json';
 import uk from '@/locales/uk.json';
 import ru from '@/locales/ru.json';
+import ar from '@/locales/ar.json';
+import bn from '@/locales/bn.json';
+import hi from '@/locales/hi.json';
 
 export const supportedLanguages = [
-  'en', 'ja', 'zh', 'de', 'ko', 'fr', 'pt-BR', 'it', 'nl', 'es', 'uk', 'ru',
+  'en', 'ja', 'zh', 'de', 'ko', 'fr', 'pt-BR', 'it', 'nl', 'es', 'uk', 'ru', 'ar', 'bn', 'hi',
 ] as const;
 export type SupportedLanguage = (typeof supportedLanguages)[number];
 
@@ -32,7 +35,16 @@ export const languageNames: Record<SupportedLanguage, string> = {
   es: 'Español',
   uk: 'Українська',
   ru: 'Русский',
+  ar: 'العربية',
+  bn: 'বাংলা',
+  hi: 'हिन्दी',
 };
+
+// Languages that require right-to-left text direction.
+export const rtlLanguages: readonly SupportedLanguage[] = ['ar'];
+
+export const isRtlLanguage = (lang: string): boolean =>
+  rtlLanguages.includes(lang as SupportedLanguage);
 
 i18n
   .use(LanguageDetector)
@@ -51,6 +63,9 @@ i18n
       es: { translation: es },
       uk: { translation: uk },
       ru: { translation: ru },
+      ar: { translation: ar },
+      bn: { translation: bn },
+      hi: { translation: hi },
     },
     fallbackLng: 'en',
     supportedLngs: supportedLanguages,
