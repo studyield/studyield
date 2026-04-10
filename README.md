@@ -514,7 +514,7 @@ Please report security vulnerabilities responsibly. See [SECURITY.md](SECURITY.m
 
 ## License
 
-This project is licensed under the [Apache License 2.0](LICENSE).
+This project is licensed under the [GNU Affero General Public License v3.0](LICENSE).
 
 Copyright 2025 Studyield Contributors.
 
