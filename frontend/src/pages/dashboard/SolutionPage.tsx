@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { DashboardLayout } from '@/layouts/DashboardLayout';
@@ -305,6 +305,17 @@ export function SolutionPage() {
     }
   }, [id]);
 
+  const loadAlternativeMethods = useCallback(async () => {
+    if (!id || altMethods.length > 0) return;
+    setAltLoading(true);
+    try {
+      setAltMethods(await problemSolverService.getAlternativeMethods(id));
+    } catch (err) {
+      console.error('Failed to load alternative methods:', err);
+    }
+    setAltLoading(false);
+  }, [id, altMethods.length]);
+
   // Auto-load alt methods when tab is clicked
   useEffect(() => {
     if (activeTab === 'alternatives') {
@@ -328,17 +339,6 @@ export function SolutionPage() {
     }
     setBookmarkLoading(false);
   };
-
-  const loadAlternativeMethods = useCallback(async () => {
-    if (!id || altMethods.length > 0) return;
-    setAltLoading(true);
-    try {
-      setAltMethods(await problemSolverService.getAlternativeMethods(id));
-    } catch (err) {
-      console.error('Failed to load alternative methods:', err);
-    }
-    setAltLoading(false);
-  }, [id, altMethods.length]);
 
   const changeComplexity = async (level: string) => {
     if (!id) return;

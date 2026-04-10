@@ -186,6 +186,16 @@ export default function CollaborativeExamPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.id]);
 
+  const handleJoinSession = useCallback(() => {
+    if (!socket || !sessionCode) return;
+    setPhase('joining');
+    setError(null);
+    socket.emit('join-session', {
+      code: sessionCode.toUpperCase(),
+      nickname: nickname || user?.name || 'Player',
+    });
+  }, [socket, sessionCode, nickname, user?.name]);
+
   // Auto-join if code is provided
   useEffect(() => {
     if (socket?.connected && joinCode && phase === 'idle') {
@@ -241,16 +251,6 @@ export default function CollaborativeExamPage() {
       settings: { timePerQuestion: 30 },
     });
   };
-
-  const handleJoinSession = useCallback(() => {
-    if (!socket || !sessionCode) return;
-    setPhase('joining');
-    setError(null);
-    socket.emit('join-session', {
-      code: sessionCode.toUpperCase(),
-      nickname: nickname || user?.name || 'Player',
-    });
-  }, [socket, sessionCode, nickname, user?.name]);
 
   const handleStartSession = async () => {
     if (!socket || !sessionCode || !examCloneId) return;
