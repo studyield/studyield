@@ -36,15 +36,17 @@ export function LearningPathsPage() {
   const [hoursPerWeek, setHoursPerWeek] = useState(5);
 
   useEffect(() => {
+    const loadPaths = async () => {
+      try {
+        setPaths(await learningPathsService.list());
+      } catch (err) {
+        console.error('Failed to load learning paths:', err);
+      }
+      setLoading(false);
+    };
+
     loadPaths();
   }, []);
-
-  const loadPaths = async () => {
-    try {
-      setPaths(await learningPathsService.list());
-    } catch {}
-    setLoading(false);
-  };
 
   const handleGenerate = async () => {
     if (!topic.trim()) return;
@@ -57,7 +59,9 @@ export function LearningPathsPage() {
         availableHoursPerWeek: hoursPerWeek,
       });
       navigate(`/dashboard/learning-paths/${path.id}`);
-    } catch {}
+    } catch (err) {
+      console.error('Failed to generate learning path:', err);
+    }
     setGenerating(false);
   };
 
@@ -66,7 +70,9 @@ export function LearningPathsPage() {
     try {
       await learningPathsService.delete(id);
       setPaths((prev) => prev.filter((p) => p.id !== id));
-    } catch {}
+    } catch (err) {
+      console.error('Failed to delete learning path:', err);
+    }
   };
 
   const getDifficultyBadge = (d: string) => {

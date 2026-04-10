@@ -305,11 +305,14 @@ function QuizQuestionScreen({
 
   // Reset on question change
   useEffect(() => {
-    setSelectedAnswer(null);
-    setTextAnswer('');
-    setShowFeedback(false);
-    setTimeLeft(30);
-    hasSubmittedRef.current = false;
+    // Batch state updates in microtask to avoid cascading renders
+    queueMicrotask(() => {
+      setSelectedAnswer(null);
+      setTextAnswer('');
+      setShowFeedback(false);
+      setTimeLeft(30);
+      hasSubmittedRef.current = false;
+    });
   }, [question.id]);
 
   const handleSubmitAnswer = (answer: string) => {
@@ -803,8 +806,8 @@ export function QuizPage() {
               })),
               totalTimeSpent: elapsed,
             });
-          } catch {
-            // Non-critical
+          } catch (err) {
+            console.error('Failed to save quiz progress:', err);
           }
         }
       }

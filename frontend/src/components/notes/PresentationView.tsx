@@ -207,7 +207,7 @@ export function PresentationView({ note, onClose }: PresentationViewProps) {
     } finally {
       setIsLoading(false);
     }
-  }, [note.content, note.title]);
+  }, [note.content, note.title, t]);
 
   // Generate slides on mount
   useEffect(() => {
@@ -286,7 +286,7 @@ export function PresentationView({ note, onClose }: PresentationViewProps) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [goNext, goPrev, totalSlides, showOverview, isFullscreen, onClose, isLoading]);
+  }, [goNext, goPrev, totalSlides, showOverview, isFullscreen, onClose, isLoading, toggleFullscreen]);
 
   // Timer
   useEffect(() => {

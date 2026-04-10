@@ -124,7 +124,7 @@ export function CookiesPage() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [tableOfContents]);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);

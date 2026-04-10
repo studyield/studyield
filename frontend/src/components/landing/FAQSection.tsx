@@ -90,7 +90,7 @@ export function FAQSection() {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const faqs: FAQ[] = [
+  const faqs: FAQ[] = useMemo(() => [
     // General
     { question: t('faq.q1'), answer: t('faq.a1'), category: 'general' },
     { question: t('faq.q3'), answer: t('faq.a3'), category: 'general' },
@@ -107,7 +107,7 @@ export function FAQSection() {
     { question: t('faq.q6'), answer: t('faq.a6'), category: 'technical' },
     { question: t('faq.q11'), answer: t('faq.a11'), category: 'technical' },
     { question: t('faq.q12'), answer: t('faq.a12'), category: 'technical' },
-  ];
+  ], [t]);
 
   const filteredFaqs = useMemo(() => {
     let result = faqs;

@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { DashboardLayout } from '@/layouts/DashboardLayout';
@@ -72,12 +72,7 @@ export function AnalyticsPage() {
   const [dateRange, setDateRange] = useState<DateRange>('30d');
   const [timeView, setTimeView] = useState<'daily' | 'weekly'>('daily');
 
-  useEffect(() => {
-    fetchGamification();
-    fetchAnalytics();
-  }, [dateRange]);
-
-  const fetchAnalytics = async () => {
+  const fetchAnalytics = useCallback(async () => {
     setIsLoading(true);
     try {
       const [analyticsRes, activityRes, performanceRes] = await Promise.all([
@@ -104,7 +99,12 @@ export function AnalyticsPage() {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [dateRange]);
+
+  useEffect(() => {
+    fetchGamification();
+    fetchAnalytics();
+  }, [dateRange, fetchAnalytics, fetchGamification]);
 
   // Transform activity data for heatmap
   const heatmapData = useMemo(() => {

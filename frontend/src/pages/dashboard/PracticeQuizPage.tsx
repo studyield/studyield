@@ -25,23 +25,26 @@ export function PracticeQuizPage() {
 
   useEffect(() => {
     if (!id) return;
+
+    const loadQuiz = async () => {
+      setLoading(true);
+      try {
+        const existing = await problemSolverService.getQuizQuestions(id!);
+        if (existing.length > 0) {
+          setQuestions(existing);
+          const answered = existing.filter(q => q.userAnswer !== null);
+          setScore({ correct: answered.filter(q => q.isCorrect).length, total: answered.length });
+          if (answered.length === existing.length) setFinished(true);
+          else setCurrentIdx(answered.length);
+        }
+      } catch (err) {
+        console.error('Failed to load quiz:', err);
+      }
+      setLoading(false);
+    };
+
     loadQuiz();
   }, [id]);
-
-  const loadQuiz = async () => {
-    setLoading(true);
-    try {
-      const existing = await problemSolverService.getQuizQuestions(id!);
-      if (existing.length > 0) {
-        setQuestions(existing);
-        const answered = existing.filter(q => q.userAnswer !== null);
-        setScore({ correct: answered.filter(q => q.isCorrect).length, total: answered.length });
-        if (answered.length === existing.length) setFinished(true);
-        else setCurrentIdx(answered.length);
-      }
-    } catch {}
-    setLoading(false);
-  };
 
   const generateQuiz = async () => {
     setGenerating(true);
@@ -51,7 +54,9 @@ export function PracticeQuizPage() {
       setCurrentIdx(0);
       setScore({ correct: 0, total: 0 });
       setFinished(false);
-    } catch {}
+    } catch (err) {
+      console.error('Failed to generate quiz:', err);
+    }
     setGenerating(false);
   };
 
@@ -65,7 +70,9 @@ export function PracticeQuizPage() {
         correct: prev.correct + (res.isCorrect ? 1 : 0),
         total: prev.total + 1,
       }));
-    } catch {}
+    } catch (err) {
+      console.error('Failed to submit answer:', err);
+    }
     setSubmitting(false);
   };
 

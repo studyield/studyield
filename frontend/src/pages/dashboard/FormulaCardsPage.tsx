@@ -17,10 +17,20 @@ function RenderMath({ text }: { text: string }) {
     <>
       {parts.map((part, i) => {
         if (part.startsWith('$$') && part.endsWith('$$')) {
-          try { return <BlockMath key={i} math={part.slice(2, -2)} />; } catch { return <span key={i}>{part}</span>; }
+          try {
+            return <BlockMath key={i} math={part.slice(2, -2)} />;
+          } catch (err) {
+            console.error('BlockMath render error:', err);
+            return <span key={i}>{part}</span>;
+          }
         }
         if (part.startsWith('$') && part.endsWith('$')) {
-          try { return <InlineMath key={i} math={part.slice(1, -1)} />; } catch { return <span key={i}>{part}</span>; }
+          try {
+            return <InlineMath key={i} math={part.slice(1, -1)} />;
+          } catch (err) {
+            console.error('InlineMath render error:', err);
+            return <span key={i}>{part}</span>;
+          }
         }
         return <span key={i}>{part}</span>;
       })}
@@ -43,8 +53,8 @@ export function FormulaCardsPage() {
       try {
         const res = await problemSolverService.getFormulaCards(id);
         setCards(res);
-      } catch {
-        // Silently ignore fetch errors
+      } catch (err) {
+        console.error('Failed to fetch formula cards:', err);
       }
       setLoading(false);
     })();
@@ -53,7 +63,11 @@ export function FormulaCardsPage() {
   const toggleFlip = (i: number) => {
     setFlipped(prev => {
       const next = new Set(prev);
-      next.has(i) ? next.delete(i) : next.add(i);
+      if (next.has(i)) {
+        next.delete(i);
+      } else {
+        next.add(i);
+      }
       return next;
     });
   };

@@ -196,12 +196,10 @@ export function MatchGamePage() {
     };
   }, []);
 
-  // Check match when both selected
-  useEffect(() => {
-    if (!selectedTerm || !selectedDef) return;
-
-    const termCard = terms.find((t) => t.id === selectedTerm);
-    const defCard = definitions.find((d) => d.id === selectedDef);
+  // Check match function
+  const checkMatch = useCallback((termId: string, defId: string) => {
+    const termCard = terms.find((t) => t.id === termId);
+    const defCard = definitions.find((d) => d.id === defId);
 
     if (!termCard || !defCard) return;
 
@@ -222,27 +220,41 @@ export function MatchGamePage() {
       }
     } else {
       // Wrong
-      setWrongPair({ term: selectedTerm, def: selectedDef });
+      setWrongPair({ term: termId, def: defId });
       setTimeout(() => {
         setWrongPair(null);
         setSelectedTerm(null);
         setSelectedDef(null);
       }, 600);
     }
-  }, [selectedTerm, selectedDef]);
+  }, [terms, definitions, matchedIds, addXP]);
 
   const handleTermClick = (id: string) => {
     if (wrongPair) return;
     const card = terms.find((t) => t.id === id);
     if (!card || matchedIds.has(card.flashcardId)) return;
-    setSelectedTerm(id === selectedTerm ? null : id);
+
+    const newSelectedTerm = id === selectedTerm ? null : id;
+    setSelectedTerm(newSelectedTerm);
+
+    // Check for match if both term and def are selected
+    if (newSelectedTerm && selectedDef) {
+      checkMatch(newSelectedTerm, selectedDef);
+    }
   };
 
   const handleDefClick = (id: string) => {
     if (wrongPair) return;
     const card = definitions.find((d) => d.id === id);
     if (!card || matchedIds.has(card.flashcardId)) return;
-    setSelectedDef(id === selectedDef ? null : id);
+
+    const newSelectedDef = id === selectedDef ? null : id;
+    setSelectedDef(newSelectedDef);
+
+    // Check for match if both term and def are selected
+    if (selectedTerm && newSelectedDef) {
+      checkMatch(selectedTerm, newSelectedDef);
+    }
   };
 
   const formatTime = (seconds: number) => {
