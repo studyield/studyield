@@ -61,7 +61,15 @@ export class UpdateFlashcardDto {
 }
 
 export class ReviewFlashcardDto {
-  @ApiProperty({ description: 'SM-2 quality rating (0-5)', minimum: 0, maximum: 5 })
+  @ApiProperty({
+    description:
+      'Review quality rating. Accepts both FSRS ratings (1-4: Again/Hard/Good/Easy) ' +
+      'and legacy SM-2 quality (0-5) for backward compatibility. ' +
+      'FSRS: 1=Again (forgot), 2=Hard (correct but difficult), 3=Good (correct), 4=Easy (instant recall). ' +
+      'SM-2 0-2 maps to Again, 3→Hard, 4→Good, 5→Easy.',
+    minimum: 0,
+    maximum: 5,
+  })
   @IsNotEmpty()
   quality: 0 | 1 | 2 | 3 | 4 | 5;
 }
