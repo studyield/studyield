@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { DatabaseService } from '../database/database.service';
 import { QuizGeneratorService, QuestionType, MatchingPair, CodingTestCase } from './quiz-generator.service';
 import { NotificationsService } from '../notifications/notifications.service';
+import { GamificationService, XP_AMOUNTS } from '../gamification/gamification.service';
 import { CodeSandboxService } from '../code-sandbox/code-sandbox.service';
 import { AiService } from '../ai/ai.service';
 
@@ -113,6 +114,7 @@ export class QuizService {
     private readonly db: DatabaseService,
     private readonly quizGenerator: QuizGeneratorService,
     private readonly notificationsService: NotificationsService,
+    private readonly gamificationService: GamificationService,
     private readonly codeSandboxService: CodeSandboxService,
     private readonly aiService: AiService,
   ) {}
@@ -305,6 +307,13 @@ export class QuizService {
     // Send notification based on score
     const correctCount = Math.round(totalScore);
     await this.sendQuizCompletionNotification(userId, score, correctCount, questions.length);
+
+    // Award XP for quiz completion
+    await this.gamificationService.awardXp(userId, 'quiz_complete', XP_AMOUNTS.quiz_complete, { quizId, score });
+    if (score === 100) {
+      await this.gamificationService.awardXp(userId, 'quiz_perfect', XP_AMOUNTS.quiz_perfect, { quizId });
+    }
+    await this.gamificationService.recordStudyDay(userId);
 
     this.logger.log(`Quiz attempt submitted: ${attemptId}, score: ${score.toFixed(1)}%`);
     return this.mapAttempt(attempt!);

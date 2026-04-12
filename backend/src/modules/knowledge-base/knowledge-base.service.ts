@@ -4,6 +4,7 @@ import { DatabaseService } from '../database/database.service';
 import { QdrantService } from '../qdrant/qdrant.service';
 import { EmbeddingService } from '../ai/embedding.service';
 import { QueueService } from '../queue/queue.service';
+import { GamificationService, XP_AMOUNTS } from '../gamification/gamification.service';
 import { ChunkingService } from './chunking.service';
 import { DocumentProcessorService } from './document-processor.service';
 
@@ -53,6 +54,7 @@ export class KnowledgeBaseService {
     private readonly qdrantService: QdrantService,
     private readonly embeddingService: EmbeddingService,
     private readonly queueService: QueueService,
+    private readonly gamificationService: GamificationService,
     private readonly chunkingService: ChunkingService,
     private readonly documentProcessor: DocumentProcessorService,
   ) {
@@ -134,6 +136,10 @@ export class KnowledgeBaseService {
       fileKey,
       mimeType,
     });
+
+    // Award XP for uploading study material
+    await this.gamificationService.awardXp(userId, 'material_upload', XP_AMOUNTS.material_upload, { knowledgeBaseId, documentId });
+    await this.gamificationService.recordStudyDay(userId);
 
     this.logger.log(`Document ${documentId} queued for processing in KB ${knowledgeBaseId}`);
   }

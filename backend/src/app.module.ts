@@ -34,6 +34,7 @@ import { NotificationsModule } from './modules/notifications';
 import { BlogModule } from './modules/blog';
 import { ImportExportModule } from './modules/import-export';
 import { LtiModule } from './modules/lti';
+import { GamificationModule } from './modules/gamification';
 
 // Common
 import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
@@ -101,6 +102,7 @@ import { HealthController } from './health.controller';
     BlogModule,
     ImportExportModule,
     LtiModule,
+    GamificationModule,
   ],
   controllers: [HealthController],
   providers: [
