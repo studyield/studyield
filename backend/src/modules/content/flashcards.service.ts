@@ -16,6 +16,9 @@ export interface Flashcard {
   interval: number;
   repetitions: number;
   easeFactor: number;
+  stability: number;
+  fsrsState: number;
+  lapses: number;
   nextReviewAt: Date | null;
   lastReviewedAt: Date | null;
   createdAt: Date;
@@ -343,7 +346,10 @@ export class FlashcardsService {
       difficulty: r.difficulty as number,
       interval: r.interval as number,
       repetitions: r.repetitions as number,
-      easeFactor: parseFloat(String(r.ease_factor)),
+      easeFactor: parseFloat(String(r.ease_factor ?? 2.5)),
+      stability: parseFloat(String(r.stability ?? 0)),
+      fsrsState: parseInt(String(r.fsrs_state ?? 0), 10),
+      lapses: parseInt(String(r.lapses ?? 0), 10),
       nextReviewAt: r.next_review_at ? new Date(r.next_review_at as string) : null,
       lastReviewedAt: r.last_reviewed_at ? new Date(r.last_reviewed_at as string) : null,
       createdAt: new Date(r.created_at as string),
