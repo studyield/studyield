@@ -59,6 +59,24 @@
   }
 }
 
+/* Global focus-visible indicator for accessibility */
+*:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Screen reader only utility (redundant with Tailwind sr-only, but ensures availability) */
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

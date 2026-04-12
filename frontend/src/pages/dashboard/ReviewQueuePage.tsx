@@ -181,9 +181,10 @@ export default function ReviewQueuePage() {
         <div className="flex items-center justify-between mb-6">
           <button
             onClick={() => navigate('/dashboard/exam-clone')}
+            aria-label={t('reviewQueue.back')}
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
           >
-            <ArrowLeft className="w-5 h-5" />
+            <ArrowLeft className="w-5 h-5" aria-hidden="true" />
             <span>{t('reviewQueue.back')}</span>
           </button>
 
@@ -213,8 +214,10 @@ export default function ReviewQueuePage() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className="flex flex-col items-center justify-center py-20"
+              role="status"
+              aria-live="polite"
             >
-              <Loader2 className="w-8 h-8 animate-spin text-primary mb-4" />
+              <Loader2 className="w-8 h-8 animate-spin text-primary mb-4" aria-hidden="true" />
               <p className="text-muted-foreground">{t('reviewQueue.loadingReviewQueue')}</p>
             </motion.div>
           )}
@@ -383,6 +386,7 @@ export default function ReviewQueuePage() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   className="space-y-4"
+                  aria-live="polite"
                 >
                   {!explanation && (
                     <Button
