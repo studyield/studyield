@@ -1,6 +1,9 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 
+// AI provider type
+type AiProvider = 'openrouter' | 'ollama' | 'openai';
+
 export interface EmbeddingResult {
   vector: number[];
   tokens: number;
@@ -9,37 +12,65 @@ export interface EmbeddingResult {
 @Injectable()
 export class EmbeddingService {
   private readonly logger = new Logger(EmbeddingService.name);
+  private readonly provider: AiProvider;
   private readonly apiKey: string;
   private readonly baseUrl: string;
   private readonly embeddingModel: string;
   private readonly vectorDimension: number;
 
   constructor(private readonly configService: ConfigService) {
-    this.apiKey = this.configService.get<string>('OPENROUTER_API_KEY', '');
-    this.baseUrl = this.configService.get<string>(
-      'OPENROUTER_BASE_URL',
-      'https://openrouter.ai/api/v1',
+    this.provider = (
+      this.configService.get<string>('AI_PROVIDER', 'openrouter') as AiProvider
     );
-    this.embeddingModel = this.configService.get<string>(
-      'OPENROUTER_EMBEDDING_MODEL',
-      'openai/text-embedding-3-small',
-    );
-    this.vectorDimension = 1536;
+
+    if (this.provider === 'ollama') {
+      this.apiKey = 'ollama'; // Ollama doesn't need a key
+      this.baseUrl = this.configService.get<string>(
+        'OLLAMA_BASE_URL',
+        'http://localhost:11434/v1',
+      );
+      this.embeddingModel = this.configService.get<string>(
+        'OLLAMA_EMBEDDING_MODEL',
+        'nomic-embed-text',
+      );
+      // nomic-embed-text produces 768-dim vectors; adjust if using a different model
+      this.vectorDimension = 768;
+      this.logger.log(`Embedding service using Ollama (${this.embeddingModel})`);
+    } else {
+      this.apiKey = this.configService.get<string>('OPENROUTER_API_KEY', '');
+      this.baseUrl = this.configService.get<string>(
+        'OPENROUTER_BASE_URL',
+        'https://openrouter.ai/api/v1',
+      );
+      this.embeddingModel = this.configService.get<string>(
+        'OPENROUTER_EMBEDDING_MODEL',
+        'openai/text-embedding-3-small',
+      );
+      this.vectorDimension = 1536;
+    }
   }
 
   getVectorDimension(): number {
     return this.vectorDimension;
   }
 
+  private getHeaders(): Record<string, string> {
+    const headers: Record<string, string> = {
+      Authorization: `Bearer ${this.apiKey}`,
+      'Content-Type': 'application/json',
+    };
+    // Only add OpenRouter-specific headers when using OpenRouter
+    if (this.provider !== 'ollama') {
+      headers['HTTP-Referer'] = 'https://studyield.com';
+      headers['X-Title'] = 'Studyield';
+    }
+    return headers;
+  }
+
   async embed(text: string): Promise<EmbeddingResult> {
     const response = await fetch(`${this.baseUrl}/embeddings`, {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${this.apiKey}`,
-        'Content-Type': 'application/json',
-        'HTTP-Referer': 'https://studyield.com',
-        'X-Title': 'Studyield',
-      },
+      headers: this.getHeaders(),
       body: JSON.stringify({
         model: this.embeddingModel,
         input: text,
@@ -65,12 +96,7 @@ export class EmbeddingService {
 
     const response = await fetch(`${this.baseUrl}/embeddings`, {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${this.apiKey}`,
-        'Content-Type': 'application/json',
-        'HTTP-Referer': 'https://studyield.com',
-        'X-Title': 'Studyield',
-      },
+      headers: this.getHeaders(),
       body: JSON.stringify({
         model: this.embeddingModel,
         input: texts,
