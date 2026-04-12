@@ -4,6 +4,7 @@ import { DatabaseService } from '../database/database.service';
 import { AiService } from '../ai/ai.service';
 import { StorageService } from '../storage/storage.service';
 import { QueueService } from '../queue/queue.service';
+import { GamificationService, XP_AMOUNTS } from '../gamification/gamification.service';
 import pdfParse from 'pdf-parse';
 
 export interface ExamClone {
@@ -65,6 +66,7 @@ export class ExamCloneService {
     private readonly aiService: AiService,
     private readonly storageService: StorageService,
     private readonly queueService: QueueService,
+    private readonly gamificationService: GamificationService,
   ) {}
 
   async create(userId: string, dto: CreateExamCloneDto): Promise<ExamClone> {
@@ -713,6 +715,10 @@ Be concise and helpful.`;
 
     // Check and award badges
     const newBadges = await this.checkAndAwardBadges(userId, examCloneId);
+
+    // Award XP for exam completion
+    await this.gamificationService.awardXp(userId, 'exam_complete', XP_AMOUNTS.exam_complete, { examCloneId, score });
+    await this.gamificationService.recordStudyDay(userId);
 
     this.logger.log(
       `Attempt submitted for exam ${examCloneId}: ${score}% (${correct}/${totalQuestions})`,

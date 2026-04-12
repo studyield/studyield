@@ -1,7 +1,25 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { AiService } from '../ai/ai.service';
 
-export type QuestionType = 'multiple_choice' | 'true_false' | 'short_answer' | 'fill_blank';
+export type QuestionType =
+  | 'multiple_choice'
+  | 'true_false'
+  | 'short_answer'
+  | 'fill_blank'
+  | 'matching'
+  | 'ordering'
+  | 'coding'
+  | 'essay';
+
+export interface MatchingPair {
+  left: string;
+  right: string;
+}
+
+export interface CodingTestCase {
+  input: string;
+  expected: string;
+}
 
 export interface GeneratedQuestion {
   type: QuestionType;
@@ -10,6 +28,20 @@ export interface GeneratedQuestion {
   correctAnswer: string;
   explanation: string;
   difficulty: 'easy' | 'medium' | 'hard';
+  /** For matching questions: pairs of left-right items */
+  pairs?: MatchingPair[];
+  /** For ordering questions: items to order */
+  items?: string[];
+  /** For ordering questions: correct order as indices */
+  correctOrder?: number[];
+  /** For coding questions: programming language */
+  language?: string;
+  /** For coding questions: test cases */
+  testCases?: CodingTestCase[];
+  /** For essay questions: grading rubric */
+  rubric?: string;
+  /** For essay questions: maximum word count */
+  maxWords?: number;
 }
 
 export interface GenerateQuizOptions {
@@ -52,15 +84,36 @@ Return the questions in this exact JSON format:
 {
   "questions": [
     {
-      "type": "multiple_choice" | "true_false" | "short_answer" | "fill_blank",
+      "type": "multiple_choice" | "true_false" | "short_answer" | "fill_blank" | "matching" | "ordering" | "coding" | "essay",
       "question": "The question text",
       "options": ["A", "B", "C", "D"], // only for multiple_choice
-      "correctAnswer": "The correct answer",
+      "correctAnswer": "The correct answer", // for multiple_choice, true_false, short_answer, fill_blank
       "explanation": "Why this is correct",
-      "difficulty": "easy" | "medium" | "hard"
+      "difficulty": "easy" | "medium" | "hard",
+
+      // For matching questions only:
+      "pairs": [{"left": "Term", "right": "Definition"}, ...], // 4-6 pairs to match
+
+      // For ordering questions only:
+      "items": ["Step 1", "Step 2", "Step 3"], // items in correct order
+      "correctOrder": [0, 1, 2], // indices representing the correct sequence
+
+      // For coding questions only:
+      "language": "python", // programming language
+      "testCases": [{"input": "...", "expected": "..."}], // test cases for validation
+
+      // For essay questions only:
+      "rubric": "Key points: X, Y, Z", // grading criteria
+      "maxWords": 500 // maximum word count
     }
   ]
-}`;
+}
+
+Important type-specific rules:
+- matching: Always include "pairs" array with 4-6 items. Set "correctAnswer" to JSON string of the pairs array.
+- ordering: Always include "items" and "correctOrder". Set "correctAnswer" to JSON string of correctOrder array.
+- coding: Always include "language", "testCases" with at least 2 test cases. Set "correctAnswer" to a sample solution.
+- essay: Always include "rubric" and "maxWords". Set "correctAnswer" to key points expected.`;
 
     const userPrompt = `Study Material:
 ${content}
@@ -123,15 +176,23 @@ Return the questions in this exact JSON format:
 {
   "questions": [
     {
-      "type": "multiple_choice" | "true_false" | "short_answer",
+      "type": "multiple_choice" | "true_false" | "short_answer" | "fill_blank" | "matching" | "ordering" | "coding" | "essay",
       "question": "The question text",
       "options": ["A", "B", "C", "D"],
       "correctAnswer": "The correct answer",
       "explanation": "Why this is correct",
-      "difficulty": "${difficulty}"
+      "difficulty": "${difficulty}",
+      "pairs": [{"left": "Term", "right": "Definition"}, ...],
+      "items": ["Step 1", "Step 2", "Step 3"],
+      "correctOrder": [0, 1, 2],
+      "language": "python",
+      "testCases": [{"input": "...", "expected": "..."}],
+      "rubric": "Key points: X, Y, Z",
+      "maxWords": 500
     }
   ]
-}`;
+}
+Include only the fields relevant to each question type.`;
 
     const response = await this.aiService.completeJson<{ questions: GeneratedQuestion[] }>(
       [

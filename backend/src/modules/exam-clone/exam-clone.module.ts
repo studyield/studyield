@@ -3,10 +3,11 @@ import { ExamCloneService } from './exam-clone.service';
 import { ExamCloneController } from './exam-clone.controller';
 import { ExamCloneGateway } from './exam-clone.gateway';
 import { AuthModule } from '../auth/auth.module';
+import { GamificationModule } from '../gamification/gamification.module';
 import { QueueService } from '../queue/queue.service';
 
 @Module({
-  imports: [AuthModule],
+  imports: [AuthModule, GamificationModule],
   controllers: [ExamCloneController],
   providers: [ExamCloneService, ExamCloneGateway],
   exports: [ExamCloneService],

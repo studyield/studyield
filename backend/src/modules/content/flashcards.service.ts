@@ -2,6 +2,7 @@ import { Injectable, Logger, NotFoundException, ForbiddenException } from '@nest
 import { v4 as uuidv4 } from 'uuid';
 import { DatabaseService } from '../database/database.service';
 import { NotificationsService } from '../notifications/notifications.service';
+import { GamificationService, XP_AMOUNTS } from '../gamification/gamification.service';
 import { CreateFlashcardDto, UpdateFlashcardDto, ReviewFlashcardDto } from './dto/flashcard.dto';
 
 export interface Flashcard {
@@ -31,6 +32,7 @@ export class FlashcardsService {
   constructor(
     private readonly db: DatabaseService,
     private readonly notificationsService: NotificationsService,
+    private readonly gamificationService: GamificationService,
   ) {}
 
   async create(userId: string, dto: CreateFlashcardDto): Promise<Flashcard> {
@@ -196,6 +198,10 @@ export class FlashcardsService {
        RETURNING *`,
       [interval, repetitions, easeFactor, nextReviewAt, new Date(), new Date(), id],
     );
+
+    // Award XP for flashcard review
+    await this.gamificationService.awardXp(userId, 'flashcard_review', XP_AMOUNTS.flashcard_review, { flashcardId: id });
+    await this.gamificationService.recordStudyDay(userId);
 
     // Send achievement notifications for mastery milestones
     await this.checkAndSendMasteryAchievement(userId, interval);
