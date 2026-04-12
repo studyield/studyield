@@ -60,16 +60,26 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
 
   return (
     <div className="min-h-screen bg-muted/30">
+      {/* Skip to main content link */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-lg focus:text-sm focus:font-medium"
+      >
+        {t('accessibility.skipToMain', 'Skip to main content')}
+      </a>
+
       {/* Mobile sidebar overlay */}
       {sidebarOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-40 lg:hidden"
           onClick={() => setSidebarOpen(false)}
+          aria-hidden="true"
         />
       )}
 
       {/* Sidebar */}
       <aside
+        aria-label={t('accessibility.sidebar', 'Sidebar navigation')}
         className={cn(
           'fixed left-0 top-0 h-full w-64 bg-card border-r border-border z-50 flex flex-col transform transition-transform duration-200 lg:transform-none',
           sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
@@ -83,6 +93,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           </Link>
           <button
             onClick={() => setSidebarOpen(false)}
+            aria-label={t('accessibility.closeSidebar', 'Close sidebar')}
             className="lg:hidden p-2 hover:bg-muted rounded-lg"
           >
             <X className="w-5 h-5" />
@@ -92,7 +103,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         {/* Scrollable area: nav + bottom items */}
         <div className="flex-1 flex flex-col overflow-y-auto">
           {/* Navigation */}
-          <nav className="flex-1 p-4 space-y-1">
+          <nav aria-label={t('accessibility.mainNav', 'Main navigation')} className="flex-1 p-4 space-y-1">
             {sidebarItems.map((item) => {
               const isActive = location.pathname === item.href;
               return (
@@ -100,6 +111,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                   key={item.href}
                   to={item.href}
                   onClick={() => setSidebarOpen(false)}
+                  aria-current={isActive ? 'page' : undefined}
                   className={cn(
                     'flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors',
                     isActive
@@ -107,7 +119,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                       : 'text-muted-foreground hover:bg-muted hover:text-foreground'
                   )}
                 >
-                  <item.icon className="w-5 h-5" />
+                  <item.icon className="w-5 h-5" aria-hidden="true" />
                   {t(item.labelKey)}
                 </Link>
               );
@@ -147,14 +159,15 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
       {/* Main content area */}
       <div className="lg:ml-64">
         {/* Header */}
-        <header className="h-16 bg-card border-b border-border sticky top-0 z-30">
+        <header className="h-16 bg-card border-b border-border sticky top-0 z-30" role="banner">
           <div className="h-full px-4 flex items-center justify-between">
             {/* Mobile menu button */}
             <button
               onClick={() => setSidebarOpen(true)}
+              aria-label={t('accessibility.openMenu', 'Open navigation menu')}
               className="lg:hidden p-2 hover:bg-muted rounded-lg"
             >
-              <Menu className="w-5 h-5" />
+              <Menu className="w-5 h-5" aria-hidden="true" />
             </button>
 
             {/* Spacer */}
@@ -170,6 +183,9 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
             <div className="relative ml-2">
               <button
                 onClick={() => setUserMenuOpen(!userMenuOpen)}
+                aria-expanded={userMenuOpen}
+                aria-haspopup="true"
+                aria-label={t('accessibility.userMenu', 'User menu')}
                 className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted transition-colors"
               >
                 <div className="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center">
@@ -191,7 +207,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                     {user?.plan} {t('common.plan')}
                   </p>
                 </div>
-                <ChevronDown className="w-4 h-4 text-muted-foreground" />
+                <ChevronDown className="w-4 h-4 text-muted-foreground" aria-hidden="true" />
               </button>
 
               {/* Dropdown menu */}
@@ -200,15 +216,22 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                   <div
                     className="fixed inset-0 z-40"
                     onClick={() => setUserMenuOpen(false)}
+                    aria-hidden="true"
                   />
-                  <div className="absolute right-0 top-full mt-2 w-52 bg-card border border-border rounded-lg shadow-lg z-50">
+                  <div
+                    role="menu"
+                    aria-label={t('accessibility.userMenu', 'User menu')}
+                    onKeyDown={(e) => { if (e.key === 'Escape') setUserMenuOpen(false); }}
+                    className="absolute right-0 top-full mt-2 w-52 bg-card border border-border rounded-lg shadow-lg z-50"
+                  >
                     <div className="p-2">
                       <Link
                         to="/dashboard/subscription"
+                        role="menuitem"
                         onClick={() => setUserMenuOpen(false)}
                         className="flex items-center gap-2 px-3 py-2 text-sm rounded-lg hover:bg-muted transition-colors"
                       >
-                        <CreditCard className="w-4 h-4" />
+                        <CreditCard className="w-4 h-4" aria-hidden="true" />
                         {t('common.subscription')}
                         <span className="ml-auto px-1.5 py-0.5 bg-green-500/10 text-green-500 rounded text-[10px] font-medium capitalize">
                           {user?.plan}
@@ -216,18 +239,20 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                       </Link>
                       <Link
                         to="/dashboard/settings"
+                        role="menuitem"
                         onClick={() => setUserMenuOpen(false)}
                         className="flex items-center gap-2 px-3 py-2 text-sm rounded-lg hover:bg-muted transition-colors"
                       >
-                        <Settings className="w-4 h-4" />
+                        <Settings className="w-4 h-4" aria-hidden="true" />
                         {t('common.settings')}
                       </Link>
                       <div className="border-t border-border my-1" />
                       <button
+                        role="menuitem"
                         onClick={handleLogout}
                         className="w-full flex items-center gap-2 px-3 py-2 text-sm rounded-lg hover:bg-muted transition-colors text-red-500"
                       >
-                        <LogOut className="w-4 h-4" />
+                        <LogOut className="w-4 h-4" aria-hidden="true" />
                         {t('common.logout')}
                       </button>
                     </div>
@@ -239,7 +264,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         </header>
 
         {/* Page content */}
-        <main className="p-4 lg:p-6">{children}</main>
+        <main id="main-content" className="p-4 lg:p-6" role="main">{children}</main>
       </div>
     </div>
   );
