@@ -33,6 +33,7 @@ import { AnalyticsModule } from './modules/analytics';
 import { NotificationsModule } from './modules/notifications';
 import { BlogModule } from './modules/blog';
 import { ImportExportModule } from './modules/import-export';
+import { LtiModule } from './modules/lti';
 
 // Common
 import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
@@ -99,6 +100,7 @@ import { HealthController } from './health.controller';
     NotificationsModule,
     BlogModule,
     ImportExportModule,
+    LtiModule,
   ],
   controllers: [HealthController],
   providers: [
