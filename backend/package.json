@@ -72,11 +72,11 @@
     "@nestjs/schematics": "^10.1.0",
     "@nestjs/testing": "^10.3.0",
     "@types/bcrypt": "^5.0.2",
-    "@types/cheerio": "^0.22.35",
-    "@types/express": "^4.17.21",
+    "@types/cheerio": "^1.0.0",
+    "@types/express": "^5.0.6",
     "@types/jest": "^29.5.11",
     "@types/multer": "^1.4.11",
-    "@types/node": "^20.10.6",
+    "@types/node": "^25.6.0",
     "@types/passport-jwt": "^4.0.0",
     "@types/pg": "^8.10.9",
     "@types/uuid": "^9.0.7",
@@ -93,7 +93,7 @@
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.3.3"
+    "typescript": "^6.0.2"
   },
   "jest": {
     "moduleFileExtensions": [
