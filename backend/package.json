@@ -40,7 +40,7 @@
     "@qdrant/js-client-rest": "^1.7.0",
     "bcrypt": "^5.1.1",
     "body-parser": "^2.2.2",
-    "bullmq": "^5.1.0",
+    "bullmq": "^5.73.5",
     "cheerio": "^1.2.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
