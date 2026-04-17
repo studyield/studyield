@@ -286,7 +286,7 @@ Studyield में योगदान देने वाले सभी अ�
   <a href="https://discord.gg/9JEk6WSM">
     <img src="https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
-  <a href="https://twitter.com/studyield">
+  <a href="https://x.com/infoinletcom">
     <img src="https://img.shields.io/badge/Twitter-Follow%20Us-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
 </p>
@@ -311,7 +311,7 @@ NestJS, React, Flutter, PostgreSQL, Redis, Qdrant, ClickHouse, OpenRouter और
   <a href="https://studyield.com">वेबसाइट</a> |
   <a href="https://docs.studyield.com">दस्तावेज़ीकरण</a> |
   <a href="https://github.com/studyield/studyield/discussions">चर्चाएं</a> |
-  <a href="https://twitter.com/studyield">Twitter</a>
+  <a href="https://x.com/infoinletcom">Twitter</a>
 </p>
 
 ---

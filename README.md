@@ -486,7 +486,7 @@ Connect with developers, get help, and stay updated on Studyield's latest develo
   <a href="https://github.com/studyield/studyield/discussions">
     <img src="https://img.shields.io/badge/GitHub-Discussions-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Discussions">
   </a>
-  <a href="https://twitter.com/studyield">
+  <a href="https://x.com/infoinletcom">
     <img src="https://img.shields.io/badge/Twitter-Follow%20Us-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
 </p>
@@ -497,7 +497,7 @@ Connect with developers, get help, and stay updated on Studyield's latest develo
 |----------|---------|------|
 | 💡 **GitHub Discussions** | Ask questions, share ideas, feature requests | [Start Discussion](https://github.com/studyield/studyield/discussions) |
 | 💬 **Discord** | Join our community, real-time chat | [Join Discord](https://discord.gg/9JEk6WSM) |
-| 🐦 **Twitter/X** | Product updates, announcements, tips | [@studyield](https://twitter.com/studyield) |
+| 🐦 **Twitter/X** | Product updates, announcements, tips | [@infoinletcom](https://x.com/infoinletcom) |
 | 📧 **Email** | Direct contact with maintainers | support@studyield.com |
 | 🌐 **Website** | Documentation, guides, blog | [studyield.com](https://studyield.com) |
 
@@ -529,7 +529,7 @@ Built with NestJS, React, PostgreSQL, Redis, Qdrant, ClickHouse, OpenRouter, and
   <a href="https://studyield.com">Website</a> |
   <a href="https://docs.studyield.com">Docs</a> |
   <a href="https://github.com/studyield/studyield/discussions">Discussions</a> |
-  <a href="https://twitter.com/studyield">Twitter</a>
+  <a href="https://x.com/infoinletcom">Twitter</a>
 </p>
 
 ---

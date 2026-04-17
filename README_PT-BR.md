@@ -493,7 +493,7 @@ Conecte-se com desenvolvedores, obtenha ajuda e fique atualizado sobre os últim
   <a href="https://github.com/studyield/studyield/discussions">
     <img src="https://img.shields.io/badge/GitHub-Discussions-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Discussions">
   </a>
-  <a href="https://twitter.com/studyield">
+  <a href="https://x.com/infoinletcom">
     <img src="https://img.shields.io/badge/Twitter-Follow%20Us-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
 </p>
@@ -504,7 +504,7 @@ Conecte-se com desenvolvedores, obtenha ajuda e fique atualizado sobre os últim
 |----------|---------|------|
 | 💡 **Discussões no GitHub** | Fazer perguntas, compartilhar ideias, solicitações de recursos | [Iniciar Discussão](https://github.com/studyield/studyield/discussions) |
 | 💬 **Discord** | Junte-se à nossa comunidade, chat em tempo real | [Entrar no Discord](https://discord.gg/9JEk6WSM) |
-| 🐦 **Twitter/X** | Atualizações de produtos, anúncios, dicas | [@studyield](https://twitter.com/studyield) |
+| 🐦 **Twitter/X** | Atualizações de produtos, anúncios, dicas | [@infoinletcom](https://x.com/infoinletcom) |
 | 📧 **E-mail** | Contato direto com mantenedores | support@studyield.com |
 | 🌐 **Website** | Documentação, guias, blog | [studyield.com](https://studyield.com) |
 
@@ -536,7 +536,7 @@ Construído com NestJS, React, Flutter, PostgreSQL, Redis, Qdrant, ClickHouse, O
   <a href="https://studyield.com">Website</a> |
   <a href="https://docs.studyield.com">Documentação</a> |
   <a href="https://github.com/studyield/studyield/discussions">Discussões</a> |
-  <a href="https://twitter.com/studyield">Twitter</a>
+  <a href="https://x.com/infoinletcom">Twitter</a>
 </p>
 
 ---

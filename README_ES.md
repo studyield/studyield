@@ -488,7 +488,7 @@ git push origin feature/your-feature-name
   <a href="https://github.com/studyield/studyield/discussions">
     <img src="https://img.shields.io/badge/GitHub-Discussions-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Discussions">
   </a>
-  <a href="https://twitter.com/studyield">
+  <a href="https://x.com/infoinletcom">
     <img src="https://img.shields.io/badge/Twitter-Follow%20Us-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
 </p>
@@ -499,7 +499,7 @@ git push origin feature/your-feature-name
 |----------|---------|------|
 | 💡 **Discusiones de GitHub** | Hacer preguntas, compartir ideas, solicitudes de características | [Iniciar discusión](https://github.com/studyield/studyield/discussions) |
 | 💬 **Discord** | Únete a nuestra comunidad, chat en tiempo real | [Unirse a Discord](https://discord.gg/9JEk6WSM) |
-| 🐦 **Twitter/X** | Actualizaciones de productos, anuncios, consejos | [@studyield](https://twitter.com/studyield) |
+| 🐦 **Twitter/X** | Actualizaciones de productos, anuncios, consejos | [@infoinletcom](https://x.com/infoinletcom) |
 | 📧 **Correo electrónico** | Contacto directo con mantenedores | support@studyield.com |
 | 🌐 **Sitio web** | Documentación, guías, blog | [studyield.com](https://studyield.com) |
 
@@ -531,7 +531,7 @@ Construido con NestJS, React, Flutter, PostgreSQL, Redis, Qdrant, ClickHouse, Op
   <a href="https://studyield.com">Sitio web</a> |
   <a href="https://docs.studyield.com">Documentación</a> |
   <a href="https://github.com/studyield/studyield/discussions">Discusiones</a> |
-  <a href="https://twitter.com/studyield">Twitter</a>
+  <a href="https://x.com/infoinletcom">Twitter</a>
 </p>
 
 ---

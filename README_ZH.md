@@ -488,7 +488,7 @@ git push origin feature/your-feature-name
   <a href="https://github.com/studyield/studyield/discussions">
     <img src="https://img.shields.io/badge/GitHub-Discussions-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Discussions">
   </a>
-  <a href="https://twitter.com/studyield">
+  <a href="https://x.com/infoinletcom">
     <img src="https://img.shields.io/badge/Twitter-Follow%20Us-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
 </p>
@@ -499,7 +499,7 @@ git push origin feature/your-feature-name
 |----------|---------|------|
 | 💡 **GitHub讨论** | 提问、分享想法、功能请求 | [开始讨论](https://github.com/studyield/studyield/discussions) |
 | 💬 **Discord** | 加入我们的社区，实时聊天 | [加入Discord](https://discord.gg/9JEk6WSM) |
-| 🐦 **Twitter/X** | 产品更新、公告、提示 | [@studyield](https://twitter.com/studyield) |
+| 🐦 **Twitter/X** | 产品更新、公告、提示 | [@infoinletcom](https://x.com/infoinletcom) |
 | 📧 **电子邮件** | 直接联系维护者 | support@studyield.com |
 | 🌐 **网站** | 文档、指南、博客 | [studyield.com](https://studyield.com) |
 
@@ -531,7 +531,7 @@ Copyright 2025 Studyield Contributors.
   <a href="https://studyield.com">网站</a> |
   <a href="https://docs.studyield.com">文档</a> |
   <a href="https://github.com/studyield/studyield/discussions">讨论</a> |
-  <a href="https://twitter.com/studyield">Twitter</a>
+  <a href="https://x.com/infoinletcom">Twitter</a>
 </p>
 
 ---
