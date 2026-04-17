@@ -73,6 +73,12 @@ A diferencia de las plataformas de aprendizaje tradicionales que se centran úni
 - **🌍 12 idiomas** -- Soporte completo de i18n (EN, JA, ZH, KO, ES, FR, DE, PT, AR, BN, HI, RU)
 - **📱 Web + Móvil** -- Frontend React y aplicación móvil Flutter
 
+<p align="center">
+  <img src=".github/screenshots/ai-chat.png" alt="Studyield Chat IA" width="800">
+  <br>
+  <em>Chat IA -- haz preguntas basadas en tus materiales de estudio subidos, con respuestas citadas de tus documentos</em>
+</p>
+
 ## Qué problema resolvemos
 
 ### El dilema del aprendizaje moderno
@@ -123,6 +129,12 @@ Los estudiantes de hoy se están ahogando en información pero muriendo de hambr
 | **Código abierto** | ✅ Apache 2.0 | ❌ | ✅ AGPL | ❌ | ❌ |
 | **Multiplataforma** | ✅ Web + Móvil | ✅ | ✅ | ✅ | ✅ |
 | **Curva de aprendizaje** | 🟢 Baja | 🟢 Baja | 🟡 Media | 🟢 Baja | 🟢 Baja |
+
+<p align="center">
+  <img src=".github/screenshots/problem-solver.png" alt="Studyield Solucionador multi-agente" width="800">
+  <br>
+  <em>Solucionador multi-agente -- los agentes de Análisis, Solución y Verificación colaboran en tiempo real para descomponer y verificar problemas complejos</em>
+</p>
 
 ### ¿Qué hace único a Studyield?
 
