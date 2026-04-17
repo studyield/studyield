@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+  <a href="https://studyield.com"><img src="https://img.shields.io/badge/live-studyield.com-brightgreen?logo=vercel&logoColor=white" alt="Live Site"></a>
   <a href="https://github.com/studyield/studyield/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg" alt="License"></a>
   <a href="https://github.com/studyield/studyield/stargazers"><img src="https://img.shields.io/github/stars/studyield/studyield?style=social" alt="GitHub Stars"></a>
   <a href="https://github.com/studyield/studyield/issues"><img src="https://img.shields.io/github/issues/studyield/studyield" alt="Issues"></a>
@@ -19,18 +20,18 @@
 </p>
 
 <p align="center">
-  <a href="./README.md">English</a> |
-  <a href="./README_JA.md">日本語</a> |
-  <a href="./README_ZH.md">中文</a> |
-  <a href="./README_KO.md">한국어</a> |
-  <a href="./README_ES.md">Español</a> |
-  <a href="./README_FR.md">Français</a> |
-  <a href="./README_DE.md">Deutsch</a> |
-  Português |
-  <a href="./README_AR.md">العربية</a> |
-  <a href="./README_BN.md">বাংলা</a> |
-  <a href="./README_HI.md">हिन्दी</a> |
-  <a href="./README_RU.md">Русский</a>
+  <a href="./README.md">🇬🇧 English</a> |
+  <a href="./README_JA.md">🇯🇵 日本語</a> |
+  <a href="./README_ZH.md">🇨🇳 中文</a> |
+  <a href="./README_KO.md">🇰🇷 한국어</a> |
+  <a href="./README_ES.md">🇪🇸 Español</a> |
+  <a href="./README_FR.md">🇫🇷 Français</a> |
+  <a href="./README_DE.md">🇩🇪 Deutsch</a> |
+  🇧🇷 Português |
+  <a href="./README_AR.md">🇸🇦 العربية</a> |
+  <a href="./README_BN.md">🇧🇩 বাংলা</a> |
+  <a href="./README_HI.md">🇮🇳 हिन्दी</a> |
+  <a href="./README_RU.md">🇷🇺 Русский</a>
 </p>
 
 ---
@@ -71,6 +72,12 @@ Ao contrário das plataformas de aprendizagem tradicionais que se concentram ape
 - **📊 Análises de Progresso** -- Acompanhe tempo de estudo, níveis de domínio e velocidade de aprendizagem
 - **🌍 12 Idiomas** -- Suporte completo de i18n (EN, JA, ZH, KO, ES, FR, DE, PT, AR, BN, HI, RU)
 - **📱 Web + Móvel** -- Frontend React e aplicativo móvel Flutter
+
+<p align="center">
+  <img src=".github/screenshots/ai-chat.png" alt="Studyield Chat IA" width="800">
+  <br>
+  <em>Chat IA -- faça perguntas baseadas nos seus materiais de estudo enviados, com respostas citadas dos seus documentos</em>
+</p>
 
 ## Que problema resolvemos
 
@@ -122,6 +129,12 @@ Os estudantes de hoje estão se afogando em informações, mas morrendo de fome 
 | **Código aberto** | ✅ Apache 2.0 | ❌ | ✅ AGPL | ❌ | ❌ |
 | **Multiplataforma** | ✅ Web + Móvel | ✅ | ✅ | ✅ | ✅ |
 | **Curva de aprendizagem** | 🟢 Baixa | 🟢 Baixa | 🟡 Média | 🟢 Baixa | 🟢 Baixa |
+
+<p align="center">
+  <img src=".github/screenshots/problem-solver.png" alt="Studyield Solucionador multi-agente" width="800">
+  <br>
+  <em>Solucionador multi-agente -- agentes de Análise, Solução e Verificação colaboram em tempo real para decompor e verificar problemas complexos</em>
+</p>
 
 ### O que torna o Studyield único?
 
@@ -250,31 +263,31 @@ Isso inicia PostgreSQL, Redis, Qdrant e ClickHouse via Docker, depois lança os 
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         Studyield Platform                       │
+│                       Studyield Platform                        │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐    │
-│  │   React Web  │     │   Flutter    │     │  REST + WS   │    │
-│  │  (Frontend)  │────▶│    Mobile    │────▶│     API      │    │
-│  └──────────────┘     └──────────────┘     └──────┬───────┘    │
-│                                                     │            │
-│  ┌──────────────────────────────────────────────────┼──────────┐│
-│  │              NestJS Backend (27 Modules)         │          ││
-│  ├──────────────────────────────────────────────────┼──────────┤│
-│  │  Auth │ AI │ Exam Clone │ Problem Solver │ Chat │          ││
-│  │  Teach-Back │ Research │ Knowledge Graph │ Quiz │          ││
-│  │  Flashcards │ Learning Paths │ Analytics │ ...  │          ││
-│  └──────────────────────────────────────────────────┼──────────┘│
-│                                                     │            │
-│  ┌──────────────┐  ┌──────────────┐  ┌────────────┼──────────┐ │
-│  │  PostgreSQL  │  │    Redis     │  │   Qdrant   │ClickHouse│ │
-│  │  (Core Data) │  │  (Cache+MQ)  │  │  (Vectors) │(Analytics│ │
-│  └──────────────┘  └──────────────┘  └────────────┴──────────┘ │
-│                                                                   │
-│  ┌─────────────────────────────────────────────────────────────┐ │
-│  │  External Services: OpenRouter, OpenAI, Cloudflare R2,     │ │
-│  │  AWS SES, Firebase, Stripe                                 │ │
-│  └─────────────────────────────────────────────────────────────┘ │
+│                                                                 │
+│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐     │
+│  │   React Web  │     │   Flutter    │     │  REST + WS   │     │
+│  │  (Frontend)  │     │    Mobile    │     │     API      │     │
+│  └──────────────┘     └──────────────┘     └──────────────┘     │
+│                                                                 │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │               NestJS Backend (27 Modules)                 │  │
+│  ├───────────────────────────────────────────────────────────┤  │
+│  │  Auth │ AI │ Exam Clone │ Problem Solver │ Chat           │  │
+│  │  Teach-Back │ Research │ Knowledge Graph │ Quiz           │  │
+│  │  Flashcards │ Learning Paths │ Analytics │ ...            │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                 │
+│  ┌───────────┐   ┌───────────┐   ┌───────────┐   ┌───────────┐  │
+│  │PostgreSQL │   │   Redis   │   │  Qdrant   │   │ClickHouse │  │
+│  │(Core Data)│   │(Cache+MQ) │   │ (Vectors) │   │(Analytics)│  │
+│  └───────────┘   └───────────┘   └───────────┘   └───────────┘  │
+│                                                                 │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │  External Services: OpenRouter, OpenAI, Cloudflare R2,    │  │
+│  │  AWS SES, Firebase, Stripe                                │  │
+│  └───────────────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -492,7 +505,7 @@ Conecte-se com desenvolvedores, obtenha ajuda e fique atualizado sobre os últim
   <a href="https://github.com/studyield/studyield/discussions">
     <img src="https://img.shields.io/badge/GitHub-Discussions-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Discussions">
   </a>
-  <a href="https://twitter.com/studyield">
+  <a href="https://x.com/infoinletcom">
     <img src="https://img.shields.io/badge/Twitter-Follow%20Us-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
 </p>
@@ -503,7 +516,7 @@ Conecte-se com desenvolvedores, obtenha ajuda e fique atualizado sobre os últim
 |----------|---------|------|
 | 💡 **Discussões no GitHub** | Fazer perguntas, compartilhar ideias, solicitações de recursos | [Iniciar Discussão](https://github.com/studyield/studyield/discussions) |
 | 💬 **Discord** | Junte-se à nossa comunidade, chat em tempo real | [Entrar no Discord](https://discord.gg/9JEk6WSM) |
-| 🐦 **Twitter/X** | Atualizações de produtos, anúncios, dicas | [@studyield](https://twitter.com/studyield) |
+| 🐦 **Twitter/X** | Atualizações de produtos, anúncios, dicas | [@infoinletcom](https://x.com/infoinletcom) |
 | 📧 **E-mail** | Contato direto com mantenedores | support@studyield.com |
 | 🌐 **Website** | Documentação, guias, blog | [studyield.com](https://studyield.com) |
 
@@ -535,7 +548,7 @@ Construído com NestJS, React, Flutter, PostgreSQL, Redis, Qdrant, ClickHouse, O
   <a href="https://studyield.com">Website</a> |
   <a href="https://docs.studyield.com">Documentação</a> |
   <a href="https://github.com/studyield/studyield/discussions">Discussões</a> |
-  <a href="https://twitter.com/studyield">Twitter</a>
+  <a href="https://x.com/infoinletcom">Twitter</a>
 </p>
 
 ---

@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+  <a href="https://studyield.com"><img src="https://img.shields.io/badge/live-studyield.com-brightgreen?logo=vercel&logoColor=white" alt="Live Site"></a>
   <a href="https://github.com/studyield/studyield/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg" alt="License"></a>
   <a href="https://github.com/studyield/studyield/stargazers"><img src="https://img.shields.io/github/stars/studyield/studyield?style=social" alt="GitHub Stars"></a>
   <a href="https://github.com/studyield/studyield/issues"><img src="https://img.shields.io/github/issues/studyield/studyield" alt="Issues"></a>
@@ -19,18 +20,18 @@
 </p>
 
 <p align="center">
-  <a href="./README.md">English</a> |
-  <a href="./README_JA.md">日本語</a> |
-  <a href="./README_ZH.md">中文</a> |
-  <a href="./README_KO.md">한국어</a> |
-  <a href="./README_ES.md">Español</a> |
-  <a href="./README_FR.md">Français</a> |
-  <a href="./README_DE.md">Deutsch</a> |
-  <a href="./README_PT-BR.md">Português</a> |
-  العربية |
-  <a href="./README_BN.md">বাংলা</a> |
-  <a href="./README_HI.md">हिन्दी</a> |
-  <a href="./README_RU.md">Русский</a>
+  <a href="./README.md">🇬🇧 English</a> |
+  <a href="./README_JA.md">🇯🇵 日本語</a> |
+  <a href="./README_ZH.md">🇨🇳 中文</a> |
+  <a href="./README_KO.md">🇰🇷 한국어</a> |
+  <a href="./README_ES.md">🇪🇸 Español</a> |
+  <a href="./README_FR.md">🇫🇷 Français</a> |
+  <a href="./README_DE.md">🇩🇪 Deutsch</a> |
+  <a href="./README_PT-BR.md">🇧🇷 Português</a> |
+  🇸🇦 العربية |
+  <a href="./README_BN.md">🇧🇩 বাংলা</a> |
+  <a href="./README_HI.md">🇮🇳 हिन्दी</a> |
+  <a href="./README_RU.md">🇷🇺 Русский</a>
 </p>
 
 ---
@@ -71,6 +72,12 @@ Studyield هي **منصة تعليمية مفتوحة المصدر مدعومة 
 - **📊 تحليلات التقدم** -- تتبع وقت الدراسة ومستويات الإتقان وسرعة التعلم
 - **🌍 12 لغة** -- دعم i18n كامل (EN, JA, ZH, KO, ES, FR, DE, PT, AR, BN, HI, RU)
 - **📱 ويب + موبايل** -- واجهة React وتطبيق موبايل Flutter
+
+<p align="center">
+  <img src=".github/screenshots/ai-chat.png" alt="دردشة Studyield بالذكاء الاصطناعي" width="800">
+  <br>
+  <em>دردشة الذكاء الاصطناعي -- اطرح أسئلة مستندة إلى مواد الدراسة التي رفعتها، مع إجابات موثقة من مستنداتك</em>
+</p>
 
 ## المشكلة التي نحلها
 
@@ -122,6 +129,12 @@ Studyield هي **منصة تعليمية مفتوحة المصدر مدعومة 
 | **مفتوح المصدر** | ✅ Apache 2.0 | ❌ | ✅ AGPL | ❌ | ❌ |
 | **متعدد المنصات** | ✅ ويب + موبايل | ✅ | ✅ | ✅ | ✅ |
 | **منحنى التعلم** | 🟢 منخفض | 🟢 منخفض | 🟡 متوسط | 🟢 منخفض | 🟢 منخفض |
+
+<p align="center">
+  <img src=".github/screenshots/problem-solver.png" alt="Studyield حل المشكلات متعدد الوكلاء" width="800">
+  <br>
+  <em>حل المشكلات متعدد الوكلاء -- وكلاء التحليل والحل والتحقق يتعاونون في الوقت الفعلي لتحليل المشكلات المعقدة والتحقق منها</em>
+</p>
 
 ## 📊 نشاط المشروع والإحصائيات
 
@@ -181,31 +194,31 @@ npm run dev
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         Studyield Platform                       │
+│                       Studyield Platform                        │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐    │
-│  │   React Web  │     │   Flutter    │     │  REST + WS   │    │
-│  │  (Frontend)  │────▶│    Mobile    │────▶│     API      │    │
-│  └──────────────┘     └──────────────┘     └──────┬───────┘    │
-│                                                     │            │
-│  ┌──────────────────────────────────────────────────┼──────────┐│
-│  │              NestJS Backend (27 Modules)         │          ││
-│  ├──────────────────────────────────────────────────┼──────────┤│
-│  │  Auth │ AI │ Exam Clone │ Problem Solver │ Chat │          ││
-│  │  Teach-Back │ Research │ Knowledge Graph │ Quiz │          ││
-│  │  Flashcards │ Learning Paths │ Analytics │ ...  │          ││
-│  └──────────────────────────────────────────────────┼──────────┘│
-│                                                     │            │
-│  ┌──────────────┐  ┌──────────────┐  ┌────────────┼──────────┐ │
-│  │  PostgreSQL  │  │    Redis     │  │   Qdrant   │ClickHouse│ │
-│  │  (Core Data) │  │  (Cache+MQ)  │  │  (Vectors) │(Analytics│ │
-│  └──────────────┘  └──────────────┘  └────────────┴──────────┘ │
-│                                                                   │
-│  ┌─────────────────────────────────────────────────────────────┐ │
-│  │  External Services: OpenRouter, OpenAI, Cloudflare R2,     │ │
-│  │  AWS SES, Firebase, Stripe                                 │ │
-│  └─────────────────────────────────────────────────────────────┘ │
+│                                                                 │
+│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐     │
+│  │   React Web  │     │   Flutter    │     │  REST + WS   │     │
+│  │  (Frontend)  │     │    Mobile    │     │     API      │     │
+│  └──────────────┘     └──────────────┘     └──────────────┘     │
+│                                                                 │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │               NestJS Backend (27 Modules)                 │  │
+│  ├───────────────────────────────────────────────────────────┤  │
+│  │  Auth │ AI │ Exam Clone │ Problem Solver │ Chat           │  │
+│  │  Teach-Back │ Research │ Knowledge Graph │ Quiz           │  │
+│  │  Flashcards │ Learning Paths │ Analytics │ ...            │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                                                                 │
+│  ┌───────────┐   ┌───────────┐   ┌───────────┐   ┌───────────┐  │
+│  │PostgreSQL │   │   Redis   │   │  Qdrant   │   │ClickHouse │  │
+│  │(Core Data)│   │(Cache+MQ) │   │ (Vectors) │   │(Analytics)│  │
+│  └───────────┘   └───────────┘   └───────────┘   └───────────┘  │
+│                                                                 │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │  External Services: OpenRouter, OpenAI, Cloudflare R2,    │  │
+│  │  AWS SES, Firebase, Stripe                                │  │
+│  └───────────────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -294,7 +307,7 @@ docker compose --env-file .env.docker up -d
   <a href="https://discord.gg/9JEk6WSM">
     <img src="https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
-  <a href="https://twitter.com/studyield">
+  <a href="https://x.com/infoinletcom">
     <img src="https://img.shields.io/badge/Twitter-Follow%20Us-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
 </p>
@@ -319,7 +332,7 @@ Copyright 2025 Studyield Contributors.
   <a href="https://studyield.com">الموقع</a> |
   <a href="https://docs.studyield.com">التوثيق</a> |
   <a href="https://github.com/studyield/studyield/discussions">المناقشات</a> |
-  <a href="https://twitter.com/studyield">Twitter</a>
+  <a href="https://x.com/infoinletcom">Twitter</a>
 </p>
 
 ---
