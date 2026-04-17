@@ -79,6 +79,12 @@ Unlike traditional learning platforms that focus solely on content delivery or A
 - **📊 Progress Analytics** -- Track study time, mastery levels, and learning velocity
 - **🌍 12 Languages** -- Full i18n support (EN, JA, ZH, KO, ES, FR, DE, PT, AR, BN, HI, RU)
 
+<p align="center">
+  <img src=".github/screenshots/ai-chat.png" alt="Studyield AI Chat" width="800">
+  <br>
+  <em>AI Chat -- ask questions grounded in your uploaded study materials, with cited answers from your documents</em>
+</p>
+
 ## What Problem We Solve
 
 ### The Modern Learning Dilemma
@@ -129,6 +135,12 @@ Students today are drowning in information but starving for effective learning t
 | **Open Source** | ✅ Apache 2.0 | ❌ | ✅ AGPL | ❌ | ❌ |
 | **Multi-Platform** | ✅ Web | ✅ | ✅ | ✅ | ✅ |
 | **Learning Curve** | 🟢 Low | 🟢 Low | 🟡 Medium | 🟢 Low | 🟢 Low |
+
+<p align="center">
+  <img src=".github/screenshots/problem-solver.png" alt="Studyield Multi-Agent Problem Solver" width="800">
+  <br>
+  <em>Multi-Agent Problem Solver -- Analysis, Solver, and Verifier agents collaborate in real time to break down and verify complex problems</em>
+</p>
 
 ### What Makes Studyield Unique?
 
