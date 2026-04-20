@@ -32,6 +32,7 @@ import { SubscriptionModule } from './modules/subscription';
 import { AnalyticsModule } from './modules/analytics';
 import { NotificationsModule } from './modules/notifications';
 import { BlogModule } from './modules/blog';
+import { ImportExportModule } from './modules/import-export';
 
 // Common
 import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
@@ -97,6 +98,7 @@ import { HealthController } from './health.controller';
     AnalyticsModule,
     NotificationsModule,
     BlogModule,
+    ImportExportModule,
   ],
   controllers: [HealthController],
   providers: [
