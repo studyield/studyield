@@ -80,6 +80,7 @@ async function bootstrap() {
     .addTag('Subscription', 'Stripe billing')
     .addTag('Analytics', 'Usage analytics')
     .addTag('Notifications', 'Notification management')
+    .addTag('LTI', 'LTI 1.3 provider integration')
     .build();
 
   const document = SwaggerModule.createDocument(app, swaggerConfig);
