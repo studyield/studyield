@@ -58,11 +58,14 @@ function GeneratingScreen() {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
       className="text-center py-12"
+      aria-live="polite"
+      role="status"
     >
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
         className="w-20 h-20 rounded-full bg-green-500/10 border-2 border-green-500/30 border-t-green-500 flex items-center justify-center mx-auto mb-6"
+        aria-hidden="true"
       >
         <Sparkles className="w-8 h-8 text-green-500" />
       </motion.div>
@@ -148,16 +151,17 @@ function QuizConfigScreen({
       {/* Error */}
       {error && (
         <motion.div
+          role="alert"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           className="mb-4 p-4 rounded-xl bg-red-500/10 border border-red-500/30 flex items-start gap-3"
         >
-          <AlertCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+          <AlertCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" aria-hidden="true" />
           <div className="flex-1">
             <p className="text-sm font-medium text-red-500">{error}</p>
           </div>
-          <button onClick={onClearError} className="text-red-400 hover:text-red-500">
-            <XCircle className="w-4 h-4" />
+          <button onClick={onClearError} aria-label="Dismiss error" className="text-red-400 hover:text-red-500">
+            <XCircle className="w-4 h-4" aria-hidden="true" />
           </button>
         </motion.div>
       )}
@@ -831,9 +835,10 @@ export function QuizPage() {
         <div className="flex items-center justify-between mb-6">
           <button
             onClick={() => navigate(`/dashboard/study-sets/${studySetId}`)}
+            aria-label={t('common.back')}
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
           >
-            <ArrowLeft className="w-5 h-5" />
+            <ArrowLeft className="w-5 h-5" aria-hidden="true" />
             <span className="text-sm">{t('common.back')}</span>
           </button>
           {phase === 'quiz' && (

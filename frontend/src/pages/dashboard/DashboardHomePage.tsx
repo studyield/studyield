@@ -68,7 +68,7 @@ function QuickActionCard({
       to={href}
       className="bg-card border border-border rounded-xl p-5 hover:border-green-500/50 hover:shadow-lg transition-all group"
     >
-      <div className={`w-10 h-10 rounded-lg ${color} flex items-center justify-center mb-3`}>
+      <div className={`w-10 h-10 rounded-lg ${color} flex items-center justify-center mb-3`} aria-hidden="true">
         <Icon className="w-5 h-5" />
       </div>
       <h3 className="font-semibold mb-1 group-hover:text-green-500 transition-colors">{title}</h3>
@@ -98,7 +98,7 @@ function StatCard({
       className="bg-card border border-border rounded-xl p-5"
     >
       <div className="flex items-center gap-4">
-        <div className={`w-12 h-12 rounded-xl ${color} flex items-center justify-center`}>
+        <div className={`w-12 h-12 rounded-xl ${color} flex items-center justify-center`} aria-hidden="true">
           <Icon className="w-6 h-6" />
         </div>
         <div>
@@ -134,7 +134,7 @@ function RecentStudySetCard({ studySet }: { studySet: StudySet }) {
           {studySet.flashcardsCount} {t('common.cards')}
         </p>
       </div>
-      <ArrowRight className="w-4 h-4 text-muted-foreground" />
+      <ArrowRight className="w-4 h-4 text-muted-foreground" aria-hidden="true" />
     </Link>
   );
 }
