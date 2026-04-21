@@ -1,9 +1,12 @@
 /**
  * AI Service
  *
- * Uses OpenRouter as the unified gateway for all LLM providers.
- * OpenRouter provides a single API compatible with OpenAI SDK
- * to access models from OpenAI, Anthropic, Google, DeepSeek, and more.
+ * Supports multiple AI providers via the OpenAI SDK:
+ * - OpenRouter: unified cloud gateway for all models (default)
+ * - Ollama: local/offline LLM for privacy-sensitive deployments
+ * - OpenAI: direct OpenAI API access
+ *
+ * Set AI_PROVIDER env var to choose the provider.
  */
 
 import {
@@ -19,9 +22,13 @@ import OpenAI from 'openai';
 import { DatabaseService } from '../database/database.service';
 import { v4 as uuidv4 } from 'uuid';
 
-// Default models
+// AI provider type
+type AiProvider = 'openrouter' | 'ollama' | 'openai';
+
+// Default models per provider
 const DEFAULT_MODEL = 'openai/gpt-4o-mini';
 const DEFAULT_VISION_MODEL = 'openai/gpt-4o';
+const DEFAULT_OLLAMA_MODEL = 'llama3.2';
 
 export interface ChatMessage {
   role: 'system' | 'user' | 'assistant';
@@ -57,11 +64,17 @@ export interface TranscriptionResponse {
 export class AiService implements OnModuleInit {
   private readonly logger = new Logger(AiService.name);
 
+  // Active AI provider
+  private provider: AiProvider = 'openrouter';
+
   // OpenRouter client (PRIMARY gateway for all models)
   private openRouterClient: OpenAI | null = null;
 
   // Direct OpenAI client (fallback only)
   private openaiClient: OpenAI | null = null;
+
+  // Ollama client (local/offline)
+  private ollamaClient: OpenAI | null = null;
 
   constructor(
     private readonly configService: ConfigService,
@@ -73,6 +86,25 @@ export class AiService implements OnModuleInit {
   }
 
   private async initializeClients() {
+    // Determine the active provider (default: openrouter for backward compat)
+    this.provider = (
+      this.configService.get<string>('AI_PROVIDER', 'openrouter') as AiProvider
+    );
+
+    // Initialize Ollama (local LLM)
+    if (this.provider === 'ollama') {
+      const ollamaBaseUrl = this.configService.get<string>(
+        'OLLAMA_BASE_URL',
+        'http://localhost:11434/v1',
+      );
+      this.ollamaClient = new OpenAI({
+        apiKey: 'ollama', // Ollama doesn't need a key, but the SDK requires a non-empty string
+        baseURL: ollamaBaseUrl,
+        timeout: 120000,
+      });
+      this.logger.log(`Ollama client initialized (${ollamaBaseUrl})`);
+    }
+
     // Initialize OpenRouter (PRIMARY gateway for all models)
     const openRouterKey = this.configService.get<string>('OPENROUTER_API_KEY');
 
@@ -100,12 +132,23 @@ export class AiService implements OnModuleInit {
     }
 
     // Log status
-    if (!this.openRouterClient && !this.openaiClient) {
-      this.logger.warn('No AI clients available! Set OPENROUTER_API_KEY or OPENAI_API_KEY in .env');
+    if (!this.ollamaClient && !this.openRouterClient && !this.openaiClient) {
+      this.logger.warn(
+        'No AI clients available! Set AI_PROVIDER and the corresponding config in .env',
+      );
     }
   }
 
   private getClient(): OpenAI {
+    // Use the configured provider first
+    if (this.provider === 'ollama' && this.ollamaClient) {
+      return this.ollamaClient;
+    }
+
+    if (this.provider === 'openai' && this.openaiClient) {
+      return this.openaiClient;
+    }
+
     // Primary: Use OpenRouter for everything (unified gateway)
     if (this.openRouterClient) {
       return this.openRouterClient;
@@ -117,13 +160,19 @@ export class AiService implements OnModuleInit {
     }
 
     throw new BadRequestException(
-      'No AI API key configured. Set OPENROUTER_API_KEY or OPENAI_API_KEY in .env file.',
+      'No AI API key configured. Set AI_PROVIDER and the corresponding config in .env file.',
     );
   }
 
   private getModel(type: 'text' | 'vision' = 'text'): string {
+    // Ollama uses its own model names
+    if (this.provider === 'ollama') {
+      // Ollama vision models: use the same model (most Ollama models handle both)
+      return this.configService.get<string>('OLLAMA_MODEL', DEFAULT_OLLAMA_MODEL);
+    }
+
     // When using OpenRouter, use provider/model format
-    if (this.openRouterClient) {
+    if (this.provider === 'openrouter' && this.openRouterClient) {
       return type === 'vision'
         ? this.configService.get('OPENROUTER_VISION_MODEL', DEFAULT_VISION_MODEL)
         : this.configService.get('OPENROUTER_DEFAULT_MODEL', DEFAULT_MODEL);
@@ -140,7 +189,12 @@ export class AiService implements OnModuleInit {
     options: CompletionOptions = {},
   ): Promise<CompletionResponse> {
     const client = this.getClient();
-    const model = options.model || this.getModel('text');
+    // When using Ollama, always use the configured Ollama model
+    // (ignore OpenRouter-style model names like "openai/gpt-4o")
+    const model =
+      this.provider === 'ollama'
+        ? this.getModel('text')
+        : options.model || this.getModel('text');
 
     try {
       const response = await client.chat.completions.create({
@@ -167,8 +221,8 @@ export class AiService implements OnModuleInit {
       const err = error as Error;
       this.logger.error(`AI completion failed: ${err.message}`);
 
-      // Try fallback to direct OpenAI if OpenRouter fails
-      if (this.openRouterClient && this.openaiClient) {
+      // Try fallback to direct OpenAI if OpenRouter fails (not applicable for Ollama)
+      if (this.provider !== 'ollama' && this.openRouterClient && this.openaiClient) {
         this.logger.warn('Attempting fallback to direct OpenAI...');
         return this.completeFallback(messages, options);
       }
@@ -221,6 +275,7 @@ export class AiService implements OnModuleInit {
       const client = this.getClient();
       const model = this.getModel('vision');
 
+      // Ollama multimodal models support vision via the same API
       const response = await client.chat.completions.create({
         model,
         messages: [
@@ -247,7 +302,8 @@ export class AiService implements OnModuleInit {
       return response.choices[0]?.message?.content || '';
     } catch (error) {
       this.logger.error('Vision generation failed', error);
-      throw new BadRequestException(`Vision AI failed: ${error.message}`);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      throw new BadRequestException(`Vision AI failed: ${errorMessage}`);
     }
   }
 
@@ -276,7 +332,10 @@ export class AiService implements OnModuleInit {
     options: CompletionOptions = {},
   ): AsyncGenerator<{ content: string; done: boolean }> {
     const client = this.getClient();
-    const model = options.model || this.getModel('text');
+    const model =
+      this.provider === 'ollama'
+        ? this.getModel('text')
+        : options.model || this.getModel('text');
 
     const stream = await client.chat.completions.create({
       model,
@@ -365,11 +424,14 @@ export class AiService implements OnModuleInit {
   }
 
   isAvailable(): boolean {
-    return this.openRouterClient !== null || this.openaiClient !== null;
+    return this.ollamaClient !== null || this.openRouterClient !== null || this.openaiClient !== null;
   }
 
   getAvailableProviders(): string[] {
     const providers: string[] = [];
+    if (this.ollamaClient) {
+      providers.push('ollama');
+    }
     if (this.openRouterClient) {
       providers.push('openrouter', 'openai', 'anthropic', 'google', 'deepseek');
     } else if (this.openaiClient) {
