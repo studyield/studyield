@@ -8,6 +8,7 @@ import {
 import { v4 as uuidv4 } from 'uuid';
 import { DatabaseService } from '../database/database.service';
 import { AiService } from '../ai/ai.service';
+import { GamificationService, XP_AMOUNTS } from '../gamification/gamification.service';
 
 export interface ChallengeMessage {
   role: 'ai' | 'user';
@@ -75,6 +76,7 @@ export class TeachBackService {
   constructor(
     private readonly db: DatabaseService,
     private readonly aiService: AiService,
+    private readonly gamificationService: GamificationService,
   ) {}
 
   async create(userId: string, dto: CreateTeachBackDto): Promise<TeachBackSession> {
@@ -205,6 +207,10 @@ Return in this JSON format:
     } catch (err) {
       this.logger.warn(`Failed to award XP: ${err}`);
     }
+
+    // Award XP via gamification engine
+    await this.gamificationService.awardXp(userId, 'teach_back', XP_AMOUNTS.teach_back, { sessionId, score: evaluation.overallScore });
+    await this.gamificationService.recordStudyDay(userId);
 
     this.logger.log(
       `Teach-back evaluated: ${sessionId}, score: ${evaluation.overallScore}, xp: ${xp}`,

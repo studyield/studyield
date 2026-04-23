@@ -11,9 +11,10 @@ import { ContentExtractController } from './content-extract.controller';
 import { ContentSourcesService } from './content-sources.service';
 import { ContentSourcesController } from './content-sources.controller';
 import { NotificationsModule } from '../notifications/notifications.module';
+import { GamificationModule } from '../gamification/gamification.module';
 
 @Module({
-  imports: [NotificationsModule],
+  imports: [NotificationsModule, GamificationModule],
   controllers: [
     StudySetsController,
     DocumentsController,
